@@ -24,9 +24,7 @@
 // Make sure the charset is set appropriately
 @charset 'utf-8';
 @import "normalize";
-
-//@import "normalize";
-//@import "settings";
+@import "settings";
 
 // =========================
 // External Libraries
@@ -41,7 +39,7 @@
 // Globbing all the things
 // =========================
 
-//@import "abstract/**/*.scss";
+@import "abstract/**/*.scss";
 @import "base/**/*.scss";
 //@import "layout/**/*.scss";
 @import "components/**/*.scss";

@@ -1,0 +1,116 @@
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+//  color: $clay;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-weight: 600;
+  @include rem(font-size, 32px);
+  line-height: 35px;
+  letter-spacing: -1px;
+ // color: $black;
+  margin-top: 0;
+
+  @include mq($from: small_desktop) {
+    @include rem(font-size, 48px);
+    @include rem(line-height, 50px);
+    @include rem(margin-bottom, 24px);
+  }
+}
+
+.h2,
+h2 {
+  font-weight: 600;
+  @include rem(font-size, 25px);
+  @include rem(line-height, 30px);
+  @include rem(margin-bottom, 25px);
+  //color: $black;
+  margin-top: 0;
+
+  @include mq($from: small_desktop) {
+    @include rem(font-size, 28px);
+    @include rem(line-height, 35px);
+    @include rem(margin-bottom, 28px);
+  }
+}
+
+.h3,
+h3 {
+  font-weight: 600;
+  @include rem(font-size, 20px);
+  @include rem(line-height, 25px);
+  @include rem(margin-bottom, 20px);
+  //color: $black;
+  margin-top: 0;
+
+  @include mq($from: small_desktop) {
+    @include rem(font-size, 22px);
+    @include rem(line-height, 30px);
+    @include rem(margin-bottom, 22px);
+  }
+}
+
+.h4,
+h4 {
+  font-weight: 600;
+  @include rem(font-size, 16px);
+  @include rem(line-height, 25px);
+ // color: $black;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include mq($from: small_desktop) {
+    @include rem(font-size, 18px);
+    @include rem(line-height, 30px);
+  }
+}
+
+.h5,
+h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  @include rem(font-size, 12px);
+  @include rem(line-height, 25px);
+  color: $clay;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include mq($from: small_desktop) {
+    @include rem(font-size, 14px);
+    @include rem(line-height, 30px);
+  }
+}
+
+.h6,
+h6 {
+  font-weight: 400;
+  @include rem(font-size, 16px);
+  @include rem(line-height, 25px);
+  @include rem(margin-bottom, 12.5px);
+  //color: $black;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include mq($from: small_desktop) {
+    @include rem(font-size, 18px);
+    @include rem(line-height, 30px);
+  }
+}
+
+.p,
+p {
+  @include rem(font-size, 16px);
+  @include rem(line-height, 25px);
+  margin-top: 0;
+
+  @include mq($from: small_desktop) {
+    @include rem(font-size, 18px);
+    @include rem(line-height, 30px);
+  }
+}

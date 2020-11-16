@@ -1,0 +1,75 @@
+
+
+// Hide visually.
+@mixin visually-hidden() {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+// Un-hide visually.
+@mixin unhide-visually() {
+  position: inherit !important;
+  clip: inherit !important;
+  overflow: inherit !important;
+  height: inherit !important;
+  width: inherit !important;
+  word-wrap: inherit !important;
+  min-width: inherit !important;
+  clip-path: inherit !important;
+}
+
+// List reset.
+@mixin ul-reset() {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/// ie11 - A fallback for custom ie11 support.
+@mixin ie11 {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+// Root modifier for sass.
+@mixin root-modifier($selector) {
+  @at-root #{$selector} #{&} {
+    @content;
+  }
+}
+
+// Basic fade in / out effect for drop downs, menus, expandables, etc...
+@mixin fade-effect() {
+  transition-property: opacity, visibility;
+  transition-duration: .6s;
+  transition-delay: 0.1s;
+}
+
+// Basic fade in with a link.
+@mixin link-effect() {
+  transition: all 0.6s ease 0s;
+}
+
+// No animation. Usage might include within the ie11() {} mixin.
+@mixin no-animation() {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  transition-delay: 0.01ms, 0.01ms !important;
+}
+
+// Break out of the container.
+@mixin full-width() {
+  margin: 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}

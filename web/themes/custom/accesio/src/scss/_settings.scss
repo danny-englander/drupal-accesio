@@ -1,0 +1,73 @@
+// Image path.
+// example usage:
+// background-image: url("#{$path-to-images}/yada-yada.png");
+$path-to-images: "/themes/custom/accesio/dist/assets/images";
+
+// SVG path.
+// Usage same as above.
+$path-to-icons: "/themes/custom/accesio/src/icon/raw";
+
+// General colors vars.
+// https://app.zeplin.io/project/5e6682f618ae0f143906fcd7/screen/5e66aa61db3e1f1140d37239
+// Gray tones.
+$black: #2e2d29;
+$clay: #5f574f;
+$light-clay: #7c756d; // css var --brownish-grey
+$x-light-clay: #98928a;
+$driftwood: #b6b1a9;
+$light-driftwood: #d8d4cd;
+$x-light-driftwood: #f8f6f3;
+$pale-gray: #eeeeee;
+$white: #fff;
+
+// Core colors.
+$cardinal-red: #8c1515;
+$lagunita: #007c92;
+$teal: #00505c;
+$bright-red: #b1040e;
+$palo-alto: #175e54;
+$purple: #53284f;
+$poppy: #e98300;
+$x-light_poppy: #fcf2e6;
+
+// Color map. (Do we really need this?)
+$palette: (
+  black: $black,
+  clay: $clay,
+  light-clay: $light-clay, // css var --brownish-grey
+  x-light-clay: $x-light-clay,
+  driftwood: $driftwood,
+  light-driftwood: $light-driftwood,
+  x-light-driftwood: $x-light-driftwood,
+  white: $white,
+  cardinal-red: $cardinal-red,
+  lagunita: $lagunita,
+  teal: $teal,
+  bright-red: $bright-red,
+  palo-alto: $palo-alto,
+  purple: $purple,
+  poppy: $poppy,
+  x-light-poppy: $x_light_poppy
+);
+
+// For usage with the container mixin.
+$small_desktop: 1024px;
+$desktop: 1280px;
+
+// Breakpoints.
+// https://app.zeplin.io/project/5e6682f618ae0f143906fcd7/screen/5e66aa6445b013115f8e1a8e
+// Note, $mobile, $small_desktop, and $desktop mirror the names that are in the designs.
+// Map for sass MQ.
+$mq-breakpoints: (
+  small: 0px,
+  mobile: 375px,
+  small_plus: 520px,
+  medium: 768px,
+  medium-large: 920px,
+  small_desktop: 1024px,
+  desktop: 1280px,
+  x_wide: 1440px,
+);
+
+// Uncomment to debug breakpoints.
+//$mq-show-breakpoints: (small, mobile, small_plus, medium, medium-large, small_desktop, desktop, x_wide);

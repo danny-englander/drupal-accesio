@@ -56,8 +56,8 @@ gulp.task('sass', function () {
       browsers: ['last 4 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('./dist/css'))
     .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.reload({
       stream: true,
       match: '**/*.css'
