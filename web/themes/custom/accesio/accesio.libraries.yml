@@ -1,0 +1,7 @@
+accesio:
+  version: VERSION
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap: { type: external, minified: true }
+      dist/css/grid.css: { minified: true }
+      dist/css/accesio.css: { minified: true }

@@ -1,0 +1,20 @@
+name: Accesio
+type: theme
+description: 'A Stable child theme'
+version: 8.x-1.0
+core_version_requirement: ^8 || ^9
+base theme: stable
+
+libraries:
+  - accesio/accesio
+
+regions:
+  header: 'Header'
+  primary_nav: 'Primary Navigation'
+  highlighted: 'highlighted'
+  content: 'Content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  highlight_bottom: 'Highlight Bottom'
+  footer: 'Footer'
+  hidden: 'Hidden'

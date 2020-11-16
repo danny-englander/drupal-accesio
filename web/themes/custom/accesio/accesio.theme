@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the UCSF Diabetes theme.
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML.
+ */
+function diabetes_preprocess_html(&$vars) {
+  // Define the route.
+  $route = \Drupal::routeMatch()->getRouteName();
+  // Define the node route.
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  // Add gulp browsersync if it's the local environment.
+  if (stripos($_ENV['VIRTUAL_HOST'], 'd8components.docksal') !== FALSE) {
+    $vars['gulp_browsersync'] = TRUE;
+  }
+}

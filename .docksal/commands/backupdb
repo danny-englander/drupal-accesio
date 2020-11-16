@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Runs drush updb
+##
+## Usage: fin backupdb [params to passthrough]
+
+fin db dump --gzip ~/Projects/db-backup/components-$(date +%Y-%m-%d-%H%M%S).sql.gz

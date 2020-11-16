@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/_text.scss"],"names":[],"mappings":"AAAA,KACE,iBAAA,QAGF,GACE,UAAA","file":"accesio.min.css","sourcesContent":["body {\n  background-color: #a51b00;\n}\n\nh1 {\n  font-size: 140px;\n}\n"]}

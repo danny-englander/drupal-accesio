@@ -1,0 +1,10 @@
+uuid: 013e665c-4785-4245-b47d-bd840c877f5f
+langcode: en
+status: true
+dependencies: {  }
+id: cta
+label: 'Call To Action'
+icon_uuid: null
+icon_default: null
+description: 'A Call to Action component type'
+behavior_plugins: {  }

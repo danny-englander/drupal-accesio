@@ -1,0 +1,10 @@
+uuid: fba3541d-9202-430b-92e6-979fe25e95bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.token
+label: Token
+targetEntityType: node
+cache: true
