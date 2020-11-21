@@ -22,6 +22,7 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/crop": "^2.1",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/environment_indicator": "^4.0",
         "drupal/field_group": "^3.1",
