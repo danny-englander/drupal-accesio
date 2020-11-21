@@ -1,0 +1,10 @@
+uuid: 1100df53-f9a7-4181-bfb2-94e874c62afc
+langcode: en
+status: true
+dependencies: {  }
+id: tweet
+label: Tweet
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
