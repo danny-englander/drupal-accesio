@@ -1,0 +1,20 @@
+uuid: 715f2b3d-8688-4825-b201-336f08d8267b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - accesio
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: accesio_local_actions
+theme: accesio
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

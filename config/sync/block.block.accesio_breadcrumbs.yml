@@ -1,0 +1,22 @@
+uuid: c6ea3749-54b9-4f55-a7ad-2ac304a05a12
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - accesio
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: accesio_breadcrumbs
+theme: accesio
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

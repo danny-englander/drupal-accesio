@@ -18,7 +18,7 @@ content:
   field_image:
     type: entity_reference_entity_view
     weight: 3
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -26,7 +26,7 @@ content:
     region: content
   field_link:
     weight: 2
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -38,14 +38,14 @@ content:
     region: content
   field_text:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
