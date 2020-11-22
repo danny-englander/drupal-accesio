@@ -13,7 +13,7 @@ new_revision: false
 source_configuration:
   source_field: field_media_twitter
   use_twitter_api: false
-  generate_thumbnails: true
+  generate_thumbnails: false
   consumer_key: ''
   consumer_secret: ''
   oauth_access_token: ''

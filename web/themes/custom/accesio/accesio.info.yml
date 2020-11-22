@@ -10,7 +10,8 @@ libraries:
 
 regions:
   header: 'Header'
-  primary_nav: 'Primary Navigation'
+  utility: 'Utility'
+  main_menu: 'Main Navigation'
   highlighted: 'highlighted'
   content: 'Content'
   sidebar_first: 'Sidebar First'

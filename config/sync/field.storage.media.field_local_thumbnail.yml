@@ -1,0 +1,23 @@
+uuid: 56383024-f399-49c1-a45d-87023a4dadc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: DssV2nLhO8qmyjkIMkyftYlY6TobVtNLuC5NhCwPAKg
+id: media.field_local_thumbnail
+field_name: field_local_thumbnail
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

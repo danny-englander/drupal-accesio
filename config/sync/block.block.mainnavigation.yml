@@ -1,18 +1,20 @@
-uuid: bb342ce7-48e1-4459-b834-64a16ba4ffc9
+uuid: a4be2e8c-8f6d-4c6f-ae00-aa352472fa25
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - system
   theme:
     - accesio
-_core:
-  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
-id: accesio_main_menu
+third_party_settings:
+  block_class:
+    classes: main-menu
+id: mainnavigation
 theme: accesio
-region: header
+region: main_menu
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
@@ -22,6 +24,6 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }
