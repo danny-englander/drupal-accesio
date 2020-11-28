@@ -10,8 +10,8 @@ _core:
   default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
 id: accesio_search
 theme: accesio
-region: sidebar_first
-weight: -1
+region: utility
+weight: -5
 provider: null
 plugin: search_form_block
 settings:

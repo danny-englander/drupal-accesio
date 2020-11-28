@@ -1,0 +1,33 @@
+.masthead {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+
+  * {
+    color: white;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-block-form {
+    display: none;
+  }
+
+&__nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+
+}

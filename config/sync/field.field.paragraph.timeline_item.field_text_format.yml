@@ -1,0 +1,28 @@
+uuid: 5053c9ed-0c6f-480b-af02-90dc64061278
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_format
+    - paragraphs.paragraphs_type.timeline_item
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    restricted_html: '0'
+    plain_text: '0'
+id: paragraph.timeline_item.field_text_format
+field_name: field_text_format
+entity_type: paragraph
+bundle: timeline_item
+label: 'Timeline Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

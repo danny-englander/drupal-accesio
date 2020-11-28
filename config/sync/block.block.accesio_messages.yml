@@ -11,7 +11,7 @@ _core:
 id: accesio_messages
 theme: accesio
 region: highlighted
-weight: 0
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

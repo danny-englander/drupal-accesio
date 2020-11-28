@@ -1,6 +1,6 @@
 name: Accesio
 type: theme
-description: 'A Stable child theme'
+description: 'A custom Drupal 9 theme'
 version: 8.x-1.0
 core_version_requirement: ^8 || ^9
 base theme: stable
@@ -9,13 +9,13 @@ libraries:
   - accesio/accesio
 
 regions:
-  header: 'Header'
+  hero: 'Hero'
+  branding: 'Branding'
   utility: 'Utility'
   main_menu: 'Main Navigation'
   highlighted: 'highlighted'
   content: 'Content'
-  sidebar_first: 'Sidebar First'
-  sidebar_second: 'Sidebar Second'
+  sidebar: 'Sidebar'
   highlight_bottom: 'Highlight Bottom'
   footer: 'Footer'
   hidden: 'Hidden'

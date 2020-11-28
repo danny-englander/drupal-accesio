@@ -7,7 +7,7 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.cta
-    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.timeline
     - paragraphs.paragraphs_type.tweet
   module:
     - entity_reference_revisions
@@ -15,7 +15,7 @@ id: node.page.field_components
 field_name: field_components
 entity_type: node
 bundle: page
-label: Components
+label: Content
 description: ''
 required: false
 translatable: false
@@ -26,10 +26,10 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      hero: hero
       cta: cta
       accordion: accordion
       tweet: tweet
+      timeline: timeline
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -41,8 +41,14 @@ settings:
         enabled: true
         weight: 3
       hero:
-        enabled: true
         weight: 2
+        enabled: false
+      timeline:
+        enabled: true
+        weight: 12
+      timeline_item:
+        weight: 13
+        enabled: false
       tweet:
         enabled: true
         weight: 10

@@ -1,0 +1,24 @@
+uuid: b55b3252-4aaa-42a9-ae01-6f03f99db02d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.timeline.field_timeline_item
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - entity_reference_revisions
+id: paragraph.timeline.default
+targetEntityType: paragraph
+bundle: timeline
+mode: default
+content:
+  field_timeline_item:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

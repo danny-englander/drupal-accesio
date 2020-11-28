@@ -15,7 +15,7 @@ third_party_settings:
 id: utility
 theme: accesio
 region: utility
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:utility'
 settings:

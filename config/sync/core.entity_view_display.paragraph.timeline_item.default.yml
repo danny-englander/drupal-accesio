@@ -1,0 +1,33 @@
+uuid: ec1f8115-f8da-4efe-8a58-49e8920ce98f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.timeline_item.field_date
+    - field.field.paragraph.timeline_item.field_text_format
+    - paragraphs.paragraphs_type.timeline_item
+  module:
+    - datetime
+    - text
+id: paragraph.timeline_item.default
+targetEntityType: paragraph
+bundle: timeline_item
+mode: default
+content:
+  field_date:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_text_format:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

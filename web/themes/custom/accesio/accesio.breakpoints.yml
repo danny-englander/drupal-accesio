@@ -1,0 +1,23 @@
+accesio.mobile:
+  label: narrow
+  mediaQuery: 'all and (min-width: 0) and (max-width: 767px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+
+accesio.medium:
+  label: Narrow to medium
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 1024px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+
+accesio.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1024px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x

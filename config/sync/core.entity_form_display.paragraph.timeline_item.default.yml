@@ -1,0 +1,33 @@
+uuid: 50a1f81e-f0c4-490f-9e38-c61dc009dadc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.timeline_item.field_date
+    - field.field.paragraph.timeline_item.field_text_format
+    - paragraphs.paragraphs_type.timeline_item
+  module:
+    - datetime
+    - text
+id: paragraph.timeline_item.default
+targetEntityType: paragraph
+bundle: timeline_item
+mode: default
+content:
+  field_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_text_format:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

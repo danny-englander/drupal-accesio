@@ -43,33 +43,27 @@
  * @see html.html.twig
  */
 #}
-<div class="l-container">
+<div class="l-container l-container--main">
 
-  <header role="header" class="combined-header-region">
-    {# Header include file #}
+  <header role="header" class="masthead">
+    {# Header include file. #}
     {% include '@accesio/partials/header.html.twig' %}
   </header>
 
   {{ page.highlighted }}
-
   {{ page.help }}
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    {# Link is in html.html.twig. #}
+    <a id="main-content" tabindex="-1"></a>
 
-    <div class="layout-content">
+    <div class="l-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div><!-- /.l-content -->
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
+    {% if page.sidebar %}
       <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
+        {{ page.sidebar }}
       </aside>
     {% endif %}
 
@@ -81,4 +75,4 @@
     </footer>
   {% endif %}
 
-</div>{# /.layout-container #}
+</div><!-- /.l-container -->

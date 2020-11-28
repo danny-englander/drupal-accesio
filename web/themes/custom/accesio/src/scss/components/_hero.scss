@@ -1,0 +1,31 @@
+.hero {
+  margin-bottom: 80px;
+
+  &__media {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+
+    * {
+      color: $white;
+    }
+  }
+
+  &__content-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+}

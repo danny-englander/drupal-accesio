@@ -1,21 +1,28 @@
-<nav class="masthead">
+<!-- Standard page header included from page.html.twig -->
+<nav class="masthead__nav">
+  <div class="masthead__nav-inner">
+    <div class="masthead__container">
 
-  {{ page.header }}
+      <div class="masthead__main">
 
-  <div class="masthead__container">
+        <div class="masthead__logo">
+          <!-- Logo / Branding -->
+          {{ page.branding }}
+        </div>
 
-    <div class="masthead__above">
-      {{ page.utility }}
+        <div class="masthead__nav">
+          <div class="masthead__above">
+            <!-- Utility navigation -->
+            {{ page.utility }}
+          </div>
+
+          <div class="masthead__below">
+            <!-- Main navigation -->
+            {{ page.main_menu }}
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="masthead__below">
-      {{ page.main_menu }}
-    </div>
-
   </div>
-
 </nav>
-
-
-
-
+<!-- // End standard page header -->
