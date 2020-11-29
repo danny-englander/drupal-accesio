@@ -2,6 +2,9 @@ body {
   background-color: whitesmoke;
 }
 
-h1 {
- // font-size: 22px;
+.paragraph--type--text {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }

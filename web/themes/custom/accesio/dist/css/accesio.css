@@ -626,7 +626,7 @@ h1 {
 
 .h2,
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5625rem;
   line-height: 1.875rem;
   margin-bottom: 1.5625rem;
@@ -637,8 +637,8 @@ h2 {
 @media (min-width: 64em) {
   .h2,
   h2 {
-    font-size: 1.75rem;
-    line-height: 2.1875rem;
+    font-size: 2.75rem;
+    line-height: 3rem;
     margin-bottom: 1.75rem;
   }
 }
@@ -705,7 +705,7 @@ h6 {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5625rem;
-  margin-bottom: 0.78125rem;
+  margin-bottom: 0.75rem;
   color: #000;
   margin-top: 0;
   margin-bottom: 0;
@@ -723,16 +723,16 @@ h6 {
 p {
   font-size: 1rem;
   line-height: 2rem;
+  margin-bottom: 0.875rem;
   margin-top: 0;
-  margin-bottom: 10px;
-  letter-spacing: .05rem;
+  letter-spacing: .03rem;
 }
 
 @media (min-width: 64em) {
   .p,
   p {
     font-size: 1.0625rem;
-    line-height: 2.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -776,6 +776,11 @@ p {
   width: 100%;
 }
 
+.hero__content p {
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+}
+
 .hero__content * {
   color: #fff;
 }
@@ -804,6 +809,7 @@ p {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   padding-left: 40px;
+  padding-top: 16px;
 }
 
 .masthead {
@@ -847,7 +853,7 @@ p {
 
 .masthead__logo img {
   width: 180px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   margin-top: 6px;
 }
 
@@ -855,10 +861,18 @@ body {
   background-color: whitesmoke;
 }
 
+.paragraph--type--text {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .tweet {
   max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 60px;
+  padding-top: 40px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;

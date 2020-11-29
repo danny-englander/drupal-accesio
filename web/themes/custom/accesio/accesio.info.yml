@@ -21,3 +21,6 @@ regions:
   footer_lower: 'Footer Lower'
   footer: 'Footer'
   hidden: 'Hidden'
+
+ckeditor_stylesheets:
+  - dist/css/accesio.css

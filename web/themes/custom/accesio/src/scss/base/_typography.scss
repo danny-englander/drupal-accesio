@@ -29,7 +29,7 @@ h1 {
 
 .h2,
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   @include rem(font-size, 25px);
   @include rem(line-height, 30px);
   @include rem(margin-bottom, 25px);
@@ -37,8 +37,8 @@ h2 {
   margin-top: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 28px);
-    @include rem(line-height, 35px);
+    @include rem(font-size, 44px);
+    @include rem(line-height, 48px);
     @include rem(margin-bottom, 28px);
   }
 }
@@ -96,7 +96,7 @@ h6 {
   font-weight: 400;
   @include rem(font-size, 16px);
   @include rem(line-height, 25px);
-  @include rem(margin-bottom, 12.5px);
+  @include rem(margin-bottom, 12px);
   color: $black;
   margin-top: 0;
   margin-bottom: 0;
@@ -111,12 +111,12 @@ h6 {
 p {
   @include rem(font-size, 16px);
   @include rem(line-height, 32px);
+  @include rem(margin-bottom, 14px);
   margin-top: 0;
-  margin-bottom: 10px;
-  letter-spacing: .05rem;
+  letter-spacing: .03rem;
 
   @include mq($from: small_desktop) {
     @include rem(font-size, 17px);
-    @include rem(line-height, 34px);
+    @include rem(line-height, 28px);
   }
 }

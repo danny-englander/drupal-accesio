@@ -10,8 +10,8 @@ dependencies:
     - accesio
 id: views_hero_block
 theme: accesio
-region: highlighted
-weight: -5
+region: content_top
+weight: -7
 provider: null
 plugin: 'views_block:hero-hero_block'
 settings:

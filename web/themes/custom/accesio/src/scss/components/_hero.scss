@@ -25,6 +25,11 @@
     background-color: rgba(0, 0, 0, .8);
     width: 100%;
 
+    p {
+      @include rem(font-size, 18px);
+      @include rem(line-height, 34px);
+    }
+
     * {
       color: $white;
     }
@@ -50,5 +55,6 @@
     width: 50%;
     flex-basis: 50%;
     padding-left: 40px;
+    padding-top: 16px;
   }
 }
