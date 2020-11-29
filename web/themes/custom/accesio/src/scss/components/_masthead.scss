@@ -1,7 +1,7 @@
 .masthead {
   position: absolute;
   z-index: 10;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, .8);
   width: 100%;
 
   * {
@@ -18,15 +18,25 @@
     display: none;
   }
 
-&__nav-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
+  &__nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 
   ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+  }
+
+  &__logo {
+    img {
+      width: 180px;
+      margin-bottom: 6px;
+      margin-top: 6px;
+    }
   }
 
 

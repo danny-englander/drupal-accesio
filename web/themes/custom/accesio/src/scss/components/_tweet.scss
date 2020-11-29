@@ -1,0 +1,19 @@
+.tweet {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  /* Tweet item. */
+  &__item {
+
+  }
+
+  /* Override inline styles. */
+  .twitter-tweet {
+    display: flex;
+    margin: 0 auto !important;
+    max-width: 490px !important;
+  }
+}

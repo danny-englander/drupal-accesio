@@ -1,0 +1,183 @@
+/*
+Buttons
+Note, if we need buttons in many different colors, we can make this into a mixin.
+ */
+
+// ******** Buttons ************
+// Default button ().
+.btn,
+a.btn,
+input[type="file"],
+input[type="submit"] {
+  @include rem(font-size, 12px);
+  @include link-effect();
+  font-weight: normal;
+  display: inline-block;
+  border-radius: 28px;
+  padding: 15px 38px;
+  letter-spacing: 3.6px;
+  line-height: 1.8;
+  font-weight: bold;
+  color: $white;
+  border: 2px solid navy;
+  background-color: navy;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  // Resets for various devices.
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    border: 2px solid navy;
+    color: black;
+    background-color: transparent;
+  }
+
+  &.btn-small {
+    padding: 6px 18px;
+    @include rem(font-size, 11px);
+  }
+
+  &.btn-secondary {
+    background-color: red;
+    color: $white;
+    border: 2px solid red;
+    padding: 10px 22px;
+    border-radius: 22px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      border: 2px solid red;
+      color: black;
+      background-color: transparent;
+    }
+  }
+
+  &.btn-secondary-inverse {
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      border: 2px solid gray;
+      color: black;
+      background-color: gray;
+    }
+  }
+
+  &.btn-hollow {
+    background-color: transparent;
+    color: navy;
+    border: 2px solid gray;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+      border: 2px solid navy;
+      background-color: navy;
+    }
+  }
+
+  &.btn-hollow-inverse {
+    color: $white;
+    border: 2px solid $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: 2px solid $white;
+      background-color: $white;
+      color: navy;
+      text-decoration: none;
+    }
+  }
+
+  &.btn-pager {
+    border-radius: 0;
+    background-color: gray;
+    padding: 10px 12px;
+    color: black;
+    letter-spacing: 2px;
+    border: none;
+    @include rem(font-size, 13px);
+  }
+}
+
+// file upload.
+.form-item.form-type-managed-file {
+  position: relative;
+
+  input[type="file"] {
+    visibility: hidden;
+  }
+
+  label {
+    @extend .btn;
+  }
+}
+
+// ******** Links ************
+.field--type-text-long {
+  a:not(.btn) {
+    color: blue;
+    text-decoration: none;
+    @include link-effect();
+    font-weight: 500;
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .has-dark-bg & {
+      color: $white;
+      text-decoration: underline;
+
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Arrow link.
+.has-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all .6s;
+ // @include icon-after(icon-arrow-blue, 8px, 8px, $position: relative, $pos-right: 3px, $pos-top: 2px);
+
+  &:after {
+    display: inline-block;
+    margin-left: 10px;
+    transition: all .6s;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+   // @include icon-after(icon-arrow-blue, 8px, 8px, $position: relative, $pos-right: 3px, $pos-top: 2px);
+
+    &:after {
+      margin-left: 14px;
+    }
+  }
+}

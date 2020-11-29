@@ -38,62 +38,21 @@
  * @ingroup themeable
  */
 #}
-
-{# if link target is not empty, set a variable. #}
-{% if content.field_link.0["#url"].getOptions().attributes .target | render %}
-  {% set target = 'target = _' ~ content.field_link.0["#url"].getOptions().attributes .target %}
-{% endif %}
-
-{% set classes = [
-  'hero',
+{%
+  set classes = [
   'component',
+  'tweet',
   'component--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component--view-mode--' ~ view_mode|clean_class,
   not paragraph.isPublished() ? 'component--unpublished'
-] %}
-
+]
+%}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      <div class="hero__wrap">
+      {{ content.field_tweet | field_value }}
 
-        <div class="hero__media">
-          {{ content.field_image | field_value }}
-        </div>
-
-        <div class="hero__content">
-          <div class="hero__content-inner">
-
-            <div class="hero__text-wrap">
-              <div class="hero__title">
-                <h1>{{ content.field_title | field_value }}</h1>
-              </div>
-
-              {% if content.field_text | render %}
-                <div class="hero__text">
-                  <p>{{ content.field_text | field_value }}</p>
-                </div>
-              {% endif %}
-
-            </div><!-- // hero__text-wrap -->
-
-            {% if content.field_link | render %}
-              <div class="hero__link">
-                <a class="btn btn-hollow btn-hollow-inverse"
-                   href="{{ content.field_link.0["#url_title"] }}"
-                  {{ target }}
-                   role="button"
-                   title="{{ 'Learn more about'|t }} {{ content.field_title | field_value }}"
-                   aria-label="{{ 'Learn more about'|t }} {{ content.field_title | field_value }}">
-                  {{ content.field_link.0["#title"] }}
-                </a>
-              </div>
-            {% endif %}
-
-          </div>
-        </div>
-      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

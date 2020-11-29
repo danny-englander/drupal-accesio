@@ -13,7 +13,7 @@ ul.tabs {
     }
 
     a {
-      background-color: $teal;
+      background-color: $dark-teal;
       padding: 8px 20px;
       color: $white;
       text-decoration: none;
@@ -23,11 +23,11 @@ ul.tabs {
       position: relative;
 
       &:hover {
-        background-color: $cardinal-red;
+        background-color: $dark-red;
       }
 
       &.is-active {
-        background-color: $cardinal-red;
+        background-color: $dark-red;
       }
     }
   }
@@ -43,7 +43,7 @@ abbr[title] {
   &:before {
     content: "Unpublished";
     @include rem(font-size, 100px);
-    color: $cardinal-red;
+    color: $dark-red;
     position: relative;
     z-index: -10;
     width: 100%;

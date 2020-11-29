@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
   module:
-    - link
+    - link_attributes
     - media_library
 id: paragraph.hero.default
 targetEntityType: paragraph
@@ -28,8 +28,17 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      enabled_attributes:
+        target: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        aria-label: false
+        title: false
     third_party_settings: {  }
-    type: link_default
+    type: link_attributes
     region: content
   field_text:
     weight: 1

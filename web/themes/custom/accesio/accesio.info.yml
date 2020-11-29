@@ -9,13 +9,15 @@ libraries:
   - accesio/accesio
 
 regions:
-  hero: 'Hero'
   branding: 'Branding'
   utility: 'Utility'
   main_menu: 'Main Navigation'
-  highlighted: 'highlighted'
+  content_top: "Content Top"
+  help: "Help"
   content: 'Content'
   sidebar: 'Sidebar'
-  highlight_bottom: 'Highlight Bottom'
+  content_bottom: 'Content Bottom'
+  footer_upper: 'Footer Upper'
+  footer_lower: 'Footer Lower'
   footer: 'Footer'
   hidden: 'Hidden'

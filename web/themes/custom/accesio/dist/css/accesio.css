@@ -383,27 +383,244 @@ html {
   box-sizing: inherit;
 }
 
+/*
+Buttons
+Note, if we need buttons in many different colors, we can make this into a mixin.
+ */
+.btn, .form-item.form-type-managed-file label,
+a.btn,
+input[type="file"],
+input[type="submit"] {
+  font-size: 0.75rem;
+  transition: all 0.6s ease 0s;
+  font-weight: normal;
+  display: inline-block;
+  border-radius: 28px;
+  padding: 15px 38px;
+  letter-spacing: 3.6px;
+  line-height: 1.8;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid navy;
+  background-color: navy;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.btn:active, .form-item.form-type-managed-file label:active, .btn:focus, .form-item.form-type-managed-file label:focus, .btn:hover, .form-item.form-type-managed-file label:hover,
+a.btn:active,
+a.btn:focus,
+a.btn:hover,
+input[type="file"]:active,
+input[type="file"]:focus,
+input[type="file"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  text-decoration: none;
+  border: 2px solid navy;
+  color: black;
+  background-color: transparent;
+}
+
+.btn.btn-small, .form-item.form-type-managed-file label.btn-small,
+a.btn.btn-small,
+input[type="file"].btn-small,
+input[type="submit"].btn-small {
+  padding: 6px 18px;
+  font-size: 0.6875rem;
+}
+
+.btn.btn-secondary, .form-item.form-type-managed-file label.btn-secondary,
+a.btn.btn-secondary,
+input[type="file"].btn-secondary,
+input[type="submit"].btn-secondary {
+  background-color: red;
+  color: #fff;
+  border: 2px solid red;
+  padding: 10px 22px;
+  border-radius: 22px;
+}
+
+.btn.btn-secondary:active, .form-item.form-type-managed-file label.btn-secondary:active, .btn.btn-secondary:focus, .form-item.form-type-managed-file label.btn-secondary:focus, .btn.btn-secondary:hover, .form-item.form-type-managed-file label.btn-secondary:hover,
+a.btn.btn-secondary:active,
+a.btn.btn-secondary:focus,
+a.btn.btn-secondary:hover,
+input[type="file"].btn-secondary:active,
+input[type="file"].btn-secondary:focus,
+input[type="file"].btn-secondary:hover,
+input[type="submit"].btn-secondary:active,
+input[type="submit"].btn-secondary:focus,
+input[type="submit"].btn-secondary:hover {
+  text-decoration: none;
+  border: 2px solid red;
+  color: black;
+  background-color: transparent;
+}
+
+.btn.btn-secondary-inverse:active, .form-item.form-type-managed-file label.btn-secondary-inverse:active, .btn.btn-secondary-inverse:focus, .form-item.form-type-managed-file label.btn-secondary-inverse:focus, .btn.btn-secondary-inverse:hover, .form-item.form-type-managed-file label.btn-secondary-inverse:hover,
+a.btn.btn-secondary-inverse:active,
+a.btn.btn-secondary-inverse:focus,
+a.btn.btn-secondary-inverse:hover,
+input[type="file"].btn-secondary-inverse:active,
+input[type="file"].btn-secondary-inverse:focus,
+input[type="file"].btn-secondary-inverse:hover,
+input[type="submit"].btn-secondary-inverse:active,
+input[type="submit"].btn-secondary-inverse:focus,
+input[type="submit"].btn-secondary-inverse:hover {
+  text-decoration: none;
+  border: 2px solid gray;
+  color: black;
+  background-color: gray;
+}
+
+.btn.btn-hollow, .form-item.form-type-managed-file label.btn-hollow,
+a.btn.btn-hollow,
+input[type="file"].btn-hollow,
+input[type="submit"].btn-hollow {
+  background-color: transparent;
+  color: navy;
+  border: 2px solid gray;
+}
+
+.btn.btn-hollow:active, .form-item.form-type-managed-file label.btn-hollow:active, .btn.btn-hollow:focus, .form-item.form-type-managed-file label.btn-hollow:focus, .btn.btn-hollow:hover, .form-item.form-type-managed-file label.btn-hollow:hover,
+a.btn.btn-hollow:active,
+a.btn.btn-hollow:focus,
+a.btn.btn-hollow:hover,
+input[type="file"].btn-hollow:active,
+input[type="file"].btn-hollow:focus,
+input[type="file"].btn-hollow:hover,
+input[type="submit"].btn-hollow:active,
+input[type="submit"].btn-hollow:focus,
+input[type="submit"].btn-hollow:hover {
+  color: #fff;
+  border: 2px solid navy;
+  background-color: navy;
+}
+
+.btn.btn-hollow-inverse, .form-item.form-type-managed-file label.btn-hollow-inverse,
+a.btn.btn-hollow-inverse,
+input[type="file"].btn-hollow-inverse,
+input[type="submit"].btn-hollow-inverse {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn.btn-hollow-inverse:active, .form-item.form-type-managed-file label.btn-hollow-inverse:active, .btn.btn-hollow-inverse:focus, .form-item.form-type-managed-file label.btn-hollow-inverse:focus, .btn.btn-hollow-inverse:hover, .form-item.form-type-managed-file label.btn-hollow-inverse:hover,
+a.btn.btn-hollow-inverse:active,
+a.btn.btn-hollow-inverse:focus,
+a.btn.btn-hollow-inverse:hover,
+input[type="file"].btn-hollow-inverse:active,
+input[type="file"].btn-hollow-inverse:focus,
+input[type="file"].btn-hollow-inverse:hover,
+input[type="submit"].btn-hollow-inverse:active,
+input[type="submit"].btn-hollow-inverse:focus,
+input[type="submit"].btn-hollow-inverse:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: navy;
+  text-decoration: none;
+}
+
+.btn.btn-pager, .form-item.form-type-managed-file label.btn-pager,
+a.btn.btn-pager,
+input[type="file"].btn-pager,
+input[type="submit"].btn-pager {
+  border-radius: 0;
+  background-color: gray;
+  padding: 10px 12px;
+  color: black;
+  letter-spacing: 2px;
+  border: none;
+  font-size: 0.8125rem;
+}
+
+.form-item.form-type-managed-file {
+  position: relative;
+}
+
+.form-item.form-type-managed-file input[type="file"] {
+  visibility: hidden;
+}
+
+.field--type-text-long a:not(.btn) {
+  color: blue;
+  text-decoration: none;
+  transition: all 0.6s ease 0s;
+  font-weight: 500;
+}
+
+.field--type-text-long a:not(.btn):active, .field--type-text-long a:not(.btn):focus, .field--type-text-long a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+.has-dark-bg .field--type-text-long a:not(.btn) {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.has-dark-bg .field--type-text-long a:not(.btn):active, .has-dark-bg .field--type-text-long a:not(.btn):focus, .has-dark-bg .field--type-text-long a:not(.btn):hover {
+  text-decoration: none;
+}
+
+.has-arrow {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: all .6s;
+}
+
+.has-arrow:after {
+  display: inline-block;
+  margin-left: 10px;
+  transition: all .6s;
+}
+
+.has-arrow:active:after, .has-arrow:focus:after, .has-arrow:hover:after {
+  margin-left: 14px;
+}
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;
   font-size: 100%;
   font-weight: 400;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+}
+
+.h1,
 h1 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 35px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
+  color: #000;
   margin-top: 0;
 }
 
 @media (min-width: 64em) {
+  .h1,
   h1 {
-    font-size: 3rem;
-    line-height: 3.125rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.75rem;
+    line-height: 4rem;
+    margin-bottom: 1.75rem;
   }
 }
 
@@ -413,6 +630,7 @@ h2 {
   font-size: 1.5625rem;
   line-height: 1.875rem;
   margin-bottom: 1.5625rem;
+  color: #000;
   margin-top: 0;
 }
 
@@ -431,6 +649,7 @@ h3 {
   font-size: 1.25rem;
   line-height: 1.5625rem;
   margin-bottom: 1.25rem;
+  color: #000;
   margin-top: 0;
 }
 
@@ -448,6 +667,7 @@ h4 {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5625rem;
+  color: #000;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -467,7 +687,7 @@ h5 {
   letter-spacing: 1px;
   font-size: 0.75rem;
   line-height: 1.5625rem;
-  color: #5f574f;
+  color: #000;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -486,6 +706,7 @@ h6 {
   font-size: 1rem;
   line-height: 1.5625rem;
   margin-bottom: 0.78125rem;
+  color: #000;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -501,25 +722,47 @@ h6 {
 .p,
 p {
   font-size: 1rem;
-  line-height: 1.5625rem;
+  line-height: 2rem;
   margin-top: 0;
+  margin-bottom: 10px;
+  letter-spacing: .05rem;
 }
 
 @media (min-width: 64em) {
   .p,
   p {
-    font-size: 1.125rem;
-    line-height: 1.875rem;
+    font-size: 1.0625rem;
+    line-height: 2.125rem;
   }
+}
+
+.footer {
+  background-color: #000;
+  padding: 60px 0;
+}
+
+.footer * {
+  color: #fff;
 }
 
 .hero {
   margin-bottom: 80px;
 }
 
+.hero__media {
+  line-height: 0;
+}
+
 .hero__media img {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 90em) {
+  .hero__media img {
+    height: 1100px;
+    object-fit: cover;
+  }
 }
 
 .hero__wrap {
@@ -529,7 +772,7 @@ p {
 .hero__content {
   position: absolute;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
 }
 
@@ -538,9 +781,29 @@ p {
 }
 
 .hero__content-inner {
-  max-width: 1000px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 30px 10px;
+}
+
+.hero__text-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.hero__title {
+  width: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.hero__text {
+  width: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  padding-left: 40px;
 }
 
 .masthead {
@@ -570,6 +833,8 @@ p {
 .masthead__nav-inner {
   max-width: 1100px;
   margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .masthead ul {
@@ -580,8 +845,33 @@ p {
   list-style: none;
 }
 
+.masthead__logo img {
+  width: 180px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
 body {
   background-color: whitesmoke;
+}
+
+.tweet {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  /* Tweet item. */
+  /* Override inline styles. */
+}
+
+.tweet .twitter-tweet {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto !important;
+  max-width: 490px !important;
 }
 
 ul.tabs {
@@ -615,11 +905,11 @@ ul.tabs > li a {
 }
 
 ul.tabs > li a:hover {
-  background-color: #8c1515;
+  background-color: #890c0c;
 }
 
 ul.tabs > li a.is-active {
-  background-color: #8c1515;
+  background-color: #890c0c;
 }
 
 abbr[title] {
@@ -633,7 +923,7 @@ abbr[title] {
 .node--unpublished:before {
   content: "Unpublished";
   font-size: 6.25rem;
-  color: #8c1515;
+  color: #890c0c;
   position: relative;
   z-index: -10;
   width: 100%;

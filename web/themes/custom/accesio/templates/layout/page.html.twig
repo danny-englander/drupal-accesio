@@ -45,13 +45,19 @@
 #}
 <div class="l-container l-container--main">
 
-  <header role="header" class="masthead">
+  <!-- Start header. -->
+  <header role="banner" class="masthead">
     {# Header include file. #}
     {% include '@accesio/partials/header.html.twig' %}
   </header>
 
-  {{ page.highlighted }}
-  {{ page.help }}
+  {% if page.content_top %}
+    {{ page.content_top }}
+  {% endif %}
+
+  {% if page.help %}
+    {{ page.help }}
+  {% endif %}
 
   <main role="main">
     {# Link is in html.html.twig. #}
@@ -66,13 +72,18 @@
         {{ page.sidebar }}
       </aside>
     {% endif %}
-
   </main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
+  {% if (page.footer_upper) or (page.footer_lower) %}
+    <footer role="contentinfo" class="footer">
+      {% if page.footer_upper %}
+        {{ page.footer_upper }}
+      {% endif %}
+
+      {% if page.footer_lower %}
+        {{ page.footer_lower }}
+      {% endif %}
+
     </footer>
   {% endif %}
-
 </div><!-- /.l-container -->

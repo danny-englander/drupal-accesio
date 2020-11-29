@@ -31,6 +31,7 @@
         "drupal/gin": "^3.0@alpha",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/lazy": "^3.6",
+        "drupal/link_attributes": "^1.11",
         "drupal/media_entity_twitter": "^2.4",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
