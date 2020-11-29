@@ -1,0 +1,30 @@
+uuid: 470cada0-ef12-489a-a561-6b320e68da4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_column_count
+field_name: field_column_count
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: has_one
+      label: '1 Column'
+    -
+      value: has_two
+      label: '2 Columns'
+    -
+      value: has_three
+      label: '3 Columns'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

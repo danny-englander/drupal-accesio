@@ -1,0 +1,99 @@
+/*
+Accordion styling.
+ */
+.js-accordion {
+  @include container(1100px);
+  margin-bottom: 50px;
+  padding: 10px 0 0 0;
+
+  @include mq($from: small_desktop) {
+    padding-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  &__header {
+    @include rem(font-size, 22px);
+    display: block;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    padding: 18px 0 18px 10px;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    @include icon-before(icon_plus, 28px, 28px, $position: relative, $pos-top: 0px, $pos-left: -14px);
+    border-bottom: 1px solid $primary-color;
+
+    &:hover {
+      color: $primary-color;;
+    }
+
+    &:before {
+      transition-duration: 0.8s;
+      transition-property: transform;
+    }
+
+    &[aria-expanded="true"] {
+      margin-bottom: 0;
+      border-bottom: none;
+      @include icon-before(icon_plus, 28px, 28px, $rotate: 405);
+      border-bottom: none;
+      color: $primary-color;;
+    }
+
+    &:focus {
+      outline: none;
+
+      .user-is-tabbing & {
+        //    border: 2px solid $system-message-red;
+        //     outline: 2px solid $system-message-red;
+      }
+    }
+  }
+
+  &__content {
+    padding: 4px 40px;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  /* title in content hidden by default */
+  .animated-accordion__title {
+    @include visually-hidden();
+  }
+
+  .animated-accordion__panel {
+    display: block;
+    overflow: hidden;
+    opacity: 1;
+    transition: visibility 0s ease, max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 100em;
+    visibility: visible;
+    transition-delay: 0s;
+    margin: 0 0 20px 0;
+    padding: 0;
+    //  border: 2px solid $dk-blue;
+    border-top: none;
+  }
+
+  /* This is the hidden state */
+  [aria-hidden="true"].animated-accordion__panel {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0.1s, 0s, 0s;
+    margin: 0;
+    padding: 0;
+
+
+    @media print {
+      visibility: visible;
+      opacity: 1;
+      max-height: 100em;
+    }
+  }
+}

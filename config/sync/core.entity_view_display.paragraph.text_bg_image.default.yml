@@ -1,0 +1,32 @@
+uuid: 928b1550-a3b8-4c95-8dfa-d2b5396e3710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_bg_image.field_image
+    - field.field.paragraph.text_bg_image.field_text_format
+    - paragraphs.paragraphs_type.text_bg_image
+  module:
+    - text
+id: paragraph.text_bg_image.default
+targetEntityType: paragraph
+bundle: text_bg_image
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_text_format:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

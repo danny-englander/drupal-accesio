@@ -38,20 +38,28 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
+
+{% set classes = [
+  'text-bg',
   'component__item',
-  'tweet',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
   not paragraph.isPublished() ? 'component__item--unpublished'
-]
-%}
+] %}
+
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      {{ content.field_tweet | field_value }}
+      {% if content.field_image | render %}
+        <div class="text-bg__background lazyload" data-bg="{{ image_style_hero }}"></div>
+      {% endif %}
+
+      <div class="text-bg__content">
+        {% if content.field_text_format | render %}
+          {{ content.field_text_format }}
+        {% endif %}
+      </div>
 
     {% endblock %}
   </div>

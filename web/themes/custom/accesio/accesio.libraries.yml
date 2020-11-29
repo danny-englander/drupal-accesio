@@ -5,6 +5,13 @@ accesio:
       //fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+SC&display=swap: { type: external, minified: true }
       dist/css/grid.css: { minified: true }
       dist/css/accesio.css: { minified: true }
+  js:
+    dist/js/accesio.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.dialog.ajax
 
 twitter:
   js:
@@ -15,3 +22,7 @@ twitter:
         async: true
         id: twitter-wjs
         crossorigin: anonymous
+
+accordion:
+  js:
+    dist/js/jquery.accordion.js: {}

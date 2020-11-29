@@ -1,0 +1,28 @@
+uuid: 04c4e259-c505-46c8-bc33-9859b4d1571b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_format
+    - paragraphs.paragraphs_type.text_bg_image
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    restricted_html: '0'
+    plain_text: '0'
+id: paragraph.text_bg_image.field_text_format
+field_name: field_text_format
+entity_type: paragraph
+bundle: text_bg_image
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

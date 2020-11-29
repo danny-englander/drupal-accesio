@@ -30,6 +30,7 @@ lazysizes:
   loadHidden: true
   ricTimeout: 0
   throttleDelay: 125
-  plugins: {  }
+  plugins:
+    unveilhooks: unveilhooks
 _core:
   default_config_hash: y7LBTPYVTcA6s3XuXz3mXS0he0kmx7NQWmTz2fDSI-s

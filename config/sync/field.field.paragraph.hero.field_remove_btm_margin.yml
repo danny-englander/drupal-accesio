@@ -1,0 +1,23 @@
+uuid: d1e2bd28-c83b-4127-9768-a2d98e2f100c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_remove_btm_margin
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.field_remove_btm_margin
+field_name: field_remove_btm_margin
+entity_type: paragraph
+bundle: hero
+label: 'Remove bottom margin'
+description: 'Check this box to remove the bottom margin. '
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

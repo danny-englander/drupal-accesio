@@ -38,21 +38,21 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
+{# Attach the library for . #}
+{{ attach_library('accesio/accordion') }}
+
+{% set classes = [
+  'js-accordion',
   'component__item',
-  'tweet',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
   not paragraph.isPublished() ? 'component__item--unpublished'
-]
-%}
+] %}
+
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }} data-accordion-prefix-classes="animated-accordion" data-multiselectable="false" id="js-accordion-id-{{ paragraph.id() }}">
     {% block content %}
-
-      {{ content.field_tweet | field_value }}
-
+      {{ content.field_accordion_item | field_value }}
     {% endblock %}
   </div>
 {% endblock paragraph %}

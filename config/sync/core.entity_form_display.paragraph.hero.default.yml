@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.hero.field_image
     - field.field.paragraph.hero.field_link
+    - field.field.paragraph.hero.field_remove_btm_margin
     - field.field.paragraph.hero.field_text
     - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
@@ -39,6 +40,13 @@ content:
         title: false
     third_party_settings: {  }
     type: link_attributes
+    region: content
+  field_remove_btm_margin:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_text:
     weight: 1

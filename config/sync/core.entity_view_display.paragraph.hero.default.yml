@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.hero.field_image
     - field.field.paragraph.hero.field_link
+    - field.field.paragraph.hero.field_remove_btm_margin
     - field.field.paragraph.hero.field_text
     - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
@@ -35,6 +36,16 @@ content:
       target: ''
     third_party_settings: {  }
     type: link_separate
+    region: content
+  field_remove_btm_margin:
+    weight: 4
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_text:
     weight: 2

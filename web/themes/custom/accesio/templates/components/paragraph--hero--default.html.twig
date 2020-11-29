@@ -46,10 +46,10 @@
 
 {% set classes = [
   'hero',
-  'component',
-  'component--type--' ~ paragraph.bundle|clean_class,
-  view_mode ? 'component--view-mode--' ~ view_mode|clean_class,
-  not paragraph.isPublished() ? 'component--unpublished'
+  'component__item',
+  'component__item--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'component__item--unpublished'
 ] %}
 
 {% block paragraph %}

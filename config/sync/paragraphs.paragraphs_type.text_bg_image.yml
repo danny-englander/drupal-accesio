@@ -1,0 +1,10 @@
+uuid: 27c52b82-0cc9-44e0-805b-fad83727b8d1
+langcode: en
+status: true
+dependencies: {  }
+id: text_bg_image
+label: 'Text with background image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -41,7 +41,6 @@
 {%
   set classes = [
   'component__item',
-  'tweet',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
   not paragraph.isPublished() ? 'component__item--unpublished'
@@ -50,9 +49,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-
-      {{ content.field_tweet | field_value }}
-
+      {{ content }}
     {% endblock %}
   </div>
 {% endblock paragraph %}
