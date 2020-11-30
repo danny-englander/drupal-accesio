@@ -6,11 +6,12 @@ dependencies:
     - field.field.paragraph.hero.field_image
     - field.field.paragraph.hero.field_link
     - field.field.paragraph.hero.field_remove_btm_margin
-    - field.field.paragraph.hero.field_text
+    - field.field.paragraph.hero.field_text_format
     - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
   module:
     - link
+    - text
 id: paragraph.hero.default
 targetEntityType: paragraph
 bundle: hero
@@ -26,7 +27,7 @@ content:
     third_party_settings: {  }
     region: content
   field_link:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -38,7 +39,7 @@ content:
     type: link_separate
     region: content
   field_remove_btm_margin:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       format: boolean
@@ -47,12 +48,12 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_text:
-    weight: 2
+  field_text_format:
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_title:
     weight: 1

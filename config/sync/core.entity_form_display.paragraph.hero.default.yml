@@ -6,12 +6,13 @@ dependencies:
     - field.field.paragraph.hero.field_image
     - field.field.paragraph.hero.field_link
     - field.field.paragraph.hero.field_remove_btm_margin
-    - field.field.paragraph.hero.field_text
+    - field.field.paragraph.hero.field_text_format
     - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
   module:
     - link_attributes
     - media_library
+    - text
 id: paragraph.hero.default
 targetEntityType: paragraph
 bundle: hero
@@ -19,13 +20,13 @@ mode: default
 content:
   field_image:
     type: media_library_widget
-    weight: 3
+    weight: 4
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_link:
-    weight: 2
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -42,19 +43,19 @@ content:
     type: link_attributes
     region: content
   field_remove_btm_margin:
-    weight: 4
+    weight: 5
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_text:
-    weight: 1
+  field_text_format:
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
   field_title:
     weight: 0

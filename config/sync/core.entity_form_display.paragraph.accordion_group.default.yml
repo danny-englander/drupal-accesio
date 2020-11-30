@@ -1,19 +1,19 @@
-uuid: 1949eb65-9d4f-4c18-953f-e340d3ef7b42
+uuid: b6d58c19-c428-4897-ba73-0e606eb6936e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.columns.field_components
-    - paragraphs.paragraphs_type.columns
+    - field.field.paragraph.accordion_group.field_accordion_item
+    - field.field.paragraph.accordion_group.field_title
+    - paragraphs.paragraphs_type.accordion_group
   module:
     - paragraphs
-id: paragraph.columns.default
+id: paragraph.accordion_group.default
 targetEntityType: paragraph
-bundle: columns
+bundle: accordion_group
 mode: default
 content:
-  field_components:
-    type: paragraphs
+  field_accordion_item:
     weight: 1
     settings:
       title: Paragraph
@@ -24,12 +24,21 @@ content:
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: accordion_item
       features:
-        add_above: add_above
+        add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

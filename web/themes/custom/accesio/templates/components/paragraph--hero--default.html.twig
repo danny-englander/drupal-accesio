@@ -70,9 +70,9 @@
                 <h1>{{ content.field_title | field_value }}</h1>
               </div>
 
-              {% if content.field_text | render %}
+              {% if content.field_text_format | render %}
                 <div class="hero__text">
-                  <p>{{ content.field_text | field_value }}</p>
+                  {{ content.field_text_format | field_value }}
                 </div>
               {% endif %}
 

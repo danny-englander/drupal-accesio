@@ -1,15 +1,15 @@
-uuid: c9fcba56-0886-41ac-a1f1-8527020cefab
+uuid: 1e7de7b1-6296-4cf7-b442-04c40e61b31f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.accordion_item
-id: paragraph.accordion_item.field_title
+    - paragraphs.paragraphs_type.accordion_group
+id: paragraph.accordion_group.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: accordion_item
-label: 'Accordion Item Title'
+bundle: accordion_group
+label: 'Accordion Group Title'
 description: ''
 required: false
 translatable: true

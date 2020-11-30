@@ -1,21 +1,18 @@
-uuid: f461b5d8-9066-4da7-8fce-18f993713c9a
+uuid: a5cc797e-79f5-49ce-801d-84528b255c8a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_components
+    - field.storage.paragraph.field_accordion_group
     - paragraphs.paragraphs_type.accordion
-    - paragraphs.paragraphs_type.columns
-    - paragraphs.paragraphs_type.text
-    - paragraphs.paragraphs_type.title
-    - paragraphs.paragraphs_type.tweet
+    - paragraphs.paragraphs_type.accordion_group
   module:
     - entity_reference_revisions
-id: paragraph.columns.field_components
-field_name: field_components
+id: paragraph.accordion.field_accordion_group
+field_name: field_accordion_group
 entity_type: paragraph
-bundle: columns
-label: Content
+bundle: accordion
+label: 'Accordion Group'
 description: ''
 required: false
 translatable: false
@@ -26,45 +23,42 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      title: title
-      accordion: accordion
-      text: text
-      tweet: tweet
+      accordion_group: accordion_group
     target_bundles_drag_drop:
       accordion:
-        enabled: true
-        weight: -22
-      accordion_group:
-        weight: 14
+        weight: 13
         enabled: false
+      accordion_group:
+        enabled: true
+        weight: 14
       accordion_item:
-        weight: -19
+        weight: 15
         enabled: false
       columns:
-        weight: -18
+        weight: 16
         enabled: false
       cta:
-        weight: -17
+        weight: 17
         enabled: false
       hero:
-        weight: -16
+        weight: 18
         enabled: false
       text:
-        enabled: true
-        weight: -21
+        weight: 19
+        enabled: false
       text_bg_image:
-        weight: -15
+        weight: 20
         enabled: false
       timeline:
-        weight: -14
+        weight: 21
         enabled: false
       timeline_item:
-        weight: -13
+        weight: 22
         enabled: false
       title:
-        enabled: true
-        weight: -23
+        weight: 23
+        enabled: false
       tweet:
-        enabled: true
-        weight: -20
+        weight: 24
+        enabled: false
 field_type: entity_reference_revisions

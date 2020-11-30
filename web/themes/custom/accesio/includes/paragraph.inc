@@ -103,13 +103,13 @@ function accesio_preprocess_paragraph(array &$vars) {
 
     if ($paragraph_bundle === 'columns') {
       // Check for the column count.
-      if ($paragraph->hasField('field_column_count') &&
-        !$paragraph->get('field_column_count')->isEmpty()) {
-        $cols_items = $vars["elements"]["field_column_count"]["#items"];
+      if ($paragraph->hasField('field_components') &&
+        !$paragraph->get('field_components')->isEmpty()) {
+        $cols_items = $vars["elements"]["field_components"]["#items"];
         // Count the number of items in the array.
         $item_count = count($cols_items);
         // Add a class.
-        $vars['attributes']['class'][] = 'column--count-' . $item_count;
+        $vars['attributes']['class'][] = 'columns--count-' . $item_count;
       }
     }
   }

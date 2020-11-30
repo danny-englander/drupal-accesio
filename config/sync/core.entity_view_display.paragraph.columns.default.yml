@@ -3,24 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.columns.field_column_count
     - field.field.paragraph.columns.field_components
     - paragraphs.paragraphs_type.columns
   module:
     - entity_reference_revisions
-    - options
 id: paragraph.columns.default
 targetEntityType: paragraph
 bundle: columns
 mode: default
 content:
-  field_column_count:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_key
-    region: content
   field_components:
     type: entity_reference_revisions_entity_view
     weight: 0
