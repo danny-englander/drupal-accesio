@@ -37,7 +37,7 @@ Accordion styling.
     @include icon-before(icon_plus, 28px, 28px, $position: relative, $pos-top: 0px, $pos-left: -14px);
 
     &:hover {
-      color: $primary-color;;
+      color: $primary-color;
     }
 
     &:before {
@@ -55,6 +55,7 @@ Accordion styling.
 
     &:focus {
       outline: none;
+      color: $primary-color;
 
       .user-is-tabbing & {
         //    border: 2px solid $system-message-red;

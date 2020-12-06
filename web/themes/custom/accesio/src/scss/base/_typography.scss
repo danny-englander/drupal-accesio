@@ -107,16 +107,15 @@ h6 {
   }
 }
 
+li,
 .p,
 p {
-  @include rem(font-size, 16px);
-  @include rem(line-height, 32px);
   @include rem(margin-bottom, 14px);
   margin-top: 0;
   letter-spacing: .03rem;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 17px);
-    @include rem(line-height, 28px);
+    @include rem(font-size, 16px);
+    @include rem(line-height, 32px);
   }
 }

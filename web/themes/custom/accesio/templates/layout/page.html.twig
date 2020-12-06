@@ -59,7 +59,7 @@
     {{ page.help }}
   {% endif %}
 
-  <main role="main">
+  <main id="main">
     {# Link is in html.html.twig. #}
     <a id="main-content" tabindex="-1"></a>
 
@@ -75,7 +75,7 @@
   </main>
 
   {% if (page.footer_upper) or (page.footer_lower) %}
-    <footer role="contentinfo" class="footer">
+    <footer class="footer">
       {% if page.footer_upper %}
         {{ page.footer_upper }}
       {% endif %}

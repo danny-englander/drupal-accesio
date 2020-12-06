@@ -1,0 +1,82 @@
+.timeline {
+  @include container(1280px);
+
+  position: relative;
+  overflow: hidden;
+
+  background: black;
+  color: white;
+  padding: 50px;
+  margin-bottom: 80px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-left: 1px dashed $off-white;
+    height: 94%;
+    width: 40px;
+    left: 50%;
+  }
+
+  &__wrap {
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    &:nth-child(odd) {
+
+      h2 {
+        text-align: right;
+      }
+
+      .timeline__content {
+        padding-right: 50px;
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      .timeline__content {
+        padding-left: 50px;
+      }
+
+    }
+  }
+
+  &__text {
+  //  width: 80%;
+  }
+
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__media {
+    width: 45%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__date {
+
+    h2 {
+      color: white;
+      @include rem(font-size, 80px);
+      background-color: $primary-color;
+      padding: 30px 20px 0 20px;
+      line-height: .3;
+      margin-bottom: 50px;
+
+    }
+  }
+}

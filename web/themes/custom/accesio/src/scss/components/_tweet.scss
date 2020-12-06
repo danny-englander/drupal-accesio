@@ -1,5 +1,5 @@
 .tweet {
-  max-width: 1100px;
+  @include container(1100px);
   margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 40px;

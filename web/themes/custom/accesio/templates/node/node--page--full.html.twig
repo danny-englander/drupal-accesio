@@ -79,7 +79,7 @@
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ] %}
 
-<article{{ attributes.addClass(classes) }}>
+<article{{ attributes.addClass(classes).removeAttribute('role') }}>
 
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content | without('field_hero') }}

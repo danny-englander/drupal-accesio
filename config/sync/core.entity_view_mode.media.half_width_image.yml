@@ -1,0 +1,10 @@
+uuid: 50774efd-1b5d-45dd-bb61-7ac622e64534
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.half_width_image
+label: 'Half-width Image'
+targetEntityType: media
+cache: true

@@ -1,5 +1,5 @@
 .hero {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 
   &__media {
     line-height: 0;
@@ -21,9 +21,10 @@
 
   &__content {
     position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: $black;
     width: 100%;
+    bottom: -70px;
+    border-bottom: 20px solid $primary-color;
 
     p {
       @include rem(font-size, 18px);
