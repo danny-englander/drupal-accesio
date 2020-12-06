@@ -39,18 +39,11 @@
  */
 #}
 
- {% if content.field_title | render %}
-   {% set has_title = 'timeline--has-title' %}
- {% endif %}
-
-{% set ts_style = 'timeline-' ~ timeline_style|clean_class %}
-{% set ts_bg =  'timeline-' ~ timeline_style ~ '--bg-' ~ timeline_bg %}
+{# Set a variable for the date. #}
+{% set timeline_date = content.field_date.0["#attributes"].datetime %}
 
 {% set classes = [
-  'timeline',
-  'timeline-' ~ timeline_style|clean_class,
-  ts_bg|clean_class,
-  has_title|clean_class,
+  'timeline-simple__item',
   'component__item',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
@@ -58,17 +51,24 @@
 ] %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+  <div class="timeline-simple__item-wrap">
 
-      {% if content.field_title | render %}
-        <div class="{{ ts_style }}__title">
-          <h2>{{ content.field_title | field_value }}</h2>
-        </div>
-      {% endif %}
+    <div class="timeline-simple__item-content">
 
-      {{ content.field_timeline_item | field_value }}
+      <div class="timeline-simple__item-date">
+        <h2>{{ timeline_date | date('U')| format_date('custom', 'Y') }}</h2>
+      </div>
 
-    {% endblock %}
+      <div class="timeline-simple__text">
+        {{ content.field_text_format | field_value }}
+      </div>
+    </div>
+
   </div>
+
+  {% endblock %}
+</div>
 {% endblock paragraph %}
+

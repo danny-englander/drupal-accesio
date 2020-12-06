@@ -90,6 +90,7 @@ function accesio_preprocess_paragraph(array &$vars) {
 
     // Hero bundle.
     if ($paragraph_bundle === 'hero') {
+
       // Check for the field_remove_btm_margin boolean value.
       if ($paragraph->hasField('field_remove_btm_margin') &&
         !$paragraph->get('field_remove_btm_margin')->isEmpty()) {
@@ -103,6 +104,7 @@ function accesio_preprocess_paragraph(array &$vars) {
 
     // Columns bundle.
     if ($paragraph_bundle === 'columns') {
+
       // Check for the column count.
       if ($paragraph->hasField('field_components') &&
         !$paragraph->get('field_components')->isEmpty()) {
@@ -116,11 +118,11 @@ function accesio_preprocess_paragraph(array &$vars) {
 
     // Timeline bundle.
     if ($paragraph_bundle === 'timeline') {
+
       if ($paragraph->hasField('field_timeline_style') &&
         !$paragraph->get('field_timeline_style')->isEmpty()) {
         $timeline_style = $paragraph->get('field_timeline_style')->value;
-        // Add a class.
-        $vars['attributes']['class'][] = 'timeline--style-' . $timeline_style;
+        // Define the timeline style for twig.
         $vars['timeline_style'] = $timeline_style;
       }
 
@@ -128,22 +130,29 @@ function accesio_preprocess_paragraph(array &$vars) {
         !$paragraph->get('field_timeline_bg')->isEmpty()) {
         $timeline_bg = $paragraph->get('field_timeline_bg')->value;
         // Add a class.
-        $vars['attributes']['class'][] = 'timeline--bg-' . $timeline_bg;
+        $vars['timeline_bg'] = $timeline_bg;
       }
     }
+  }
+}
 
-    // Timeline item bundle.
-    if ($paragraph_bundle === 'timeline_item') {
-      // Get the "host" value from the parent for field_timeline_style.
-      if (!empty($paragraph->getParentEntity()->field_timeline_style->value)) {
-        $host_value = $paragraph->getParentEntity()->field_timeline_style->value;
-        // Check to make sure it's not empty.
-        if ($host_value === 'media') {
-          // Set a twig variable.
-          $vars['is_media'] = TRUE;
-          $vars['timeline_style'] = $host_value;
-        }
-      }
+/**
+ * Implements hook_theme_suggestions_paragraph_alter().
+ */
+function accesio_theme_suggestions_paragraph_alter(array &$suggestions, array $vars) {
+  // Define various vars needed.
+  // From paragraphs_theme_suggestions_paragraph.
+  $paragraph = $vars['elements']['#paragraph'];
+  // Define the bundle.
+  $paragraph_bundle = $paragraph->bundle();
+
+  // The paragraph bundle name, timeline_item.
+  if ($paragraph_bundle === 'timeline_item') {
+    // Check for the field_timeline_style list value.
+    if (!empty($paragraph->getParentEntity()->field_timeline_style->value)) {
+      // Get the host value and create a template suggestion based on that.
+      $host_value = $paragraph->getParentEntity()->field_timeline_style->value;
+      $suggestions[] = $vars['theme_hook_original'] . '__timeline_item__' . $host_value;
     }
   }
 }

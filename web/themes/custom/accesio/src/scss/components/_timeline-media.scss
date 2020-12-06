@@ -1,25 +1,38 @@
-.timeline {
+/*
+Timeline (media style).
+ */
+.timeline-media {
   @include container(1280px);
-
   position: relative;
   overflow: hidden;
-
-  background: black;
-  color: white;
   padding: 50px;
   margin-bottom: 80px;
+  background-color: $black;
+  color: $white;
+
+  &--bg-light {
+    background-color: $white;
+    color: $black;
+  }
 
   &:before {
     content: '';
     position: absolute;
     display: inline-block;
     border-left: 1px dashed $off-white;
-    height: 94%;
     width: 40px;
     left: 50%;
+    height: 94%;
+    top: 160px;
   }
 
-  &__wrap {
+  &__title {
+    padding-bottom: 30px;
+
+    h2 {
+      color: $white;
+      text-align: center;
+    }
   }
 
   &__item {
@@ -33,7 +46,7 @@
         text-align: right;
       }
 
-      .timeline__content {
+      .timeline-media__content {
         padding-right: 50px;
       }
     }
@@ -41,15 +54,10 @@
     &:nth-child(even) {
       flex-direction: row-reverse;
 
-      .timeline__content {
+      .timeline-media__content {
         padding-left: 50px;
       }
-
     }
-  }
-
-  &__text {
-  //  width: 80%;
   }
 
   &__content {
@@ -58,7 +66,7 @@
     flex-direction: column;
   }
 
-  &__media {
+  &__image {
     width: 45%;
 
     img {
@@ -76,7 +84,6 @@
       padding: 30px 20px 0 20px;
       line-height: .3;
       margin-bottom: 50px;
-
     }
   }
 }

@@ -43,7 +43,7 @@
 {% set timeline_date = content.field_date.0["#attributes"].datetime %}
 
 {% set classes = [
-  'timeline__item',
+  'timeline-media__item',
   'component__item',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
@@ -54,19 +54,19 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      <div class="timeline__content">
+      <div class="timeline-media__content">
 
-        <div class="timeline__date">
+        <div class="timeline-media__date">
           <h2>{{ timeline_date | date('U')| format_date('custom', 'Y') }}</h2>
         </div>
 
-        <div class="timeline__text">
+        <div class="timeline-media__text">
           {{ content.field_text_format | field_value }}
         </div>
       </div>
 
       {% if content.field_image | render %}
-        <div class="timeline__media">
+        <div class="timeline-media__image">
           {{ content.field_image | field_value }}
         </div>
       {% endif %}
