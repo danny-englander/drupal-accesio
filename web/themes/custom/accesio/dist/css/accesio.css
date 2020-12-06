@@ -903,6 +903,7 @@ Branding section.
 
 .hero {
   margin-bottom: 100px;
+  padding-top: 70px;
 }
 
 .hero__media {
@@ -1045,13 +1046,13 @@ body {
 }
 
 .component__item--type--text {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.timeline {
+.timeline-media {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -1065,17 +1066,27 @@ body {
   margin-bottom: 80px;
 }
 
-.timeline:before {
+.timeline-media:before {
   content: '';
   position: absolute;
   display: inline-block;
   border-left: 1px dashed #f5f5f5;
-  height: 94%;
   width: 40px;
   left: 50%;
+  height: 94%;
+  top: 160px;
 }
 
-.timeline__item {
+.timeline-media__title {
+  padding-bottom: 30px;
+}
+
+.timeline-media__title h2 {
+  color: white;
+  text-align: center;
+}
+
+.timeline-media__item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1083,24 +1094,24 @@ body {
   margin-bottom: 100px;
 }
 
-.timeline__item:nth-child(odd) h2 {
+.timeline-media__item:nth-child(odd) h2 {
   text-align: right;
 }
 
-.timeline__item:nth-child(odd) .timeline__content {
+.timeline-media__item:nth-child(odd) .timeline__content {
   padding-right: 50px;
 }
 
-.timeline__item:nth-child(even) {
+.timeline-media__item:nth-child(even) {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-.timeline__item:nth-child(even) .timeline__content {
+.timeline-media__item:nth-child(even) .timeline__content {
   padding-left: 50px;
 }
 
-.timeline__content {
+.timeline-media__content {
   width: 50%;
   display: -ms-flexbox;
   display: flex;
@@ -1108,16 +1119,16 @@ body {
   flex-direction: column;
 }
 
-.timeline__media {
+.timeline-media__media {
   width: 45%;
 }
 
-.timeline__media img {
+.timeline-media__media img {
   width: 100%;
   height: auto;
 }
 
-.timeline__date h2 {
+.timeline-media__date h2 {
   color: white;
   font-size: 5rem;
   background-color: #890c0c;

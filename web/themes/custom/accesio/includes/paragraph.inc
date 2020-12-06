@@ -93,7 +93,7 @@ function accesio_preprocess_paragraph(array &$vars) {
       // Check for the field_remove_btm_margin boolean value.
       if ($paragraph->hasField('field_remove_btm_margin') &&
         !$paragraph->get('field_remove_btm_margin')->isEmpty()) {
-        // if the value is true...
+        // If the value is true...
         if ($paragraph->get('field_remove_btm_margin')->value === '1') {
           // Add a class if the margin is to be removed.
           $vars['attributes']['class'][] = 'remove-bottom-margin';
@@ -101,6 +101,7 @@ function accesio_preprocess_paragraph(array &$vars) {
       }
     }
 
+    // Columns bundle.
     if ($paragraph_bundle === 'columns') {
       // Check for the column count.
       if ($paragraph->hasField('field_components') &&
@@ -110,6 +111,38 @@ function accesio_preprocess_paragraph(array &$vars) {
         $item_count = count($cols_items);
         // Add a class.
         $vars['attributes']['class'][] = 'columns--count-' . $item_count;
+      }
+    }
+
+    // Timeline bundle.
+    if ($paragraph_bundle === 'timeline') {
+      if ($paragraph->hasField('field_timeline_style') &&
+        !$paragraph->get('field_timeline_style')->isEmpty()) {
+        $timeline_style = $paragraph->get('field_timeline_style')->value;
+        // Add a class.
+        $vars['attributes']['class'][] = 'timeline--style-' . $timeline_style;
+        $vars['timeline_style'] = $timeline_style;
+      }
+
+      if ($paragraph->hasField('field_timeline_bg') &&
+        !$paragraph->get('field_timeline_bg')->isEmpty()) {
+        $timeline_bg = $paragraph->get('field_timeline_bg')->value;
+        // Add a class.
+        $vars['attributes']['class'][] = 'timeline--bg-' . $timeline_bg;
+      }
+    }
+
+    // Timeline item bundle.
+    if ($paragraph_bundle === 'timeline_item') {
+      // Get the "host" value from the parent for field_timeline_style.
+      if (!empty($paragraph->getParentEntity()->field_timeline_style->value)) {
+        $host_value = $paragraph->getParentEntity()->field_timeline_style->value;
+        // Check to make sure it's not empty.
+        if ($host_value === 'media') {
+          // Set a twig variable.
+          $vars['is_media'] = TRUE;
+          $vars['timeline_style'] = $host_value;
+        }
       }
     }
   }
