@@ -53,11 +53,11 @@
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="timeline-simple__item-wrap">
+  <div class="timeline-simple__wrap">
 
-    <div class="timeline-simple__item-content">
+    <div class="timeline-simple__content">
 
-      <div class="timeline-simple__item-date">
+      <div class="timeline-simple__date">
         <h2>{{ timeline_date | date('U')| format_date('custom', 'Y') }}</h2>
       </div>
 
