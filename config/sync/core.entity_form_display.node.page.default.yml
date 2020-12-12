@@ -7,8 +7,52 @@ dependencies:
     - field.field.node.page.field_hide_title
     - node.type.page
   module:
+    - field_group
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Tabs
+    group_content:
+      children:
+        - field_components
+      parent_name: group_tabs
+      weight: 10
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+    group_settings:
+      children:
+        - field_hide_title
+      parent_name: group_tabs
+      weight: 11
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Settings
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
 id: node.page.default
@@ -24,7 +68,7 @@ content:
     third_party_settings: {  }
   field_components:
     type: paragraphs
-    weight: 1
+    weight: 2
     settings:
       title: Component
       title_plural: Components
@@ -42,7 +86,7 @@ content:
     third_party_settings: {  }
     region: content
   field_hide_title:
-    weight: 2
+    weight: 3
     settings:
       display_label: true
     third_party_settings: {  }
