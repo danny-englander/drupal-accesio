@@ -39,6 +39,11 @@
  */
 #}
 
+{# if link target is not empty, set a variable. #}
+{% if content.field_link.0["#url"].getOptions().attributes .target | render %}
+  {% set target = 'target = _' ~ content.field_link.0["#url"].getOptions().attributes .target %}
+{% endif %}
+
 {% set classes = [
   'text-bg',
   'component__item',
@@ -51,13 +56,26 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      {% if content.field_image | render %}
+      {% if content.field_media | render %}
         <div class="text-bg__background lazyload" data-bg="{{ image_style_hero }}"></div>
       {% endif %}
 
       <div class="text-bg__content">
         {% if content.field_text_format | render %}
           {{ content.field_text_format }}
+        {% endif %}
+
+        {% if content.field_link | render %}
+          <div class="text-bg__link">
+            <a class="btn"
+               href="{{ content.field_link.0["#url_title"] }}"
+              {{ target }}
+               role="button"
+               title="{{ 'Call to action:'|t }} {{ content.field_link.0["#title"] }}"
+               aria-label="{{ 'Call to action:'|t }} {{ content.field_link.0["#title"] }}">
+              {{ content.field_link.0["#title"] }}
+            </a>
+          </div>
         {% endif %}
       </div>
 

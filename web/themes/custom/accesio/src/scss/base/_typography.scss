@@ -30,15 +30,15 @@ h1 {
 .h2,
 h2 {
   font-weight: 500;
-  @include rem(font-size, 25px);
+  @include rem(font-size, 28px);
   @include rem(line-height, 30px);
   @include rem(margin-bottom, 25px);
   color: $black;
   margin-top: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 44px);
-    @include rem(line-height, 48px);
+    @include rem(font-size, 50px);
+    @include rem(line-height, 54px);
     @include rem(margin-bottom, 28px);
   }
 }
@@ -107,15 +107,18 @@ h6 {
   }
 }
 
-li,
-.p,
-p {
-  @include rem(margin-bottom, 14px);
-  margin-top: 0;
-  letter-spacing: .03rem;
+.page-wrap {
+  li,
+  .p,
+  p {
+    @include rem(margin-bottom, 14px);
+    margin-top: 0;
+    letter-spacing: .03rem;
 
-  @include mq($from: small_desktop) {
-    @include rem(font-size, 16px);
-    @include rem(line-height, 32px);
+    @include mq($from: small_desktop) {
+      @include rem(font-size, 16px);
+      @include rem(line-height, 32px);
+    }
   }
 }
+

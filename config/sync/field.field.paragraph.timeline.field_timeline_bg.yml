@@ -1,0 +1,21 @@
+uuid: 47d0ec78-4c60-4e6e-9de6-2561ff2cdd9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_timeline_bg
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - options
+id: paragraph.timeline.field_timeline_bg
+field_name: field_timeline_bg
+entity_type: paragraph
+bundle: timeline
+label: 'Timeline Background'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

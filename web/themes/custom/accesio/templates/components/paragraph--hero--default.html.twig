@@ -59,7 +59,7 @@
       <div class="hero__wrap">
 
         <div class="hero__media">
-          {{ content.field_image | field_value }}
+          {{ content.field_media | field_value }}
         </div>
 
         <div class="hero__content">
@@ -67,7 +67,13 @@
 
             <div class="hero__text-wrap">
               <div class="hero__title">
-                <h1>{{ content.field_title | field_value }}</h1>
+
+                {% if is_h1 | render %}
+                  {# if h1 checkbox has been filled. #}
+                  <h1>{{ content.field_title | field_value }}</h1>
+                {% else %}
+                  <h2>{{ content.field_title | field_value }}</h2>
+                {% endif %}
               </div>
 
               {% if content.field_text_format | render %}

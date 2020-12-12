@@ -3,22 +3,36 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_bg_image.field_image
+    - field.field.paragraph.text_bg_image.field_link
+    - field.field.paragraph.text_bg_image.field_media
     - field.field.paragraph.text_bg_image.field_text_format
     - paragraphs.paragraphs_type.text_bg_image
   module:
+    - link
     - text
 id: paragraph.text_bg_image.default
 targetEntityType: paragraph
 bundle: text_bg_image
 mode: default
 content:
-  field_image:
-    weight: 1
+  field_link:
+    weight: 2
     label: hidden
     settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_media:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
       view_mode: default
-      link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content

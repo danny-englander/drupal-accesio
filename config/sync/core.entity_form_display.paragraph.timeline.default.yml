@@ -3,7 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.timeline.field_timeline_bg
     - field.field.paragraph.timeline.field_timeline_item
+    - field.field.paragraph.timeline.field_timeline_style
+    - field.field.paragraph.timeline.field_title
     - paragraphs.paragraphs_type.timeline
   module:
     - paragraphs
@@ -12,9 +15,15 @@ targetEntityType: paragraph
 bundle: timeline
 mode: default
 content:
+  field_timeline_bg:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_timeline_item:
     type: paragraphs
-    weight: 0
+    weight: 1
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -30,6 +39,20 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    region: content
+  field_timeline_style:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

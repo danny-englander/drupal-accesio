@@ -1,10 +1,10 @@
-uuid: 50774efd-1b5d-45dd-bb61-7ac622e64534
+uuid: cec38f99-bf2b-4f1e-838b-24ae3a6ad590
 langcode: en
 status: true
 dependencies:
   module:
     - media
-id: media.half_width_image
-label: 'Half-width Image'
+id: media.half_width
+label: 'Half width'
 targetEntityType: media
 cache: true

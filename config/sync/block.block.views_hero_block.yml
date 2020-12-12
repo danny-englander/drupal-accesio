@@ -1,6 +1,6 @@
 uuid: df65941c-f36c-4145-be30-9e0a0201ab92
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.hero

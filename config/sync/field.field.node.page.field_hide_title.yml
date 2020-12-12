@@ -1,0 +1,23 @@
+uuid: af67c765-8772-4970-a4a6-c803022f3f66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_title
+    - node.type.page
+id: node.page.field_hide_title
+field_name: field_hide_title
+entity_type: node
+bundle: page
+label: 'Visually hide title'
+description: 'Check this box if the page title will be rendered by some other means such as in a Hero component.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

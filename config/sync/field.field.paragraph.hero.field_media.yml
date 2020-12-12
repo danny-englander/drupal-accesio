@@ -1,19 +1,19 @@
-uuid: bb5af216-283b-4541-9028-b3868b61afa7
+uuid: d2120ef6-4600-47ee-aefe-f4e5467ab751
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
+    - field.storage.paragraph.field_media
     - media.type.image
     - media.type.remote_video
     - paragraphs.paragraphs_type.hero
-id: paragraph.hero.field_image
-field_name: field_image
+id: paragraph.hero.field_media
+field_name: field_media
 entity_type: paragraph
 bundle: hero
-label: Image
+label: Media
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -25,6 +25,7 @@ settings:
       remote_video: remote_video
     sort:
       field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: image
 field_type: entity_reference

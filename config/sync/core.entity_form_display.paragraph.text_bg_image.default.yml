@@ -3,22 +3,44 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_bg_image.field_image
+    - field.field.paragraph.text_bg_image.field_link
+    - field.field.paragraph.text_bg_image.field_media
     - field.field.paragraph.text_bg_image.field_text_format
     - paragraphs.paragraphs_type.text_bg_image
   module:
+    - link_attributes
     - media_library
+    - media_library_edit
     - text
 id: paragraph.text_bg_image.default
 targetEntityType: paragraph
 bundle: text_bg_image
 mode: default
 content:
-  field_image:
-    weight: 1
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        aria-label: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+  field_media:
+    weight: 2
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     type: media_library_widget
     region: content
   field_text_format:

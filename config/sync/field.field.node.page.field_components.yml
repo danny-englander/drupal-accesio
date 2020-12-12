@@ -8,9 +8,11 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.text_bg_image
     - paragraphs.paragraphs_type.timeline
+    - paragraphs.paragraphs_type.title
     - paragraphs.paragraphs_type.tweet
   module:
     - entity_reference_revisions
@@ -29,6 +31,8 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      hero: hero
+      title: title
       text: text
       accordion: accordion
       text_bg_image: text_bg_image
@@ -40,8 +44,11 @@ settings:
       accordion:
         enabled: true
         weight: -22
+      accordion_group:
+        weight: -14
+        enabled: false
       accordion_item:
-        weight: -15
+        weight: -16
         enabled: false
       columns:
         enabled: true
@@ -50,8 +57,8 @@ settings:
         enabled: true
         weight: -20
       hero:
-        weight: -16
-        enabled: false
+        enabled: true
+        weight: -25
       text:
         enabled: true
         weight: -23
@@ -62,11 +69,11 @@ settings:
         enabled: true
         weight: -17
       timeline_item:
-        weight: -14
+        weight: -15
         enabled: false
       title:
-        weight: -13
-        enabled: false
+        enabled: true
+        weight: -24
       tweet:
         enabled: true
         weight: -19

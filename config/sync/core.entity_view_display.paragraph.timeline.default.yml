@@ -3,15 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.timeline.field_timeline_bg
     - field.field.paragraph.timeline.field_timeline_item
+    - field.field.paragraph.timeline.field_timeline_style
+    - field.field.paragraph.timeline.field_title
     - paragraphs.paragraphs_type.timeline
   module:
     - entity_reference_revisions
+    - options
 id: paragraph.timeline.default
 targetEntityType: paragraph
 bundle: timeline
 mode: default
 content:
+  field_timeline_bg:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
   field_timeline_item:
     type: entity_reference_revisions_entity_view
     weight: 0
@@ -20,5 +31,20 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_timeline_style:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
 hidden: {  }

@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.hero.field_image
+    - field.field.paragraph.hero.field_heading_level
     - field.field.paragraph.hero.field_link
+    - field.field.paragraph.hero.field_media
     - field.field.paragraph.hero.field_remove_btm_margin
     - field.field.paragraph.hero.field_text_format
     - field.field.paragraph.hero.field_title
@@ -17,14 +18,15 @@ targetEntityType: paragraph
 bundle: hero
 mode: default
 content:
-  field_image:
-    type: entity_reference_entity_view
-    weight: 0
-    label: hidden
+  field_heading_level:
+    weight: 6
+    label: above
     settings:
-      view_mode: hero
-      link: false
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
+    type: boolean
     region: content
   field_link:
     weight: 4
@@ -37,6 +39,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link_separate
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: hero
+      link: false
+    third_party_settings: {  }
     region: content
   field_remove_btm_margin:
     weight: 5
@@ -56,7 +67,7 @@ content:
     type: text_default
     region: content
   field_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false

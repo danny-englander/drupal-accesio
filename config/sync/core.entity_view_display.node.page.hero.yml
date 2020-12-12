@@ -5,10 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.hero
     - field.field.node.page.field_components
-    - field.field.node.page.field_hero
+    - field.field.node.page.field_hide_title
     - node.type.page
   module:
-    - entity_reference_revisions
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -16,16 +15,8 @@ id: node.page.hero
 targetEntityType: node
 bundle: page
 mode: hero
-content:
-  field_hero:
-    type: entity_reference_revisions_entity_view
-    weight: 0
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
+content: {  }
 hidden:
   field_components: true
+  field_hide_title: true
   links: true

@@ -1,18 +1,18 @@
-uuid: b29d5f28-e8b5-4070-aba7-3d03b2a4b513
+uuid: f76117cf-e55b-4bd9-ba3a-7f86e0bd9069
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
+    - field.storage.paragraph.field_media
     - media.type.image
-    - paragraphs.paragraphs_type.cta
-id: paragraph.cta.field_image
-field_name: field_image
+    - paragraphs.paragraphs_type.text_bg_image
+id: paragraph.text_bg_image.field_media
+field_name: field_media
 entity_type: paragraph
-bundle: cta
-label: Image
+bundle: text_bg_image
+label: 'Background image'
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -23,6 +23,7 @@ settings:
       image: image
     sort:
       field: _none
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_components
-    - field.field.node.page.field_hero
+    - field.field.node.page.field_hide_title
     - node.type.page
   module:
     - entity_reference_revisions
@@ -25,6 +25,15 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
+  field_hide_title:
+    weight: 1
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
 hidden:
-  field_hero: true
   links: true

@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.field_components
-    - field.field.node.page.field_hero
+    - field.field.node.page.field_hide_title
     - node.type.page
   module:
     - user
@@ -21,4 +21,4 @@ content:
     region: content
 hidden:
   field_components: true
-  field_hero: true
+  field_hide_title: true

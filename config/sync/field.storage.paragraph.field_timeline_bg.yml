@@ -1,0 +1,27 @@
+uuid: 0f399767-452e-4773-9753-7324d509ab8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_timeline_bg
+field_name: field_timeline_bg
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: light
+      label: Light
+    -
+      value: dark
+      label: Dark
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

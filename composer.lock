@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6b52d03ba51b657eb02f57e753cf2cc",
+    "content-hash": "b17da18721555c0b517b02fcc754efbb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -338,46 +338,33 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.2.3",
+            "version": "4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "4b596872f24c39d9c04d7b3adb6bc51baa1f2fd5"
+                "reference": "ec297e05cb86557671c2d6cbb1bebba6c7ae2c60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/4b596872f24c39d9c04d7b3adb6bc51baa1f2fd5",
-                "reference": "4b596872f24c39d9c04d7b3adb6bc51baa1f2fd5",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/ec297e05cb86557671c2d6cbb1bebba6c7ae2c60",
+                "reference": "ec297e05cb86557671c2d6cbb1bebba6c7ae2c60",
                 "shasum": ""
             },
             "require": {
                 "consolidation/output-formatters": "^4.1.1",
                 "php": ">=7.1.3",
                 "psr/log": "^1|^2",
-                "symfony/console": "^4.4.8|^5",
+                "symfony/console": "^4.4.8|~5.1.0",
                 "symfony/event-dispatcher": "^4.4.8|^5",
                 "symfony/finder": "^4.4.8|^5"
             },
             "require-dev": {
-                "g1a/composer-test-scenarios": "^3",
-                "php-coveralls/php-coveralls": "^2.2",
-                "phpunit/phpunit": "^6",
-                "squizlabs/php_codesniffer": "^3"
+                "phpunit/phpunit": ">=7.5.20",
+                "squizlabs/php_codesniffer": "^3",
+                "yoast/phpunit-polyfills": "^0.2.0"
             },
             "type": "library",
             "extra": {
-                "scenarios": {
-                    "symfony4": {
-                        "require": {
-                            "symfony/console": "^4.0"
-                        },
-                        "config": {
-                            "platform": {
-                                "php": "7.1.3"
-                            }
-                        }
-                    }
-                },
                 "branch-alias": {
                     "dev-main": "4.x-dev"
                 }
@@ -400,9 +387,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.2.3"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.2.4"
             },
-            "time": "2020-10-03T14:28:42+00:00"
+            "time": "2020-12-10T16:56:39+00:00"
         },
         {
             "name": "consolidation/config",
@@ -561,16 +548,16 @@
         },
         {
             "name": "consolidation/log",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/log.git",
-                "reference": "ba0bf6af1fbd09ed4dc18fc2f27b12ceff487cbf"
+                "reference": "82a2aaaa621a7b976e50a745a8d249d5085ee2b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/log/zipball/ba0bf6af1fbd09ed4dc18fc2f27b12ceff487cbf",
-                "reference": "ba0bf6af1fbd09ed4dc18fc2f27b12ceff487cbf",
+                "url": "https://api.github.com/repos/consolidation/log/zipball/82a2aaaa621a7b976e50a745a8d249d5085ee2b1",
+                "reference": "82a2aaaa621a7b976e50a745a8d249d5085ee2b1",
                 "shasum": ""
             },
             "require": {
@@ -579,27 +566,14 @@
                 "symfony/console": "^4|^5"
             },
             "require-dev": {
-                "g1a/composer-test-scenarios": "^3",
-                "php-coveralls/php-coveralls": "^2.2",
-                "phpunit/phpunit": "^6",
-                "squizlabs/php_codesniffer": "^3"
+                "phpunit/phpunit": ">=7.5.20",
+                "squizlabs/php_codesniffer": "^3",
+                "yoast/phpunit-polyfills": "^0.2.0"
             },
             "type": "library",
             "extra": {
-                "scenarios": {
-                    "symfony4": {
-                        "require-dev": {
-                            "symfony/console": "^4"
-                        },
-                        "config": {
-                            "platform": {
-                                "php": "7.1.3"
-                            }
-                        }
-                    }
-                },
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "autoload": {
@@ -620,9 +594,9 @@
             "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
             "support": {
                 "issues": "https://github.com/consolidation/log/issues",
-                "source": "https://github.com/consolidation/log/tree/2.0.1"
+                "source": "https://github.com/consolidation/log/tree/2.0.2"
             },
-            "time": "2020-05-27T17:06:13+00:00"
+            "time": "2020-12-10T16:26:23+00:00"
         },
         {
             "name": "consolidation/output-formatters",
@@ -1035,6 +1009,54 @@
             },
             "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/ae02121445ad75f4eaff800cc532b5e6233e2ddf",
+                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.0"
+            },
+            "time": "2020-09-30T17:56:20+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -3186,17 +3208,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha31",
+            "version": "3.0.0-alpha32",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha31"
+                "reference": "8.x-3.0-alpha32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha31.zip",
-                "reference": "8.x-3.0-alpha31",
-                "shasum": "984eee103d3ea90de6f73ec1028054ffde49c962"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha32.zip",
+                "reference": "8.x-3.0-alpha32",
+                "shasum": "8dddc61fba68ec5c8ce622eba1ffa63a1b32617a"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3205,8 +3227,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha31",
-                    "datestamp": "1606944288",
+                    "version": "8.x-3.0-alpha32",
+                    "datestamp": "1607370374",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3247,17 +3269,17 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-beta13",
+            "version": "1.0.0-beta14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-beta13"
+                "reference": "8.x-1.0-beta14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta13.zip",
-                "reference": "8.x-1.0-beta13",
-                "shasum": "7d80b5a2df53147326ba601f50c097788d657ef8"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta14.zip",
+                "reference": "8.x-1.0-beta14",
+                "shasum": "1267dd06457b05ef5b1d154ab21ad1b76447e33f"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -3265,8 +3287,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta13",
-                    "datestamp": "1604868424",
+                    "version": "8.x-1.0-beta14",
+                    "datestamp": "1607370428",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3389,17 +3411,17 @@
         },
         {
             "name": "drupal/layout_paragraphs",
-            "version": "1.0.0-beta3",
+            "version": "1.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_paragraphs.git",
-                "reference": "1.0.0-beta3"
+                "reference": "1.0.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_paragraphs-1.0.0-beta3.zip",
-                "reference": "1.0.0-beta3",
-                "shasum": "121b47cd3c96b1578f268e7da41ba9abe678472a"
+                "url": "https://ftp.drupal.org/files/projects/layout_paragraphs-1.0.0-beta4.zip",
+                "reference": "1.0.0-beta4",
+                "shasum": "571cf9cc276b1c1035a1a58ebec6869ecf0db654"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -3408,8 +3430,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-beta3",
-                    "datestamp": "1594929046",
+                    "version": "1.0.0-beta4",
+                    "datestamp": "1607441986",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3601,6 +3623,54 @@
             "homepage": "https://www.drupal.org/project/media_entity_twitter",
             "support": {
                 "source": "https://git.drupalcode.org/project/media_entity_twitter"
+            }
+        },
+        {
+            "name": "drupal/media_library_edit",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_library_edit.git",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_library_edit-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "a780028997134f88997f59db1c26bc30456ed700"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1591618255",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ahebrank",
+                    "homepage": "https://www.drupal.org/user/3190515"
+                }
+            ],
+            "description": "Add an edit button to the Media Library widget when an item is selected.",
+            "homepage": "https://www.drupal.org/project/media_library_edit",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/media_library_edit",
+                "issues": "https://www.drupal.org/project/issues/media_library_edit"
             }
         },
         {
@@ -3820,26 +3890,26 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "c7e3a3757282e4c94e3c1fff08d01e22155cb853"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "f8e3b8f897817969324d88019438066b533bfe42"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1589314266",
+                    "version": "8.x-1.8",
+                    "datestamp": "1607552423",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3853,7 +3923,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3982,6 +4052,137 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
+            }
+        },
+        {
+            "name": "drupal/webform",
+            "version": "6.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform.git",
+                "reference": "6.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-6.0.0-beta2.zip",
+                "reference": "6.0.0-beta2",
+                "shasum": "a887d5fb0330901a5fc9ec80145110d6fc2ebd3b"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/address": "~1.0",
+                "drupal/bootstrap": "~3.0",
+                "drupal/captcha": "~1.0",
+                "drupal/chosen": "~3.0",
+                "drupal/clientside_validation": "~3.0",
+                "drupal/clientside_validation_jquery": "*",
+                "drupal/devel": "~3.0",
+                "drupal/entity": "~1.0",
+                "drupal/entity_print": "~2.0",
+                "drupal/gnode": "*",
+                "drupal/group": "1.0",
+                "drupal/jquery_ui": "~1.0",
+                "drupal/jquery_ui_checkboxradio": "~1.0",
+                "drupal/jquery_ui_datepicker": "~1.0",
+                "drupal/lingotek": "~3.0",
+                "drupal/mailsystem": "~4.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/select2": "~1.0",
+                "drupal/smtp": "~1.0",
+                "drupal/styleguide": "~1.0",
+                "drupal/telephone_validation": "~2.0",
+                "drupal/token": "~1.0",
+                "drupal/variationcache": "~1.0",
+                "drupal/webform_access": "*",
+                "drupal/webform_attachment": "*",
+                "drupal/webform_clientside_validation": "*",
+                "drupal/webform_devel": "*",
+                "drupal/webform_entity_print": "*",
+                "drupal/webform_group": "*",
+                "drupal/webform_node": "*",
+                "drupal/webform_options_limit": "*",
+                "drupal/webform_scheduled_email": "*",
+                "drupal/webform_share": "*",
+                "drupal/webform_ui": "*"
+            },
+            "suggest": {
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.0.0-beta2",
+                    "datestamp": "1606687841",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Rockowitz (jrockowitz)",
+                    "homepage": "https://www.drupal.org/u/jrockowitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Alexander Trotsenko (bucefal91)",
+                    "homepage": "https://www.drupal.org/u/bucefal91",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/7404/committers",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Enables the creation of webforms and questionnaires.",
+            "homepage": "https://drupal.org/project/webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform",
+                "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
+                "docs": "https://www.drupal.org/docs/8/modules/webform",
+                "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
             }
         },
         {
@@ -8474,7 +8675,8 @@
         "drupal/entity_usage": 10,
         "drupal/gin": 15,
         "drupal/inline_entity_form": 5,
-        "drupal/layout_paragraphs": 10
+        "drupal/layout_paragraphs": 10,
+        "drupal/media_library_edit": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

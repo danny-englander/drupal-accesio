@@ -20,3 +20,4 @@ favicon:
 accent_color: ''
 focus_color: ''
 icon_upload: ''
+show_user_theme_settings: false

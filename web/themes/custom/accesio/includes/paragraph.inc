@@ -74,17 +74,26 @@ function accesio_preprocess_paragraph(array &$vars) {
       }
 
       // Field_component_background preprocessing.
-      if (!empty($vars["content"]["field_image"][0]["#media"])) {
+      if (!empty($vars["content"]["field_media"][0]["#media"])) {
         // Get the public path to the image.
-        $image_public_uri = $vars["content"]["field_image"][0]["#media"]->field_media_image->entity->uri->value;
+        $image_public_uri = $vars["content"]["field_media"][0]["#media"]->field_media_image->entity->uri->value;
         // Define the image attributes for use in the template.
-        $vars["image_alt"] = $vars["content"]["field_image"][0]["#media"]->field_media_image->alt;
-        $vars["image_width"] = $vars["content"]["field_image"][0]["#media"]->field_media_image->width;
-        $vars["image_height"] = $vars["content"]["field_image"][0]["#media"]->field_media_image->height;
+        $vars["image_alt"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->alt;
+        $vars["image_width"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->width;
+        $vars["image_height"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->height;
         // Define the image path using sf_hero_banner.
         // Other image styles can bet set for this as needed.
         $vars["image_style_hero"] = ImageStyle::load('max_2600x2600')
           ->buildUrl($image_public_uri);
+      }
+    }
+
+    // Check for the heading level list value.
+    if ($paragraph->hasField('field_heading_level') &&
+      !$paragraph->get('field_heading_level')->isEmpty()) {
+      // Set a var for the top padding value.
+      if ($paragraph->get('field_heading_level')->value === '1') {
+        $vars['is_h1'] = TRUE;
       }
     }
 

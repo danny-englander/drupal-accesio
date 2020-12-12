@@ -9,19 +9,18 @@ Note, if we need buttons in many different colors, we can make this into a mixin
 a.btn,
 input[type="file"],
 input[type="submit"] {
-  @include rem(font-size, 12px);
+  @include rem(font-size, 16px);
+  font-weight: bold;
   @include link-effect();
-  font-weight: normal;
   display: inline-block;
   border-radius: 28px;
-  padding: 15px 38px;
+  padding: 12px 34px;
   letter-spacing: 3.6px;
   line-height: 1.8;
-  font-weight: bold;
   color: $white;
-  border: 2px solid navy;
-  background-color: navy;
-  text-transform: uppercase;
+  border: 2px solid $primary-color;
+  background-color: $primary-color;
+  text-transform: capitalize;
   text-align: center;
   cursor: pointer;
   // Resets for various devices.
@@ -40,9 +39,9 @@ input[type="submit"] {
   &:focus,
   &:hover {
     text-decoration: none;
-    border: 2px solid navy;
-    color: black;
-    background-color: transparent;
+    border: 2px solid $secondary-color;
+    color: $black;
+    background-color: $secondary-color;
   }
 
   &.btn-small {
@@ -62,7 +61,7 @@ input[type="submit"] {
     &:hover {
       text-decoration: none;
       border: 2px solid red;
-      color: black;
+      color: $black;
       background-color: transparent;
     }
   }
@@ -73,7 +72,7 @@ input[type="submit"] {
     &:hover {
       text-decoration: none;
       border: 2px solid gray;
-      color: black;
+      color: $black;
       background-color: gray;
     }
   }
@@ -110,7 +109,7 @@ input[type="submit"] {
     border-radius: 0;
     background-color: gray;
     padding: 10px 12px;
-    color: black;
+    color: $black;
     letter-spacing: 2px;
     border: none;
     @include rem(font-size, 13px);

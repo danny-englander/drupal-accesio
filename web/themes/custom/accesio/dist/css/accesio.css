@@ -391,19 +391,18 @@ Note, if we need buttons in many different colors, we can make this into a mixin
 a.btn,
 input[type="file"],
 input[type="submit"] {
-  font-size: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
   transition: all 0.6s ease 0s;
-  font-weight: normal;
   display: inline-block;
   border-radius: 28px;
-  padding: 15px 38px;
+  padding: 12px 34px;
   letter-spacing: 3.6px;
   line-height: 1.8;
-  font-weight: bold;
   color: #fff;
-  border: 2px solid navy;
-  background-color: navy;
-  text-transform: uppercase;
+  border: 2px solid #890c0c;
+  background-color: #890c0c;
+  text-transform: capitalize;
   text-align: center;
   cursor: pointer;
   -webkit-user-select: none;
@@ -428,9 +427,9 @@ input[type="submit"]:active,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
   text-decoration: none;
-  border: 2px solid navy;
-  color: black;
-  background-color: transparent;
+  border: 2px solid #ffc509;
+  color: #000;
+  background-color: #ffc509;
 }
 
 .btn.btn-small, .form-item.form-type-managed-file label.btn-small,
@@ -464,7 +463,7 @@ input[type="submit"].btn-secondary:focus,
 input[type="submit"].btn-secondary:hover {
   text-decoration: none;
   border: 2px solid red;
-  color: black;
+  color: #000;
   background-color: transparent;
 }
 
@@ -480,7 +479,7 @@ input[type="submit"].btn-secondary-inverse:focus,
 input[type="submit"].btn-secondary-inverse:hover {
   text-decoration: none;
   border: 2px solid gray;
-  color: black;
+  color: #000;
   background-color: gray;
 }
 
@@ -539,7 +538,7 @@ input[type="submit"].btn-pager {
   border-radius: 0;
   background-color: gray;
   padding: 10px 12px;
-  color: black;
+  color: #000;
   letter-spacing: 2px;
   border: none;
   font-size: 0.8125rem;
@@ -627,7 +626,7 @@ h1 {
 .h2,
 h2 {
   font-weight: 500;
-  font-size: 1.5625rem;
+  font-size: 1.75rem;
   line-height: 1.875rem;
   margin-bottom: 1.5625rem;
   color: #000;
@@ -637,8 +636,8 @@ h2 {
 @media (min-width: 64em) {
   .h2,
   h2 {
-    font-size: 2.75rem;
-    line-height: 3rem;
+    font-size: 3.125rem;
+    line-height: 3.375rem;
     margin-bottom: 1.75rem;
   }
 }
@@ -719,18 +718,18 @@ h6 {
   }
 }
 
-li,
-.p,
-p {
+.page-wrap li,
+.page-wrap .p,
+.page-wrap p {
   margin-bottom: 0.875rem;
   margin-top: 0;
   letter-spacing: .03rem;
 }
 
 @media (min-width: 64em) {
-  li,
-  .p,
-  p {
+  .page-wrap li,
+  .page-wrap .p,
+  .page-wrap p {
     font-size: 1rem;
     line-height: 2rem;
   }
@@ -781,7 +780,7 @@ Accordion styling.
   margin: 0 0 0 0;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #890c0c;
+  border-bottom: 2px solid #890c0c;
 }
 
 .js-accordion__header:before {
@@ -834,7 +833,7 @@ Accordion styling.
 
 .js-accordion__content {
   padding: 4px 40px;
-  border-bottom: 1px solid #890c0c;
+  border-bottom: 2px solid #890c0c;
 }
 
 .js-accordion .animated-accordion__title {
@@ -901,11 +900,6 @@ Branding.
   color: #fff;
 }
 
-.hero {
-  margin-bottom: 100px;
-  padding-top: 70px;
-}
-
 .hero__media {
   line-height: 0;
 }
@@ -917,7 +911,7 @@ Branding.
 
 @media (min-width: 90em) {
   .hero__media img {
-    height: 1100px;
+    height: 800px;
     object-fit: cover;
   }
 }
@@ -930,7 +924,6 @@ Branding.
   position: absolute;
   background-color: #000;
   width: 100%;
-  bottom: -70px;
   border-bottom: 20px solid #890c0c;
 }
 
@@ -971,8 +964,6 @@ Branding.
 }
 
 .masthead {
-  position: absolute;
-  z-index: 10;
   background-color: #000;
   width: 100%;
 }
@@ -1041,6 +1032,11 @@ Branding.
   border-top-right-radius: 30px;
 }
 
+.text-bg__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 body {
   background-color: whitesmoke;
 }
@@ -1065,6 +1061,7 @@ Timeline (media style).
   overflow: hidden;
   padding: 50px;
   margin-bottom: 80px;
+  margin-top: 50px;
   background-color: #000;
   color: #fff;
 }
@@ -1155,7 +1152,8 @@ Timeline (simple style).
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
   position: relative;
   overflow: hidden;
 }
@@ -1164,7 +1162,7 @@ Timeline (simple style).
   content: '';
   position: absolute;
   display: inline-block;
-  border-left: 2px dashed #6f6f6f;
+  border-left: 3px dashed #98928a;
   width: 40px;
   left: 50%;
   height: 94%;
@@ -1179,41 +1177,49 @@ Timeline (simple style).
   text-align: center;
 }
 
-.timeline-simple__wrap {
+.timeline-simple__item-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.timeline-simple__content-wrap {
   position: relative;
 }
 
-.timeline-simple__wrap:after {
-  position: absolute;
-  display: inline-block;
-  border-top: 1px dashed #6f6f6f;
-  top: 30px;
-  height: 3px;
-  width: 60%;
-  left: 180px;
-}
-
-.timeline-simple__item {
-  width: 50%;
+@media (min-width: 57.5em) {
+  .timeline-simple__item {
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
+    width: 46%;
+  }
 }
 
 .timeline-simple__item:nth-child(even) {
-  padding-right: 50px;
+  margin-top: 140px;
 }
 
 .timeline-simple__item:nth-child(even) h2 {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.timeline-simple__item:nth-child(odd) {
-  position: relative;
-  right: -50%;
-  padding-left: 50px;
+  text-align: left;
+  padding-left: 110px;
 }
 
 .timeline-simple__item:nth-child(odd) .timeline-simple__date:before {
-  right: 0;
+  right: -50px;
+  left: inherit;
+}
+
+.timeline-simple__item:nth-child(odd) .timeline-simple__date:after {
+  right: 50px;
+  left: inherit;
+}
+
+.timeline-simple__item:nth-child(odd) h2 {
+  text-align: right;
+  padding-right: 110px;
 }
 
 .timeline-simple__date {
@@ -1225,9 +1231,23 @@ Timeline (simple style).
   position: absolute;
   display: inline-block;
   height: 3px;
-  width: 64%;
+  width: 100px;
   top: 30px;
-  border-top: 2px dashed #6f6f6f;
+  left: -50px;
+  border-top: 3px dashed #6f6f6f;
+}
+
+.timeline-simple__date:after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  background-color: #ffc509;
+  border: 6px solid #890c0c;
+  border-radius: 100%;
+  left: 50px;
 }
 
 .timeline-simple__date h2 {

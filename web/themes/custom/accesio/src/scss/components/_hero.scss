@@ -1,6 +1,6 @@
 .hero {
-  margin-bottom: 100px;
-  padding-top: 70px;
+  //margin-bottom: 100px;
+  //padding-top: 70px;
 
   &__media {
     line-height: 0;
@@ -10,7 +10,7 @@
       height: auto;
 
       @include mq($from: x_wide) {
-        height: 1100px;
+        height: 800px;
         object-fit: cover;
       }
     }
@@ -24,7 +24,7 @@
     position: absolute;
     background-color: $black;
     width: 100%;
-    bottom: -70px;
+    //bottom: -70px;
     border-bottom: 20px solid $primary-color;
 
     p {

@@ -3,35 +3,36 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.cta.field_image
     - field.field.paragraph.cta.field_link
+    - field.field.paragraph.cta.field_media
     - field.field.paragraph.cta.field_text
     - field.field.paragraph.cta.field_title
     - paragraphs.paragraphs_type.cta
   module:
     - link
+    - media_library
+    - media_library_edit
 id: paragraph.cta.default
 targetEntityType: paragraph
 bundle: cta
 mode: default
 content:
-  field_image:
-    weight: 2
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_link:
-    weight: 0
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_media:
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+    type: media_library_widget
     region: content
   field_text:
     weight: 1
@@ -42,7 +43,7 @@ content:
     type: string_textarea
     region: content
   field_title:
-    weight: 3
+    weight: 0
     settings:
       size: 60
       placeholder: ''

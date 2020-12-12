@@ -1,0 +1,21 @@
+uuid: 1d963957-ca9d-4d5f-bc74-99eb04e82877
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_timeline_style
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - options
+id: paragraph.timeline.field_timeline_style
+field_name: field_timeline_style
+entity_type: paragraph
+bundle: timeline
+label: 'Timeline Style'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

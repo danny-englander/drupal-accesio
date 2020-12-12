@@ -4,15 +4,16 @@ Timeline (simple style).
 .timeline-simple {
   @include container(1280px);
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
   position: relative;
   overflow: hidden;
 
   &:before {
-    content: '';
+   content: '';
     position: absolute;
     display: inline-block;
-    border-left: 2px dashed $dark-gray;
+    border-left: 3px dashed $medium-gray;
     width: 40px;
     left: 50%;
 
@@ -28,26 +29,34 @@ Timeline (simple style).
     }
   }
 
-  &__wrap {
+  &__item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__content-wrap {
     position: relative;
 
     &:after {
-    //  content: '';
-      position: absolute;
-      display: inline-block;
-      border-top: 1px dashed $dark-gray;
-      top: 30px;
-      height: 3px;
-      width: 60%;
-      left: 180px;
     }
   }
 
   &__item {
-    width: 50%;
+
+    @include mq($from: medium-large) {
+      flex-basis: 46%;
+      width: 46%;
+    }
+
+    @include mq($until: medium-large) {
+      //border-bottom: 1px dashed gray;
+      //padding-bottom: 20px;
+      //margin-bottom: 20px;
+    }
 
     &:nth-child(even) {
-      padding-right: 50px;
+      margin-top: 140px;
 
       .timeline-simple__date {
         &:before {
@@ -55,20 +64,28 @@ Timeline (simple style).
       }
 
       h2 {
-        text-align: right;
-        padding-right: 20px;
+        text-align: left;
+        padding-left: 110px;
       }
     }
 
     &:nth-child(odd) {
-      position: relative;
-      right: -50%;
-      padding-left: 50px;
 
       .timeline-simple__date {
         &:before {
-          right: 0;
+          right: -50px;
+          left: inherit;
         }
+
+        &:after {
+          right: 50px;
+          left: inherit;
+        }
+      }
+
+      h2 {
+        text-align: right;
+        padding-right: 110px;
       }
     }
   }
@@ -76,14 +93,30 @@ Timeline (simple style).
   &__date {
     position: relative;
 
+    // Connection line.
     &:before {
       content: '';
       position: absolute;
       display: inline-block;
       height: 3px;
-      width: 64%;
+      width: 100px;
       top: 30px;
-      border-top: 2px dashed $dark-gray;
+      left: -50px;
+      border-top: 3px dashed $dark-gray;
+    }
+
+    // Connection dot.
+    &:after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      display: inline-block;
+      height: 34px;
+      width: 34px;
+      background-color: $secondary-color;
+      border: 6px solid $primary-color;
+      border-radius: 100%;
+      left: 50px;
     }
 
     h2 {

@@ -26,12 +26,11 @@ function accesio_preprocess_page(array &$vars, $pid) {
   if ($node instanceof NodeInterface) {
     // Check if there are components.
     if (!empty($node->field_components->target_id)) {
-
-      // Check for the hero component.
-      if ($node->hasField('field_hero') &&
-        !$node->get('field_hero')->isEmpty()) {
+      // Check to see if field_hide_title is checked off.
+      if ($node->hasField('field_hide_title') &&
+        !$node->get('field_hide_title')->isEmpty()) {
         // Add a class if there is a hero.
-        if (!empty($node->field_hero)) {
+        if (!empty($node->field_hide_title)) {
           unset($vars['page']['content']['accesio_page_title']);
         }
       }

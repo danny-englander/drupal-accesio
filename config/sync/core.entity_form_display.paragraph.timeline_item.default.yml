@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.timeline_item.field_date
-    - field.field.paragraph.timeline_item.field_image
+    - field.field.paragraph.timeline_item.field_media
     - field.field.paragraph.timeline_item.field_text_format
     - paragraphs.paragraphs_type.timeline_item
   module:
     - datetime
     - media_library
+    - media_library_edit
     - text
 id: paragraph.timeline_item.default
 targetEntityType: paragraph
@@ -22,11 +23,15 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_image:
-    weight: 2
+  field_media:
+    weight: 3
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - image
+        - remote_video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     type: media_library_widget
     region: content
   field_text_format:

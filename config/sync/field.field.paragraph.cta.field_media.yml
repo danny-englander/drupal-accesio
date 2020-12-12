@@ -1,16 +1,16 @@
-uuid: 0248dd88-d7d7-4a83-9382-08e01019bc36
+uuid: 37bd7cde-8aee-48fc-951b-4dd3d793d6e5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
+    - field.storage.paragraph.field_media
     - media.type.image
-    - paragraphs.paragraphs_type.timeline_item
-id: paragraph.timeline_item.field_image
-field_name: field_image
+    - paragraphs.paragraphs_type.cta
+id: paragraph.cta.field_media
+field_name: field_media
 entity_type: paragraph
-bundle: timeline_item
-label: 'Timeline Image'
+bundle: cta
+label: Image
 description: ''
 required: false
 translatable: true
