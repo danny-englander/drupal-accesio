@@ -1,8 +1,9 @@
-uuid: 5a4f45e9-3015-41f3-ad33-6ab48f21d070
+uuid: d6507c5a-56f4-4293-99ba-87fad13786ae
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.half_width
     - field.field.media.remote_video.field_media_oembed_video
     - field.field.media.remote_video.field_start_time
     - media.type.remote_video
@@ -10,10 +11,10 @@ dependencies:
     - media
 _core:
   default_config_hash: gUaDZKMQD3lmLKWPn727X3JHVdKJ525g4EJCCcDVAqk
-id: media.remote_video.default
+id: media.remote_video.half_width
 targetEntityType: media
 bundle: remote_video
-mode: default
+mode: half_width
 content:
   field_media_oembed_video:
     type: oembed
@@ -24,17 +25,9 @@ content:
       max_height: 0
     third_party_settings: {  }
     region: content
-  field_start_time:
-    weight: 1
-    label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: false
-    third_party_settings: {  }
-    type: number_integer
-    region: content
 hidden:
   created: true
+  field_start_time: true
   name: true
   thumbnail: true
   uid: true

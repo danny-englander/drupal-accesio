@@ -5,10 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.remote_video.field_media_oembed_video
-    - image.style.medium
+    - field.field.media.remote_video.field_start_time
+    - image.style.large
     - media.type.remote_video
   module:
     - image
+    - lazy
 _core:
   default_config_hash: sLyo3lc_eX4-C1Jv0ivqjuORGfdclLsX09tZf7K3EVM
 id: media.remote_video.media_library
@@ -22,11 +24,16 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: medium
+      image_style: large
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      lazy:
+        placeholder_style: ''
+        lazy_image: '0'
+        data_uri: false
 hidden:
   created: true
   field_media_oembed_video: true
+  field_start_time: true
   name: true
   uid: true

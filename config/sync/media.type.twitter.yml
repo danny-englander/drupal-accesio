@@ -3,10 +3,14 @@ langcode: en
 status: true
 dependencies:
   module:
+    - crop
     - media_entity_twitter
+third_party_settings:
+  crop:
+    image_field: null
 id: twitter
 label: Twitter
-description: ''
+description: 'An Embedded tweet from Twitter.'
 source: twitter
 queue_thumbnail_downloads: false
 new_revision: false

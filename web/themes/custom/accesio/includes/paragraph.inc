@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Functions to support theming in the UCSF Diabetes theme.
+ * Functions to support theming in the Accesio theme.
  */
 
 use Drupal\node\NodeInterface;
@@ -48,11 +48,11 @@ function accesio_preprocess_paragraph(array &$vars) {
     // If in the array of bundles.
     if (in_array($paragraph_bundle, $paragraph_bundles)) {
       // If field_image is set.
-      if (isset($vars["content"]["field_image"])) {
+      if (isset($vars["content"]["field_media"])) {
         // Check for the media bundle name.
-        if (isset($vars["content"]["field_image"][0]["#media"]->bundle->target_id)) {
+        if (isset($vars["content"]["field_media"][0]["#media"]->bundle->target_id)) {
           // Define the media type bundle.
-          $media_bundle = $vars["content"]["field_image"][0]["#media"]->bundle->target_id;
+          $media_bundle = $vars["content"]["field_media"][0]["#media"]->bundle->target_id;
           // Array to target both bundles.
           $media_bundles = [
             'image',
@@ -76,15 +76,17 @@ function accesio_preprocess_paragraph(array &$vars) {
       // Field_component_background preprocessing.
       if (!empty($vars["content"]["field_media"][0]["#media"])) {
         // Get the public path to the image.
-        $image_public_uri = $vars["content"]["field_media"][0]["#media"]->field_media_image->entity->uri->value;
-        // Define the image attributes for use in the template.
-        $vars["image_alt"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->alt;
-        $vars["image_width"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->width;
-        $vars["image_height"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->height;
-        // Define the image path using sf_hero_banner.
-        // Other image styles can bet set for this as needed.
-        $vars["image_style_hero"] = ImageStyle::load('max_2600x2600')
-          ->buildUrl($image_public_uri);
+        if (!empty($vars["content"]["field_media"][0]["#media"]->field_media_image->entity->uri->value)) {
+          $image_public_uri = $vars["content"]["field_media"][0]["#media"]->field_media_image->entity->uri->value;
+          // Define the image attributes for use in the template.
+          $vars["image_alt"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->alt;
+          $vars["image_width"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->width;
+          $vars["image_height"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->height;
+          // Define the image path using sf_hero_banner.
+          // Other image styles can bet set for this as needed.
+          $vars["image_style_hero"] = ImageStyle::load('max_2600x2600')
+            ->buildUrl($image_public_uri);
+        }
       }
     }
 

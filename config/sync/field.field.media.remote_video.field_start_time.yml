@@ -1,0 +1,25 @@
+uuid: a8078ae0-8ffa-4cd2-ad9a-ad29353e3eb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_start_time
+    - media.type.remote_video
+id: media.remote_video.field_start_time
+field_name: field_start_time
+entity_type: media
+bundle: remote_video
+label: 'Start time'
+description: 'Video Start time in seconds. If you''d like to start the video at a specified time, enter it here. For example, 130 would be equal to 2 minutes and 10 seconds. Default is zero.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

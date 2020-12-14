@@ -26,3 +26,11 @@ twitter:
 accordion:
   js:
     dist/js/jquery.accordion.js: {}
+
+accesio_youtube_bg:
+  js:
+    dist/js/jquery.mb.YTPlayer.js: {}
+
+accesio_vimeo_bg:
+  js:
+    dist/js/jquery.mb.vimeo_player.js: {}

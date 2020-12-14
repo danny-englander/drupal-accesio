@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Functions to support theming in the DoR theme.
+ * Functions to support theming in the Accesio theme.
  */
 
 /**
@@ -38,8 +38,6 @@ function accesio_theme_suggestions_field_alter(array &$suggestions, array $vars)
   if (in_array($hook, $bare_hooks, TRUE)) {
     $suggestions[] = 'field__no_markup';
   }
-
-  $a =1;
 }
 
 /**

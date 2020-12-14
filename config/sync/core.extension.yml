@@ -1,4 +1,5 @@
 module:
+  accesio_custom: 0
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0

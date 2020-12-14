@@ -900,6 +900,10 @@ Branding.
   color: #fff;
 }
 
+.hero {
+  margin-bottom: 80px;
+}
+
 .hero__media {
   line-height: 0;
 }
@@ -921,10 +925,9 @@ Branding.
 }
 
 .hero__content {
-  position: absolute;
   background-color: #000;
   width: 100%;
-  border-bottom: 20px solid #890c0c;
+  border-bottom: 10px solid #890c0c;
 }
 
 .hero__content p {
@@ -939,7 +942,7 @@ Branding.
 .hero__content-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 30px 10px;
+  padding: 20px 10px;
 }
 
 .hero__text-wrap {
@@ -961,6 +964,21 @@ Branding.
   flex-basis: 50%;
   padding-left: 40px;
   padding-top: 16px;
+}
+
+.hero__video-container {
+  height: 600px;
+  background-color: #0c0d0e;
+}
+
+@media (min-width: 57.5em) {
+  .hero__video-container {
+    height: 800px;
+  }
+}
+
+.hero__video-container.is-started .hero__video-container {
+  background-color: transparent !important;
 }
 
 .masthead {

@@ -1,5 +1,5 @@
 .hero {
-  //margin-bottom: 100px;
+  margin-bottom: 80px;
   //padding-top: 70px;
 
   &__media {
@@ -21,11 +21,11 @@
   }
 
   &__content {
-    position: absolute;
+ //   position: absolute;
     background-color: $black;
     width: 100%;
     //bottom: -70px;
-    border-bottom: 20px solid $primary-color;
+    border-bottom: 10px solid $primary-color;
 
     p {
       @include rem(font-size, 18px);
@@ -40,7 +40,7 @@
   &__content-inner {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 30px 10px;
+    padding: 20px 10px;
   }
 
   &__text-wrap {
@@ -58,5 +58,20 @@
     flex-basis: 50%;
     padding-left: 40px;
     padding-top: 16px;
+  }
+
+  &__video-container {
+    height: 600px;
+    background-color: #0c0d0e;
+
+    @include mq($from: medium-large) {
+      height: 800px;
+    }
+  }
+}
+
+.hero__video-container {
+  &.is-started & {
+    background-color: transparent !important;
   }
 }
