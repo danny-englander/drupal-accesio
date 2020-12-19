@@ -66,4 +66,36 @@
       }
     },
   };
+
+  /*
+* Megamenu.
+*/
+  Drupal.behaviors.accesioMegaMenu = {
+    attach: function (context, settings) {
+      // Accessible Mega menu.
+      if ($().accessibleMegaMenu) {
+        // Initialize the megamenu.
+        $("#main-menu").accessibleMegaMenu({
+          /* prefix for generated unique id attributes, which are required
+             to indicate aria-owns, aria-controls and aria-labelledby  */
+          uuidPrefix: "main_menu",
+          /* css class used to define the megamenu styling */
+          menuClass: "main-menu__item-list",
+          /* css class for a top-level navigation item in the megamenu */
+          topNavItemClass: "main-menu__nav-item",
+          /* css class for a megamenu panel */
+          panelClass: "main-menu__sub-nav",
+          /* css class for a group of items within a megamenu panel */
+          panelGroupClass: "main-menu__sub-nav-group",
+          /* css class for the hover state */
+          hoverClass: "main-menu--hover",
+          /* css class for the focus state */
+          focusClass: "focus1",
+          /* css class for the open state */
+          openClass: "main-menu--open",
+        });
+      }
+    },
+  };
+
 }(Drupal, jQuery));

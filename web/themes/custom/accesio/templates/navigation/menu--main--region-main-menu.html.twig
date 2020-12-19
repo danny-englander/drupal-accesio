@@ -1,0 +1,81 @@
+{% import _self as menus %}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+
+    {% if menu_level == 0 %}
+      <ul class="nav navbar-nav main-menu__item-list {{ 'main-menu__item-list--level-'
+    ~ menu_level }}">
+    {% elseif menu_level == 1 %}
+      <ul class="main-menu__sub-nav-group {{ 'main-menu__item-list--level-' ~
+    menu_level }}">
+    {% else %}
+      <ul class="{{ 'main-menu__item-list--level-' ~ menu_level }}">
+    {% endif %}
+
+    {% for item in items %}
+
+      {% set item_classes = [
+        'main-menu__item',
+        'main-menu__item--level-' ~ menu_level,
+        'level-' ~ menu_level ~ '-cols',
+        item.is_expanded ? 'main-menu__item--submenu-level-' ~ menu_level,
+        item.is_collapsed ? 'main-menu__item--collapsed',
+        item.in_active_trail ? 'main-menu__item--active',
+      ] %}
+
+      {% set link_classes = [
+        'main-menu__item-link',
+        'main-menu__item-link--level-' ~ menu_level,
+      ] %}
+
+      {% if item.below %}
+        {% if menu_level == 0 %}
+          <li {{ item.attributes.addClass(item_classes) }}">
+          {{ link(item.title, item.url) }}
+
+          <div class="main-menu__sub-nav">
+            <div class="container main-menu__sub-nav-container">
+              {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+            </div>
+          </div>
+        {% else %}
+
+          <li {{ item.attributes.addClass(item_classes) }}>
+            {# @TODO give this a special class for non linked items #}
+
+            {% if item.url|render %}
+              {{ link(item.title, item.url) }}
+            {% else %}
+              {# This is a "no-link" span element, i.e. route:<no-link> #}
+              {% set link_classes = link_classes|merge(['no-link']) %}
+              {{ link(item.title, item.url) }}
+            {% endif %}
+
+            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+          </li>
+        {% endif %}{# // if menu_level == 0 #}
+
+      {% else %}
+
+        <li {{ item.attributes.addClass(item_classes) }}>
+          <!-- sub menu item -->
+          {{ link(item.title, item.url) }}
+        </li>
+
+      {% endif %}{# // if item.below #}
+
+    {% endfor %}
+
+    {# Mirror the opening ul tags up top for cohesion. #}
+    {% if menu_level == 0 %}
+      </ul>
+    {% elseif menu_level == 1 %}
+      </ul>
+    {% else %}
+      </ul>
+    {% endif %}
+  {% endif %}
+{% endmacro %}

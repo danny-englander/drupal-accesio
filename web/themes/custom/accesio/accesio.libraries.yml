@@ -6,6 +6,7 @@ accesio:
       dist/css/grid.css: { minified: true }
       dist/css/accesio.css: { minified: true }
   js:
+    dist/js/jquery-meganav.js: { }
     dist/js/accesio.js: {}
   dependencies:
     - core/jquery

@@ -10,9 +10,12 @@ const gulp = require('gulp'),
   rename = require('gulp-rename'),
   cleanCSS = require('gulp-clean-css'),
   debug = require('gulp-debug'),
-  uglify = require('gulp-uglify'),
   svgSprite = require('gulp-svg-sprite'),
   mode = require('gulp-mode')();
+
+const uglifyes = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+const uglify = composer(uglifyes, console);
 
 // Add browsersync.
 // Add browsersync.
