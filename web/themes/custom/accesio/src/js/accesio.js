@@ -82,17 +82,17 @@
           /* css class used to define the megamenu styling */
           menuClass: "main-menu__item-list",
           /* css class for a top-level navigation item in the megamenu */
-          topNavItemClass: "main-menu__nav-item",
+          topNavItemClass: "nav-item",
           /* css class for a megamenu panel */
           panelClass: "main-menu__sub-nav",
           /* css class for a group of items within a megamenu panel */
-          panelGroupClass: "main-menu__sub-nav-group",
+          panelGroupClass: "sub-nav-group",
           /* css class for the hover state */
-          hoverClass: "main-menu--hover",
+          hoverClass: "hover",
           /* css class for the focus state */
           focusClass: "focus1",
           /* css class for the open state */
-          openClass: "main-menu--open",
+          openClass: "open",
         });
       }
     },

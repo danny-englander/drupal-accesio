@@ -10,7 +10,6 @@
 
   &__main {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -27,11 +26,13 @@
 
   ul {
     display: flex;
-    justify-content: space-evenly;
+    //justify-content: space-evenly;
     list-style: none;
   }
 
   &__logo {
+    display: flex;
+    align-items: center;
 
     img {
       width: 180px;

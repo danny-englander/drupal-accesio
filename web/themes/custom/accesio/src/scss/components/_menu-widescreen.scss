@@ -1,3 +1,348 @@
+/*
+ * Mega menu.
+ * We wrap these elements in a medium or greater media query.
+ * For the mobile menu, see _main-menu-off-canvas.scss
+ */
+$main-menu: main-menu;
+
 .main-menu {
-  
+  display: none;
+
+  @include mq($from: small_desktop) {
+    display: block;
+  }
+
+  /* mega menu list */
+  // Some general resets for the entire menu.
+  a {
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // Reset lists.
+  ul * {
+    @include mq($from: small_desktop) {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__item-list {
+    list-style: none;
+
+    @include mq($from: small_desktop) {
+      margin: 0;
+      padding: 0;
+      z-index: 15;
+      display: flex;
+    }
+  }
+
+  &__item {
+    /* A top level navigation item in the mega menu */
+    @include mq($from: small_desktop) {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &.level-0-cols {
+      &.#{$main-menu}__item--active {
+        > span,
+        > a {
+          position: relative;
+          border-bottom: 2px solid $primary-color;
+
+          &:after {
+            display: block;
+          }
+
+          &:active,
+          &:hover,
+          &:focus {
+            @include mq($from: small_desktop) {
+              text-decoration: none;
+              color: $primary-color;
+            }
+          }
+
+          &.open {
+            color: $white;
+          }
+
+          &.focus {
+            background-color: $primary-color;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &--active-trail {
+      > a {
+        @include mq($from: small_desktop) {
+          background-color: $primary-color;
+          color: $white;
+          border-bottom: none;
+          z-index: 1;
+        }
+      }
+    }
+
+    // Top level.
+    &--level-0 {
+      .focus {
+        @include mq($from: small_desktop) {
+          background-color: $primary-color;
+          color: $white;
+        }
+      }
+
+      > a.open {
+        /* Open state of first descendant link within a top level navigation item */
+        @include mq($from: small_desktop) {
+          background-color: $primary-color;
+          color: $white;
+        }
+      }
+
+      > span,
+      > a {
+        /* First descendant link within a top level navigation item */
+        color: $white;
+        margin: 0 8px;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 10px 16px;
+        border: 1px dashed $white;
+
+        @include mq($from: small_desktop, $until: desktop) {
+          @include rem(font-size, 18px);
+          padding: 34px 8px;
+          line-height: 1.6;
+        }
+
+        @include mq($from: desktop) {
+          @include rem(font-size, 18px);
+          padding: 8px 16px;
+        }
+
+        @include mq($from: x_wide) {
+          padding: 8px 16px;
+        }
+
+        &:active,
+        &:hover,
+        &:focus {
+          @include mq($from: small_desktop) {
+            text-decoration: none;
+            color: $white;
+            background-color: $primary-color;
+            outline: none;
+          }
+        }
+
+        &.open {
+          background-color: $primary-color;
+          color: $white;
+          outline: none;
+        }
+
+        &.focus {
+          @include mq($from: small_desktop) {
+            background-color: $primary-color;
+            color: $white;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    // Keep this here in case there needs to be an icon.
+    &--submenu-level-0 {
+      > a {
+        @include mq($from: small_desktop) {
+          position: relative;
+        }
+
+        &.open,
+        &:hover {
+          &:after {
+            @include mq($from: small_desktop) {
+            }
+          }
+        }
+      }
+    }
+
+    &--submenu-level-1 {
+      > .no-link {
+        @include mq($from: small_desktop) {
+          display: block;
+          @include rem(font-size, 14px);
+          line-height: 2.14;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          opacity: 0.5;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+
+  // Second level.
+  &__item-list--level-2 {
+    li {
+      @include mq($from: small_desktop) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .no-link {
+      cursor: pointer;
+
+      @include mq($until: small_desktop) {
+        display: none;
+      }
+
+      @include mq($from: small_desktop) {
+        font-weight: 400;
+        display: block;
+        @include rem(font-size, 18px);
+        line-height: 1.39;
+        @include icon-after(icon_small_next_white, 16px, 16px, 90);
+        margin-bottom: 0;
+
+        &:after {
+          position: relative;
+        }
+
+        &:after {
+          @include fade-effect();
+          margin-left: 20px;
+          top: 2px;
+        }
+
+        &.toggled {
+          @include mq($from: small_desktop) {
+            @include icon-after(icon_small_next_white, 16px, 16px, 270);
+          }
+        }
+      }
+    }
+  }
+
+  &__sub-nav-group {
+    @include mq($from: small_desktop) {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+
+      &--one-col {
+        flex-direction: column;
+
+        li {
+          padding-left: 0 !important;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .level-1-cols {
+      @include mq($from: small_desktop) {
+        width: 50%;
+        position: relative;
+      }
+
+      &:first-child {
+        @include mq($from: desktop) {
+          padding-left: 18px;
+        }
+      }
+    }
+
+    a {
+      @include rem(font-size, 17px);
+
+      @include mq($from: desktop) {
+        @include rem(font-size, 18px);
+      }
+    }
+  }
+
+  &__sub-nav {
+    /* main-menu__sub-navigation panel */
+    @include mq($from: small_desktop) {
+      position: absolute;
+      top: 108px;
+      background-color: $primary-color;
+      color: $white;
+      right: 0;
+      left: 0;
+      width: 100%;
+      z-index: 320;
+      @include fade-effect();
+      visibility: hidden;
+      opacity: 0;
+
+      // Debug submenu (uncomment).
+      // visibility: visible !important;
+      // opacity: 1 !important;
+    }
+
+    // No animation for IE11.
+    @include ie11 {
+      @include no-animation();
+    }
+
+    .container {
+      @include mq($from: small_desktop) {
+        @include container(1200px);
+        padding: 44px 20px 30px 20px;
+      }
+    }
+
+    a {
+      @include mq($from: small_desktop) {
+        color: $white;
+      }
+    }
+
+    &.open {
+      /* Main-menu__sub-navigation panel open state */
+      @include mq($from: small_desktop) {
+        visibility: visible;
+        opacity: 1;
+        z-index: 320;
+      }
+    }
+
+    li {
+      /* list item within main-menu__sub-navigation panel */
+      display: block;
+      list-style-type: none;
+    }
+  }
+
+
+  // Utility menu classes from the link attributes UI.
+  .is-hidden {
+    @include visually-hidden();
+  }
+
+  .col-heading-is-hidden {
+    margin-top: 40px;
+  }
+
+  a.has-action {
+    background-color: $secondary-color;
+    color: $black;
+    border: 1px solid $secondary-color;
+  }
 }
