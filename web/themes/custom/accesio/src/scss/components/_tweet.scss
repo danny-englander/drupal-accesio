@@ -3,18 +3,24 @@
   margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
+
+  @include mq($from: small_desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 
   /* Tweet item. */
   &__item {
-
   }
 
   /* Override inline styles. */
   .twitter-tweet {
     display: flex;
-    margin: 0 auto !important;
+    margin: 0 auto 40px auto !important;
     max-width: 490px !important;
+
+    @include mq($from: small_desktop) {
+      margin: 0 auto !important;
+    }
   }
 }

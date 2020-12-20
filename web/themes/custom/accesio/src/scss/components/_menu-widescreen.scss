@@ -1,7 +1,5 @@
 /*
- * Mega menu.
- * We wrap these elements in a medium or greater media query.
- * For the mobile menu, see _main-menu-off-canvas.scss
+ * Widescreen menu.
  */
 $main-menu: main-menu;
 
@@ -107,6 +105,10 @@ $main-menu: main-menu;
         @include mq($from: small_desktop) {
           background-color: $primary-color;
           color: $white;
+
+          .svg-inline--fa {
+            transform: rotate(540deg);
+          }
         }
       }
 
@@ -159,6 +161,17 @@ $main-menu: main-menu;
             outline: none;
           }
         }
+
+        &.has-action {
+          background-color: $secondary-color;
+          color: $black;
+          border: 1px solid $secondary-color;
+
+          #{$a-tags-hover} {
+            background-color: $primary-color;
+            color: $white;
+          }
+        }
       }
     }
 
@@ -166,7 +179,7 @@ $main-menu: main-menu;
     &--submenu-level-0 {
       > a {
         @include mq($from: small_desktop) {
-          position: relative;
+          @include font-awesome("\f13a", after, $font-size: 19px, $margin: 0 0 0 10px);
         }
 
         &.open,
@@ -216,7 +229,6 @@ $main-menu: main-menu;
         display: block;
         @include rem(font-size, 18px);
         line-height: 1.39;
-        @include icon-after(icon_small_next_white, 16px, 16px, 90);
         margin-bottom: 0;
 
         &:after {
@@ -231,7 +243,7 @@ $main-menu: main-menu;
 
         &.toggled {
           @include mq($from: small_desktop) {
-            @include icon-after(icon_small_next_white, 16px, 16px, 270);
+
           }
         }
       }
@@ -338,11 +350,5 @@ $main-menu: main-menu;
 
   .col-heading-is-hidden {
     margin-top: 40px;
-  }
-
-  a.has-action {
-    background-color: $secondary-color;
-    color: $black;
-    border: 1px solid $secondary-color;
   }
 }

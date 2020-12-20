@@ -8,6 +8,14 @@ accesio:
   js:
     dist/js/jquery-meganav.js: { }
     dist/js/accesio.js: {}
+    //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js:
+      type: external
+      minified: true
+      attributes:
+        defer: true
+        async: true
+        data-search-pseudo-elements: true
+        crossorigin: anonymous
   dependencies:
     - core/jquery
     - core/drupal
@@ -35,3 +43,8 @@ accesio_youtube_bg:
 accesio_vimeo_bg:
   js:
     dist/js/jquery.mb.vimeo_player.js: {}
+
+quote:
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=IM+Fell+Double+Pica&display=swap: { type: external, minified: true }

@@ -98,4 +98,19 @@
     },
   };
 
+  Drupal.behaviors.accesioA11y = {
+    attach: function (context, settings) {
+      // Detect the "I am a keyboard user" key.
+      // Check if the user is using keyboard navigation and if so, add a class.
+      function handleFirstTab(e) {
+        if (e.keyCode === 9) {
+          document.body.classList.add("user-is-tabbing");
+          window.removeEventListener("keydown", handleFirstTab);
+        }
+      }
+
+      window.addEventListener("keydown", handleFirstTab);
+    },
+  };
+
 }(Drupal, jQuery));

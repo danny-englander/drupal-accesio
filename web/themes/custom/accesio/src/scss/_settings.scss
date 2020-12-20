@@ -13,7 +13,7 @@ $charcoal: #404040;
 $dark-gray: #6f6f6f;
 $medium-gray: #98928a;
 $gray: #b7b7b7;
-$light-gray: #d8d4cd;
+$light-gray: #dadada;
 $x-light-gray: #f8f6f3;
 $pale-gray: #eeeeee;
 $off-white: #f5f5f5;
@@ -68,3 +68,7 @@ $mq-breakpoints: (
 
 // Uncomment to debug breakpoints.
 //$mq-show-breakpoints: (small, mobile, small_plus, medium, medium-large, small_desktop, desktop, x_wide);
+
+
+$a-tags: 'a, &:active, &:hover, &:visited';
+$a-tags-hover: '&:active, &:hover';

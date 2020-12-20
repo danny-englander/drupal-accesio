@@ -1,6 +1,4 @@
 .masthead {
-  //position: absolute;
-  //z-index: 10;
   background-color: $black;
   width: 100%;
 
@@ -11,14 +9,47 @@
   &__main {
     display: flex;
     justify-content: space-between;
+
+    @include mq($until: small_desktop) {
+      align-items: center;
+    }
   }
 
   .search-block-form {
     display: none;
   }
 
+  &__search-trigger {
+    @include font-awesome("\f002", after, $font-size: 24px, $margin: 4px 8px 0 0);
+
+    @include mq($from: small_desktop) {
+      @include font-awesome("\f002", after, $font-size: 24px, $margin: 10px 8px 0 0);
+    }
+
+    > span {
+      @include visually-hidden();
+    }
+  }
+
+  &__menu-trigger {
+    @include font-awesome("\f0c9", after, $font-size: 30px, $margin: 2px 10px 0 6px);
+
+    @include mq($from: small_desktop) {
+      display: none;
+    }
+
+    > span {
+      @include visually-hidden();
+    }
+  }
+
+  &__above {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   &__nav-inner {
-    max-width: 1100px;
+    @include container(1100px);
     margin: 0 auto;
     padding-top: 6px;
     padding-bottom: 6px;

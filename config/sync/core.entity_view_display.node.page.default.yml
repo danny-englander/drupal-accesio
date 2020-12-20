@@ -25,15 +25,6 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_hide_title:
-    weight: 1
-    label: hidden
-    settings:
-      format: boolean
-      format_custom_true: ''
-      format_custom_false: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
 hidden:
+  field_hide_title: true
   links: true

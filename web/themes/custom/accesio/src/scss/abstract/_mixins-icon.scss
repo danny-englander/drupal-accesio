@@ -1,188 +1,56 @@
-// Icon mixin, before
-@mixin icon-before(
+// Font awesome mixin for "FAS" icons (solids).
+@mixin font-awesome(
   $icon,
-  $width,
-  $height,
-  $rotate: null,
-  $position: null,
-  $pos-top: null,
-  $pos-right: null,
-  $pos-bottom: null,
-  $pos-left: null,
-  $opacity: null,
-  $background-position: null,
-  $translate_y: null,
-  $background-size: 100%,
-  $background-position: null
+  $before_after,
+  $color: null,
+  $font-size: null,
+  $margin: null,
 ) {
-  &:before {
-    content: " ";
-    background-image: url('#{$path-to-icons}/#{$icon}.svg');
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: $width;
-    height: $height;
-    background-size: $background-size;
-    background-position: $background-position;
+  &:#{$before_after} {
+    content: "#{$icon}";
+    display: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 
-    @if $rotate {
-      transform: rotate(#{$rotate}deg);
+    @if $color {
+      color: $color;
+    }
+  }
+
+  .svg-inline--fa {
+    transition: .4s ease;
+
+    @if $font-size {
+      @include rem(font-size, $font-size);
     }
 
-    @if $position {
-      position: $position;
-    }
-
-    @if $pos-top {
-      top: $pos-top;
-    }
-
-    @if $pos-right {
-      right: $pos-right;
-    }
-
-    @if $pos-bottom {
-      bottom: $pos-bottom;
-    }
-
-    @if $pos-left {
-      left: $pos-left;
-    }
-
-    @if $opacity {
-      opacity: $opacity;
-    }
-
-    @if $background-position {
-      background-position: $background-position;
-    }
-
-    @if $background-size {
-      background-size: $background-size;
-    }
-
-    @if $translate_y {
-      transform: translateY($translate_y);
+    @if $margin {
+      margin: $margin;
     }
   }
 }
 
-@mixin icon-after(
+// Font awesome mixin for "FAB" icons (brands).
+@mixin font-awesome-brands(
   $icon,
-  $width,
-  $height,
-  $rotate: null,
-  $position: null,
-  $pos-top: null,
-  $pos-right: null,
-  $pos-bottom: null,
-  $pos-left: null,
-  $opacity: null,
-  $background-position: null,
-  $translate_y: null,
-  $background-size: 100%,
-  $background-position: null
+  $before_after,
+  $color: null,
+  $font-size: null,
 ) {
-  &:after {
-    content: " ";
-    background-image: url('#{$path-to-icons}/#{$icon}.svg');
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: $width;
-    height: $height;
-    background-size: $background-size;
-    background-position: $background-position;
+  &:#{$before_after} {
+    content: "#{$icon}";
+    display: none;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
 
-    @if $rotate {
-      transform: rotate(#{$rotate}deg);
+    @if $color {
+      color: $color;
     }
-
-    @if $position {
-      position: $position;
-    }
-
-    @if $pos-top {
-      top: $pos-top;
-    }
-
-    @if $pos-right {
-      right: $pos-right;
-    }
-
-    @if $pos-bottom {
-      bottom: $pos-bottom;
-    }
-
-    @if $pos-left {
-      left: $pos-left;
-    }
-
-    @if $opacity {
-      opacity: $opacity;
-    }
-
-    @if $background-position {
-      background-position: $background-position;
-    }
-
-    @if $translate_y {
-      transform: translateY($translate_y);
-    }
-  }
-}
-
-@mixin icon(
-  $icon,
-  $width,
-  $height,
-  $rotate: null,
-  $position: null,
-  $pos-top: null,
-  $pos-right: null,
-  $pos-bottom: null,
-  $pos-left: null,
-  $opacity: null,
-  $background-position: null,
-  $translate_y: null
-) {
-  background-image: url('#{$path-to-icons}/#{$icon}.svg');
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: $width;
-  height: $height;
-  background-size: 100%;
-
-  @if $rotate {
-    transform: rotate(#{$rotate}deg);
-  }
-  @if $position {
-    position: $position;
-  }
-
-  @if $pos-top {
-    top: $pos-top;
-  }
-
-  @if $pos-right {
-    right: $pos-right;
-  }
-
-  @if $pos-bottom {
-    bottom: $pos-bottom;
-  }
-
-  @if $pos-left {
-    left: $pos-left;
-  }
-
-  @if $opacity {
-    opacity: $opacity;
-  }
-
-  @if $background-position {
-    background-position: $background-position;
-  }
-  @if $translate_y {
-    transform: translateY($translate_y);
   }
 }

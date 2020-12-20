@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * This file is a custom file that loads all files. Each non-base layer
  * can be disabled.
@@ -591,6 +592,10 @@ input[type="submit"].btn-pager {
   margin-left: 14px;
 }
 
+a {
+  transition: all 0.15s ease;
+}
+
 body {
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 100%;
@@ -642,7 +647,7 @@ h2 {
   }
 }
 
-.h3,
+.h3, .quote__attribution,
 h3 {
   font-weight: 600;
   font-size: 1.25rem;
@@ -653,7 +658,7 @@ h3 {
 }
 
 @media (min-width: 64em) {
-  .h3,
+  .h3, .quote__attribution,
   h3 {
     font-size: 1.375rem;
     line-height: 1.875rem;
@@ -775,7 +780,7 @@ Accordion styling.
   text-align: left;
   width: 100%;
   font-weight: bold;
-  padding: 18px 0 18px 10px;
+  padding: 18px 0 18px 2px;
   cursor: pointer;
   margin: 0 0 0 0;
   background-color: transparent;
@@ -784,26 +789,22 @@ Accordion styling.
 }
 
 .js-accordion__header:before {
-  content: " ";
-  background-image: url("/themes/custom/accesio/src/icon/raw/icon_plus.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  background-size: 100%;
-  position: relative;
-  top: 0px;
-  left: -14px;
-  background-size: 100%;
+  content: "";
+  display: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.js-accordion__header .svg-inline--fa {
+  transition: .4s ease;
+  font-size: 1.375rem;
+  margin: 0 10px 0 0;
 }
 
 .js-accordion__header:hover {
   color: #890c0c;
-}
-
-.js-accordion__header:before {
-  transition-duration: 0.8s;
-  transition-property: transform;
 }
 
 .js-accordion__header[aria-expanded="true"] {
@@ -813,17 +814,9 @@ Accordion styling.
   color: #890c0c;
 }
 
-.js-accordion__header[aria-expanded="true"]:before {
-  content: " ";
-  background-image: url("/themes/custom/accesio/src/icon/raw/icon_plus.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  background-size: 100%;
+.js-accordion__header[aria-expanded="true"] .svg-inline--fa {
   -ms-transform: rotate(405deg);
   transform: rotate(405deg);
-  background-size: 100%;
 }
 
 .js-accordion__header:focus {
@@ -997,12 +990,100 @@ Branding.
   justify-content: space-between;
 }
 
+@media (max-width: 63.99em) {
+  .masthead__main {
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .masthead .search-block-form {
   display: none;
 }
 
+.masthead__search-trigger:after {
+  content: "";
+  display: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.masthead__search-trigger .svg-inline--fa {
+  transition: .4s ease;
+  font-size: 1.5rem;
+  margin: 4px 8px 0 0;
+}
+
+@media (min-width: 64em) {
+  .masthead__search-trigger:after {
+    content: "";
+    display: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  .masthead__search-trigger .svg-inline--fa {
+    transition: .4s ease;
+    font-size: 1.5rem;
+    margin: 10px 8px 0 0;
+  }
+}
+
+.masthead__search-trigger > span {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.masthead__menu-trigger:after {
+  content: "";
+  display: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.masthead__menu-trigger .svg-inline--fa {
+  transition: .4s ease;
+  font-size: 1.875rem;
+  margin: 2px 10px 0 6px;
+}
+
+@media (min-width: 64em) {
+  .masthead__menu-trigger {
+    display: none;
+  }
+}
+
+.masthead__menu-trigger > span {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.masthead__above {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
 .masthead__nav-inner {
   max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -1028,9 +1109,7 @@ Branding.
 }
 
 /*
- * Mega menu.
- * We wrap these elements in a medium or greater media query.
- * For the mobile menu, see _main-menu-off-canvas.scss
+ * Widescreen menu.
  */
 .main-menu {
   display: none;
@@ -1142,6 +1221,10 @@ Branding.
     background-color: #890c0c;
     color: #fff;
   }
+  .main-menu__item--level-0 > a.open .svg-inline--fa {
+    -ms-transform: rotate(540deg);
+    transform: rotate(540deg);
+  }
 }
 
 .main-menu__item--level-0 > span,
@@ -1207,9 +1290,33 @@ Branding.
   }
 }
 
+.main-menu__item--level-0 > span.has-action,
+.main-menu__item--level-0 > a.has-action {
+  background-color: #ffc509;
+  color: #000;
+  border: 1px solid #ffc509;
+}
+
+.main-menu__item--level-0 > span.has-action:active, .main-menu__item--level-0 > span.has-action:hover,
+.main-menu__item--level-0 > a.has-action:active,
+.main-menu__item--level-0 > a.has-action:hover {
+  background-color: #890c0c;
+  color: #fff;
+}
+
 @media (min-width: 64em) {
-  .main-menu__item--submenu-level-0 > a {
-    position: relative;
+  .main-menu__item--submenu-level-0 > a:after {
+    content: "";
+    display: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  .main-menu__item--submenu-level-0 > a .svg-inline--fa {
+    transition: .4s ease;
+    font-size: 1.1875rem;
+    margin: 0 0 0 10px;
   }
 }
 
@@ -1252,17 +1359,6 @@ Branding.
     margin-bottom: 0;
   }
   .main-menu__item-list--level-2 .no-link:after {
-    content: " ";
-    background-image: url("/themes/custom/accesio/src/icon/raw/icon_small_next_white.svg");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-size: 100%;
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-  .main-menu__item-list--level-2 .no-link:after {
     position: relative;
   }
   .main-menu__item-list--level-2 .no-link:after {
@@ -1271,20 +1367,6 @@ Branding.
     transition-delay: 0.1s;
     margin-left: 20px;
     top: 2px;
-  }
-}
-
-@media (min-width: 64em) and (min-width: 64em) {
-  .main-menu__item-list--level-2 .no-link.toggled:after {
-    content: " ";
-    background-image: url("/themes/custom/accesio/src/icon/raw/icon_small_next_white.svg");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-size: 100%;
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
   }
 }
 
@@ -1408,10 +1490,74 @@ Branding.
   margin-top: 40px;
 }
 
-.main-menu a.has-action {
-  background-color: #ffc509;
-  color: #000;
-  border: 1px solid #ffc509;
+/* Styled quote */
+.quote {
+  position: relative;
+  margin: 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-top: 2px dashed #000;
+  border-bottom: 2px dashed #000;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.quote__inner {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 50px 0 40px 0;
+}
+
+.quote__text {
+  font-family: 'IM Fell Double Pica', serif;
+  margin: 0;
+  position: relative;
+}
+
+.quote__text:before {
+  content: "\201C";
+  font-family: 'EB Garamond', serif;
+  font-size: 11rem;
+  line-height: 0.9;
+  position: absolute;
+  z-index: -1;
+  left: 10px;
+  color: rgba(0, 211, 214, 0.78);
+  display: inline-block;
+}
+
+@media (min-width: 64em) {
+  .quote__text:before {
+    font-size: 29.375rem;
+    color: #890c0c;
+    z-index: 1;
+    top: -30px;
+  }
+}
+
+.quote__text p {
+  font-size: 3.125rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 64em) {
+  .quote__text p {
+    padding-left: 230px;
+  }
+}
+
+@media (min-width: 64em) {
+  .quote__attribution {
+    padding-left: 230px;
+  }
 }
 
 .text-bg {
@@ -1671,29 +1817,61 @@ Timeline (simple style).
   margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 40px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   /* Tweet item. */
   /* Override inline styles. */
+}
+
+@media (min-width: 64em) {
+  .tweet {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 .tweet .twitter-tweet {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto !important;
+  margin: 0 auto 40px auto !important;
   max-width: 490px !important;
 }
 
-.utility-menu .menu {
+@media (min-width: 64em) {
+  .tweet .twitter-tweet {
+    margin: 0 auto !important;
+  }
+}
+
+/*
+Utility menu.
+ */
+.utility-menu__item-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
   justify-content: flex-end;
   list-style: none;
   padding: 0;
-  margin: 0 10px 4px 0;
+  margin: 2px 10px 10px 0;
+}
+
+.utility-menu__item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.utility-menu__item a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  border-bottom: 2px solid #ffc509;
+  transition: .4s ease;
+  padding: 2px 4px;
+}
+
+.utility-menu__item a:active, .utility-menu__item a:hover {
+  background-color: #890c0c;
+  border: none;
 }
 
 ul.tabs {

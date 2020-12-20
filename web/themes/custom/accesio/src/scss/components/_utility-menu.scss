@@ -1,12 +1,31 @@
+/*
+Utility menu.
+ */
 .utility-menu {
 
-  .menu {
+  &__item-list {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     padding: 0;
-    margin: 0 10px 4px 0;
-
+    margin: 2px 10px 10px 0;
   }
 
+  &__item {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    a {
+      @include rem(font-size, 18px);
+      text-decoration: none;
+      border-bottom: 2px solid $secondary-color;
+      transition: .4s ease;
+      padding: 2px 4px;
+
+      #{$a-tags-hover} {
+        background-color: $primary-color;
+        border: none;
+      }
+    }
+  }
 }

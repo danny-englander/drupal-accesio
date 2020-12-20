@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.quote_item
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.text_bg_image
     - paragraphs.paragraphs_type.timeline
@@ -40,41 +41,45 @@ settings:
       tweet: tweet
       columns: columns
       timeline: timeline
+      quote_item: quote_item
     target_bundles_drag_drop:
       accordion:
         enabled: true
-        weight: -22
+        weight: -24
       accordion_group:
-        weight: -14
+        weight: -15
         enabled: false
       accordion_item:
-        weight: -16
+        weight: -17
         enabled: false
       columns:
         enabled: true
-        weight: -18
+        weight: -20
       cta:
         enabled: true
-        weight: -20
+        weight: -22
       hero:
         enabled: true
-        weight: -25
+        weight: -27
+      quote_item:
+        enabled: true
+        weight: -18
       text:
         enabled: true
-        weight: -23
+        weight: -25
       text_bg_image:
         enabled: true
-        weight: -21
+        weight: -23
       timeline:
         enabled: true
-        weight: -17
+        weight: -19
       timeline_item:
-        weight: -15
+        weight: -16
         enabled: false
       title:
         enabled: true
-        weight: -24
+        weight: -26
       tweet:
         enabled: true
-        weight: -19
+        weight: -21
 field_type: entity_reference_revisions

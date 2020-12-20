@@ -10,7 +10,6 @@ const gulp = require('gulp'),
   rename = require('gulp-rename'),
   cleanCSS = require('gulp-clean-css'),
   debug = require('gulp-debug'),
-  svgSprite = require('gulp-svg-sprite'),
   mode = require('gulp-mode')();
 
 const uglifyes = require('uglify-es');
@@ -67,46 +66,6 @@ gulp.task('sass', function () {
     }));
 });
 
-// SVG icons.
-gulp.task('svgSprite', function (done) {
-  // Basic configuration example.
-  var config = {
-    shape: {
-      dimension: {
-        maxWidth: 110,
-        maxHeight: 110
-      },
-      spacing: {
-        padding: 0
-      },
-    },
-    mode: {
-      view: {
-        bust: false,
-        common: 'ico',
-        example: {
-          dest: '../src/icon/icons.html'
-        },
-        prefix: '.',
-        render: {
-          scss: {
-            template: './src/icon/svg-sprite-template.scss',
-            dest: '../src/scss/_icons.scss'
-          }
-        },
-        sprite: '../src/icon/icons.svg',
-      }
-    }
-  };
-
-  gulp.src('**/*.svg', {
-    cwd: './src/icon/raw'
-  })
-    .pipe(svgSprite(config))
-    .pipe(gulp.dest('./'));
-  done();
-});
-
 // browser-sync watch.
 gulp.task('watch', ['browser-sync'], function (gulpCallback) {
   gulp.watch("./src/scss/**/*.scss", ['sass']);
@@ -118,7 +77,5 @@ gulp.task('watch', ['browser-sync'], function (gulpCallback) {
 
 // Task: Build assets.
 gulp.task('build', ['sass', 'scripts']);
-// Task: handle svgs.
-gulp.task('svg', ['svgSprite']);
 // Task: Default gulp build and watch.
 gulp.task('default', ['sass', 'scripts', 'watch']);

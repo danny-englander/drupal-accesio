@@ -28,29 +28,27 @@ Accordion styling.
     text-align: left;
     width: 100%;
     font-weight: bold;
-    padding: 18px 0 18px 10px;
+    padding: 18px 0 18px 2px;
     cursor: pointer;
     margin: 0 0 0 0;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $primary-color;
-    @include icon-before(icon_plus, 28px, 28px, $position: relative, $pos-top: 0px, $pos-left: -14px);
+    @include font-awesome("\f055", before, $font-size: 22px, $margin: 0 10px 0 0);
 
     &:hover {
       color: $primary-color;
     }
 
-    &:before {
-      transition-duration: 0.8s;
-      transition-property: transform;
-    }
-
     &[aria-expanded="true"] {
       margin-bottom: 0;
       border-bottom: none;
-      @include icon-before(icon_plus, 28px, 28px, $rotate: 405);
       border-bottom: none;
-      color: $primary-color;;
+      color: $primary-color;
+
+      .svg-inline--fa {
+        transform: rotate(405deg);
+      }
     }
 
     &:focus {
