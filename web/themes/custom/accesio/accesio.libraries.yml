@@ -44,7 +44,7 @@ accesio_vimeo_bg:
   js:
     dist/js/jquery.mb.vimeo_player.js: {}
 
-quote:
+stats:
   css:
     theme:
-      //fonts.googleapis.com/css?family=IM+Fell+Double+Pica&display=swap: { type: external, minified: true }
+      //fonts.googleapis.com/css?family=Rozha+One&display=swap: { type: external, minified: true }

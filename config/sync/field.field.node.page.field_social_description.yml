@@ -1,0 +1,28 @@
+uuid: bf1e5868-57ec-48df-80ec-c53f6e66a2b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_description
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+id: node.page.field_social_description
+field_name: field_social_description
+entity_type: node
+bundle: page
+label: 'Social Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

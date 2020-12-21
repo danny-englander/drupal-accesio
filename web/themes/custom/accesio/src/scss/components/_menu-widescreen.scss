@@ -15,6 +15,7 @@ $main-menu: main-menu;
   a {
     text-decoration: none;
     color: $white;
+    font-weight: bold;
 
     &:hover {
       text-decoration: underline;
@@ -117,7 +118,7 @@ $main-menu: main-menu;
         /* First descendant link within a top level navigation item */
         color: $white;
         margin: 0 8px;
-        font-weight: 400;
+        @include rem(letter-spacing, 2px);
         cursor: pointer;
         padding: 10px 16px;
         border: 1px dashed $white;
@@ -211,6 +212,9 @@ $main-menu: main-menu;
 
   // Second level.
   &__item-list--level-2 {
+    display: flex;
+    flex-direction: column;
+
     li {
       @include mq($from: small_desktop) {
         margin-bottom: 20px;
@@ -253,7 +257,7 @@ $main-menu: main-menu;
   &__sub-nav-group {
     @include mq($from: small_desktop) {
       display: flex;
-      justify-content: center;
+      //justify-content: center;
       overflow: hidden;
 
       &--one-col {
@@ -268,7 +272,7 @@ $main-menu: main-menu;
 
     .level-1-cols {
       @include mq($from: small_desktop) {
-        width: 50%;
+        min-width: 250px;
         position: relative;
       }
 
@@ -292,8 +296,8 @@ $main-menu: main-menu;
     /* main-menu__sub-navigation panel */
     @include mq($from: small_desktop) {
       position: absolute;
-      top: 108px;
-      background-color: $primary-color;
+      top: 116px;
+      background-color: $secondary-color;
       color: $white;
       right: 0;
       left: 0;
@@ -315,14 +319,15 @@ $main-menu: main-menu;
 
     .container {
       @include mq($from: small_desktop) {
-        @include container(1200px);
+        @include container(1320px);
         padding: 44px 20px 30px 20px;
       }
     }
 
     a {
       @include mq($from: small_desktop) {
-        color: $white;
+        color: $black;
+
       }
     }
 

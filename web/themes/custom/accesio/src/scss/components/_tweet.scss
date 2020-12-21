@@ -1,23 +1,24 @@
+/* Embedded Tweets. */
 .tweet {
-  @include container(1100px);
-  margin: 0 auto;
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 60px;
+  margin-bottom: 80px;
+  background-color: $charcoal;
 
-  @include mq($from: small_desktop) {
-    display: flex;
-    justify-content: space-between;
+  &__items {
+    @include container(1100px);
+
+    @include mq($from: small_desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
-  /* Tweet item. */
-  &__item {
-  }
-
-  /* Override inline styles. */
+  /* Override embed inline styles. */
   .twitter-tweet {
-    display: flex;
     margin: 0 auto 40px auto !important;
     max-width: 490px !important;
+    width: 455px;
 
     @include mq($from: small_desktop) {
       margin: 0 auto !important;

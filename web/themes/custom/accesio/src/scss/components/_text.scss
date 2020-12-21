@@ -8,3 +8,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.component__item--type--title {
+  text-align: center;
+
+  h2 {
+    @extend .h1;
+  }
+}

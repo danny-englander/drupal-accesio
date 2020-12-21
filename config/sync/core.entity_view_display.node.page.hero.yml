@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.hero
     - field.field.node.page.field_components
     - field.field.node.page.field_hide_title
+    - field.field.node.page.field_social_description
+    - field.field.node.page.field_social_image
     - node.type.page
   module:
     - user
@@ -19,4 +21,6 @@ content: {  }
 hidden:
   field_components: true
   field_hide_title: true
+  field_social_description: true
+  field_social_image: true
   links: true

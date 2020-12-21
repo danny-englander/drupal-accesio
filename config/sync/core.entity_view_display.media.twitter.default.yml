@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.media.twitter.field_media_twitter
     - media.type.twitter
+  module:
+    - media_entity_twitter
 id: media.twitter.default
 targetEntityType: media
 bundle: twitter
@@ -14,19 +16,12 @@ content:
     label: hidden
     weight: 0
     settings:
-      link_to_entity: false
+      conversation: false
     third_party_settings: {  }
-    type: string
+    type: twitter_embed
     region: content
-  name:
-    type: string
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   created: true
+  name: true
   thumbnail: true
   uid: true

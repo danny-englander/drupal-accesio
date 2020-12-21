@@ -12,28 +12,19 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('accesio/twitter') }}
-
-{% set classes = [
+{%
+  set classes = [
   'media',
-  'tweet__item',
+  'twitter-tweet tweet__item-inner',
   'media--type-' ~ media.bundle()|clean_class,
   not media.isPublished() ? 'media--unpublished',
   view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
-] %}
+]
+%}
 
-<section{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }}>
   {{ title_suffix.contextual_links }}
   {% if content %}
-
-    <blockquote class="twitter-tweet tweet__item-inner" data-theme="dark">
-      <p lang="en" dir="ltr">
-        <a href="{{- content.field_media_twitter.0["#context"].value -}}">
-          {{ 'Link to Tweet:'|t }} {{ content.field_media_twitter.0["#context"].value }}
-          {{ content.name.0["#context"].value }}
-        </a>
-      </p>
-    </blockquote>
-
+    {{ content }}
   {% endif %}
-</section>
+</div>

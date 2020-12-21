@@ -24,6 +24,7 @@ function accesio_theme_suggestions_field_alter(array &$suggestions, array $vars)
   // <entity type>:<bundle name>:<view mode>:<field name>.
   $bare_hooks = [
     'paragraph:text:default:field_text_format',
+    'media:twitter:default:field_media_twitter',
   ];
 
   // Build the actual var structure from second parameter.
@@ -38,6 +39,8 @@ function accesio_theme_suggestions_field_alter(array &$suggestions, array $vars)
   if (in_array($hook, $bare_hooks, TRUE)) {
     $suggestions[] = 'field__no_markup';
   }
+
+  $a =1;
 }
 
 /**

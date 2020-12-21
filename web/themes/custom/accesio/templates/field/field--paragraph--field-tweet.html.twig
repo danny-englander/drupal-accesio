@@ -39,10 +39,9 @@
 #}
 {%
   set classes = [
-  'component',
-  'component--name-' ~ field_name|clean_class,
-  'component--type-' ~ field_type|clean_class,
-  'component--label-' ~ label_display,
+  'tweet--name-' ~ field_name|clean_class,
+  'tweet--type-' ~ field_type|clean_class,
+  'tweet--label-' ~ label_display,
   label_display == 'inline' ? 'clearfix',
 ]
 %}
@@ -55,24 +54,24 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass(classes, 'component__rows') }}>
+    <div{{ attributes.addClass(classes, 'tweet__items') }}>
       {% for item in items %}
-        <section{{ item.attributes.addClass('component__row') }}>{{ item.content }}</section>
+        <div{{ item.attributes.addClass('tweet__item') }}>{{ item.content }}</div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <section{{ attributes.addClass(classes, 'component__row') }}>{{ item.content }}</section>
+      <div{{ attributes.addClass(classes, 'tweet__item') }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
   <div{{ attributes.addClass(classes) }}>
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
-    <div class="component__rows">
+    <div class="tweet__items">
       {% endif %}
       {% for item in items %}
-        <section{{ item.attributes.addClass('component__row') }}>{{ item.content }}</section>
+        <div{{ item.attributes.addClass('tweet__item') }}>{{ item.content }}</div>
       {% endfor %}
       {% if multiple %}
     </div>

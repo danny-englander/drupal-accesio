@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 100%;
   font-weight: 400;
-  color: $black;
+  color: $charcoal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,12 +17,11 @@ h1 {
   @include rem(font-size, 32px);
   line-height: 35px;
   letter-spacing: 1px;
-  color: $black;
   margin-top: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 60px);
-    @include rem(line-height, 64px);
+    @include rem(font-size, 70px);
+    @include rem(line-height, 78px);
     @include rem(margin-bottom, 28px);
   }
 }
@@ -33,7 +32,6 @@ h2 {
   @include rem(font-size, 28px);
   @include rem(line-height, 30px);
   @include rem(margin-bottom, 25px);
-  color: $black;
   margin-top: 0;
 
   @include mq($from: small_desktop) {
@@ -49,7 +47,6 @@ h3 {
   @include rem(font-size, 20px);
   @include rem(line-height, 25px);
   @include rem(margin-bottom, 20px);
-  color: $black;
   margin-top: 0;
 
   @include mq($from: small_desktop) {
@@ -64,7 +61,6 @@ h4 {
   font-weight: 600;
   @include rem(font-size, 16px);
   @include rem(line-height, 25px);
-  color: $black;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -81,7 +77,6 @@ h5 {
   letter-spacing: 1px;
   @include rem(font-size, 12px);
   @include rem(line-height, 25px);
-  color: $black;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -97,7 +92,6 @@ h6 {
   @include rem(font-size, 16px);
   @include rem(line-height, 25px);
   @include rem(margin-bottom, 12px);
-  color: $black;
   margin-top: 0;
   margin-bottom: 0;
 

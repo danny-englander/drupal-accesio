@@ -1,0 +1,57 @@
+.stats {
+  @include container(1280px);
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  @include mq($from: medium) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq($until: small_desktop) {
+      margin-bottom: 40px;
+    }
+
+    @include mq($from: medium, $until: small_desktop) {
+      width: 50%;
+    }
+
+    @include mq($from: small_desktop) {
+      width: 25%;
+    }
+  }
+
+  &__item-number {
+
+    h2 {
+      font-family: 'Rozha One', serif;
+      color: $charcoal;
+      @include rem(font-size, 120px);
+      @include rem(letter-spacing, 3px);
+      line-height: .9;
+      border-bottom: 2px dashed $charcoal;
+    }
+  }
+
+  &__item-desc {
+
+    h3 {
+      font-family: 'Noto Sans SC', sans-serif;
+      font-weight: 400;
+    }
+  }
+
+
+  &__item-icon {
+
+    .svg-inline--fa {
+      color: $primary-color;
+    }
+  }
+}

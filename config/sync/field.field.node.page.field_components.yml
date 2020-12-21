@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.quote_item
+    - paragraphs.paragraphs_type.stats
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.text_bg_image
     - paragraphs.paragraphs_type.timeline
@@ -42,6 +43,7 @@ settings:
       columns: columns
       timeline: timeline
       quote_item: quote_item
+      stats: stats
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -64,6 +66,12 @@ settings:
       quote_item:
         enabled: true
         weight: -18
+      stats:
+        enabled: true
+        weight: 23
+      stats_item:
+        weight: 24
+        enabled: false
       text:
         enabled: true
         weight: -25

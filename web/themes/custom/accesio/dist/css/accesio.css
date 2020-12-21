@@ -428,9 +428,9 @@ input[type="submit"]:active,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
   text-decoration: none;
-  border: 2px solid #ffc509;
-  color: #000;
-  background-color: #ffc509;
+  border: 2px solid #ffc300;
+  color: #212121;
+  background-color: #ffc300;
 }
 
 .btn.btn-small, .form-item.form-type-managed-file label.btn-small,
@@ -464,7 +464,7 @@ input[type="submit"].btn-secondary:focus,
 input[type="submit"].btn-secondary:hover {
   text-decoration: none;
   border: 2px solid red;
-  color: #000;
+  color: #212121;
   background-color: transparent;
 }
 
@@ -480,7 +480,7 @@ input[type="submit"].btn-secondary-inverse:focus,
 input[type="submit"].btn-secondary-inverse:hover {
   text-decoration: none;
   border: 2px solid gray;
-  color: #000;
+  color: #212121;
   background-color: gray;
 }
 
@@ -539,7 +539,7 @@ input[type="submit"].btn-pager {
   border-radius: 0;
   background-color: gray;
   padding: 10px 12px;
-  color: #000;
+  color: #212121;
   letter-spacing: 2px;
   border: none;
   font-size: 0.8125rem;
@@ -600,7 +600,7 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 100%;
   font-weight: 400;
-  color: #000;
+  color: #404040;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -609,21 +609,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'EB Garamond', serif;
 }
 
-.h1,
+.h1, .component__item--type--title h2,
 h1 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 35px;
   letter-spacing: 1px;
-  color: #000;
   margin-top: 0;
 }
 
 @media (min-width: 64em) {
-  .h1,
+  .h1, .component__item--type--title h2,
   h1 {
-    font-size: 3.75rem;
-    line-height: 4rem;
+    font-size: 4.375rem;
+    line-height: 4.875rem;
     margin-bottom: 1.75rem;
   }
 }
@@ -634,7 +633,6 @@ h2 {
   font-size: 1.75rem;
   line-height: 1.875rem;
   margin-bottom: 1.5625rem;
-  color: #000;
   margin-top: 0;
 }
 
@@ -653,7 +651,6 @@ h3 {
   font-size: 1.25rem;
   line-height: 1.5625rem;
   margin-bottom: 1.25rem;
-  color: #000;
   margin-top: 0;
 }
 
@@ -671,7 +668,6 @@ h4 {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5625rem;
-  color: #000;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -691,7 +687,6 @@ h5 {
   letter-spacing: 1px;
   font-size: 0.75rem;
   line-height: 1.5625rem;
-  color: #000;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -710,7 +705,6 @@ h6 {
   font-size: 1rem;
   line-height: 1.5625rem;
   margin-bottom: 0.75rem;
-  color: #000;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -885,7 +879,7 @@ Branding.
 }
 
 .footer {
-  background-color: #000;
+  background-color: #212121;
   padding: 60px 0;
 }
 
@@ -918,7 +912,7 @@ Branding.
 }
 
 .hero__content {
-  background-color: #000;
+  background-color: #212121;
   width: 100%;
   border-bottom: 10px solid #890c0c;
 }
@@ -975,7 +969,7 @@ Branding.
 }
 
 .masthead {
-  background-color: #000;
+  background-color: #212121;
   width: 100%;
 }
 
@@ -1079,7 +1073,7 @@ Branding.
 }
 
 .masthead__nav-inner {
-  max-width: 1100px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -1125,6 +1119,7 @@ Branding.
 .main-menu a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
 }
 
 .main-menu a:hover {
@@ -1232,7 +1227,7 @@ Branding.
   /* First descendant link within a top level navigation item */
   color: #fff;
   margin: 0 8px;
-  font-weight: 400;
+  letter-spacing: 0.125rem;
   cursor: pointer;
   padding: 10px 16px;
   border: 1px dashed #fff;
@@ -1292,9 +1287,9 @@ Branding.
 
 .main-menu__item--level-0 > span.has-action,
 .main-menu__item--level-0 > a.has-action {
-  background-color: #ffc509;
-  color: #000;
-  border: 1px solid #ffc509;
+  background-color: #ffc300;
+  color: #212121;
+  border: 1px solid #ffc300;
 }
 
 .main-menu__item--level-0 > span.has-action:active, .main-menu__item--level-0 > span.has-action:hover,
@@ -1332,6 +1327,13 @@ Branding.
     letter-spacing: 1px;
     margin-top: -2px;
   }
+}
+
+.main-menu__item-list--level-2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media (min-width: 64em) {
@@ -1374,8 +1376,6 @@ Branding.
   .main-menu__sub-nav-group {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
     overflow: hidden;
   }
   .main-menu__sub-nav-group--one-col {
@@ -1390,7 +1390,7 @@ Branding.
 
 @media (min-width: 64em) {
   .main-menu__sub-nav-group .level-1-cols {
-    width: 50%;
+    min-width: 250px;
     position: relative;
   }
 }
@@ -1418,8 +1418,8 @@ Branding.
 @media (min-width: 64em) {
   .main-menu__sub-nav {
     position: absolute;
-    top: 108px;
-    background-color: #890c0c;
+    top: 116px;
+    background-color: #ffc300;
     color: #fff;
     right: 0;
     left: 0;
@@ -1444,7 +1444,7 @@ Branding.
 
 @media (min-width: 64em) {
   .main-menu__sub-nav .container {
-    max-width: 1200px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -1455,7 +1455,7 @@ Branding.
 
 @media (min-width: 64em) {
   .main-menu__sub-nav a {
-    color: #fff;
+    color: #212121;
   }
 }
 
@@ -1493,15 +1493,8 @@ Branding.
 /* Styled quote */
 .quote {
   position: relative;
-  margin: 0;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  border-top: 2px dashed #000;
-  border-bottom: 2px dashed #000;
+  border-top: 2px dashed #212121;
+  border-bottom: 2px dashed #212121;
   margin-top: 30px;
   margin-bottom: 60px;
 }
@@ -1516,7 +1509,7 @@ Branding.
 }
 
 .quote__text {
-  font-family: 'IM Fell Double Pica', serif;
+  font-family: 'EB Garamond', serif;
   margin: 0;
   position: relative;
 }
@@ -1558,6 +1551,72 @@ Branding.
   .quote__attribution {
     padding-left: 230px;
   }
+}
+
+.stats {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 48em) {
+  .stats {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.stats__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 63.99em) {
+  .stats__item {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.99em) {
+  .stats__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .stats__item {
+    width: 25%;
+  }
+}
+
+.stats__item-number h2 {
+  font-family: 'Rozha One', serif;
+  color: #404040;
+  font-size: 7.5rem;
+  letter-spacing: 0.1875rem;
+  line-height: .9;
+  border-bottom: 2px dashed #404040;
+}
+
+.stats__item-desc h3 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 400;
+}
+
+.stats__item-icon .svg-inline--fa {
+  color: #890c0c;
 }
 
 .text-bg {
@@ -1602,6 +1661,10 @@ body {
   margin: 0 auto;
 }
 
+.component__item--type--title {
+  text-align: center;
+}
+
 /*
 Timeline (media style).
  */
@@ -1616,13 +1679,13 @@ Timeline (media style).
   padding: 50px;
   margin-bottom: 80px;
   margin-top: 50px;
-  background-color: #000;
+  background-color: #212121;
   color: #fff;
 }
 
 .timeline-media--bg-light {
   background-color: #fff;
-  color: #000;
+  color: #212121;
 }
 
 .timeline-media:before {
@@ -1798,7 +1861,7 @@ Timeline (simple style).
   display: inline-block;
   height: 34px;
   width: 34px;
-  background-color: #ffc509;
+  background-color: #ffc300;
   border: 6px solid #890c0c;
   border-radius: 100%;
   left: 50px;
@@ -1808,21 +1871,25 @@ Timeline (simple style).
   font-size: 5rem;
 }
 
+/* Embedded Tweets. */
 .tweet {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  margin-bottom: 80px;
+  background-color: #404040;
+  /* Override embed inline styles. */
+}
+
+.tweet__items {
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  padding-bottom: 60px;
-  padding-top: 40px;
-  /* Tweet item. */
-  /* Override inline styles. */
 }
 
 @media (min-width: 64em) {
-  .tweet {
+  .tweet__items {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -1831,10 +1898,9 @@ Timeline (simple style).
 }
 
 .tweet .twitter-tweet {
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 auto 40px auto !important;
   max-width: 490px !important;
+  width: 455px;
 }
 
 @media (min-width: 64em) {
@@ -1864,7 +1930,7 @@ Utility menu.
 .utility-menu__item a {
   font-size: 1.125rem;
   text-decoration: none;
-  border-bottom: 2px solid #ffc509;
+  border-bottom: 2px solid #ffc300;
   transition: .4s ease;
   padding: 2px 4px;
 }

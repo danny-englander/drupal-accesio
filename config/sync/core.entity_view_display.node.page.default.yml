@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.page.field_components
     - field.field.node.page.field_hide_title
+    - field.field.node.page.field_social_description
+    - field.field.node.page.field_social_image
     - node.type.page
   module:
     - entity_reference_revisions
@@ -27,4 +29,6 @@ content:
     region: content
 hidden:
   field_hide_title: true
+  field_social_description: true
+  field_social_image: true
   links: true
