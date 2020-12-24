@@ -74,16 +74,7 @@
     {% endif %}
   </main>
 
-  {% if (page.footer_upper) or (page.footer_lower) %}
-    <footer class="footer">
-      {% if page.footer_upper %}
-        {{ page.footer_upper }}
-      {% endif %}
+  {# Header include file. #}
+  {% include '@accesio/partials/footer.html.twig' %}
 
-      {% if page.footer_lower %}
-        {{ page.footer_lower }}
-      {% endif %}
-
-    </footer>
-  {% endif %}
 </div><!-- /.l-container -->

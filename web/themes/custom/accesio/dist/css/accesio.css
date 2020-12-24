@@ -1083,12 +1083,6 @@ Branding.
   padding-bottom: 6px;
 }
 
-.masthead ul {
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-}
-
 .masthead__logo {
   display: -ms-flexbox;
   display: flex;

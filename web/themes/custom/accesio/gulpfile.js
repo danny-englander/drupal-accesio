@@ -10,13 +10,16 @@ const gulp = require('gulp'),
   rename = require('gulp-rename'),
   cleanCSS = require('gulp-clean-css'),
   debug = require('gulp-debug'),
-  mode = require('gulp-mode')();
+  mode = require('gulp-mode')(),
+  uglifyes = require('uglify-es'),
+  composer = require('gulp-uglify/composer'),
+  uglify = composer(uglifyes, console),
+  svgSprite = require('gulp-svg-sprite');
 
-const uglifyes = require('uglify-es');
-const composer = require('gulp-uglify/composer');
-const uglify = composer(uglifyes, console);
+// const uglifyes = require('uglify-es');
+// const composer = require('gulp-uglify/composer');
+// const uglify = composer(uglifyes, console);
 
-// Add browsersync.
 // Add browsersync.
 gulp.task('browser-sync', ['sass'], function () {
   browserSync.init({
@@ -33,6 +36,47 @@ gulp.task('browser-sync', ['sass'], function () {
     ui: false,
   });
 });
+
+// SVG icons.
+gulp.task('svgSprite', function (done) {
+  // Basic configuration example.
+  var config = {
+    shape: {
+      dimension: {
+        maxWidth: 100,
+        maxHeight: 100
+      },
+      spacing: {
+        padding: 10
+      },
+    },
+    mode: {
+      view: {
+        bust: false,
+        common: 'ico',
+        example: {
+          dest: '../src/icon/icons.html'
+        },
+        prefix: '.',
+        render: {
+          scss: {
+            template: './src/icon/svg-sprite-template.scss',
+            dest: '../src/scss/_icons.scss'
+          }
+        },
+        sprite: '../src/icon/icons.svg',
+      }
+    }
+  };
+
+  gulp.src('**/*.svg', {
+    cwd: './src/icon/svg'
+  })
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('./'));
+  done();
+});
+
 // JS.
 gulp.task('scripts', function () {
   return gulp.src('./src/js/**/*.js')
@@ -77,5 +121,7 @@ gulp.task('watch', ['browser-sync'], function (gulpCallback) {
 
 // Task: Build assets.
 gulp.task('build', ['sass', 'scripts']);
+// Task: handle svgs.
+gulp.task('svg', ['svgSprite']);
 // Task: Default gulp build and watch.
 gulp.task('default', ['sass', 'scripts', 'watch']);

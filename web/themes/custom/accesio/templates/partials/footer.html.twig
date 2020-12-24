@@ -1,0 +1,18 @@
+{# Footer partial from page.html.twig. #}
+{% if (page.footer_upper) or (page.footer_lower) %}
+  <footer class="footer">
+
+    {% if page.footer_upper %}
+      <div class="footer__upper">
+        {{ page.footer_upper }}
+      </div>
+    {% endif %}
+
+    {% if page.footer_lower %}
+      <div class="footer__lower">
+        {{ page.footer_lower }}
+      </div>
+    {% endif %}
+
+  </footer>
+{% endif %}
