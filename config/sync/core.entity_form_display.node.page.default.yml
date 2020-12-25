@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_components
+    - field.field.node.page.field_contained_width
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_social_description
     - field.field.node.page.field_social_image
@@ -47,6 +48,7 @@ third_party_settings:
     group_settings:
       children:
         - field_hide_title
+        - field_contained_width
       parent_name: group_tabs
       weight: 11
       format_type: tab
@@ -104,6 +106,13 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    region: content
+  field_contained_width:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_hide_title:
     weight: 3

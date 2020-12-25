@@ -1,0 +1,23 @@
+uuid: 298a1306-69fb-47f5-a0d7-c63c7cce4ddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contained_width
+    - node.type.page
+id: node.page.field_contained_width
+field_name: field_contained_width
+entity_type: node
+bundle: page
+label: 'Contained Width'
+description: 'Check this box to add a container width to this page.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
