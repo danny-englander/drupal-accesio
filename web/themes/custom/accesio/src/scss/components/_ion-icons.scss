@@ -1,0 +1,93 @@
+.icon-row {
+}
+
+.icon-item {
+  border: 1px dotted $charcoal;
+  padding: 10px 0 20px 20px;
+  margin-bottom: 30px;
+  background-color: white;
+
+  a:hover,
+  a:focus {
+    color: #000;
+  }
+
+  .ion {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+
+  &__preview-icon {
+    vertical-align: bottom;
+  }
+
+  &__preview-scale {
+    color: #888;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  &__step {
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    width: 10%;
+    @include rem(font-size, 64px);
+  }
+
+  .step i {
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+  }
+
+  .step:hover i {
+    opacity: .3;
+  }
+
+  .usage {
+    margin-top: auto;
+  }
+
+  &__usage {
+
+    input {
+      font-family: monospace;
+      margin-right: 3px;
+      padding: 2px 5px;
+      text-align: center;
+      -webkit-touch-callout: text;
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+
+    label {
+      display: block;
+    }
+  }
+
+  .usage label:first-child {
+    padding-left: 0;
+  }
+
+  .usage .name {
+    width: 180px;
+  }
+
+  .usage .html {
+    width: 80px;
+  }
+
+  .usage .css {
+    width: 80px;
+  }
+}

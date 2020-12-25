@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.filtered_list_views
     - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.quote_item
     - paragraphs.paragraphs_type.stats
@@ -43,6 +44,7 @@ settings:
       columns: columns
       timeline: timeline
       quote_item: quote_item
+      filtered_list_views: filtered_list_views
       stats: stats
     target_bundles_drag_drop:
       accordion:
@@ -60,6 +62,9 @@ settings:
       cta:
         enabled: true
         weight: -22
+      filtered_list_views:
+        enabled: true
+        weight: 22
       hero:
         enabled: true
         weight: -27

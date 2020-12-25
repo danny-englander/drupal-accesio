@@ -1,0 +1,23 @@
+uuid: 3c33cabe-c551-40fe-bbab-61345b2c05bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.filtered_list_views.field_views_list
+    - paragraphs.paragraphs_type.filtered_list_views
+  module:
+    - viewfield
+id: paragraph.filtered_list_views.default
+targetEntityType: paragraph
+bundle: filtered_list_views
+mode: default
+content:
+  field_views_list:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+hidden:
+  created: true
+  status: true

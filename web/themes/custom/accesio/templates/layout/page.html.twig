@@ -60,12 +60,20 @@
   {% endif %}
 
   <main id="main">
-    {# Link is in html.html.twig. #}
+    {# Link in html.html.twig. #}
     <a id="main-content" tabindex="-1"></a>
 
-    <div class="l-content">
-      {{ page.content }}
-    </div><!-- /.l-content -->
+    {% if has_container | render %}
+      <div class="l-content container">
+        {{ page.content }}
+      </div><!-- /.l-content -->
+
+    {% else %}
+
+      <div class="l-content">
+        {{ page.content }}
+      </div><!-- /.l-content -->
+    {% endif %}
 
     {% if page.sidebar %}
       <aside class="layout-sidebar-second" role="complementary">

@@ -30,9 +30,18 @@ function accesio_preprocess_page(array &$vars, $pid) {
       if ($node->hasField('field_hide_title') &&
         !$node->get('field_hide_title')->isEmpty()) {
         // Add a class if there is a hero.
-        if (!empty($node->field_hide_title)) {
+        if ($node->get('field_hide_title')->value === '1') {
           unset($vars['page']['content']['accesio_page_title']);
         }
+      }
+    }
+
+    // Check for the field_remove_btm_margin boolean value.
+    if ($node->hasField('field_contained_width') &&
+      !$node->get('field_contained_width')->isEmpty()) {
+      // If the value is true, add a variable.
+      if ($node->get('field_contained_width')->value === '1') {
+        $vars['has_container'] = TRUE;
       }
     }
   }

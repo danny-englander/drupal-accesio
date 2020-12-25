@@ -48,3 +48,8 @@ stats:
   css:
     theme:
       //fonts.googleapis.com/css?family=Rozha+One&display=swap: { type: external, minified: true }
+
+icons:
+  css:
+    theme:
+      dist/css/ionicons.min.css: { minified: true }

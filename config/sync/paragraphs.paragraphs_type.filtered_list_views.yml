@@ -1,0 +1,10 @@
+uuid: 141c5929-9710-4696-a5d9-8d27cb19d10e
+langcode: en
+status: true
+dependencies: {  }
+id: filtered_list_views
+label: 'Filtered List (views)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

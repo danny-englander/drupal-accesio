@@ -57,14 +57,11 @@ function accesio_theme_suggestions_views_view_field_alter(array &$suggestions, a
   $field_id = $vars["field"]->options["id"];
   $view_name = $vars["view"]->element["#name"];
 
-
-  // If the field name is "nothing", create a theme hook.
+  // If the field name is "value / value_1", create a theme hook.
   if ($view_name === 'icons' && $field === 'value' && $field_id === 'value_1') {
-    // We do a custom theme hook suggestion here as in D8 views,
-    // a custom field cannot fully render HTML.
+    // We do a custom theme hook suggestion.
     // see also accesio_preprocess_views_view_field
     // for custom variables set for the template.
-    $a = 1;
     $suggestions[] = $vars['theme_hook_original'] . '__' . 'field_icons';
   }
 }
@@ -81,11 +78,8 @@ function accesio_preprocess_views_view_field(&$vars) {
 
   // If the field name is "nothing", set variables..
   if ($view_name === 'icons' && $field === 'value' && $field_id === 'value_1') {
-    // Get the title.
-//    $vars['row_title'] = $vars["row"]->_entity->getTitle();
     // The main view display for the landing page.
     if ($view_display === 'icons_block') {
-
       $vars['icon_code'] = $vars["row"]->code;
       $vars['icon_name'] = $vars["row"]->name;
     }

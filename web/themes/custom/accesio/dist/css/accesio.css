@@ -605,12 +605,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'EB Garamond', serif;
-}
-
 .h1, .component__item--type--title h2,
 h1 {
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
   font-size: 2rem;
   line-height: 35px;
@@ -629,6 +626,7 @@ h1 {
 
 .h2,
 h2 {
+  font-family: 'EB Garamond', serif;
   font-weight: 500;
   font-size: 1.75rem;
   line-height: 1.875rem;
@@ -647,7 +645,8 @@ h2 {
 
 .h3, .quote__attribution,
 h3 {
-  font-weight: 600;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5625rem;
   margin-bottom: 1.25rem;
@@ -657,7 +656,7 @@ h3 {
 @media (min-width: 64em) {
   .h3, .quote__attribution,
   h3 {
-    font-size: 1.375rem;
+    font-size: 1.625rem;
     line-height: 1.875rem;
     margin-bottom: 1.375rem;
   }
@@ -665,6 +664,7 @@ h3 {
 
 .h4,
 h4 {
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5625rem;
@@ -682,6 +682,7 @@ h4 {
 
 .h5,
 h5 {
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -701,6 +702,7 @@ h5 {
 
 .h6,
 h6 {
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5625rem;
@@ -966,6 +968,86 @@ Branding.
 
 .hero__video-container.is-started .hero__video-container {
   background-color: transparent !important;
+}
+
+.icon-item {
+  border: 1px dotted #404040;
+  padding: 10px 0 20px 20px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.icon-item a:hover,
+.icon-item a:focus {
+  color: #000;
+}
+
+.icon-item .ion {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.icon-item__preview-icon {
+  vertical-align: bottom;
+}
+
+.icon-item__preview-scale {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.icon-item__step {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  width: 10%;
+  font-size: 4rem;
+}
+
+.icon-item .step i {
+  transition: opacity .3s;
+}
+
+.icon-item .step:hover i {
+  opacity: .3;
+}
+
+.icon-item .usage {
+  margin-top: auto;
+}
+
+.icon-item__usage input {
+  font-family: monospace;
+  margin-right: 3px;
+  padding: 2px 5px;
+  text-align: center;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.icon-item__usage label {
+  display: block;
+}
+
+.icon-item .usage label:first-child {
+  padding-left: 0;
+}
+
+.icon-item .usage .name {
+  width: 180px;
+}
+
+.icon-item .usage .html {
+  width: 80px;
+}
+
+.icon-item .usage .css {
+  width: 80px;
 }
 
 .masthead {
@@ -1994,6 +2076,41 @@ abbr[title] {
 
 .remove-bottom-margin {
   margin-bottom: 0 !important;
+}
+
+/* Flexbox Equal Height Bootstrap Columns (fully responsive) */
+@media only screen and (min-width: 481px) {
+  .flex-row.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .flex-row.row > [class*='col-'] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .flex-row.row:after,
+  .flex-row.row:before {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flex-row.row > [class*='col-'] > .box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .flex-row .flex-row--eq-height {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=accesio.css.map */

@@ -18,36 +18,44 @@
  * @see template_preprocess_views_view_field()
  */
 #}
-{{ attach_library('accesio_styles/icons') }}
+{{ attach_library('accesio/icons') }}
 
-<div class="preview-icon">
-  <span class="step size-48">
-      <i class="icon ion-{{- icon_name -}}"></i>
+<div class="icon-item flex-row--eq-height">
+  <div class="icon-item__inner flex-row--eq-height">
+
+    <div class="icon-item__preview-icon preview-icon">
+      <span class="icon-item__step step size-48">
+      <i class="icon-item__icon icon ion-{{- icon_name -}}"></i>
     </span>
+    </div>
+
+    <h2 class="h3">{{ icon_name -}}</h2>
+
+    {# <div class="preview-scale"> #}
+    {# <span class="step">12</span><span class="step">14</span><span class="step">16</span><span #}
+    {# class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span #}
+    {# class="step">48</span><span class="step">64</span><span class="step">96</span> #}
+    {# </div> #}
+
+    <div class="icon-item__usage usage">
+
+      <div class="icon-item__form-item">
+        <label for="name">{{ 'Classname:'|t }}</label>
+        <input class="name" type="text" readonly="readonly" onclick="this.select();" value="ion-{{- icon_name -}}"
+               id="name">
+      </div>
+
+      <div class="icon-item__form-item">
+        <label for="esc-html">{{ 'Escaped HTML:'|t }}</label>
+        <input class="html" type="text" readonly="readonly" onclick="this.select();"
+               value="&amp;#{{- icon_code | trim('0') -}};" id="esc-html">
+      </div>
+
+      <div class="icon-item__form-item">
+        <label for="css-content">{{ 'CSS Content:'|t }}</label>
+        <input class="css" type="text" readonly="readonly" onclick="this.select();"
+               value="\{{- icon_code | trim('0x') -}}" id="css-content">
+      </div>
+    </div>
+  </div>
 </div>
-
-{#<div class="preview-scale">#}
-{#  <span class="step">12</span><span class="step">14</span><span class="step">16</span><span#}
-{#    class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span#}
-{#    class="step">48</span><span class="step">64</span><span class="step">96</span>#}
-{#</div>#}
-
-<div class="usage">
-
-  <div>
-  <label>Classname:</label>
-  <input class="name" type="text" readonly="readonly" onclick="this.select();" value="ion-{{- icon_name -}}">
-  </div>
-
-  <div>
-  <label>Escaped HTML:</label>
-  <input class="html" type="text" readonly="readonly" onclick="this.select();"
-         value="&amp;#{{- icon_code | trim('0') -}};">
-  </div>
-  <div>
-
-  <label>CSS Content:</label>
-  <input class="css" type="text" readonly="readonly" onclick="this.select();" value="\{{- icon_code | trim('0x') -}}">
-  </div>
-</div>
-

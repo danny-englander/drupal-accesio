@@ -8,11 +8,11 @@ body {
 }
 
 #{headings(1,6)} {
-  font-family: 'EB Garamond', serif;
 }
 
 .h1,
 h1 {
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
   @include rem(font-size, 32px);
   line-height: 35px;
@@ -28,6 +28,7 @@ h1 {
 
 .h2,
 h2 {
+  font-family: 'EB Garamond', serif;
   font-weight: 500;
   @include rem(font-size, 28px);
   @include rem(line-height, 30px);
@@ -43,14 +44,15 @@ h2 {
 
 .h3,
 h3 {
-  font-weight: 600;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 400;
   @include rem(font-size, 20px);
   @include rem(line-height, 25px);
   @include rem(margin-bottom, 20px);
   margin-top: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 22px);
+    @include rem(font-size, 26px);
     @include rem(line-height, 30px);
     @include rem(margin-bottom, 22px);
   }
@@ -58,6 +60,7 @@ h3 {
 
 .h4,
 h4 {
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 600;
   @include rem(font-size, 16px);
   @include rem(line-height, 25px);
@@ -72,6 +75,7 @@ h4 {
 
 .h5,
 h5 {
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -88,6 +92,7 @@ h5 {
 
 .h6,
 h6 {
+  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 400;
   @include rem(font-size, 16px);
   @include rem(line-height, 25px);

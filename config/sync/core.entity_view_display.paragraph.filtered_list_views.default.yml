@@ -1,0 +1,25 @@
+uuid: cc68d9e7-bc20-43cd-b4b1-1db84131b9ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.filtered_list_views.field_views_list
+    - paragraphs.paragraphs_type.filtered_list_views
+  module:
+    - viewfield
+id: paragraph.filtered_list_views.default
+targetEntityType: paragraph
+bundle: filtered_list_views
+mode: default
+content:
+  field_views_list:
+    weight: 0
+    label: above
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+hidden: {  }
