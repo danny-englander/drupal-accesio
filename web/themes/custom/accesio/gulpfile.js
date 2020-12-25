@@ -43,11 +43,11 @@ gulp.task('svgSprite', function (done) {
   var config = {
     shape: {
       dimension: {
-        maxWidth: 100,
-        maxHeight: 100
+        maxWidth: 80,
+        maxHeight: 80
       },
       spacing: {
-        padding: 10
+        padding: 8
       },
     },
     mode: {

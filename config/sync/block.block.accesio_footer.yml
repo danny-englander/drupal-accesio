@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.footer
   module:
+    - block_class
     - system
   theme:
     - accesio
+third_party_settings:
+  block_class:
+    classes: footer-menu
 _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: accesio_footer
@@ -18,9 +22,9 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: 'Additional Links'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
   expand_all_items: false

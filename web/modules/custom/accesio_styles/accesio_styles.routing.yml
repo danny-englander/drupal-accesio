@@ -1,0 +1,14 @@
+
+accesio_styles.pattern_library_controller_view:
+  path: '/accesio-styles'
+  defaults:
+    _controller: '\Drupal\accesio_styles\Controller\AccesioStylesController::view'
+  requirements:
+    _permission: 'administer content'
+
+accesio_styles.pattern_library_controller_subpage:
+  path: '/accesio-styles/{path}'
+  defaults:
+    _controller: '\Drupal\accesio_styles\Controller\AccesioStylesController::subpage'
+  requirements:
+    _permission: 'access content'

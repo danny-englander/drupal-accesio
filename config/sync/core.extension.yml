@@ -1,7 +1,7 @@
 module:
   accesio_custom: 0
+  accesio_styles: 0
   admin_toolbar: 0
-  admin_toolbar_search: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
   automated_cron: 0
@@ -66,7 +66,9 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_json_source: 0
   views_ui: 0
+  yaml_content: 0
   pathauto: 1
   views: 10
   paragraphs: 11

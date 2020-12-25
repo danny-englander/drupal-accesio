@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Theme override for a single field in a view.
+ *
+ * Available variables:
+ * - view: The view that the field belongs to.
+ * - field: The field handler that can process the input.
+ * - row: The raw result of the database query that generated this field.
+ * - output: The processed output that will normally be used.
+ *
+ * When fetching output from the row this construct should be used:
+ * data = row[field.field_alias]
+ *
+ * The above will guarantee that you'll always get the correct data, regardless
+ * of any changes in the aliasing that might happen if the view is modified.
+ *
+ * @see template_preprocess_views_view_field()
+ */
+#}
+{{ attach_library('accesio_styles/icons') }}
+
+<div class="preview-icon">
+  <span class="step size-64">
+      <i class="icon ion-{{- icon_name -}}"></i>
+    </span>
+</div>
+
+{#<div class="preview-scale">#}
+{#  <span class="step">12</span><span class="step">14</span><span class="step">16</span><span#}
+{#    class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span#}
+{#    class="step">48</span><span class="step">64</span><span class="step">96</span>#}
+{#</div>#}
+
+<div class="usage">
+
+  <div>
+  <label>Classname:</label>
+  <input class="name" type="text" readonly="readonly" onclick="this.select();" value="ion-{{- icon_name -}}">
+  </div>
+
+  <div>
+  <label>Escaped HTML:</label>
+  <input class="html" type="text" readonly="readonly" onclick="this.select();"
+         value="&amp;#{{- icon_code | trim('0') -}};">
+  </div>
+  <div>
+
+  <label>CSS Content:</label>
+  <input class="css" type="text" readonly="readonly" onclick="this.select();" value="\{{- icon_code | trim('0x') -}}">
+  </div>
+</div>
+

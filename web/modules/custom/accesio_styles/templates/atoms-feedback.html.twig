@@ -1,0 +1,76 @@
+{# This gets our message styles here #}
+{{ attach_library('classy/messages') }}
+
+
+<h2>Feedback</h2>
+
+<h3>Tooltips</h3>
+
+{#<p>Tooltip <span data-tooltip data-position="top"  data-alignment="left" tabindex="3" title="Tooltip text">{% include base_path ~ '/themes/custom/dvele/svg/info-circle.svg' %}</span>#}
+</p>
+
+
+<h3>System Alerts</h3>
+{# taken from status-messages.html.twig #}
+
+<div role="contentinfo" class="messages messages--error">
+  <div class="messages__content container">
+    <div role="alert">
+      <span class="messages__item">Error message</span>
+    </div>
+  </div>
+</div>
+<div role="contentinfo" class="messages messages--warning">
+  <div class="messages__content container">
+    <div role="alert">
+      <span class="messages__item">Warning message</span>
+    </div>
+  </div>
+</div>
+<div role="contentinfo" class="messages messages--status">
+  <div class="messages__content container">
+    <div role="alert">
+      <span class="messages__item">Success message</span>
+    </div>
+  </div>
+</div>
+  <div role="contentinfo" class="messages messages--neutral">
+    <div class="messages__content container">
+      <div role="alert">
+        <span class="messages__item">Neutral message</span>
+      </div>
+    </div>
+  </div>
+
+
+<h3>Alerts</h3>
+<p><em>Star and close button icons are placeholders.</em></p>
+<div class="callout alert" data-closable>
+  {% include base_path ~ '/themes/custom/dvele/svg/star.svg' %}
+  <div class="callout-content">
+    <p>Urgent alert</p>
+  </div>
+  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="callout warning" data-closable>
+  {% include base_path ~ '/themes/custom/dvele/svg/star.svg' %}
+  <div class="callout-content">
+    <p>Warning alert</p>
+  </div>
+  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="callout primary" data-closable>
+  {% include base_path ~ '/themes/custom/dvele/svg/star.svg' %}
+  <div class="callout-content">
+    <p>Info alert</p>
+  </div>
+  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
