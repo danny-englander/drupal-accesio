@@ -14,7 +14,7 @@ mode: default
 content:
   field_views_list:
     weight: 0
-    label: above
+    label: hidden
     settings:
       view_title: hidden
       always_build_output: false

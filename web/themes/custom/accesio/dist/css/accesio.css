@@ -665,8 +665,8 @@ h3 {
 .h4,
 h4 {
   font-family: 'Noto Sans SC', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.125rem;
   line-height: 1.5625rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -675,8 +675,9 @@ h4 {
 @media (min-width: 64em) {
   .h4,
   h4 {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     line-height: 1.875rem;
+    margin-bottom: 1.125rem;
   }
 }
 
@@ -977,9 +978,13 @@ Branding.
   background-color: white;
 }
 
-.icon-item a:hover,
-.icon-item a:focus {
-  color: #000;
+.icon-item--has-results {
+  background-color: #ffc300;
+}
+
+.icon-item:hover, .icon-item:focus {
+  background-color: #ffc300;
+  cursor: pointer;
 }
 
 .icon-item .ion {
@@ -1009,10 +1014,6 @@ Branding.
 
 .icon-item .step i {
   transition: opacity .3s;
-}
-
-.icon-item .step:hover i {
-  opacity: .3;
 }
 
 .icon-item .usage {

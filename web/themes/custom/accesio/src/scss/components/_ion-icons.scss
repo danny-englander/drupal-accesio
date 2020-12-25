@@ -7,9 +7,18 @@
   margin-bottom: 30px;
   background-color: white;
 
-  a:hover,
-  a:focus {
-    color: #000;
+  &--has-results {
+    background-color: $secondary-color;
+  }
+
+  &--no-results {
+
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-color;
+    cursor: pointer;
   }
 
   .ion {
@@ -48,7 +57,8 @@
   }
 
   .step:hover i {
-    opacity: .3;
+   // opacity: .3;
+//    color: $primary-color;
   }
 
   .usage {

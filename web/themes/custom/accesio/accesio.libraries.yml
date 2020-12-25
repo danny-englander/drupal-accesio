@@ -53,3 +53,7 @@ icons:
   css:
     theme:
       dist/css/ionicons.min.css: { minified: true }
+
+masonry:
+  js:
+    dist/js/isotope.pkgd.min.js: { minified: true }
