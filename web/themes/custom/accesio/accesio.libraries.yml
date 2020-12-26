@@ -3,6 +3,7 @@ accesio:
   css:
     theme:
       //fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+SC&display=swap: { type: external, minified: true }
+      dist/css/ionicons.min.css: { minified: true }
       dist/css/grid.css: { minified: true }
       dist/css/accesio.css: { minified: true }
   js:
@@ -49,11 +50,10 @@ stats:
     theme:
       //fonts.googleapis.com/css?family=Rozha+One&display=swap: { type: external, minified: true }
 
-icons:
-  css:
-    theme:
-      dist/css/ionicons.min.css: { minified: true }
-
 masonry:
   js:
     dist/js/isotope.pkgd.min.js: { minified: true }
+
+a11y_tabs:
+  js:
+    dist/js/van11y-accessible-tab-panel-aria.js: {}

@@ -1,0 +1,196 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+{{ attach_library('accesio/a11y_tabs') }}
+
+{% set tab_names = {
+  Headings: { title: "Headings" },
+  Lists: { title: "Lists & Text" },
+  Buttons_Links: { title: "Buttons and Links" },
+} %}
+
+<div class="js-tabs" data-existing-hx="h2" data-tabs-prefix-class="style-tabs">
+  <ul class="js-tablist">
+    {% for item in tab_names %}
+      <li class="js-tablist__item">
+        <a href="#tab-id-item-{{ loop.index }}" class="js-tablist__link">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div id="tab-id-item-1" class="js-tabcontent">
+    <h2>{{ 'Headings'|t }}</h2>
+
+    <h2 class="h1">Heading 1 Lorem Ipsum Dolor sit</h2>
+    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+      until it
+      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
+      again until it does wrap. This is a paragraph of text that should be long enough to wrap.</p>
+
+    <h2>Heading 2 is here lorem ipsum dolor sit ametdio ellim vestibulum crestum velorem dolor sit amet</h2>
+    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+      until it
+      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
+      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+    </p>
+
+    <h3>Heading 3 is here lorem ipsum</h3>
+    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+      until it
+      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
+      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+    </p>
+
+    <h4>Heading 4 is here lorem ipsum</h4>
+    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+      until it
+      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
+      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+    </p>
+
+    <h5>Heading 5 is here lorem ipsum</h5>
+    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+      until it
+      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
+      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+    </p>
+
+    <h6>Heading 6 is here lorem ipsum</h6>
+    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+      until it
+      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
+      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+    </p>
+
+  </div>
+
+  <div id="tab-id-item-2" class="js-tabcontent">
+    <h2>{{ 'Lists'|t }}</h2>
+
+    <div class="component__item--type--text" style="padding: 0;">
+      <ul>
+        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
+          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+        </li>
+        <li>li Curabitur at sapien nec nisi semper semper nec in est. Duis pulvinar tempor blandit. Aenean iaculis arcu
+          et
+          neque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+          pret,
+          ligula felis scelerisque.
+        </li>
+        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
+          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+        </li>
+      </ul>
+    </div>
+
+    <div class="component__item--type--text" style="padding: 0;">
+      <ol>
+        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
+          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+        </li>
+        <li>li Curabitur at sapien nec nisi semper semper nec in est. Duis pulvinar tempor blandit. Aenean iaculis arcu
+          et
+          neque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+          pret,
+          ligula felis scelerisque.
+        </li>
+        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
+          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+        </li>
+      </ol>
+
+      <h2>Miscellaneous Text</h2>
+      <p>This is paragraph text <a href="#" onclick="return false;">with a link</a></p>
+
+      <p><em>This is italic text, made with em.</em> <i>This is italic text as well, made with i.</i></p>
+
+      <p><strong>This is bold text, made with strong.</strong> <b>This is bold text as well, made with b.</b></p>
+
+      <p><u>This is underlined text, made with u.</u>
+        <ins>This is inserted text, made with ins.</ins>
+      </p>
+
+      <p><strike>This is deleted (strikethrough) text, made with strike.</strike> <s>This is also strikethrough text,
+          but made
+          with s.</s>
+        <del>This is deleted text, made with del.</del>
+      </p>
+
+      <p><code>This is computer code, made with code.</code> <tt>This is teletype text, made with tt.</tt></p>
+
+      <p><kbd>This is text the user is supposed to enter in, or keyboard, made with kbd.</kbd> <var>This is a variable,
+          made
+          with var.</var> <samp>This is sample program output, made with samp.</samp></p>
+
+      <p><small>This is small text, made with small.</small> <big>This is big text, made with big.</big></p>
+
+      <p><cite>This is a citation, made with cite.</cite> This is a <q>short quotation</q> in the middle of a sentence,
+        made
+        with q.</p>
+
+      <p>This sentence ends with a <sup>superscript</sup>. This sentence ends with a <sub>subscript</sub>.</p>
+
+      <p>This is an abbreviation, made with abbr: <abbr>WWW</abbr>. This is an acronym, made with acronym:
+        <acronym>NATO</acronym>. This is a term that needs a definition, made with dfn: <dfn>Yog-Sothoth</dfn>.</p>
+
+      <blockquote>
+        <p>&ldquo;I love songs about horses, railroads, land, judgement day, family, hard times, whiskey, courtship,
+          marriage,
+          adultery, separation, murder, war, prison, rambling, damnation, home, salvation, death, pride, humor, piety,
+          rebellion, patriotism, larceny, determination, tragedy, rowdiness, heartbreak, and love. And Mother. And God.&rdquo;
+          ~ Johnny Cash</p>
+      </blockquote>
+
+      <p>This is pre-formatted:</p>
+
+      <pre>
+        Start in column one.
+              Then indent to column ten.
+    Then back five spaces.
+</pre>
+
+      <p>This is a definition list:</p>
+      <dl>
+        <dt>Defintion Term</dt>
+        <dd>Definition data defining the previous term</dd>
+        <dt>Another Definition Term</dt>
+        <dd>Definition data defining the previous term</dd>
+      </dl>
+
+    </div>
+
+  </div>
+
+  <div id="tab-id-item-3" class="js-tabcontent">
+    <h2>{{ 'Buttons and Links'|t }}</h2>
+
+
+  </div>
+
+</div>

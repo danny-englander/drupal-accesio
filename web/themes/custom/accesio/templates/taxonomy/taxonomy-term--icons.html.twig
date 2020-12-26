@@ -24,7 +24,6 @@
  */
 #}
 {{ attach_library('accesio/icons') }}
-{{ attach_library('accesio/masonry') }}
 
 {% set icon_code = content.field_icon_code["#items"].getString() %}
 {% set icon_name = elements["#taxonomy_term"].name.value %}
@@ -55,11 +54,11 @@
                    id="name">
           </div>
 
-          <div class="icon-item__form-item">
-            <label for="esc-html">{{ 'Escaped HTML:'|t }}</label>
-            <input class="html" type="text" readonly="readonly" onclick="this.select();"
-                   value="&amp;#{{- icon_code | trim('0') -}};" id="esc-html">
-          </div>
+{#          <div class="icon-item__form-item">#}
+{#            <label for="esc-html">{{ 'Escaped HTML:'|t }}</label>#}
+{#            <input class="html" type="text" readonly="readonly" onclick="this.select();"#}
+{#                   value="&amp;#{{- icon_code | trim('0') -}};" id="esc-html">#}
+{#          </div>#}
 
           <div class="icon-item__form-item">
             <label for="css-content">{{ 'CSS Content:'|t }}</label>

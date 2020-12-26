@@ -3,3 +3,16 @@
  * @file
  * Functions to support the Accesio custom module.
  */
+
+/**
+ * Implements hook_theme().
+ */
+function accesio_custom_theme($existing, $type, $theme, $path) {
+  return [
+    'accesio_styles' => [
+      'variables' => [
+        'title' => NULL,
+      ],
+    ],
+  ];
+}

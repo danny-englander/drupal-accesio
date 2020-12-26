@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_components
     - node.type.page
     - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.block
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.filtered_list_views
@@ -44,6 +45,7 @@ settings:
       columns: columns
       timeline: timeline
       quote_item: quote_item
+      block: block
       filtered_list_views: filtered_list_views
       stats: stats
     target_bundles_drag_drop:
@@ -56,6 +58,9 @@ settings:
       accordion_item:
         weight: -17
         enabled: false
+      block:
+        enabled: true
+        weight: 21
       columns:
         enabled: true
         weight: -20

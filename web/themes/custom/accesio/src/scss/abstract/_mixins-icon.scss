@@ -54,3 +54,61 @@
     }
   }
 }
+
+// Icon mixin, before
+@mixin ion-icons (
+  $icon,
+  $font-size,
+  $color: null,
+  $rotate: null,
+  $position: null,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $opacity: null,
+  $translate_y: null
+) {
+  &:before {
+    content: "#{$icon}";
+    font-family: "Ionicons";
+    @include rem(font-size, $font-size);
+    display: inline-block;
+
+    @if $color {
+      color: $color;
+    }
+
+    @if $rotate {
+      transform: rotate(#{$rotate}deg);
+    }
+
+    @if $position {
+      position: $position;
+    }
+
+    @if $top {
+      top: $top;
+    }
+
+    @if $right {
+      right: $right;
+    }
+
+    @if $bottom {
+      bottom: $bottom;
+    }
+
+    @if $left {
+      left: $left;
+    }
+
+    @if $opacity {
+      opacity: $opacity;
+    }
+
+    @if $translate_y {
+      transform: translateY($translate_y);
+    }
+  }
+}

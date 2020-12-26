@@ -1,0 +1,64 @@
+.js-tablist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+ // flex-direction: column;
+
+  &__item {
+    cursor: pointer;
+    margin-bottom: 0;
+
+   // display: inline-block;
+    margin-right: 14px;
+  }
+
+  &__link {
+    @include rem(font-size, 20px);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 10px 0;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    @include link-effect();
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: $secondary-color;
+    color: $black;
+    padding: 12px 26px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 6px solid $secondary-color;
+    @include link-effect();
+
+    &:focus {
+      outline: none;
+    }
+
+
+    &:hover,
+    &[aria-selected="true"] {
+      border-bottom: 6px solid $primary-color;
+    }
+
+
+  }
+}
+
+.js-tabcontent {
+  @include link-effect();
+  visibility: visible;
+  opacity: 1;
+  height: inherit;
+
+  &[aria-hidden="true"] {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+
+  }
+
+}

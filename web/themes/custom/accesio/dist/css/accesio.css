@@ -723,7 +723,7 @@ h6 {
 .page-wrap li,
 .page-wrap .p,
 .page-wrap p {
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.9375rem;
   margin-top: 0;
   letter-spacing: .03rem;
 }
@@ -732,7 +732,7 @@ h6 {
   .page-wrap li,
   .page-wrap .p,
   .page-wrap p {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     line-height: 2rem;
   }
 }
@@ -1049,6 +1049,59 @@ Branding.
 
 .icon-item .usage .css {
   width: 80px;
+}
+
+/* Styled lists */
+.component__item--type--text {
+  /* Styled ordered list */
+  /* Styled unordered list */
+}
+
+.component__item--type--text ol, .component__item--type--text ul {
+  list-style: none;
+  margin: 30px 0;
+  -webkit-padding-start: 0;
+}
+
+.component__item--type--text ol li, .component__item--type--text ul li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.component__item--type--text ol > li {
+  counter-increment: item;
+}
+
+.component__item--type--text ol > li:before {
+  font-size: 1rem;
+  content: counter(item);
+  background-color: #890c0c;
+  border-radius: 100%;
+  color: #fff;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.component__item--type--text ul > li:before {
+  content: "";
+  font-family: "Ionicons";
+  font-size: 2rem;
+  display: inline-block;
+  color: #890c0c;
+  position: absolute;
+  top: 3px;
+  left: 0;
 }
 
 .masthead {
@@ -1694,6 +1747,62 @@ Branding.
 
 .stats__item-icon .svg-inline--fa {
   color: #890c0c;
+}
+
+.js-tablist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.js-tablist__item {
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-right: 14px;
+}
+
+.js-tablist__link {
+  font-size: 1.25rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 10px 0;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  transition: all 0.6s ease 0s;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffc300;
+  color: #212121;
+  padding: 12px 26px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 6px solid #ffc300;
+  transition: all 0.6s ease 0s;
+}
+
+.js-tablist__link:focus {
+  outline: none;
+}
+
+.js-tablist__link:hover, .js-tablist__link[aria-selected="true"] {
+  border-bottom: 6px solid #890c0c;
+}
+
+.js-tabcontent {
+  transition: all 0.6s ease 0s;
+  visibility: visible;
+  opacity: 1;
+  height: inherit;
+}
+
+.js-tabcontent[aria-hidden="true"] {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
 }
 
 .text-bg {
