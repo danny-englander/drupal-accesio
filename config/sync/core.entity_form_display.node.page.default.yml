@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_checkboxes
     - field.field.node.page.field_components
-    - field.field.node.page.field_contained_width
+    - field.field.node.page.field_edgy
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_social_description
     - field.field.node.page.field_social_image
@@ -49,6 +50,7 @@ third_party_settings:
       children:
         - field_hide_title
         - field_contained_width
+        - field_edgy
       parent_name: group_tabs
       weight: 11
       format_type: tab
@@ -88,6 +90,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_checkboxes:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_components:
     type: paragraphs
     weight: 2
@@ -107,8 +115,8 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     region: content
-  field_contained_width:
-    weight: 4
+  field_edgy:
+    weight: 5
     settings:
       display_label: true
     third_party_settings: {  }

@@ -63,14 +63,11 @@
     {# Link in html.html.twig. #}
     <a id="main-content" tabindex="-1"></a>
 
-    {% if has_container | render %}
-      <div class="l-content container">
-        {{ page.content }}
-      </div><!-- /.l-content -->
-
+    {% if no_container | render %}
+      {{ page.content }}
     {% else %}
 
-      <div class="l-content">
+      <div class="l-content container">
         {{ page.content }}
       </div><!-- /.l-content -->
     {% endif %}

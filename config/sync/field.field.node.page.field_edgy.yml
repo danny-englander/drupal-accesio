@@ -1,16 +1,16 @@
-uuid: 298a1306-69fb-47f5-a0d7-c63c7cce4ddd
+uuid: 156c3663-6fbc-416a-9c2c-779a84bcc2f2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_contained_width
+    - field.storage.node.field_edgy
     - node.type.page
-id: node.page.field_contained_width
-field_name: field_contained_width
+id: node.page.field_edgy
+field_name: field_edgy
 entity_type: node
 bundle: page
-label: 'Contained Width'
-description: 'Check this box to add a container width to this page.'
+label: 'Edge to Edge Width'
+description: ''
 required: false
 translatable: false
 default_value:

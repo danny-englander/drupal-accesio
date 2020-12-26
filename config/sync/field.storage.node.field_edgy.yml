@@ -1,11 +1,11 @@
-uuid: edc7eb0a-91d8-41bc-ae63-a1e999e74c29
+uuid: 4f5f5ee7-3ef0-4719-bf65-bf8420d4da60
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_contained_width
-field_name: field_contained_width
+id: node.field_edgy
+field_name: field_edgy
 entity_type: node
 type: boolean
 settings: {  }

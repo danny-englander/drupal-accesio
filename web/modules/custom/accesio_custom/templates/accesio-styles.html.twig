@@ -32,6 +32,7 @@
   Headings: { title: "Headings" },
   Lists: { title: "Lists & Text" },
   Buttons_Links: { title: "Buttons and Links" },
+  Forms: { title: "Form Elements" },
 } %}
 
 <div class="js-tabs" data-existing-hx="h2" data-tabs-prefix-class="style-tabs">
@@ -46,153 +47,275 @@
   <div id="tab-id-item-1" class="js-tabcontent">
     <div class="js-tabcontent__inner">
 
-    <h2>{{ 'Headings'|t }}</h2>
+      <h2>{{ 'Headings'|t }}</h2>
 
-    <h2 class="h1">Heading 1 Lorem Ipsum Dolor sit</h2>
-    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
-      until it
-      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
-      again until it does wrap. This is a paragraph of text that should be long enough to wrap.</p>
+      <h2 class="h1">Heading 1 Lorem Ipsum Dolor sit</h2>
+      <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+        until it
+        does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and
+        over
+        again until it does wrap. This is a paragraph of text that should be long enough to wrap.</p>
 
-    <h2>Heading 2 is here lorem ipsum dolor sit ametdio ellim vestibulum crestum velorem dolor sit amet</h2>
-    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
-      until it
-      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
-      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
-    </p>
+      <h2>Heading 2 is here lorem ipsum dolor sit ametdio ellim vestibulum crestum velorem dolor sit amet</h2>
+      <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+        until it
+        does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and
+        over
+        again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+      </p>
 
-    <h3>Heading 3 is here lorem ipsum</h3>
-    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
-      until it
-      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
-      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
-    </p>
+      <h3>Heading 3 is here lorem ipsum</h3>
+      <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+        until it
+        does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and
+        over
+        again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+      </p>
 
-    <h4>Heading 4 is here lorem ipsum</h4>
-    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
-      until it
-      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
-      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
-    </p>
+      <h4>Heading 4 is here lorem ipsum</h4>
+      <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+        until it
+        does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and
+        over
+        again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+      </p>
 
-    <h5>Heading 5 is here lorem ipsum</h5>
-    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
-      until it
-      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
-      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
-    </p>
+      <h5>Heading 5 is here lorem ipsum</h5>
+      <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+        until it
+        does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and
+        over
+        again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+      </p>
 
-    <h6>Heading 6 is here lorem ipsum</h6>
-    <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
-      until it
-      does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over
-      again until it does wrap. This is a paragraph of text that should be long enough to wrap.
-    </p>
+      <h6>Heading 6 is here lorem ipsum</h6>
+      <p>This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again
+        until it
+        does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and
+        over
+        again until it does wrap. This is a paragraph of text that should be long enough to wrap.
+      </p>
     </div>
   </div>
 
   <div id="tab-id-item-2" class="js-tabcontent">
     <div class="js-tabcontent__inner">
-    <h2>{{ 'Lists'|t }}</h2>
+      <h2>{{ 'Lists'|t }}</h2>
 
-    <div class="component__item--type--text" style="padding: 0;">
-      <ul>
-        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
-          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
-        </li>
-        <li>li Curabitur at sapien nec nisi semper semper nec in est. Duis pulvinar tempor blandit. Aenean iaculis arcu
-          et
-          neque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
-          pret,
-          ligula felis scelerisque.
-        </li>
-        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
-          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
-        </li>
-      </ul>
-    </div>
+      <div class="component__item--type--text" style="padding: 0;">
+        <ul>
+          <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+            pret,
+            ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+          </li>
+          <li>li Curabitur at sapien nec nisi semper semper nec in est. Duis pulvinar tempor blandit. Aenean iaculis
+            arcu
+            et
+            neque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+            pret,
+            ligula felis scelerisque.
+          </li>
+          <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+            pret,
+            ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+          </li>
+        </ul>
+      </div>
 
-    <div class="component__item--type--text" style="padding: 0;">
-      <ol>
-        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
-          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
-        </li>
-        <li>li Curabitur at sapien nec nisi semper semper nec in est. Duis pulvinar tempor blandit. Aenean iaculis arcu
-          et
-          neque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
-          pret,
-          ligula felis scelerisque.
-        </li>
-        <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque pret,
-          ligula felis scelerisque nibh, nec fermentum metus urna at risus.
-        </li>
-      </ol>
+      <div class="component__item--type--text" style="padding: 0;">
+        <ol>
+          <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+            pret,
+            ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+          </li>
+          <li>li Curabitur at sapien nec nisi semper semper nec in est. Duis pulvinar tempor blandit. Aenean iaculis
+            arcu
+            et
+            neque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+            pret,
+            ligula felis scelerisque.
+          </li>
+          <li>li is here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus, dolor eu scelerisque
+            pret,
+            ligula felis scelerisque nibh, nec fermentum metus urna at risus.
+          </li>
+        </ol>
 
-      <h2>Miscellaneous Text</h2>
-      <p>This is paragraph text <a href="#" onclick="return false;">with a link</a></p>
+        <h2>Miscellaneous Text</h2>
+        <p>This is paragraph text <a href="#" onclick="return false;">with a link</a></p>
 
-      <p><em>This is italic text, made with em.</em> <i>This is italic text as well, made with i.</i></p>
+        <p><em>This is italic text, made with em.</em> <i>This is italic text as well, made with i.</i></p>
 
-      <p><strong>This is bold text, made with strong.</strong> <b>This is bold text as well, made with b.</b></p>
+        <p><strong>This is bold text, made with strong.</strong> <b>This is bold text as well, made with b.</b></p>
 
-      <p><u>This is underlined text, made with u.</u>
-        <ins>This is inserted text, made with ins.</ins>
-      </p>
+        <p><u>This is underlined text, made with u.</u>
+          <ins>This is inserted text, made with ins.</ins>
+        </p>
 
-      <p><strike>This is deleted (strikethrough) text, made with strike.</strike> <s>This is also strikethrough text,
-          but made
-          with s.</s>
-        <del>This is deleted text, made with del.</del>
-      </p>
+        <p><strike>This is deleted (strikethrough) text, made with strike.</strike> <s>This is also strikethrough text,
+            but made
+            with s.</s>
+          <del>This is deleted text, made with del.</del>
+        </p>
 
-      <p><code>This is computer code, made with code.</code> <tt>This is teletype text, made with tt.</tt></p>
+        <p><code>This is computer code, made with code.</code> <tt>This is teletype text, made with tt.</tt></p>
 
-      <p><kbd>This is text the user is supposed to enter in, or keyboard, made with kbd.</kbd> <var>This is a variable,
+        <p><kbd>This is text the user is supposed to enter in, or keyboard, made with kbd.</kbd> <var>This is a
+            variable,
+            made
+            with var.</var> <samp>This is sample program output, made with samp.</samp></p>
+
+        <p><small>This is small text, made with small.</small> <big>This is big text, made with big.</big></p>
+
+        <p><cite>This is a citation, made with cite.</cite> This is a <q>short quotation</q> in the middle of a
+          sentence,
           made
-          with var.</var> <samp>This is sample program output, made with samp.</samp></p>
+          with q.</p>
 
-      <p><small>This is small text, made with small.</small> <big>This is big text, made with big.</big></p>
+        <p>This sentence ends with a <sup>superscript</sup>. This sentence ends with a <sub>subscript</sub>.</p>
 
-      <p><cite>This is a citation, made with cite.</cite> This is a <q>short quotation</q> in the middle of a sentence,
-        made
-        with q.</p>
+        <p>This is an abbreviation, made with abbr: <abbr>WWW</abbr>. This is an acronym, made with acronym:
+          <acronym>NATO</acronym>. This is a term that needs a definition, made with dfn: <dfn>Yog-Sothoth</dfn>.</p>
 
-      <p>This sentence ends with a <sup>superscript</sup>. This sentence ends with a <sub>subscript</sub>.</p>
+        <blockquote>
+          <p>&ldquo;I love songs about horses, railroads, land, judgement day, family, hard times, whiskey, courtship,
+            marriage,
+            adultery, separation, murder, war, prison, rambling, damnation, home, salvation, death, pride, humor, piety,
+            rebellion, patriotism, larceny, determination, tragedy, rowdiness, heartbreak, and love. And Mother. And
+            God.&rdquo;
+            ~ Johnny Cash</p>
+        </blockquote>
 
-      <p>This is an abbreviation, made with abbr: <abbr>WWW</abbr>. This is an acronym, made with acronym:
-        <acronym>NATO</acronym>. This is a term that needs a definition, made with dfn: <dfn>Yog-Sothoth</dfn>.</p>
+        <p>This is pre-formatted:</p>
 
-      <blockquote>
-        <p>&ldquo;I love songs about horses, railroads, land, judgement day, family, hard times, whiskey, courtship,
-          marriage,
-          adultery, separation, murder, war, prison, rambling, damnation, home, salvation, death, pride, humor, piety,
-          rebellion, patriotism, larceny, determination, tragedy, rowdiness, heartbreak, and love. And Mother. And God.&rdquo;
-          ~ Johnny Cash</p>
-      </blockquote>
-
-      <p>This is pre-formatted:</p>
-
-      <pre>
+        <pre>
         Start in column one.
               Then indent to column ten.
     Then back five spaces.
 </pre>
 
-      <p>This is a definition list:</p>
-      <dl>
-        <dt>Defintion Term</dt>
-        <dd>Definition data defining the previous term</dd>
-        <dt>Another Definition Term</dt>
-        <dd>Definition data defining the previous term</dd>
-      </dl>
+        <p>This is a definition list:</p>
+        <dl>
+          <dt>Defintion Term</dt>
+          <dd>Definition data defining the previous term</dd>
+          <dt>Another Definition Term</dt>
+          <dd>Definition data defining the previous term</dd>
+        </dl>
 
-    </div>
+      </div>
     </div>
   </div>
 
   <div id="tab-id-item-3" class="js-tabcontent">
     <div class="js-tabcontent__inner">
-    <h2>{{ 'Buttons and Links'|t }}</h2>
+      <h2>{{ 'Buttons and Links'|t }}</h2>
+
+    </div>
+  </div>
+
+  <div id="tab-id-item-4" class="js-tabcontent">
+    <div class="js-tabcontent__inner">
+      <h2>{{ 'Form Elements'|t }}</h2>
+
+      <div class="form-item">
+        <label>Input Label Foo</label>
+        <input placeholder="this is an input" type="text">
+      </div>
+
+      <div class="form-item">
+        <label>Input Label Bar</label>
+        <input placeholder="this is another input" type="text">
+      </div>
+
+      <div class="form-item">
+        <label>How many puppies?</label>
+        <input type="number" value="100">
+      </div>
+
+      <div class="form-item"><label>What books did you read over summer break?</label>
+        <textarea placeholder="None"></textarea>
+      </div>
+
+      <div class="form-item form-type-select">
+        <label>Select Menu</label>
+        <select>
+          <option value="[any]" selected="selected">Choose</option>
+          <option value="husker">Husker</option>
+          <option value="starbucks">Starbucks</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+      </div>
+
+      <div class="form-item form-type-select">
+        <div class="form-item">
+          <label>Multiple Select Menu</label>
+          <select multiple="multiple">
+            <option value="showboat">Showboat</option>
+            <option value="redwing">Redwing</option>
+            <option value="narcho">Narcho</option>
+            <option value="hardball">Hardball</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      <div class="form-item js-form-type-radio">
+        <fieldset>
+          <legend>Choose Your Favorite</legend>
+          <input id="pokemonRed" name="pokemon" required="" type="radio" value="Red"/>
+          <label for="pokemonRed">Red</label>
+
+          <input id="pokemonBlue" name="pokemon" type="radio" value="Blue">
+          <label for="pokemonBlue">Blue</label>
+
+          <input id="pokemonYellow" name="pokemon" type="radio" value="Yellow">
+          <label for="pokemonYellow">Yellow</label>
+        </fieldset>
+      </div>
+
+
+      <div class="form-item js-form-type-checkbox">
+        <fieldset>
+          <legend>Check these out</legend>
+          <input id="checkbox1" type="checkbox"/>
+          <label for="checkbox1">Checkbox 1</label>
+
+          <span class="checkbox-toggle">
+    <span class="checkbox-toggle__inner"></span>
+  </span>
+
+          <input id="checkbox2" type="checkbox"/>
+          <label for="checkbox2">Checkbox 2</label>
+
+          <input id="checkbox3" type="checkbox"/>
+          <label for="checkbox3">Checkbox 3</label>
+        </fieldset>
+      </div>
+
+      <div class="form-item">
+        <fieldset>
+          <legend>Check these out</legend>
+          <input id="checkbox12" type="checkbox">
+          <label for="checkbox12">Checkbox 1</label>
+          <input id="checkbox22" type="checkbox">
+          <label for="checkbox22">Checkbox 2</label>
+          <input id="checkbox32" type="checkbox">
+          <label for="checkbox32">Checkbox 3</label>
+        </fieldset>
+      </div>
+
+      <div class="form-item">
+        <label>Password</label>
+        <input aria-describedby="passwordHelpText" type="password">
+        <p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an
+          Emoji.</p>
+      </div>
+
+      <div class="form-item"><label class="button" for="exampleFileUpload">Upload File</label>
+        <input class="show-for-sr" id="exampleFileUpload" type="file"/>
+      </div>
 
     </div>
   </div>

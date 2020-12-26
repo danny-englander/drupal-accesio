@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_checkboxes
     - field.field.node.page.field_components
-    - field.field.node.page.field_contained_width
+    - field.field.node.page.field_edgy
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_social_description
     - field.field.node.page.field_social_image
@@ -29,7 +30,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_contained_width: true
+  field_checkboxes: true
+  field_edgy: true
   field_hide_title: true
   field_social_description: true
   field_social_image: true

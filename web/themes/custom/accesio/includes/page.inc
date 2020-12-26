@@ -36,12 +36,12 @@ function accesio_preprocess_page(array &$vars, $pid) {
       }
     }
 
-    // Check for the field_remove_btm_margin boolean value.
-    if ($node->hasField('field_contained_width') &&
-      !$node->get('field_contained_width')->isEmpty()) {
+    // Check for the field_edgy boolean value.
+    if ($node->hasField('field_edgy') &&
+      !$node->get('field_edgy')->isEmpty()) {
       // If the value is true, add a variable.
-      if ($node->get('field_contained_width')->value === '1') {
-        $vars['has_container'] = TRUE;
+      if ($node->get('field_edgy')->value === '1') {
+        $vars['no_container'] = TRUE;
       }
     }
   }
