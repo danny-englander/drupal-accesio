@@ -159,20 +159,20 @@
 
   Drupal.behaviors.accesioInlineSearch = {
     attach: function (context, settings) {
-      $(".inline-search").on("keyup", function () {
-        const value = $(this).val();
-        $(".results").removeClass("results");
-
-        $(".searchable").each(function () {
-          if (value !== "" && $(this).text().search(new RegExp(value, 'gi')) !== -1) {
-            $(this).addClass("results");
-            $(this).parents().eq(1).addClass("icon-item--has-results");
-          } else if (value !== "" && $(this).text().search(value) !== 1) {
-            $(this).addClass("noresults")
-            $(this).parents().eq(1).addClass("icon-item--no-results");
-          }
-        });
-      });
+      // $(".inline-search").on("keyup", function () {
+      //   const value = $(this).val();
+      //   $(".results").removeClass("results");
+      //
+      //   $(".searchable").each(function () {
+      //     if (value !== "" && $(this).text().search(new RegExp(value, 'gi')) !== -1) {
+      //       $(this).addClass("results");
+      //       $(this).parents().eq(1).addClass("icon-item--has-results");
+      //     } else if (value !== "" && $(this).text().search(value) !== 1) {
+      //       $(this).addClass("noresults")
+      //       $(this).parents().eq(1).addClass("icon-item--no-results");
+      //     }
+      //   });
+      // });
     },
   };
 

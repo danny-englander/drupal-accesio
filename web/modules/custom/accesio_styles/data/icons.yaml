@@ -1,6 +1,4 @@
 ---
-prefix: ion-
-name: Ionicons
 icons:
   - code: '0xf102'
     name: ios-add

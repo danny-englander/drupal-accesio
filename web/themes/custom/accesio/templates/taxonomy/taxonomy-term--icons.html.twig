@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Theme override to display a taxonomy term.
+ *
+ * Available variables:
+ * - url: URL of the current term.
+ * - name: (optional) Name of the current term.
+ * - content: Items for the content of the term (fields and description).
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.description'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('description') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - page: Flag for the full page state.
+ * - term: The taxonomy term entity, including:
+ *   - id: The ID of the taxonomy term.
+ *   - bundle: Machine name of the current vocabulary.
+ * - view_mode: View mode, e.g. 'full', 'teaser', etc.
+ *
+ * @see template_preprocess_taxonomy_term()
+ */
+#}
+{{ attach_library('accesio/icons') }}
+{{ attach_library('accesio/masonry') }}
+
+{% set icon_code = content.field_icon_code["#items"].getString() %}
+{% set icon_name = elements["#taxonomy_term"].name.value %}
+
+{% set classes = [
+  'taxonomy-term',
+  'vocabulary-' ~ term.bundle|clean_class,
+] %}
+
+<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+
+    <div class="icon-item flex-row--eq-height">
+      <div class="icon-item__inner flex-row--eq-height">
+
+        <div class="icon-item__preview-icon preview-icon">
+      <span class="icon-item__step step size-48">
+      <i class="icon-item__icon icon ion-{{- icon_name -}}"></i>
+    </span>
+        </div>
+
+        <h2 class="searchable h4">{{ icon_name -}}</h2>
+
+        <div class="icon-item__usage usage">
+
+          <div class="icon-item__form-item">
+            <label for="name">{{ 'Classname:'|t }}</label>
+            <input class="name" type="text" readonly="readonly" onclick="this.select();" value="ion-{{- icon_name -}}"
+                   id="name">
+          </div>
+
+          <div class="icon-item__form-item">
+            <label for="esc-html">{{ 'Escaped HTML:'|t }}</label>
+            <input class="html" type="text" readonly="readonly" onclick="this.select();"
+                   value="&amp;#{{- icon_code | trim('0') -}};" id="esc-html">
+          </div>
+
+          <div class="icon-item__form-item">
+            <label for="css-content">{{ 'CSS Content:'|t }}</label>
+            <input class="css" type="text" readonly="readonly" onclick="this.select();"
+                   value="\{{- icon_code | trim('0x') -}}" id="css-content">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

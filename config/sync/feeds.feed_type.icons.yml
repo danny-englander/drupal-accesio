@@ -1,0 +1,72 @@
+uuid: f752e195-f844-453c-9f7f-7938d1d1400a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.icons.field_icon_code
+    - taxonomy.vocabulary.icons
+  module:
+    - taxonomy
+id: icons
+label: Icons
+description: ''
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  langcode: en
+  update_existing: 1
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    vid: icons
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  icons__code:
+    label: icons__code
+    value: icons__code
+    machine_name: icons__code
+  icons__name:
+    label: icons__name
+    value: icons__name
+    machine_name: icons__name
+  code:
+    label: code
+    value: code
+    machine_name: code
+  name:
+    label: name
+    value: name
+    machine_name: name
+  id:
+    label: id
+    value: id
+    machine_name: id
+mappings:
+  -
+    target: field_icon_code
+    map:
+      value: code
+    unique:
+      value: '1'
+    settings:
+      language: null
+  -
+    target: name
+    map:
+      value: name
+    unique: {  }
+    settings:
+      language: null
