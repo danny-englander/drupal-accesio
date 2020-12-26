@@ -1760,7 +1760,11 @@ Branding.
 .js-tablist__item {
   cursor: pointer;
   margin-bottom: 0;
-  margin-right: 14px;
+  margin-right: 20px;
+}
+
+.js-tablist--outline .js-tablist__item {
+  margin-bottom: 0;
 }
 
 .js-tablist__link {
@@ -1784,12 +1788,31 @@ Branding.
   transition: all 0.6s ease 0s;
 }
 
+.js-tablist--outline .js-tablist__link {
+  background-color: transparent;
+  position: relative;
+  top: 1px;
+  z-index: 1;
+  border-width: 1px !important;
+  border: 2px solid #890c0c;
+  border-bottom: none;
+  margin-bottom: 0;
+  background-color: whitesmoke;
+}
+
 .js-tablist__link:focus {
   outline: none;
 }
 
 .js-tablist__link:hover, .js-tablist__link[aria-selected="true"] {
+  background-color: #ffc300;
   border-bottom: 6px solid #890c0c;
+  color: #212121;
+}
+
+.js-tablist--outline .js-tablist__link:hover, .js-tablist--outline .js-tablist__link[aria-selected="true"] {
+  background-color: #890c0c;
+  color: #fff;
 }
 
 .js-tabcontent {
@@ -1797,6 +1820,16 @@ Branding.
   visibility: visible;
   opacity: 1;
   height: inherit;
+}
+
+.js-tabcontent--outline {
+  background-color: transparent;
+  border-top: 1px solid #a22f35;
+  margin-top: -1px;
+}
+
+.js-tabcontent--outline .js-tabcontent__inner {
+  padding-top: 20px;
 }
 
 .js-tabcontent[aria-hidden="true"] {

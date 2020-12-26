@@ -4,14 +4,16 @@
   list-style: none;
   display: flex;
 
- // flex-direction: column;
+  // flex-direction: column;
 
   &__item {
     cursor: pointer;
     margin-bottom: 0;
+    margin-right: 20px;
 
-   // display: inline-block;
-    margin-right: 14px;
+    @include root-modifier('.js-tablist--outline') {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -34,17 +36,36 @@
     border-bottom: 6px solid $secondary-color;
     @include link-effect();
 
+    @include root-modifier('.js-tablist--outline') {
+      background-color: transparent;
+      position: relative;
+      top: 1px;
+      z-index: 1;
+      border-width: 1px !important;
+      border: 2px solid $primary-color;
+      border-bottom: none;
+      margin-bottom: 0;
+      background-color: whitesmoke;
+    }
+
     &:focus {
       outline: none;
     }
 
-
     &:hover,
     &[aria-selected="true"] {
+      background-color: $secondary-color;
       border-bottom: 6px solid $primary-color;
+      color: $black;
     }
 
-
+    @include root-modifier('.js-tablist--outline') {
+      &:hover,
+      &[aria-selected="true"] {
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
   }
 }
 
@@ -54,11 +75,22 @@
   opacity: 1;
   height: inherit;
 
+  &--outline {
+    background-color: transparent;
+    border-top: 1px solid #a22f35;
+    margin-top: -1px;
+  }
+
+  &__inner {
+
+    @include root-modifier('.js-tabcontent--outline') {
+      padding-top: 20px;
+    }
+  }
+
   &[aria-hidden="true"] {
     visibility: hidden;
     opacity: 0;
     height: 0;
-
   }
-
 }
