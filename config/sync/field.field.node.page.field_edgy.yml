@@ -10,7 +10,7 @@ field_name: field_edgy
 entity_type: node
 bundle: page
 label: 'Edge to Edge Width'
-description: ''
+description: 'Check this box for the page to have edge to edge full width. (This is ideal for component based landing pages.)'
 required: false
 translatable: false
 default_value:

@@ -1,24 +1,12 @@
-.icon-row {
-}
 
 .icon-item {
   border: 1px dotted $charcoal;
-  padding: 10px 0 20px 20px;
+  padding: 10px 20px 20px 20px;
   margin-bottom: 30px;
   background-color: white;
 
-  &--has-results {
-    background-color: $secondary-color;
-  }
-
-  &--no-results {
-
-  }
-
   &:hover,
   &:focus {
-    background-color: $secondary-color;
-    cursor: pointer;
   }
 
   .ion {
@@ -45,7 +33,7 @@
     line-height: 1;
     position: relative;
     width: 10%;
-    @include rem(font-size, 64px);
+    @include rem(font-size, 72px);
   }
 
   .step i {
@@ -71,30 +59,26 @@
       font-family: monospace;
       margin-right: 3px;
       padding: 2px 5px;
-      text-align: center;
       -webkit-touch-callout: text;
       -webkit-user-select: text;
       -khtml-user-select: text;
       -moz-user-select: text;
       -ms-user-select: text;
       user-select: text;
+      width: 100%;
     }
 
     label {
       display: block;
     }
+
+    .icon-item__form-item--css {
+      margin-bottom: 0;
+    }
   }
 
   .usage label:first-child {
     padding-left: 0;
-  }
-
-  .usage .name {
-    width: 180px;
-  }
-
-  .usage .html {
-    width: 80px;
   }
 
   .usage .css {

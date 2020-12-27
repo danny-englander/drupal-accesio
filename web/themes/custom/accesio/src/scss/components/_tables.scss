@@ -1,0 +1,42 @@
+table {
+  @include rem(font-size, 18px);
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  thead tr {
+    background-color: $primary-color;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: 12px 15px;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: #eaeaea;
+  }
+
+  tbody tr:last-of-type {
+    border-bottom: 2px solid $primary-color;
+  }
+
+  tbody tr.active-row {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  caption {
+    @include rem(font-size, 20px);
+    font-weight: 600;
+    background-color: $light-gray;
+    padding: 10px;
+  }
+}

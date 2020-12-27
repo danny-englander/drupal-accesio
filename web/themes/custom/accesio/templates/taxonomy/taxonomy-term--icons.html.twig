@@ -48,20 +48,14 @@
 
         <div class="icon-item__usage usage">
 
-          <div class="icon-item__form-item">
-            <label for="name">{{ 'Classname:'|t }}</label>
+          <div class="icon-item__form-item form-item icon-item__form-item--class">
+            <label for="name">{{ 'Classname'|t }}</label>
             <input class="name" type="text" readonly="readonly" onclick="this.select();" value="ion-{{- icon_name -}}"
                    id="name">
           </div>
 
-{#          <div class="icon-item__form-item">#}
-{#            <label for="esc-html">{{ 'Escaped HTML:'|t }}</label>#}
-{#            <input class="html" type="text" readonly="readonly" onclick="this.select();"#}
-{#                   value="&amp;#{{- icon_code | trim('0') -}};" id="esc-html">#}
-{#          </div>#}
-
-          <div class="icon-item__form-item">
-            <label for="css-content">{{ 'CSS Content:'|t }}</label>
+          <div class="icon-item__form-item form-item icon-item__form-item--css">
+            <label for="css-content">{{ 'CSS Content'|t }}</label>
             <input class="css" type="text" readonly="readonly" onclick="this.select();"
                    value="\{{- icon_code -}}" id="css-content">
           </div>

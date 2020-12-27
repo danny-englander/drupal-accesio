@@ -26,6 +26,12 @@ input[type='text'] {
   @include mq($from: small_desktop) {
     height: 45px;
   }
+
+  &:focus {
+    border: 1px solid $black;
+    outline: black;
+  }
+
 }
 
 button,

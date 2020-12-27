@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_checkboxes
     - field.field.node.page.field_components
     - field.field.node.page.field_edgy
     - field.field.node.page.field_hide_title
@@ -90,12 +89,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_checkboxes:
-    weight: 29
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_components:
     type: paragraphs
     weight: 2

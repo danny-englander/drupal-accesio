@@ -384,6 +384,10 @@ html {
   box-sizing: inherit;
 }
 
+.l-content.container {
+  padding-bottom: 50px;
+}
+
 /*
 Buttons
 Note, if we need buttons in many different colors, we can make this into a mixin.
@@ -392,13 +396,13 @@ Note, if we need buttons in many different colors, we can make this into a mixin
 a.btn,
 input[type="file"],
 input[type="submit"] {
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: bold;
   transition: all 0.6s ease 0s;
   display: inline-block;
-  border-radius: 28px;
-  padding: 12px 34px;
-  letter-spacing: 3.6px;
+  border-radius: 50px;
+  padding: 6px 30px;
+  letter-spacing: 2px;
   line-height: 1.8;
   color: #fff;
   border: 2px solid #890c0c;
@@ -437,18 +441,24 @@ input[type="submit"]:hover {
 a.btn.btn-small,
 input[type="file"].btn-small,
 input[type="submit"].btn-small {
-  padding: 6px 18px;
-  font-size: 0.6875rem;
+  padding: 4px 18px;
+  font-size: 0.9375rem;
+}
+
+.btn.btn-sq, .form-item.form-type-managed-file label.btn-sq,
+a.btn.btn-sq,
+input[type="file"].btn-sq,
+input[type="submit"].btn-sq {
+  border-radius: 0;
 }
 
 .btn.btn-secondary, .form-item.form-type-managed-file label.btn-secondary,
 a.btn.btn-secondary,
 input[type="file"].btn-secondary,
 input[type="submit"].btn-secondary {
-  background-color: red;
-  color: #fff;
-  border: 2px solid red;
-  padding: 10px 22px;
+  background-color: #ffc300;
+  color: #212121;
+  border: 2px solid #ffc300;
   border-radius: 22px;
 }
 
@@ -463,9 +473,9 @@ input[type="submit"].btn-secondary:active,
 input[type="submit"].btn-secondary:focus,
 input[type="submit"].btn-secondary:hover {
   text-decoration: none;
-  border: 2px solid red;
-  color: #212121;
-  background-color: transparent;
+  border: 2px solid #890c0c;
+  color: #fff;
+  background-color: #890c0c;
 }
 
 .btn.btn-secondary-inverse:active, .form-item.form-type-managed-file label.btn-secondary-inverse:active, .btn.btn-secondary-inverse:focus, .form-item.form-type-managed-file label.btn-secondary-inverse:focus, .btn.btn-secondary-inverse:hover, .form-item.form-type-managed-file label.btn-secondary-inverse:hover,
@@ -489,8 +499,8 @@ a.btn.btn-hollow,
 input[type="file"].btn-hollow,
 input[type="submit"].btn-hollow {
   background-color: transparent;
-  color: navy;
-  border: 2px solid gray;
+  color: #890c0c;
+  border: 2px solid #890c0c;
 }
 
 .btn.btn-hollow:active, .form-item.form-type-managed-file label.btn-hollow:active, .btn.btn-hollow:focus, .form-item.form-type-managed-file label.btn-hollow:focus, .btn.btn-hollow:hover, .form-item.form-type-managed-file label.btn-hollow:hover,
@@ -503,9 +513,10 @@ input[type="file"].btn-hollow:hover,
 input[type="submit"].btn-hollow:active,
 input[type="submit"].btn-hollow:focus,
 input[type="submit"].btn-hollow:hover {
-  color: #fff;
-  border: 2px solid navy;
-  background-color: navy;
+  border: 2px solid #212121;
+  background-color: transparent;
+  color: #212121;
+  text-decoration: underline;
 }
 
 .btn.btn-hollow-inverse, .form-item.form-type-managed-file label.btn-hollow-inverse,
@@ -935,6 +946,25 @@ input[type='text'] {
   }
 }
 
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='date']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='time']:focus,
+input[type='url']:focus,
+input[type='color']:focus,
+input[type='text']:focus {
+  border: 1px solid #212121;
+  outline: black;
+}
+
 button,
 input[type=button] {
   border: none;
@@ -1271,18 +1301,9 @@ legend {
 
 .icon-item {
   border: 1px dotted #404040;
-  padding: 10px 0 20px 20px;
+  padding: 10px 20px 20px 20px;
   margin-bottom: 30px;
   background-color: white;
-}
-
-.icon-item--has-results {
-  background-color: #ffc300;
-}
-
-.icon-item:hover, .icon-item:focus {
-  background-color: #ffc300;
-  cursor: pointer;
 }
 
 .icon-item .ion {
@@ -1307,7 +1328,7 @@ legend {
   line-height: 1;
   position: relative;
   width: 10%;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .icon-item .step i {
@@ -1322,27 +1343,23 @@ legend {
   font-family: monospace;
   margin-right: 3px;
   padding: 2px 5px;
-  text-align: center;
   -webkit-touch-callout: text;
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  width: 100%;
 }
 
 .icon-item__usage label {
   display: block;
 }
 
+.icon-item__usage .icon-item__form-item--css {
+  margin-bottom: 0;
+}
+
 .icon-item .usage label:first-child {
   padding-left: 0;
-}
-
-.icon-item .usage .name {
-  width: 180px;
-}
-
-.icon-item .usage .html {
-  width: 80px;
 }
 
 .icon-item .usage .css {
@@ -1720,8 +1737,9 @@ legend {
   border: 1px solid #ffc300;
 }
 
-.main-menu__item--level-0 > span.has-action:active, .main-menu__item--level-0 > span.has-action:hover,
+.main-menu__item--level-0 > span.has-action:active, .main-menu__item--level-0 > span.has-action:focus, .main-menu__item--level-0 > span.has-action:hover,
 .main-menu__item--level-0 > a.has-action:active,
+.main-menu__item--level-0 > a.has-action:focus,
 .main-menu__item--level-0 > a.has-action:hover {
   background-color: #890c0c;
   color: #fff;
@@ -1918,6 +1936,50 @@ legend {
   margin-top: 40px;
 }
 
+.pager__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.pager__item {
+  margin: 6px;
+}
+
+.pager__item a {
+  padding: 6px 14px;
+  text-decoration: none;
+  background-color: #890c0c;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.pager__item a:active, .pager__item a:focus, .pager__item a:hover {
+  background-color: #ffc300;
+  color: #212121;
+}
+
+.pager__item--ellipsis {
+  font-weight: 600;
+  color: #212121;
+}
+
+.page-wrap .pager__item--ellipsis {
+  font-size: 1.25rem;
+}
+
+.pager__item.is-active a {
+  background-color: #ffc300;
+  color: #212121;
+}
+
 /* Styled quote */
 .quote {
   position: relative;
@@ -2047,43 +2109,83 @@ legend {
   color: #890c0c;
 }
 
+table {
+  font-size: 1.125rem;
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: #890c0c;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #eaeaea;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #890c0c;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #890c0c;
+}
+
+table caption {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #dadada;
+  padding: 10px;
+}
+
 .js-tablist {
   margin: 0;
   padding: 0;
   list-style: none;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 2px solid #890c0c;
 }
 
 .js-tablist__item {
   cursor: pointer;
-  margin-bottom: 0;
-  margin-right: 20px;
 }
 
-.js-tablist--outline .js-tablist__item {
-  margin-bottom: 0;
+.page-wrap .js-tablist__item {
+  margin: 0 20px 0 0;
 }
 
 .js-tablist__link {
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 10px 0;
+  margin: 0;
+  padding: 12px 26px;
   -webkit-appearance: none;
   border: 1px solid transparent;
-  transition: all 0.6s ease 0s;
   line-height: 1;
   text-align: center;
   cursor: pointer;
   background-color: #ffc300;
   color: #212121;
-  padding: 12px 26px;
-  font-weight: 400;
-  letter-spacing: 1px;
   text-decoration: none;
-  border-bottom: 6px solid #ffc300;
-  transition: all 0.6s ease 0s;
+  border-bottom: 4px solid #ffc300;
+  letter-spacing: 2px;
 }
 
 .js-tablist--outline .js-tablist__link {
@@ -2104,7 +2206,7 @@ legend {
 
 .js-tablist__link:hover, .js-tablist__link[aria-selected="true"] {
   background-color: #ffc300;
-  border-bottom: 6px solid #890c0c;
+  border-bottom: 4px solid #890c0c;
   color: #212121;
 }
 
@@ -2126,7 +2228,7 @@ legend {
   margin-top: -1px;
 }
 
-.js-tabcontent--outline .js-tabcontent__inner {
+.js-tabcontent__inner {
   padding-top: 20px;
 }
 
@@ -2452,7 +2554,7 @@ Utility menu.
   padding: 2px 4px;
 }
 
-.utility-menu__item a:active, .utility-menu__item a:hover {
+.utility-menu__item a:active, .utility-menu__item a:focus, .utility-menu__item a:hover {
   background-color: #890c0c;
   border: none;
 }

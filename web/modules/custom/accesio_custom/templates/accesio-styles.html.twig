@@ -32,7 +32,7 @@
   Headings: { title: "Headings" },
   Lists: { title: "Lists & Text" },
   Buttons_Links: { title: "Buttons and Links" },
-  Forms: { title: "Form Elements" },
+  Tables: { title: "Data Table" },
 } %}
 
 <div class="js-tabs" data-existing-hx="h2" data-tabs-prefix-class="style-tabs">
@@ -210,112 +210,69 @@
     <div class="js-tabcontent__inner">
       <h2>{{ 'Buttons and Links'|t }}</h2>
 
+      <div class="row justify-content-between">
+
+        <div class="col-md-4 mb-3">
+          <a class="btn mb-3" href=".">Button</a><br>
+          <a class="btn btn-small mb-3" href=".">Small</a><br>
+          <a class="btn btn-secondary mb-3" href=".">Secondary</a><br>
+          <a class="btn btn-small btn-secondary mb-3" href=".">Secondary Small</a><br>
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+          <a class="btn btn-hollow mb-3" href=".">Hollow</a><br>
+          <a class="btn btn-small btn-hollow mb-3" href=".">Small Hollow</a><br>
+          <div style="background-color: #0c0d0e; padding: 12px 0 0 8px; width: 230px;">
+          <a class="btn btn-hollow btn-hollow-inverse mb-3" href=".">Hollow Inverse</a><br>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <a class="btn btn-sq mb-3" href=".">Square</a><br>
+        </div>
+      </div>
     </div>
   </div>
 
   <div id="tab-id-item-4" class="js-tabcontent">
     <div class="js-tabcontent__inner">
-      <h2>{{ 'Form Elements'|t }}</h2>
+      <h2>{{ 'Data Table'|t }}</h2>
 
-      <div class="form-item">
-        <label>Input Label Foo</label>
-        <input placeholder="this is an input" type="text">
-      </div>
-
-      <div class="form-item">
-        <label>Input Label Bar</label>
-        <input placeholder="this is another input" type="text">
-      </div>
-
-      <div class="form-item">
-        <label>How many puppies?</label>
-        <input type="number" value="100">
-      </div>
-
-      <div class="form-item"><label>What books did you read over summer break?</label>
-        <textarea placeholder="None"></textarea>
-      </div>
-
-      <div class="form-item form-type-select">
-        <label>Select Menu</label>
-        <select>
-          <option value="[any]" selected="selected">Choose</option>
-          <option value="husker">Husker</option>
-          <option value="starbucks">Starbucks</option>
-          <option value="hotdog">Hot Dog</option>
-          <option value="apollo">Apollo</option>
-        </select>
-      </div>
-
-      <div class="form-item form-type-select">
-        <div class="form-item">
-          <label>Multiple Select Menu</label>
-          <select multiple="multiple">
-            <option value="showboat">Showboat</option>
-            <option value="redwing">Redwing</option>
-            <option value="narcho">Narcho</option>
-            <option value="hardball">Hardball</option>
-          </select>
-        </div>
-      </div>
-
-
-
-      <div class="form-item js-form-type-radio">
-        <fieldset>
-          <legend>Choose Your Favorite</legend>
-          <input id="pokemonRed" name="pokemon" required="" type="radio" value="Red"/>
-          <label for="pokemonRed">Red</label>
-
-          <input id="pokemonBlue" name="pokemon" type="radio" value="Blue">
-          <label for="pokemonBlue">Blue</label>
-
-          <input id="pokemonYellow" name="pokemon" type="radio" value="Yellow">
-          <label for="pokemonYellow">Yellow</label>
-        </fieldset>
-      </div>
-
-
-      <div class="form-item js-form-type-checkbox">
-        <fieldset>
-          <legend>Check these out</legend>
-          <input id="checkbox1" type="checkbox"/>
-          <label for="checkbox1">Checkbox 1</label>
-
-          <span class="checkbox-toggle">
-    <span class="checkbox-toggle__inner"></span>
-  </span>
-
-          <input id="checkbox2" type="checkbox"/>
-          <label for="checkbox2">Checkbox 2</label>
-
-          <input id="checkbox3" type="checkbox"/>
-          <label for="checkbox3">Checkbox 3</label>
-        </fieldset>
-      </div>
-
-      <div class="form-item">
-        <fieldset>
-          <legend>Check these out</legend>
-          <input id="checkbox12" type="checkbox">
-          <label for="checkbox12">Checkbox 1</label>
-          <input id="checkbox22" type="checkbox">
-          <label for="checkbox22">Checkbox 2</label>
-          <input id="checkbox32" type="checkbox">
-          <label for="checkbox32">Checkbox 3</label>
-        </fieldset>
-      </div>
-
-      <div class="form-item">
-        <label>Password</label>
-        <input aria-describedby="passwordHelpText" type="password">
-        <p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an
-          Emoji.</p>
-      </div>
-
-      <div class="form-item"><label class="button" for="exampleFileUpload">Upload File</label>
-        <input class="show-for-sr" id="exampleFileUpload" type="file"/>
-      </div>
+      <table>
+        <caption>This is a table caption</caption>
+        <thead>
+        <tr>
+          <th>Table Header 1</th>
+          <th>Table Header 2</th>
+          <th>Table Header 3</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+          <td>Table Footer 1</td>
+          <td>Table Footer 2</td>
+          <td>Table Footer 3</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+          <td>TD 1.1</td>
+          <td>TD 1.2</td>
+          <td>TD 1.3</td>
+        </tr>
+        <tr>
+          <td>TD 2.1</td>
+          <td>TD 2.2</td>
+          <td>TD 2.3</td>
+        </tr>
+        <tr>
+          <td>TD 3.1</td>
+          <td>TD 3.2</td>
+          <td>TD 3.3</td>
+        </tr>
+        </tbody>
+      </table>
 
     </div>
   </div>

@@ -70,7 +70,7 @@ $mq-breakpoints: (
 //$mq-show-breakpoints: (small, mobile, small_plus, medium, medium-large, small_desktop, desktop, x_wide);
 
 $a-tags: 'a, &:active, &:hover, &:visited';
-$a-tags-hover: '&:active, &:hover';
+$a-tags-hover: '&:active, &:focus, &:hover ';
 
 $md-radio-checked-color: $primary-color;
 $md-radio-border-color: rgba(0, 0, 0, 0.6);

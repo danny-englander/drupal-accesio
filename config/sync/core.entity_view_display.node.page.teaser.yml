@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.field_checkboxes
     - field.field.node.page.field_components
     - field.field.node.page.field_edgy
     - field.field.node.page.field_hide_title
@@ -24,7 +23,6 @@ content:
     weight: 101
     region: content
 hidden:
-  field_checkboxes: true
   field_components: true
   field_edgy: true
   field_hide_title: true
