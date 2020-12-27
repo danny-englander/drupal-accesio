@@ -30,3 +30,13 @@
     flex-direction: column;
   }
 }
+
+.demo-inverse-bg {
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 72px;
+  margin: 10px 40px;
+}
+

@@ -117,22 +117,22 @@
   };
 
   /*
-  * MasonrySearch.
+  *
   */
   Drupal.behaviors.accesioFormUpdates = {
     attach: function (context, settings) {
-
       $(context).find('.js-form-type-checkbox').once().each(function () {
         $(this).find('input.form-checkbox').after('<span class="checkbox-toggle"><span class="checkbox-toggle__inner"></span></span>');
       });
-
-
-
     },
   };
 
-  Drupal.behaviors.accesioInlineSearch = {
+  Drupal.behaviors.accesioViews = {
     attach: function (context, settings) {
+      $(context).find('#filter-toggle').on('click', function () {
+        $(this).toggleClass('filter-toggle-expanded');
+        $(this).parent().find('.view-filters').toggleClass('filters-expanded');
+      });
     },
   };
 

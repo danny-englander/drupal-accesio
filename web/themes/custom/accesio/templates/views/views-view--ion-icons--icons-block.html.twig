@@ -31,16 +31,13 @@
  */
 #}
 
-{%
-  set classes = [
+{% set classes = [
   'view',
   'view-' ~ id|clean_class,
   'view-id-' ~ id,
   'view-display-id-' ~ display_id,
   dom_id ? 'js-view-dom-id-' ~ dom_id,
-]
-%}
-
+] %}
 
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
@@ -54,8 +51,14 @@
     </div>
   {% endif %}
   {% if exposed %}
-    <div class="view-filters">
-      {{ exposed }}
+    <div class="filter-wrap">
+      <div class="filter-toggle" id="filter-toggle" tabindex="0" role="button">
+        <h2 class="h3">{{ 'Filter' }}</h2>
+      </div>
+
+      <div class="view-filters">
+        {{ exposed }}
+      </div>
     </div>
   {% endif %}
   {% if attachment_before %}

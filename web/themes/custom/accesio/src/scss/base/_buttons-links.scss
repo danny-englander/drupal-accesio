@@ -9,7 +9,7 @@ Note, if we need buttons in many different colors, we can make this into a mixin
 a.btn,
 input[type="file"],
 input[type="submit"] {
-  @include rem(font-size, 17px);
+  @include rem(font-size, 18px);
   font-weight: bold;
   @include link-effect();
   display: inline-block;
@@ -34,7 +34,7 @@ input[type="submit"] {
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  
+
   #{$a-tags-hover} {
     text-decoration: none;
     border: 2px solid $secondary-color;
@@ -44,7 +44,7 @@ input[type="submit"] {
 
   &.btn-small {
     padding: 4px 18px;
-    @include rem(font-size, 15px);
+    @include rem(font-size, 16px);
   }
 
   &.btn-sq {
@@ -88,14 +88,13 @@ input[type="submit"] {
   }
 
   &.btn-hollow-inverse {
-    color: $white;
-    border: 2px solid $white;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
 
     #{$a-tags-hover} {
       border: 2px solid $white;
-      background-color: $white;
-      color: navy;
-      text-decoration: none;
+      color: $white;
+      text-decoration: underline;
     }
   }
 

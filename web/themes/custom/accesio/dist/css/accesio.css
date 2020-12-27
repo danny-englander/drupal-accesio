@@ -396,7 +396,7 @@ Note, if we need buttons in many different colors, we can make this into a mixin
 a.btn,
 input[type="file"],
 input[type="submit"] {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   font-weight: bold;
   transition: all 0.6s ease 0s;
   display: inline-block;
@@ -432,9 +432,9 @@ input[type="submit"]:active,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
   text-decoration: none;
-  border: 2px solid #ffc300;
+  border: 2px solid #69cec3;
   color: #212121;
-  background-color: #ffc300;
+  background-color: #69cec3;
 }
 
 .btn.btn-small, .form-item.form-type-managed-file label.btn-small,
@@ -442,7 +442,7 @@ a.btn.btn-small,
 input[type="file"].btn-small,
 input[type="submit"].btn-small {
   padding: 4px 18px;
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 
 .btn.btn-sq, .form-item.form-type-managed-file label.btn-sq,
@@ -456,9 +456,9 @@ input[type="submit"].btn-sq {
 a.btn.btn-secondary,
 input[type="file"].btn-secondary,
 input[type="submit"].btn-secondary {
-  background-color: #ffc300;
+  background-color: #69cec3;
   color: #212121;
-  border: 2px solid #ffc300;
+  border: 2px solid #69cec3;
   border-radius: 22px;
 }
 
@@ -523,8 +523,8 @@ input[type="submit"].btn-hollow:hover {
 a.btn.btn-hollow-inverse,
 input[type="file"].btn-hollow-inverse,
 input[type="submit"].btn-hollow-inverse {
-  color: #fff;
-  border: 2px solid #fff;
+  color: #69cec3;
+  border: 2px solid #69cec3;
 }
 
 .btn.btn-hollow-inverse:active, .form-item.form-type-managed-file label.btn-hollow-inverse:active, .btn.btn-hollow-inverse:focus, .form-item.form-type-managed-file label.btn-hollow-inverse:focus, .btn.btn-hollow-inverse:hover, .form-item.form-type-managed-file label.btn-hollow-inverse:hover,
@@ -538,9 +538,8 @@ input[type="submit"].btn-hollow-inverse:active,
 input[type="submit"].btn-hollow-inverse:focus,
 input[type="submit"].btn-hollow-inverse:hover {
   border: 2px solid #fff;
-  background-color: #fff;
-  color: navy;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .btn.btn-pager, .form-item.form-type-managed-file label.btn-pager,
@@ -1300,7 +1299,7 @@ legend {
 }
 
 .icon-item {
-  border: 1px dotted #404040;
+  border: 1px dashed #404040;
   padding: 10px 20px 20px 20px;
   margin-bottom: 30px;
   background-color: white;
@@ -1321,6 +1320,10 @@ legend {
   color: #888;
   font-size: 12px;
   margin-top: 5px;
+}
+
+.icon-item h2 {
+  border-bottom: 1px solid #404040;
 }
 
 .icon-item__step {
@@ -1732,9 +1735,9 @@ legend {
 
 .main-menu__item--level-0 > span.has-action,
 .main-menu__item--level-0 > a.has-action {
-  background-color: #ffc300;
+  background-color: #69cec3;
   color: #212121;
-  border: 1px solid #ffc300;
+  border: 1px solid #69cec3;
 }
 
 .main-menu__item--level-0 > span.has-action:active, .main-menu__item--level-0 > span.has-action:focus, .main-menu__item--level-0 > span.has-action:hover,
@@ -1865,7 +1868,7 @@ legend {
   .main-menu__sub-nav {
     position: absolute;
     top: 116px;
-    background-color: #ffc300;
+    background-color: #69cec3;
     color: #fff;
     right: 0;
     left: 0;
@@ -1962,7 +1965,7 @@ legend {
 }
 
 .pager__item a:active, .pager__item a:focus, .pager__item a:hover {
-  background-color: #ffc300;
+  background-color: #69cec3;
   color: #212121;
 }
 
@@ -1976,7 +1979,7 @@ legend {
 }
 
 .pager__item.is-active a {
-  background-color: #ffc300;
+  background-color: #69cec3;
   color: #212121;
 }
 
@@ -2181,10 +2184,10 @@ table caption {
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #ffc300;
+  background-color: #69cec3;
   color: #212121;
   text-decoration: none;
-  border-bottom: 4px solid #ffc300;
+  border-bottom: 4px solid #69cec3;
   letter-spacing: 2px;
 }
 
@@ -2205,7 +2208,7 @@ table caption {
 }
 
 .js-tablist__link:hover, .js-tablist__link[aria-selected="true"] {
-  background-color: #ffc300;
+  background-color: #69cec3;
   border-bottom: 4px solid #890c0c;
   color: #212121;
 }
@@ -2480,7 +2483,7 @@ Timeline (simple style).
   display: inline-block;
   height: 34px;
   width: 34px;
-  background-color: #ffc300;
+  background-color: #69cec3;
   border: 6px solid #890c0c;
   border-radius: 100%;
   left: 50px;
@@ -2549,7 +2552,7 @@ Utility menu.
 .utility-menu__item a {
   font-size: 1.125rem;
   text-decoration: none;
-  border-bottom: 2px solid #ffc300;
+  border-bottom: 2px solid #69cec3;
   transition: .4s ease;
   padding: 2px 4px;
 }
@@ -2557,6 +2560,84 @@ Utility menu.
 .utility-menu__item a:active, .utility-menu__item a:focus, .utility-menu__item a:hover {
   background-color: #890c0c;
   border: none;
+}
+
+.filter-wrap {
+  margin-bottom: 40px;
+}
+
+.filter-wrap .filter-toggle {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.filter-wrap .filter-toggle h2 {
+  position: relative;
+}
+
+.filter-wrap .filter-toggle h2:before {
+  content: "";
+  font-family: "Ionicons";
+  font-size: 2.5rem;
+  display: inline-block;
+  color: #890c0c;
+  position: absolute;
+  top: 3px;
+  right: -50px;
+}
+
+.filter-wrap .filter-toggle h2:before {
+  transition: transform .5s ease-in-out;
+}
+
+.filter-wrap .filter-toggle.filter-toggle-expanded h2:before {
+  content: "";
+  font-family: "Ionicons";
+  font-size: 2.5rem;
+  display: inline-block;
+  color: #890c0c;
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: absolute;
+  top: 3px;
+  right: -50px;
+}
+
+.filter-wrap .filter-toggle:before, .filter-wrap .filter-toggle:after {
+  content: '';
+  border-top: 1px solid #212121;
+  margin: -14px 20px 0 0;
+  -ms-flex: 1 0 20px;
+  flex: 1 0 20px;
+}
+
+.filter-wrap .filter-toggle:after {
+  margin: -14px 0 0 70px;
+}
+
+.filter-wrap .view-filters {
+  transition-property: opacity, visibility;
+  transition-duration: .6s;
+  transition-delay: 0.1s;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.filter-wrap .view-filters.filters-expanded {
+  visibility: visible;
+  opacity: 1;
+  height: inherit;
 }
 
 ul.tabs {
@@ -2654,6 +2735,18 @@ abbr[title] {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+}
+
+.demo-inverse-bg {
+  background-color: #212121;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 72px;
+  margin: 10px 40px;
 }
 
 /*# sourceMappingURL=accesio.css.map */

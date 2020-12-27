@@ -63,7 +63,7 @@ display:
             sort:
               plugin_id: bef
               advanced:
-                combine: false
+                combine: true
                 combine_rewrite: ''
                 reset: false
                 reset_label: 'Reset Sort'

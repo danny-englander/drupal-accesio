@@ -1,6 +1,6 @@
 
 .icon-item {
-  border: 1px dotted $charcoal;
+  border: 1px dashed $charcoal;
   padding: 10px 20px 20px 20px;
   margin-bottom: 30px;
   background-color: white;
@@ -26,6 +26,10 @@
     color: #888;
     font-size: 12px;
     margin-top: 5px;
+  }
+
+  h2 {
+    border-bottom: 1px solid $charcoal;
   }
 
   &__step {
