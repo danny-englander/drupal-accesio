@@ -1,0 +1,29 @@
+uuid: 0be2fabd-0939-4f5d-be89-4d2d9f290f2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multimedia.field_media
+    - paragraphs.paragraphs_type.multimedia
+  module:
+    - media_library
+    - media_library_edit
+id: paragraph.multimedia.default
+targetEntityType: paragraph
+bundle: multimedia
+mode: default
+content:
+  field_media:
+    weight: 0
+    settings:
+      media_types:
+        - image
+        - remote_video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  status: true

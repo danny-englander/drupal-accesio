@@ -100,7 +100,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'icon-row col-md-3'
+          row_class: 'icon-row col-sm-6 col-md-4 col-lg-3'
           default_row_class: false
           uses_fields: false
       row:

@@ -3,11 +3,10 @@ accesio:
   css:
     theme:
       //fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+SC&display=swap: { type: external, minified: true }
-      dist/css/ionicons.min.css: { minified: true }
-      dist/css/grid.css: { minified: true }
-      dist/css/accesio.css: { minified: true }
+      dist/css/accesio.css: {}
   js:
-    dist/js/jquery-meganav.js: { }
+    dist/js/jquery-meganav.js: { defer: true, async: true }
+    dist/js/mmenu.min.js: { minified: true, defer: true, async: true }
     dist/js/accesio.js: {}
     //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js:
       type: external
@@ -35,15 +34,15 @@ twitter:
 
 accordion:
   js:
-    dist/js/jquery.accordion.js: {}
+    dist/js/jquery.accordion.js: { defer: true, async: true }
 
 accesio_youtube_bg:
   js:
-    dist/js/jquery.mb.YTPlayer.js: {}
+    dist/js/jquery.mb.YTPlayer.js: { defer: true, async: true }
 
 accesio_vimeo_bg:
   js:
-    dist/js/jquery.mb.vimeo_player.js: {}
+    dist/js/jquery.mb.vimeo_player.js: { defer: true, async: true }
 
 stats:
   css:
@@ -52,8 +51,8 @@ stats:
 
 masonry:
   js:
-    dist/js/isotope.pkgd.min.js: { minified: true }
+    dist/js/isotope.pkgd.min.js: { minified: true, defer: true, async: true }
 
 a11y_tabs:
   js:
-    dist/js/van11y-accessible-tab-panel-aria.js: {}
+    dist/js/van11y-accessible-tab-panel-aria.js: { defer: true, async: true }

@@ -1,0 +1,19 @@
+uuid: 3f97d258-c557-4084-b1b4-c92ba248890b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_attribution
+    - media.type.image
+id: media.image.field_attribution
+field_name: field_attribution
+entity_type: media
+bundle: image
+label: Attribution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

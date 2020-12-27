@@ -1,0 +1,84 @@
+uuid: 6bd23b95-bdcc-4445-a23f-8c4892d223c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.blog_post
+    - paragraphs.paragraphs_type.multimedia
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.blog_post.field_components
+field_name: field_components
+entity_type: node
+bundle: blog_post
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+      multimedia: multimedia
+    target_bundles_drag_drop:
+      accordion:
+        weight: -35
+        enabled: false
+      accordion_group:
+        weight: -34
+        enabled: false
+      accordion_item:
+        weight: -33
+        enabled: false
+      block:
+        weight: -32
+        enabled: false
+      columns:
+        weight: -31
+        enabled: false
+      cta:
+        weight: -30
+        enabled: false
+      filtered_list_views:
+        weight: -29
+        enabled: false
+      hero:
+        weight: -28
+        enabled: false
+      multimedia:
+        enabled: true
+        weight: -36
+      quote_item:
+        weight: -27
+        enabled: false
+      stats:
+        weight: -26
+        enabled: false
+      stats_item:
+        weight: -25
+        enabled: false
+      text:
+        enabled: true
+        weight: -37
+      text_bg_image:
+        weight: -24
+        enabled: false
+      timeline:
+        weight: -23
+        enabled: false
+      timeline_item:
+        weight: -22
+        enabled: false
+      title:
+        weight: -21
+        enabled: false
+      tweet:
+        weight: -20
+        enabled: false
+field_type: entity_reference_revisions

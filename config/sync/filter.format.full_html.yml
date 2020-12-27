@@ -2,6 +2,8 @@ uuid: c10e456f-0cdc-4f91-819a-be90371bb521
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.inline_media
   module:
     - editor
     - media
@@ -9,7 +11,7 @@ _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
 name: 'Full HTML'
 format: full_html
-weight: 2
+weight: -9
 filters:
   filter_align:
     id: filter_align
@@ -38,18 +40,26 @@ filters:
   filter_html:
     id: filter_html
     provider: filter
-    status: false
+    status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
+      allowed_html: '<em> <strong> <cite> <blockquote cite class> <code> <ul type class> <ol type start class> <li class> <h1 class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <s> <sup> <sub> <a href hreflang class target> <img loading src alt title data-entity-type data-entity-uuid data-align data-caption> <table class id> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p class> <pre> <drupal-media data-view-mode data-entity-type data-entity-uuid data-align data-caption data-entity-uuid data-alt> <iframe src width height><button><figure class><figcaption class> <dl class> <dd> <dt>'
       filter_html_help: true
       filter_html_nofollow: false
   media_embed:
     id: media_embed
     provider: media
-    status: false
+    status: true
     weight: 100
     settings:
-      default_view_mode: default
-      allowed_media_types: {  }
+      default_view_mode: inline_media
+      allowed_media_types:
+        image: image
+        remote_video: remote_video
       allowed_view_modes: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }

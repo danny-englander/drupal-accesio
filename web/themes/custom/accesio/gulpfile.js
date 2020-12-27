@@ -107,7 +107,12 @@ gulp.task('sass', function () {
     .pipe(browserSync.reload({
       stream: true,
       match: '**/*.css'
-    }));
+    }))
+    .pipe(cleanCSS())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./dist/css/min'));
 });
 
 // browser-sync watch.

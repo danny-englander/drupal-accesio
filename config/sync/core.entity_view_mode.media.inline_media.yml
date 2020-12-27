@@ -1,0 +1,10 @@
+uuid: ac685293-30e0-46e4-8975-5b3119571f6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.inline_media
+label: 'Inline Media'
+targetEntityType: media
+cache: true

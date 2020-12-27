@@ -118,29 +118,22 @@ $main-menu: main-menu;
         /* First descendant link within a top level navigation item */
         color: $white;
         margin: 0 8px;
-        @include rem(letter-spacing, 2px);
         cursor: pointer;
-        padding: 10px 16px;
         border: 1px dashed $white;
+        line-height: 1.6;
+        padding: 8px 16px;
 
         @include mq($from: small_desktop, $until: desktop) {
-          @include rem(font-size, 18px);
-          padding: 34px 8px;
-          line-height: 1.6;
+          @include rem(font-size, 16px);
+          @include rem(letter-spacing, .5px);
         }
 
         @include mq($from: desktop) {
           @include rem(font-size, 18px);
-          padding: 8px 16px;
+          @include rem(letter-spacing, 2px);
         }
 
-        @include mq($from: x_wide) {
-          padding: 8px 16px;
-        }
-
-        &:active,
-        &:hover,
-        &:focus {
+        #{$a-tags-hover} {
           @include mq($from: small_desktop) {
             text-decoration: none;
             color: $white;
@@ -247,7 +240,6 @@ $main-menu: main-menu;
 
         &.toggled {
           @include mq($from: small_desktop) {
-
           }
         }
       }
@@ -257,7 +249,6 @@ $main-menu: main-menu;
   &__sub-nav-group {
     @include mq($from: small_desktop) {
       display: flex;
-      //justify-content: center;
       overflow: hidden;
 
       &--one-col {

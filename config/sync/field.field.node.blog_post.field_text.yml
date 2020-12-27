@@ -1,0 +1,28 @@
+uuid: f9a3b7cf-4810-47bb-b878-29d29e1c916e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - node.type.blog_post
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    restricted_html: '0'
+    plain_text: '0'
+id: node.blog_post.field_text
+field_name: field_text
+entity_type: node
+bundle: blog_post
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

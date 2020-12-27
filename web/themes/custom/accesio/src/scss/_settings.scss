@@ -25,10 +25,18 @@ $bright-red: #b1040e;
 $cyan: #007c92;
 $dark-teal: #00505c;
 $purple: #4e1749;
-$gold: #69cec3;
+$gold: #ffc300;
+$green: #69cec3;
+
+
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Gold%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A&es-color-form__tile-size=large
+
+*/
 
 $primary-color: $dark-red;
-$secondary-color: $gold;
+$secondary-color: $green;
 
 // Color map.
 $palette: (
@@ -62,6 +70,7 @@ $mq-breakpoints: (
   medium: 768px,
   medium-large: 920px,
   small_desktop: 1024px,
+  med_desktop: 1140px,
   desktop: 1280px,
   x_wide: 1440px,
 );

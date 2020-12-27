@@ -30,36 +30,35 @@
 
 {% set classes = [
   'taxonomy-term',
+  'icon-item flex-row--eq-height',
   'vocabulary-' ~ term.bundle|clean_class,
 ] %}
 
 <div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+  <div class="icon-item__inner flex-row--eq-height">
 
-    <div class="icon-item flex-row--eq-height">
-      <div class="icon-item__inner flex-row--eq-height">
-
-        <div class="icon-item__preview-icon preview-icon">
+    <div class="icon-item__preview-icon preview-icon">
       <span class="icon-item__step step size-48">
       <i class="icon-item__icon icon ion-{{- icon_name -}}"></i>
     </span>
-        </div>
+    </div>
 
-        <h2 class="searchable h4">{{ icon_name -}}</h2>
+    <h2 class="searchable h4">{{ icon_name -}}</h2>
 
-        <div class="icon-item__usage usage">
+    <div class="icon-item__usage usage">
 
-          <div class="icon-item__form-item form-item icon-item__form-item--class">
-            <label for="name">{{ 'Classname'|t }}</label>
-            <input class="name" type="text" readonly="readonly" onclick="this.select();" value="ion-{{- icon_name -}}"
-                   id="name">
-          </div>
+      <div class="icon-item__form-item form-item icon-item__form-item--class">
+        <label for="name">{{ 'Classname'|t }}</label>
+        <input class="name" type="text" readonly="readonly" onclick="this.select();" value="ion-{{- icon_name -}}"
+               id="name">
+      </div>
 
-          <div class="icon-item__form-item form-item icon-item__form-item--css">
-            <label for="css-content">{{ 'CSS Content'|t }}</label>
-            <input class="css" type="text" readonly="readonly" onclick="this.select();"
-                   value="\{{- icon_code -}}" id="css-content">
-          </div>
-        </div>
+      <div class="icon-item__form-item form-item icon-item__form-item--css">
+        <label for="css-content">{{ 'CSS Content'|t }}</label>
+        <input class="css" type="text" readonly="readonly" onclick="this.select();"
+               value="\{{- icon_code -}}" id="css-content">
       </div>
     </div>
+  </div>
+
 </div>

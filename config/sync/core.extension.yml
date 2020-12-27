@@ -47,6 +47,7 @@ module:
   lazy: 0
   link: 0
   link_attributes: 0
+  linkit: 0
   media: 0
   media_entity_twitter: 0
   media_library: 0

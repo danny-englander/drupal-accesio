@@ -20,6 +20,7 @@ regions:
   footer_upper: 'Footer Upper'
   footer_lower: 'Footer Lower'
   footer: 'Footer'
+  off_canvas: 'Off Canvas Menu'
   hidden: 'Hidden'
 
 ckeditor_stylesheets:

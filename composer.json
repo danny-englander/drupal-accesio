@@ -38,6 +38,7 @@
         "drupal/layout_paragraphs": "^1.0@beta",
         "drupal/lazy": "^3.6",
         "drupal/link_attributes": "^1.11",
+        "drupal/linkit": "5.0-beta12",
         "drupal/media_entity_twitter": "^2.4",
         "drupal/media_library_edit": "^2.0",
         "drupal/paragraphs": "^1.12",
