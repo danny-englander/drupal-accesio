@@ -2779,4 +2779,19 @@ abbr[title] {
   }
 }
 
+/*
+ * @file
+ * Utility class to remove browser styles, especially for button.
+ */
+.reset-appearance {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  background: transparent;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /*# sourceMappingURL=accesio.css.map */

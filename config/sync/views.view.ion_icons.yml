@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.taxonomy_term.icons
     - taxonomy.vocabulary.icons
   module:
-    - better_exposed_filters
     - taxonomy
     - user
 id: ion_icons
@@ -39,43 +38,15 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: bef
+        type: basic
         options:
-          submit_button: Search
+          submit_button: 'Search Icons'
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Alpha
           sort_desc_label: 'Alpha (reversed)'
-          text_input_required: 'Select any filter and click on Apply to see results'
-          text_input_required_format: basic_html
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-            sort:
-              plugin_id: bef
-              advanced:
-                combine: true
-                combine_rewrite: ''
-                reset: false
-                reset_label: 'Reset Sort'
-                collapsible: false
-                collapsible_label: 'Sort options'
-                is_secondary: false
-            filter:
-              name:
-                plugin_id: default
-                advanced:
-                  collapsible: false
-                  is_secondary: false
       pager:
         type: full
         options:

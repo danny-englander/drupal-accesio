@@ -4,7 +4,6 @@ module:
   admin_toolbar_tools: 0
   allowed_formats: 0
   automated_cron: 0
-  better_exposed_filters: 0
   big_pipe: 0
   block: 0
   block_class: 0
@@ -15,7 +14,6 @@ module:
   coffee: 0
   color: 0
   config: 0
-  config_filter: 0
   contact: 0
   contextual: 0
   crop: 0
@@ -39,10 +37,6 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
-  jquery_ui: 0
-  jquery_ui_datepicker: 0
-  jquery_ui_slider: 0
-  jquery_ui_touch_punch: 0
   lazy: 0
   link: 0
   link_attributes: 0
