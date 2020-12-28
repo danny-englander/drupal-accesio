@@ -2,7 +2,6 @@ accesio:
   version: VERSION
   css:
     theme:
-      //fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+SC&display=swap: { type: external, minified: true }
       dist/css/min/ionicons.min.css: { minified: true }
       dist/css/min/grid.min.css: { minified: true }
       dist/css/accesio.css: {}
@@ -24,16 +23,6 @@ accesio:
     - core/jquery.once
     - core/drupal.dialog.ajax
 
-twitter:
-  js:
-    //platform.twitter.com/widgets.js:
-      type: external
-      attributes:
-        defer: true
-        async: true
-        id: twitter-wjs
-        crossorigin: anonymous
-
 accordion:
   js:
     dist/js/jquery.accordion.js: { defer: true, async: true }
@@ -45,11 +34,6 @@ accesio_youtube_bg:
 accesio_vimeo_bg:
   js:
     dist/js/jquery.mb.vimeo_player.js: { defer: true, async: true }
-
-stats:
-  css:
-    theme:
-      //fonts.googleapis.com/css?family=Rozha+One&display=swap: { type: external, minified: true }
 
 masonry:
   js:

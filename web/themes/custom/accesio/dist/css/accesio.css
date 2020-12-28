@@ -611,8 +611,67 @@ a {
   transition: all 0.15s ease;
 }
 
+/* eb-garamond-regular - latin
+https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
+*/
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/eb-garamond-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/eb-garamond-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/eb-garamond-v14-latin-regular.woff2") format("woff2"), url("../fonts/eb-garamond-v14-latin-regular.woff") format("woff"), url("../fonts/eb-garamond-v14-latin-regular.ttf") format("truetype"), url("../fonts/eb-garamond-v14-latin-regular.svg#EBGaramond") format("svg");
+  /* Legacy iOS */
+}
+
+/* eb-garamond-600 - latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/eb-garamond-v14-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/eb-garamond-v14-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/eb-garamond-v14-latin-600.woff2") format("woff2"), url("../fonts/eb-garamond-v14-latin-600.woff") format("woff"), url("../fonts/eb-garamond-v14-latin-600.ttf") format("truetype"), url("../fonts/eb-garamond-v14-latin-600.svg#EBGaramond") format("svg");
+  /* Legacy iOS */
+}
+
+/* noto-sans-sc-regular - latin
+https://google-webfonts-helper.herokuapp.com/fonts/noto-sans-sc?subsets=latin
+*/
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-sans-sc-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/noto-sans-sc-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-sc-v12-latin-regular.woff2") format("woff2"), url("../fonts/noto-sans-sc-v12-latin-regular.woff") format("woff"), url("../fonts/noto-sans-sc-v12-latin-regular.ttf") format("truetype"), url("../fonts/noto-sans-sc-v12-latin-regular.svg#NotoSansSC") format("svg");
+  /* Legacy iOS */
+}
+
+/* noto-sans-sc-700 - latin */
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/noto-sans-sc-v12-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/noto-sans-sc-v12-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-sc-v12-latin-700.woff2") format("woff2"), url("../fonts/noto-sans-sc-v12-latin-700.woff") format("woff"), url("../fonts/noto-sans-sc-v12-latin-700.ttf") format("truetype"), url("../fonts/noto-sans-sc-v12-latin-700.svg#NotoSansSC") format("svg");
+  /* Legacy iOS */
+}
+
+/* rozha-one-regular - latin */
+@font-face {
+  font-family: 'Rozha One';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rozha-one-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/rozha-one-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/rozha-one-v8-latin-regular.woff2") format("woff2"), url("../fonts/rozha-one-v8-latin-regular.woff") format("woff"), url("../fonts/rozha-one-v8-latin-regular.ttf") format("truetype"), url("../fonts/rozha-one-v8-latin-regular.svg#RozhaOne") format("svg");
+  /* Legacy iOS */
+}
+
 body {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', serif;
   font-size: 100%;
   font-weight: 400;
   color: #404040;
