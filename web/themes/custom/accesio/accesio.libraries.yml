@@ -2,7 +2,7 @@ accesio:
   version: VERSION
   css:
     theme:
-      dist/css/min/ionicons.min.css: { minified: true }
+      dist/css/ionicons.min.css: { minified: true }
       dist/css/min/grid.min.css: { minified: true }
       dist/css/accesio.css: {}
   js:
