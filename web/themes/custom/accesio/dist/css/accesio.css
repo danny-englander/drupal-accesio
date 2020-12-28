@@ -958,6 +958,7 @@ Branding.
  */
 .branding__slogan {
   margin-bottom: 6px;
+  font-size: 1.0625rem;
 }
 
 .footer {
@@ -1932,7 +1933,7 @@ Icon theming.
 @media (min-width: 64em) {
   .main-menu__sub-nav {
     position: absolute;
-    top: 116px;
+    top: 118px;
     background-color: #69cec3;
     color: #fff;
     right: 0;

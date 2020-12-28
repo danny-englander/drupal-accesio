@@ -287,7 +287,7 @@ $main-menu: main-menu;
     /* main-menu__sub-navigation panel */
     @include mq($from: small_desktop) {
       position: absolute;
-      top: 116px;
+      top: 118px;
       background-color: $secondary-color;
       color: $white;
       right: 0;

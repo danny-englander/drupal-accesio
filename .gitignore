@@ -5,7 +5,6 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
-/web/libraries/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
@@ -28,3 +27,4 @@ web/themes/custom/accesio/dist/css/bs-grid/grid/bootstrap-grid.css
 *.map
 web/themes/custom/accesio/dist/css/min/accesio.min.css
 web/themes/custom/accesio/dist/css/min/bs-grid/grid/bootstrap-grid.min.css
+web/libraries/ionicons-4.6.4-1
