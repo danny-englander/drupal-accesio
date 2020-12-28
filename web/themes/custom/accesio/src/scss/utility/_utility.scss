@@ -40,36 +40,6 @@
   margin: 10px 40px;
 }
 
-
-// Critical BS grid CSS.
-@media (min-width: 576px) {
-  .container, .container-sm {
- //   max-width: 540px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .container, .container-md, .container-sm {
-  //  max-width: 720px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm {
- //   max-width: 960px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
- ///   max-width: 1270px;
-    margin: 0 auto;
-  }
-}
-
 /*
  * @file
  * Utility class to remove browser styles, especially for button.
@@ -105,6 +75,7 @@
 .js-show {
   display: none;
 }
+
 .js .js-show {
   display: block;
 }

@@ -5,6 +5,7 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
+/web/sites/default/local.services.yml
 
 # Ignore sensitive information
 /web/sites/*/settings.php
@@ -21,10 +22,13 @@
 
 # Ignore .env files as they are personal
 /.env
-web/sites/default/local.services.yml
-node_modules/
-web/themes/custom/accesio/dist/css/bs-grid/grid/bootstrap-grid.css
+
+# Ignore CSS map files.
 *.map
+
+# Ignore node_modules.
+node_modules/
+
+# Misc ignores.
 web/themes/custom/accesio/dist/css/min/accesio.min.css
-web/themes/custom/accesio/dist/css/min/bs-grid/grid/bootstrap-grid.min.css
 web/libraries/ionicons-4.6.4-1

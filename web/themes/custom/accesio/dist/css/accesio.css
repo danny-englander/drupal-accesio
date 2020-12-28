@@ -2833,30 +2833,6 @@ abbr[title] {
   margin: 10px 40px;
 }
 
-@media (min-width: 576px) {
-  .container, .container-sm {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .container, .container-md, .container-sm {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    margin: 0 auto;
-  }
-}
-
 /*
  * @file
  * Utility class to remove browser styles, especially for button.
