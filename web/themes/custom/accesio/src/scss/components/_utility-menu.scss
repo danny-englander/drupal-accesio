@@ -3,6 +3,10 @@ Utility menu.
  */
 .utility-menu {
 
+  @include mq($until: small_plus) {
+    @include visually-hidden();
+  }
+
   &__item-list {
     display: flex;
     justify-content: flex-end;

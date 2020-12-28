@@ -44,28 +44,28 @@
 // Critical BS grid CSS.
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 540px;
+ //   max-width: 540px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
   .container, .container-md, .container-sm {
-    max-width: 720px;
+  //  max-width: 720px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
+ //   max-width: 960px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1270px;
+ ///   max-width: 1270px;
     margin: 0 auto;
   }
 }

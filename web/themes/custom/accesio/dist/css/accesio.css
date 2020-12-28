@@ -688,8 +688,8 @@ body {
 h1 {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
-  font-size: 2rem;
-  line-height: 35px;
+  font-size: 3.375rem;
+  line-height: 58px;
   letter-spacing: 1px;
   margin-top: 0;
 }
@@ -1760,6 +1760,7 @@ Icon theming.
   .main-menu__item--level-0 > a {
     font-size: 1rem;
     letter-spacing: 0.03125rem;
+    padding: 8px 12px;
   }
 }
 
@@ -2601,6 +2602,17 @@ Timeline (simple style).
 /*
 Utility menu.
  */
+@media (max-width: 32.49em) {
+  .utility-menu {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
+  }
+}
+
 .utility-menu__item-list {
   display: -ms-flexbox;
   display: flex;
@@ -2640,12 +2652,17 @@ Utility menu.
   z-index: 99;
   display: -ms-flexbox;
   display: flex;
-  width: 600px;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
+}
+
+@media (min-width: 48em) {
+  .filter-wrap .filter-toggle {
+    width: 600px;
+  }
 }
 
 .filter-wrap .filter-toggle h2 {
@@ -2818,28 +2835,24 @@ abbr[title] {
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 540px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
   .container, .container-md, .container-sm {
-    max-width: 720px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1270px;
     margin: 0 auto;
   }
 }

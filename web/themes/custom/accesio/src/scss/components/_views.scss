@@ -7,10 +7,13 @@
     position: relative;
     z-index: 99;
     display: flex;
-    width: 600px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
+    @include mq($from: medium) {
+      width: 600px;
+    }
 
     h2 {
       position: relative;
@@ -33,10 +36,19 @@
       border-top: 1px solid $black;
       margin: -14px 20px 0 0;
       flex: 1 0 20px;
+
+      @include mq($from: medium) {
+
+      }
     }
 
     &:after {
       margin: -14px 0 0 70px;
+
+      @include mq($from: medium) {
+
+      }
+
     }
   }
 

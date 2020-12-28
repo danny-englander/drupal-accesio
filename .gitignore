@@ -22,7 +22,7 @@
 # Ignore .env files as they are personal
 /.env
 web/sites/default/local.services.yml
-web/themes/custom/accesio/node_modules/
+node_modules/
 web/themes/custom/accesio/dist/css/bs-grid/grid/bootstrap-grid.css
 *.map
 web/themes/custom/accesio/dist/css/min/accesio.min.css
