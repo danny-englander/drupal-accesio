@@ -51,27 +51,5 @@ page.html.twig.
 {{ page }}
 {{ page_bottom }}
 <js-bottom-placeholder token="{{ placeholder_token }}">
-
-  <noscript id="deferred-styles">
-    <!-- Deferred CSS loading -->
-    <link rel="stylesheet" type="text/css" href="/{{ base_path ~ directory }}/dist/css/min/grid.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/{{ base_path ~ directory }}/dist/css/mmenu.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/{{ base_path ~ directory }}/dist/css/ionicons.min.css"/>
-  </noscript>
-
-  <!-- Deferred CSS loading script -->
-  <script>
-    var loadDeferredStyles = function() {
-      var addStylesNode = document.getElementById("deferred-styles");
-      var replacement = document.createElement("div");
-      replacement.innerHTML = addStylesNode.textContent;
-      document.body.appendChild(replacement)
-      addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-      window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-    else window.addEventListener('load', loadDeferredStyles);
-  </script>
 </body>
 </html>
