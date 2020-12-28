@@ -37,17 +37,31 @@
   <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token }}">
-      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+      {#
+      We preload woff2 for better performance. (This might be available with
+      AdvAgg so might not need this eventually.
+      see https://medium.com/clio-calliope/making-google-fonts-faster-aadf3c02a36d
+      #}
+      <link rel="preload" as="font" type="font/woff2" href="/{{  directory ~ '/dist/fonts/noto-sans-sc-v12-latin-700.woff2' }}" crossorigin>
+      <link rel="preload" as="font" type="font/woff2" href="/{{  directory ~ '/dist/fonts/noto-sans-sc-v12-latin-regular.woff2' }}" crossorigin>
+      <link rel="preload" as="font" type="font/woff2" href="/{{  directory ~ '/dist/fonts/eb-garamond-v14-latin-600.woff2' }}" crossorigin>
+      <link rel="preload" as="font" type="font/woff2" href="/{{  directory ~ '/dist/fonts/eb-garamond-v14-latin-regular.woff2' }}" crossorigin>
+      <link rel="preload" as="font" type="font/woff2" href="/{{  directory ~ '/dist/fonts/rozha-one-v8-latin-regular.woff2' }}" crossorigin>
+
       <js-placeholder token="{{ placeholder_token }}">
         </head>
 <body{{ attributes.addClass(body_classes) }}>
+
 {#
 Keyboard navigation/accessibility link to main content section in
 page.html.twig.
 #}
+
 <a href="#main-content" class="visually-hidden focusable skip-link">
   {{ 'Skip to main content'|t }}
 </a>
+
 {{ page_top }}
 {{ page }}
 {{ page_bottom }}

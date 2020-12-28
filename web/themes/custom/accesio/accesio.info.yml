@@ -3,7 +3,6 @@ type: theme
 description: 'A custom Drupal 9 theme'
 version: 9.x-1.0
 core_version_requirement: ^8 || ^9
-## for now, using stark b/c of https://www.drupal.org/project/drupal/issues/2642122
 base theme: stable
 
 libraries:
@@ -27,6 +26,9 @@ regions:
 ckeditor_stylesheets:
   - dist/css/accesio.css
 
+## Note, see https://www.drupal.org/project/drupal/issues/2642122 and
+## https://www.drupal.org/project/drupal/issues/2642122#comment-10705712 for
+## overriding libraries that have already been overridden (which is the case for Stable.).
 libraries-override:
   system/base:
     css:
