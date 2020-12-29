@@ -1480,6 +1480,10 @@ Icon theming.
   width: 80px;
 }
 
+.icon-item .svg-inline--fa {
+  margin-bottom: 20px;
+}
+
 /* Styled lists */
 .component__item--type--text {
   /* Styled ordered list */
@@ -2060,12 +2064,19 @@ Icon theming.
 }
 
 .pager__item a {
-  padding: 6px 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
   text-decoration: none;
   background-color: #890c0c;
   color: #fff;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 80px;
 }
 
 .pager__item a:active, .pager__item a:focus, .pager__item a:hover {

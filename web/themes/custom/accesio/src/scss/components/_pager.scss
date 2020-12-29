@@ -13,12 +13,16 @@
     margin: 6px;
 
     a {
-      padding: 6px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
       text-decoration: none;
       background-color: $primary-color;
       color: $white;
       font-weight: 600;
-      border-radius: 50px;
+      border-radius: 80px;
 
       #{$a-tags-hover} {
         background-color: $secondary-color;

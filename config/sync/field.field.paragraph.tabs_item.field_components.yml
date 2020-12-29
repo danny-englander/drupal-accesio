@@ -1,34 +1,28 @@
-uuid: 71ff38c9-daad-4e22-9d5a-c2422d25360e
+uuid: 81a5e5ab-25e5-42e3-ba98-64bc928748e3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_components
-    - node.type.page
+    - field.storage.paragraph.field_components
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.block
-    - paragraphs.paragraphs_type.columns
-    - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.filtered_list_views
-    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.multimedia
     - paragraphs.paragraphs_type.quote_item
     - paragraphs.paragraphs_type.stats
-    - paragraphs.paragraphs_type.tabs
+    - paragraphs.paragraphs_type.tabs_item
     - paragraphs.paragraphs_type.text
-    - paragraphs.paragraphs_type.text_bg_image
-    - paragraphs.paragraphs_type.timeline
     - paragraphs.paragraphs_type.title
-    - paragraphs.paragraphs_type.tweet
   module:
     - entity_reference_revisions
-id: node.page.field_components
+id: paragraph.tabs_item.field_components
 field_name: field_components
-entity_type: node
-bundle: page
-label: Content
+entity_type: paragraph
+bundle: tabs_item
+label: 'Tab Content'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -36,79 +30,73 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      hero: hero
-      title: title
       text: text
       accordion: accordion
-      text_bg_image: text_bg_image
-      cta: cta
-      tweet: tweet
-      columns: columns
-      timeline: timeline
-      tabs: tabs
-      quote_item: quote_item
       block: block
       filtered_list_views: filtered_list_views
+      multimedia: multimedia
+      quote_item: quote_item
       stats: stats
+      title: title
     target_bundles_drag_drop:
       accordion:
         enabled: true
         weight: -38
       accordion_group:
-        weight: -28
+        weight: -37
         enabled: false
       accordion_item:
-        weight: -30
+        weight: -36
         enabled: false
       block:
         enabled: true
-        weight: -27
+        weight: -35
       columns:
-        enabled: true
         weight: -34
+        enabled: false
       cta:
-        enabled: true
-        weight: -36
+        weight: -33
+        enabled: false
       filtered_list_views:
         enabled: true
-        weight: -26
+        weight: -32
       hero:
-        enabled: true
-        weight: -41
-      multimedia:
-        weight: -23
+        weight: -31
         enabled: false
+      multimedia:
+        enabled: true
+        weight: -30
       quote_item:
         enabled: true
-        weight: -31
+        weight: -29
       stats:
         enabled: true
-        weight: -25
+        weight: -28
       stats_item:
-        weight: -24
+        weight: -27
         enabled: false
       tabs:
-        enabled: true
-        weight: -32
+        weight: 33
+        enabled: false
       tabs_item:
-        weight: -22
+        weight: -26
         enabled: false
       text:
         enabled: true
         weight: -39
       text_bg_image:
-        enabled: true
-        weight: -37
+        weight: -25
+        enabled: false
       timeline:
-        enabled: true
-        weight: -33
+        weight: -24
+        enabled: false
       timeline_item:
-        weight: -29
+        weight: -23
         enabled: false
       title:
         enabled: true
-        weight: -40
+        weight: -22
       tweet:
-        enabled: true
-        weight: -35
+        weight: -21
+        enabled: false
 field_type: entity_reference_revisions

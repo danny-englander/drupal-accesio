@@ -129,9 +129,24 @@
 
   Drupal.behaviors.accesioViews = {
     attach: function (context, settings) {
-      $(context).find('#filter-toggle').on('click', function () {
-        $(this).toggleClass('filter-toggle-expanded');
-        $(this).parent().find('.view-filters').toggleClass('filters-expanded');
+      $(context).find('.filter-toggle').each(function () {
+        $(this).on('click', function () {
+          console.log('hello');
+          $(this).toggleClass('filter-toggle-expanded');
+          $(this).parent().find('.view-filters').toggleClass('filters-expanded');
+        });
+
+        $(document).ajaxComplete(function (event, xhr, settings) {
+          console.log('done');
+          console.log(this);
+          setTimeout(function () {
+            $(context).find('.filter-toggle').each(function () {
+            $(this).addClass('filter-toggle-expanded');
+            $(this).parent().find('.view-filters').addClass('filters-expanded');
+            });
+          }, 200);
+        });
+
       });
     },
   };

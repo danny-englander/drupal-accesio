@@ -1,0 +1,88 @@
+uuid: d5e4306a-1f35-421d-9b3c-1d4f0fca80c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs_item
+    - paragraphs.paragraphs_type.tabs
+    - paragraphs.paragraphs_type.tabs_item
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs.field_tabs_item
+field_name: field_tabs_item
+entity_type: paragraph
+bundle: tabs
+label: 'Tabs Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tabs_item: tabs_item
+    target_bundles_drag_drop:
+      accordion:
+        weight: 21
+        enabled: false
+      accordion_group:
+        weight: 22
+        enabled: false
+      accordion_item:
+        weight: 23
+        enabled: false
+      block:
+        weight: 24
+        enabled: false
+      columns:
+        weight: 25
+        enabled: false
+      cta:
+        weight: 26
+        enabled: false
+      filtered_list_views:
+        weight: 27
+        enabled: false
+      hero:
+        weight: 28
+        enabled: false
+      multimedia:
+        weight: 29
+        enabled: false
+      quote_item:
+        weight: 30
+        enabled: false
+      stats:
+        weight: 31
+        enabled: false
+      stats_item:
+        weight: 32
+        enabled: false
+      tabs:
+        weight: 33
+        enabled: false
+      tabs_item:
+        enabled: true
+        weight: 34
+      text:
+        weight: 35
+        enabled: false
+      text_bg_image:
+        weight: 36
+        enabled: false
+      timeline:
+        weight: 37
+        enabled: false
+      timeline_item:
+        weight: 38
+        enabled: false
+      title:
+        weight: 39
+        enabled: false
+      tweet:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

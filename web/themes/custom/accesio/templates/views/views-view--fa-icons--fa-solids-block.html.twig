@@ -48,10 +48,9 @@
 
   {% if exposed %}
     <div class="filter-wrap">
-      <div class="filter-toggle" id="filter-toggle" tabindex="0" role="button">
+      <div class="filter-toggle" id="filter-toggle-{{- display_id }}" tabindex="0" role="button">
         <h2 class="h3">{{ 'Filter' }}</h2>
       </div>
-
       <div class="view-filters">
         {{ exposed }}
       </div>
@@ -84,9 +83,9 @@
     </div>
   {% endif %}
 
-  {% if pager %}
-    {{ pager }}
-  {% endif %}
+  {# {% if pager %} #}
+  {# {{ pager }} #}
+  {# {% endif %} #}
   {% if attachment_after %}
     <div class="attachment attachment-after">
       {{ attachment_after }}

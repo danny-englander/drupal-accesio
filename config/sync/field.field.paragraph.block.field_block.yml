@@ -23,5 +23,6 @@ settings:
     plugin_ids:
       accesio_styles: accesio_styles
       system_powered_by_block: system_powered_by_block
+      views_exposed_filter_blocks_block: views_exposed_filter_blocks_block
       webform_block: webform_block
 field_type: block_field

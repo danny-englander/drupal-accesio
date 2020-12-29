@@ -35,7 +35,6 @@ Icon theming.
     line-height: 1;
     position: relative;
     width: 10%;
-  //  @include rem(font-size, 72px);
     color: $charcoal;
   }
 
@@ -77,5 +76,9 @@ Icon theming.
 
   .usage .css {
     width: 80px;
+  }
+
+  .svg-inline--fa {
+    margin-bottom: 20px;
   }
 }
