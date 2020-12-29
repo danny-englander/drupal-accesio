@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_statistic_icon
     - paragraphs.paragraphs_type.stats_item
-    - taxonomy.vocabulary.icons
+    - taxonomy.vocabulary.fa_icons
 id: paragraph.stats_item.field_statistic_icon
 field_name: field_statistic_icon
 entity_type: paragraph
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      icons: icons
+      fa_icons: fa_icons
     sort:
       field: name
       direction: asc

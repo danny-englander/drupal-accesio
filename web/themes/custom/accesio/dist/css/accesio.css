@@ -1442,7 +1442,6 @@ Icon theming.
   line-height: 1;
   position: relative;
   width: 10%;
-  font-size: 4.5rem;
   color: #404040;
 }
 
@@ -2066,7 +2065,7 @@ Icon theming.
   background-color: #890c0c;
   color: #fff;
   font-weight: 600;
-  letter-spacing: 2px;
+  border-radius: 50px;
 }
 
 .pager__item a:active, .pager__item a:focus, .pager__item a:hover {

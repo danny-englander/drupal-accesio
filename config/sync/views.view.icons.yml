@@ -1,15 +1,15 @@
-uuid: 4a26c38b-140c-4d48-adfa-f7c6cb50116c
+uuid: e5f2b32f-300b-43d2-8a47-4aa5f869d969
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.taxonomy_term.icons
-    - taxonomy.vocabulary.icons
+    - core.entity_view_mode.taxonomy_term.icon_grid
+    - taxonomy.vocabulary.fa_icons
   module:
     - taxonomy
     - user
-id: ion_icons
-label: 'Ion Icons'
+id: icons
+label: Icons
 module: views
 description: ''
 tag: ''
@@ -55,10 +55,10 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: ‹
+            next: ›
+            first: «
+            last: »
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -67,7 +67,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 5
+          quantity: 4
       style:
         type: default
         options:
@@ -78,7 +78,7 @@ display:
         type: 'entity:taxonomy_term'
         options:
           relationship: none
-          view_mode: icons
+          view_mode: icon_grid
       fields:
         name:
           id: name
@@ -151,7 +151,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            icons: icons
+            fa_icons: fa_icons
           group: 1
           exposed: false
           expose:
@@ -227,6 +227,45 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: string
+        field_fa_style_value:
+          id: field_fa_style_value
+          table: taxonomy_term__field_fa_style
+          field: field_fa_style_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: solid
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
       sorts:
         name:
           id: name
@@ -242,8 +281,30 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: standard
-      title: 'Ion Icons'
-      header: {  }
+        field_fa_style_value:
+          id: field_fa_style_value
+          table: taxonomy_term__field_fa_style
+          field: field_fa_style_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Style (Solid or Brands)'
+          plugin_id: standard
+      title: 'Font Awesome Icons'
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: 'Count and page summary'
+          empty: false
+          content: '<p>Displaying @start - @end of @total icons | Page @current_page</p>'
+          plugin_id: result
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -261,11 +322,11 @@ display:
         - 'url.query_args:sort_order'
         - user.permissions
       tags: {  }
-  icons_block:
+  fa_icons_block:
     display_plugin: block
-    id: icons_block
-    display_title: 'Icons Block'
-    position: 1
+    id: fa_icons_block
+    display_title: 'Font Awesome Icons Block'
+    position: 2
     display_options:
       display_extenders: {  }
       display_description: ''

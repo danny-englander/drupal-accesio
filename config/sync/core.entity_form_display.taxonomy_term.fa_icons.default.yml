@@ -1,29 +1,47 @@
-uuid: 4b3db313-153c-425e-952a-eabb1a319872
+uuid: 0b4eddb9-2856-4f1d-ac39-e8e276507627
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.icons.feeds_item
-    - field.field.taxonomy_term.icons.field_icon_code
-    - taxonomy.vocabulary.icons
+    - field.field.taxonomy_term.fa_icons.feeds_item
+    - field.field.taxonomy_term.fa_icons.field_fa_key
+    - field.field.taxonomy_term.fa_icons.field_fa_style
+    - field.field.taxonomy_term.fa_icons.field_fa_unicode
+    - taxonomy.vocabulary.fa_icons
   module:
     - path
     - text
-id: taxonomy_term.icons.default
+id: taxonomy_term.fa_icons.default
 targetEntityType: taxonomy_term
-bundle: icons
+bundle: fa_icons
 mode: default
 content:
   description:
     type: text_textarea
-    weight: 2
+    weight: 4
     region: content
     settings:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_icon_code:
+  field_fa_key:
     weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fa_style:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fa_unicode:
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -40,7 +58,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 3
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -48,7 +66,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 6
     region: content
     third_party_settings: {  }
 hidden:

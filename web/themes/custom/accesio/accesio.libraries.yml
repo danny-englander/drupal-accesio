@@ -2,13 +2,11 @@ accesio:
   version: VERSION
   css:
     theme:
-      dist/css/ionicons.min.css: { minified: true }
       dist/css/min/grid.min.css: { minified: true }
       dist/css/accesio.css: {}
   js:
     dist/js/jquery-meganav.js: { defer: true, async: true }
     dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
-    //unpkg.com/ionicons@4.5.8/dist/ionicons.js: { minified: true, external: true, type: module,  async: true, defer: true }
     dist/js/accesio.js: {}
     //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js:
       type: external

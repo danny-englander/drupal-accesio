@@ -1,0 +1,43 @@
+uuid: a75f9485-0706-41af-87a5-a70a137a0aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon_grid
+    - field.field.taxonomy_term.fa_icons.feeds_item
+    - field.field.taxonomy_term.fa_icons.field_fa_key
+    - field.field.taxonomy_term.fa_icons.field_fa_style
+    - field.field.taxonomy_term.fa_icons.field_fa_unicode
+    - taxonomy.vocabulary.fa_icons
+id: taxonomy_term.fa_icons.icon_grid
+targetEntityType: taxonomy_term
+bundle: fa_icons
+mode: icon_grid
+content:
+  field_fa_key:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_fa_style:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_fa_unicode:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  description: true
+  feeds_item: true

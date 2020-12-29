@@ -29,5 +29,5 @@
 ] %}
 
 <div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
-  <ion-icon class="ion-icon" name="{{ name | field_value }}"></ion-icon>
+  <i class="fa{{- field_fa_style }} fa-{{- fa_key }} fa-4x"></i>
 </div>

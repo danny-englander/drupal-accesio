@@ -20,6 +20,7 @@ default_value_callback: ''
 settings:
   force_default: false
   allowed_views:
+    icons: icons
     ion_icons: ion_icons
     content: '0'
     block_content: '0'
@@ -33,10 +34,12 @@ settings:
     content_recent: '0'
     taxonomy_term: '0'
     watchdog: '0'
+    webform_submissions: '0'
     who_s_new: '0'
     who_s_online: '0'
   allowed_display_types:
     block: block
+    embed: '0'
     feed: '0'
     default: '0'
     page: '0'

@@ -1,16 +1,16 @@
-uuid: 4e00ca52-d56e-43a2-aeb4-a12fc93990cb
+uuid: 7123dd12-db63-4bce-bfe6-7dfc29ed9839
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.feeds_item
-    - taxonomy.vocabulary.icons
+    - field.storage.node.feeds_item
+    - node.type.blog_post
   module:
     - feeds
-id: taxonomy_term.icons.feeds_item
+id: node.blog_post.feeds_item
 field_name: feeds_item
-entity_type: taxonomy_term
-bundle: icons
+entity_type: node
+bundle: blog_post
 label: 'Feeds item'
 description: ''
 required: false

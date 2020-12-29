@@ -1,0 +1,84 @@
+uuid: a07ac538-0f5f-4c6a-88fe-179e18106172
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.fa_icons.field_fa_key
+    - field.field.taxonomy_term.fa_icons.field_fa_style
+    - field.field.taxonomy_term.fa_icons.field_fa_unicode
+    - taxonomy.vocabulary.fa_icons
+  module:
+    - taxonomy
+id: font_awesome_icons
+label: 'Font Awesome Icons'
+description: ''
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    vid: fa_icons
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  key:
+    label: key
+    value: key
+    machine_name: key
+  name:
+    label: name
+    value: name
+    machine_name: name
+  style:
+    label: style
+    value: style
+    machine_name: style
+  unicode:
+    label: unicode
+    value: unicode
+    machine_name: unicode
+mappings:
+  -
+    target: field_fa_key
+    map:
+      value: key
+    unique:
+      value: '1'
+    settings:
+      language: null
+  -
+    target: name
+    map:
+      value: name
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_fa_style
+    map:
+      value: style
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_fa_unicode
+    map:
+      value: unicode
+    unique: {  }
+    settings:
+      language: null

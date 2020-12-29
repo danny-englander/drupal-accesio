@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.blog_post.feeds_item
     - field.field.node.blog_post.field_components
     - field.field.node.blog_post.field_tags
     - field.field.node.blog_post.field_text
@@ -21,6 +22,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  feeds_item: true
   field_components: true
   field_tags: true
   field_text: true

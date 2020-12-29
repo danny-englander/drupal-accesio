@@ -35,15 +35,11 @@ Icon theming.
     line-height: 1;
     position: relative;
     width: 10%;
-    @include rem(font-size, 72px);
+  //  @include rem(font-size, 72px);
     color: $charcoal;
   }
 
   .step i {
-    -webkit-transition: opacity .3s;
-    -moz-transition: opacity .3s;
-    -ms-transition: opacity .3s;
-    -o-transition: opacity .3s;
     transition: opacity .3s;
   }
 

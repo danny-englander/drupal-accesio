@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Theme override to display a taxonomy term.
+ *
+ * Available variables:
+ * - url: URL of the current term.
+ * - name: (optional) Name of the current term.
+ * - content: Items for the content of the term (fields and description).
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.description'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('description') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - page: Flag for the full page state.
+ * - term: The taxonomy term entity, including:
+ *   - id: The ID of the taxonomy term.
+ *   - bundle: Machine name of the current vocabulary.
+ * - view_mode: View mode, e.g. 'full', 'teaser', etc.
+ *
+ * @see template_preprocess_taxonomy_term()
+ */
+#}
+
+
+{#<i class="fa{{- field_fa_style }} fa-{{- fa_key }} fa-4x"></i>#}
+
+{% set icon_code = content.field_icon_code["#items"].getString() | replace({'0x':''}) %}
+{% set icon_name = elements["#taxonomy_term"].name.value %}
+
+{% set classes = [
+  'taxonomy-term',
+  'icon-item flex-row--eq-height',
+  'vocabulary-' ~ term.bundle|clean_class,
+] %}
+
+<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+  <div class="icon-item__inner flex-row--eq-height">
+
+    <div class="icon-item__preview-icon preview-icon">
+      <span class="icon-item__step step">
+      <i class="icon-item__icon icon fa{{- field_fa_style }} fa-{{- fa_key }} fa-4x"></i>
+    </span>
+    </div>
+
+    <h2 class="searchable h4">{{ name | field_value}}</h2>
+
+    <div class="icon-item__usage usage">
+
+            <div class="icon-item__form-item form-item icon-item__form-item--class">
+              <label for="name-fa-{{- fa_key -}}">{{ 'Class name'|t }}</label>
+              <input class="name" type="text" readonly="readonly" onclick="this.select();" value="fa{{- field_fa_style }} fa-{{- fa_key -}}"
+                     id="name-fa-{{- fa_key -}}">
+            </div>
+
+      <div class="icon-item__form-item form-item icon-item__form-item--css">
+        <label for="css-content-fa-{{- fa_key -}}">{{ 'CSS Content'|t }}</label>
+        <input class="css" type="text" readonly="readonly" onclick="this.select();"
+               value="\{{- fa_unicode -}}" id="css-content-fa-{{- fa_key -}}">
+      </div>
+    </div>
+  </div>
+
+</div>

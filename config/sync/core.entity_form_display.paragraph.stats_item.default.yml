@@ -15,7 +15,7 @@ content:
   field_statistic_icon:
     weight: 2
     settings:
-      match_operator: CONTAINS
+      match_operator: STARTS_WITH
       match_limit: 12
       size: 60
       placeholder: ''
