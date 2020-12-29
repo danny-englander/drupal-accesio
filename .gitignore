@@ -31,4 +31,3 @@ node_modules/
 
 # Misc ignores.
 web/themes/custom/accesio/dist/css/min/accesio.min.css
-web/libraries/ionicons-4.6.4-1
