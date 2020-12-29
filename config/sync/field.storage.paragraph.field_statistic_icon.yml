@@ -1,17 +1,16 @@
-uuid: d484d01d-481c-4eb9-9af3-bae171046550
+uuid: baba9d29-62d5-4e8f-bd95-57d26eabbd13
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+    - taxonomy
 id: paragraph.field_statistic_icon
 field_name: field_statistic_icon
 entity_type: paragraph
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

@@ -1287,8 +1287,11 @@ legend {
   color: #212121;
 }
 
-/* Flexbox Equal Height Bootstrap Columns (fully responsive) */
-@media only screen and (min-width: 481px) {
+/* Flexbox Equal Height Bootstrap Columns (fully responsive)
+Ideal for cards with equal heights.
+see https://codepen.io/bootstrapped/pen/RrabNe
+*/
+@media (min-width: 32.5em) {
   .flex-row.row {
     display: -ms-flexbox;
     display: flex;
@@ -2199,7 +2202,7 @@ Icon theming.
 .stats__item-number h2 {
   font-family: 'Rozha One', serif;
   color: #404040;
-  font-size: 7.5rem;
+  font-size: 6.25rem;
   letter-spacing: 0.1875rem;
   line-height: .9;
   border-bottom: 2px dashed #404040;
@@ -2210,7 +2213,8 @@ Icon theming.
   font-weight: 400;
 }
 
-.stats__item-icon .svg-inline--fa {
+.stats__item-icon .ion-icon {
+  font-size: 5rem;
   color: #890c0c;
 }
 

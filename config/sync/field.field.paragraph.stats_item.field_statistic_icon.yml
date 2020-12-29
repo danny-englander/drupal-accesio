@@ -1,10 +1,11 @@
-uuid: 6dfbe2d7-b41f-461f-a064-c2c24ed56ce1
+uuid: 892b2b7d-f7ee-4701-8913-ba844937915b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_statistic_icon
     - paragraphs.paragraphs_type.stats_item
+    - taxonomy.vocabulary.icons
 id: paragraph.stats_item.field_statistic_icon
 field_name: field_statistic_icon
 entity_type: paragraph
@@ -12,8 +13,17 @@ bundle: stats_item
 label: 'Statistic Icon'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      icons: icons
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,6 +1,9 @@
 
-/* Flexbox Equal Height Bootstrap Columns (fully responsive) */
-@media only screen and (min-width: 481px) {
+/* Flexbox Equal Height Bootstrap Columns (fully responsive)
+Ideal for cards with equal heights.
+see https://codepen.io/bootstrapped/pen/RrabNe
+*/
+@include mq($from: small_plus) {
   .flex-row.row {
     display: flex;
     flex-wrap: wrap;

@@ -15,10 +15,12 @@ content:
   field_statistic_icon:
     weight: 2
     settings:
+      match_operator: CONTAINS
+      match_limit: 12
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: entity_reference_autocomplete
     region: content
   field_statistic_number:
     weight: 0

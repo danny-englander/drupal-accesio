@@ -16,9 +16,10 @@ content:
     weight: 2
     label: hidden
     settings:
-      link_to_entity: false
+      view_mode: icon_simple
+      link: false
     third_party_settings: {  }
-    type: string
+    type: entity_reference_entity_view
     region: content
   field_statistic_number:
     weight: 0

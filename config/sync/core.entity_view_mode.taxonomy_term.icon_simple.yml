@@ -1,10 +1,10 @@
-uuid: b1b5b721-9963-4611-a564-b03ab561fd22
+uuid: 3eb0ff07-da83-4951-b7bb-dd75b4a1b856
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: taxonomy_term.icons
-label: 'Icon Grid'
+id: taxonomy_term.icon_simple
+label: 'Icon simple'
 targetEntityType: taxonomy_term
 cache: true

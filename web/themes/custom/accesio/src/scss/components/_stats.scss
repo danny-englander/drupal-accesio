@@ -32,7 +32,7 @@
     h2 {
       font-family: 'Rozha One', serif;
       color: $charcoal;
-      @include rem(font-size, 120px);
+      @include rem(font-size, 100px);
       @include rem(letter-spacing, 3px);
       line-height: .9;
       border-bottom: 2px dashed $charcoal;
@@ -47,10 +47,11 @@
     }
   }
 
-
   &__item-icon {
 
-    .svg-inline--fa {
+
+    .ion-icon {
+      @include rem(font-size, 80px);
       color: $primary-color;
     }
   }
