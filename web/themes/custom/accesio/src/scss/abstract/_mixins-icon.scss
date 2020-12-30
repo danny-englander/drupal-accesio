@@ -5,6 +5,7 @@
   $color: null,
   $font-size: null,
   $margin: null,
+    $rotate: null,
 ) {
   &:#{$before_after} {
     content: "#{$icon}";
@@ -29,6 +30,10 @@
     @if $margin {
       margin: $margin;
     }
+
+    @if $rotate {
+      transform: rotate(#{$rotate}deg);
+    }
   }
 }
 
@@ -38,6 +43,7 @@
   $before_after,
   $color: null,
   $font-size: null,
+  $rotate: null,
 ) {
   &:#{$before_after} {
     content: "#{$icon}";
@@ -52,11 +58,14 @@
     @if $color {
       color: $color;
     }
+    @if $rotate {
+      transform: rotate(#{$rotate}deg);
+    }
   }
 }
 
 // Icon mixin, before
-@mixin ion-icons (
+@mixin ion-icons(
   $icon,
   $font-size,
   $color: null,

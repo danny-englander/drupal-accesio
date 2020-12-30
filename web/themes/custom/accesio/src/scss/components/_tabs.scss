@@ -35,7 +35,6 @@
     letter-spacing: 2px;
 
     @include root-modifier('.js-tablist--outline') {
-      background-color: transparent;
       position: relative;
       top: 1px;
       z-index: 1;
@@ -43,7 +42,7 @@
       border: 2px solid $primary-color;
       border-bottom: none;
       margin-bottom: 0;
-      background-color: whitesmoke;
+      background-color: $off-white;
     }
 
     &:focus {
@@ -80,7 +79,7 @@
   }
 
   &__inner {
-    padding-top: 20px;
+    padding-top: 30px;
     @include root-modifier('.js-tabcontent--outline') {
     }
   }

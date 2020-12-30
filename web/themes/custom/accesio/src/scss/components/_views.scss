@@ -17,7 +17,7 @@
 
     h2 {
       position: relative;
-      @include ion-icons('\f2f7', 40px, $position: absolute, $top: 3px, $right: -50px, $color: $primary-color);
+      @include font-awesome("\f13a", after, $font-size: 26px, $margin: 0 0 0 10px);
 
       &:before {
         transition: transform .5s ease-in-out;
@@ -26,7 +26,7 @@
 
     &.filter-toggle-expanded {
       h2 {
-        @include ion-icons('\f2f7', 40px, $position: absolute, $top: 3px, $right: -50px, $color: $primary-color, $rotate: 180);
+        @include font-awesome("\f13a", after, $font-size: 26px, $margin: 0 0 0 10px, $rotate: 180);
       }
     }
 
@@ -38,15 +38,13 @@
       flex: 1 0 20px;
 
       @include mq($from: medium) {
-
       }
     }
 
     &:after {
-      margin: -14px 0 0 70px;
+      margin: -14px 0 0 20px;
 
       @include mq($from: medium) {
-
       }
 
     }

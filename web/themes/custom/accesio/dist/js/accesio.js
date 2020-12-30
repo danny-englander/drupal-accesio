@@ -136,17 +136,16 @@
           $(this).parent().find('.view-filters').toggleClass('filters-expanded');
         });
 
+        // @TODO Need to target specific form ids.
+        // Add localStorage to remember settings.
+
+        // @TODO Need to target specific form ids.
         $(document).ajaxComplete(function (event, xhr, settings) {
-          console.log('done');
-          console.log(this);
-          setTimeout(function () {
-            $(context).find('.filter-toggle').each(function () {
+          $(context).find('.filter-toggle').each(function () {
             $(this).addClass('filter-toggle-expanded');
             $(this).parent().find('.view-filters').addClass('filters-expanded');
-            });
-          }, 200);
+          });
         });
-
       });
     },
   };
