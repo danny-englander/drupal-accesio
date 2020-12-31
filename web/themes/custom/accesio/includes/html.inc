@@ -63,11 +63,11 @@ function accesio_preprocess_html(array &$vars) {
     }
 
     // Define "blog" types.
-    $page_types = [
+    $blog_types = [
       'blog_post',
     ];
 
-    if (in_array($node_type, $page_types)) {
+    if (in_array($node_type, $blog_types)) {
       $vars['attributes']['class'][] = 'page-blog page-contained-width';
     }
   }

@@ -1,4 +1,4 @@
-uuid: bcb23560-1c32-4f26-a19a-b5f37f962618
+uuid: 863f7db7-43e5-4505-85db-fdbf20f865c7
 langcode: en
 status: true
 dependencies:
@@ -6,18 +6,19 @@ dependencies:
     - block_visibility_groups.block_visibility_group.blog_type
   module:
     - block_visibility_groups
+    - system
   theme:
     - accesio
-id: pagetitle
+id: poweredbydrupal
 theme: accesio
-region: content_info
+region: sidebar
 weight: -6
 provider: null
-plugin: page_title_block
+plugin: system_powered_by_block
 settings:
-  id: page_title_block
-  label: 'Page title'
-  provider: core
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
   label_display: '0'
 visibility:
   condition_group:

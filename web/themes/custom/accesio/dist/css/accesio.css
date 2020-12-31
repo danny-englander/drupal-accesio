@@ -388,12 +388,19 @@ html {
   box-sizing: inherit;
 }
 
-.page-contained-width .l-content.container {
-  background-color: #fff;
-  padding: 40px 24px 50px 24px;
+.page-contained-width .l-content {
   margin-top: 40px;
   margin-bottom: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.page-contained-width .l-content__inner {
+  max-width: 1320px;
+  padding: 40px 24px 50px 24px;
+  margin: 0 auto;
   box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 /*
@@ -805,6 +812,8 @@ h6 {
 .page-wrap li,
 .page-wrap .p,
 .page-wrap p {
+  font-size: 1rem;
+  line-height: 1.625rem;
   margin-bottom: 0.9375rem;
   margin-top: 0;
   letter-spacing: .03rem;
@@ -962,6 +971,84 @@ Branding.
 .branding__slogan {
   margin-bottom: 6px;
   font-size: 1.0625rem;
+}
+
+/*
+Icon theming.
+ */
+.icon-item {
+  padding: 10px 20px 20px 20px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+}
+
+.icon-item .ion {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.icon-item__preview-icon {
+  vertical-align: bottom;
+}
+
+.icon-item__preview-scale {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.icon-item h2 {
+  border-bottom: 1px solid #404040;
+}
+
+.icon-item__step {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  width: 10%;
+  color: #404040;
+}
+
+.icon-item .step i {
+  transition: opacity .3s;
+}
+
+.icon-item .usage {
+  margin-top: auto;
+}
+
+.icon-item__usage input {
+  font-family: monospace;
+  margin-right: 3px;
+  padding: 2px 5px;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  width: 100%;
+}
+
+.icon-item__usage label {
+  display: block;
+}
+
+.icon-item__usage .icon-item__form-item--css {
+  margin-bottom: 0;
+}
+
+.icon-item .usage label:first-child {
+  padding-left: 0;
+}
+
+.icon-item .usage .css {
+  width: 80px;
+}
+
+.icon-item .svg-inline--fa {
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -1412,84 +1499,6 @@ see https://codepen.io/bootstrapped/pen/RrabNe
   background-color: transparent !important;
 }
 
-/*
-Icon theming.
- */
-.icon-item {
-  border: 1px dashed #404040;
-  padding: 10px 20px 20px 20px;
-  margin-bottom: 30px;
-  background-color: white;
-}
-
-.icon-item .ion {
-  -webkit-touch-callout: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-.icon-item__preview-icon {
-  vertical-align: bottom;
-}
-
-.icon-item__preview-scale {
-  color: #888;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.icon-item h2 {
-  border-bottom: 1px solid #404040;
-}
-
-.icon-item__step {
-  display: inline-block;
-  line-height: 1;
-  position: relative;
-  width: 10%;
-  color: #404040;
-}
-
-.icon-item .step i {
-  transition: opacity .3s;
-}
-
-.icon-item .usage {
-  margin-top: auto;
-}
-
-.icon-item__usage input {
-  font-family: monospace;
-  margin-right: 3px;
-  padding: 2px 5px;
-  -webkit-touch-callout: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-  width: 100%;
-}
-
-.icon-item__usage label {
-  display: block;
-}
-
-.icon-item__usage .icon-item__form-item--css {
-  margin-bottom: 0;
-}
-
-.icon-item .usage label:first-child {
-  padding-left: 0;
-}
-
-.icon-item .usage .css {
-  width: 80px;
-}
-
-.icon-item .svg-inline--fa {
-  margin-bottom: 20px;
-}
-
 /* Styled lists */
 .component__item--type--text {
   /* Styled ordered list */
@@ -1648,7 +1657,7 @@ Icon theming.
 }
 
 .masthead__nav-inner {
-  max-width: 1280px;
+  max-width: 1340px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -2798,7 +2807,7 @@ Utility menu.
 }
 
 .page-title__wrap {
-  max-width: 1280px;
+  max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -2812,7 +2821,7 @@ Utility menu.
   align-items: flex-end;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 190px;
+  min-height: 170px;
 }
 
 .page-title svg {

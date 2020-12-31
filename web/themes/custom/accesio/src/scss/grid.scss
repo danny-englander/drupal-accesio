@@ -1,4 +1,4 @@
-//
+// https://github.com/m-spyratos/bootstrap-4-grid
 // Grid Options
 //
 // To avoid your options getting overridden by an update,
@@ -11,11 +11,11 @@
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px
+  xs: 0,
+  sm: 576px,
+  md: 870px,
+  lg: 1100px,
+  xl: 1400px
 ) !default;
 
 // Grid containers
@@ -23,10 +23,10 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-        sm: 740px,
-        md: 900px,
-        lg: 1120px,
-        xl: 1270px
+  sm: 540px,
+  md: 810px,
+  lg: 1040px,
+  xl: 1340px
 ) !default;
 
 // Grid columns

@@ -9,12 +9,22 @@ html {
   box-sizing: inherit;
 }
 
-.page-contained-width {
-  .l-content.container {
-    background-color: $white;
-    padding: 40px 24px 50px 24px;
+.l-content {
+
+  .page-contained-width & {
     margin-top: 40px;
     margin-bottom: 40px;
-    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.10);
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  &__inner {
+    .page-contained-width & {
+      max-width: 1320px;
+      padding: 40px 24px 50px 24px;
+      margin: 0 auto;
+      box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+      background-color: $white;
+    }
   }
 }

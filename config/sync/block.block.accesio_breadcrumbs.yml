@@ -11,7 +11,7 @@ _core:
 id: accesio_breadcrumbs
 theme: accesio
 region: hidden
-weight: -7
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

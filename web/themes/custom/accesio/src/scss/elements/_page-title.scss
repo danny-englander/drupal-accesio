@@ -9,14 +9,14 @@
   }
 
   &__wrap {
-    @include container(1280px);
+    @include container(1320px);
   }
 
   &__inner {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    min-height: 190px;
+    min-height: 170px;
   }
 
   svg {

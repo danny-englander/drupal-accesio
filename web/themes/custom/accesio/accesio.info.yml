@@ -14,6 +14,7 @@ regions:
   main_menu: 'Main Navigation'
   content_top: "Content Top"
   help: "Help"
+  content_info: 'Content Info'
   content: 'Content'
   sidebar: 'Sidebar'
   content_bottom: 'Content Bottom'

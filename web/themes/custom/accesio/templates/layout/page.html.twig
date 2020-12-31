@@ -43,6 +43,13 @@
  * @see html.html.twig
  */
 #}
+
+{% if page.sidebar %}
+  {% set main_grid_classes = 'col-md-9 col-lg-8' %}
+{% else %}
+  {% set main_grid_classes = 'col-md-12' %}
+{% endif %}
+
 <div class="l-container l-container--main">
 
   <!-- Start header. -->
@@ -67,15 +74,29 @@
       {{ page.content }}
     {% else %}
 
-      <div class="l-content container">
-        {{ page.content }}
-      </div><!-- /.l-content -->
-    {% endif %}
+      <div class="l-content container-fluid">
+        <div class="l-content__inner">
 
-    {% if page.sidebar %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar }}
-      </aside>
+          {% if page.content_info %}
+            {{ page.content_info }}
+          {% endif %}
+
+          <div class="l-main-content-wrap row">
+
+            <div class="l-main-content {{ main_grid_classes }}">
+              {{ page.content }}
+            </div>
+
+            {# Only render the sidebar when there is a container. #}
+            {% if page.sidebar %}
+              <aside class="l-sidebar col-md-3 col-lg-4" role="complementary">
+                {{ page.sidebar }}
+              </aside>
+            {% endif %}
+
+          </div>
+        </div>
+      </div><!-- /.l-content -->
     {% endif %}
   </main>
 
