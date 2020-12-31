@@ -1,0 +1,19 @@
+uuid: 25a8fe8d-2f12-4112-bc29-c9b6d3aa6fc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: blog_type
+label: 'Blog Type'
+logic: or
+conditions:
+  ea142993-7e87-4157-8bcc-b54e9ab8c73f:
+    id: node_type
+    bundles:
+      blog_post: blog_post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: ea142993-7e87-4157-8bcc-b54e9ab8c73f
+allow_other_conditions: true

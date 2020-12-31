@@ -2,8 +2,11 @@ uuid: e92b0b09-0f7a-4812-82fa-2c4ffe3657b5
 langcode: en
 status: true
 dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.page_type
   module:
     - block_class
+    - block_visibility_groups
   theme:
     - accesio
 third_party_settings:
@@ -22,4 +25,8 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: page_type

@@ -26,6 +26,10 @@ function accesio_preprocess_html(array &$vars) {
   $node = \Drupal::routeMatch()->getParameter('node');
   // Check for a node instance.
   if ($node instanceof NodeInterface) {
+    // Define the node type.
+    $node_type = $node->getType();
+    // Define the nid.
+    $nid = $node->id();
     // Check if there are components.
     if (!empty($node->field_components->target_id)) {
       // Check for the hero component.
@@ -47,6 +51,24 @@ function accesio_preprocess_html(array &$vars) {
       if ($node->get('field_edgy')->value !== '1') {
         $vars['attributes']['class'][] = 'page-contained-width';
       }
+    }
+
+    // Define an array of node types that have structured content.
+    $page_types = [
+      'page',
+    ];
+
+    if (in_array($node_type, $page_types)) {
+      $vars['attributes']['class'][] = 'page-standard';
+    }
+
+    // Define "blog" types.
+    $page_types = [
+      'blog_post',
+    ];
+
+    if (in_array($node_type, $page_types)) {
+      $vars['attributes']['class'][] = 'page-blog page-contained-width';
     }
   }
 }

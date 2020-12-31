@@ -1,0 +1,19 @@
+uuid: 670e1e92-43f7-45bf-b041-5a4ce02b3bd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: page_type
+label: 'Page type'
+logic: or
+conditions:
+  a7ad887f-b8e6-4b5a-99ee-6d7377074cc4:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: a7ad887f-b8e6-4b5a-99ee-6d7377074cc4
+allow_other_conditions: true
