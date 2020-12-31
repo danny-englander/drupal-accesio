@@ -14,13 +14,13 @@ input[type='time'],
 input[type='url'],
 input[type='color'],
 input[type='text'] {
+  @include rem(font-size, 18px);
   width: 100%;
   height: 40px;
   line-height: 1.67;
-  @include rem(font-size, 18px);
   padding: 0 0 0 10px;
   border-radius: 0;
-  border: 1px solid $gray;
+  border: 1px solid $charcoal;
   -webkit-appearance: none !important;
 
   @include mq($from: small_desktop) {
@@ -28,10 +28,8 @@ input[type='text'] {
   }
 
   &:focus {
-    border: 1px solid $black;
-    outline: black;
+    outline: $primary-color solid 2px;
   }
-
 }
 
 button,
@@ -275,6 +273,10 @@ textarea {
 
 legend {
   margin-bottom: 20px;
+}
+
+form .description {
+  @include rem(font-size, 18px);
 }
 
 ::-webkit-input-placeholder {

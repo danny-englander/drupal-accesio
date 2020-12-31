@@ -11,7 +11,12 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements hook_form_alter().
  */
 function accesio_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  // Get the form id.
-  if ($form["#id"] === 'views-exposed-form-ion-icons-icons-block') {
+  // Form alters by id.
+  if ($form["#id"] === 'views-exposed-form-fa-icons-fa-solids-block') {
+    $form["#attributes"]["class"][] = 'label-is-hidden';
+  }
+
+  if ($form["#id"] === 'views-exposed-form-fa-icons-fa-brands-block') {
+    $form["#attributes"]["class"][] = 'label-is-hidden';
   }
 }

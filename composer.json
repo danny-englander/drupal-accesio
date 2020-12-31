@@ -47,7 +47,6 @@
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^2.8",
         "drupal/viewfield": "^3.0@beta",
-        "drupal/views_json_source": "^1.0",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.2"
     },

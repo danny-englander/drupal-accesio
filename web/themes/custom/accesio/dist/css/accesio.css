@@ -988,13 +988,13 @@ input[type='time'],
 input[type='url'],
 input[type='color'],
 input[type='text'] {
+  font-size: 1.125rem;
   width: 100%;
   height: 40px;
   line-height: 1.67;
-  font-size: 1.125rem;
   padding: 0 0 0 10px;
   border-radius: 0;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #404040;
   -webkit-appearance: none !important;
 }
 
@@ -1033,8 +1033,7 @@ input[type='time']:focus,
 input[type='url']:focus,
 input[type='color']:focus,
 input[type='text']:focus {
-  border: 1px solid #212121;
-  outline: black;
+  outline: #482e6e solid 2px;
 }
 
 button,
@@ -1280,6 +1279,10 @@ textarea {
 
 legend {
   margin-bottom: 20px;
+}
+
+form .description {
+  font-size: 1.125rem;
 }
 
 :-ms-input-placeholder {
@@ -2991,6 +2994,15 @@ abbr[title] {
  */
 .invisible {
   visibility: hidden;
+}
+
+.label-is-hidden label {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
 }
 
 /*# sourceMappingURL=accesio.css.map */

@@ -13,7 +13,7 @@ use Drupal\node\NodeInterface;
  * @param array $vars
  * @param $pid
  */
-function accesio_preprocess_html(array &$vars, $pid) {
+function accesio_preprocess_html(array &$vars) {
   // Define vars for use in templates.
   $site_config = \Drupal::config('system.site');
   // Set a var for the logo path.
@@ -43,7 +43,8 @@ function accesio_preprocess_html(array &$vars, $pid) {
       if ($node->get('field_edgy')->value === '1') {
         $vars['attributes']['class'][] = 'page-full-width';
       }
-      else {
+
+      if ($node->get('field_edgy')->value !== '1') {
         $vars['attributes']['class'][] = 'page-contained-width';
       }
     }

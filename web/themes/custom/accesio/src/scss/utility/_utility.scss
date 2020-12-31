@@ -105,3 +105,10 @@
   visibility: hidden;
 }
 
+.label-is-hidden {
+
+  label {
+    @include visually-hidden();
+  }
+}
+
