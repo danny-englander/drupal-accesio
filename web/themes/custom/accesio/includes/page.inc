@@ -6,6 +6,7 @@
  */
 
 use Drupal\node\NodeInterface;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Implements hook_preprocess_HOOK() for page.html.twig.
@@ -31,7 +32,7 @@ function accesio_preprocess_page(array &$vars, $pid) {
         !$node->get('field_hide_title')->isEmpty()) {
         // Add a class if there is a hero.
         if ($node->get('field_hide_title')->value === '1') {
-          unset($vars['page']['content']['accesio_page_title']);
+          unset($vars['page']['content_top']['accesio_page_title']);
         }
       }
     }

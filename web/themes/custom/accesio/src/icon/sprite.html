@@ -16,12 +16,13 @@ This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
 -->
 
 <style type="text/css">
-.file-3-line {
-	background: url("icons.svg") 0 0 no-repeat;
-	width: 28px;
-	height: 28px;
+{{#shapes}}{{#selector.shape}}.{{#classname}}{{expression}}{{/classname}}{{^last}},
+{{/last}}{{/selector.shape}} {
+	background: url("{{{example}}}") {{position.relative.xy}} no-repeat;
+	width: {{width.outer}}px;
+	height: {{height.outer}}px;
 }
-</style>
+{{/shapes}}</style>
 
 <!--
 
@@ -35,8 +36,8 @@ external stylesheet of course.
 -->
 
 <style type="text/css">
-	.file-3-line-dims { width: 28px; height: 28px; }
-</style>
+{{#shapes}}	{{#selector.shape}}{{#last}}.{{#classname}}{{expression}}{{/classname}}-dims{{/last}}{{/selector.shape}} { width: {{width.outer}}px; height: {{height.outer}}px; }
+{{/shapes}}</style>
 
 <!--
 ====================================================================================================
@@ -65,16 +66,16 @@ appropriately sized elements.
 			<h3>A) Conventional CSS sprite</h3>
 			<ul>
 
-				<li title="file-3-line">
+{{#shapes}}				<li title="{{name}}">
 					<div class="icon-box">
 
-						<!-- file-3-line -->
-						<i class="file-3-line">file-3-line</i>
+						<!-- {{name}} -->
+						<i class="{{#selector.shape}}{{#last}}{{#classname}}{{raw}}{{/classname}}{{/last}}{{/selector.shape}}">{{name}}</i>
 
 					</div>
-					<h2>file-3-line</h2>
+					<h2>{{name}}</h2>
 				</li>
-			</ul>
+{{/shapes}}			</ul>
 
 <!--
 ====================================================================================================
@@ -89,7 +90,7 @@ appropriately sized elements.
 
 		</section>
 		<footer>
-			<p>Generated at Wed, 30 Dec 2020 19:37:46 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at {{date}} by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>

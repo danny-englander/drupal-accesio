@@ -2,14 +2,19 @@ uuid: e92b0b09-0f7a-4812-82fa-2c4ffe3657b5
 langcode: en
 status: true
 dependencies:
+  module:
+    - block_class
   theme:
     - accesio
+third_party_settings:
+  block_class:
+    classes: page-title
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: accesio_page_title
 theme: accesio
-region: content
-weight: -6
+region: content_top
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

@@ -54,7 +54,7 @@ $main-menu: main-menu;
         > span,
         > a {
           position: relative;
-          border-bottom: 2px solid $primary-color;
+          border-bottom: 2px solid $primary-color-dark;
 
           &:after {
             display: block;
@@ -65,7 +65,7 @@ $main-menu: main-menu;
           &:focus {
             @include mq($from: small_desktop) {
               text-decoration: none;
-              color: $primary-color;
+              color: $primary-color-dark;
             }
           }
 
@@ -74,7 +74,7 @@ $main-menu: main-menu;
           }
 
           &.focus {
-            background-color: $primary-color;
+            background-color: $primary-color-dark;
             color: $white;
           }
         }
@@ -84,7 +84,7 @@ $main-menu: main-menu;
     &--active-trail {
       > a {
         @include mq($from: small_desktop) {
-          background-color: $primary-color;
+          background-color: $primary-color-dark;
           color: $white;
           border-bottom: none;
           z-index: 1;
@@ -96,7 +96,7 @@ $main-menu: main-menu;
     &--level-0 {
       .focus {
         @include mq($from: small_desktop) {
-          background-color: $primary-color;
+          background-color: $primary-color-dark;
           color: $white;
         }
       }
@@ -104,7 +104,7 @@ $main-menu: main-menu;
       > a.open {
         /* Open state of first descendant link within a top level navigation item */
         @include mq($from: small_desktop) {
-          background-color: $primary-color;
+          background-color: $primary-color-dark;
           color: $white;
 
           .svg-inline--fa {
@@ -138,20 +138,20 @@ $main-menu: main-menu;
           @include mq($from: small_desktop) {
             text-decoration: none;
             color: $white;
-            background-color: $primary-color;
+            background-color: $primary-color-dark;
             outline: none;
           }
         }
 
         &.open {
-          background-color: $primary-color;
+          background-color: $primary-color-dark;
           color: $white;
           outline: none;
         }
 
         &.focus {
           @include mq($from: small_desktop) {
-            background-color: $primary-color;
+            background-color: $primary-color-dark;
             color: $white;
             outline: none;
           }
@@ -163,7 +163,7 @@ $main-menu: main-menu;
           border: 1px solid $secondary-color;
 
           #{$a-tags-hover} {
-            background-color: $primary-color;
+            background-color: $primary-color-dark;
             color: $white;
           }
         }

@@ -12,8 +12,23 @@
  *   displayed after the main title tag that appears in the template.
  */
 #}
-{{ title_prefix }}
-{% if title %}
-  <h1{{ title_attributes }}>{{ title }}</h1>
-{% endif %}
-{{ title_suffix }}
+
+<div class="page-title__wrap">
+  <div class="page-title__inner">
+    {{ title_prefix }}
+    {% if title %}
+      <h1{{ title_attributes }}>{{ title }}</h1>
+    {% endif %}
+    {{ title_suffix }}
+
+    {#
+    This will get converted to an inline SVG using Drupal.behaviors.svgConvert.
+    #}
+    {% if image_svg | render %}
+      <img class="svg-img-to-inline" src="{{ image_svg }}" alt="{{ image_alt }}">
+    {% else %}
+      {# @TODO Default here#}
+    {% endif %}
+
+  </div>
+</div>

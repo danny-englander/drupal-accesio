@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_social_description
     - field.field.node.page.field_social_image
+    - field.field.node.page.field_svg_icon
     - node.type.page
   module:
     - entity_reference_revisions
+    - svg_image_field
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -27,6 +29,20 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_svg_icon:
+    weight: 1
+    label: hidden
+    settings:
+      inline: true
+      width: 25
+      height: 25
+      link: ''
+      apply_dimensions: false
+      enable_alt: false
+      enable_title: false
+    third_party_settings: {  }
+    type: svg_image_field_formatter
     region: content
 hidden:
   field_edgy: true

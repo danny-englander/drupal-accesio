@@ -8,12 +8,14 @@ dependencies:
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_social_description
     - field.field.node.page.field_social_image
+    - field.field.node.page.field_svg_icon
     - node.type.page
   module:
     - field_group
     - media_library
     - paragraphs
     - path
+    - svg_image_field
     - text
 third_party_settings:
   field_group:
@@ -136,6 +138,15 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+    region: content
+  field_svg_icon:
+    weight: 29
+    settings:
+      progress_indicator: throbber
+      preview_image_max_width: 300
+      preview_image_max_height: 300
+    third_party_settings: {  }
+    type: svg_image_field_widget
     region: content
   path:
     type: path

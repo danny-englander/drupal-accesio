@@ -20,22 +20,22 @@ $off-white: #f5f5f5;
 $white: #fff;
 
 // Core colors.
+$eggplant: #482e6e;
 $dark-red: #890c0c;
 $bright-red: #b1040e;
 $cyan: #007c92;
 $dark-teal: #00505c;
 $purple: #4e1749;
-$gold: #ffc300;
+$goldenrod: #ffc300;
 $green: #69cec3;
-
 
 /*
 A11Y Color grids.
-https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Gold%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A&es-color-form__tile-size=large
-
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A&es-color-form__tile-size=large
 */
 
-$primary-color: $dark-red;
+$primary-color: $eggplant;
+$primary-color-dark: darken($primary-color, 10%);
 $secondary-color: $green;
 
 // Color map.
@@ -52,7 +52,8 @@ $palette: (
   cyan: $cyan,
   teal: $dark-teal,
   purple: $purple,
-  gold: $gold,
+  gold: $goldenrod,
+  eggplant: $eggplant,
 );
 
 // For usage with the container mixin.
@@ -81,6 +82,7 @@ $mq-breakpoints: (
 $a-tags: 'a, &:active, &:hover, &:visited';
 $a-tags-hover: '&:active, &:focus, &:hover ';
 
+// Form varaibles.
 $md-radio-checked-color: $primary-color;
 $md-radio-border-color: rgba(0, 0, 0, 0.6);
 $md-radio-size: 22px;

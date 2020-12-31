@@ -1,0 +1,32 @@
+.page-title {
+  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 120px 0 rgba(0, 0, 0, 0.15);
+  background-color: $primary-color-dark;
+
+  h1 {
+    @include rem(font-size, 60px);
+    @include rem(line-height, 62px);
+    color: $white;
+  }
+
+  &__wrap {
+    @include container(1280px);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 190px;
+  }
+
+  svg {
+    fill: $white;
+    width: 100px;
+    position: relative;
+    top: -14px;
+  }
+
+  img {
+    @include visually-hidden();
+  }
+}

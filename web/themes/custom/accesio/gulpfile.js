@@ -43,11 +43,11 @@ gulp.task('svgSprite', function (done) {
   var config = {
     shape: {
       dimension: {
-        maxWidth: 80,
-        maxHeight: 80
+        maxWidth: 180,
+        maxHeight: 180
       },
       spacing: {
-        padding: 8
+        padding: 2
       },
     },
     mode: {
@@ -55,7 +55,8 @@ gulp.task('svgSprite', function (done) {
         bust: false,
         common: 'ico',
         example: {
-          dest: '../src/icon/icons.html'
+          dest: '../src/icon/icons.html',
+          template: './src/icon/sprite.html', // relative to current working directory
         },
         prefix: '.',
         render: {

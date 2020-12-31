@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_social_description
     - field.field.node.page.field_social_image
+    - field.field.node.page.field_svg_icon
     - node.type.page
   module:
     - user
@@ -28,3 +29,4 @@ hidden:
   field_hide_title: true
   field_social_description: true
   field_social_image: true
+  field_svg_icon: true
