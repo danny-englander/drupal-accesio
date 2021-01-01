@@ -1,0 +1,14 @@
+uuid: b1cb1768-0cf3-4619-b008-43297e5a03ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.no_link
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags.no_link
+targetEntityType: taxonomy_term
+bundle: tags
+mode: no_link
+content: {  }
+hidden:
+  description: true

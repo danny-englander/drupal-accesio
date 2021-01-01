@@ -1,0 +1,19 @@
+uuid: 791b7539-65ce-469d-9b8b-3e56c4ce4d42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheader
+    - node.type.blog_post
+id: node.blog_post.field_subheader
+field_name: field_subheader
+entity_type: node
+bundle: blog_post
+label: Subheader
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

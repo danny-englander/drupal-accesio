@@ -6,6 +6,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog_post.feeds_item
     - field.field.node.blog_post.field_components
+    - field.field.node.blog_post.field_social_description
+    - field.field.node.blog_post.field_social_image
+    - field.field.node.blog_post.field_subheader
     - field.field.node.blog_post.field_tags
     - field.field.node.blog_post.field_text
     - node.type.blog_post
@@ -24,5 +27,8 @@ content:
 hidden:
   feeds_item: true
   field_components: true
+  field_social_description: true
+  field_social_image: true
+  field_subheader: true
   field_tags: true
   field_text: true

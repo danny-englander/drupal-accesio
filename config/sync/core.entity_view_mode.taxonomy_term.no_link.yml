@@ -1,0 +1,10 @@
+uuid: 3516f60e-4735-496e-a551-1a4a7cf60c2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.no_link
+label: 'No Link'
+targetEntityType: taxonomy_term
+cache: true

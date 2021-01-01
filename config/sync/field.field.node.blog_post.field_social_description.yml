@@ -1,0 +1,28 @@
+uuid: fcb377cc-5cad-4d76-9596-c5d61342f819
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_description
+    - node.type.blog_post
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    restricted_html: '0'
+    plain_text: '0'
+id: node.blog_post.field_social_description
+field_name: field_social_description
+entity_type: node
+bundle: blog_post
+label: 'Social Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

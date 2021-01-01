@@ -33,38 +33,45 @@
  * - field_type: The type of the field.
  * - label_display: The display settings for the label.
  *
+ *
  * @see template_preprocess_field()
  */
 #}
-{%
-  set title_classes = [
-    label_display == 'visually_hidden' ? 'visually-hidden',
-  ]
-%}
+{% set classes = [
+  'item',
+  'item--' ~ field_name|clean_class,
+  'item--type-' ~ field_type|clean_class,
+  'item--label-' ~ label_display,
+  label_display == 'inline' ? 'clearfix',
+] %}
+{% set title_classes = [
+  'item__label',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+] %}
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes }}>
+    <div{{ attributes.addClass(classes, 'items') }}>
       {% for item in items %}
-        <div{{ item.attributes }}>{{ item.content }}</div>
+        <div{{ item.attributes.addClass('item') }}>{{ item.content }}</div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes }}>{{ item.content }}</div>
+      <div{{ attributes.addClass(classes, 'item') }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
-  <div{{ attributes }}>
+  <div{{ attributes.addClass(classes) }}>
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
-      <div>
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
+    <div class="items">
+      {% endif %}
+      {% for item in items %}
+        <div{{ item.attributes.addClass('item') }}>{{ item.content }}</div>
+      {% endfor %}
+      {% if multiple %}
+    </div>
     {% endif %}
   </div>
 {% endif %}

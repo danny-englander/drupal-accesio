@@ -1,0 +1,29 @@
+uuid: fc468e81-2a1d-4cd1-93cf-4ded4d0ff6c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_image
+    - media.type.image
+    - node.type.blog_post
+id: node.blog_post.field_social_image
+field_name: field_social_image
+entity_type: node
+bundle: blog_post
+label: 'Social Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

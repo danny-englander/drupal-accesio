@@ -11,8 +11,8 @@ dependencies:
     - accesio
 id: poweredbydrupal
 theme: accesio
-region: sidebar
-weight: -6
+region: hidden
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

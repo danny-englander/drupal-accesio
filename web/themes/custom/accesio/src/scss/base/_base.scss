@@ -20,10 +20,10 @@ html {
 
   &__inner {
     .page-contained-width & {
-      max-width: 1320px;
+      max-width: 1500px;
       padding: 40px 24px 50px 24px;
       margin: 0 auto;
-      box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+    //  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
       background-color: $white;
     }
   }
