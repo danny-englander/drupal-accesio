@@ -28,7 +28,7 @@ content:
       lazy:
         lazy_image: '1'
         placeholder_style: thumbnail
-        data_uri: true
+        data_uri: false
     type: responsive_image
     weight: 1
     region: content

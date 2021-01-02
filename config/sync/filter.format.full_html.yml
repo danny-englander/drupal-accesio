@@ -3,7 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.inline_media
+    - core.entity_view_mode.media.full_width
+    - core.entity_view_mode.media.half_width
   module:
     - editor
     - lazy
@@ -18,7 +19,7 @@ filters:
   filter_align:
     id: filter_align
     provider: filter
-    status: false
+    status: true
     weight: -45
     settings: {  }
   filter_caption:
@@ -54,11 +55,13 @@ filters:
     status: true
     weight: -43
     settings:
-      default_view_mode: inline_media
+      default_view_mode: full_width
       allowed_media_types:
         image: image
         remote_video: remote_video
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        full_width: full_width
+        half_width: half_width
   filter_html_image_secure:
     id: filter_html_image_secure
     provider: filter

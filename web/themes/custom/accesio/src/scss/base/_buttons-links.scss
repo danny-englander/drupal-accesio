@@ -185,5 +185,11 @@ a {
     border-bottom: 2px solid $cyan;
     transition: .4s ease;
     padding: 2px 4px;
+
+    #{$a-tags-hover} {
+      border: none;
+      background-color: $secondary-color-dark;
+      color: $white;
+    }
   }
 }

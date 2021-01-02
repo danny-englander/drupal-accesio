@@ -23,8 +23,16 @@
 <figure{{ attributes.addClass(classes) }}>
   {{ title_suffix.contextual_links }}
   {% if content %}
+
     {{ content.field_media_image }}
-    <figcaption>{{ content.field_caption | field_value }}</figcaption>
-    <p><i class="fas fa-camera"></i> {{ content.field_attribution | field_value }}</p>
+
+    {% if content.field_caption | render %}
+      <figcaption>{{ content.field_caption | field_value }}</figcaption>
+    {% endif %}
+
+    {% if content.field_attribution | render %}
+      <p><i class="fas fa-camera"></i> {{ content.field_attribution | field_value }}</p>
+    {% endif %}
+
   {% endif %}
 </figure>

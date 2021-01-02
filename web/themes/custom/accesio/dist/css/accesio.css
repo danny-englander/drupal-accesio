@@ -641,6 +641,12 @@ a {
   padding: 2px 4px;
 }
 
+.has-links a:active, .has-links a:focus, .has-links a:hover {
+  border: none;
+  background-color: #27776e;
+  color: #fff;
+}
+
 /* eb-garamond-regular - latin
 https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
 */
@@ -1030,15 +1036,39 @@ Accordion styling.
   margin-right: 10px;
 }
 
-.blog-post img {
+.blog-post .media--view-mode-full-width img {
   width: 100%;
   object-fit: cover;
 }
 
 @media (min-width: 64em) {
-  .blog-post img {
+  .blog-post .media--view-mode-full-width img {
     max-height: 750px;
   }
+}
+
+.blog-post .media--view-mode-half-width {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.blog-post .media--view-mode-half-width.align-center {
+  margin: 0 auto;
+}
+
+.blog-post .media--view-mode-half-width.align-right {
+  float: right;
+  margin-left: 40px;
+}
+
+.blog-post .media--view-mode-half-width.align-left {
+  float: left;
+  margin-right: 40px;
+}
+
+.blog-post .media--view-mode-half-width img {
+  width: 100%;
+  height: auto;
 }
 
 .blog-post__tags-items {
@@ -1071,8 +1101,13 @@ Accordion styling.
 }
 
 .blog-post .media--type-image {
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 30px 0 40px 0;
+}
+
+.blog-post .media--type-image figcaption {
+  border-bottom: 1px dashed #6f6f6f;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .blog-post .media--type-image p {
