@@ -1,0 +1,19 @@
+uuid: d96251cd-5310-479c-a8e2-9a89b27c448b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pronoun
+    - node.type.person
+id: node.person.field_pronoun
+field_name: field_pronoun
+entity_type: node
+bundle: person
+label: Pronoun
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
