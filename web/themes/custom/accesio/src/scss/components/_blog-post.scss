@@ -3,48 +3,34 @@
   h1 {
     position: relative;
     @extend .h2;
-
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-
     margin-bottom: 16px;
-
-    &:before {
-   //   content: '';
-      border-left: 5px solid $secondary-color;
-      width: 10px;
-      margin-right: 10px;
-    }
   }
 }
-
-
 
 .blog-post {
 
   &__date-byline {
     @include rem(font-size, 17px);
     margin-bottom: 20px;
-
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-
     border-bottom: 1px solid $medium-gray;
     padding-bottom: 20px;
   }
 
   &__byline {
     margin-right: 6px;
+
     svg {
       margin-right: 4px;
     }
-
   }
 
   &__date {
-
     svg {
       margin-right: 4px;
       margin-left: 6px;
@@ -54,7 +40,6 @@
   &__tags {
     display: flex;
     align-items: baseline;
-
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -68,9 +53,8 @@
     width: 100%;
     object-fit: cover;
 
-
     @include mq($from: small_desktop) {
-      max-height: 700px;
+      max-height: 750px;
     }
   }
 
@@ -78,7 +62,6 @@
     list-style: none;
     padding: 0;
     display: flex;
-
   }
 
   &__tags-item {
@@ -96,49 +79,31 @@
     }
   }
 
-  .media--type-image {
-  //  border: 1px solid $charcoal;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  p, ol, h2, h3, h4, ul:not(.blog-post__tags-items)  {
+  p, ol, h2, h3, h4, ul:not(.blog-post__tags-items) {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .media--type-image {
+    padding: 10px;
+    margin-bottom: 20px;
+
+    p {
+      @include rem(font-size, 18px);
+      font-family: 'EB Garamond', serif;
+      max-width: 100%;
+      margin-bottom: 0;
+      font-style: italic;
+    }
+  }
+}
+
+.cke_editable {
   img {
-
+    width: 40% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
   }
-
-}
-
-
-
-.item--field-attribution {
-  margin-top: 6px;
-  margin-bottom: 14px;
-  font-family: 'EB Garamond', serif;
- // @extend .p;
-  @include rem(font-size, 22px);
-
-  @include mq($from: small_desktop) {
-
-  }
-
-}
-
-.item--field-caption {
-  //font-style: italic;
-  font-family: 'EB Garamond', serif;
-
-  p, ol, ul {
-    max-width: 100%;
-  }
-
-  @include mq($from: small_desktop) {
-    @include rem(font-size, 28px);
-  }
-
 }

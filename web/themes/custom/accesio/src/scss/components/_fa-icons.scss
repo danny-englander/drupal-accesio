@@ -1,12 +1,19 @@
 /*
 Icon theming.
  */
+
+.view-fa-icons {
+  form {
+    input[type='text'] {
+      width: 260px;
+    }
+  }
+}
+
 .icon-item {
- // border: 2px dashed $primary-color;
   padding: 10px 20px 20px 20px;
   margin-bottom: 30px;
   background-color: white;
-
   box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
 
   .ion {

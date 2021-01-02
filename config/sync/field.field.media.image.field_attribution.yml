@@ -1,10 +1,19 @@
-uuid: 3f97d258-c557-4084-b1b4-c92ba248890b
+uuid: 26c3df8a-aa25-407b-85c6-006a4557d03b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_attribution
     - media.type.image
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    restricted_html: '0'
+    plain_text: '0'
 id: media.image.field_attribution
 field_name: field_attribution
 entity_type: media
@@ -16,4 +25,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text

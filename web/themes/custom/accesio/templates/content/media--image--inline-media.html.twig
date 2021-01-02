@@ -14,14 +14,17 @@
 #}
 {% set classes = [
   'media',
+  'has-links',
   'media--type-' ~ media.bundle()|clean_class,
   not media.isPublished() ? 'media--unpublished',
   view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
 ] %}
 
-<section{{ attributes.addClass(classes) }}>
+<figure{{ attributes.addClass(classes) }}>
   {{ title_suffix.contextual_links }}
   {% if content %}
-    {{ content }}
+    {{ content.field_media_image }}
+    <figcaption>{{ content.field_caption | field_value }}</figcaption>
+    <p><i class="fas fa-camera"></i> {{ content.field_attribution | field_value }}</p>
   {% endif %}
-</section>
+</figure>

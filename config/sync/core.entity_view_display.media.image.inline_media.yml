@@ -10,6 +10,7 @@ dependencies:
     - image.style.max_1300x1300
     - media.type.image
   module:
+    - image
     - lazy
     - text
 _core:
@@ -20,12 +21,11 @@ bundle: image
 mode: inline_media
 content:
   field_attribution:
-    type: string
+    type: text_default
     weight: 1
     region: content
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
   field_caption:
     type: text_default
@@ -39,8 +39,12 @@ content:
     settings:
       image_style: max_1300x1300
       image_link: ''
-    third_party_settings: {  }
-    type: lazy_image
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: max_1300x1300
+        data_uri: false
+    type: image
     weight: 0
     region: content
 hidden:

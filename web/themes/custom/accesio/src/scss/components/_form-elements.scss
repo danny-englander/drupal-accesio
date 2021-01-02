@@ -65,7 +65,7 @@ form {
 
 .js-form-type-select {
   position: relative;
-  @include ion-icons('\f3d0', 32px, $position: absolute, $top: 32px, $right: 10px, $color: $primary-color);
+  @include font-awesome("\f078", after, $font-size: 24px, $margin: 4px 8px 0 0, $position: absolute, $right: 2px, $top: 34px);
 
   &:before {
     z-index: 30;
@@ -85,7 +85,7 @@ form {
     cursor: pointer;
     background-image: none;
     height: 45px;
-    border: 1px solid $gray;
+    border: 1px solid $charcoal;
     width: 100%;
 
     .filter-sort & {
@@ -115,7 +115,6 @@ input[type=search]::-ms-reveal {
 
     &:checked {
       + label {
-        // font-weight: 500;
       }
     }
 
@@ -137,7 +136,8 @@ input[type=search]::-ms-reveal {
     margin-bottom: 0;
     cursor: pointer;
     vertical-align: bottom;
-    padding-top: 1px;
+    padding-top: 4px;
+    @include rem(font-size, 17px);
 
     &:before, &:after {
       position: absolute;
@@ -152,12 +152,12 @@ input[type=search]::-ms-reveal {
       top: 0;
       width: $md-radio-size;
       height: $md-radio-size;
-      border: 2px solid $primary-color;
+      border: 3px solid $primary-color;
       overflow: hidden;
     }
 
     &:after {
-      top: 5px;
+      top: 7px;
       left: $md-radio-size / 2 - $md-radio-checked-size / 2;
       width: $md-radio-checked-size;
       height: $md-radio-checked-size;
@@ -176,8 +176,6 @@ input[type=search]::-ms-reveal {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
     overflow: hidden;
-    height: 1px;
-    width: 1px;
     word-wrap: normal;
     width: 40px;
     height: 24px;
@@ -204,7 +202,7 @@ input[type=search]::-ms-reveal {
     vertical-align: top;
     width: 40px;
     height: 24px;
-    background-color: $charcoal;
+    background-color: $secondary-color-dark;
     border-radius: 12px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -228,7 +226,7 @@ input[type=search]::-ms-reveal {
       content: "";
       width: 100%;
       height: 100%;
-      background-color: #fff;
+      background-color: $white;
       border-radius: 21px;
       -webkit-transform: translateX(-16px);
       transform: translateX(-16px);
@@ -240,8 +238,9 @@ input[type=search]::-ms-reveal {
   }
 
   label {
-    z-index: 1;
+    @include rem(font-size, 17px);
     position: relative;
+    z-index: 1;
     padding-left: 4px;
     padding-bottom: 0;
     display: inline;
@@ -271,12 +270,25 @@ textarea {
   }
 }
 
+fieldset {
+  margin-top: 40px;
+}
+
 legend {
-  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  padding: 6px 12px 8px 12px;
+  border-radius: 12px;
+  color: $white;
+  background-color: $charcoal;
+}
+
+.fieldset-wrapper {
+  padding-bottom: 12px;
 }
 
 form .description {
-  @include rem(font-size, 18px);
 }
 
 ::-webkit-input-placeholder {
@@ -290,3 +302,19 @@ form .description {
 ::placeholder {
   color: $black;
 }
+
+/*
+* Animation for radios and checkboxes.
+ */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 0 $md-radio-ripple-size rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 $md-radio-ripple-size rgba(0, 0, 0, 0);
+  }
+}
+

@@ -1,16 +1,14 @@
 image_fields:
   media--image--field_media_image--hero: '1'
+  media--image--field_media_image--inline_media: '1'
 alter_tag:
   img: img
-  iframe: '0'
-formatters:
-  lazy_image: lazy_image
-  lazy_responsive_image: lazy_responsive_image
+  iframe: iframe
 skipClass: no-lazy
 disabled_paths: /rss.xml
 placeholderSrc: ''
 preferNative: false
-cssEffect: false
+cssEffect: true
 lazysizes:
   lazyClass: lazyload
   loadedClass: lazyloaded
@@ -34,3 +32,4 @@ lazysizes:
     unveilhooks: unveilhooks
 _core:
   default_config_hash: y7LBTPYVTcA6s3XuXz3mXS0he0kmx7NQWmTz2fDSI-s
+libraryPath: /libraries/lazysizes

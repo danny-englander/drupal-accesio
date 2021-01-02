@@ -161,7 +161,7 @@
     attach: function (context, settings) {
       const svgimgs = document.querySelectorAll(".svg-img-to-inline");
       for (let integer = 0; integer < svgimgs.length; integer++) {
-        // console.log('svgimg: ', svgimgs[integer]);
+         console.log('svgimg: ', svgimgs[integer]);
         const convertImages = (query, callback) => {
           const images = document.querySelectorAll(query);
           images.forEach(image => {

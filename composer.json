@@ -29,6 +29,7 @@
         "drupal/core-recommended": "^9",
         "drupal/crop": "^2.1",
         "drupal/devel": "^4.0",
+        "drupal/entity_embed": "1.x-dev",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/environment_indicator": "^4.0",
         "drupal/feeds": "^3.0@alpha",
@@ -64,7 +65,11 @@
                 "web-root": "web/"
             }
         },
-        "patches": [],
+        "patches": {
+            "drupal/core": {
+                "Allow edit Media items from Media Library modal dialog in CKEditor": "https://www.drupal.org/files/issues/2020-09-03/drupal_core-media_add_edit_link-3168868-1.patch"
+          }
+        },
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"

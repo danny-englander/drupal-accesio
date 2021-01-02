@@ -19,15 +19,15 @@ bundle: image
 mode: default
 content:
   field_attribution:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textfield
     region: content
   field_caption:
-    weight: 2
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
