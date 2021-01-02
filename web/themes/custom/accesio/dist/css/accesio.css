@@ -991,6 +991,30 @@ Accordion styling.
   padding-right: 15px;
 }
 
+.profile-byline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.profile-byline__name {
+  margin-left: 6px;
+  margin-right: 6px;
+  font-weight: 600;
+}
+
+.profile-byline__image img {
+  filter: grayscale(100%) brightness(140%);
+  position: relative;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #404040;
+}
+
 .page-blog h1 {
   position: relative;
   margin-bottom: 16px;
@@ -1004,19 +1028,20 @@ Accordion styling.
   margin-bottom: 20px;
   border-bottom: 1px solid #98928a;
   padding-bottom: 20px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.blog-post__byline {
-  margin-right: 6px;
-}
-
-.blog-post__byline svg {
-  margin-right: 4px;
+.blog-post__date {
+  font-weight: 600;
 }
 
 .blog-post__date svg {
-  margin-right: 4px;
   margin-left: 6px;
+  margin-right: 4px;
 }
 
 .blog-post__tags {
