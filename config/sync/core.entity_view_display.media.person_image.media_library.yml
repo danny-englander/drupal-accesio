@@ -1,0 +1,30 @@
+uuid: 4f6faf40-dcbb-42be-9c11-e069288c4286
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.person_image.field_media_image_1
+    - image.style.medium
+    - media.type.person_image
+  module:
+    - image
+id: media.person_image.media_library
+targetEntityType: media
+bundle: person_image
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_image_1: true
+  name: true
+  uid: true

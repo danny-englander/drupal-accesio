@@ -1,0 +1,57 @@
+uuid: ee8cc543-646d-40a9-9ca6-762ca9a7b8e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.byline
+    - field.field.node.person.field_email
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_profile_image
+    - field.field.node.person.field_pronoun
+    - field.field.node.person.field_text
+    - node.type.person
+  module:
+    - user
+id: node.person.byline
+targetEntityType: node
+bundle: person
+mode: byline
+content:
+  field_first_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_profile_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_pronoun:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_email: true
+  field_text: true
+  links: true

@@ -1,0 +1,51 @@
+uuid: deb14790-089f-453b-9424-3a50f62489ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.person_image.field_media_image_1
+    - image.style.thumbnail
+    - media.type.person_image
+  module:
+    - image_widget_crop
+id: media.person_image.media_library
+targetEntityType: media
+bundle: person_image
+mode: media_library
+content:
+  field_media_image_1:
+    weight: 1
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - square
+      crop_types_required:
+        - square
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  uid: true

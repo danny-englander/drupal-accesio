@@ -1,26 +1,26 @@
-uuid: f29644d8-0be0-45e6-a151-637f62bc87fb
+uuid: 5c1ab20e-d7ae-49f6-a305-adcaa2ae799e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_profile_image
-    - media.type.person_image
+    - field.storage.node.field_author
+    - node.type.blog_post
     - node.type.person
-id: node.person.field_profile_image
-field_name: field_profile_image
+id: node.blog_post.field_author
+field_name: field_author
 entity_type: node
-bundle: person
-label: 'Profile Image'
+bundle: blog_post
+label: Author
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:node'
   handler_settings:
     target_bundles:
-      person_image: person_image
+      person: person
     sort:
       field: _none
       direction: ASC

@@ -1,0 +1,10 @@
+uuid: 8bab9121-3cca-429c-99b2-be23406260f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.byline
+label: Byline
+targetEntityType: node
+cache: true

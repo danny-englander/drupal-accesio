@@ -1,0 +1,50 @@
+uuid: 39ad5ddc-bb6c-43ac-b778-f3a99c508e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.person_image.field_media_image_1
+    - image.style.thumbnail
+    - media.type.person_image
+  module:
+    - image_widget_crop
+id: media.person_image.default
+targetEntityType: media
+bundle: person_image
+mode: default
+content:
+  field_media_image_1:
+    weight: 1
+    settings:
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - square
+      crop_types_required:
+        - square
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  uid: true

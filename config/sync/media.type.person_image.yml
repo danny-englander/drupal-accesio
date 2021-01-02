@@ -1,0 +1,13 @@
+uuid: aeeeade6-2d94-44db-92ee-c12ee6848a3a
+langcode: en
+status: true
+dependencies: {  }
+id: person_image
+label: 'Profile Image'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

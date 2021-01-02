@@ -12,6 +12,7 @@ dependencies:
     - node.type.person
   module:
     - media_library
+    - media_library_edit
     - path
     - text
 id: node.person.default
@@ -54,7 +55,9 @@ content:
     weight: 5
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_pronoun:
     weight: 3

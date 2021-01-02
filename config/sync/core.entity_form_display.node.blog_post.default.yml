@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.blog_post.feeds_item
+    - field.field.node.blog_post.field_author
     - field.field.node.blog_post.field_components
     - field.field.node.blog_post.field_social_description
     - field.field.node.blog_post.field_social_image
@@ -36,6 +37,7 @@ third_party_settings:
       label: Tabs
     group_content:
       children:
+        - field_author
         - field_subheader
         - field_text
       parent_name: group_tabs
@@ -103,6 +105,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_author:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_components:
     weight: 6
     settings:
@@ -140,7 +152,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_subheader:
-    weight: 5
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -154,7 +166,7 @@ content:
     type: options_select
     region: content
   field_text:
-    weight: 7
+    weight: 9
     settings:
       rows: 5
       placeholder: ''
