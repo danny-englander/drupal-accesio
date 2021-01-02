@@ -90,7 +90,7 @@
       <h2 class="h4">{{ content.field_subheader | field_value }}</h2>
     {% endif %}
 
-    <div class="blog-post__date-byline">
+    <div class="blog-post__date-byline width--70">
       <span class="blog-post__byline">
         <i class="fas fa-user"></i> {{ 'By:'|t }} John Smith
       </span>
@@ -117,7 +117,7 @@
     {% endif %}
 
     {% if content.field_tags | render %}
-      <div class="blog-post__tags">
+      <div class="blog-post__tags width--70">
         <i class="fas fa-tags"></i>
         <ul class="blog-post__tags-items">
           {#

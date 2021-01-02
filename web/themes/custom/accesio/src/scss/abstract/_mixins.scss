@@ -79,3 +79,9 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@mixin blog-width() {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}

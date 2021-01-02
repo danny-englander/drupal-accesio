@@ -3,10 +3,8 @@
   h1 {
     position: relative;
     @extend .h2;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 16px;
+    @include blog-width();
   }
 }
 
@@ -15,9 +13,6 @@
   &__date-byline {
     @include rem(font-size, 17px);
     margin-bottom: 20px;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
     border-bottom: 1px solid $medium-gray;
     padding-bottom: 20px;
   }
@@ -40,48 +35,9 @@
   &__tags {
     display: flex;
     align-items: baseline;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
 
     svg {
       margin-right: 10px;
-    }
-  }
-
-  .media--view-mode-full-width {
-
-    img {
-      width: 100%;
-      object-fit: cover;
-
-      @include mq($from: small_desktop) {
-        max-height: 750px;
-      }
-    }
-  }
-
-  .media--view-mode-half-width {
-    width: 50%;
-    margin-bottom: 40px;
-
-    &.align-center {
-      margin: 0 auto;
-    }
-
-    &.align-right {
-      float: right;
-      margin-left: 40px;
-    }
-
-    &.align-left {
-      float: left;
-      margin-right: 40px;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
     }
   }
 
@@ -107,9 +63,7 @@
   }
 
   p, ol, h2, h3, h4, ul:not(.blog-post__tags-items) {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    @include blog-width();
   }
 
   .media--type-image {
@@ -129,6 +83,12 @@
       font-style: italic;
     }
   }
+
+  .media--type-remote-video {
+    @include blog-width();
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 }
 
 .cke_editable {
@@ -138,4 +98,8 @@
     margin: 0 auto !important;
     display: flex !important;
   }
+}
+
+.width--70 {
+  @include blog-width();
 }
