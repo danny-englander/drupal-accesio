@@ -70,11 +70,9 @@
  *   in different view modes.
  */
 #}
-{# Set the date. #}
-{% set date = node.getCreatedTime() %}
 
 {% set classes = [
-  'blog-post',
+  'profile-byline',
   'node',
   'node--type-' ~ node.bundle|clean_class,
   node.isPromoted() ? 'node--promoted',
@@ -83,59 +81,17 @@
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ] %}
 
-<article{{ attributes.addClass(classes) }}>
-  <div{{ content_attributes.addClass('blog-post__content') }}>
+<div{{ attributes.addClass(classes) }}>
 
-    {% if content.field_subheader | render %}
-      <h2 class="h4">{{ content.field_subheader | field_value }}</h2>
-    {% endif %}
-
-    <div class="blog-post__date-byline width--70">
-      {% if content.field_author | render %}
-        <div class="blog-post__byline">
-          {{ content.field_author | field_value }}
-        </div>
-      {% endif %}
-
-      {# Convert the date into a readable format. #}
-      <span class="blog-post__date">
-         <span>
-        {{ '|' }} <i class="fas fa-calendar-alt"></i>
-       {{ date | date('U')| format_date('custom', 'F d, Y') }}
-         </span>
-      </span>
-    </div>
-
-
-    {% if content.field_text | render %}
-      <div class="blog-post__text">
-        {{ content.field_text | field_value }}
-      </div>
-    {% endif %}
-
-    {% if content.field_components | render %}
-      <div class="blog-post__components">
-        {{ content.field_components | field_value }}
-      </div>
-    {% endif %}
-
-    {% if content.field_tags | render %}
-      <div class="blog-post__tags width--70">
-        <i class="fas fa-tags"></i>
-        <ul class="blog-post__tags-items">
-          {#
-          Twig tweak loop
-           loop.length, loop.revindex, loop.revindex0, and loop.last are now available
-            see https://github.com/twigphp/Twig/issues/687#issuecomment-510077131
-          #}
-          {% for item in content.field_tags | children(true) %}
-            <li class="blog-post__tags-item">
-              {{ item }}
-              <span> {% if not loop.last %} {{ '|' }} {% endif %} </span>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
+  <div class="profile-byline__image">
+    {{ content.field_profile_image }}
   </div>
-</article>
+
+  <div>{{ 'By:'|t }}</div>
+
+  <div class="profile-byline__name">
+    {{ content.field_first_name | field_value }}
+    {{ content.field_last_name | field_value }}
+  </div>
+
+</div>

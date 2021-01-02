@@ -1,0 +1,35 @@
+uuid: 35a4d59f-9a2a-4d6f-8773-e0e2ec555485
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.profile_image
+    - field.field.media.person_image.field_media_image_1
+    - image.style.square
+    - media.type.person_image
+  module:
+    - image
+    - lazy
+id: media.person_image.profile_image
+targetEntityType: media
+bundle: person_image
+mode: profile_image
+content:
+  field_media_image_1:
+    label: hidden
+    weight: 0
+    settings:
+      image_style: square
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: crop_thumbnail
+        data_uri: false
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

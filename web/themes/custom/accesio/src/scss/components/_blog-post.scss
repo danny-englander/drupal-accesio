@@ -15,20 +15,17 @@
     margin-bottom: 20px;
     border-bottom: 1px solid $medium-gray;
     padding-bottom: 20px;
-  }
-
-  &__byline {
-    margin-right: 6px;
-
-    svg {
-      margin-right: 4px;
-    }
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   &__date {
+    font-weight: 600;
+
     svg {
-      margin-right: 4px;
       margin-left: 6px;
+      margin-right: 4px;
     }
   }
 
