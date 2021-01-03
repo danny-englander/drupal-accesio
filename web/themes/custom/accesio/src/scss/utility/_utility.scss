@@ -11,11 +11,18 @@
   margin: 10px 40px;
 }
 
-
 .label-is-hidden {
-
   label {
     @include visually-hidden();
+  }
+}
+
+.cke_editable {
+  img {
+    width: 40% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
   }
 }
 

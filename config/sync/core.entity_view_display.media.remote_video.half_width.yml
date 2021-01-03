@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.half_width
+    - field.field.media.remote_video.field_caption
     - field.field.media.remote_video.field_media_oembed_video
     - field.field.media.remote_video.field_start_time
     - media.type.remote_video
@@ -27,6 +28,7 @@ content:
     region: content
 hidden:
   created: true
+  field_caption: true
   field_start_time: true
   name: true
   thumbnail: true

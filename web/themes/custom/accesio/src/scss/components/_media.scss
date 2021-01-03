@@ -2,13 +2,22 @@
 Media theming.
  */
 
+.media--type-remote-video {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  @include mq($from: medium-large) {
+    @include blog-width();
+  }
+}
+
 .item--field-media-oembed-video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   clear: both;
 
- > iframe {
+  > iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,38 +26,78 @@ Media theming.
   }
 }
 
+.media--type-image {
+  padding: 30px 0 40px 0;
+  margin: 0;
+
+  figcaption {
+    border-bottom: 1px dashed $dark-gray;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+
+  p {
+    @include rem(font-size, 18px);
+    font-family: 'EB Garamond', serif;
+    max-width: 100%;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  img {
+    margin-bottom: 8px;
+  }
+}
+
 .media--view-mode-full-width {
   img {
     width: 100%;
-    object-fit: cover;
+    height: auto;
 
-    @include mq($from: small_desktop) {
+    @include mq($from: medium-large) {
       max-height: 750px;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
 
 .media--view-mode-half-width {
-  clear: both;
-  width: 50%;
   margin-bottom: 40px;
+
+  @include mq($from: medium-large) {
+    clear: both;
+    width: 50%;
+  }
 
   &.align-center {
     margin: 0 auto;
   }
 
   &.align-right {
-    float: right;
-    margin-left: 40px;
+
+    @include mq($from: medium-large) {
+      float: right;
+      margin-left: 40px;
+    }
   }
 
   &.align-left {
-    float: left;
-    margin-right: 40px;
+
+    @include mq($from: medium-large) {
+      float: left;
+      margin-right: 40px;
+    }
   }
 
   img {
     width: 100%;
     height: auto;
+  }
+
+
+  figcaption {
+    margin-bottom: 10px;
+    padding-bottom: 16px;
   }
 }

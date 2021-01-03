@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.hero
+    - field.field.media.remote_video.field_caption
     - field.field.media.remote_video.field_media_oembed_video
     - field.field.media.remote_video.field_start_time
     - image.style.max_2600x2600
@@ -52,5 +53,6 @@ content:
         data_uri: false
 hidden:
   created: true
+  field_caption: true
   name: true
   uid: true

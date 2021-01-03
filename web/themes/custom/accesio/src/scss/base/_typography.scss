@@ -5,8 +5,6 @@ body {
   color: $charcoal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- // background-color: $off-white;
-
 }
 
 #{headings(1,6)} {
@@ -32,8 +30,8 @@ h1 {
 h2 {
   font-family: 'EB Garamond', serif;
   font-weight: 500;
-  @include rem(font-size, 28px);
-  @include rem(line-height, 30px);
+  @include rem(font-size, 44px);
+  @include rem(line-height, 48px);
   @include rem(margin-bottom, 25px);
   margin-top: 0;
 
@@ -67,7 +65,7 @@ h4 {
   @include rem(font-size, 18px);
   @include rem(line-height, 25px);
   margin-top: 0;
-  margin-bottom: 0;
+  @include rem(margin-bottom, 12px);
 
   @include mq($from: small_desktop) {
     @include rem(font-size, 22px);

@@ -14,16 +14,25 @@ html {
   .page-contained-width & {
     margin-top: 40px;
     margin-bottom: 40px;
-    padding-right: 30px;
-    padding-left: 30px;
+
+    @include mq($from: medium-large) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
 
   &__inner {
+
     .page-contained-width & {
       @include container(1500px);
-      padding: 40px 24px 50px 24px;
+      padding-top: 0;
+      padding-bottom: 50px;
       margin: 0 auto;
       background-color: $white;
+
+      @include mq($from: medium-large) {
+        padding: 40px 24px 50px 24px;
+      }
     }
 
     .page-standard.page-contained-width & {
