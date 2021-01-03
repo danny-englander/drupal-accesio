@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b67e422deff49fc8b936a4d8f045ddd",
+    "content-hash": "e91d117be8b50848e7e827278745c456",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4153,6 +4153,59 @@
             }
         },
         {
+            "name": "drupal/rrssb",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rrssb.git",
+                "reference": "8.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rrssb-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "e6fb421f32f661541bc92ddef7a1ae67f9cd9472"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "rrssb/rrssb-plus": "^0.5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.3",
+                    "datestamp": "1608651872",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "AdamPS",
+                    "homepage": "https://www.drupal.org/user/2650563"
+                },
+                {
+                    "name": "himanshu-dixit",
+                    "homepage": "https://www.drupal.org/user/3513954"
+                },
+                {
+                    "name": "mike.roberts",
+                    "homepage": "https://www.drupal.org/user/1270690"
+                }
+            ],
+            "description": "Adds the ability to use the Ridiculously Responsive Social Share Buttons to your Drupal site.",
+            "homepage": "https://www.drupal.org/project/rrssb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rrssb"
+            }
+        },
+        {
             "name": "drupal/smart_trim",
             "version": "1.3.0",
             "source": {
@@ -6311,6 +6364,60 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rrssb/rrssb-plus",
+            "version": "0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AdamPS/rrssb-plus.git",
+                "reference": "ad39bb8ac38889fa9b6eb15c1adfb61486a96999"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AdamPS/rrssb-plus/zipball/ad39bb8ac38889fa9b6eb15c1adfb61486a96999",
+                "reference": "ad39bb8ac38889fa9b6eb15c1adfb61486a96999",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Shepherd",
+                    "email": "adam@albanyweb.co.uk"
+                },
+                {
+                    "name": "Joshua Tuscan",
+                    "email": "hello@joshuatuscan.com"
+                },
+                {
+                    "name": "Daniel Box",
+                    "email": "daniel@kurtnoble.com"
+                }
+            ],
+            "description": "Ridiculously Responsive Social Sharing Buttons Plus",
+            "homepage": "http://www.albanyweb.co.uk/rrssb-plus",
+            "keywords": [
+                "buttons",
+                "plus",
+                "responsive",
+                "ridiculously",
+                "rrssb",
+                "sharing",
+                "social"
+            ],
+            "support": {
+                "docs": "https://github.com/AdamPS/rrssb-plus/README.md",
+                "issues": "https://github.com/AdamPS/rrssb-plus/issues",
+                "source": "https://github.com/AdamPS/rrssb-plus"
+            },
+            "time": "2018-10-30T08:49:51+00:00"
         },
         {
             "name": "stack/builder",

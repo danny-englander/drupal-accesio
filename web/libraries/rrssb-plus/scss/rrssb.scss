@@ -1,0 +1,105 @@
+// Ridiculously Responsive Social Sharing Buttons Plus
+
+// Button text colour
+$rrssb-txt:         #fff    !default;
+// Border radius for the buttons
+$rrssb-border-radius: 0.2em !default;
+// Default font size (can shrink somewhat to fit available width)
+$rrssb-font-size: 14px !default;
+// Button height as a multiple of font size.
+$rrssb-button-height: 2.5em !default;
+// Icon height as a proportion of button height.
+$rrssb-icon-ratio: 70% !default;
+$rrssb-spacing: 0.15em !default;
+
+$rrssb-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$rrssb-border: (100% - $rrssb-icon-ratio)/2;
+
+.rrssb {
+  font-size: $rrssb-font-size;
+  font-family: $rrssb-main-font;
+  font-weight: bold;
+
+  .rrssb-buttons {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: $rrssb-spacing 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: $rrssb-spacing;
+  }
+
+  a {
+    background-color: #ccc;
+    border-radius: $rrssb-border-radius;
+    box-sizing: border-box;
+    display: block;
+    /*@@overflow: hidden;*/
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+
+    &:active {
+      box-shadow: inset 1px 3px 15px 0 rgba(22, 0, 0, .25);
+    }
+  }
+
+  .rrssb-icon {
+    display: block;
+    box-sizing: border-box;
+    left: 0.5em;
+    position: absolute;
+    /* Margin top and bottom.
+    /* But we need to specify a height rather than top+bottom else the icon disappears when there is no label. */
+    top: $rrssb-border;
+    height: $rrssb-icon-ratio;
+    /* Need explicit width for IE (default is 300px), same as height. */
+    width: ($rrssb-icon-ratio/100%) * $rrssb-button-height;
+  }
+
+  .rrssb-text {
+    color: $rrssb-txt;
+    /* Left space to match the width of the icon. */
+    /* Left and right space 1em to leave gaps either side of text. */
+    padding: 0 1em 0 ($rrssb-icon-ratio/100%) * $rrssb-button-height + 1em;
+
+    /* Line height based on font-size so everything scales in proportion. */
+    /* This will in turn set height large enough to contain text giving text that is centred vertically. */
+    line-height: $rrssb-button-height;
+  }
+
+  .rrssb-prefix {
+    padding-right: 0.6em;
+  }
+
+  &.no-label {
+
+    a {
+      /* Label has gone, so can't rely on line height. */
+      /* Need to bound the width for IE, else it goes to max available. */
+      width: $rrssb-button-height;
+      height: $rrssb-button-height;
+    }
+
+    .rrssb-icon {
+      position: relative;
+      left: $rrssb-border;
+    }
+
+    .rrssb-text {
+      display: none;
+    }
+  }
+}

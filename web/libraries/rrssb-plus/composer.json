@@ -1,0 +1,39 @@
+{
+  "name": "rrssb/rrssb-plus",
+  "type": "drupal-library",
+  "authors": [
+    {
+      "name" : "Adam Shepherd",
+      "email" : "adam@albanyweb.co.uk"
+    },
+    {
+      "name" : "Joshua Tuscan",
+      "email" : "hello@joshuatuscan.com"
+    },
+    {
+      "name" : "Daniel Box",
+      "email" : "daniel@kurtnoble.com"
+    }
+  ],
+  "description": "Ridiculously Responsive Social Sharing Buttons Plus",
+  "keywords": [
+    "RRSSB",
+    "rrssb",
+    "ridiculously",
+    "responsive",
+    "social",
+    "sharing",
+    "buttons",
+    "plus"
+  ],
+  "support": {
+    "issues": "https://github.com/AdamPS/rrssb-plus/issues",
+    "source": "https://github.com/AdamPS/rrssb-plus",
+    "docs": "https://github.com/AdamPS/rrssb-plus/README.md"
+  },
+  "license": "MIT",
+  "homepage": "http://www.albanyweb.co.uk/rrssb-plus",
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}

@@ -51,4 +51,10 @@ libraries-override:
         /core/themes/stable/css/system/components/system-status-report-general-info.css: false
         /core/themes/stable/css/system/components/tree-child.module.css: false
         /core/themes/stable/css/system/components/reset-appearance.module.css: false
+  # Unset rrssb, we will theme it to our liking.
+  rrssb/main:
+    css:
+      component:
+        /libraries/rrssb-plus/css/rrssb.css: false
+
 

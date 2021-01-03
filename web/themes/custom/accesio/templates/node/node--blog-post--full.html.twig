@@ -90,7 +90,10 @@
       <h2 class="h4">{{ content.field_subheader | field_value }}</h2>
     {% endif %}
 
-    <div class="blog-post__date-byline width--70">
+
+    <div class="blog-post__header width--70">
+
+    <div class="blog-post__date-byline">
       {% if content.field_author | render %}
         <div class="blog-post__byline">
           {{ content.field_author | field_value }}
@@ -106,6 +109,11 @@
       </span>
     </div>
 
+      <div class="blog-post__share">
+    {{ drupal_entity('block', 'accesio_share') }}
+      </div>
+
+    </div>
 
     {% if content.field_text | render %}
       <div class="blog-post__text">

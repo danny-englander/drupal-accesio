@@ -176,6 +176,13 @@ input[type="submit"] {
 
 a {
   transition: all 0.15s ease;
+
+  @include mq($until: medium) {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
 }
 
 .has-links {

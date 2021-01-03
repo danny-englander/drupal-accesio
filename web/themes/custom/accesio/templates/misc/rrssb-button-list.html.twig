@@ -1,0 +1,47 @@
+{# <div {{ attributes.addClass('rrssb').addClass("rrssb-bs-#{button_set}").addClass('share') }}> #}
+{# {% if prefix_text %} #}
+{# <div class="rrssb-prefix share__prefix">{{ prefix_text }}</div> #}
+{# {% endif %} #}
+{# <ul class="rrssb-buttons share__buttons"> #}
+{# {% for button in buttons %} #}
+{# <li class="rrssb-{{ button.name }} share__button share__button--{{ button.name }}"> #}
+{# <a class="" href="{{ button.link }}" {{ button.class | raw }}> #}
+{# <span class="rrssb-icon "> #}
+
+{# {% if button.name == 'email' %} #}
+{# <i class="fas fa-envelope"></i> #}
+{# {% else %} #}
+{# <i class="fab fa-{{- button.name }}"></i> #}
+{# {% endif %} #}
+
+{# </span> #}
+{# <span class="rrssb-text share__text">{{ button.text }}</span> #}
+{# </a> #}
+{# </li> #}
+{# {% endfor %} #}
+{# </ul> #}
+{# </div> #}
+
+
+<div {{ attributes.addClass('rrssb').addClass("rrssb-bs-#{button_set}").addClass('share') }}>
+  {% if prefix_text %}
+    <div class="rrssb-prefix share__prefix">{{ prefix_text }}</div>
+  {% endif %}
+  <ul class="rrssb-buttons share__items">
+    {% for button in buttons %}
+      <li class="rrssb-{{ button.name }} share__item">
+        <a href="{{ button.link }}" {{ button.class | raw }}>
+          <span class="rrssb-icon share__icon share__icon--{{- button.name }}">
+            {% if button.name == 'email' %}
+              <i class="fas fa-envelope fa-2x"></i>
+            {% else %}
+              <i class="fab fa-{{- button.name }} fa-2x"></i>
+            {% endif %}
+          </span>
+          <span class="rrssb-text share__text">{{ button.text }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+

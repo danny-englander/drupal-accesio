@@ -1,0 +1,90 @@
+/*
+Share button styling, !important used to
+override inline styles from the module js.
+ */
+
+.share {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 !important;
+  font-size: inherit !important;
+
+  @include mq($until: medium) {
+    margin-top: 20px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 100% !important;
+    list-style: none;
+    margin: 14px 0 0 0;
+
+    @include mq($until: medium) {
+      margin: 2px 0 0 0;
+    }
+  }
+
+  &__prefix {
+    @include visually-hidden();
+  }
+
+  &__item {
+    max-width: inherit !important;
+    margin-bottom: 0 !important;
+    width: 44px !important;
+
+    a {
+      background-color: transparent !important;
+    }
+  }
+
+  &__icon {
+    background: none !important;
+  }
+
+  &__text {
+    @include visually-hidden();
+  }
+
+  &__icon {
+    svg {
+      @include rem(font-size, 28px);
+    }
+
+    &--email {
+      svg {
+        color: $charcoal;
+      }
+    }
+
+    &--twitter {
+      svg {
+        color: #1da1f2;
+      }
+
+    }
+
+    &--pinterest {
+
+      svg {
+        color: #bd081c;
+      }
+    }
+
+    &--linkedin {
+
+      svg {
+        color: #0a66c2;
+      }
+    }
+
+  }
+
+  &__link {
+    background-color: transparent !important;
+  }
+}
+

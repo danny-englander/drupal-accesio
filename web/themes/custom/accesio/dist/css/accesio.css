@@ -645,6 +645,15 @@ a {
   transition: all 0.15s ease;
 }
 
+@media (max-width: 47.99em) {
+  a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
+}
+
 .has-links a {
   color: #00505c;
   text-decoration: none;
@@ -1040,11 +1049,39 @@ Accordion styling.
   }
 }
 
+.blog-post__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #98928a;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+}
+
+@media (max-width: 32.49em) {
+  .blog-post__header {
+    border-top: 1px solid #98928a;
+  }
+}
+
+@media (max-width: 47.99em) {
+  .blog-post__header {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 48em) {
+  .blog-post__share {
+    width: 30%;
+  }
+}
+
 .blog-post__date-byline {
   font-size: 1.0625rem;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #98928a;
-  padding-bottom: 20px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -1052,11 +1089,16 @@ Accordion styling.
   align-items: center;
 }
 
+@media (min-width: 48em) {
+  .blog-post__date-byline {
+    width: 70%;
+  }
+}
+
 @media (max-width: 32.49em) {
   .blog-post__date-byline {
     -ms-flex-direction: column;
     flex-direction: column;
-    border-top: 1px solid #98928a;
     padding-top: 14px;
   }
 }
@@ -1095,9 +1137,9 @@ Accordion styling.
 }
 
 .blog-post__tags-item {
-  margin-right: 6px;
   text-transform: capitalize;
   font-weight: 600;
+  margin-right: 6px;
   letter-spacing: 1px;
   position: relative;
   display: -ms-flexbox;
@@ -1932,6 +1974,15 @@ Media theming.
   margin-bottom: 8px;
 }
 
+.media--type-image.media--view-mode-hero {
+  padding: 0;
+  margin: 0;
+}
+
+.media--type-image.media--view-mode-hero img {
+  margin: 0;
+}
+
 .media--view-mode-full-width img {
   width: 100%;
   height: auto;
@@ -2478,6 +2529,99 @@ Media theming.
   .quote__attribution {
     padding-left: 230px;
   }
+}
+
+/*
+Share button styling, !important used to
+override inline styles from the module js.
+ */
+.share {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 !important;
+  font-size: inherit !important;
+}
+
+@media (max-width: 47.99em) {
+  .share {
+    margin-top: 20px;
+  }
+}
+
+.share__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 100% !important;
+  list-style: none;
+  margin: 14px 0 0 0;
+}
+
+@media (max-width: 47.99em) {
+  .share__items {
+    margin: 2px 0 0 0;
+  }
+}
+
+.share__prefix {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.share__item {
+  max-width: inherit !important;
+  margin-bottom: 0 !important;
+  width: 44px !important;
+}
+
+.share__item a {
+  background-color: transparent !important;
+}
+
+.share__icon {
+  background: none !important;
+}
+
+.share__text {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.share__icon svg {
+  font-size: 1.75rem;
+}
+
+.share__icon--email svg {
+  color: #404040;
+}
+
+.share__icon--twitter svg {
+  color: #1da1f2;
+}
+
+.share__icon--pinterest svg {
+  color: #bd081c;
+}
+
+.share__icon--linkedin svg {
+  color: #0a66c2;
+}
+
+.share__link {
+  background-color: transparent !important;
 }
 
 .stats {

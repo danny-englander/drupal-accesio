@@ -13,23 +13,46 @@
 
 .blog-post {
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $medium-gray;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+
+    @include mq($until: small_plus) {
+      border-top: 1px solid $medium-gray;
+    }
+
+    @include mq($until: medium) {
+      flex-direction: column;
+    }
+  }
+
+  &__share {
+
+    @include mq($from: medium) {
+      width: 30%;
+    }
+  }
+
   &__date-byline {
     @include rem(font-size, 17px);
-    margin-bottom: 20px;
-    border-bottom: 1px solid $medium-gray;
-    padding-bottom: 20px;
     position: relative;
     display: flex;
     align-items: center;
 
+    @include mq($from: medium) {
+      width: 70%;
+    }
+
     @include mq($until: small_plus) {
       flex-direction: column;
-      border-top: 1px solid $medium-gray;
       padding-top: 14px;
     }
 
     @include mq($from: small_plus) {
-
     }
   }
 
@@ -64,9 +87,9 @@
   }
 
   &__tags-item {
-    margin-right: 6px;
     text-transform: capitalize;
     font-weight: 600;
+    margin-right: 6px;
     letter-spacing: 1px;
     position: relative;
     display: flex;
@@ -77,6 +100,7 @@
       color: $primary-color;
     }
   }
+
 
   p, ol, h2, h3, h4, ul:not(.blog-post__tags-items) {
 
