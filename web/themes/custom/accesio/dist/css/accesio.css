@@ -1179,14 +1179,18 @@ Branding.
 /*
 Icon theming.
  */
-.view-fa-icons form {
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 48em) {
+  .view-fa-icons form {
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.view-fa-icons form input[type='text'] {
-  margin-right: 10px;
-  width: 320px;
+@media (min-width: 48em) {
+  .view-fa-icons form input[type='text'] {
+    margin-right: 10px;
+    width: 320px;
+  }
 }
 
 .icon-item {
@@ -1196,26 +1200,8 @@ Icon theming.
   box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
 }
 
-.icon-item__preview-icon {
-  vertical-align: bottom;
-}
-
-.icon-item__preview-scale {
-  color: #888;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
 .icon-item h2 {
   border-bottom: 1px solid #404040;
-}
-
-.icon-item__step {
-  display: inline-block;
-  line-height: 1;
-  position: relative;
-  width: 10%;
-  color: #404040;
 }
 
 .icon-item__usage {

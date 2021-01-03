@@ -1,14 +1,19 @@
 /*
 Icon theming.
  */
-
 .view-fa-icons {
   form {
-    display: flex;
+
+    @include mq($from: medium) {
+      display: flex;
+    }
 
     input[type='text'] {
-      margin-right: 10px;
-      width: 320px;
+
+      @include mq($from: medium) {
+        margin-right: 10px;
+        width: 320px;
+      }
     }
   }
 }
@@ -19,26 +24,8 @@ Icon theming.
   background-color: white;
   box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
 
-  &__preview-icon {
-    vertical-align: bottom;
-  }
-
-  &__preview-scale {
-    color: #888;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-
   h2 {
     border-bottom: 1px solid $charcoal;
-  }
-
-  &__step {
-    display: inline-block;
-    line-height: 1;
-    position: relative;
-    width: 10%;
-    color: $charcoal;
   }
 
   &__usage {
@@ -64,10 +51,6 @@ Icon theming.
     .icon-item__form-item--css {
       margin-bottom: 0;
     }
-  }
-
-  .usage label:first-child {
-  //  padding-left: 0;
   }
 
   .usage .css {
