@@ -19,4 +19,8 @@ function accesio_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form["#id"] === 'views-exposed-form-fa-icons-fa-brands-block') {
     $form["#attributes"]["class"][] = 'label-is-hidden';
   }
+
+  if ($form["#id"] === 'views-exposed-form-fa-icons-fa-regular-block') {
+    $form["#attributes"]["class"][] = 'label-is-hidden';
+  }
 }

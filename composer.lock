@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e91d117be8b50848e7e827278745c456",
+    "content-hash": "920d05be5fd8fa426146c132a32d2cbc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4333,6 +4333,54 @@
             "homepage": "https://www.drupal.org/project/svg_image_field",
             "support": {
                 "source": "https://git.drupalcode.org/project/svg_image_field"
+            }
+        },
+        {
+            "name": "drupal/taxonomy_delete",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/taxonomy_delete.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_delete-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "58ddc4ec8408de88f707430b7e5f8f6cde78c027"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1587197781",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "imalabya",
+                    "homepage": "https://www.drupal.org/user/2641255"
+                }
+            ],
+            "description": "A utility module which will delete all the taxonomy under a Vocabulary.",
+            "homepage": "https://www.drupal.org/project/taxonomy_delete",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/taxonomy_delete",
+                "issues": "http://drupal.org/project/issues/taxonomy_delete"
             }
         },
         {

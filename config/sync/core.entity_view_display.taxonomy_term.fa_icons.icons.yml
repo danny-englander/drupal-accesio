@@ -8,6 +8,7 @@ dependencies:
     - field.field.taxonomy_term.fa_icons.field_fa_key
     - field.field.taxonomy_term.fa_icons.field_fa_style
     - field.field.taxonomy_term.fa_icons.field_fa_unicode
+    - field.field.taxonomy_term.fa_icons.field_import_id
     - taxonomy.vocabulary.fa_icons
 id: taxonomy_term.fa_icons.icons
 targetEntityType: taxonomy_term
@@ -34,3 +35,4 @@ hidden:
   description: true
   feeds_item: true
   field_fa_unicode: true
+  field_import_id: true

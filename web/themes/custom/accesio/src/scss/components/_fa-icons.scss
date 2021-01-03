@@ -4,8 +4,11 @@ Icon theming.
 
 .view-fa-icons {
   form {
+    display: flex;
+
     input[type='text'] {
-      width: 260px;
+      margin-right: 10px;
+      width: 320px;
     }
   }
 }
@@ -15,15 +18,6 @@ Icon theming.
   margin-bottom: 30px;
   background-color: white;
   box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
-
-  .ion {
-    -webkit-touch-callout: text;
-    -webkit-user-select: text;
-    -khtml-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
-  }
 
   &__preview-icon {
     vertical-align: bottom;
@@ -47,15 +41,8 @@ Icon theming.
     color: $charcoal;
   }
 
-  .step i {
-    transition: opacity .3s;
-  }
-
-  .usage {
-    margin-top: auto;
-  }
-
   &__usage {
+    margin-top: auto;
 
     input {
       font-family: monospace;
@@ -80,7 +67,7 @@ Icon theming.
   }
 
   .usage label:first-child {
-    padding-left: 0;
+  //  padding-left: 0;
   }
 
   .usage .css {

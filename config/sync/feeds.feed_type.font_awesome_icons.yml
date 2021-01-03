@@ -6,6 +6,7 @@ dependencies:
     - field.field.taxonomy_term.fa_icons.field_fa_key
     - field.field.taxonomy_term.fa_icons.field_fa_style
     - field.field.taxonomy_term.fa_icons.field_fa_unicode
+    - field.field.taxonomy_term.fa_icons.field_import_id
     - taxonomy.vocabulary.fa_icons
   module:
     - taxonomy
@@ -26,7 +27,7 @@ parser_configuration:
 processor: 'entity:taxonomy_term'
 processor_configuration:
   langcode: en
-  update_existing: 0
+  update_existing: 1
   update_non_existent: _keep
   expire: -1
   skip_hash_check: false
@@ -52,13 +53,16 @@ custom_sources:
     label: unicode
     value: unicode
     machine_name: unicode
+  import_id:
+    label: import_id
+    value: import_id
+    machine_name: import_id
 mappings:
   -
     target: field_fa_key
     map:
       value: key
-    unique:
-      value: '1'
+    unique: {  }
     settings:
       language: null
   -
@@ -80,5 +84,13 @@ mappings:
     map:
       value: unicode
     unique: {  }
+    settings:
+      language: null
+  -
+    target: field_import_id
+    map:
+      value: import_id
+    unique:
+      value: '1'
     settings:
       language: null

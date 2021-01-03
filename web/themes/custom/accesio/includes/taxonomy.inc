@@ -38,6 +38,10 @@ function accesio_preprocess_taxonomy_term(array &$vars) {
       elseif ($fa_key === 'brands') {
         $vars["field_fa_style"] = 'b';
       }
+      // far.
+      elseif ($fa_key === 'regular') {
+        $vars["field_fa_style"] = 'r';
+      }
     }
   }
 }
