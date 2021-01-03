@@ -1,0 +1,1612 @@
+import_id,key,name,style,unicode
+1,500px,500px,brands,f26e
+2,accessible-icon,Accessible Icon,brands,f368
+3,accusoft,Accusoft,brands,f369
+4,acquisitions-incorporated,Acquisitions Incorporated,brands,f6af
+5,ad,Ad,solid,f641
+6,address-book,Address Book,solid,f2b9
+7,address-card,Address Card,solid,f2bb
+8,adjust,adjust,solid,f042
+9,adn,App.net,brands,f170
+10,adversal,Adversal,brands,f36a
+11,affiliatetheme,affiliatetheme,brands,f36b
+12,air-freshener,Air Freshener,solid,f5d0
+13,airbnb,Airbnb,brands,f834
+14,algolia,Algolia,brands,f36c
+15,align-center,align-center,solid,f037
+16,align-justify,align-justify,solid,f039
+17,align-left,align-left,solid,f036
+18,align-right,align-right,solid,f038
+19,alipay,Alipay,brands,f642
+20,allergies,Allergies,solid,f461
+21,amazon,Amazon,brands,f270
+22,amazon-pay,Amazon Pay,brands,f42c
+23,ambulance,ambulance,solid,f0f9
+24,american-sign-language-interpreting,American Sign Language Interpreting,solid,f2a3
+25,amilia,Amilia,brands,f36d
+26,anchor,Anchor,solid,f13d
+27,android,Android,brands,f17b
+28,angellist,AngelList,brands,f209
+29,angle-double-down,Angle Double Down,solid,f103
+30,angle-double-left,Angle Double Left,solid,f100
+31,angle-double-right,Angle Double Right,solid,f101
+32,angle-double-up,Angle Double Up,solid,f102
+33,angle-down,angle-down,solid,f107
+34,angle-left,angle-left,solid,f104
+35,angle-right,angle-right,solid,f105
+36,angle-up,angle-up,solid,f106
+37,angry,Angry Face,solid,f556
+38,angrycreative,Angry Creative,brands,f36e
+39,angular,Angular,brands,f420
+40,ankh,Ankh,solid,f644
+41,app-store,App Store,brands,f36f
+42,app-store-ios,iOS App Store,brands,f370
+43,apper,Apper Systems AB,brands,f371
+44,apple,Apple,brands,f179
+45,apple-alt,Fruit Apple,solid,f5d1
+46,apple-pay,Apple Pay,brands,f415
+47,archive,Archive,solid,f187
+48,archway,Archway,solid,f557
+49,arrow-alt-circle-down,Alternate Arrow Circle Down,solid,f358
+50,arrow-alt-circle-left,Alternate Arrow Circle Left,solid,f359
+51,arrow-alt-circle-right,Alternate Arrow Circle Right,solid,f35a
+52,arrow-alt-circle-up,Alternate Arrow Circle Up,solid,f35b
+53,arrow-circle-down,Arrow Circle Down,solid,f0ab
+54,arrow-circle-left,Arrow Circle Left,solid,f0a8
+55,arrow-circle-right,Arrow Circle Right,solid,f0a9
+56,arrow-circle-up,Arrow Circle Up,solid,f0aa
+57,arrow-down,arrow-down,solid,f063
+58,arrow-left,arrow-left,solid,f060
+59,arrow-right,arrow-right,solid,f061
+60,arrow-up,arrow-up,solid,f062
+61,arrows-alt,Alternate Arrows,solid,f0b2
+62,arrows-alt-h,Alternate Arrows Horizontal,solid,f337
+63,arrows-alt-v,Alternate Arrows Vertical,solid,f338
+64,artstation,Artstation,brands,f77a
+65,assistive-listening-systems,Assistive Listening Systems,solid,f2a2
+66,asterisk,asterisk,solid,f069
+67,asymmetrik,"Asymmetrik, Ltd.",brands,f372
+68,at,At,solid,f1fa
+69,atlas,Atlas,solid,f558
+70,atlassian,Atlassian,brands,f77b
+71,atom,Atom,solid,f5d2
+72,audible,Audible,brands,f373
+73,audio-description,Audio Description,solid,f29e
+74,autoprefixer,Autoprefixer,brands,f41c
+75,avianex,avianex,brands,f374
+76,aviato,Aviato,brands,f421
+77,award,Award,solid,f559
+78,aws,Amazon Web Services (AWS),brands,f375
+79,baby,Baby,solid,f77c
+80,baby-carriage,Baby Carriage,solid,f77d
+81,backspace,Backspace,solid,f55a
+82,backward,backward,solid,f04a
+83,bacon,Bacon,solid,f7e5
+84,bacteria,Bacteria,solid,e059
+85,bacterium,Bacterium,solid,e05a
+86,bahai,Bahá'í,solid,f666
+87,balance-scale,Balance Scale,solid,f24e
+88,balance-scale-left,Balance Scale (Left-Weighted),solid,f515
+89,balance-scale-right,Balance Scale (Right-Weighted),solid,f516
+90,ban,ban,solid,f05e
+91,band-aid,Band-Aid,solid,f462
+92,bandcamp,Bandcamp,brands,f2d5
+93,barcode,barcode,solid,f02a
+94,bars,Bars,solid,f0c9
+95,baseball-ball,Baseball Ball,solid,f433
+96,basketball-ball,Basketball Ball,solid,f434
+97,bath,Bath,solid,f2cd
+98,battery-empty,Battery Empty,solid,f244
+99,battery-full,Battery Full,solid,f240
+100,battery-half,Battery 1/2 Full,solid,f242
+101,battery-quarter,Battery 1/4 Full,solid,f243
+102,battery-three-quarters,Battery 3/4 Full,solid,f241
+103,battle-net,Battle.net,brands,f835
+104,bed,Bed,solid,f236
+105,beer,beer,solid,f0fc
+106,behance,Behance,brands,f1b4
+107,behance-square,Behance Square,brands,f1b5
+108,bell,bell,solid,f0f3
+109,bell-slash,Bell Slash,solid,f1f6
+110,bezier-curve,Bezier Curve,solid,f55b
+111,bible,Bible,solid,f647
+112,bicycle,Bicycle,solid,f206
+113,biking,Biking,solid,f84a
+114,bimobject,BIMobject,brands,f378
+115,binoculars,Binoculars,solid,f1e5
+116,biohazard,Biohazard,solid,f780
+117,birthday-cake,Birthday Cake,solid,f1fd
+118,bitbucket,Bitbucket,brands,f171
+119,bitcoin,Bitcoin,brands,f379
+120,bity,Bity,brands,f37a
+121,black-tie,Font Awesome Black Tie,brands,f27e
+122,blackberry,BlackBerry,brands,f37b
+123,blender,Blender,solid,f517
+124,blender-phone,Blender Phone,solid,f6b6
+125,blind,Blind,solid,f29d
+126,blog,Blog,solid,f781
+127,blogger,Blogger,brands,f37c
+128,blogger-b,Blogger B,brands,f37d
+129,bluetooth,Bluetooth,brands,f293
+130,bluetooth-b,Bluetooth,brands,f294
+131,bold,bold,solid,f032
+132,bolt,Lightning Bolt,solid,f0e7
+133,bomb,Bomb,solid,f1e2
+134,bone,Bone,solid,f5d7
+135,bong,Bong,solid,f55c
+136,book,book,solid,f02d
+137,book-dead,Book of the Dead,solid,f6b7
+138,book-medical,Medical Book,solid,f7e6
+139,book-open,Book Open,solid,f518
+140,book-reader,Book Reader,solid,f5da
+141,bookmark,bookmark,solid,f02e
+142,bootstrap,Bootstrap,brands,f836
+143,border-all,Border All,solid,f84c
+144,border-none,Border None,solid,f850
+145,border-style,Border Style,solid,f853
+146,bowling-ball,Bowling Ball,solid,f436
+147,box,Box,solid,f466
+148,box-open,Box Open,solid,f49e
+149,box-tissue,Tissue Box,solid,e05b
+150,boxes,Boxes,solid,f468
+151,braille,Braille,solid,f2a1
+152,brain,Brain,solid,f5dc
+153,bread-slice,Bread Slice,solid,f7ec
+154,briefcase,Briefcase,solid,f0b1
+155,briefcase-medical,Medical Briefcase,solid,f469
+156,broadcast-tower,Broadcast Tower,solid,f519
+157,broom,Broom,solid,f51a
+158,brush,Brush,solid,f55d
+159,btc,BTC,brands,f15a
+160,buffer,Buffer,brands,f837
+161,bug,Bug,solid,f188
+162,building,Building,solid,f1ad
+163,bullhorn,bullhorn,solid,f0a1
+164,bullseye,Bullseye,solid,f140
+165,burn,Burn,solid,f46a
+166,buromobelexperte,Büromöbel-Experte GmbH & Co. KG.,brands,f37f
+167,bus,Bus,solid,f207
+168,bus-alt,Bus Alt,solid,f55e
+169,business-time,Business Time,solid,f64a
+170,buy-n-large,Buy n Large,brands,f8a6
+171,buysellads,BuySellAds,brands,f20d
+172,calculator,Calculator,solid,f1ec
+173,calendar,Calendar,solid,f133
+174,calendar-alt,Alternate Calendar,solid,f073
+175,calendar-check,Calendar Check,solid,f274
+176,calendar-day,Calendar with Day Focus,solid,f783
+177,calendar-minus,Calendar Minus,solid,f272
+178,calendar-plus,Calendar Plus,solid,f271
+179,calendar-times,Calendar Times,solid,f273
+180,calendar-week,Calendar with Week Focus,solid,f784
+181,camera,camera,solid,f030
+182,camera-retro,Retro Camera,solid,f083
+183,campground,Campground,solid,f6bb
+184,canadian-maple-leaf,Canadian Maple Leaf,brands,f785
+185,candy-cane,Candy Cane,solid,f786
+186,cannabis,Cannabis,solid,f55f
+187,capsules,Capsules,solid,f46b
+188,car,Car,solid,f1b9
+189,car-alt,Alternate Car,solid,f5de
+190,car-battery,Car Battery,solid,f5df
+191,car-crash,Car Crash,solid,f5e1
+192,car-side,Car Side,solid,f5e4
+193,caravan,Caravan,solid,f8ff
+194,caret-down,Caret Down,solid,f0d7
+195,caret-left,Caret Left,solid,f0d9
+196,caret-right,Caret Right,solid,f0da
+197,caret-square-down,Caret Square Down,solid,f150
+198,caret-square-left,Caret Square Left,solid,f191
+199,caret-square-right,Caret Square Right,solid,f152
+200,caret-square-up,Caret Square Up,solid,f151
+201,caret-up,Caret Up,solid,f0d8
+202,carrot,Carrot,solid,f787
+203,cart-arrow-down,Shopping Cart Arrow Down,solid,f218
+204,cart-plus,Add to Shopping Cart,solid,f217
+205,cash-register,Cash Register,solid,f788
+206,cat,Cat,solid,f6be
+207,cc-amazon-pay,Amazon Pay Credit Card,brands,f42d
+208,cc-amex,American Express Credit Card,brands,f1f3
+209,cc-apple-pay,Apple Pay Credit Card,brands,f416
+210,cc-diners-club,Diner's Club Credit Card,brands,f24c
+211,cc-discover,Discover Credit Card,brands,f1f2
+212,cc-jcb,JCB Credit Card,brands,f24b
+213,cc-mastercard,MasterCard Credit Card,brands,f1f1
+214,cc-paypal,Paypal Credit Card,brands,f1f4
+215,cc-stripe,Stripe Credit Card,brands,f1f5
+216,cc-visa,Visa Credit Card,brands,f1f0
+217,centercode,Centercode,brands,f380
+218,centos,Centos,brands,f789
+219,certificate,certificate,solid,f0a3
+220,chair,Chair,solid,f6c0
+221,chalkboard,Chalkboard,solid,f51b
+222,chalkboard-teacher,Chalkboard Teacher,solid,f51c
+223,charging-station,Charging Station,solid,f5e7
+224,chart-area,Area Chart,solid,f1fe
+225,chart-bar,Bar Chart,solid,f080
+226,chart-line,Line Chart,solid,f201
+227,chart-pie,Pie Chart,solid,f200
+228,check,Check,solid,f00c
+229,check-circle,Check Circle,solid,f058
+230,check-double,Double Check,solid,f560
+231,check-square,Check Square,solid,f14a
+232,cheese,Cheese,solid,f7ef
+233,chess,Chess,solid,f439
+234,chess-bishop,Chess Bishop,solid,f43a
+235,chess-board,Chess Board,solid,f43c
+236,chess-king,Chess King,solid,f43f
+237,chess-knight,Chess Knight,solid,f441
+238,chess-pawn,Chess Pawn,solid,f443
+239,chess-queen,Chess Queen,solid,f445
+240,chess-rook,Chess Rook,solid,f447
+241,chevron-circle-down,Chevron Circle Down,solid,f13a
+242,chevron-circle-left,Chevron Circle Left,solid,f137
+243,chevron-circle-right,Chevron Circle Right,solid,f138
+244,chevron-circle-up,Chevron Circle Up,solid,f139
+245,chevron-down,chevron-down,solid,f078
+246,chevron-left,chevron-left,solid,f053
+247,chevron-right,chevron-right,solid,f054
+248,chevron-up,chevron-up,solid,f077
+249,child,Child,solid,f1ae
+250,chrome,Chrome,brands,f268
+251,chromecast,Chromecast,brands,f838
+252,church,Church,solid,f51d
+253,circle,Circle,solid,f111
+254,circle-notch,Circle Notched,solid,f1ce
+255,city,City,solid,f64f
+256,clinic-medical,Medical Clinic,solid,f7f2
+257,clipboard,Clipboard,solid,f328
+258,clipboard-check,Clipboard with Check,solid,f46c
+259,clipboard-list,Clipboard List,solid,f46d
+260,clock,Clock,solid,f017
+261,clone,Clone,solid,f24d
+262,closed-captioning,Closed Captioning,solid,f20a
+263,cloud,Cloud,solid,f0c2
+264,cloud-download-alt,Alternate Cloud Download,solid,f381
+265,cloud-meatball,Cloud with (a chance of) Meatball,solid,f73b
+266,cloud-moon,Cloud with Moon,solid,f6c3
+267,cloud-moon-rain,Cloud with Moon and Rain,solid,f73c
+268,cloud-rain,Cloud with Rain,solid,f73d
+269,cloud-showers-heavy,Cloud with Heavy Showers,solid,f740
+270,cloud-sun,Cloud with Sun,solid,f6c4
+271,cloud-sun-rain,Cloud with Sun and Rain,solid,f743
+272,cloud-upload-alt,Alternate Cloud Upload,solid,f382
+273,cloudflare,Cloudflare,brands,e07d
+274,cloudscale,cloudscale.ch,brands,f383
+275,cloudsmith,Cloudsmith,brands,f384
+276,cloudversify,cloudversify,brands,f385
+277,cocktail,Cocktail,solid,f561
+278,code,Code,solid,f121
+279,code-branch,Code Branch,solid,f126
+280,codepen,Codepen,brands,f1cb
+281,codiepie,Codie Pie,brands,f284
+282,coffee,Coffee,solid,f0f4
+283,cog,cog,solid,f013
+284,cogs,cogs,solid,f085
+285,coins,Coins,solid,f51e
+286,columns,Columns,solid,f0db
+287,comment,comment,solid,f075
+288,comment-alt,Alternate Comment,solid,f27a
+289,comment-dollar,Comment Dollar,solid,f651
+290,comment-dots,Comment Dots,solid,f4ad
+291,comment-medical,Alternate Medical Chat,solid,f7f5
+292,comment-slash,Comment Slash,solid,f4b3
+293,comments,comments,solid,f086
+294,comments-dollar,Comments Dollar,solid,f653
+295,compact-disc,Compact Disc,solid,f51f
+296,compass,Compass,solid,f14e
+297,compress,Compress,solid,f066
+298,compress-alt,Alternate Compress,solid,f422
+299,compress-arrows-alt,Alternate Compress Arrows,solid,f78c
+300,concierge-bell,Concierge Bell,solid,f562
+301,confluence,Confluence,brands,f78d
+302,connectdevelop,Connect Develop,brands,f20e
+303,contao,Contao,brands,f26d
+304,cookie,Cookie,solid,f563
+305,cookie-bite,Cookie Bite,solid,f564
+306,copy,Copy,solid,f0c5
+307,copyright,Copyright,solid,f1f9
+308,cotton-bureau,Cotton Bureau,brands,f89e
+309,couch,Couch,solid,f4b8
+310,cpanel,cPanel,brands,f388
+311,creative-commons,Creative Commons,brands,f25e
+312,creative-commons-by,Creative Commons Attribution,brands,f4e7
+313,creative-commons-nc,Creative Commons Noncommercial,brands,f4e8
+314,creative-commons-nc-eu,Creative Commons Noncommercial (Euro Sign),brands,f4e9
+315,creative-commons-nc-jp,Creative Commons Noncommercial (Yen Sign),brands,f4ea
+316,creative-commons-nd,Creative Commons No Derivative Works,brands,f4eb
+317,creative-commons-pd,Creative Commons Public Domain,brands,f4ec
+318,creative-commons-pd-alt,Alternate Creative Commons Public Domain,brands,f4ed
+319,creative-commons-remix,Creative Commons Remix,brands,f4ee
+320,creative-commons-sa,Creative Commons Share Alike,brands,f4ef
+321,creative-commons-sampling,Creative Commons Sampling,brands,f4f0
+322,creative-commons-sampling-plus,Creative Commons Sampling +,brands,f4f1
+323,creative-commons-share,Creative Commons Share,brands,f4f2
+324,creative-commons-zero,Creative Commons CC0,brands,f4f3
+325,credit-card,Credit Card,solid,f09d
+326,critical-role,Critical Role,brands,f6c9
+327,crop,crop,solid,f125
+328,crop-alt,Alternate Crop,solid,f565
+329,cross,Cross,solid,f654
+330,crosshairs,Crosshairs,solid,f05b
+331,crow,Crow,solid,f520
+332,crown,Crown,solid,f521
+333,crutch,Crutch,solid,f7f7
+334,css3,CSS 3 Logo,brands,f13c
+335,css3-alt,Alternate CSS3 Logo,brands,f38b
+336,cube,Cube,solid,f1b2
+337,cubes,Cubes,solid,f1b3
+338,cut,Cut,solid,f0c4
+339,cuttlefish,Cuttlefish,brands,f38c
+340,d-and-d,Dungeons & Dragons,brands,f38d
+341,d-and-d-beyond,D&D Beyond,brands,f6ca
+342,dailymotion,dailymotion,brands,e052
+343,dashcube,DashCube,brands,f210
+344,database,Database,solid,f1c0
+345,deaf,Deaf,solid,f2a4
+346,deezer,Deezer,brands,e077
+347,delicious,Delicious,brands,f1a5
+348,democrat,Democrat,solid,f747
+349,deploydog,deploy.dog,brands,f38e
+350,deskpro,Deskpro,brands,f38f
+351,desktop,Desktop,solid,f108
+352,dev,DEV,brands,f6cc
+353,deviantart,deviantART,brands,f1bd
+354,dharmachakra,Dharmachakra,solid,f655
+355,dhl,DHL,brands,f790
+356,diagnoses,Diagnoses,solid,f470
+357,diaspora,Diaspora,brands,f791
+358,dice,Dice,solid,f522
+359,dice-d20,Dice D20,solid,f6cf
+360,dice-d6,Dice D6,solid,f6d1
+361,dice-five,Dice Five,solid,f523
+362,dice-four,Dice Four,solid,f524
+363,dice-one,Dice One,solid,f525
+364,dice-six,Dice Six,solid,f526
+365,dice-three,Dice Three,solid,f527
+366,dice-two,Dice Two,solid,f528
+367,digg,Digg Logo,brands,f1a6
+368,digital-ocean,Digital Ocean,brands,f391
+369,digital-tachograph,Digital Tachograph,solid,f566
+370,directions,Directions,solid,f5eb
+371,discord,Discord,brands,f392
+372,discourse,Discourse,brands,f393
+373,disease,Disease,solid,f7fa
+374,divide,Divide,solid,f529
+375,dizzy,Dizzy Face,solid,f567
+376,dna,DNA,solid,f471
+377,dochub,DocHub,brands,f394
+378,docker,Docker,brands,f395
+379,dog,Dog,solid,f6d3
+380,dollar-sign,Dollar Sign,solid,f155
+381,dolly,Dolly,solid,f472
+382,dolly-flatbed,Dolly Flatbed,solid,f474
+383,donate,Donate,solid,f4b9
+384,door-closed,Door Closed,solid,f52a
+385,door-open,Door Open,solid,f52b
+386,dot-circle,Dot Circle,solid,f192
+387,dove,Dove,solid,f4ba
+388,download,Download,solid,f019
+389,draft2digital,Draft2digital,brands,f396
+390,drafting-compass,Drafting Compass,solid,f568
+391,dragon,Dragon,solid,f6d5
+392,draw-polygon,Draw Polygon,solid,f5ee
+393,dribbble,Dribbble,brands,f17d
+394,dribbble-square,Dribbble Square,brands,f397
+395,dropbox,Dropbox,brands,f16b
+396,drum,Drum,solid,f569
+397,drum-steelpan,Drum Steelpan,solid,f56a
+398,drumstick-bite,Drumstick with Bite Taken Out,solid,f6d7
+399,drupal,Drupal Logo,brands,f1a9
+400,dumbbell,Dumbbell,solid,f44b
+401,dumpster,Dumpster,solid,f793
+402,dumpster-fire,Dumpster Fire,solid,f794
+403,dungeon,Dungeon,solid,f6d9
+404,dyalog,Dyalog,brands,f399
+405,earlybirds,Earlybirds,brands,f39a
+406,ebay,eBay,brands,f4f4
+407,edge,Edge Browser,brands,f282
+408,edge-legacy,Edge Legacy Browser,brands,e078
+409,edit,Edit,solid,f044
+410,egg,Egg,solid,f7fb
+411,eject,eject,solid,f052
+412,elementor,Elementor,brands,f430
+413,ellipsis-h,Horizontal Ellipsis,solid,f141
+414,ellipsis-v,Vertical Ellipsis,solid,f142
+415,ello,Ello,brands,f5f1
+416,ember,Ember,brands,f423
+417,empire,Galactic Empire,brands,f1d1
+418,envelope,Envelope,solid,f0e0
+419,envelope-open,Envelope Open,solid,f2b6
+420,envelope-open-text,Envelope Open-text,solid,f658
+421,envelope-square,Envelope Square,solid,f199
+422,envira,Envira Gallery,brands,f299
+423,equals,Equals,solid,f52c
+424,eraser,eraser,solid,f12d
+425,erlang,Erlang,brands,f39d
+426,ethereum,Ethereum,brands,f42e
+427,ethernet,Ethernet,solid,f796
+428,etsy,Etsy,brands,f2d7
+429,euro-sign,Euro Sign,solid,f153
+430,evernote,Evernote,brands,f839
+431,exchange-alt,Alternate Exchange,solid,f362
+432,exclamation,exclamation,solid,f12a
+433,exclamation-circle,Exclamation Circle,solid,f06a
+434,exclamation-triangle,Exclamation Triangle,solid,f071
+435,expand,Expand,solid,f065
+436,expand-alt,Alternate Expand,solid,f424
+437,expand-arrows-alt,Alternate Expand Arrows,solid,f31e
+438,expeditedssl,ExpeditedSSL,brands,f23e
+439,external-link-alt,Alternate External Link,solid,f35d
+440,external-link-square-alt,Alternate External Link Square,solid,f360
+441,eye,Eye,solid,f06e
+442,eye-dropper,Eye Dropper,solid,f1fb
+443,eye-slash,Eye Slash,solid,f070
+444,facebook,Facebook,brands,f09a
+445,facebook-f,Facebook F,brands,f39e
+446,facebook-messenger,Facebook Messenger,brands,f39f
+447,facebook-square,Facebook Square,brands,f082
+448,fan,Fan,solid,f863
+449,fantasy-flight-games,Fantasy Flight-games,brands,f6dc
+450,fast-backward,fast-backward,solid,f049
+451,fast-forward,fast-forward,solid,f050
+452,faucet,Faucet,solid,e005
+453,fax,Fax,solid,f1ac
+454,feather,Feather,solid,f52d
+455,feather-alt,Alternate Feather,solid,f56b
+456,fedex,FedEx,brands,f797
+457,fedora,Fedora,brands,f798
+458,female,Female,solid,f182
+459,fighter-jet,fighter-jet,solid,f0fb
+460,figma,Figma,brands,f799
+461,file,File,solid,f15b
+462,file-alt,Alternate File,solid,f15c
+463,file-archive,Archive File,solid,f1c6
+464,file-audio,Audio File,solid,f1c7
+465,file-code,Code File,solid,f1c9
+466,file-contract,File Contract,solid,f56c
+467,file-csv,File CSV,solid,f6dd
+468,file-download,File Download,solid,f56d
+469,file-excel,Excel File,solid,f1c3
+470,file-export,File Export,solid,f56e
+471,file-image,Image File,solid,f1c5
+472,file-import,File Import,solid,f56f
+473,file-invoice,File Invoice,solid,f570
+474,file-invoice-dollar,File Invoice with US Dollar,solid,f571
+475,file-medical,Medical File,solid,f477
+476,file-medical-alt,Alternate Medical File,solid,f478
+477,file-pdf,PDF File,solid,f1c1
+478,file-powerpoint,Powerpoint File,solid,f1c4
+479,file-prescription,File Prescription,solid,f572
+480,file-signature,File Signature,solid,f573
+481,file-upload,File Upload,solid,f574
+482,file-video,Video File,solid,f1c8
+483,file-word,Word File,solid,f1c2
+484,fill,Fill,solid,f575
+485,fill-drip,Fill Drip,solid,f576
+486,film,Film,solid,f008
+487,filter,Filter,solid,f0b0
+488,fingerprint,Fingerprint,solid,f577
+489,fire,fire,solid,f06d
+490,fire-alt,Alternate Fire,solid,f7e4
+491,fire-extinguisher,fire-extinguisher,solid,f134
+492,firefox,Firefox,brands,f269
+493,firefox-browser,Firefox Browser,brands,e007
+494,first-aid,First Aid,solid,f479
+495,first-order,First Order,brands,f2b0
+496,first-order-alt,Alternate First Order,brands,f50a
+497,firstdraft,firstdraft,brands,f3a1
+498,fish,Fish,solid,f578
+499,fist-raised,Raised Fist,solid,f6de
+500,flag,flag,solid,f024
+501,flag-checkered,flag-checkered,solid,f11e
+502,flag-usa,United States of America Flag,solid,f74d
+503,flask,Flask,solid,f0c3
+504,flickr,Flickr,brands,f16e
+505,flipboard,Flipboard,brands,f44d
+506,flushed,Flushed Face,solid,f579
+507,fly,Fly,brands,f417
+508,folder,Folder,solid,f07b
+509,folder-minus,Folder Minus,solid,f65d
+510,folder-open,Folder Open,solid,f07c
+511,folder-plus,Folder Plus,solid,f65e
+512,font,font,solid,f031
+513,font-awesome,Font Awesome,brands,f2b4
+514,font-awesome-alt,Alternate Font Awesome,brands,f35c
+515,font-awesome-flag,Font Awesome Flag,brands,f425
+516,font-awesome-logo-full,Font Awesome Full Logo,solid,f4e6
+517,fonticons,Fonticons,brands,f280
+518,fonticons-fi,Fonticons Fi,brands,f3a2
+519,football-ball,Football Ball,solid,f44e
+520,fort-awesome,Fort Awesome,brands,f286
+521,fort-awesome-alt,Alternate Fort Awesome,brands,f3a3
+522,forumbee,Forumbee,brands,f211
+523,forward,forward,solid,f04e
+524,foursquare,Foursquare,brands,f180
+525,free-code-camp,freeCodeCamp,brands,f2c5
+526,freebsd,FreeBSD,brands,f3a4
+527,frog,Frog,solid,f52e
+528,frown,Frowning Face,solid,f119
+529,frown-open,Frowning Face With Open Mouth,solid,f57a
+530,fulcrum,Fulcrum,brands,f50b
+531,funnel-dollar,Funnel Dollar,solid,f662
+532,futbol,Futbol,solid,f1e3
+533,galactic-republic,Galactic Republic,brands,f50c
+534,galactic-senate,Galactic Senate,brands,f50d
+535,gamepad,Gamepad,solid,f11b
+536,gas-pump,Gas Pump,solid,f52f
+537,gavel,Gavel,solid,f0e3
+538,gem,Gem,solid,f3a5
+539,genderless,Genderless,solid,f22d
+540,get-pocket,Get Pocket,brands,f265
+541,gg,GG Currency,brands,f260
+542,gg-circle,GG Currency Circle,brands,f261
+543,ghost,Ghost,solid,f6e2
+544,gift,gift,solid,f06b
+545,gifts,Gifts,solid,f79c
+546,git,Git,brands,f1d3
+547,git-alt,Git Alt,brands,f841
+548,git-square,Git Square,brands,f1d2
+549,github,GitHub,brands,f09b
+550,github-alt,Alternate GitHub,brands,f113
+551,github-square,GitHub Square,brands,f092
+552,gitkraken,GitKraken,brands,f3a6
+553,gitlab,GitLab,brands,f296
+554,gitter,Gitter,brands,f426
+555,glass-cheers,Glass Cheers,solid,f79f
+556,glass-martini,Martini Glass,solid,f000
+557,glass-martini-alt,Alternate Glass Martini,solid,f57b
+558,glass-whiskey,Glass Whiskey,solid,f7a0
+559,glasses,Glasses,solid,f530
+560,glide,Glide,brands,f2a5
+561,glide-g,Glide G,brands,f2a6
+562,globe,Globe,solid,f0ac
+563,globe-africa,Globe with Africa shown,solid,f57c
+564,globe-americas,Globe with Americas shown,solid,f57d
+565,globe-asia,Globe with Asia shown,solid,f57e
+566,globe-europe,Globe with Europe shown,solid,f7a2
+567,gofore,Gofore,brands,f3a7
+568,golf-ball,Golf Ball,solid,f450
+569,goodreads,Goodreads,brands,f3a8
+570,goodreads-g,Goodreads G,brands,f3a9
+571,google,Google Logo,brands,f1a0
+572,google-drive,Google Drive,brands,f3aa
+573,google-pay,Google Pay,brands,e079
+574,google-play,Google Play,brands,f3ab
+575,google-plus,Google Plus,brands,f2b3
+576,google-plus-g,Google Plus G,brands,f0d5
+577,google-plus-square,Google Plus Square,brands,f0d4
+578,google-wallet,Google Wallet,brands,f1ee
+579,gopuram,Gopuram,solid,f664
+580,graduation-cap,Graduation Cap,solid,f19d
+581,gratipay,Gratipay (Gittip),brands,f184
+582,grav,Grav,brands,f2d6
+583,greater-than,Greater Than,solid,f531
+584,greater-than-equal,Greater Than Equal To,solid,f532
+585,grimace,Grimacing Face,solid,f57f
+586,grin,Grinning Face,solid,f580
+587,grin-alt,Alternate Grinning Face,solid,f581
+588,grin-beam,Grinning Face With Smiling Eyes,solid,f582
+589,grin-beam-sweat,Grinning Face With Sweat,solid,f583
+590,grin-hearts,Smiling Face With Heart-Eyes,solid,f584
+591,grin-squint,Grinning Squinting Face,solid,f585
+592,grin-squint-tears,Rolling on the Floor Laughing,solid,f586
+593,grin-stars,Star-Struck,solid,f587
+594,grin-tears,Face With Tears of Joy,solid,f588
+595,grin-tongue,Face With Tongue,solid,f589
+596,grin-tongue-squint,Squinting Face With Tongue,solid,f58a
+597,grin-tongue-wink,Winking Face With Tongue,solid,f58b
+598,grin-wink,Grinning Winking Face,solid,f58c
+599,grip-horizontal,Grip Horizontal,solid,f58d
+600,grip-lines,Grip Lines,solid,f7a4
+601,grip-lines-vertical,Grip Lines Vertical,solid,f7a5
+602,grip-vertical,Grip Vertical,solid,f58e
+603,gripfire,"Gripfire, Inc.",brands,f3ac
+604,grunt,Grunt,brands,f3ad
+605,guilded,Guilded,brands,e07e
+606,guitar,Guitar,solid,f7a6
+607,gulp,Gulp,brands,f3ae
+608,h-square,H Square,solid,f0fd
+609,hacker-news,Hacker News,brands,f1d4
+610,hacker-news-square,Hacker News Square,brands,f3af
+611,hackerrank,Hackerrank,brands,f5f7
+612,hamburger,Hamburger,solid,f805
+613,hammer,Hammer,solid,f6e3
+614,hamsa,Hamsa,solid,f665
+615,hand-holding,Hand Holding,solid,f4bd
+616,hand-holding-heart,Hand Holding Heart,solid,f4be
+617,hand-holding-medical,Hand Holding Medical Cross,solid,e05c
+618,hand-holding-usd,Hand Holding US Dollar,solid,f4c0
+619,hand-holding-water,Hand Holding Water,solid,f4c1
+620,hand-lizard,Lizard (Hand),solid,f258
+621,hand-middle-finger,Hand with Middle Finger Raised,solid,f806
+622,hand-paper,Paper (Hand),solid,f256
+623,hand-peace,Peace (Hand),solid,f25b
+624,hand-point-down,Hand Pointing Down,solid,f0a7
+625,hand-point-left,Hand Pointing Left,solid,f0a5
+626,hand-point-right,Hand Pointing Right,solid,f0a4
+627,hand-point-up,Hand Pointing Up,solid,f0a6
+628,hand-pointer,Pointer (Hand),solid,f25a
+629,hand-rock,Rock (Hand),solid,f255
+630,hand-scissors,Scissors (Hand),solid,f257
+631,hand-sparkles,Hand Sparkles,solid,e05d
+632,hand-spock,Spock (Hand),solid,f259
+633,hands,Hands,solid,f4c2
+634,hands-helping,Helping Hands,solid,f4c4
+635,hands-wash,Hands Wash,solid,e05e
+636,handshake,Handshake,solid,f2b5
+637,handshake-alt-slash,Handshake Alternate Slash,solid,e05f
+638,handshake-slash,Handshake Slash,solid,e060
+639,hanukiah,Hanukiah,solid,f6e6
+640,hard-hat,Hard Hat,solid,f807
+641,hashtag,Hashtag,solid,f292
+642,hat-cowboy,Cowboy Hat,solid,f8c0
+643,hat-cowboy-side,Cowboy Hat Side,solid,f8c1
+644,hat-wizard,Wizard's Hat,solid,f6e8
+645,hdd,HDD,solid,f0a0
+646,head-side-cough,Head Side Cough,solid,e061
+647,head-side-cough-slash,Head Side-cough-slash,solid,e062
+648,head-side-mask,Head Side Mask,solid,e063
+649,head-side-virus,Head Side Virus,solid,e064
+650,heading,heading,solid,f1dc
+651,headphones,headphones,solid,f025
+652,headphones-alt,Alternate Headphones,solid,f58f
+653,headset,Headset,solid,f590
+654,heart,Heart,solid,f004
+655,heart-broken,Heart Broken,solid,f7a9
+656,heartbeat,Heartbeat,solid,f21e
+657,helicopter,Helicopter,solid,f533
+658,highlighter,Highlighter,solid,f591
+659,hiking,Hiking,solid,f6ec
+660,hippo,Hippo,solid,f6ed
+661,hips,Hips,brands,f452
+662,hire-a-helper,HireAHelper,brands,f3b0
+663,history,History,solid,f1da
+664,hive,Hive Blockchain Network,brands,e07f
+665,hockey-puck,Hockey Puck,solid,f453
+666,holly-berry,Holly Berry,solid,f7aa
+667,home,home,solid,f015
+668,hooli,Hooli,brands,f427
+669,hornbill,Hornbill,brands,f592
+670,horse,Horse,solid,f6f0
+671,horse-head,Horse Head,solid,f7ab
+672,hospital,hospital,solid,f0f8
+673,hospital-alt,Alternate Hospital,solid,f47d
+674,hospital-symbol,Hospital Symbol,solid,f47e
+675,hospital-user,Hospital with User,solid,f80d
+676,hot-tub,Hot Tub,solid,f593
+677,hotdog,Hot Dog,solid,f80f
+678,hotel,Hotel,solid,f594
+679,hotjar,Hotjar,brands,f3b1
+680,hourglass,Hourglass,solid,f254
+681,hourglass-end,Hourglass End,solid,f253
+682,hourglass-half,Hourglass Half,solid,f252
+683,hourglass-start,Hourglass Start,solid,f251
+684,house-damage,Damaged House,solid,f6f1
+685,house-user,House User,solid,e065
+686,houzz,Houzz,brands,f27c
+687,hryvnia,Hryvnia,solid,f6f2
+688,html5,HTML 5 Logo,brands,f13b
+689,hubspot,HubSpot,brands,f3b2
+690,i-cursor,I Beam Cursor,solid,f246
+691,ice-cream,Ice Cream,solid,f810
+692,icicles,Icicles,solid,f7ad
+693,icons,Icons,solid,f86d
+694,id-badge,Identification Badge,solid,f2c1
+695,id-card,Identification Card,solid,f2c2
+696,id-card-alt,Alternate Identification Card,solid,f47f
+697,ideal,iDeal,brands,e013
+698,igloo,Igloo,solid,f7ae
+699,image,Image,solid,f03e
+700,images,Images,solid,f302
+701,imdb,IMDB,brands,f2d8
+702,inbox,inbox,solid,f01c
+703,indent,Indent,solid,f03c
+704,industry,Industry,solid,f275
+705,infinity,,solid,f534
+706,info,Info,solid,f129
+707,info-circle,Info Circle,solid,f05a
+708,innosoft,Innosoft,brands,e080
+709,instagram,Instagram,brands,f16d
+710,instagram-square,Instagram Square,brands,e055
+711,instalod,InstaLOD,brands,e081
+712,intercom,Intercom,brands,f7af
+713,internet-explorer,Internet-explorer,brands,f26b
+714,invision,InVision,brands,f7b0
+715,ioxhost,ioxhost,brands,f208
+716,italic,italic,solid,f033
+717,itch-io,itch.io,brands,f83a
+718,itunes,iTunes,brands,f3b4
+719,itunes-note,Itunes Note,brands,f3b5
+720,java,Java,brands,f4e4
+721,jedi,Jedi,solid,f669
+722,jedi-order,Jedi Order,brands,f50e
+723,jenkins,Jenkis,brands,f3b6
+724,jira,Jira,brands,f7b1
+725,joget,Joget,brands,f3b7
+726,joint,Joint,solid,f595
+727,joomla,Joomla Logo,brands,f1aa
+728,journal-whills,Journal of the Whills,solid,f66a
+729,js,JavaScript (JS),brands,f3b8
+730,js-square,JavaScript (JS) Square,brands,f3b9
+731,jsfiddle,jsFiddle,brands,f1cc
+732,kaaba,Kaaba,solid,f66b
+733,kaggle,Kaggle,brands,f5fa
+734,key,key,solid,f084
+735,keybase,Keybase,brands,f4f5
+736,keyboard,Keyboard,solid,f11c
+737,keycdn,KeyCDN,brands,f3ba
+738,khanda,Khanda,solid,f66d
+739,kickstarter,Kickstarter,brands,f3bb
+740,kickstarter-k,Kickstarter K,brands,f3bc
+741,kiss,Kissing Face,solid,f596
+742,kiss-beam,Kissing Face With Smiling Eyes,solid,f597
+743,kiss-wink-heart,Face Blowing a Kiss,solid,f598
+744,kiwi-bird,Kiwi Bird,solid,f535
+745,korvue,KORVUE,brands,f42f
+746,landmark,Landmark,solid,f66f
+747,language,Language,solid,f1ab
+748,laptop,Laptop,solid,f109
+749,laptop-code,Laptop Code,solid,f5fc
+750,laptop-house,Laptop House,solid,e066
+751,laptop-medical,Laptop Medical,solid,f812
+752,laravel,Laravel,brands,f3bd
+753,lastfm,last.fm,brands,f202
+754,lastfm-square,last.fm Square,brands,f203
+755,laugh,Grinning Face With Big Eyes,solid,f599
+756,laugh-beam,Laugh Face with Beaming Eyes,solid,f59a
+757,laugh-squint,Laughing Squinting Face,solid,f59b
+758,laugh-wink,Laughing Winking Face,solid,f59c
+759,layer-group,Layer Group,solid,f5fd
+760,leaf,leaf,solid,f06c
+761,leanpub,Leanpub,brands,f212
+762,lemon,Lemon,solid,f094
+763,less,Less,brands,f41d
+764,less-than,Less Than,solid,f536
+765,less-than-equal,Less Than Equal To,solid,f537
+766,level-down-alt,Alternate Level Down,solid,f3be
+767,level-up-alt,Alternate Level Up,solid,f3bf
+768,life-ring,Life Ring,solid,f1cd
+769,lightbulb,Lightbulb,solid,f0eb
+770,line,Line,brands,f3c0
+771,link,Link,solid,f0c1
+772,linkedin,LinkedIn,brands,f08c
+773,linkedin-in,LinkedIn In,brands,f0e1
+774,linode,Linode,brands,f2b8
+775,linux,Linux,brands,f17c
+776,lira-sign,Turkish Lira Sign,solid,f195
+777,list,List,solid,f03a
+778,list-alt,Alternate List,solid,f022
+779,list-ol,list-ol,solid,f0cb
+780,list-ul,list-ul,solid,f0ca
+781,location-arrow,location-arrow,solid,f124
+782,lock,lock,solid,f023
+783,lock-open,Lock Open,solid,f3c1
+784,long-arrow-alt-down,Alternate Long Arrow Down,solid,f309
+785,long-arrow-alt-left,Alternate Long Arrow Left,solid,f30a
+786,long-arrow-alt-right,Alternate Long Arrow Right,solid,f30b
+787,long-arrow-alt-up,Alternate Long Arrow Up,solid,f30c
+788,low-vision,Low Vision,solid,f2a8
+789,luggage-cart,Luggage Cart,solid,f59d
+790,lungs,Lungs,solid,f604
+791,lungs-virus,Lungs Virus,solid,e067
+792,lyft,lyft,brands,f3c3
+793,magento,Magento,brands,f3c4
+794,magic,magic,solid,f0d0
+795,magnet,magnet,solid,f076
+796,mail-bulk,Mail Bulk,solid,f674
+797,mailchimp,Mailchimp,brands,f59e
+798,male,Male,solid,f183
+799,mandalorian,Mandalorian,brands,f50f
+800,map,Map,solid,f279
+801,map-marked,Map Marked,solid,f59f
+802,map-marked-alt,Alternate Map Marked,solid,f5a0
+803,map-marker,map-marker,solid,f041
+804,map-marker-alt,Alternate Map Marker,solid,f3c5
+805,map-pin,Map Pin,solid,f276
+806,map-signs,Map Signs,solid,f277
+807,markdown,Markdown,brands,f60f
+808,marker,Marker,solid,f5a1
+809,mars,Mars,solid,f222
+810,mars-double,Mars Double,solid,f227
+811,mars-stroke,Mars Stroke,solid,f229
+812,mars-stroke-h,Mars Stroke Horizontal,solid,f22b
+813,mars-stroke-v,Mars Stroke Vertical,solid,f22a
+814,mask,Mask,solid,f6fa
+815,mastodon,Mastodon,brands,f4f6
+816,maxcdn,MaxCDN,brands,f136
+817,mdb,Material Design for Bootstrap,brands,f8ca
+818,medal,Medal,solid,f5a2
+819,medapps,MedApps,brands,f3c6
+820,medium,Medium,brands,f23a
+821,medium-m,Medium M,brands,f3c7
+822,medkit,medkit,solid,f0fa
+823,medrt,MRT,brands,f3c8
+824,meetup,Meetup,brands,f2e0
+825,megaport,Megaport,brands,f5a3
+826,meh,Neutral Face,solid,f11a
+827,meh-blank,Face Without Mouth,solid,f5a4
+828,meh-rolling-eyes,Face With Rolling Eyes,solid,f5a5
+829,memory,Memory,solid,f538
+830,mendeley,Mendeley,brands,f7b3
+831,menorah,Menorah,solid,f676
+832,mercury,Mercury,solid,f223
+833,meteor,Meteor,solid,f753
+834,microblog,Micro.blog,brands,e01a
+835,microchip,Microchip,solid,f2db
+836,microphone,microphone,solid,f130
+837,microphone-alt,Alternate Microphone,solid,f3c9
+838,microphone-alt-slash,Alternate Microphone Slash,solid,f539
+839,microphone-slash,Microphone Slash,solid,f131
+840,microscope,Microscope,solid,f610
+841,microsoft,Microsoft,brands,f3ca
+842,minus,minus,solid,f068
+843,minus-circle,Minus Circle,solid,f056
+844,minus-square,Minus Square,solid,f146
+845,mitten,Mitten,solid,f7b5
+846,mix,Mix,brands,f3cb
+847,mixcloud,Mixcloud,brands,f289
+848,mixer,Mixer,brands,e056
+849,mizuni,Mizuni,brands,f3cc
+850,mobile,Mobile Phone,solid,f10b
+851,mobile-alt,Alternate Mobile,solid,f3cd
+852,modx,MODX,brands,f285
+853,monero,Monero,brands,f3d0
+854,money-bill,Money Bill,solid,f0d6
+855,money-bill-alt,Alternate Money Bill,solid,f3d1
+856,money-bill-wave,Wavy Money Bill,solid,f53a
+857,money-bill-wave-alt,Alternate Wavy Money Bill,solid,f53b
+858,money-check,Money Check,solid,f53c
+859,money-check-alt,Alternate Money Check,solid,f53d
+860,monument,Monument,solid,f5a6
+861,moon,Moon,solid,f186
+862,mortar-pestle,Mortar Pestle,solid,f5a7
+863,mosque,Mosque,solid,f678
+864,motorcycle,Motorcycle,solid,f21c
+865,mountain,Mountain,solid,f6fc
+866,mouse,Mouse,solid,f8cc
+867,mouse-pointer,Mouse Pointer,solid,f245
+868,mug-hot,Mug Hot,solid,f7b6
+869,music,Music,solid,f001
+870,napster,Napster,brands,f3d2
+871,neos,Neos,brands,f612
+872,network-wired,Wired Network,solid,f6ff
+873,neuter,Neuter,solid,f22c
+874,newspaper,Newspaper,solid,f1ea
+875,nimblr,Nimblr,brands,f5a8
+876,node,Node.js,brands,f419
+877,node-js,Node.js JS,brands,f3d3
+878,not-equal,Not Equal,solid,f53e
+879,notes-medical,Medical Notes,solid,f481
+880,npm,npm,brands,f3d4
+881,ns8,NS8,brands,f3d5
+882,nutritionix,Nutritionix,brands,f3d6
+883,object-group,Object Group,solid,f247
+884,object-ungroup,Object Ungroup,solid,f248
+885,octopus-deploy,Octopus Deploy,brands,e082
+886,odnoklassniki,Odnoklassniki,brands,f263
+887,odnoklassniki-square,Odnoklassniki Square,brands,f264
+888,oil-can,Oil Can,solid,f613
+889,old-republic,Old Republic,brands,f510
+890,om,Om,solid,f679
+891,opencart,OpenCart,brands,f23d
+892,openid,OpenID,brands,f19b
+893,opera,Opera,brands,f26a
+894,optin-monster,Optin Monster,brands,f23c
+895,orcid,ORCID,brands,f8d2
+896,osi,Open Source Initiative,brands,f41a
+897,otter,Otter,solid,f700
+898,outdent,Outdent,solid,f03b
+899,page4,page4 Corporation,brands,f3d7
+900,pagelines,Pagelines,brands,f18c
+901,pager,Pager,solid,f815
+902,paint-brush,Paint Brush,solid,f1fc
+903,paint-roller,Paint Roller,solid,f5aa
+904,palette,Palette,solid,f53f
+905,palfed,Palfed,brands,f3d8
+906,pallet,Pallet,solid,f482
+907,paper-plane,Paper Plane,solid,f1d8
+908,paperclip,Paperclip,solid,f0c6
+909,parachute-box,Parachute Box,solid,f4cd
+910,paragraph,paragraph,solid,f1dd
+911,parking,Parking,solid,f540
+912,passport,Passport,solid,f5ab
+913,pastafarianism,Pastafarianism,solid,f67b
+914,paste,Paste,solid,f0ea
+915,patreon,Patreon,brands,f3d9
+916,pause,pause,solid,f04c
+917,pause-circle,Pause Circle,solid,f28b
+918,paw,Paw,solid,f1b0
+919,paypal,Paypal,brands,f1ed
+920,peace,Peace,solid,f67c
+921,pen,Pen,solid,f304
+922,pen-alt,Alternate Pen,solid,f305
+923,pen-fancy,Pen Fancy,solid,f5ac
+924,pen-nib,Pen Nib,solid,f5ad
+925,pen-square,Pen Square,solid,f14b
+926,pencil-alt,Alternate Pencil,solid,f303
+927,pencil-ruler,Pencil Ruler,solid,f5ae
+928,penny-arcade,Penny Arcade,brands,f704
+929,people-arrows,People Arrows,solid,e068
+930,people-carry,People Carry,solid,f4ce
+931,pepper-hot,Hot Pepper,solid,f816
+932,perbyte,PerByte,brands,e083
+933,percent,Percent,solid,f295
+934,percentage,Percentage,solid,f541
+935,periscope,Periscope,brands,f3da
+936,person-booth,Person Entering Booth,solid,f756
+937,phabricator,Phabricator,brands,f3db
+938,phoenix-framework,Phoenix Framework,brands,f3dc
+939,phoenix-squadron,Phoenix Squadron,brands,f511
+940,phone,Phone,solid,f095
+941,phone-alt,Alternate Phone,solid,f879
+942,phone-slash,Phone Slash,solid,f3dd
+943,phone-square,Phone Square,solid,f098
+944,phone-square-alt,Alternate Phone Square,solid,f87b
+945,phone-volume,Phone Volume,solid,f2a0
+946,photo-video,Photo Video,solid,f87c
+947,php,PHP,brands,f457
+948,pied-piper,Pied Piper Logo,brands,f2ae
+949,pied-piper-alt,Alternate Pied Piper Logo (Old),brands,f1a8
+950,pied-piper-hat,Pied Piper Hat (Old),brands,f4e5
+951,pied-piper-pp,Pied Piper PP Logo (Old),brands,f1a7
+952,pied-piper-square,Pied Piper Square Logo (Old),brands,e01e
+953,piggy-bank,Piggy Bank,solid,f4d3
+954,pills,Pills,solid,f484
+955,pinterest,Pinterest,brands,f0d2
+956,pinterest-p,Pinterest P,brands,f231
+957,pinterest-square,Pinterest Square,brands,f0d3
+958,pizza-slice,Pizza Slice,solid,f818
+959,place-of-worship,Place of Worship,solid,f67f
+960,plane,plane,solid,f072
+961,plane-arrival,Plane Arrival,solid,f5af
+962,plane-departure,Plane Departure,solid,f5b0
+963,plane-slash,Plane Slash,solid,e069
+964,play,play,solid,f04b
+965,play-circle,Play Circle,solid,f144
+966,playstation,PlayStation,brands,f3df
+967,plug,Plug,solid,f1e6
+968,plus,plus,solid,f067
+969,plus-circle,Plus Circle,solid,f055
+970,plus-square,Plus Square,solid,f0fe
+971,podcast,Podcast,solid,f2ce
+972,poll,Poll,solid,f681
+973,poll-h,Poll H,solid,f682
+974,poo,Poo,solid,f2fe
+975,poo-storm,Poo Storm,solid,f75a
+976,poop,Poop,solid,f619
+977,portrait,Portrait,solid,f3e0
+978,pound-sign,Pound Sign,solid,f154
+979,power-off,Power Off,solid,f011
+980,pray,Pray,solid,f683
+981,praying-hands,Praying Hands,solid,f684
+982,prescription,Prescription,solid,f5b1
+983,prescription-bottle,Prescription Bottle,solid,f485
+984,prescription-bottle-alt,Alternate Prescription Bottle,solid,f486
+985,print,print,solid,f02f
+986,procedures,Procedures,solid,f487
+987,product-hunt,Product Hunt,brands,f288
+988,project-diagram,Project Diagram,solid,f542
+989,pump-medical,Pump Medical,solid,e06a
+990,pump-soap,Pump Soap,solid,e06b
+991,pushed,Pushed,brands,f3e1
+992,puzzle-piece,Puzzle Piece,solid,f12e
+993,python,Python,brands,f3e2
+994,qq,QQ,brands,f1d6
+995,qrcode,qrcode,solid,f029
+996,question,Question,solid,f128
+997,question-circle,Question Circle,solid,f059
+998,quidditch,Quidditch,solid,f458
+999,quinscape,QuinScape,brands,f459
+1000,quora,Quora,brands,f2c4
+1001,quote-left,quote-left,solid,f10d
+1002,quote-right,quote-right,solid,f10e
+1003,quran,Quran,solid,f687
+1004,r-project,R Project,brands,f4f7
+1005,radiation,Radiation,solid,f7b9
+1006,radiation-alt,Alternate Radiation,solid,f7ba
+1007,rainbow,Rainbow,solid,f75b
+1008,random,random,solid,f074
+1009,raspberry-pi,Raspberry Pi,brands,f7bb
+1010,ravelry,Ravelry,brands,f2d9
+1011,react,React,brands,f41b
+1012,reacteurope,ReactEurope,brands,f75d
+1013,readme,ReadMe,brands,f4d5
+1014,rebel,Rebel Alliance,brands,f1d0
+1015,receipt,Receipt,solid,f543
+1016,record-vinyl,Record Vinyl,solid,f8d9
+1017,recycle,Recycle,solid,f1b8
+1018,red-river,red river,brands,f3e3
+1019,reddit,reddit Logo,brands,f1a1
+1020,reddit-alien,reddit Alien,brands,f281
+1021,reddit-square,reddit Square,brands,f1a2
+1022,redhat,Redhat,brands,f7bc
+1023,redo,Redo,solid,f01e
+1024,redo-alt,Alternate Redo,solid,f2f9
+1025,registered,Registered Trademark,solid,f25d
+1026,remove-format,Remove Format,solid,f87d
+1027,renren,Renren,brands,f18b
+1028,reply,Reply,solid,f3e5
+1029,reply-all,reply-all,solid,f122
+1030,replyd,replyd,brands,f3e6
+1031,republican,Republican,solid,f75e
+1032,researchgate,Researchgate,brands,f4f8
+1033,resolving,Resolving,brands,f3e7
+1034,restroom,Restroom,solid,f7bd
+1035,retweet,Retweet,solid,f079
+1036,rev,Rev.io,brands,f5b2
+1037,ribbon,Ribbon,solid,f4d6
+1038,ring,Ring,solid,f70b
+1039,road,road,solid,f018
+1040,robot,Robot,solid,f544
+1041,rocket,rocket,solid,f135
+1042,rocketchat,Rocket.Chat,brands,f3e8
+1043,rockrms,Rockrms,brands,f3e9
+1044,route,Route,solid,f4d7
+1045,rss,rss,solid,f09e
+1046,rss-square,RSS Square,solid,f143
+1047,ruble-sign,Ruble Sign,solid,f158
+1048,ruler,Ruler,solid,f545
+1049,ruler-combined,Ruler Combined,solid,f546
+1050,ruler-horizontal,Ruler Horizontal,solid,f547
+1051,ruler-vertical,Ruler Vertical,solid,f548
+1052,running,Running,solid,f70c
+1053,rupee-sign,Indian Rupee Sign,solid,f156
+1054,rust,Rust,brands,e07a
+1055,sad-cry,Crying Face,solid,f5b3
+1056,sad-tear,Loudly Crying Face,solid,f5b4
+1057,safari,Safari,brands,f267
+1058,salesforce,Salesforce,brands,f83b
+1059,sass,Sass,brands,f41e
+1060,satellite,Satellite,solid,f7bf
+1061,satellite-dish,Satellite Dish,solid,f7c0
+1062,save,Save,solid,f0c7
+1063,schlix,SCHLIX,brands,f3ea
+1064,school,School,solid,f549
+1065,screwdriver,Screwdriver,solid,f54a
+1066,scribd,Scribd,brands,f28a
+1067,scroll,Scroll,solid,f70e
+1068,sd-card,Sd Card,solid,f7c2
+1069,search,Search,solid,f002
+1070,search-dollar,Search Dollar,solid,f688
+1071,search-location,Search Location,solid,f689
+1072,search-minus,Search Minus,solid,f010
+1073,search-plus,Search Plus,solid,f00e
+1074,searchengin,Searchengin,brands,f3eb
+1075,seedling,Seedling,solid,f4d8
+1076,sellcast,Sellcast,brands,f2da
+1077,sellsy,Sellsy,brands,f213
+1078,server,Server,solid,f233
+1079,servicestack,Servicestack,brands,f3ec
+1080,shapes,Shapes,solid,f61f
+1081,share,Share,solid,f064
+1082,share-alt,Alternate Share,solid,f1e0
+1083,share-alt-square,Alternate Share Square,solid,f1e1
+1084,share-square,Share Square,solid,f14d
+1085,shekel-sign,Shekel Sign,solid,f20b
+1086,shield-alt,Alternate Shield,solid,f3ed
+1087,shield-virus,Shield Virus,solid,e06c
+1088,ship,Ship,solid,f21a
+1089,shipping-fast,Shipping Fast,solid,f48b
+1090,shirtsinbulk,Shirts in Bulk,brands,f214
+1091,shoe-prints,Shoe Prints,solid,f54b
+1092,shopify,Shopify,brands,e057
+1093,shopping-bag,Shopping Bag,solid,f290
+1094,shopping-basket,Shopping Basket,solid,f291
+1095,shopping-cart,shopping-cart,solid,f07a
+1096,shopware,Shopware,brands,f5b5
+1097,shower,Shower,solid,f2cc
+1098,shuttle-van,Shuttle Van,solid,f5b6
+1099,sign,Sign,solid,f4d9
+1100,sign-in-alt,Alternate Sign In,solid,f2f6
+1101,sign-language,Sign Language,solid,f2a7
+1102,sign-out-alt,Alternate Sign Out,solid,f2f5
+1103,signal,signal,solid,f012
+1104,signature,Signature,solid,f5b7
+1105,sim-card,SIM Card,solid,f7c4
+1106,simplybuilt,SimplyBuilt,brands,f215
+1107,sink,Sink,solid,e06d
+1108,sistrix,SISTRIX,brands,f3ee
+1109,sitemap,Sitemap,solid,f0e8
+1110,sith,Sith,brands,f512
+1111,skating,Skating,solid,f7c5
+1112,sketch,Sketch,brands,f7c6
+1113,skiing,Skiing,solid,f7c9
+1114,skiing-nordic,Skiing Nordic,solid,f7ca
+1115,skull,Skull,solid,f54c
+1116,skull-crossbones,Skull & Crossbones,solid,f714
+1117,skyatlas,skyatlas,brands,f216
+1118,skype,Skype,brands,f17e
+1119,slack,Slack Logo,brands,f198
+1120,slack-hash,Slack Hashtag,brands,f3ef
+1121,slash,Slash,solid,f715
+1122,sleigh,Sleigh,solid,f7cc
+1123,sliders-h,Horizontal Sliders,solid,f1de
+1124,slideshare,Slideshare,brands,f1e7
+1125,smile,Smiling Face,solid,f118
+1126,smile-beam,Beaming Face With Smiling Eyes,solid,f5b8
+1127,smile-wink,Winking Face,solid,f4da
+1128,smog,Smog,solid,f75f
+1129,smoking,Smoking,solid,f48d
+1130,smoking-ban,Smoking Ban,solid,f54d
+1131,sms,SMS,solid,f7cd
+1132,snapchat,Snapchat,brands,f2ab
+1133,snapchat-ghost,Snapchat Ghost,brands,f2ac
+1134,snapchat-square,Snapchat Square,brands,f2ad
+1135,snowboarding,Snowboarding,solid,f7ce
+1136,snowflake,Snowflake,solid,f2dc
+1137,snowman,Snowman,solid,f7d0
+1138,snowplow,Snowplow,solid,f7d2
+1139,soap,Soap,solid,e06e
+1140,socks,Socks,solid,f696
+1141,solar-panel,Solar Panel,solid,f5ba
+1142,sort,Sort,solid,f0dc
+1143,sort-alpha-down,Sort Alphabetical Down,solid,f15d
+1144,sort-alpha-down-alt,Alternate Sort Alphabetical Down,solid,f881
+1145,sort-alpha-up,Sort Alphabetical Up,solid,f15e
+1146,sort-alpha-up-alt,Alternate Sort Alphabetical Up,solid,f882
+1147,sort-amount-down,Sort Amount Down,solid,f160
+1148,sort-amount-down-alt,Alternate Sort Amount Down,solid,f884
+1149,sort-amount-up,Sort Amount Up,solid,f161
+1150,sort-amount-up-alt,Alternate Sort Amount Up,solid,f885
+1151,sort-down,Sort Down (Descending),solid,f0dd
+1152,sort-numeric-down,Sort Numeric Down,solid,f162
+1153,sort-numeric-down-alt,Alternate Sort Numeric Down,solid,f886
+1154,sort-numeric-up,Sort Numeric Up,solid,f163
+1155,sort-numeric-up-alt,Alternate Sort Numeric Up,solid,f887
+1156,sort-up,Sort Up (Ascending),solid,f0de
+1157,soundcloud,SoundCloud,brands,f1be
+1158,sourcetree,Sourcetree,brands,f7d3
+1159,spa,Spa,solid,f5bb
+1160,space-shuttle,Space Shuttle,solid,f197
+1161,speakap,Speakap,brands,f3f3
+1162,speaker-deck,Speaker Deck,brands,f83c
+1163,spell-check,Spell Check,solid,f891
+1164,spider,Spider,solid,f717
+1165,spinner,Spinner,solid,f110
+1166,splotch,Splotch,solid,f5bc
+1167,spotify,Spotify,brands,f1bc
+1168,spray-can,Spray Can,solid,f5bd
+1169,square,Square,solid,f0c8
+1170,square-full,Square Full,solid,f45c
+1171,square-root-alt,Alternate Square Root,solid,f698
+1172,squarespace,Squarespace,brands,f5be
+1173,stack-exchange,Stack Exchange,brands,f18d
+1174,stack-overflow,Stack Overflow,brands,f16c
+1175,stackpath,Stackpath,brands,f842
+1176,stamp,Stamp,solid,f5bf
+1177,star,Star,solid,f005
+1178,star-and-crescent,Star and Crescent,solid,f699
+1179,star-half,star-half,solid,f089
+1180,star-half-alt,Alternate Star Half,solid,f5c0
+1181,star-of-david,Star of David,solid,f69a
+1182,star-of-life,Star of Life,solid,f621
+1183,staylinked,StayLinked,brands,f3f5
+1184,steam,Steam,brands,f1b6
+1185,steam-square,Steam Square,brands,f1b7
+1186,steam-symbol,Steam Symbol,brands,f3f6
+1187,step-backward,step-backward,solid,f048
+1188,step-forward,step-forward,solid,f051
+1189,stethoscope,Stethoscope,solid,f0f1
+1190,sticker-mule,Sticker Mule,brands,f3f7
+1191,sticky-note,Sticky Note,solid,f249
+1192,stop,stop,solid,f04d
+1193,stop-circle,Stop Circle,solid,f28d
+1194,stopwatch,Stopwatch,solid,f2f2
+1195,stopwatch-20,Stopwatch 20,solid,e06f
+1196,store,Store,solid,f54e
+1197,store-alt,Alternate Store,solid,f54f
+1198,store-alt-slash,Alternate Store Slash,solid,e070
+1199,store-slash,Store Slash,solid,e071
+1200,strava,Strava,brands,f428
+1201,stream,Stream,solid,f550
+1202,street-view,Street View,solid,f21d
+1203,strikethrough,Strikethrough,solid,f0cc
+1204,stripe,Stripe,brands,f429
+1205,stripe-s,Stripe S,brands,f42a
+1206,stroopwafel,Stroopwafel,solid,f551
+1207,studiovinari,Studio Vinari,brands,f3f8
+1208,stumbleupon,StumbleUpon Logo,brands,f1a4
+1209,stumbleupon-circle,StumbleUpon Circle,brands,f1a3
+1210,subscript,subscript,solid,f12c
+1211,subway,Subway,solid,f239
+1212,suitcase,Suitcase,solid,f0f2
+1213,suitcase-rolling,Suitcase Rolling,solid,f5c1
+1214,sun,Sun,solid,f185
+1215,superpowers,Superpowers,brands,f2dd
+1216,superscript,superscript,solid,f12b
+1217,supple,Supple,brands,f3f9
+1218,surprise,Hushed Face,solid,f5c2
+1219,suse,Suse,brands,f7d6
+1220,swatchbook,Swatchbook,solid,f5c3
+1221,swift,Swift,brands,f8e1
+1222,swimmer,Swimmer,solid,f5c4
+1223,swimming-pool,Swimming Pool,solid,f5c5
+1224,symfony,Symfony,brands,f83d
+1225,synagogue,Synagogue,solid,f69b
+1226,sync,Sync,solid,f021
+1227,sync-alt,Alternate Sync,solid,f2f1
+1228,syringe,Syringe,solid,f48e
+1229,table,table,solid,f0ce
+1230,table-tennis,Table Tennis,solid,f45d
+1231,tablet,tablet,solid,f10a
+1232,tablet-alt,Alternate Tablet,solid,f3fa
+1233,tablets,Tablets,solid,f490
+1234,tachometer-alt,Alternate Tachometer,solid,f3fd
+1235,tag,tag,solid,f02b
+1236,tags,tags,solid,f02c
+1237,tape,Tape,solid,f4db
+1238,tasks,Tasks,solid,f0ae
+1239,taxi,Taxi,solid,f1ba
+1240,teamspeak,TeamSpeak,brands,f4f9
+1241,teeth,Teeth,solid,f62e
+1242,teeth-open,Teeth Open,solid,f62f
+1243,telegram,Telegram,brands,f2c6
+1244,telegram-plane,Telegram Plane,brands,f3fe
+1245,temperature-high,High Temperature,solid,f769
+1246,temperature-low,Low Temperature,solid,f76b
+1247,tencent-weibo,Tencent Weibo,brands,f1d5
+1248,tenge,Tenge,solid,f7d7
+1249,terminal,Terminal,solid,f120
+1250,text-height,text-height,solid,f034
+1251,text-width,Text Width,solid,f035
+1252,th,th,solid,f00a
+1253,th-large,th-large,solid,f009
+1254,th-list,th-list,solid,f00b
+1255,the-red-yeti,The Red Yeti,brands,f69d
+1256,theater-masks,Theater Masks,solid,f630
+1257,themeco,Themeco,brands,f5c6
+1258,themeisle,ThemeIsle,brands,f2b2
+1259,thermometer,Thermometer,solid,f491
+1260,thermometer-empty,Thermometer Empty,solid,f2cb
+1261,thermometer-full,Thermometer Full,solid,f2c7
+1262,thermometer-half,Thermometer 1/2 Full,solid,f2c9
+1263,thermometer-quarter,Thermometer 1/4 Full,solid,f2ca
+1264,thermometer-three-quarters,Thermometer 3/4 Full,solid,f2c8
+1265,think-peaks,Think Peaks,brands,f731
+1266,thumbs-down,thumbs-down,solid,f165
+1267,thumbs-up,thumbs-up,solid,f164
+1268,thumbtack,Thumbtack,solid,f08d
+1269,ticket-alt,Alternate Ticket,solid,f3ff
+1270,tiktok,TikTok,brands,e07b
+1271,times,Times,solid,f00d
+1272,times-circle,Times Circle,solid,f057
+1273,tint,tint,solid,f043
+1274,tint-slash,Tint Slash,solid,f5c7
+1275,tired,Tired Face,solid,f5c8
+1276,toggle-off,Toggle Off,solid,f204
+1277,toggle-on,Toggle On,solid,f205
+1278,toilet,Toilet,solid,f7d8
+1279,toilet-paper,Toilet Paper,solid,f71e
+1280,toilet-paper-slash,Toilet Paper Slash,solid,e072
+1281,toolbox,Toolbox,solid,f552
+1282,tools,Tools,solid,f7d9
+1283,tooth,Tooth,solid,f5c9
+1284,torah,Torah,solid,f6a0
+1285,torii-gate,Torii Gate,solid,f6a1
+1286,tractor,Tractor,solid,f722
+1287,trade-federation,Trade Federation,brands,f513
+1288,trademark,Trademark,solid,f25c
+1289,traffic-light,Traffic Light,solid,f637
+1290,trailer,Trailer,solid,e041
+1291,train,Train,solid,f238
+1292,tram,Tram,solid,f7da
+1293,transgender,Transgender,solid,f224
+1294,transgender-alt,Alternate Transgender,solid,f225
+1295,trash,Trash,solid,f1f8
+1296,trash-alt,Alternate Trash,solid,f2ed
+1297,trash-restore,Trash Restore,solid,f829
+1298,trash-restore-alt,Alternative Trash Restore,solid,f82a
+1299,tree,Tree,solid,f1bb
+1300,trello,Trello,brands,f181
+1301,tripadvisor,TripAdvisor,brands,f262
+1302,trophy,trophy,solid,f091
+1303,truck,truck,solid,f0d1
+1304,truck-loading,Truck Loading,solid,f4de
+1305,truck-monster,Truck Monster,solid,f63b
+1306,truck-moving,Truck Moving,solid,f4df
+1307,truck-pickup,Truck Side,solid,f63c
+1308,tshirt,T-Shirt,solid,f553
+1309,tty,TTY,solid,f1e4
+1310,tumblr,Tumblr,brands,f173
+1311,tumblr-square,Tumblr Square,brands,f174
+1312,tv,Television,solid,f26c
+1313,twitch,Twitch,brands,f1e8
+1314,twitter,Twitter,brands,f099
+1315,twitter-square,Twitter Square,brands,f081
+1316,typo3,Typo3,brands,f42b
+1317,uber,Uber,brands,f402
+1318,ubuntu,Ubuntu,brands,f7df
+1319,uikit,UIkit,brands,f403
+1320,umbraco,Umbraco,brands,f8e8
+1321,umbrella,Umbrella,solid,f0e9
+1322,umbrella-beach,Umbrella Beach,solid,f5ca
+1323,uncharted,Uncharted Software,brands,e084
+1324,underline,Underline,solid,f0cd
+1325,undo,Undo,solid,f0e2
+1326,undo-alt,Alternate Undo,solid,f2ea
+1327,uniregistry,Uniregistry,brands,f404
+1328,unity,Unity 3D,brands,e049
+1329,universal-access,Universal Access,solid,f29a
+1330,university,University,solid,f19c
+1331,unlink,unlink,solid,f127
+1332,unlock,unlock,solid,f09c
+1333,unlock-alt,Alternate Unlock,solid,f13e
+1334,unsplash,Unsplash,brands,e07c
+1335,untappd,Untappd,brands,f405
+1336,upload,Upload,solid,f093
+1337,ups,UPS,brands,f7e0
+1338,usb,USB,brands,f287
+1339,user,User,solid,f007
+1340,user-alt,Alternate User,solid,f406
+1341,user-alt-slash,Alternate User Slash,solid,f4fa
+1342,user-astronaut,User Astronaut,solid,f4fb
+1343,user-check,User Check,solid,f4fc
+1344,user-circle,User Circle,solid,f2bd
+1345,user-clock,User Clock,solid,f4fd
+1346,user-cog,User Cog,solid,f4fe
+1347,user-edit,User Edit,solid,f4ff
+1348,user-friends,User Friends,solid,f500
+1349,user-graduate,User Graduate,solid,f501
+1350,user-injured,User Injured,solid,f728
+1351,user-lock,User Lock,solid,f502
+1352,user-md,Doctor,solid,f0f0
+1353,user-minus,User Minus,solid,f503
+1354,user-ninja,User Ninja,solid,f504
+1355,user-nurse,Nurse,solid,f82f
+1356,user-plus,User Plus,solid,f234
+1357,user-secret,User Secret,solid,f21b
+1358,user-shield,User Shield,solid,f505
+1359,user-slash,User Slash,solid,f506
+1360,user-tag,User Tag,solid,f507
+1361,user-tie,User Tie,solid,f508
+1362,user-times,Remove User,solid,f235
+1363,users,Users,solid,f0c0
+1364,users-cog,Users Cog,solid,f509
+1365,users-slash,Users Slash,solid,e073
+1366,usps,United States Postal Service,brands,f7e1
+1367,ussunnah,us-Sunnah Foundation,brands,f407
+1368,utensil-spoon,Utensil Spoon,solid,f2e5
+1369,utensils,Utensils,solid,f2e7
+1370,vaadin,Vaadin,brands,f408
+1371,vector-square,Vector Square,solid,f5cb
+1372,venus,Venus,solid,f221
+1373,venus-double,Venus Double,solid,f226
+1374,venus-mars,Venus Mars,solid,f228
+1375,vest,vest,solid,e085
+1376,vest-patches,vest-patches,solid,e086
+1377,viacoin,Viacoin,brands,f237
+1378,viadeo,Video,brands,f2a9
+1379,viadeo-square,Video Square,brands,f2aa
+1380,vial,Vial,solid,f492
+1381,vials,Vials,solid,f493
+1382,viber,Viber,brands,f409
+1383,video,Video,solid,f03d
+1384,video-slash,Video Slash,solid,f4e2
+1385,vihara,Vihara,solid,f6a7
+1386,vimeo,Vimeo,brands,f40a
+1387,vimeo-square,Vimeo Square,brands,f194
+1388,vimeo-v,Vimeo,brands,f27d
+1389,vine,Vine,brands,f1ca
+1390,virus,Virus,solid,e074
+1391,virus-slash,Virus Slash,solid,e075
+1392,viruses,Viruses,solid,e076
+1393,vk,VK,brands,f189
+1394,vnv,VNV,brands,f40b
+1395,voicemail,Voicemail,solid,f897
+1396,volleyball-ball,Volleyball Ball,solid,f45f
+1397,volume-down,Volume Down,solid,f027
+1398,volume-mute,Volume Mute,solid,f6a9
+1399,volume-off,Volume Off,solid,f026
+1400,volume-up,Volume Up,solid,f028
+1401,vote-yea,Vote Yea,solid,f772
+1402,vr-cardboard,Cardboard VR,solid,f729
+1403,vuejs,Vue.js,brands,f41f
+1404,walking,Walking,solid,f554
+1405,wallet,Wallet,solid,f555
+1406,warehouse,Warehouse,solid,f494
+1407,watchman-monitoring,Watchman Monitoring,brands,e087
+1408,water,Water,solid,f773
+1409,wave-square,Square Wave,solid,f83e
+1410,waze,Waze,brands,f83f
+1411,weebly,Weebly,brands,f5cc
+1412,weibo,Weibo,brands,f18a
+1413,weight,Weight,solid,f496
+1414,weight-hanging,Hanging Weight,solid,f5cd
+1415,weixin,Weixin (WeChat),brands,f1d7
+1416,whatsapp,What's App,brands,f232
+1417,whatsapp-square,What's App Square,brands,f40c
+1418,wheelchair,Wheelchair,solid,f193
+1419,whmcs,WHMCS,brands,f40d
+1420,wifi,WiFi,solid,f1eb
+1421,wikipedia-w,Wikipedia W,brands,f266
+1422,wind,Wind,solid,f72e
+1423,window-close,Window Close,solid,f410
+1424,window-maximize,Window Maximize,solid,f2d0
+1425,window-minimize,Window Minimize,solid,f2d1
+1426,window-restore,Window Restore,solid,f2d2
+1427,windows,Windows,brands,f17a
+1428,wine-bottle,Wine Bottle,solid,f72f
+1429,wine-glass,Wine Glass,solid,f4e3
+1430,wine-glass-alt,Alternate Wine Glas,solid,f5ce
+1431,wix,Wix,brands,f5cf
+1432,wizards-of-the-coast,Wizards of the Coast,brands,f730
+1433,wodu,Wodu,brands,e088
+1434,wolf-pack-battalion,Wolf Pack Battalion,brands,f514
+1435,won-sign,Won Sign,solid,f159
+1436,wordpress,WordPress Logo,brands,f19a
+1437,wordpress-simple,Wordpress Simple,brands,f411
+1438,wpbeginner,WPBeginner,brands,f297
+1439,wpexplorer,WPExplorer,brands,f2de
+1440,wpforms,WPForms,brands,f298
+1441,wpressr,wpressr,brands,f3e4
+1442,wrench,Wrench,solid,f0ad
+1443,x-ray,X-Ray,solid,f497
+1444,xbox,Xbox,brands,f412
+1445,xing,Xing,brands,f168
+1446,xing-square,Xing Square,brands,f169
+1447,y-combinator,Y Combinator,brands,f23b
+1448,yahoo,Yahoo Logo,brands,f19e
+1449,yammer,Yammer,brands,f840
+1450,yandex,Yandex,brands,f413
+1451,yandex-international,Yandex International,brands,f414
+1452,yarn,Yarn,brands,f7e3
+1453,yelp,Yelp,brands,f1e9
+1454,yen-sign,Yen Sign,solid,f157
+1455,yin-yang,Yin Yang,solid,f6ad
+1456,yoast,Yoast,brands,f2b1
+1457,youtube,YouTube,brands,f167
+1458,youtube-square,YouTube Square,brands,f431
+1459,zhihu,Zhihu,brands,f63f
+1460,address-book,Address Book,regular,f2b9
+1461,address-card,Address Card,regular,f2bb
+1462,angry,Angry Face,regular,f556
+1463,arrow-alt-circle-down,Alternate Arrow Circle Down,regular,f358
+1464,arrow-alt-circle-left,Alternate Arrow Circle Left,regular,f359
+1465,arrow-alt-circle-right,Alternate Arrow Circle Right,regular,f35a
+1466,arrow-alt-circle-up,Alternate Arrow Circle Up,regular,f35b
+1467,bell,bell,regular,f0f3
+1468,bell-slash,Bell Slash,regular,f1f6
+1469,bookmark,bookmark,regular,f02e
+1470,building,Building,regular,f1ad
+1471,calendar,Calendar,regular,f133
+1472,calendar-alt,Alternate Calendar,regular,f073
+1473,calendar-check,Calendar Check,regular,f274
+1474,calendar-minus,Calendar Minus,regular,f272
+1475,calendar-plus,Calendar Plus,regular,f271
+1476,calendar-times,Calendar Times,regular,f273
+1477,caret-square-down,Caret Square Down,regular,f150
+1478,caret-square-left,Caret Square Left,regular,f191
+1479,caret-square-right,Caret Square Right,regular,f152
+1480,caret-square-up,Caret Square Up,regular,f151
+1481,chart-bar,Bar Chart,regular,f080
+1482,check-circle,Check Circle,regular,f058
+1483,check-square,Check Square,regular,f14a
+1484,circle,Circle,regular,f111
+1485,clipboard,Clipboard,regular,f328
+1486,clock,Clock,regular,f017
+1487,clone,Clone,regular,f24d
+1488,closed-captioning,Closed Captioning,regular,f20a
+1489,comment,comment,regular,f075
+1490,comment-alt,Alternate Comment,regular,f27a
+1491,comment-dots,Comment Dots,regular,f4ad
+1492,comments,comments,regular,f086
+1493,compass,Compass,regular,f14e
+1494,copy,Copy,regular,f0c5
+1495,copyright,Copyright,regular,f1f9
+1496,credit-card,Credit Card,regular,f09d
+1497,dizzy,Dizzy Face,regular,f567
+1498,dot-circle,Dot Circle,regular,f192
+1499,edit,Edit,regular,f044
+1500,envelope,Envelope,regular,f0e0
+1501,envelope-open,Envelope Open,regular,f2b6
+1502,eye,Eye,regular,f06e
+1503,eye-slash,Eye Slash,regular,f070
+1504,file,File,regular,f15b
+1505,file-alt,Alternate File,regular,f15c
+1506,file-archive,Archive File,regular,f1c6
+1507,file-audio,Audio File,regular,f1c7
+1508,file-code,Code File,regular,f1c9
+1509,file-excel,Excel File,regular,f1c3
+1510,file-image,Image File,regular,f1c5
+1511,file-pdf,PDF File,regular,f1c1
+1512,file-powerpoint,Powerpoint File,regular,f1c4
+1513,file-video,Video File,regular,f1c8
+1514,file-word,Word File,regular,f1c2
+1515,flag,flag,regular,f024
+1516,flushed,Flushed Face,regular,f579
+1517,folder,Folder,regular,f07b
+1518,folder-open,Folder Open,regular,f07c
+1519,frown,Frowning Face,regular,f119
+1520,frown-open,Frowning Face With Open Mouth,regular,f57a
+1521,futbol,Futbol,regular,f1e3
+1522,gem,Gem,regular,f3a5
+1523,grimace,Grimacing Face,regular,f57f
+1524,grin,Grinning Face,regular,f580
+1525,grin-alt,Alternate Grinning Face,regular,f581
+1526,grin-beam,Grinning Face With Smiling Eyes,regular,f582
+1527,grin-beam-sweat,Grinning Face With Sweat,regular,f583
+1528,grin-hearts,Smiling Face With Heart-Eyes,regular,f584
+1529,grin-squint,Grinning Squinting Face,regular,f585
+1530,grin-squint-tears,Rolling on the Floor Laughing,regular,f586
+1531,grin-stars,Star-Struck,regular,f587
+1532,grin-tears,Face With Tears of Joy,regular,f588
+1533,grin-tongue,Face With Tongue,regular,f589
+1534,grin-tongue-squint,Squinting Face With Tongue,regular,f58a
+1535,grin-tongue-wink,Winking Face With Tongue,regular,f58b
+1536,grin-wink,Grinning Winking Face,regular,f58c
+1537,hand-lizard,Lizard (Hand),regular,f258
+1538,hand-paper,Paper (Hand),regular,f256
+1539,hand-peace,Peace (Hand),regular,f25b
+1540,hand-point-down,Hand Pointing Down,regular,f0a7
+1541,hand-point-left,Hand Pointing Left,regular,f0a5
+1542,hand-point-right,Hand Pointing Right,regular,f0a4
+1543,hand-point-up,Hand Pointing Up,regular,f0a6
+1544,hand-pointer,Pointer (Hand),regular,f25a
+1545,hand-rock,Rock (Hand),regular,f255
+1546,hand-scissors,Scissors (Hand),regular,f257
+1547,hand-spock,Spock (Hand),regular,f259
+1548,handshake,Handshake,regular,f2b5
+1549,hdd,HDD,regular,f0a0
+1550,heart,Heart,regular,f004
+1551,hospital,hospital,regular,f0f8
+1552,hourglass,Hourglass,regular,f254
+1553,id-badge,Identification Badge,regular,f2c1
+1554,id-card,Identification Card,regular,f2c2
+1555,image,Image,regular,f03e
+1556,images,Images,regular,f302
+1557,keyboard,Keyboard,regular,f11c
+1558,kiss,Kissing Face,regular,f596
+1559,kiss-beam,Kissing Face With Smiling Eyes,regular,f597
+1560,kiss-wink-heart,Face Blowing a Kiss,regular,f598
+1561,laugh,Grinning Face With Big Eyes,regular,f599
+1562,laugh-beam,Laugh Face with Beaming Eyes,regular,f59a
+1563,laugh-squint,Laughing Squinting Face,regular,f59b
+1564,laugh-wink,Laughing Winking Face,regular,f59c
+1565,lemon,Lemon,regular,f094
+1566,life-ring,Life Ring,regular,f1cd
+1567,lightbulb,Lightbulb,regular,f0eb
+1568,list-alt,Alternate List,regular,f022
+1569,map,Map,regular,f279
+1570,meh,Neutral Face,regular,f11a
+1571,meh-blank,Face Without Mouth,regular,f5a4
+1572,meh-rolling-eyes,Face With Rolling Eyes,regular,f5a5
+1573,minus-square,Minus Square,regular,f146
+1574,money-bill-alt,Alternate Money Bill,regular,f3d1
+1575,moon,Moon,regular,f186
+1576,newspaper,Newspaper,regular,f1ea
+1577,object-group,Object Group,regular,f247
+1578,object-ungroup,Object Ungroup,regular,f248
+1579,paper-plane,Paper Plane,regular,f1d8
+1580,pause-circle,Pause Circle,regular,f28b
+1581,play-circle,Play Circle,regular,f144
+1582,plus-square,Plus Square,regular,f0fe
+1583,question-circle,Question Circle,regular,f059
+1584,registered,Registered Trademark,regular,f25d
+1585,sad-cry,Crying Face,regular,f5b3
+1586,sad-tear,Loudly Crying Face,regular,f5b4
+1587,save,Save,regular,f0c7
+1588,share-square,Share Square,regular,f14d
+1589,smile,Smiling Face,regular,f118
+1590,smile-beam,Beaming Face With Smiling Eyes,regular,f5b8
+1591,smile-wink,Winking Face,regular,f4da
+1592,snowflake,Snowflake,regular,f2dc
+1593,square,Square,regular,f0c8
+1594,star,Star,regular,f005
+1595,star-half,star-half,regular,f089
+1596,sticky-note,Sticky Note,regular,f249
+1597,stop-circle,Stop Circle,regular,f28d
+1598,sun,Sun,regular,f185
+1599,surprise,Hushed Face,regular,f5c2
+1600,thumbs-down,thumbs-down,regular,f165
+1601,thumbs-up,thumbs-up,regular,f164
+1602,times-circle,Times Circle,regular,f057
+1603,tired,Tired Face,regular,f5c8
+1604,trash-alt,Alternate Trash,regular,f2ed
+1605,user,User,regular,f007
+1606,user-circle,User Circle,regular,f2bd
+1607,window-close,Window Close,regular,f410
+1608,window-maximize,Window Maximize,regular,f2d0
+1609,window-minimize,Window Minimize,regular,f2d1
+1610,window-restore,Window Restore,regular,f2d2
+1611,,,,

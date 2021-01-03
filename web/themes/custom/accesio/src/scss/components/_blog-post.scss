@@ -51,9 +51,6 @@
       flex-direction: column;
       padding-top: 14px;
     }
-
-    @include mq($from: small_plus) {
-    }
   }
 
   &__byline {
