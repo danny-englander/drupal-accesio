@@ -90,33 +90,31 @@
       <h2 class="h4">{{ content.field_subheader | field_value }}</h2>
     {% endif %}
 
-
     <div class="blog-post__header width--70">
+      <div class="blog-post__date-byline">
+        {% if content.field_author | render %}
+          <div class="blog-post__byline">
+            {{ content.field_author | field_value }}
+          </div>
+        {% endif %}
 
-    <div class="blog-post__date-byline">
-      {% if content.field_author | render %}
-        <div class="blog-post__byline">
-          {{ content.field_author | field_value }}
-        </div>
-      {% endif %}
-
-      {# Convert the date into a readable format. #}
-      <span class="blog-post__date">
+        {# Convert the date into a readable format. #}
+        <span class="blog-post__date">
          <span>
         <i class="fas fa-calendar-alt"></i>
        {{ date | date('U')| format_date('custom', 'F d, Y') }}
          </span>
       </span>
-    </div>
+      </div>
 
       <div class="blog-post__share">
-    {{ drupal_entity('block', 'accesio_share') }}
+        {{ drupal_entity('block', 'accesio_share') }}
       </div>
 
     </div>
 
     {% if content.field_text | render %}
-      <div class="blog-post__text">
+      <div class="blog-post__text has-links">
         {{ content.field_text | field_value }}
       </div>
     {% endif %}
