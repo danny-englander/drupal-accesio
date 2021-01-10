@@ -6,5 +6,6 @@ Branding.
   &__slogan {
     margin-bottom: 6px;
     @include rem(font-size, 17px);
+    color: $white;
   }
 }

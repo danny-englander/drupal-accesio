@@ -20,15 +20,17 @@ Utility menu.
     margin-left: 10px;
 
     a {
-      @include rem(font-size, 18px);
+      @include rem(font-size, 19px);
       text-decoration: none;
       border-bottom: 2px solid $secondary-color;
       transition: .4s ease;
       padding: 2px 4px;
+      color: $white;
 
       #{$a-tags-hover} {
-        background-color: $primary-color;
+        background-color: $secondary-color;
         border: none;
+        color: $black;
       }
     }
   }

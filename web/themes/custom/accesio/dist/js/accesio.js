@@ -92,7 +92,7 @@
           /* css class for the focus state */
           focusClass: "focus1",
           /* css class for the open state */
-          openClass: "open",
+          openClass: "panel-is-open",
         });
       }
     },

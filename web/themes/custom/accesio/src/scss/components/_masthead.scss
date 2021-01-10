@@ -2,10 +2,6 @@
   background-color: $black;
   width: 100%;
 
-  * {
-    color: white;
-  }
-
   &__main {
     display: flex;
     justify-content: space-between;
@@ -21,10 +17,11 @@
   }
 
   &__search-trigger {
-    @include font-awesome("\f002", after, $font-size: 24px, $margin: 4px 8px 0 0);
+    @include font-awesome("\f002", after, $font-size: 24px, $margin: 0 8px 0 0);
+    color: $white;
 
     @include mq($from: small_desktop) {
-      @include font-awesome("\f002", after, $font-size: 24px, $margin: 10px 8px 0 0);
+      @include font-awesome("\f002", after, $font-size: 24px, $margin: 4px 8px 0 0);
     }
 
     > span {
@@ -47,6 +44,7 @@
   &__above {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 6px;
   }
 
   &__nav-inner {
