@@ -30,6 +30,10 @@
     }
   }
 
+  &__lede {
+    @extend .p;
+  }
+
   &__share {
 
     @include mq($from: medium) {

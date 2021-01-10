@@ -54,6 +54,10 @@
         margin: 0 10px;
         letter-spacing: 2px;
 
+        &.has-action {
+          background-color: $bright-red;
+          color: $white;
+        }
 
         #{$a-tags-hover} {
           text-decoration: none;
@@ -76,7 +80,6 @@
 
         #{$a-tags-hover} {
 
-
           .svg-inline--fa {
             color: $black;
           }
@@ -90,7 +93,7 @@
     /* main-menu__sub-navigation panel */
     @include mq($from: small_desktop) {
       position: absolute;
-      top: 118px;
+      top: 122px;
       background-color: $secondary-color;
       color: $white;
       right: 0;
@@ -102,6 +105,10 @@
       opacity: 0;
       height: 0;
 
+      &.l-content {
+        margin-top: 0;
+      }
+
       // Debug submenu (uncomment).
       // visibility: visible !important;
       // opacity: 1 !important;
@@ -112,7 +119,6 @@
       opacity: 1;
       height: inherit;
     }
-
 
     // No animation for IE11.
     @include ie11 {
@@ -130,9 +136,5 @@
   // Utility menu classes from the link attributes UI.
   .is-hidden {
     @include visually-hidden();
-  }
-
-  .col-heading-is-hidden {
-    //  margin-top: 40px;
   }
 }

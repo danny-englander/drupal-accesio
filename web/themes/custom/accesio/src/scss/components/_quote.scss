@@ -12,7 +12,6 @@
   }
 
   &__text {
-    font-family: 'EB Garamond', serif;
     margin: 0;
     position: relative;
 
@@ -36,6 +35,7 @@
     }
 
     p {
+      font-family: 'EB Garamond', serif;
       @include rem(font-size, 50px);
       line-height: 1.2;
       letter-spacing: 2px;

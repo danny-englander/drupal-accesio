@@ -664,8 +664,8 @@ a {
 
 .has-links a:active, .has-links a:focus, .has-links a:hover {
   border: none;
-  background-color: #27776e;
-  color: #fff;
+  background-color: #69cec3;
+  color: #212121;
 }
 
 /* eb-garamond-regular - latin
@@ -741,7 +741,7 @@ without it disappearing or overlapping other page content.
 body {
   font-family: 'IBM Plex Sans', verdana, sans-serif;
   font-size: 100%;
-  font-weight: 500;
+  font-weight: 400;
   color: #404040;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -861,7 +861,9 @@ h6 {
 
 .l-content li,
 .l-content .p,
+.l-content .blog-post__lede,
 .l-content p {
+  font-family: 'IBM Plex Sans', verdana, sans-serif;
   font-size: 1rem;
   line-height: 1.625rem;
   margin-bottom: 2rem;
@@ -872,6 +874,7 @@ h6 {
 @media (min-width: 64em) {
   .l-content li,
   .l-content .p,
+  .l-content .blog-post__lede,
   .l-content p {
     font-size: 1.1875rem;
     line-height: 2rem;
@@ -1942,11 +1945,11 @@ Media theming.
 }
 
 .media--type-image p {
-  font-size: 1.125rem;
-  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
   max-width: 100%;
   margin-bottom: 0;
-  font-style: italic;
 }
 
 .media--type-image img {
@@ -2075,6 +2078,11 @@ Media theming.
   letter-spacing: 2px;
 }
 
+.main-menu__item--level-0 > a.has-action {
+  background-color: #b1040e;
+  color: #fff;
+}
+
 .main-menu__item--level-0 > a:active, .main-menu__item--level-0 > a:focus, .main-menu__item--level-0 > a:hover {
   text-decoration: none;
   background-color: #69cec3;
@@ -2112,7 +2120,7 @@ Media theming.
 @media (min-width: 64em) {
   .main-menu__sub-nav {
     position: absolute;
-    top: 118px;
+    top: 122px;
     background-color: #69cec3;
     color: #fff;
     right: 0;
@@ -2125,6 +2133,9 @@ Media theming.
     visibility: hidden;
     opacity: 0;
     height: 0;
+  }
+  .main-menu__sub-nav.l-content {
+    margin-top: 0;
   }
 }
 
@@ -2233,7 +2244,6 @@ Media theming.
 }
 
 .quote__text {
-  font-family: 'EB Garamond', serif;
   margin: 0;
   position: relative;
 }
@@ -2260,6 +2270,7 @@ Media theming.
 }
 
 .quote__text p {
+  font-family: 'EB Garamond', serif;
   font-size: 3.125rem;
   line-height: 1.2;
   letter-spacing: 2px;

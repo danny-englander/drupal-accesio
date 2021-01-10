@@ -37,11 +37,11 @@ Media theming.
   }
 
   p {
-    @include rem(font-size, 18px);
-    font-family: 'EB Garamond', serif;
+    @include rem(font-size, 16px);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 500;
     max-width: 100%;
     margin-bottom: 0;
-    font-style: italic;
   }
 
   img {
