@@ -41,7 +41,7 @@
 
     <div class="icon-item__preview-icon preview-icon">
       <span class="icon-item__step step">
-      <i class="icon-item__icon icon fa{{- field_fa_style }} fa-{{- fa_key }} fa-4x"></i>
+      <i class="icon-item__icon icon fa fa{{- field_fa_style }} fa-{{- fa_key }} fa-4x"></i>
     </span>
     </div>
 
@@ -50,15 +50,15 @@
     <div class="icon-item__usage usage">
 
             <div class="icon-item__form-item form-item icon-item__form-item--class">
-              <label for="name-fa-{{- fa_key -}}">{{ 'Class name'|t }}</label>
+              <label for="name-fa-{{- field_fa_style -}}-{{- fa_key -}}">{{ 'Class name'|t }}</label>
               <input class="name" type="text" readonly="readonly" onclick="this.select();" value="fa{{- field_fa_style }} fa-{{- fa_key -}}"
-                     id="name-fa-{{- fa_key -}}">
+                     id="name-fa-{{- field_fa_style -}}-{{- fa_key -}}">
             </div>
 
       <div class="icon-item__form-item form-item icon-item__form-item--css">
-        <label for="css-content-fa-{{- fa_key -}}">{{ 'CSS Content'|t }}</label>
+        <label for="css-content-fa-{{- field_fa_style -}}-{{- fa_key -}}">{{ 'CSS Content'|t }}</label>
         <input class="css" type="text" readonly="readonly" onclick="this.select();"
-               value="\{{- fa_unicode -}}" id="css-content-fa-{{- fa_key -}}">
+               value="\{{- fa_unicode -}}" id="css-content-fa-{{- field_fa_style -}}-{{- fa_key -}}">
       </div>
     </div>
   </div>

@@ -9,6 +9,7 @@
   &__main {
     display: flex;
     justify-content: space-between;
+    height: 110px;
 
     @include mq($until: small_desktop) {
       align-items: center;

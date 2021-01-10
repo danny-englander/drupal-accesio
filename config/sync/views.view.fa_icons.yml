@@ -280,7 +280,18 @@ display:
           content: '<p>Displaying @start - @end of @total icons | Page @current_page</p>'
           plugin_id: result
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<h2 class="h3">Your search query returned no results.</h2> Please try again.'
+          plugin_id: text_custom
       relationships: {  }
       arguments: {  }
       display_extenders: {  }

@@ -155,31 +155,34 @@
 
   /*
   * Custom function to convert SVG img to an inline SVG.
-  * See https://dev.to/luisaugusto/how-to-convert-image-tags-with-svg-files-into-inline-svg-tags-3jfl
+  * See https://gist.github.com/Bloggerschmidt/61beeca2cce94a70c9df#gistcomment-3080717
   */
   Drupal.behaviors.svgConvert = {
     attach: function (context, settings) {
-      const svgimgs = document.querySelectorAll(".svg-img-to-inline");
-      for (let integer = 0; integer < svgimgs.length; integer++) {
-         console.log('svgimg: ', svgimgs[integer]);
-        const convertImages = (query, callback) => {
-          const images = document.querySelectorAll(query);
-          images.forEach(image => {
-            fetch(image.src)
-              .then(res => res.text())
-              .then(data => {
-                const parser = new DOMParser();
-                const svg = parser.parseFromString(data, 'image/svg+xml').querySelector('svg');
-                if (image.id) svg.id = image.id;
-                if (image.className) svg.classList = image.classList;
-                image.parentNode.replaceChild(svg, image);
-              })
-              .then(callback)
-              .catch(error => console.error(error))
-          });
-        }
-        convertImages('img');
-      }
+      // document.querySelectorAll('img.svg-img-to-inline').forEach((el) => {
+      //   const imgID = el.getAttribute('id');
+      //   const imgClass = el.getAttribute('class');
+      //   const imgURL = el.getAttribute('src');
+      //
+      //   fetch(imgURL)
+      //     .then(data => data.text())
+      //     .then(response => {
+      //       const parser = new DOMParser();
+      //       const xmlDoc = parser.parseFromString(response, 'text/html');
+      //       let svg = xmlDoc.querySelector('svg');
+      //
+      //       if (typeof imgID !== 'undefined') {
+      //         svg.setAttribute('id', imgID);
+      //       }
+      //
+      //       if(typeof imgClass !== 'undefined') {
+      //         svg.setAttribute('class', imgClass + ' replaced-svg');
+      //       }
+      //
+      //       svg.removeAttribute('xmlns:a');
+      //       el.parentNode.replaceChild(svg, el);
+      //     })
+      // });
     },
   };
 

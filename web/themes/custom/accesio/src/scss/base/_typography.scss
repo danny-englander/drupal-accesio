@@ -1,18 +1,24 @@
+/*
+WCAG requires that no loss of content or functionality occurs when the
+end user overrides page styles for paragraph spacing to 200%
+of the font size, text line height/spacing to 150% of the font size,
+word spacing to 16% of the font size, and letter spacing to 12%
+of the font size. Ensure that your page text can be modified
+without it disappearing or overlapping other page content.
+ */
+
 body {
-  font-family: 'Noto Sans SC', serif;
+  font-family: 'IBM Plex Sans', verdana, sans-serif;
   font-size: 100%;
-  font-weight: 400;
+  font-weight: 500;
   color: $charcoal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#{headings(1,6)} {
-}
-
 .h1,
 h1 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamond', Georgia, serif;
   font-weight: 400;
   @include rem(font-size, 54px);
   line-height: 58px;
@@ -44,7 +50,7 @@ h2 {
 
 .h3,
 h3 {
-  font-family: 'Noto Sans SC', sans-serif;
+
   font-weight: 400;
   @include rem(font-size, 20px);
   @include rem(line-height, 25px);
@@ -60,7 +66,7 @@ h3 {
 
 .h4,
 h4 {
-  font-family: 'Noto Sans SC', sans-serif;
+
   font-weight: 400;
   @include rem(font-size, 18px);
   @include rem(line-height, 25px);
@@ -76,7 +82,7 @@ h4 {
 
 .h5,
 h5 {
-  font-family: 'Noto Sans SC', sans-serif;
+
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -93,7 +99,7 @@ h5 {
 
 .h6,
 h6 {
-  font-family: 'Noto Sans SC', sans-serif;
+
   font-weight: 400;
   @include rem(font-size, 16px);
   @include rem(line-height, 25px);
@@ -107,20 +113,24 @@ h6 {
   }
 }
 
-.page-wrap {
+.l-content {
   li,
   .p,
   p {
     @include rem(font-size, 16px);
     @include rem(line-height, 26px);
-    @include rem(margin-bottom, 15px);
+    @include rem(margin-bottom, 32px);
     margin-top: 0;
-    letter-spacing: .03rem;
-
+    @include rem(letter-spacing, 1px);
 
     @include mq($from: small_desktop) {
-      @include rem(font-size, 17px);
+      @include rem(font-size, 19px);
       @include rem(line-height, 32px);
+      @include rem(margin-bottom, 38px);
     }
   }
+}
+
+#{headings(1,6)} {
+//  font-family: 'EB Garamond', serif;
 }

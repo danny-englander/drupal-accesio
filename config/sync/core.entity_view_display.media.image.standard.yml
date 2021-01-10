@@ -1,0 +1,41 @@
+uuid: 3dce3fbb-aa8e-4442-a15a-6c98b20ef6c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.standard
+    - field.field.media.image.field_attribution
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.max_1300x1300
+    - media.type.image
+  module:
+    - image
+    - lazy
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.standard
+targetEntityType: media
+bundle: image
+mode: standard
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      image_style: max_1300x1300
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: large
+        data_uri: false
+    type: image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_attribution: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -5,6 +5,7 @@ image_fields:
   media--image--field_media_image--half_width: '1'
   media--person_image--field_media_image_1--default: '1'
   media--person_image--field_media_image_1--profile_image: '1'
+  media--image--field_media_image--standard: '1'
 alter_tag:
   img: img
   iframe: iframe

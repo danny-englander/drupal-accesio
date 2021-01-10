@@ -28,8 +28,8 @@
     border-bottom: 10px solid $primary-color;
 
     p {
-      @include rem(font-size, 18px);
-      @include rem(line-height, 34px);
+      //@include rem(font-size, 18px);
+      //@include rem(line-height, 34px);
     }
 
     * {
