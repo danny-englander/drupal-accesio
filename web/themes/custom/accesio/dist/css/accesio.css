@@ -1757,18 +1757,30 @@ see https://codepen.io/bootstrapped/pen/RrabNe
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
-  line-height: 1.5;
+  line-height: 1.6;
+  padding-left: 2px;
+}
+
+.component__item--type--text ul > li {
+  position: relative;
 }
 
 .component__item--type--text ul > li:before {
-  content: "";
-  font-family: "Ionicons";
-  font-size: 2rem;
-  display: inline-block;
+  content: "";
+  display: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.component__item--type--text ul > li .svg-inline--fa {
+  transition: .4s ease;
   color: #482e6e;
+  font-size: 1.4375rem;
+  margin: 6px 0 0 0;
   position: absolute;
-  top: 3px;
-  left: 0;
+  left: 6px;
 }
 
 .masthead {

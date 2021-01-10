@@ -47,8 +47,7 @@ function accesio_preprocess_html(array &$vars) {
       if ($node->get('field_edgy')->value === '1') {
         $vars['attributes']['class'][] = 'page-full-width';
       }
-
-      if ($node->get('field_edgy')->value !== '1') {
+      else {
         $vars['attributes']['class'][] = 'page-contained-width';
       }
     }

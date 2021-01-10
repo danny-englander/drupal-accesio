@@ -19,14 +19,14 @@
     -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-
-    @if $color {
-      color: $color;
-    }
   }
 
   .svg-inline--fa {
     transition: .4s ease;
+
+    @if $color {
+      color: $color;
+    }
 
     @if $font-size {
       @include rem(font-size, $font-size);

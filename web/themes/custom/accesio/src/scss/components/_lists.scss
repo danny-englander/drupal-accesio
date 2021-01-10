@@ -33,7 +33,8 @@
         top: 4px;
         display: flex;
         justify-content: center;
-        line-height: 1.5;
+        line-height: 1.6;
+        padding-left: 2px;
       }
     }
   }
@@ -41,7 +42,8 @@
   /* Styled unordered list */
   ul {
     > li {
-      @include  ion-icons('\f114', 32px, $position:absolute, $top: 3px, $left: 0, $color: $primary-color);
+      position: relative;
+      @include font-awesome("\f054", before, $font-size: 23px, $margin: 6px 0 0 0, $position: absolute, $left: 6px, $color: $primary-color);
     }
   }
 }
