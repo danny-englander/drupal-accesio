@@ -1,0 +1,2272 @@
+name,category,html_code,css_code
+24 Hours Fill,Finance,ri-24-hours-fill,\ea01
+24 Hours Line,Finance,ri-24-hours-line,\ea02
+4k Fill,Media,ri-4k-fill,\ea03
+4k Line,Media,ri-4k-line,\ea04
+A B,Editor,ri-a-b,\ea05
+Account Box Fill,User,ri-account-box-fill,\ea06
+Account Box Line,User,ri-account-box-line,\ea07
+Account Circle Fill,User,ri-account-circle-fill,\ea08
+Account Circle Line,User,ri-account-circle-line,\ea09
+Account Pin Box Fill,User,ri-account-pin-box-fill,\ea0a
+Account Pin Box Line,User,ri-account-pin-box-line,\ea0b
+Account Pin Circle Fill,User,ri-account-pin-circle-fill,\ea0c
+Account Pin Circle Line,User,ri-account-pin-circle-line,\ea0d
+Add Box Fill,System,ri-add-box-fill,\ea0e
+Add Box Line,System,ri-add-box-line,\ea0f
+Add Circle Fill,System,ri-add-circle-fill,\ea10
+Add Circle Line,System,ri-add-circle-line,\ea11
+Add Fill,System,ri-add-fill,\ea12
+Add Line,System,ri-add-line,\ea13
+Admin Fill,User,ri-admin-fill,\ea14
+Admin Line,User,ri-admin-line,\ea15
+Advertisement Fill,Business,ri-advertisement-fill,\ea16
+Advertisement Line,Business,ri-advertisement-line,\ea17
+Airplay Fill,Device,ri-airplay-fill,\ea18
+Airplay Line,Device,ri-airplay-line,\ea19
+Alarm Fill,System,ri-alarm-fill,\ea1a
+Alarm Line,System,ri-alarm-line,\ea1b
+Alarm Warning Fill,System,ri-alarm-warning-fill,\ea1c
+Alarm Warning Line,System,ri-alarm-warning-line,\ea1d
+Album Fill,Media,ri-album-fill,\ea1e
+Album Line,Media,ri-album-line,\ea1f
+Alert Fill,System,ri-alert-fill,\ea20
+Alert Line,System,ri-alert-line,\ea21
+Aliens Fill,User,ri-aliens-fill,\ea22
+Aliens Line,User,ri-aliens-line,\ea23
+Align Bottom,Editor,ri-align-bottom,\ea24
+Align Center,Editor,ri-align-center,\ea25
+Align Justify,Editor,ri-align-justify,\ea26
+Align Left,Editor,ri-align-left,\ea27
+Align Right,Editor,ri-align-right,\ea28
+Align Top,Editor,ri-align-top,\ea29
+Align Vertically,Editor,ri-align-vertically,\ea2a
+Alipay Fill,Logos,ri-alipay-fill,\ea2b
+Alipay Line,Logos,ri-alipay-line,\ea2c
+Amazon Fill,Logos,ri-amazon-fill,\ea2d
+Amazon Line,Logos,ri-amazon-line,\ea2e
+Anchor Fill,Map,ri-anchor-fill,\ea2f
+Anchor Line,Map,ri-anchor-line,\ea30
+Ancient Gate Fill,Buildings,ri-ancient-gate-fill,\ea31
+Ancient Gate Line,Buildings,ri-ancient-gate-line,\ea32
+Ancient Pavilion Fill,Buildings,ri-ancient-pavilion-fill,\ea33
+Ancient Pavilion Line,Buildings,ri-ancient-pavilion-line,\ea34
+Android Fill,Logos,ri-android-fill,\ea35
+Android Line,Logos,ri-android-line,\ea36
+Angularjs Fill,Logos,ri-angularjs-fill,\ea37
+Angularjs Line,Logos,ri-angularjs-line,\ea38
+Anticlockwise 2 Fill,Design,ri-anticlockwise-2-fill,\ea39
+Anticlockwise 2 Line,Design,ri-anticlockwise-2-line,\ea3a
+Anticlockwise Fill,Design,ri-anticlockwise-fill,\ea3b
+Anticlockwise Line,Design,ri-anticlockwise-line,\ea3c
+App Store Fill,Logos,ri-app-store-fill,\ea3d
+App Store Line,Logos,ri-app-store-line,\ea3e
+Apple Fill,Logos,ri-apple-fill,\ea3f
+Apple Line,Logos,ri-apple-line,\ea40
+Apps 2 Fill,System,ri-apps-2-fill,\ea41
+Apps 2 Line,System,ri-apps-2-line,\ea42
+Apps Fill,System,ri-apps-fill,\ea43
+Apps Line,System,ri-apps-line,\ea44
+Archive Drawer Fill,Business,ri-archive-drawer-fill,\ea45
+Archive Drawer Line,Business,ri-archive-drawer-line,\ea46
+Archive Fill,Business,ri-archive-fill,\ea47
+Archive Line,Business,ri-archive-line,\ea48
+Arrow Down Circle Fill,System,ri-arrow-down-circle-fill,\ea49
+Arrow Down Circle Line,System,ri-arrow-down-circle-line,\ea4a
+Arrow Down Fill,System,ri-arrow-down-fill,\ea4b
+Arrow Down Line,System,ri-arrow-down-line,\ea4c
+Arrow Down S Fill,System,ri-arrow-down-s-fill,\ea4d
+Arrow Down S Line,System,ri-arrow-down-s-line,\ea4e
+Arrow Drop Down Fill,System,ri-arrow-drop-down-fill,\ea4f
+Arrow Drop Down Line,System,ri-arrow-drop-down-line,\ea50
+Arrow Drop Left Fill,System,ri-arrow-drop-left-fill,\ea51
+Arrow Drop Left Line,System,ri-arrow-drop-left-line,\ea52
+Arrow Drop Right Fill,System,ri-arrow-drop-right-fill,\ea53
+Arrow Drop Right Line,System,ri-arrow-drop-right-line,\ea54
+Arrow Drop Up Fill,System,ri-arrow-drop-up-fill,\ea55
+Arrow Drop Up Line,System,ri-arrow-drop-up-line,\ea56
+Arrow Go Back Fill,System,ri-arrow-go-back-fill,\ea57
+Arrow Go Back Line,System,ri-arrow-go-back-line,\ea58
+Arrow Go Forward Fill,System,ri-arrow-go-forward-fill,\ea59
+Arrow Go Forward Line,System,ri-arrow-go-forward-line,\ea5a
+Arrow Left Circle Fill,System,ri-arrow-left-circle-fill,\ea5b
+Arrow Left Circle Line,System,ri-arrow-left-circle-line,\ea5c
+Arrow Left Down Fill,System,ri-arrow-left-down-fill,\ea5d
+Arrow Left Down Line,System,ri-arrow-left-down-line,\ea5e
+Arrow Left Fill,System,ri-arrow-left-fill,\ea5f
+Arrow Left Line,System,ri-arrow-left-line,\ea60
+Arrow Left Right Fill,System,ri-arrow-left-right-fill,\ea61
+Arrow Left Right Line,System,ri-arrow-left-right-line,\ea62
+Arrow Left S Fill,System,ri-arrow-left-s-fill,\ea63
+Arrow Left S Line,System,ri-arrow-left-s-line,\ea64
+Arrow Left Up Fill,System,ri-arrow-left-up-fill,\ea65
+Arrow Left Up Line,System,ri-arrow-left-up-line,\ea66
+Arrow Right Circle Fill,System,ri-arrow-right-circle-fill,\ea67
+Arrow Right Circle Line,System,ri-arrow-right-circle-line,\ea68
+Arrow Right Down Fill,System,ri-arrow-right-down-fill,\ea69
+Arrow Right Down Line,System,ri-arrow-right-down-line,\ea6a
+Arrow Right Fill,System,ri-arrow-right-fill,\ea6b
+Arrow Right Line,System,ri-arrow-right-line,\ea6c
+Arrow Right S Fill,System,ri-arrow-right-s-fill,\ea6d
+Arrow Right S Line,System,ri-arrow-right-s-line,\ea6e
+Arrow Right Up Fill,System,ri-arrow-right-up-fill,\ea6f
+Arrow Right Up Line,System,ri-arrow-right-up-line,\ea70
+Arrow Up Circle Fill,System,ri-arrow-up-circle-fill,\ea71
+Arrow Up Circle Line,System,ri-arrow-up-circle-line,\ea72
+Arrow Up Down Fill,System,ri-arrow-up-down-fill,\ea73
+Arrow Up Down Line,System,ri-arrow-up-down-line,\ea74
+Arrow Up Fill,System,ri-arrow-up-fill,\ea75
+Arrow Up Line,System,ri-arrow-up-line,\ea76
+Arrow Up S Fill,System,ri-arrow-up-s-fill,\ea77
+Arrow Up S Line,System,ri-arrow-up-s-line,\ea78
+Artboard 2 Fill,Design,ri-artboard-2-fill,\ea79
+Artboard 2 Line,Design,ri-artboard-2-line,\ea7a
+Artboard Fill,Design,ri-artboard-fill,\ea7b
+Artboard Line,Design,ri-artboard-line,\ea7c
+Article Fill,Document,ri-article-fill,\ea7d
+Article Line,Document,ri-article-line,\ea7e
+Aspect Ratio Fill,Media,ri-aspect-ratio-fill,\ea7f
+Aspect Ratio Line,Media,ri-aspect-ratio-line,\ea80
+Asterisk,Editor,ri-asterisk,\ea81
+At Fill,Business,ri-at-fill,\ea82
+At Line,Business,ri-at-line,\ea83
+Attachment 2,Editor,ri-attachment-2,\ea84
+Attachment Fill,Business,ri-attachment-fill,\ea85
+Attachment Line,Business,ri-attachment-line,\ea86
+Auction Fill,Finance,ri-auction-fill,\ea87
+Auction Line,Finance,ri-auction-line,\ea88
+Award Fill,Business,ri-award-fill,\ea89
+Award Line,Business,ri-award-line,\ea8a
+Baidu Fill,Logos,ri-baidu-fill,\ea8b
+Baidu Line,Logos,ri-baidu-line,\ea8c
+Ball Pen Fill,Design,ri-ball-pen-fill,\ea8d
+Ball Pen Line,Design,ri-ball-pen-line,\ea8e
+Bank Card 2 Fill,Finance,ri-bank-card-2-fill,\ea8f
+Bank Card 2 Line,Finance,ri-bank-card-2-line,\ea90
+Bank Card Fill,Finance,ri-bank-card-fill,\ea91
+Bank Card Line,Finance,ri-bank-card-line,\ea92
+Bank Fill,Buildings,ri-bank-fill,\ea93
+Bank Line,Buildings,ri-bank-line,\ea94
+Bar Chart 2 Fill,Business,ri-bar-chart-2-fill,\ea95
+Bar Chart 2 Line,Business,ri-bar-chart-2-line,\ea96
+Bar Chart Box Fill,Business,ri-bar-chart-box-fill,\ea97
+Bar Chart Box Line,Business,ri-bar-chart-box-line,\ea98
+Bar Chart Fill,Business,ri-bar-chart-fill,\ea99
+Bar Chart Grouped Fill,Business,ri-bar-chart-grouped-fill,\ea9a
+Bar Chart Grouped Line,Business,ri-bar-chart-grouped-line,\ea9b
+Bar Chart Horizontal Fill,Business,ri-bar-chart-horizontal-fill,\ea9c
+Bar Chart Horizontal Line,Business,ri-bar-chart-horizontal-line,\ea9d
+Bar Chart Line,Business,ri-bar-chart-line,\ea9e
+Barcode Box Fill,Device,ri-barcode-box-fill,\ea9f
+Barcode Box Line,Device,ri-barcode-box-line,\eaa0
+Barcode Fill,Device,ri-barcode-fill,\eaa1
+Barcode Line,Device,ri-barcode-line,\eaa2
+Barricade Fill,Map,ri-barricade-fill,\eaa3
+Barricade Line,Map,ri-barricade-line,\eaa4
+Base Station Fill,Device,ri-base-station-fill,\eaa5
+Base Station Line,Device,ri-base-station-line,\eaa6
+Basketball Fill,Others,ri-basketball-fill,\eaa7
+Basketball Line,Others,ri-basketball-line,\eaa8
+Battery 2 Charge Fill,Device,ri-battery-2-charge-fill,\eaa9
+Battery 2 Charge Line,Device,ri-battery-2-charge-line,\eaaa
+Battery 2 Fill,Device,ri-battery-2-fill,\eaab
+Battery 2 Line,Device,ri-battery-2-line,\eaac
+Battery Charge Fill,Device,ri-battery-charge-fill,\eaad
+Battery Charge Line,Device,ri-battery-charge-line,\eaae
+Battery Fill,Device,ri-battery-fill,\eaaf
+Battery Line,Device,ri-battery-line,\eab0
+Battery Low Fill,Device,ri-battery-low-fill,\eab1
+Battery Low Line,Device,ri-battery-low-line,\eab2
+Battery Saver Fill,Device,ri-battery-saver-fill,\eab3
+Battery Saver Line,Device,ri-battery-saver-line,\eab4
+Battery Share Fill,Device,ri-battery-share-fill,\eab5
+Battery Share Line,Device,ri-battery-share-line,\eab6
+Bear Smile Fill,User,ri-bear-smile-fill,\eab7
+Bear Smile Line,User,ri-bear-smile-line,\eab8
+Behance Fill,Logos,ri-behance-fill,\eab9
+Behance Line,Logos,ri-behance-line,\eaba
+Bell Fill,Others,ri-bell-fill,\eabb
+Bell Line,Others,ri-bell-line,\eabc
+Bike Fill,Map,ri-bike-fill,\eabd
+Bike Line,Map,ri-bike-line,\eabe
+Bilibili Fill,Logos,ri-bilibili-fill,\eabf
+Bilibili Line,Logos,ri-bilibili-line,\eac0
+Bill Fill,Document,ri-bill-fill,\eac1
+Bill Line,Document,ri-bill-line,\eac2
+Billiards Fill,Others,ri-billiards-fill,\eac3
+Billiards Line,Others,ri-billiards-line,\eac4
+Bit Coin Fill,Finance,ri-bit-coin-fill,\eac5
+Bit Coin Line,Finance,ri-bit-coin-line,\eac6
+Blaze Fill,Weather,ri-blaze-fill,\eac7
+Blaze Line,Weather,ri-blaze-line,\eac8
+Bluetooth Connect Fill,Device,ri-bluetooth-connect-fill,\eac9
+Bluetooth Connect Line,Device,ri-bluetooth-connect-line,\eaca
+Bluetooth Fill,Device,ri-bluetooth-fill,\eacb
+Bluetooth Line,Device,ri-bluetooth-line,\eacc
+Blur Off Fill,Design,ri-blur-off-fill,\eacd
+Blur Off Line,Design,ri-blur-off-line,\eace
+Body Scan Fill,User,ri-body-scan-fill,\eacf
+Body Scan Line,User,ri-body-scan-line,\ead0
+Bold,Editor,ri-bold,\ead1
+Book 2 Fill,Document,ri-book-2-fill,\ead2
+Book 2 Line,Document,ri-book-2-line,\ead3
+Book 3 Fill,Document,ri-book-3-fill,\ead4
+Book 3 Line,Document,ri-book-3-line,\ead5
+Book Fill,Document,ri-book-fill,\ead6
+Book Line,Document,ri-book-line,\ead7
+Book Mark Fill,Document,ri-book-mark-fill,\ead8
+Book Mark Line,Document,ri-book-mark-line,\ead9
+Book Open Fill,Document,ri-book-open-fill,\eada
+Book Open Line,Document,ri-book-open-line,\eadb
+Book Read Fill,Document,ri-book-read-fill,\eadc
+Book Read Line,Document,ri-book-read-line,\eadd
+Booklet Fill,Document,ri-booklet-fill,\eade
+Booklet Line,Document,ri-booklet-line,\eadf
+Bookmark 2 Fill,Business,ri-bookmark-2-fill,\eae0
+Bookmark 2 Line,Business,ri-bookmark-2-line,\eae1
+Bookmark 3 Fill,Business,ri-bookmark-3-fill,\eae2
+Bookmark 3 Line,Business,ri-bookmark-3-line,\eae3
+Bookmark Fill,Business,ri-bookmark-fill,\eae4
+Bookmark Line,Business,ri-bookmark-line,\eae5
+Boxing Fill,Others,ri-boxing-fill,\eae6
+Boxing Line,Others,ri-boxing-line,\eae7
+Braces Fill,Development,ri-braces-fill,\eae8
+Braces Line,Development,ri-braces-line,\eae9
+Brackets Fill,Development,ri-brackets-fill,\eaea
+Brackets Line,Development,ri-brackets-line,\eaeb
+Briefcase 2 Fill,Business,ri-briefcase-2-fill,\eaec
+Briefcase 2 Line,Business,ri-briefcase-2-line,\eaed
+Briefcase 3 Fill,Business,ri-briefcase-3-fill,\eaee
+Briefcase 3 Line,Business,ri-briefcase-3-line,\eaef
+Briefcase 4 Fill,Business,ri-briefcase-4-fill,\eaf0
+Briefcase 4 Line,Business,ri-briefcase-4-line,\eaf1
+Briefcase 5 Fill,Business,ri-briefcase-5-fill,\eaf2
+Briefcase 5 Line,Business,ri-briefcase-5-line,\eaf3
+Briefcase Fill,Business,ri-briefcase-fill,\eaf4
+Briefcase Line,Business,ri-briefcase-line,\eaf5
+Bring Forward,Editor,ri-bring-forward,\eaf6
+Bring To Front,Editor,ri-bring-to-front,\eaf7
+Broadcast Fill,Media,ri-broadcast-fill,\eaf8
+Broadcast Line,Media,ri-broadcast-line,\eaf9
+Brush 2 Fill,Design,ri-brush-2-fill,\eafa
+Brush 2 Line,Design,ri-brush-2-line,\eafb
+Brush 3 Fill,Design,ri-brush-3-fill,\eafc
+Brush 3 Line,Design,ri-brush-3-line,\eafd
+Brush 4 Fill,Design,ri-brush-4-fill,\eafe
+Brush 4 Line,Design,ri-brush-4-line,\eaff
+Brush Fill,Design,ri-brush-fill,\eb00
+Brush Line,Design,ri-brush-line,\eb01
+Bubble Chart Fill,Business,ri-bubble-chart-fill,\eb02
+Bubble Chart Line,Business,ri-bubble-chart-line,\eb03
+Bug 2 Fill,Development,ri-bug-2-fill,\eb04
+Bug 2 Line,Development,ri-bug-2-line,\eb05
+Bug Fill,Development,ri-bug-fill,\eb06
+Bug Line,Development,ri-bug-line,\eb07
+Building 2 Fill,Buildings,ri-building-2-fill,\eb08
+Building 2 Line,Buildings,ri-building-2-line,\eb09
+Building 3 Fill,Buildings,ri-building-3-fill,\eb0a
+Building 3 Line,Buildings,ri-building-3-line,\eb0b
+Building 4 Fill,Buildings,ri-building-4-fill,\eb0c
+Building 4 Line,Buildings,ri-building-4-line,\eb0d
+Building Fill,Buildings,ri-building-fill,\eb0e
+Building Line,Buildings,ri-building-line,\eb0f
+Bus 2 Fill,Map,ri-bus-2-fill,\eb10
+Bus 2 Line,Map,ri-bus-2-line,\eb11
+Bus Fill,Map,ri-bus-fill,\eb12
+Bus Line,Map,ri-bus-line,\eb13
+Bus Wifi Fill,Map,ri-bus-wifi-fill,\eb14
+Bus Wifi Line,Map,ri-bus-wifi-line,\eb15
+Cactus Fill,Others,ri-cactus-fill,\eb16
+Cactus Line,Others,ri-cactus-line,\eb17
+Cake 2 Fill,Others,ri-cake-2-fill,\eb18
+Cake 2 Line,Others,ri-cake-2-line,\eb19
+Cake 3 Fill,Others,ri-cake-3-fill,\eb1a
+Cake 3 Line,Others,ri-cake-3-line,\eb1b
+Cake Fill,Others,ri-cake-fill,\eb1c
+Cake Line,Others,ri-cake-line,\eb1d
+Calculator Fill,Business,ri-calculator-fill,\eb1e
+Calculator Line,Business,ri-calculator-line,\eb1f
+Calendar 2 Fill,Business,ri-calendar-2-fill,\eb20
+Calendar 2 Line,Business,ri-calendar-2-line,\eb21
+Calendar Check Fill,Business,ri-calendar-check-fill,\eb22
+Calendar Check Line,Business,ri-calendar-check-line,\eb23
+Calendar Event Fill,Business,ri-calendar-event-fill,\eb24
+Calendar Event Line,Business,ri-calendar-event-line,\eb25
+Calendar Fill,Business,ri-calendar-fill,\eb26
+Calendar Line,Business,ri-calendar-line,\eb27
+Calendar Todo Fill,Business,ri-calendar-todo-fill,\eb28
+Calendar Todo Line,Business,ri-calendar-todo-line,\eb29
+Camera 2 Fill,Media,ri-camera-2-fill,\eb2a
+Camera 2 Line,Media,ri-camera-2-line,\eb2b
+Camera 3 Fill,Media,ri-camera-3-fill,\eb2c
+Camera 3 Line,Media,ri-camera-3-line,\eb2d
+Camera Fill,Media,ri-camera-fill,\eb2e
+Camera Lens Fill,Media,ri-camera-lens-fill,\eb2f
+Camera Lens Line,Media,ri-camera-lens-line,\eb30
+Camera Line,Media,ri-camera-line,\eb31
+Camera Off Fill,Media,ri-camera-off-fill,\eb32
+Camera Off Line,Media,ri-camera-off-line,\eb33
+Camera Switch Fill,Media,ri-camera-switch-fill,\eb34
+Camera Switch Line,Media,ri-camera-switch-line,\eb35
+Capsule Fill,Health,ri-capsule-fill,\eb36
+Capsule Line,Health,ri-capsule-line,\eb37
+Car Fill,Map,ri-car-fill,\eb38
+Car Line,Map,ri-car-line,\eb39
+Car Washing Fill,Map,ri-car-washing-fill,\eb3a
+Car Washing Line,Map,ri-car-washing-line,\eb3b
+Caravan Fill,Map,ri-caravan-fill,\eb3c
+Caravan Line,Map,ri-caravan-line,\eb3d
+Cast Fill,Device,ri-cast-fill,\eb3e
+Cast Line,Device,ri-cast-line,\eb3f
+Cellphone Fill,Device,ri-cellphone-fill,\eb40
+Cellphone Line,Device,ri-cellphone-line,\eb41
+Celsius Fill,Weather,ri-celsius-fill,\eb42
+Celsius Line,Weather,ri-celsius-line,\eb43
+Centos Fill,Logos,ri-centos-fill,\eb44
+Centos Line,Logos,ri-centos-line,\eb45
+Character Recognition Fill,Others,ri-character-recognition-fill,\eb46
+Character Recognition Line,Others,ri-character-recognition-line,\eb47
+Charging Pile 2 Fill,Map,ri-charging-pile-2-fill,\eb48
+Charging Pile 2 Line,Map,ri-charging-pile-2-line,\eb49
+Charging Pile Fill,Map,ri-charging-pile-fill,\eb4a
+Charging Pile Line,Map,ri-charging-pile-line,\eb4b
+Chat 1 Fill,Communication,ri-chat-1-fill,\eb4c
+Chat 1 Line,Communication,ri-chat-1-line,\eb4d
+Chat 2 Fill,Communication,ri-chat-2-fill,\eb4e
+Chat 2 Line,Communication,ri-chat-2-line,\eb4f
+Chat 3 Fill,Communication,ri-chat-3-fill,\eb50
+Chat 3 Line,Communication,ri-chat-3-line,\eb51
+Chat 4 Fill,Communication,ri-chat-4-fill,\eb52
+Chat 4 Line,Communication,ri-chat-4-line,\eb53
+Chat Check Fill,Communication,ri-chat-check-fill,\eb54
+Chat Check Line,Communication,ri-chat-check-line,\eb55
+Chat Delete Fill,Communication,ri-chat-delete-fill,\eb56
+Chat Delete Line,Communication,ri-chat-delete-line,\eb57
+Chat Download Fill,Communication,ri-chat-download-fill,\eb58
+Chat Download Line,Communication,ri-chat-download-line,\eb59
+Chat Follow Up Fill,Communication,ri-chat-follow-up-fill,\eb5a
+Chat Follow Up Line,Communication,ri-chat-follow-up-line,\eb5b
+Chat Forward Fill,Communication,ri-chat-forward-fill,\eb5c
+Chat Forward Line,Communication,ri-chat-forward-line,\eb5d
+Chat Heart Fill,Communication,ri-chat-heart-fill,\eb5e
+Chat Heart Line,Communication,ri-chat-heart-line,\eb5f
+Chat History Fill,Communication,ri-chat-history-fill,\eb60
+Chat History Line,Communication,ri-chat-history-line,\eb61
+Chat New Fill,Communication,ri-chat-new-fill,\eb62
+Chat New Line,Communication,ri-chat-new-line,\eb63
+Chat Off Fill,Communication,ri-chat-off-fill,\eb64
+Chat Off Line,Communication,ri-chat-off-line,\eb65
+Chat Poll Fill,Communication,ri-chat-poll-fill,\eb66
+Chat Poll Line,Communication,ri-chat-poll-line,\eb67
+Chat Private Fill,Communication,ri-chat-private-fill,\eb68
+Chat Private Line,Communication,ri-chat-private-line,\eb69
+Chat Quote Fill,Communication,ri-chat-quote-fill,\eb6a
+Chat Quote Line,Communication,ri-chat-quote-line,\eb6b
+Chat Settings Fill,Communication,ri-chat-settings-fill,\eb6c
+Chat Settings Line,Communication,ri-chat-settings-line,\eb6d
+Chat Smile 2 Fill,Communication,ri-chat-smile-2-fill,\eb6e
+Chat Smile 2 Line,Communication,ri-chat-smile-2-line,\eb6f
+Chat Smile 3 Fill,Communication,ri-chat-smile-3-fill,\eb70
+Chat Smile 3 Line,Communication,ri-chat-smile-3-line,\eb71
+Chat Smile Fill,Communication,ri-chat-smile-fill,\eb72
+Chat Smile Line,Communication,ri-chat-smile-line,\eb73
+Chat Upload Fill,Communication,ri-chat-upload-fill,\eb74
+Chat Upload Line,Communication,ri-chat-upload-line,\eb75
+Chat Voice Fill,Communication,ri-chat-voice-fill,\eb76
+Chat Voice Line,Communication,ri-chat-voice-line,\eb77
+Check Double Fill,System,ri-check-double-fill,\eb78
+Check Double Line,System,ri-check-double-line,\eb79
+Check Fill,System,ri-check-fill,\eb7a
+Check Line,System,ri-check-line,\eb7b
+Checkbox Blank Circle Fill,System,ri-checkbox-blank-circle-fill,\eb7c
+Checkbox Blank Circle Line,System,ri-checkbox-blank-circle-line,\eb7d
+Checkbox Blank Fill,System,ri-checkbox-blank-fill,\eb7e
+Checkbox Blank Line,System,ri-checkbox-blank-line,\eb7f
+Checkbox Circle Fill,System,ri-checkbox-circle-fill,\eb80
+Checkbox Circle Line,System,ri-checkbox-circle-line,\eb81
+Checkbox Fill,System,ri-checkbox-fill,\eb82
+Checkbox Indeterminate Fill,System,ri-checkbox-indeterminate-fill,\eb83
+Checkbox Indeterminate Line,System,ri-checkbox-indeterminate-line,\eb84
+Checkbox Line,System,ri-checkbox-line,\eb85
+Checkbox Multiple Blank Fill,System,ri-checkbox-multiple-blank-fill,\eb86
+Checkbox Multiple Blank Line,System,ri-checkbox-multiple-blank-line,\eb87
+Checkbox Multiple Fill,System,ri-checkbox-multiple-fill,\eb88
+Checkbox Multiple Line,System,ri-checkbox-multiple-line,\eb89
+China Railway Fill,Map,ri-china-railway-fill,\eb8a
+China Railway Line,Map,ri-china-railway-line,\eb8b
+Chrome Fill,Logos,ri-chrome-fill,\eb8c
+Chrome Line,Logos,ri-chrome-line,\eb8d
+Clapperboard Fill,Media,ri-clapperboard-fill,\eb8e
+Clapperboard Line,Media,ri-clapperboard-line,\eb8f
+Clipboard Fill,Document,ri-clipboard-fill,\eb90
+Clipboard Line,Document,ri-clipboard-line,\eb91
+Clockwise 2 Fill,Design,ri-clockwise-2-fill,\eb92
+Clockwise 2 Line,Design,ri-clockwise-2-line,\eb93
+Clockwise Fill,Design,ri-clockwise-fill,\eb94
+Clockwise Line,Design,ri-clockwise-line,\eb95
+Close Circle Fill,System,ri-close-circle-fill,\eb96
+Close Circle Line,System,ri-close-circle-line,\eb97
+Close Fill,System,ri-close-fill,\eb98
+Close Line,System,ri-close-line,\eb99
+Closed Captioning Fill,Media,ri-closed-captioning-fill,\eb9a
+Closed Captioning Line,Media,ri-closed-captioning-line,\eb9b
+Cloud Fill,Business,ri-cloud-fill,\eb9c
+Cloud Line,Business,ri-cloud-line,\eb9d
+Cloud Off Fill,Business,ri-cloud-off-fill,\eb9e
+Cloud Off Line,Business,ri-cloud-off-line,\eb9f
+Cloud Windy Fill,Weather,ri-cloud-windy-fill,\eba0
+Cloud Windy Line,Weather,ri-cloud-windy-line,\eba1
+Cloudy 2 Fill,Weather,ri-cloudy-2-fill,\eba2
+Cloudy 2 Line,Weather,ri-cloudy-2-line,\eba3
+Cloudy Fill,Weather,ri-cloudy-fill,\eba4
+Cloudy Line,Weather,ri-cloudy-line,\eba5
+Code Box Fill,Development,ri-code-box-fill,\eba6
+Code Box Line,Development,ri-code-box-line,\eba7
+Code Fill,Development,ri-code-fill,\eba8
+Code Line,Development,ri-code-line,\eba9
+Code S Fill,Development,ri-code-s-fill,\ebaa
+Code S Line,Development,ri-code-s-line,\ebab
+Code S Slash Fill,Development,ri-code-s-slash-fill,\ebac
+Code S Slash Line,Development,ri-code-s-slash-line,\ebad
+Code View,Editor,ri-code-view,\ebae
+Codepen Fill,Logos,ri-codepen-fill,\ebaf
+Codepen Line,Logos,ri-codepen-line,\ebb0
+Coin Fill,Finance,ri-coin-fill,\ebb1
+Coin Line,Finance,ri-coin-line,\ebb2
+Coins Fill,Finance,ri-coins-fill,\ebb3
+Coins Line,Finance,ri-coins-line,\ebb4
+Collage Fill,Design,ri-collage-fill,\ebb5
+Collage Line,Design,ri-collage-line,\ebb6
+Command Fill,Development,ri-command-fill,\ebb7
+Command Line,Development,ri-command-line,\ebb8
+Community Fill,Buildings,ri-community-fill,\ebb9
+Community Line,Buildings,ri-community-line,\ebba
+Compass 2 Fill,Map,ri-compass-2-fill,\ebbb
+Compass 2 Line,Map,ri-compass-2-line,\ebbc
+Compass 3 Fill,Map,ri-compass-3-fill,\ebbd
+Compass 3 Line,Map,ri-compass-3-line,\ebbe
+Compass 4 Fill,Map,ri-compass-4-fill,\ebbf
+Compass 4 Line,Map,ri-compass-4-line,\ebc0
+Compass Discover Fill,Map,ri-compass-discover-fill,\ebc1
+Compass Discover Line,Map,ri-compass-discover-line,\ebc2
+Compass Fill,Map,ri-compass-fill,\ebc3
+Compass Line,Map,ri-compass-line,\ebc4
+Compasses 2 Fill,Design,ri-compasses-2-fill,\ebc5
+Compasses 2 Line,Design,ri-compasses-2-line,\ebc6
+Compasses Fill,Design,ri-compasses-fill,\ebc7
+Compasses Line,Design,ri-compasses-line,\ebc8
+Computer Fill,Device,ri-computer-fill,\ebc9
+Computer Line,Device,ri-computer-line,\ebca
+Contacts Book 2 Fill,Document,ri-contacts-book-2-fill,\ebcb
+Contacts Book 2 Line,Document,ri-contacts-book-2-line,\ebcc
+Contacts Book Fill,Document,ri-contacts-book-fill,\ebcd
+Contacts Book Line,Document,ri-contacts-book-line,\ebce
+Contacts Book Upload Fill,Document,ri-contacts-book-upload-fill,\ebcf
+Contacts Book Upload Line,Document,ri-contacts-book-upload-line,\ebd0
+Contacts Fill,User,ri-contacts-fill,\ebd1
+Contacts Line,User,ri-contacts-line,\ebd2
+Contrast 2 Fill,Design,ri-contrast-2-fill,\ebd3
+Contrast 2 Line,Design,ri-contrast-2-line,\ebd4
+Contrast Drop 2 Fill,Design,ri-contrast-drop-2-fill,\ebd5
+Contrast Drop 2 Line,Design,ri-contrast-drop-2-line,\ebd6
+Contrast Drop Fill,Design,ri-contrast-drop-fill,\ebd7
+Contrast Drop Line,Design,ri-contrast-drop-line,\ebd8
+Contrast Fill,Design,ri-contrast-fill,\ebd9
+Contrast Line,Design,ri-contrast-line,\ebda
+Copper Coin Fill,Finance,ri-copper-coin-fill,\ebdb
+Copper Coin Line,Finance,ri-copper-coin-line,\ebdc
+Copper Diamond Fill,Finance,ri-copper-diamond-fill,\ebdd
+Copper Diamond Line,Finance,ri-copper-diamond-line,\ebde
+Copyleft Fill,Business,ri-copyleft-fill,\ebdf
+Copyleft Line,Business,ri-copyleft-line,\ebe0
+Copyright Fill,Business,ri-copyright-fill,\ebe1
+Copyright Line,Business,ri-copyright-line,\ebe2
+Coreos Fill,Logos,ri-coreos-fill,\ebe3
+Coreos Line,Logos,ri-coreos-line,\ebe4
+Coupon 2 Fill,Finance,ri-coupon-2-fill,\ebe5
+Coupon 2 Line,Finance,ri-coupon-2-line,\ebe6
+Coupon 3 Fill,Finance,ri-coupon-3-fill,\ebe7
+Coupon 3 Line,Finance,ri-coupon-3-line,\ebe8
+Coupon 4 Fill,Finance,ri-coupon-4-fill,\ebe9
+Coupon 4 Line,Finance,ri-coupon-4-line,\ebea
+Coupon 5 Fill,Finance,ri-coupon-5-fill,\ebeb
+Coupon 5 Line,Finance,ri-coupon-5-line,\ebec
+Coupon Fill,Finance,ri-coupon-fill,\ebed
+Coupon Line,Finance,ri-coupon-line,\ebee
+Cpu Fill,Device,ri-cpu-fill,\ebef
+Cpu Line,Device,ri-cpu-line,\ebf0
+Creative Commons By Fill,Business,ri-creative-commons-by-fill,\ebf1
+Creative Commons By Line,Business,ri-creative-commons-by-line,\ebf2
+Creative Commons Fill,Business,ri-creative-commons-fill,\ebf3
+Creative Commons Line,Business,ri-creative-commons-line,\ebf4
+Creative Commons Nc Fill,Business,ri-creative-commons-nc-fill,\ebf5
+Creative Commons Nc Line,Business,ri-creative-commons-nc-line,\ebf6
+Creative Commons Nd Fill,Business,ri-creative-commons-nd-fill,\ebf7
+Creative Commons Nd Line,Business,ri-creative-commons-nd-line,\ebf8
+Creative Commons Sa Fill,Business,ri-creative-commons-sa-fill,\ebf9
+Creative Commons Sa Line,Business,ri-creative-commons-sa-line,\ebfa
+Creative Commons Zero Fill,Business,ri-creative-commons-zero-fill,\ebfb
+Creative Commons Zero Line,Business,ri-creative-commons-zero-line,\ebfc
+Criminal Fill,User,ri-criminal-fill,\ebfd
+Criminal Line,User,ri-criminal-line,\ebfe
+Crop 2 Fill,Design,ri-crop-2-fill,\ebff
+Crop 2 Line,Design,ri-crop-2-line,\ec00
+Crop Fill,Design,ri-crop-fill,\ec01
+Crop Line,Design,ri-crop-line,\ec02
+Css3 Fill,Development,ri-css3-fill,\ec03
+Css3 Line,Development,ri-css3-line,\ec04
+Cup Fill,Map,ri-cup-fill,\ec05
+Cup Line,Map,ri-cup-line,\ec06
+Currency Fill,Finance,ri-currency-fill,\ec07
+Currency Line,Finance,ri-currency-line,\ec08
+Cursor Fill,Development,ri-cursor-fill,\ec09
+Cursor Line,Development,ri-cursor-line,\ec0a
+Customer Service 2 Fill,Business,ri-customer-service-2-fill,\ec0b
+Customer Service 2 Line,Business,ri-customer-service-2-line,\ec0c
+Customer Service Fill,Business,ri-customer-service-fill,\ec0d
+Customer Service Line,Business,ri-customer-service-line,\ec0e
+Dashboard 2 Fill,Device,ri-dashboard-2-fill,\ec0f
+Dashboard 2 Line,Device,ri-dashboard-2-line,\ec10
+Dashboard 3 Fill,Device,ri-dashboard-3-fill,\ec11
+Dashboard 3 Line,Device,ri-dashboard-3-line,\ec12
+Dashboard Fill,System,ri-dashboard-fill,\ec13
+Dashboard Line,System,ri-dashboard-line,\ec14
+Database 2 Fill,Device,ri-database-2-fill,\ec15
+Database 2 Line,Device,ri-database-2-line,\ec16
+Database Fill,Device,ri-database-fill,\ec17
+Database Line,Device,ri-database-line,\ec18
+Delete Back 2 Fill,System,ri-delete-back-2-fill,\ec19
+Delete Back 2 Line,System,ri-delete-back-2-line,\ec1a
+Delete Back Fill,System,ri-delete-back-fill,\ec1b
+Delete Back Line,System,ri-delete-back-line,\ec1c
+Delete Bin 2 Fill,System,ri-delete-bin-2-fill,\ec1d
+Delete Bin 2 Line,System,ri-delete-bin-2-line,\ec1e
+Delete Bin 3 Fill,System,ri-delete-bin-3-fill,\ec1f
+Delete Bin 3 Line,System,ri-delete-bin-3-line,\ec20
+Delete Bin 4 Fill,System,ri-delete-bin-4-fill,\ec21
+Delete Bin 4 Line,System,ri-delete-bin-4-line,\ec22
+Delete Bin 5 Fill,System,ri-delete-bin-5-fill,\ec23
+Delete Bin 5 Line,System,ri-delete-bin-5-line,\ec24
+Delete Bin 6 Fill,System,ri-delete-bin-6-fill,\ec25
+Delete Bin 6 Line,System,ri-delete-bin-6-line,\ec26
+Delete Bin 7 Fill,System,ri-delete-bin-7-fill,\ec27
+Delete Bin 7 Line,System,ri-delete-bin-7-line,\ec28
+Delete Bin Fill,System,ri-delete-bin-fill,\ec29
+Delete Bin Line,System,ri-delete-bin-line,\ec2a
+Delete Column,Editor,ri-delete-column,\ec2b
+Delete Row,Editor,ri-delete-row,\ec2c
+Device Fill,Device,ri-device-fill,\ec2d
+Device Line,Device,ri-device-line,\ec2e
+Device Recover Fill,Device,ri-device-recover-fill,\ec2f
+Device Recover Line,Device,ri-device-recover-line,\ec30
+Dingding Fill,Logos,ri-dingding-fill,\ec31
+Dingding Line,Logos,ri-dingding-line,\ec32
+Direction Fill,Map,ri-direction-fill,\ec33
+Direction Line,Map,ri-direction-line,\ec34
+Disc Fill,Media,ri-disc-fill,\ec35
+Disc Line,Media,ri-disc-line,\ec36
+Discord Fill,Logos,ri-discord-fill,\ec37
+Discord Line,Logos,ri-discord-line,\ec38
+Discuss Fill,Communication,ri-discuss-fill,\ec39
+Discuss Line,Communication,ri-discuss-line,\ec3a
+Dislike Fill,Health,ri-dislike-fill,\ec3b
+Dislike Line,Health,ri-dislike-line,\ec3c
+Disqus Fill,Logos,ri-disqus-fill,\ec3d
+Disqus Line,Logos,ri-disqus-line,\ec3e
+Divide Fill,System,ri-divide-fill,\ec3f
+Divide Line,System,ri-divide-line,\ec40
+Donut Chart Fill,Business,ri-donut-chart-fill,\ec41
+Donut Chart Line,Business,ri-donut-chart-line,\ec42
+Door Closed Fill,Others,ri-door-closed-fill,\ec43
+Door Closed Line,Others,ri-door-closed-line,\ec44
+Door Fill,Others,ri-door-fill,\ec45
+Door Line,Others,ri-door-line,\ec46
+Door Lock Box Fill,Others,ri-door-lock-box-fill,\ec47
+Door Lock Box Line,Others,ri-door-lock-box-line,\ec48
+Door Lock Fill,Others,ri-door-lock-fill,\ec49
+Door Lock Line,Others,ri-door-lock-line,\ec4a
+Door Open Fill,Others,ri-door-open-fill,\ec4b
+Door Open Line,Others,ri-door-open-line,\ec4c
+Dossier Fill,Health,ri-dossier-fill,\ec4d
+Dossier Line,Health,ri-dossier-line,\ec4e
+Douban Fill,Logos,ri-douban-fill,\ec4f
+Douban Line,Logos,ri-douban-line,\ec50
+Double Quotes L,Editor,ri-double-quotes-l,\ec51
+Double Quotes R,Editor,ri-double-quotes-r,\ec52
+Download 2 Fill,System,ri-download-2-fill,\ec53
+Download 2 Line,System,ri-download-2-line,\ec54
+Download Cloud 2 Fill,System,ri-download-cloud-2-fill,\ec55
+Download Cloud 2 Line,System,ri-download-cloud-2-line,\ec56
+Download Cloud Fill,System,ri-download-cloud-fill,\ec57
+Download Cloud Line,System,ri-download-cloud-line,\ec58
+Download Fill,System,ri-download-fill,\ec59
+Download Line,System,ri-download-line,\ec5a
+Draft Fill,Document,ri-draft-fill,\ec5b
+Draft Line,Document,ri-draft-line,\ec5c
+Drag Drop Fill,Design,ri-drag-drop-fill,\ec5d
+Drag Drop Line,Design,ri-drag-drop-line,\ec5e
+Drag Move 2 Fill,Design,ri-drag-move-2-fill,\ec5f
+Drag Move 2 Line,Design,ri-drag-move-2-line,\ec60
+Drag Move Fill,Design,ri-drag-move-fill,\ec61
+Drag Move Line,Design,ri-drag-move-line,\ec62
+Dribbble Fill,Logos,ri-dribbble-fill,\ec63
+Dribbble Line,Logos,ri-dribbble-line,\ec64
+Drive Fill,Logos,ri-drive-fill,\ec65
+Drive Line,Logos,ri-drive-line,\ec66
+Drizzle Fill,Weather,ri-drizzle-fill,\ec67
+Drizzle Line,Weather,ri-drizzle-line,\ec68
+Drop Fill,Design,ri-drop-fill,\ec69
+Drop Line,Design,ri-drop-line,\ec6a
+Dropbox Fill,Logos,ri-dropbox-fill,\ec6b
+Dropbox Line,Logos,ri-dropbox-line,\ec6c
+Dual Sim 1 Fill,Device,ri-dual-sim-1-fill,\ec6d
+Dual Sim 1 Line,Device,ri-dual-sim-1-line,\ec6e
+Dual Sim 2 Fill,Device,ri-dual-sim-2-fill,\ec6f
+Dual Sim 2 Line,Device,ri-dual-sim-2-line,\ec70
+Dv Fill,Media,ri-dv-fill,\ec71
+Dv Line,Media,ri-dv-line,\ec72
+Dvd Fill,Media,ri-dvd-fill,\ec73
+Dvd Line,Media,ri-dvd-line,\ec74
+E Bike 2 Fill,Map,ri-e-bike-2-fill,\ec75
+E Bike 2 Line,Map,ri-e-bike-2-line,\ec76
+E Bike Fill,Map,ri-e-bike-fill,\ec77
+E Bike Line,Map,ri-e-bike-line,\ec78
+Earth Fill,Map,ri-earth-fill,\ec79
+Earth Line,Map,ri-earth-line,\ec7a
+Earthquake Fill,Weather,ri-earthquake-fill,\ec7b
+Earthquake Line,Weather,ri-earthquake-line,\ec7c
+Edge Fill,Logos,ri-edge-fill,\ec7d
+Edge Line,Logos,ri-edge-line,\ec7e
+Edit 2 Fill,Design,ri-edit-2-fill,\ec7f
+Edit 2 Line,Design,ri-edit-2-line,\ec80
+Edit Box Fill,Design,ri-edit-box-fill,\ec81
+Edit Box Line,Design,ri-edit-box-line,\ec82
+Edit Circle Fill,Design,ri-edit-circle-fill,\ec83
+Edit Circle Line,Design,ri-edit-circle-line,\ec84
+Edit Fill,Design,ri-edit-fill,\ec85
+Edit Line,Design,ri-edit-line,\ec86
+Eject Fill,Media,ri-eject-fill,\ec87
+Eject Line,Media,ri-eject-line,\ec88
+Emotion 2 Fill,User,ri-emotion-2-fill,\ec89
+Emotion 2 Line,User,ri-emotion-2-line,\ec8a
+Emotion Fill,User,ri-emotion-fill,\ec8b
+Emotion Happy Fill,User,ri-emotion-happy-fill,\ec8c
+Emotion Happy Line,User,ri-emotion-happy-line,\ec8d
+Emotion Laugh Fill,User,ri-emotion-laugh-fill,\ec8e
+Emotion Laugh Line,User,ri-emotion-laugh-line,\ec8f
+Emotion Line,User,ri-emotion-line,\ec90
+Emotion Normal Fill,User,ri-emotion-normal-fill,\ec91
+Emotion Normal Line,User,ri-emotion-normal-line,\ec92
+Emotion Sad Fill,User,ri-emotion-sad-fill,\ec93
+Emotion Sad Line,User,ri-emotion-sad-line,\ec94
+Emotion Unhappy Fill,User,ri-emotion-unhappy-fill,\ec95
+Emotion Unhappy Line,User,ri-emotion-unhappy-line,\ec96
+Empathize Fill,Health,ri-empathize-fill,\ec97
+Empathize Line,Health,ri-empathize-line,\ec98
+Emphasis,Editor,ri-emphasis-cn,\ec99
+Emphasis Cn,Editor,ri-emphasis,\ec9a
+English Input,Editor,ri-english-input,\ec9b
+Equalizer Fill,Media,ri-equalizer-fill,\ec9c
+Equalizer Line,Media,ri-equalizer-line,\ec9d
+Eraser Fill,Design,ri-eraser-fill,\ec9e
+Eraser Line,Design,ri-eraser-line,\ec9f
+Error Warning Fill,System,ri-error-warning-fill,\eca0
+Error Warning Line,System,ri-error-warning-line,\eca1
+Evernote Fill,Logos,ri-evernote-fill,\eca2
+Evernote Line,Logos,ri-evernote-line,\eca3
+Exchange Box Fill,Finance,ri-exchange-box-fill,\eca4
+Exchange Box Line,Finance,ri-exchange-box-line,\eca5
+Exchange Cny Fill,Finance,ri-exchange-cny-fill,\eca6
+Exchange Cny Line,Finance,ri-exchange-cny-line,\eca7
+Exchange Dollar Fill,Finance,ri-exchange-dollar-fill,\eca8
+Exchange Dollar Line,Finance,ri-exchange-dollar-line,\eca9
+Exchange Fill,Finance,ri-exchange-fill,\ecaa
+Exchange Funds Fill,Finance,ri-exchange-funds-fill,\ecab
+Exchange Funds Line,Finance,ri-exchange-funds-line,\ecac
+Exchange Line,Finance,ri-exchange-line,\ecad
+External Link Fill,System,ri-external-link-fill,\ecae
+External Link Line,System,ri-external-link-line,\ecaf
+Eye 2 Fill,System,ri-eye-2-fill,\ecb0
+Eye 2 Line,System,ri-eye-2-line,\ecb1
+Eye Close Fill,System,ri-eye-close-fill,\ecb2
+Eye Close Line,System,ri-eye-close-line,\ecb3
+Eye Fill,System,ri-eye-fill,\ecb4
+Eye Line,System,ri-eye-line,\ecb5
+Eye Off Fill,System,ri-eye-off-fill,\ecb6
+Eye Off Line,System,ri-eye-off-line,\ecb7
+Facebook Box Fill,Logos,ri-facebook-box-fill,\ecb8
+Facebook Box Line,Logos,ri-facebook-box-line,\ecb9
+Facebook Circle Fill,Logos,ri-facebook-circle-fill,\ecba
+Facebook Circle Line,Logos,ri-facebook-circle-line,\ecbb
+Facebook Fill,Logos,ri-facebook-fill,\ecbc
+Facebook Line,Logos,ri-facebook-line,\ecbd
+Fahrenheit Fill,Weather,ri-fahrenheit-fill,\ecbe
+Fahrenheit Line,Weather,ri-fahrenheit-line,\ecbf
+Feedback Fill,Communication,ri-feedback-fill,\ecc0
+Feedback Line,Communication,ri-feedback-line,\ecc1
+File 2 Fill,Document,ri-file-2-fill,\ecc2
+File 2 Line,Document,ri-file-2-line,\ecc3
+File 3 Fill,Document,ri-file-3-fill,\ecc4
+File 3 Line,Document,ri-file-3-line,\ecc5
+File 4 Fill,Document,ri-file-4-fill,\ecc6
+File 4 Line,Document,ri-file-4-line,\ecc7
+File Add Fill,Document,ri-file-add-fill,\ecc8
+File Add Line,Document,ri-file-add-line,\ecc9
+File Chart 2 Fill,Document,ri-file-chart-2-fill,\ecca
+File Chart 2 Line,Document,ri-file-chart-2-line,\eccb
+File Chart Fill,Document,ri-file-chart-fill,\eccc
+File Chart Line,Document,ri-file-chart-line,\eccd
+File Cloud Fill,Document,ri-file-cloud-fill,\ecce
+File Cloud Line,Document,ri-file-cloud-line,\eccf
+File Code Fill,Document,ri-file-code-fill,\ecd0
+File Code Line,Document,ri-file-code-line,\ecd1
+File Copy 2 Fill,Document,ri-file-copy-2-fill,\ecd2
+File Copy 2 Line,Document,ri-file-copy-2-line,\ecd3
+File Copy Fill,Document,ri-file-copy-fill,\ecd4
+File Copy Line,Document,ri-file-copy-line,\ecd5
+File Damage Fill,Document,ri-file-damage-fill,\ecd6
+File Damage Line,Document,ri-file-damage-line,\ecd7
+File Download Fill,Document,ri-file-download-fill,\ecd8
+File Download Line,Document,ri-file-download-line,\ecd9
+File Edit Fill,Document,ri-file-edit-fill,\ecda
+File Edit Line,Document,ri-file-edit-line,\ecdb
+File Excel 2 Fill,Document,ri-file-excel-2-fill,\ecdc
+File Excel 2 Line,Document,ri-file-excel-2-line,\ecdd
+File Excel Fill,Document,ri-file-excel-fill,\ecde
+File Excel Line,Document,ri-file-excel-line,\ecdf
+File Fill,Document,ri-file-fill,\ece0
+File Forbid Fill,Document,ri-file-forbid-fill,\ece1
+File Forbid Line,Document,ri-file-forbid-line,\ece2
+File Gif Fill,Document,ri-file-gif-fill,\ece3
+File Gif Line,Document,ri-file-gif-line,\ece4
+File History Fill,Document,ri-file-history-fill,\ece5
+File History Line,Document,ri-file-history-line,\ece6
+File Hwp Fill,Document,ri-file-hwp-fill,\ece7
+File Hwp Line,Document,ri-file-hwp-line,\ece8
+File Info Fill,Document,ri-file-info-fill,\ece9
+File Info Line,Document,ri-file-info-line,\ecea
+File Line,Document,ri-file-line,\eceb
+File List 2 Fill,Document,ri-file-list-2-fill,\ecec
+File List 2 Line,Document,ri-file-list-2-line,\eced
+File List 3 Fill,Document,ri-file-list-3-fill,\ecee
+File List 3 Line,Document,ri-file-list-3-line,\ecef
+File List Fill,Document,ri-file-list-fill,\ecf0
+File List Line,Document,ri-file-list-line,\ecf1
+File Lock Fill,Document,ri-file-lock-fill,\ecf2
+File Lock Line,Document,ri-file-lock-line,\ecf3
+File Mark Fill,Document,ri-file-mark-fill,\ecf4
+File Mark Line,Document,ri-file-mark-line,\ecf5
+File Music Fill,Document,ri-file-music-fill,\ecf6
+File Music Line,Document,ri-file-music-line,\ecf7
+File Paper 2 Fill,Document,ri-file-paper-2-fill,\ecf8
+File Paper 2 Line,Document,ri-file-paper-2-line,\ecf9
+File Paper Fill,Document,ri-file-paper-fill,\ecfa
+File Paper Line,Document,ri-file-paper-line,\ecfb
+File Pdf Fill,Document,ri-file-pdf-fill,\ecfc
+File Pdf Line,Document,ri-file-pdf-line,\ecfd
+File Ppt 2 Fill,Document,ri-file-ppt-2-fill,\ecfe
+File Ppt 2 Line,Document,ri-file-ppt-2-line,\ecff
+File Ppt Fill,Document,ri-file-ppt-fill,\ed00
+File Ppt Line,Document,ri-file-ppt-line,\ed01
+File Reduce Fill,Document,ri-file-reduce-fill,\ed02
+File Reduce Line,Document,ri-file-reduce-line,\ed03
+File Search Fill,Document,ri-file-search-fill,\ed04
+File Search Line,Document,ri-file-search-line,\ed05
+File Settings Fill,Document,ri-file-settings-fill,\ed06
+File Settings Line,Document,ri-file-settings-line,\ed07
+File Shield 2 Fill,Document,ri-file-shield-2-fill,\ed08
+File Shield 2 Line,Document,ri-file-shield-2-line,\ed09
+File Shield Fill,Document,ri-file-shield-fill,\ed0a
+File Shield Line,Document,ri-file-shield-line,\ed0b
+File Shred Fill,Document,ri-file-shred-fill,\ed0c
+File Shred Line,Document,ri-file-shred-line,\ed0d
+File Text Fill,Document,ri-file-text-fill,\ed0e
+File Text Line,Document,ri-file-text-line,\ed0f
+File Transfer Fill,Document,ri-file-transfer-fill,\ed10
+File Transfer Line,Document,ri-file-transfer-line,\ed11
+File Unknow Fill,Document,ri-file-unknow-fill,\ed12
+File Unknow Line,Document,ri-file-unknow-line,\ed13
+File Upload Fill,Document,ri-file-upload-fill,\ed14
+File Upload Line,Document,ri-file-upload-line,\ed15
+File User Fill,Document,ri-file-user-fill,\ed16
+File User Line,Document,ri-file-user-line,\ed17
+File Warning Fill,Document,ri-file-warning-fill,\ed18
+File Warning Line,Document,ri-file-warning-line,\ed19
+File Word 2 Fill,Document,ri-file-word-2-fill,\ed1a
+File Word 2 Line,Document,ri-file-word-2-line,\ed1b
+File Word Fill,Document,ri-file-word-fill,\ed1c
+File Word Line,Document,ri-file-word-line,\ed1d
+File Zip Fill,Document,ri-file-zip-fill,\ed1e
+File Zip Line,Document,ri-file-zip-line,\ed1f
+Film Fill,Media,ri-film-fill,\ed20
+Film Line,Media,ri-film-line,\ed21
+Filter 2 Fill,System,ri-filter-2-fill,\ed22
+Filter 2 Line,System,ri-filter-2-line,\ed23
+Filter 3 Fill,System,ri-filter-3-fill,\ed24
+Filter 3 Line,System,ri-filter-3-line,\ed25
+Filter Fill,System,ri-filter-fill,\ed26
+Filter Line,System,ri-filter-line,\ed27
+Filter Off Fill,System,ri-filter-off-fill,\ed28
+Filter Off Line,System,ri-filter-off-line,\ed29
+Find Replace Fill,System,ri-find-replace-fill,\ed2a
+Find Replace Line,System,ri-find-replace-line,\ed2b
+Finder Fill,Logos,ri-finder-fill,\ed2c
+Finder Line,Logos,ri-finder-line,\ed2d
+Fingerprint 2 Fill,Device,ri-fingerprint-2-fill,\ed2e
+Fingerprint 2 Line,Device,ri-fingerprint-2-line,\ed2f
+Fingerprint Fill,Device,ri-fingerprint-fill,\ed30
+Fingerprint Line,Device,ri-fingerprint-line,\ed31
+Fire Fill,Weather,ri-fire-fill,\ed32
+Fire Line,Weather,ri-fire-line,\ed33
+Firefox Fill,Logos,ri-firefox-fill,\ed34
+Firefox Line,Logos,ri-firefox-line,\ed35
+First Aid Kit Fill,Health,ri-first-aid-kit-fill,\ed36
+First Aid Kit Line,Health,ri-first-aid-kit-line,\ed37
+Flag 2 Fill,Business,ri-flag-2-fill,\ed38
+Flag 2 Line,Business,ri-flag-2-line,\ed39
+Flag Fill,Business,ri-flag-fill,\ed3a
+Flag Line,Business,ri-flag-line,\ed3b
+Flashlight Fill,Weather,ri-flashlight-fill,\ed3c
+Flashlight Line,Weather,ri-flashlight-line,\ed3d
+Flask Fill,Health,ri-flask-fill,\ed3e
+Flask Line,Health,ri-flask-line,\ed3f
+Flight Land Fill,Map,ri-flight-land-fill,\ed40
+Flight Land Line,Map,ri-flight-land-line,\ed41
+Flight Takeoff Fill,Map,ri-flight-takeoff-fill,\ed42
+Flight Takeoff Line,Map,ri-flight-takeoff-line,\ed43
+Flood Fill,Weather,ri-flood-fill,\ed44
+Flood Line,Weather,ri-flood-line,\ed45
+Flow Chart,Editor,ri-flow-chart,\ed46
+Flutter Fill,Logos,ri-flutter-fill,\ed47
+Flutter Line,Logos,ri-flutter-line,\ed48
+Focus 2 Fill,Design,ri-focus-2-fill,\ed49
+Focus 2 Line,Design,ri-focus-2-line,\ed4a
+Focus 3 Fill,Design,ri-focus-3-fill,\ed4b
+Focus 3 Line,Design,ri-focus-3-line,\ed4c
+Focus Fill,Design,ri-focus-fill,\ed4d
+Focus Line,Design,ri-focus-line,\ed4e
+Foggy Fill,Weather,ri-foggy-fill,\ed4f
+Foggy Line,Weather,ri-foggy-line,\ed50
+Folder 2 Fill,Document,ri-folder-2-fill,\ed51
+Folder 2 Line,Document,ri-folder-2-line,\ed52
+Folder 3 Fill,Document,ri-folder-3-fill,\ed53
+Folder 3 Line,Document,ri-folder-3-line,\ed54
+Folder 4 Fill,Document,ri-folder-4-fill,\ed55
+Folder 4 Line,Document,ri-folder-4-line,\ed56
+Folder 5 Fill,Document,ri-folder-5-fill,\ed57
+Folder 5 Line,Document,ri-folder-5-line,\ed58
+Folder Add Fill,Document,ri-folder-add-fill,\ed59
+Folder Add Line,Document,ri-folder-add-line,\ed5a
+Folder Chart 2 Fill,Document,ri-folder-chart-2-fill,\ed5b
+Folder Chart 2 Line,Document,ri-folder-chart-2-line,\ed5c
+Folder Chart Fill,Document,ri-folder-chart-fill,\ed5d
+Folder Chart Line,Document,ri-folder-chart-line,\ed5e
+Folder Download Fill,Document,ri-folder-download-fill,\ed5f
+Folder Download Line,Document,ri-folder-download-line,\ed60
+Folder Fill,Document,ri-folder-fill,\ed61
+Folder Forbid Fill,Document,ri-folder-forbid-fill,\ed62
+Folder Forbid Line,Document,ri-folder-forbid-line,\ed63
+Folder History Fill,Document,ri-folder-history-fill,\ed64
+Folder History Line,Document,ri-folder-history-line,\ed65
+Folder Info Fill,Document,ri-folder-info-fill,\ed66
+Folder Info Line,Document,ri-folder-info-line,\ed67
+Folder Keyhole Fill,Document,ri-folder-keyhole-fill,\ed68
+Folder Keyhole Line,Document,ri-folder-keyhole-line,\ed69
+Folder Line,Document,ri-folder-line,\ed6a
+Folder Lock Fill,Document,ri-folder-lock-fill,\ed6b
+Folder Lock Line,Document,ri-folder-lock-line,\ed6c
+Folder Music Fill,Document,ri-folder-music-fill,\ed6d
+Folder Music Line,Document,ri-folder-music-line,\ed6e
+Folder Open Fill,Document,ri-folder-open-fill,\ed6f
+Folder Open Line,Document,ri-folder-open-line,\ed70
+Folder Received Fill,Document,ri-folder-received-fill,\ed71
+Folder Received Line,Document,ri-folder-received-line,\ed72
+Folder Reduce Fill,Document,ri-folder-reduce-fill,\ed73
+Folder Reduce Line,Document,ri-folder-reduce-line,\ed74
+Folder Settings Fill,Document,ri-folder-settings-fill,\ed75
+Folder Settings Line,Document,ri-folder-settings-line,\ed76
+Folder Shared Fill,Document,ri-folder-shared-fill,\ed77
+Folder Shared Line,Document,ri-folder-shared-line,\ed78
+Folder Shield 2 Fill,Document,ri-folder-shield-2-fill,\ed79
+Folder Shield 2 Line,Document,ri-folder-shield-2-line,\ed7a
+Folder Shield Fill,Document,ri-folder-shield-fill,\ed7b
+Folder Shield Line,Document,ri-folder-shield-line,\ed7c
+Folder Transfer Fill,Document,ri-folder-transfer-fill,\ed7d
+Folder Transfer Line,Document,ri-folder-transfer-line,\ed7e
+Folder Unknow Fill,Document,ri-folder-unknow-fill,\ed7f
+Folder Unknow Line,Document,ri-folder-unknow-line,\ed80
+Folder Upload Fill,Document,ri-folder-upload-fill,\ed81
+Folder Upload Line,Document,ri-folder-upload-line,\ed82
+Folder User Fill,Document,ri-folder-user-fill,\ed83
+Folder User Line,Document,ri-folder-user-line,\ed84
+Folder Warning Fill,Document,ri-folder-warning-fill,\ed85
+Folder Warning Line,Document,ri-folder-warning-line,\ed86
+Folder Zip Fill,Document,ri-folder-zip-fill,\ed87
+Folder Zip Line,Document,ri-folder-zip-line,\ed88
+Folders Fill,Document,ri-folders-fill,\ed89
+Folders Line,Document,ri-folders-line,\ed8a
+Font Color,Editor,ri-font-color,\ed8b
+Font Size,Editor,ri-font-size-2,\ed8c
+Font Size 2,Editor,ri-font-size,\ed8d
+Football Fill,Others,ri-football-fill,\ed8e
+Football Line,Others,ri-football-line,\ed8f
+Footprint Fill,Map,ri-footprint-fill,\ed90
+Footprint Line,Map,ri-footprint-line,\ed91
+Forbid 2 Fill,System,ri-forbid-2-fill,\ed92
+Forbid 2 Line,System,ri-forbid-2-line,\ed93
+Forbid Fill,System,ri-forbid-fill,\ed94
+Forbid Line,System,ri-forbid-line,\ed95
+Format Clear,Editor,ri-format-clear,\ed96
+Fridge Fill,Others,ri-fridge-fill,\ed97
+Fridge Line,Others,ri-fridge-line,\ed98
+Fullscreen Exit Fill,Media,ri-fullscreen-exit-fill,\ed99
+Fullscreen Exit Line,Media,ri-fullscreen-exit-line,\ed9a
+Fullscreen Fill,Media,ri-fullscreen-fill,\ed9b
+Fullscreen Line,Media,ri-fullscreen-line,\ed9c
+Function Fill,System,ri-function-fill,\ed9d
+Function Line,System,ri-function-line,\ed9e
+Functions,Editor,ri-functions,\ed9f
+Funds Box Fill,Finance,ri-funds-box-fill,\eda0
+Funds Box Line,Finance,ri-funds-box-line,\eda1
+Funds Fill,Finance,ri-funds-fill,\eda2
+Funds Line,Finance,ri-funds-line,\eda3
+Gallery Fill,Media,ri-gallery-fill,\eda4
+Gallery Line,Media,ri-gallery-line,\eda5
+Gallery Upload Fill,Media,ri-gallery-upload-fill,\eda6
+Gallery Upload Line,Media,ri-gallery-upload-line,\eda7
+Game Fill,Others,ri-game-fill,\eda8
+Game Line,Others,ri-game-line,\eda9
+Gamepad Fill,Device,ri-gamepad-fill,\edaa
+Gamepad Line,Device,ri-gamepad-line,\edab
+Gas Station Fill,Map,ri-gas-station-fill,\edac
+Gas Station Line,Map,ri-gas-station-line,\edad
+Gatsby Fill,Logos,ri-gatsby-fill,\edae
+Gatsby Line,Logos,ri-gatsby-line,\edaf
+Genderless Fill,User,ri-genderless-fill,\edb0
+Genderless Line,User,ri-genderless-line,\edb1
+Ghost 2 Fill,User,ri-ghost-2-fill,\edb2
+Ghost 2 Line,User,ri-ghost-2-line,\edb3
+Ghost Fill,User,ri-ghost-fill,\edb4
+Ghost Line,User,ri-ghost-line,\edb5
+Ghost Smile Fill,User,ri-ghost-smile-fill,\edb6
+Ghost Smile Line,User,ri-ghost-smile-line,\edb7
+Gift 2 Fill,Finance,ri-gift-2-fill,\edb8
+Gift 2 Line,Finance,ri-gift-2-line,\edb9
+Gift Fill,Finance,ri-gift-fill,\edba
+Gift Line,Finance,ri-gift-line,\edbb
+Git Branch Fill,Development,ri-git-branch-fill,\edbc
+Git Branch Line,Development,ri-git-branch-line,\edbd
+Git Commit Fill,Development,ri-git-commit-fill,\edbe
+Git Commit Line,Development,ri-git-commit-line,\edbf
+Git Merge Fill,Development,ri-git-merge-fill,\edc0
+Git Merge Line,Development,ri-git-merge-line,\edc1
+Git Pull Request Fill,Development,ri-git-pull-request-fill,\edc2
+Git Pull Request Line,Development,ri-git-pull-request-line,\edc3
+Git Repository Commits Fill,Development,ri-git-repository-commits-fill,\edc4
+Git Repository Commits Line,Development,ri-git-repository-commits-line,\edc5
+Git Repository Fill,Development,ri-git-repository-fill,\edc6
+Git Repository Line,Development,ri-git-repository-line,\edc7
+Git Repository Private Fill,Development,ri-git-repository-private-fill,\edc8
+Git Repository Private Line,Development,ri-git-repository-private-line,\edc9
+Github Fill,Logos,ri-github-fill,\edca
+Github Line,Logos,ri-github-line,\edcb
+Gitlab Fill,Logos,ri-gitlab-fill,\edcc
+Gitlab Line,Logos,ri-gitlab-line,\edcd
+Global Fill,Business,ri-global-fill,\edce
+Global Line,Business,ri-global-line,\edcf
+Globe Fill,Map,ri-globe-fill,\edd0
+Globe Line,Map,ri-globe-line,\edd1
+Goblet Fill,Map,ri-goblet-fill,\edd2
+Goblet Line,Map,ri-goblet-line,\edd3
+Google Fill,Logos,ri-google-fill,\edd4
+Google Line,Logos,ri-google-line,\edd5
+Google Play Fill,Logos,ri-google-play-fill,\edd6
+Google Play Line,Logos,ri-google-play-line,\edd7
+Government Fill,Buildings,ri-government-fill,\edd8
+Government Line,Buildings,ri-government-line,\edd9
+Gps Fill,Device,ri-gps-fill,\edda
+Gps Line,Device,ri-gps-line,\eddb
+Gradienter Fill,Device,ri-gradienter-fill,\eddc
+Gradienter Line,Device,ri-gradienter-line,\eddd
+Grid Fill,Design,ri-grid-fill,\edde
+Grid Line,Design,ri-grid-line,\eddf
+Group 2 Fill,User,ri-group-2-fill,\ede0
+Group 2 Line,User,ri-group-2-line,\ede1
+Group Fill,User,ri-group-fill,\ede2
+Group Line,User,ri-group-line,\ede3
+Guide Fill,Map,ri-guide-fill,\ede4
+Guide Line,Map,ri-guide-line,\ede5
+H 1,Editor,ri-h-1,\ede6
+H 2,Editor,ri-h-2,\ede7
+H 3,Editor,ri-h-3,\ede8
+H 4,Editor,ri-h-4,\ede9
+H 5,Editor,ri-h-5,\edea
+H 6,Editor,ri-h-6,\edeb
+Hail Fill,Weather,ri-hail-fill,\edec
+Hail Line,Weather,ri-hail-line,\eded
+Hammer Fill,Design,ri-hammer-fill,\edee
+Hammer Line,Design,ri-hammer-line,\edef
+Hand Coin Fill,Finance,ri-hand-coin-fill,\edf0
+Hand Coin Line,Finance,ri-hand-coin-line,\edf1
+Hand Heart Fill,Finance,ri-hand-heart-fill,\edf2
+Hand Heart Line,Finance,ri-hand-heart-line,\edf3
+Hand Sanitizer Fill,Health,ri-hand-sanitizer-fill,\edf4
+Hand Sanitizer Line,Health,ri-hand-sanitizer-line,\edf5
+Handbag Fill,Others,ri-handbag-fill,\edf6
+Handbag Line,Others,ri-handbag-line,\edf7
+Hard Drive 2 Fill,Device,ri-hard-drive-2-fill,\edf8
+Hard Drive 2 Line,Device,ri-hard-drive-2-line,\edf9
+Hard Drive Fill,Device,ri-hard-drive-fill,\edfa
+Hard Drive Line,Device,ri-hard-drive-line,\edfb
+Hashtag,Editor,ri-hashtag,\edfc
+Haze 2 Fill,Weather,ri-haze-2-fill,\edfd
+Haze 2 Line,Weather,ri-haze-2-line,\edfe
+Haze Fill,Weather,ri-haze-fill,\edff
+Haze Line,Weather,ri-haze-line,\ee00
+Hd Fill,Media,ri-hd-fill,\ee01
+Hd Line,Media,ri-hd-line,\ee02
+Heading,Editor,ri-heading,\ee03
+Headphone Fill,Media,ri-headphone-fill,\ee04
+Headphone Line,Media,ri-headphone-line,\ee05
+Health Book Fill,Health,ri-health-book-fill,\ee06
+Health Book Line,Health,ri-health-book-line,\ee07
+Heart 2 Fill,Health,ri-heart-2-fill,\ee08
+Heart 2 Line,Health,ri-heart-2-line,\ee09
+Heart 3 Fill,Health,ri-heart-3-fill,\ee0a
+Heart 3 Line,Health,ri-heart-3-line,\ee0b
+Heart Add Fill,Health,ri-heart-add-fill,\ee0c
+Heart Add Line,Health,ri-heart-add-line,\ee0d
+Heart Fill,Health,ri-heart-fill,\ee0e
+Heart Line,Health,ri-heart-line,\ee0f
+Heart Pulse Fill,Health,ri-heart-pulse-fill,\ee10
+Heart Pulse Line,Health,ri-heart-pulse-line,\ee11
+Hearts Fill,Health,ri-hearts-fill,\ee12
+Hearts Line,Health,ri-hearts-line,\ee13
+Heavy Showers Fill,Weather,ri-heavy-showers-fill,\ee14
+Heavy Showers Line,Weather,ri-heavy-showers-line,\ee15
+History Fill,System,ri-history-fill,\ee16
+History Line,System,ri-history-line,\ee17
+Home 2 Fill,Buildings,ri-home-2-fill,\ee18
+Home 2 Line,Buildings,ri-home-2-line,\ee19
+Home 3 Fill,Buildings,ri-home-3-fill,\ee1a
+Home 3 Line,Buildings,ri-home-3-line,\ee1b
+Home 4 Fill,Buildings,ri-home-4-fill,\ee1c
+Home 4 Line,Buildings,ri-home-4-line,\ee1d
+Home 5 Fill,Buildings,ri-home-5-fill,\ee1e
+Home 5 Line,Buildings,ri-home-5-line,\ee1f
+Home 6 Fill,Buildings,ri-home-6-fill,\ee20
+Home 6 Line,Buildings,ri-home-6-line,\ee21
+Home 7 Fill,Buildings,ri-home-7-fill,\ee22
+Home 7 Line,Buildings,ri-home-7-line,\ee23
+Home 8 Fill,Buildings,ri-home-8-fill,\ee24
+Home 8 Line,Buildings,ri-home-8-line,\ee25
+Home Fill,Buildings,ri-home-fill,\ee26
+Home Gear Fill,Buildings,ri-home-gear-fill,\ee27
+Home Gear Line,Buildings,ri-home-gear-line,\ee28
+Home Heart Fill,Buildings,ri-home-heart-fill,\ee29
+Home Heart Line,Buildings,ri-home-heart-line,\ee2a
+Home Line,Buildings,ri-home-line,\ee2b
+Home Smile 2 Fill,Buildings,ri-home-smile-2-fill,\ee2c
+Home Smile 2 Line,Buildings,ri-home-smile-2-line,\ee2d
+Home Smile Fill,Buildings,ri-home-smile-fill,\ee2e
+Home Smile Line,Buildings,ri-home-smile-line,\ee2f
+Home Wifi Fill,Buildings,ri-home-wifi-fill,\ee30
+Home Wifi Line,Buildings,ri-home-wifi-line,\ee31
+Honor Of Kings Fill,Logos,ri-honor-of-kings-fill,\ee32
+Honor Of Kings Line,Logos,ri-honor-of-kings-line,\ee33
+Honour Fill,Business,ri-honour-fill,\ee34
+Honour Line,Business,ri-honour-line,\ee35
+Hospital Fill,Buildings,ri-hospital-fill,\ee36
+Hospital Line,Buildings,ri-hospital-line,\ee37
+Hotel Bed Fill,Map,ri-hotel-bed-fill,\ee38
+Hotel Bed Line,Map,ri-hotel-bed-line,\ee39
+Hotel Fill,Buildings,ri-hotel-fill,\ee3a
+Hotel Line,Buildings,ri-hotel-line,\ee3b
+Hotspot Fill,Device,ri-hotspot-fill,\ee3c
+Hotspot Line,Device,ri-hotspot-line,\ee3d
+Hq Fill,Media,ri-hq-fill,\ee3e
+Hq Line,Media,ri-hq-line,\ee3f
+Html5 Fill,Development,ri-html5-fill,\ee40
+Html5 Line,Development,ri-html5-line,\ee41
+Ie Fill,Logos,ri-ie-fill,\ee42
+Ie Line,Logos,ri-ie-line,\ee43
+Image 2 Fill,Media,ri-image-2-fill,\ee44
+Image 2 Line,Media,ri-image-2-line,\ee45
+Image Add Fill,Media,ri-image-add-fill,\ee46
+Image Add Line,Media,ri-image-add-line,\ee47
+Image Edit Fill,Media,ri-image-edit-fill,\ee48
+Image Edit Line,Media,ri-image-edit-line,\ee49
+Image Fill,Media,ri-image-fill,\ee4a
+Image Line,Media,ri-image-line,\ee4b
+Inbox Archive Fill,Business,ri-inbox-archive-fill,\ee4c
+Inbox Archive Line,Business,ri-inbox-archive-line,\ee4d
+Inbox Fill,Business,ri-inbox-fill,\ee4e
+Inbox Line,Business,ri-inbox-line,\ee4f
+Inbox Unarchive Fill,Business,ri-inbox-unarchive-fill,\ee50
+Inbox Unarchive Line,Business,ri-inbox-unarchive-line,\ee51
+Increase Decrease Fill,Finance,ri-increase-decrease-fill,\ee52
+Increase Decrease Line,Finance,ri-increase-decrease-line,\ee53
+Indent Decrease,Editor,ri-indent-decrease,\ee54
+Indent Increase,Editor,ri-indent-increase,\ee55
+Indeterminate Circle Fill,System,ri-indeterminate-circle-fill,\ee56
+Indeterminate Circle Line,System,ri-indeterminate-circle-line,\ee57
+Information Fill,System,ri-information-fill,\ee58
+Information Line,System,ri-information-line,\ee59
+Infrared Thermometer Fill,Health,ri-infrared-thermometer-fill,\ee5a
+Infrared Thermometer Line,Health,ri-infrared-thermometer-line,\ee5b
+Ink Bottle Fill,Design,ri-ink-bottle-fill,\ee5c
+Ink Bottle Line,Design,ri-ink-bottle-line,\ee5d
+Input Cursor Move,Editor,ri-input-cursor-move,\ee5e
+Input Method Fill,Design,ri-input-method-fill,\ee5f
+Input Method Line,Design,ri-input-method-line,\ee60
+Insert Column Left,Editor,ri-insert-column-left,\ee61
+Insert Column Right,Editor,ri-insert-column-right,\ee62
+Insert Row Bottom,Editor,ri-insert-row-bottom,\ee63
+Insert Row Top,Editor,ri-insert-row-top,\ee64
+Instagram Fill,Logos,ri-instagram-fill,\ee65
+Instagram Line,Logos,ri-instagram-line,\ee66
+Install Fill,Device,ri-install-fill,\ee67
+Install Line,Device,ri-install-line,\ee68
+Invision Fill,Logos,ri-invision-fill,\ee69
+Invision Line,Logos,ri-invision-line,\ee6a
+Italic,Editor,ri-italic,\ee6b
+Kakao Talk Fill,Logos,ri-kakao-talk-fill,\ee6c
+Kakao Talk Line,Logos,ri-kakao-talk-line,\ee6d
+Key 2 Fill,Others,ri-key-2-fill,\ee6e
+Key 2 Line,Others,ri-key-2-line,\ee6f
+Key Fill,Others,ri-key-fill,\ee70
+Key Line,Others,ri-key-line,\ee71
+Keyboard Box Fill,Device,ri-keyboard-box-fill,\ee72
+Keyboard Box Line,Device,ri-keyboard-box-line,\ee73
+Keyboard Fill,Device,ri-keyboard-fill,\ee74
+Keyboard Line,Device,ri-keyboard-line,\ee75
+Keynote Fill,Document,ri-keynote-fill,\ee76
+Keynote Line,Document,ri-keynote-line,\ee77
+Knife Blood Fill,Others,ri-knife-blood-fill,\ee78
+Knife Blood Line,Others,ri-knife-blood-line,\ee79
+Knife Fill,Others,ri-knife-fill,\ee7a
+Knife Line,Others,ri-knife-line,\ee7b
+Landscape Fill,Media,ri-landscape-fill,\ee7c
+Landscape Line,Media,ri-landscape-line,\ee7d
+Layout 2 Fill,Design,ri-layout-2-fill,\ee7e
+Layout 2 Line,Design,ri-layout-2-line,\ee7f
+Layout 3 Fill,Design,ri-layout-3-fill,\ee80
+Layout 3 Line,Design,ri-layout-3-line,\ee81
+Layout 4 Fill,Design,ri-layout-4-fill,\ee82
+Layout 4 Line,Design,ri-layout-4-line,\ee83
+Layout 5 Fill,Design,ri-layout-5-fill,\ee84
+Layout 5 Line,Design,ri-layout-5-line,\ee85
+Layout 6 Fill,Design,ri-layout-6-fill,\ee86
+Layout 6 Line,Design,ri-layout-6-line,\ee87
+Layout Bottom 2 Fill,Design,ri-layout-bottom-2-fill,\ee88
+Layout Bottom 2 Line,Design,ri-layout-bottom-2-line,\ee89
+Layout Bottom Fill,Design,ri-layout-bottom-fill,\ee8a
+Layout Bottom Line,Design,ri-layout-bottom-line,\ee8b
+Layout Column Fill,Design,ri-layout-column-fill,\ee8c
+Layout Column Line,Design,ri-layout-column-line,\ee8d
+Layout Fill,Design,ri-layout-fill,\ee8e
+Layout Grid Fill,Design,ri-layout-grid-fill,\ee8f
+Layout Grid Line,Design,ri-layout-grid-line,\ee90
+Layout Left 2 Fill,Design,ri-layout-left-2-fill,\ee91
+Layout Left 2 Line,Design,ri-layout-left-2-line,\ee92
+Layout Left Fill,Design,ri-layout-left-fill,\ee93
+Layout Left Line,Design,ri-layout-left-line,\ee94
+Layout Line,Design,ri-layout-line,\ee95
+Layout Masonry Fill,Design,ri-layout-masonry-fill,\ee96
+Layout Masonry Line,Design,ri-layout-masonry-line,\ee97
+Layout Right 2 Fill,Design,ri-layout-right-2-fill,\ee98
+Layout Right 2 Line,Design,ri-layout-right-2-line,\ee99
+Layout Right Fill,Design,ri-layout-right-fill,\ee9a
+Layout Right Line,Design,ri-layout-right-line,\ee9b
+Layout Row Fill,Design,ri-layout-row-fill,\ee9c
+Layout Row Line,Design,ri-layout-row-line,\ee9d
+Layout Top 2 Fill,Design,ri-layout-top-2-fill,\ee9e
+Layout Top 2 Line,Design,ri-layout-top-2-line,\ee9f
+Layout Top Fill,Design,ri-layout-top-fill,\eea0
+Layout Top Line,Design,ri-layout-top-line,\eea1
+Leaf Fill,Others,ri-leaf-fill,\eea2
+Leaf Line,Others,ri-leaf-line,\eea3
+Lifebuoy Fill,Map,ri-lifebuoy-fill,\eea4
+Lifebuoy Line,Map,ri-lifebuoy-line,\eea5
+Lightbulb Fill,Others,ri-lightbulb-fill,\eea6
+Lightbulb Flash Fill,Others,ri-lightbulb-flash-fill,\eea7
+Lightbulb Flash Line,Others,ri-lightbulb-flash-line,\eea8
+Lightbulb Line,Others,ri-lightbulb-line,\eea9
+Line Chart Fill,Business,ri-line-chart-fill,\eeaa
+Line Chart Line,Business,ri-line-chart-line,\eeab
+Line Fill,Logos,ri-line-fill,\eeac
+Line Height,Editor,ri-line-height,\eead
+Line Line,Logos,ri-line-line,\eeae
+Link,Editor,ri-link-m,\eeaf
+Link M,Editor,ri-link-unlink-m,\eeb0
+Link Unlink,Editor,ri-link-unlink,\eeb1
+Link Unlink M,Editor,ri-link,\eeb2
+Linkedin Box Fill,Logos,ri-linkedin-box-fill,\eeb3
+Linkedin Box Line,Logos,ri-linkedin-box-line,\eeb4
+Linkedin Fill,Logos,ri-linkedin-fill,\eeb5
+Linkedin Line,Logos,ri-linkedin-line,\eeb6
+Links Fill,Business,ri-links-fill,\eeb7
+Links Line,Business,ri-links-line,\eeb8
+List Check,Editor,ri-list-check-2,\eeb9
+List Check 2,Editor,ri-list-check,\eeba
+List Ordered,Editor,ri-list-ordered,\eebb
+List Settings Fill,System,ri-list-settings-fill,\eebc
+List Settings Line,System,ri-list-settings-line,\eebd
+List Unordered,Editor,ri-list-unordered,\eebe
+Live Fill,Media,ri-live-fill,\eebf
+Live Line,Media,ri-live-line,\eec0
+Loader 2 Fill,System,ri-loader-2-fill,\eec1
+Loader 2 Line,System,ri-loader-2-line,\eec2
+Loader 3 Fill,System,ri-loader-3-fill,\eec3
+Loader 3 Line,System,ri-loader-3-line,\eec4
+Loader 4 Fill,System,ri-loader-4-fill,\eec5
+Loader 4 Line,System,ri-loader-4-line,\eec6
+Loader 5 Fill,System,ri-loader-5-fill,\eec7
+Loader 5 Line,System,ri-loader-5-line,\eec8
+Loader Fill,System,ri-loader-fill,\eec9
+Loader Line,System,ri-loader-line,\eeca
+Lock 2 Fill,System,ri-lock-2-fill,\eecb
+Lock 2 Line,System,ri-lock-2-line,\eecc
+Lock Fill,System,ri-lock-fill,\eecd
+Lock Line,System,ri-lock-line,\eece
+Lock Password Fill,System,ri-lock-password-fill,\eecf
+Lock Password Line,System,ri-lock-password-line,\eed0
+Lock Unlock Fill,System,ri-lock-unlock-fill,\eed1
+Lock Unlock Line,System,ri-lock-unlock-line,\eed2
+Login Box Fill,System,ri-login-box-fill,\eed3
+Login Box Line,System,ri-login-box-line,\eed4
+Login Circle Fill,System,ri-login-circle-fill,\eed5
+Login Circle Line,System,ri-login-circle-line,\eed6
+Logout Box Fill,System,ri-logout-box-fill,\eed7
+Logout Box Line,System,ri-logout-box-line,\eed8
+Logout Box R Fill,System,ri-logout-box-r-fill,\eed9
+Logout Box R Line,System,ri-logout-box-r-line,\eeda
+Logout Circle Fill,System,ri-logout-circle-fill,\eedb
+Logout Circle Line,System,ri-logout-circle-line,\eedc
+Logout Circle R Fill,System,ri-logout-circle-r-fill,\eedd
+Logout Circle R Line,System,ri-logout-circle-r-line,\eede
+Luggage Cart Fill,Map,ri-luggage-cart-fill,\eedf
+Luggage Cart Line,Map,ri-luggage-cart-line,\eee0
+Luggage Deposit Fill,Map,ri-luggage-deposit-fill,\eee1
+Luggage Deposit Line,Map,ri-luggage-deposit-line,\eee2
+Lungs Fill,Health,ri-lungs-fill,\eee3
+Lungs Line,Health,ri-lungs-line,\eee4
+Mac Fill,Device,ri-mac-fill,\eee5
+Mac Line,Device,ri-mac-line,\eee6
+Macbook Fill,Device,ri-macbook-fill,\eee7
+Macbook Line,Device,ri-macbook-line,\eee8
+Magic Fill,Design,ri-magic-fill,\eee9
+Magic Line,Design,ri-magic-line,\eeea
+Mail Add Fill,Business,ri-mail-add-fill,\eeeb
+Mail Add Line,Business,ri-mail-add-line,\eeec
+Mail Check Fill,Business,ri-mail-check-fill,\eeed
+Mail Check Line,Business,ri-mail-check-line,\eeee
+Mail Close Fill,Business,ri-mail-close-fill,\eeef
+Mail Close Line,Business,ri-mail-close-line,\eef0
+Mail Download Fill,Business,ri-mail-download-fill,\eef1
+Mail Download Line,Business,ri-mail-download-line,\eef2
+Mail Fill,Business,ri-mail-fill,\eef3
+Mail Forbid Fill,Business,ri-mail-forbid-fill,\eef4
+Mail Forbid Line,Business,ri-mail-forbid-line,\eef5
+Mail Line,Business,ri-mail-line,\eef6
+Mail Lock Fill,Business,ri-mail-lock-fill,\eef7
+Mail Lock Line,Business,ri-mail-lock-line,\eef8
+Mail Open Fill,Business,ri-mail-open-fill,\eef9
+Mail Open Line,Business,ri-mail-open-line,\eefa
+Mail Send Fill,Business,ri-mail-send-fill,\eefb
+Mail Send Line,Business,ri-mail-send-line,\eefc
+Mail Settings Fill,Business,ri-mail-settings-fill,\eefd
+Mail Settings Line,Business,ri-mail-settings-line,\eefe
+Mail Star Fill,Business,ri-mail-star-fill,\eeff
+Mail Star Line,Business,ri-mail-star-line,\ef00
+Mail Unread Fill,Business,ri-mail-unread-fill,\ef01
+Mail Unread Line,Business,ri-mail-unread-line,\ef02
+Mail Volume Fill,Business,ri-mail-volume-fill,\ef03
+Mail Volume Line,Business,ri-mail-volume-line,\ef04
+Map 2 Fill,Map,ri-map-2-fill,\ef05
+Map 2 Line,Map,ri-map-2-line,\ef06
+Map Fill,Map,ri-map-fill,\ef07
+Map Line,Map,ri-map-line,\ef08
+Map Pin 2 Fill,Map,ri-map-pin-2-fill,\ef09
+Map Pin 2 Line,Map,ri-map-pin-2-line,\ef0a
+Map Pin 3 Fill,Map,ri-map-pin-3-fill,\ef0b
+Map Pin 3 Line,Map,ri-map-pin-3-line,\ef0c
+Map Pin 4 Fill,Map,ri-map-pin-4-fill,\ef0d
+Map Pin 4 Line,Map,ri-map-pin-4-line,\ef0e
+Map Pin 5 Fill,Map,ri-map-pin-5-fill,\ef0f
+Map Pin 5 Line,Map,ri-map-pin-5-line,\ef10
+Map Pin Add Fill,Map,ri-map-pin-add-fill,\ef11
+Map Pin Add Line,Map,ri-map-pin-add-line,\ef12
+Map Pin Fill,Map,ri-map-pin-fill,\ef13
+Map Pin Line,Map,ri-map-pin-line,\ef14
+Map Pin Range Fill,Map,ri-map-pin-range-fill,\ef15
+Map Pin Range Line,Map,ri-map-pin-range-line,\ef16
+Map Pin Time Fill,Map,ri-map-pin-time-fill,\ef17
+Map Pin Time Line,Map,ri-map-pin-time-line,\ef18
+Map Pin User Fill,Map,ri-map-pin-user-fill,\ef19
+Map Pin User Line,Map,ri-map-pin-user-line,\ef1a
+Mark Pen Fill,Design,ri-mark-pen-fill,\ef1b
+Mark Pen Line,Design,ri-mark-pen-line,\ef1c
+Markdown Fill,Document,ri-markdown-fill,\ef1d
+Markdown Line,Document,ri-markdown-line,\ef1e
+Markup Fill,Design,ri-markup-fill,\ef1f
+Markup Line,Design,ri-markup-line,\ef20
+Mastercard Fill,Logos,ri-mastercard-fill,\ef21
+Mastercard Line,Logos,ri-mastercard-line,\ef22
+Mastodon Fill,Logos,ri-mastodon-fill,\ef23
+Mastodon Line,Logos,ri-mastodon-line,\ef24
+Medal 2 Fill,Business,ri-medal-2-fill,\ef25
+Medal 2 Line,Business,ri-medal-2-line,\ef26
+Medal Fill,Business,ri-medal-fill,\ef27
+Medal Line,Business,ri-medal-line,\ef28
+Medicine Bottle Fill,Health,ri-medicine-bottle-fill,\ef29
+Medicine Bottle Line,Health,ri-medicine-bottle-line,\ef2a
+Medium Fill,Logos,ri-medium-fill,\ef2b
+Medium Line,Logos,ri-medium-line,\ef2c
+Men Fill,User,ri-men-fill,\ef2d
+Men Line,User,ri-men-line,\ef2e
+Mental Health Fill,Health,ri-mental-health-fill,\ef2f
+Mental Health Line,Health,ri-mental-health-line,\ef30
+Menu 2 Fill,System,ri-menu-2-fill,\ef31
+Menu 2 Line,System,ri-menu-2-line,\ef32
+Menu 3 Fill,System,ri-menu-3-fill,\ef33
+Menu 3 Line,System,ri-menu-3-line,\ef34
+Menu 4 Fill,System,ri-menu-4-fill,\ef35
+Menu 4 Line,System,ri-menu-4-line,\ef36
+Menu 5 Fill,System,ri-menu-5-fill,\ef37
+Menu 5 Line,System,ri-menu-5-line,\ef38
+Menu Add Fill,System,ri-menu-add-fill,\ef39
+Menu Add Line,System,ri-menu-add-line,\ef3a
+Menu Fill,System,ri-menu-fill,\ef3b
+Menu Fold Fill,System,ri-menu-fold-fill,\ef3c
+Menu Fold Line,System,ri-menu-fold-line,\ef3d
+Menu Line,System,ri-menu-line,\ef3e
+Menu Unfold Fill,System,ri-menu-unfold-fill,\ef3f
+Menu Unfold Line,System,ri-menu-unfold-line,\ef40
+Merge Cells Horizontal,Editor,ri-merge-cells-horizontal,\ef41
+Merge Cells Vertical,Editor,ri-merge-cells-vertical,\ef42
+Message 2 Fill,Communication,ri-message-2-fill,\ef43
+Message 2 Line,Communication,ri-message-2-line,\ef44
+Message 3 Fill,Communication,ri-message-3-fill,\ef45
+Message 3 Line,Communication,ri-message-3-line,\ef46
+Message Fill,Communication,ri-message-fill,\ef47
+Message Line,Communication,ri-message-line,\ef48
+Messenger Fill,Logos,ri-messenger-fill,\ef49
+Messenger Line,Logos,ri-messenger-line,\ef4a
+Meteor Fill,Weather,ri-meteor-fill,\ef4b
+Meteor Line,Weather,ri-meteor-line,\ef4c
+Mic 2 Fill,Media,ri-mic-2-fill,\ef4d
+Mic 2 Line,Media,ri-mic-2-line,\ef4e
+Mic Fill,Media,ri-mic-fill,\ef4f
+Mic Line,Media,ri-mic-line,\ef50
+Mic Off Fill,Media,ri-mic-off-fill,\ef51
+Mic Off Line,Media,ri-mic-off-line,\ef52
+Mickey Fill,User,ri-mickey-fill,\ef53
+Mickey Line,User,ri-mickey-line,\ef54
+Microscope Fill,Health,ri-microscope-fill,\ef55
+Microscope Line,Health,ri-microscope-line,\ef56
+Microsoft Fill,Logos,ri-microsoft-fill,\ef57
+Microsoft Line,Logos,ri-microsoft-line,\ef58
+Mind Map,Editor,ri-mind-map,\ef59
+Mini Program Fill,Logos,ri-mini-program-fill,\ef5a
+Mini Program Line,Logos,ri-mini-program-line,\ef5b
+Mist Fill,Weather,ri-mist-fill,\ef5c
+Mist Line,Weather,ri-mist-line,\ef5d
+Money Cny Box Fill,Finance,ri-money-cny-box-fill,\ef5e
+Money Cny Box Line,Finance,ri-money-cny-box-line,\ef5f
+Money Cny Circle Fill,Finance,ri-money-cny-circle-fill,\ef60
+Money Cny Circle Line,Finance,ri-money-cny-circle-line,\ef61
+Money Dollar Box Fill,Finance,ri-money-dollar-box-fill,\ef62
+Money Dollar Box Line,Finance,ri-money-dollar-box-line,\ef63
+Money Dollar Circle Fill,Finance,ri-money-dollar-circle-fill,\ef64
+Money Dollar Circle Line,Finance,ri-money-dollar-circle-line,\ef65
+Money Euro Box Fill,Finance,ri-money-euro-box-fill,\ef66
+Money Euro Box Line,Finance,ri-money-euro-box-line,\ef67
+Money Euro Circle Fill,Finance,ri-money-euro-circle-fill,\ef68
+Money Euro Circle Line,Finance,ri-money-euro-circle-line,\ef69
+Money Pound Box Fill,Finance,ri-money-pound-box-fill,\ef6a
+Money Pound Box Line,Finance,ri-money-pound-box-line,\ef6b
+Money Pound Circle Fill,Finance,ri-money-pound-circle-fill,\ef6c
+Money Pound Circle Line,Finance,ri-money-pound-circle-line,\ef6d
+Moon Clear Fill,Weather,ri-moon-clear-fill,\ef6e
+Moon Clear Line,Weather,ri-moon-clear-line,\ef6f
+Moon Cloudy Fill,Weather,ri-moon-cloudy-fill,\ef70
+Moon Cloudy Line,Weather,ri-moon-cloudy-line,\ef71
+Moon Fill,Weather,ri-moon-fill,\ef72
+Moon Foggy Fill,Weather,ri-moon-foggy-fill,\ef73
+Moon Foggy Line,Weather,ri-moon-foggy-line,\ef74
+Moon Line,Weather,ri-moon-line,\ef75
+More 2 Fill,System,ri-more-2-fill,\ef76
+More 2 Line,System,ri-more-2-line,\ef77
+More Fill,System,ri-more-fill,\ef78
+More Line,System,ri-more-line,\ef79
+Motorbike Fill,Map,ri-motorbike-fill,\ef7a
+Motorbike Line,Map,ri-motorbike-line,\ef7b
+Mouse Fill,Device,ri-mouse-fill,\ef7c
+Mouse Line,Device,ri-mouse-line,\ef7d
+Movie 2 Fill,Media,ri-movie-2-fill,\ef7e
+Movie 2 Line,Media,ri-movie-2-line,\ef7f
+Movie Fill,Media,ri-movie-fill,\ef80
+Movie Line,Media,ri-movie-line,\ef81
+Music 2 Fill,Media,ri-music-2-fill,\ef82
+Music 2 Line,Media,ri-music-2-line,\ef83
+Music Fill,Media,ri-music-fill,\ef84
+Music Line,Media,ri-music-line,\ef85
+Mv Fill,Media,ri-mv-fill,\ef86
+Mv Line,Media,ri-mv-line,\ef87
+Navigation Fill,Map,ri-navigation-fill,\ef88
+Navigation Line,Map,ri-navigation-line,\ef89
+Netease Cloud Music Fill,Logos,ri-netease-cloud-music-fill,\ef8a
+Netease Cloud Music Line,Logos,ri-netease-cloud-music-line,\ef8b
+Netflix Fill,Logos,ri-netflix-fill,\ef8c
+Netflix Line,Logos,ri-netflix-line,\ef8d
+Newspaper Fill,Document,ri-newspaper-fill,\ef8e
+Newspaper Line,Document,ri-newspaper-line,\ef8f
+Node Tree,Editor,ri-node-tree,\ef90
+Notification 2 Fill,Media,ri-notification-2-fill,\ef91
+Notification 2 Line,Media,ri-notification-2-line,\ef92
+Notification 3 Fill,Media,ri-notification-3-fill,\ef93
+Notification 3 Line,Media,ri-notification-3-line,\ef94
+Notification 4 Fill,Media,ri-notification-4-fill,\ef95
+Notification 4 Line,Media,ri-notification-4-line,\ef96
+Notification Badge Fill,System,ri-notification-badge-fill,\ef97
+Notification Badge Line,System,ri-notification-badge-line,\ef98
+Notification Fill,Media,ri-notification-fill,\ef99
+Notification Line,Media,ri-notification-line,\ef9a
+Notification Off Fill,Media,ri-notification-off-fill,\ef9b
+Notification Off Line,Media,ri-notification-off-line,\ef9c
+Npmjs Fill,Logos,ri-npmjs-fill,\ef9d
+Npmjs Line,Logos,ri-npmjs-line,\ef9e
+Number 0,Editor,ri-number-0,\ef9f
+Number 1,Editor,ri-number-1,\efa0
+Number 2,Editor,ri-number-2,\efa1
+Number 3,Editor,ri-number-3,\efa2
+Number 4,Editor,ri-number-4,\efa3
+Number 5,Editor,ri-number-5,\efa4
+Number 6,Editor,ri-number-6,\efa5
+Number 7,Editor,ri-number-7,\efa6
+Number 8,Editor,ri-number-8,\efa7
+Number 9,Editor,ri-number-9,\efa8
+Numbers Fill,Document,ri-numbers-fill,\efa9
+Numbers Line,Document,ri-numbers-line,\efaa
+Nurse Fill,Health,ri-nurse-fill,\efab
+Nurse Line,Health,ri-nurse-line,\efac
+Oil Fill,Map,ri-oil-fill,\efad
+Oil Line,Map,ri-oil-line,\efae
+Omega,Editor,ri-omega,\efaf
+Open Arm Fill,User,ri-open-arm-fill,\efb0
+Open Arm Line,User,ri-open-arm-line,\efb1
+Open Source Fill,Logos,ri-open-source-fill,\efb2
+Open Source Line,Logos,ri-open-source-line,\efb3
+Opera Fill,Logos,ri-opera-fill,\efb4
+Opera Line,Logos,ri-opera-line,\efb5
+Order Play Fill,Media,ri-order-play-fill,\efb6
+Order Play Line,Media,ri-order-play-line,\efb7
+Organization Chart,Editor,ri-organization-chart,\efb8
+Outlet 2 Fill,Others,ri-outlet-2-fill,\efb9
+Outlet 2 Line,Others,ri-outlet-2-line,\efba
+Outlet Fill,Others,ri-outlet-fill,\efbb
+Outlet Line,Others,ri-outlet-line,\efbc
+Page Separator,Editor,ri-page-separator,\efbd
+Pages Fill,Document,ri-pages-fill,\efbe
+Pages Line,Document,ri-pages-line,\efbf
+Paint Brush Fill,Design,ri-paint-brush-fill,\efc0
+Paint Brush Line,Design,ri-paint-brush-line,\efc1
+Paint Fill,Design,ri-paint-fill,\efc2
+Paint Line,Design,ri-paint-line,\efc3
+Palette Fill,Design,ri-palette-fill,\efc4
+Palette Line,Design,ri-palette-line,\efc5
+Pantone Fill,Design,ri-pantone-fill,\efc6
+Pantone Line,Design,ri-pantone-line,\efc7
+Paragraph,Editor,ri-paragraph,\efc8
+Parent Fill,User,ri-parent-fill,\efc9
+Parent Line,User,ri-parent-line,\efca
+Parentheses Fill,Development,ri-parentheses-fill,\efcb
+Parentheses Line,Development,ri-parentheses-line,\efcc
+Parking Box Fill,Map,ri-parking-box-fill,\efcd
+Parking Box Line,Map,ri-parking-box-line,\efce
+Parking Fill,Map,ri-parking-fill,\efcf
+Parking Line,Map,ri-parking-line,\efd0
+Passport Fill,Map,ri-passport-fill,\efd1
+Passport Line,Map,ri-passport-line,\efd2
+Patreon Fill,Logos,ri-patreon-fill,\efd3
+Patreon Line,Logos,ri-patreon-line,\efd4
+Pause Circle Fill,Media,ri-pause-circle-fill,\efd5
+Pause Circle Line,Media,ri-pause-circle-line,\efd6
+Pause Fill,Media,ri-pause-fill,\efd7
+Pause Line,Media,ri-pause-line,\efd8
+Pause Mini Fill,Media,ri-pause-mini-fill,\efd9
+Pause Mini Line,Media,ri-pause-mini-line,\efda
+Paypal Fill,Logos,ri-paypal-fill,\efdb
+Paypal Line,Logos,ri-paypal-line,\efdc
+Pen Nib Fill,Design,ri-pen-nib-fill,\efdd
+Pen Nib Line,Design,ri-pen-nib-line,\efde
+Pencil Fill,Design,ri-pencil-fill,\efdf
+Pencil Line,Design,ri-pencil-line,\efe0
+Pencil Ruler 2 Fill,Design,ri-pencil-ruler-2-fill,\efe1
+Pencil Ruler 2 Line,Design,ri-pencil-ruler-2-line,\efe2
+Pencil Ruler Fill,Design,ri-pencil-ruler-fill,\efe3
+Pencil Ruler Line,Design,ri-pencil-ruler-line,\efe4
+Percent Fill,Finance,ri-percent-fill,\efe5
+Percent Line,Finance,ri-percent-line,\efe6
+Phone Camera Fill,Media,ri-phone-camera-fill,\efe7
+Phone Camera Line,Media,ri-phone-camera-line,\efe8
+Phone Fill,Device,ri-phone-fill,\efe9
+Phone Find Fill,Device,ri-phone-find-fill,\efea
+Phone Find Line,Device,ri-phone-find-line,\efeb
+Phone Line,Device,ri-phone-line,\efec
+Phone Lock Fill,Device,ri-phone-lock-fill,\efed
+Phone Lock Line,Device,ri-phone-lock-line,\efee
+Picture In Picture 2 Fill,Media,ri-picture-in-picture-2-fill,\efef
+Picture In Picture 2 Line,Media,ri-picture-in-picture-2-line,\eff0
+Picture In Picture Exit Fill,Media,ri-picture-in-picture-exit-fill,\eff1
+Picture In Picture Exit Line,Media,ri-picture-in-picture-exit-line,\eff2
+Picture In Picture Fill,Media,ri-picture-in-picture-fill,\eff3
+Picture In Picture Line,Media,ri-picture-in-picture-line,\eff4
+Pie Chart 2 Fill,Business,ri-pie-chart-2-fill,\eff5
+Pie Chart 2 Line,Business,ri-pie-chart-2-line,\eff6
+Pie Chart Box Fill,Business,ri-pie-chart-box-fill,\eff7
+Pie Chart Box Line,Business,ri-pie-chart-box-line,\eff8
+Pie Chart Fill,Business,ri-pie-chart-fill,\eff9
+Pie Chart Line,Business,ri-pie-chart-line,\effa
+Pin Distance Fill,Map,ri-pin-distance-fill,\effb
+Pin Distance Line,Map,ri-pin-distance-line,\effc
+Ping Pong Fill,Others,ri-ping-pong-fill,\effd
+Ping Pong Line,Others,ri-ping-pong-line,\effe
+Pinterest Fill,Logos,ri-pinterest-fill,\efff
+Pinterest Line,Logos,ri-pinterest-line,\f000
+Pinyin Input,Editor,ri-pinyin-input,\f001
+Pixelfed Fill,Logos,ri-pixelfed-fill,\f002
+Pixelfed Line,Logos,ri-pixelfed-line,\f003
+Plane Fill,Map,ri-plane-fill,\f004
+Plane Line,Map,ri-plane-line,\f005
+Plant Fill,Others,ri-plant-fill,\f006
+Plant Line,Others,ri-plant-line,\f007
+Play Circle Fill,Media,ri-play-circle-fill,\f008
+Play Circle Line,Media,ri-play-circle-line,\f009
+Play Fill,Media,ri-play-fill,\f00a
+Play Line,Media,ri-play-line,\f00b
+Play List 2 Fill,Media,ri-play-list-2-fill,\f00c
+Play List 2 Line,Media,ri-play-list-2-line,\f00d
+Play List Add Fill,Media,ri-play-list-add-fill,\f00e
+Play List Add Line,Media,ri-play-list-add-line,\f00f
+Play List Fill,Media,ri-play-list-fill,\f010
+Play List Line,Media,ri-play-list-line,\f011
+Play Mini Fill,Media,ri-play-mini-fill,\f012
+Play Mini Line,Media,ri-play-mini-line,\f013
+Playstation Fill,Logos,ri-playstation-fill,\f014
+Playstation Line,Logos,ri-playstation-line,\f015
+Plug 2 Fill,Others,ri-plug-2-fill,\f016
+Plug 2 Line,Others,ri-plug-2-line,\f017
+Plug Fill,Others,ri-plug-fill,\f018
+Plug Line,Others,ri-plug-line,\f019
+Polaroid 2 Fill,Media,ri-polaroid-2-fill,\f01a
+Polaroid 2 Line,Media,ri-polaroid-2-line,\f01b
+Polaroid Fill,Media,ri-polaroid-fill,\f01c
+Polaroid Line,Media,ri-polaroid-line,\f01d
+Police Car Fill,Map,ri-police-car-fill,\f01e
+Police Car Line,Map,ri-police-car-line,\f01f
+Price Tag 2 Fill,Finance,ri-price-tag-2-fill,\f020
+Price Tag 2 Line,Finance,ri-price-tag-2-line,\f021
+Price Tag 3 Fill,Finance,ri-price-tag-3-fill,\f022
+Price Tag 3 Line,Finance,ri-price-tag-3-line,\f023
+Price Tag Fill,Finance,ri-price-tag-fill,\f024
+Price Tag Line,Finance,ri-price-tag-line,\f025
+Printer Cloud Fill,Business,ri-printer-cloud-fill,\f026
+Printer Cloud Line,Business,ri-printer-cloud-line,\f027
+Printer Fill,Business,ri-printer-fill,\f028
+Printer Line,Business,ri-printer-line,\f029
+Product Hunt Fill,Logos,ri-product-hunt-fill,\f02a
+Product Hunt Line,Logos,ri-product-hunt-line,\f02b
+Profile Fill,Business,ri-profile-fill,\f02c
+Profile Line,Business,ri-profile-line,\f02d
+Projector 2 Fill,Business,ri-projector-2-fill,\f02e
+Projector 2 Line,Business,ri-projector-2-line,\f02f
+Projector Fill,Business,ri-projector-fill,\f030
+Projector Line,Business,ri-projector-line,\f031
+Psychotherapy Fill,Health,ri-psychotherapy-fill,\f032
+Psychotherapy Line,Health,ri-psychotherapy-line,\f033
+Pulse Fill,Health,ri-pulse-fill,\f034
+Pulse Line,Health,ri-pulse-line,\f035
+Pushpin 2 Fill,Map,ri-pushpin-2-fill,\f036
+Pushpin 2 Line,Map,ri-pushpin-2-line,\f037
+Pushpin Fill,Map,ri-pushpin-fill,\f038
+Pushpin Line,Map,ri-pushpin-line,\f039
+Qq Fill,Logos,ri-qq-fill,\f03a
+Qq Line,Logos,ri-qq-line,\f03b
+Qr Code Fill,Device,ri-qr-code-fill,\f03c
+Qr Code Line,Device,ri-qr-code-line,\f03d
+Qr Scan 2 Fill,Device,ri-qr-scan-2-fill,\f03e
+Qr Scan 2 Line,Device,ri-qr-scan-2-line,\f03f
+Qr Scan Fill,Device,ri-qr-scan-fill,\f040
+Qr Scan Line,Device,ri-qr-scan-line,\f041
+Question Answer Fill,Communication,ri-question-answer-fill,\f042
+Question Answer Line,Communication,ri-question-answer-line,\f043
+Question Fill,System,ri-question-fill,\f044
+Question Line,System,ri-question-line,\f045
+Question Mark,Editor,ri-question-mark,\f046
+Questionnaire Fill,Communication,ri-questionnaire-fill,\f047
+Questionnaire Line,Communication,ri-questionnaire-line,\f048
+Quill Pen Fill,Design,ri-quill-pen-fill,\f049
+Quill Pen Line,Design,ri-quill-pen-line,\f04a
+Radar Fill,Device,ri-radar-fill,\f04b
+Radar Line,Device,ri-radar-line,\f04c
+Radio 2 Fill,Media,ri-radio-2-fill,\f04d
+Radio 2 Line,Media,ri-radio-2-line,\f04e
+Radio Button Fill,System,ri-radio-button-fill,\f04f
+Radio Button Line,System,ri-radio-button-line,\f050
+Radio Fill,Media,ri-radio-fill,\f051
+Radio Line,Media,ri-radio-line,\f052
+Rainbow Fill,Weather,ri-rainbow-fill,\f053
+Rainbow Line,Weather,ri-rainbow-line,\f054
+Rainy Fill,Weather,ri-rainy-fill,\f055
+Rainy Line,Weather,ri-rainy-line,\f056
+Reactjs Fill,Logos,ri-reactjs-fill,\f057
+Reactjs Line,Logos,ri-reactjs-line,\f058
+Record Circle Fill,Media,ri-record-circle-fill,\f059
+Record Circle Line,Media,ri-record-circle-line,\f05a
+Record Mail Fill,Business,ri-record-mail-fill,\f05b
+Record Mail Line,Business,ri-record-mail-line,\f05c
+Recycle Fill,Others,ri-recycle-fill,\f05d
+Recycle Line,Others,ri-recycle-line,\f05e
+Red Packet Fill,Finance,ri-red-packet-fill,\f05f
+Red Packet Line,Finance,ri-red-packet-line,\f060
+Reddit Fill,Logos,ri-reddit-fill,\f061
+Reddit Line,Logos,ri-reddit-line,\f062
+Refresh Fill,System,ri-refresh-fill,\f063
+Refresh Line,System,ri-refresh-line,\f064
+Refund 2 Fill,Finance,ri-refund-2-fill,\f065
+Refund 2 Line,Finance,ri-refund-2-line,\f066
+Refund Fill,Finance,ri-refund-fill,\f067
+Refund Line,Finance,ri-refund-line,\f068
+Registered Fill,Business,ri-registered-fill,\f069
+Registered Line,Business,ri-registered-line,\f06a
+Remixicon Fill,Logos,ri-remixicon-fill,\f06b
+Remixicon Line,Logos,ri-remixicon-line,\f06c
+Remote Control 2 Fill,Device,ri-remote-control-2-fill,\f06d
+Remote Control 2 Line,Device,ri-remote-control-2-line,\f06e
+Remote Control Fill,Device,ri-remote-control-fill,\f06f
+Remote Control Line,Device,ri-remote-control-line,\f070
+Repeat 2 Fill,Media,ri-repeat-2-fill,\f071
+Repeat 2 Line,Media,ri-repeat-2-line,\f072
+Repeat Fill,Media,ri-repeat-fill,\f073
+Repeat Line,Media,ri-repeat-line,\f074
+Repeat One Fill,Media,ri-repeat-one-fill,\f075
+Repeat One Line,Media,ri-repeat-one-line,\f076
+Reply All Fill,Business,ri-reply-all-fill,\f077
+Reply All Line,Business,ri-reply-all-line,\f078
+Reply Fill,Business,ri-reply-fill,\f079
+Reply Line,Business,ri-reply-line,\f07a
+Reserved Fill,Others,ri-reserved-fill,\f07b
+Reserved Line,Others,ri-reserved-line,\f07c
+Rest Time Fill,Health,ri-rest-time-fill,\f07d
+Rest Time Line,Health,ri-rest-time-line,\f07e
+Restart Fill,Device,ri-restart-fill,\f07f
+Restart Line,Device,ri-restart-line,\f080
+Restaurant 2 Fill,Map,ri-restaurant-2-fill,\f081
+Restaurant 2 Line,Map,ri-restaurant-2-line,\f082
+Restaurant Fill,Map,ri-restaurant-fill,\f083
+Restaurant Line,Map,ri-restaurant-line,\f084
+Rewind Fill,Media,ri-rewind-fill,\f085
+Rewind Line,Media,ri-rewind-line,\f086
+Rewind Mini Fill,Media,ri-rewind-mini-fill,\f087
+Rewind Mini Line,Media,ri-rewind-mini-line,\f088
+Rhythm Fill,Media,ri-rhythm-fill,\f089
+Rhythm Line,Media,ri-rhythm-line,\f08a
+Riding Fill,Map,ri-riding-fill,\f08b
+Riding Line,Map,ri-riding-line,\f08c
+Road Map Fill,Map,ri-road-map-fill,\f08d
+Road Map Line,Map,ri-road-map-line,\f08e
+Roadster Fill,Map,ri-roadster-fill,\f08f
+Roadster Line,Map,ri-roadster-line,\f090
+Robot Fill,User,ri-robot-fill,\f091
+Robot Line,User,ri-robot-line,\f092
+Rocket 2 Fill,Map,ri-rocket-2-fill,\f093
+Rocket 2 Line,Map,ri-rocket-2-line,\f094
+Rocket Fill,Map,ri-rocket-fill,\f095
+Rocket Line,Map,ri-rocket-line,\f096
+Rotate Lock Fill,Device,ri-rotate-lock-fill,\f097
+Rotate Lock Line,Device,ri-rotate-lock-line,\f098
+Rounded Corner,Editor,ri-rounded-corner,\f099
+Route Fill,Map,ri-route-fill,\f09a
+Route Line,Map,ri-route-line,\f09b
+Router Fill,Device,ri-router-fill,\f09c
+Router Line,Device,ri-router-line,\f09d
+Rss Fill,Device,ri-rss-fill,\f09e
+Rss Line,Device,ri-rss-line,\f09f
+Ruler 2 Fill,Design,ri-ruler-2-fill,\f0a0
+Ruler 2 Line,Design,ri-ruler-2-line,\f0a1
+Ruler Fill,Design,ri-ruler-fill,\f0a2
+Ruler Line,Design,ri-ruler-line,\f0a3
+Run Fill,Map,ri-run-fill,\f0a4
+Run Line,Map,ri-run-line,\f0a5
+Safari Fill,Logos,ri-safari-fill,\f0a6
+Safari Line,Logos,ri-safari-line,\f0a7
+Safe 2 Fill,Finance,ri-safe-2-fill,\f0a8
+Safe 2 Line,Finance,ri-safe-2-line,\f0a9
+Safe Fill,Finance,ri-safe-fill,\f0aa
+Safe Line,Finance,ri-safe-line,\f0ab
+Sailboat Fill,Map,ri-sailboat-fill,\f0ac
+Sailboat Line,Map,ri-sailboat-line,\f0ad
+Save 2 Fill,Device,ri-save-2-fill,\f0ae
+Save 2 Line,Device,ri-save-2-line,\f0af
+Save 3 Fill,Device,ri-save-3-fill,\f0b0
+Save 3 Line,Device,ri-save-3-line,\f0b1
+Save Fill,Device,ri-save-fill,\f0b2
+Save Line,Device,ri-save-line,\f0b3
+Scales 2 Fill,Others,ri-scales-2-fill,\f0b4
+Scales 2 Line,Others,ri-scales-2-line,\f0b5
+Scales 3 Fill,Others,ri-scales-3-fill,\f0b6
+Scales 3 Line,Others,ri-scales-3-line,\f0b7
+Scales Fill,Others,ri-scales-fill,\f0b8
+Scales Line,Others,ri-scales-line,\f0b9
+Scan 2 Fill,Device,ri-scan-2-fill,\f0ba
+Scan 2 Line,Device,ri-scan-2-line,\f0bb
+Scan Fill,Device,ri-scan-fill,\f0bc
+Scan Line,Device,ri-scan-line,\f0bd
+Scissors 2 Fill,Design,ri-scissors-2-fill,\f0be
+Scissors 2 Line,Design,ri-scissors-2-line,\f0bf
+Scissors Cut Fill,Design,ri-scissors-cut-fill,\f0c0
+Scissors Cut Line,Design,ri-scissors-cut-line,\f0c1
+Scissors Fill,Design,ri-scissors-fill,\f0c2
+Scissors Line,Design,ri-scissors-line,\f0c3
+Screenshot 2 Fill,Design,ri-screenshot-2-fill,\f0c4
+Screenshot 2 Line,Design,ri-screenshot-2-line,\f0c5
+Screenshot Fill,Design,ri-screenshot-fill,\f0c6
+Screenshot Line,Design,ri-screenshot-line,\f0c7
+Sd Card Fill,Device,ri-sd-card-fill,\f0c8
+Sd Card Line,Device,ri-sd-card-line,\f0c9
+Sd Card Mini Fill,Device,ri-sd-card-mini-fill,\f0ca
+Sd Card Mini Line,Device,ri-sd-card-mini-line,\f0cb
+Search 2 Fill,System,ri-search-2-fill,\f0cc
+Search 2 Line,System,ri-search-2-line,\f0cd
+Search Eye Fill,System,ri-search-eye-fill,\f0ce
+Search Eye Line,System,ri-search-eye-line,\f0cf
+Search Fill,System,ri-search-fill,\f0d0
+Search Line,System,ri-search-line,\f0d1
+Secure Payment Fill,Finance,ri-secure-payment-fill,\f0d2
+Secure Payment Line,Finance,ri-secure-payment-line,\f0d3
+Seedling Fill,Others,ri-seedling-fill,\f0d4
+Seedling Line,Others,ri-seedling-line,\f0d5
+Send Backward,Editor,ri-send-backward,\f0d6
+Send Plane 2 Fill,Business,ri-send-plane-2-fill,\f0d7
+Send Plane 2 Line,Business,ri-send-plane-2-line,\f0d8
+Send Plane Fill,Business,ri-send-plane-fill,\f0d9
+Send Plane Line,Business,ri-send-plane-line,\f0da
+Send To Back,Editor,ri-send-to-back,\f0db
+Sensor Fill,Device,ri-sensor-fill,\f0dc
+Sensor Line,Device,ri-sensor-line,\f0dd
+Separator,Editor,ri-separator,\f0de
+Server Fill,Device,ri-server-fill,\f0df
+Server Line,Device,ri-server-line,\f0e0
+Service Fill,Business,ri-service-fill,\f0e1
+Service Line,Business,ri-service-line,\f0e2
+Settings 2 Fill,System,ri-settings-2-fill,\f0e3
+Settings 2 Line,System,ri-settings-2-line,\f0e4
+Settings 3 Fill,System,ri-settings-3-fill,\f0e5
+Settings 3 Line,System,ri-settings-3-line,\f0e6
+Settings 4 Fill,System,ri-settings-4-fill,\f0e7
+Settings 4 Line,System,ri-settings-4-line,\f0e8
+Settings 5 Fill,System,ri-settings-5-fill,\f0e9
+Settings 5 Line,System,ri-settings-5-line,\f0ea
+Settings 6 Fill,System,ri-settings-6-fill,\f0eb
+Settings 6 Line,System,ri-settings-6-line,\f0ec
+Settings Fill,System,ri-settings-fill,\f0ed
+Settings Line,System,ri-settings-line,\f0ee
+Shape 2 Fill,Design,ri-shape-2-fill,\f0ef
+Shape 2 Line,Design,ri-shape-2-line,\f0f0
+Shape Fill,Design,ri-shape-fill,\f0f1
+Shape Line,Design,ri-shape-line,\f0f2
+Share Box Fill,System,ri-share-box-fill,\f0f3
+Share Box Line,System,ri-share-box-line,\f0f4
+Share Circle Fill,System,ri-share-circle-fill,\f0f5
+Share Circle Line,System,ri-share-circle-line,\f0f6
+Share Fill,System,ri-share-fill,\f0f7
+Share Forward 2 Fill,System,ri-share-forward-2-fill,\f0f8
+Share Forward 2 Line,System,ri-share-forward-2-line,\f0f9
+Share Forward Box Fill,System,ri-share-forward-box-fill,\f0fa
+Share Forward Box Line,System,ri-share-forward-box-line,\f0fb
+Share Forward Fill,System,ri-share-forward-fill,\f0fc
+Share Forward Line,System,ri-share-forward-line,\f0fd
+Share Line,System,ri-share-line,\f0fe
+Shield Check Fill,System,ri-shield-check-fill,\f0ff
+Shield Check Line,System,ri-shield-check-line,\f100
+Shield Cross Fill,System,ri-shield-cross-fill,\f101
+Shield Cross Line,System,ri-shield-cross-line,\f102
+Shield Fill,System,ri-shield-fill,\f103
+Shield Flash Fill,System,ri-shield-flash-fill,\f104
+Shield Flash Line,System,ri-shield-flash-line,\f105
+Shield Keyhole Fill,System,ri-shield-keyhole-fill,\f106
+Shield Keyhole Line,System,ri-shield-keyhole-line,\f107
+Shield Line,System,ri-shield-line,\f108
+Shield Star Fill,System,ri-shield-star-fill,\f109
+Shield Star Line,System,ri-shield-star-line,\f10a
+Shield User Fill,System,ri-shield-user-fill,\f10b
+Shield User Line,System,ri-shield-user-line,\f10c
+Ship 2 Fill,Map,ri-ship-2-fill,\f10d
+Ship 2 Line,Map,ri-ship-2-line,\f10e
+Ship Fill,Map,ri-ship-fill,\f10f
+Ship Line,Map,ri-ship-line,\f110
+Shirt Fill,Others,ri-shirt-fill,\f111
+Shirt Line,Others,ri-shirt-line,\f112
+Shopping Bag 2 Fill,Finance,ri-shopping-bag-2-fill,\f113
+Shopping Bag 2 Line,Finance,ri-shopping-bag-2-line,\f114
+Shopping Bag 3 Fill,Finance,ri-shopping-bag-3-fill,\f115
+Shopping Bag 3 Line,Finance,ri-shopping-bag-3-line,\f116
+Shopping Bag Fill,Finance,ri-shopping-bag-fill,\f117
+Shopping Bag Line,Finance,ri-shopping-bag-line,\f118
+Shopping Basket 2 Fill,Finance,ri-shopping-basket-2-fill,\f119
+Shopping Basket 2 Line,Finance,ri-shopping-basket-2-line,\f11a
+Shopping Basket Fill,Finance,ri-shopping-basket-fill,\f11b
+Shopping Basket Line,Finance,ri-shopping-basket-line,\f11c
+Shopping Cart 2 Fill,Finance,ri-shopping-cart-2-fill,\f11d
+Shopping Cart 2 Line,Finance,ri-shopping-cart-2-line,\f11e
+Shopping Cart Fill,Finance,ri-shopping-cart-fill,\f11f
+Shopping Cart Line,Finance,ri-shopping-cart-line,\f120
+Showers Fill,Weather,ri-showers-fill,\f121
+Showers Line,Weather,ri-showers-line,\f122
+Shuffle Fill,Media,ri-shuffle-fill,\f123
+Shuffle Line,Media,ri-shuffle-line,\f124
+Shut Down Fill,Device,ri-shut-down-fill,\f125
+Shut Down Line,Device,ri-shut-down-line,\f126
+Side Bar Fill,System,ri-side-bar-fill,\f127
+Side Bar Line,System,ri-side-bar-line,\f128
+Signal Tower Fill,Map,ri-signal-tower-fill,\f129
+Signal Tower Line,Map,ri-signal-tower-line,\f12a
+Signal Wifi 1 Fill,Device,ri-signal-wifi-1-fill,\f12b
+Signal Wifi 1 Line,Device,ri-signal-wifi-1-line,\f12c
+Signal Wifi 2 Fill,Device,ri-signal-wifi-2-fill,\f12d
+Signal Wifi 2 Line,Device,ri-signal-wifi-2-line,\f12e
+Signal Wifi 3 Fill,Device,ri-signal-wifi-3-fill,\f12f
+Signal Wifi 3 Line,Device,ri-signal-wifi-3-line,\f130
+Signal Wifi Error Fill,Device,ri-signal-wifi-error-fill,\f131
+Signal Wifi Error Line,Device,ri-signal-wifi-error-line,\f132
+Signal Wifi Fill,Device,ri-signal-wifi-fill,\f133
+Signal Wifi Line,Device,ri-signal-wifi-line,\f134
+Signal Wifi Off Fill,Device,ri-signal-wifi-off-fill,\f135
+Signal Wifi Off Line,Device,ri-signal-wifi-off-line,\f136
+Sim Card 2 Fill,Device,ri-sim-card-2-fill,\f137
+Sim Card 2 Line,Device,ri-sim-card-2-line,\f138
+Sim Card Fill,Device,ri-sim-card-fill,\f139
+Sim Card Line,Device,ri-sim-card-line,\f13a
+Single Quotes L,Editor,ri-single-quotes-l,\f13b
+Single Quotes R,Editor,ri-single-quotes-r,\f13c
+Sip Fill,Design,ri-sip-fill,\f13d
+Sip Line,Design,ri-sip-line,\f13e
+Skip Back Fill,Media,ri-skip-back-fill,\f13f
+Skip Back Line,Media,ri-skip-back-line,\f140
+Skip Back Mini Fill,Media,ri-skip-back-mini-fill,\f141
+Skip Back Mini Line,Media,ri-skip-back-mini-line,\f142
+Skip Forward Fill,Media,ri-skip-forward-fill,\f143
+Skip Forward Line,Media,ri-skip-forward-line,\f144
+Skip Forward Mini Fill,Media,ri-skip-forward-mini-fill,\f145
+Skip Forward Mini Line,Media,ri-skip-forward-mini-line,\f146
+Skull 2 Fill,User,ri-skull-2-fill,\f147
+Skull 2 Line,User,ri-skull-2-line,\f148
+Skull Fill,User,ri-skull-fill,\f149
+Skull Line,User,ri-skull-line,\f14a
+Skype Fill,Logos,ri-skype-fill,\f14b
+Skype Line,Logos,ri-skype-line,\f14c
+Slack Fill,Logos,ri-slack-fill,\f14d
+Slack Line,Logos,ri-slack-line,\f14e
+Slice Fill,Design,ri-slice-fill,\f14f
+Slice Line,Design,ri-slice-line,\f150
+Slideshow 2 Fill,Business,ri-slideshow-2-fill,\f151
+Slideshow 2 Line,Business,ri-slideshow-2-line,\f152
+Slideshow 3 Fill,Business,ri-slideshow-3-fill,\f153
+Slideshow 3 Line,Business,ri-slideshow-3-line,\f154
+Slideshow 4 Fill,Business,ri-slideshow-4-fill,\f155
+Slideshow 4 Line,Business,ri-slideshow-4-line,\f156
+Slideshow Fill,Business,ri-slideshow-fill,\f157
+Slideshow Line,Business,ri-slideshow-line,\f158
+Smartphone Fill,Device,ri-smartphone-fill,\f159
+Smartphone Line,Device,ri-smartphone-line,\f15a
+Snapchat Fill,Logos,ri-snapchat-fill,\f15b
+Snapchat Line,Logos,ri-snapchat-line,\f15c
+Snowy Fill,Weather,ri-snowy-fill,\f15d
+Snowy Line,Weather,ri-snowy-line,\f15e
+Sort Asc,Editor,ri-sort-asc,\f15f
+Sort Desc,Editor,ri-sort-desc,\f160
+Sound Module Fill,Media,ri-sound-module-fill,\f161
+Sound Module Line,Media,ri-sound-module-line,\f162
+Soundcloud Fill,Logos,ri-soundcloud-fill,\f163
+Soundcloud Line,Logos,ri-soundcloud-line,\f164
+Space,Editor,ri-space-ship-fill,\f165
+Space Ship Fill,Map,ri-space-ship-line,\f166
+Space Ship Line,Map,ri-space,\f167
+Spam 2 Fill,System,ri-spam-2-fill,\f168
+Spam 2 Line,System,ri-spam-2-line,\f169
+Spam 3 Fill,System,ri-spam-3-fill,\f16a
+Spam 3 Line,System,ri-spam-3-line,\f16b
+Spam Fill,System,ri-spam-fill,\f16c
+Spam Line,System,ri-spam-line,\f16d
+Speaker 2 Fill,Media,ri-speaker-2-fill,\f16e
+Speaker 2 Line,Media,ri-speaker-2-line,\f16f
+Speaker 3 Fill,Media,ri-speaker-3-fill,\f170
+Speaker 3 Line,Media,ri-speaker-3-line,\f171
+Speaker Fill,Media,ri-speaker-fill,\f172
+Speaker Line,Media,ri-speaker-line,\f173
+Spectrum Fill,Logos,ri-spectrum-fill,\f174
+Spectrum Line,Logos,ri-spectrum-line,\f175
+Speed Fill,Media,ri-speed-fill,\f176
+Speed Line,Media,ri-speed-line,\f177
+Speed Mini Fill,Media,ri-speed-mini-fill,\f178
+Speed Mini Line,Media,ri-speed-mini-line,\f179
+Split Cells Horizontal,Editor,ri-split-cells-horizontal,\f17a
+Split Cells Vertical,Editor,ri-split-cells-vertical,\f17b
+Spotify Fill,Logos,ri-spotify-fill,\f17c
+Spotify Line,Logos,ri-spotify-line,\f17d
+Spy Fill,User,ri-spy-fill,\f17e
+Spy Line,User,ri-spy-line,\f17f
+Stack Fill,Business,ri-stack-fill,\f180
+Stack Line,Business,ri-stack-line,\f181
+Stack Overflow Fill,Logos,ri-stack-overflow-fill,\f182
+Stack Overflow Line,Logos,ri-stack-overflow-line,\f183
+Stackshare Fill,Logos,ri-stackshare-fill,\f184
+Stackshare Line,Logos,ri-stackshare-line,\f185
+Star Fill,System,ri-star-fill,\f186
+Star Half Fill,System,ri-star-half-fill,\f187
+Star Half Line,System,ri-star-half-line,\f188
+Star Half S Fill,System,ri-star-half-s-fill,\f189
+Star Half S Line,System,ri-star-half-s-line,\f18a
+Star Line,System,ri-star-line,\f18b
+Star S Fill,System,ri-star-s-fill,\f18c
+Star S Line,System,ri-star-s-line,\f18d
+Star Smile Fill,User,ri-star-smile-fill,\f18e
+Star Smile Line,User,ri-star-smile-line,\f18f
+Steam Fill,Logos,ri-steam-fill,\f190
+Steam Line,Logos,ri-steam-line,\f191
+Steering 2 Fill,Map,ri-steering-2-fill,\f192
+Steering 2 Line,Map,ri-steering-2-line,\f193
+Steering Fill,Map,ri-steering-fill,\f194
+Steering Line,Map,ri-steering-line,\f195
+Stethoscope Fill,Health,ri-stethoscope-fill,\f196
+Stethoscope Line,Health,ri-stethoscope-line,\f197
+Sticky Note 2 Fill,Document,ri-sticky-note-2-fill,\f198
+Sticky Note 2 Line,Document,ri-sticky-note-2-line,\f199
+Sticky Note Fill,Document,ri-sticky-note-fill,\f19a
+Sticky Note Line,Document,ri-sticky-note-line,\f19b
+Stock Fill,Finance,ri-stock-fill,\f19c
+Stock Line,Finance,ri-stock-line,\f19d
+Stop Circle Fill,Media,ri-stop-circle-fill,\f19e
+Stop Circle Line,Media,ri-stop-circle-line,\f19f
+Stop Fill,Media,ri-stop-fill,\f1a0
+Stop Line,Media,ri-stop-line,\f1a1
+Stop Mini Fill,Media,ri-stop-mini-fill,\f1a2
+Stop Mini Line,Media,ri-stop-mini-line,\f1a3
+Store 2 Fill,Buildings,ri-store-2-fill,\f1a4
+Store 2 Line,Buildings,ri-store-2-line,\f1a5
+Store 3 Fill,Buildings,ri-store-3-fill,\f1a6
+Store 3 Line,Buildings,ri-store-3-line,\f1a7
+Store Fill,Buildings,ri-store-fill,\f1a8
+Store Line,Buildings,ri-store-line,\f1a9
+Strikethrough,Editor,ri-strikethrough,\f1aa
+Strikethrough 2,Editor,ri-strikethrough-2,\f1ab
+Subscript,Editor,ri-subscript,\f1ac
+Subscript 2,Editor,ri-subscript-2,\f1ad
+Subtract Fill,System,ri-subtract-fill,\f1ae
+Subtract Line,System,ri-subtract-line,\f1af
+Subway Fill,Map,ri-subway-fill,\f1b0
+Subway Line,Map,ri-subway-line,\f1b1
+Subway Wifi Fill,Map,ri-subway-wifi-fill,\f1b2
+Subway Wifi Line,Map,ri-subway-wifi-line,\f1b3
+Suitcase 2 Fill,Map,ri-suitcase-2-fill,\f1b4
+Suitcase 2 Line,Map,ri-suitcase-2-line,\f1b5
+Suitcase 3 Fill,Map,ri-suitcase-3-fill,\f1b6
+Suitcase 3 Line,Map,ri-suitcase-3-line,\f1b7
+Suitcase Fill,Map,ri-suitcase-fill,\f1b8
+Suitcase Line,Map,ri-suitcase-line,\f1b9
+Sun Cloudy Fill,Weather,ri-sun-cloudy-fill,\f1ba
+Sun Cloudy Line,Weather,ri-sun-cloudy-line,\f1bb
+Sun Fill,Weather,ri-sun-fill,\f1bc
+Sun Foggy Fill,Weather,ri-sun-foggy-fill,\f1bd
+Sun Foggy Line,Weather,ri-sun-foggy-line,\f1be
+Sun Line,Weather,ri-sun-line,\f1bf
+Superscript,Editor,ri-superscript-2,\f1c0
+Superscript 2,Editor,ri-superscript,\f1c1
+Surgical Mask Fill,Health,ri-surgical-mask-fill,\f1c2
+Surgical Mask Line,Health,ri-surgical-mask-line,\f1c3
+Surround Sound Fill,Media,ri-surround-sound-fill,\f1c4
+Surround Sound Line,Media,ri-surround-sound-line,\f1c5
+Survey Fill,Document,ri-survey-fill,\f1c6
+Survey Line,Document,ri-survey-line,\f1c7
+Swap Box Fill,Finance,ri-swap-box-fill,\f1c8
+Swap Box Line,Finance,ri-swap-box-line,\f1c9
+Swap Fill,Finance,ri-swap-fill,\f1ca
+Swap Line,Finance,ri-swap-line,\f1cb
+Switch Fill,Logos,ri-switch-fill,\f1cc
+Switch Line,Logos,ri-switch-line,\f1cd
+Sword Fill,Others,ri-sword-fill,\f1ce
+Sword Line,Others,ri-sword-line,\f1cf
+Syringe Fill,Health,ri-syringe-fill,\f1d0
+Syringe Line,Health,ri-syringe-line,\f1d1
+T Box Fill,Design,ri-t-box-fill,\f1d2
+T Box Line,Design,ri-t-box-line,\f1d3
+T Shirt 2 Fill,Others,ri-t-shirt-2-fill,\f1d4
+T Shirt 2 Line,Others,ri-t-shirt-2-line,\f1d5
+T Shirt Air Fill,Others,ri-t-shirt-air-fill,\f1d6
+T Shirt Air Line,Others,ri-t-shirt-air-line,\f1d7
+T Shirt Fill,Others,ri-t-shirt-fill,\f1d8
+T Shirt Line,Others,ri-t-shirt-line,\f1d9
+Table 2,Editor,ri-table-2,\f1da
+Table Alt Fill,Design,ri-table-alt-fill,\f1db
+Table Alt Line,Design,ri-table-alt-line,\f1dc
+Table Fill,Design,ri-table-fill,\f1dd
+Table Line,Design,ri-table-line,\f1de
+Tablet Fill,Device,ri-tablet-fill,\f1df
+Tablet Line,Device,ri-tablet-line,\f1e0
+Takeaway Fill,Map,ri-takeaway-fill,\f1e1
+Takeaway Line,Map,ri-takeaway-line,\f1e2
+Taobao Fill,Logos,ri-taobao-fill,\f1e3
+Taobao Line,Logos,ri-taobao-line,\f1e4
+Tape Fill,Media,ri-tape-fill,\f1e5
+Tape Line,Media,ri-tape-line,\f1e6
+Task Fill,Document,ri-task-fill,\f1e7
+Task Line,Document,ri-task-line,\f1e8
+Taxi Fill,Map,ri-taxi-fill,\f1e9
+Taxi Line,Map,ri-taxi-line,\f1ea
+Taxi Wifi Fill,Map,ri-taxi-wifi-fill,\f1eb
+Taxi Wifi Line,Map,ri-taxi-wifi-line,\f1ec
+Team Fill,User,ri-team-fill,\f1ed
+Team Line,User,ri-team-line,\f1ee
+Telegram Fill,Logos,ri-telegram-fill,\f1ef
+Telegram Line,Logos,ri-telegram-line,\f1f0
+Temp Cold Fill,Weather,ri-temp-cold-fill,\f1f1
+Temp Cold Line,Weather,ri-temp-cold-line,\f1f2
+Temp Hot Fill,Weather,ri-temp-hot-fill,\f1f3
+Temp Hot Line,Weather,ri-temp-hot-line,\f1f4
+Terminal Box Fill,Development,ri-terminal-box-fill,\f1f5
+Terminal Box Line,Development,ri-terminal-box-line,\f1f6
+Terminal Fill,Development,ri-terminal-fill,\f1f7
+Terminal Line,Development,ri-terminal-line,\f1f8
+Terminal Window Fill,Development,ri-terminal-window-fill,\f1f9
+Terminal Window Line,Development,ri-terminal-window-line,\f1fa
+Test Tube Fill,Health,ri-test-tube-fill,\f1fb
+Test Tube Line,Health,ri-test-tube-line,\f1fc
+Text,Editor,ri-text-direction-l,\f1fd
+Text Direction L,Editor,ri-text-direction-r,\f1fe
+Text Direction R,Editor,ri-text-spacing,\f1ff
+Text Spacing,Editor,ri-text-wrap,\f200
+Text Wrap,Editor,ri-text,\f201
+Thermometer Fill,Health,ri-thermometer-fill,\f202
+Thermometer Line,Health,ri-thermometer-line,\f203
+Thumb Down Fill,System,ri-thumb-down-fill,\f204
+Thumb Down Line,System,ri-thumb-down-line,\f205
+Thumb Up Fill,System,ri-thumb-up-fill,\f206
+Thumb Up Line,System,ri-thumb-up-line,\f207
+Thunderstorms Fill,Weather,ri-thunderstorms-fill,\f208
+Thunderstorms Line,Weather,ri-thunderstorms-line,\f209
+Ticket 2 Fill,Finance,ri-ticket-2-fill,\f20a
+Ticket 2 Line,Finance,ri-ticket-2-line,\f20b
+Ticket Fill,Finance,ri-ticket-fill,\f20c
+Ticket Line,Finance,ri-ticket-line,\f20d
+Time Fill,System,ri-time-fill,\f20e
+Time Line,System,ri-time-line,\f20f
+Timer 2 Fill,System,ri-timer-2-fill,\f210
+Timer 2 Line,System,ri-timer-2-line,\f211
+Timer Fill,System,ri-timer-fill,\f212
+Timer Flash Fill,System,ri-timer-flash-fill,\f213
+Timer Flash Line,System,ri-timer-flash-line,\f214
+Timer Line,System,ri-timer-line,\f215
+Todo Fill,Document,ri-todo-fill,\f216
+Todo Line,Document,ri-todo-line,\f217
+Toggle Fill,System,ri-toggle-fill,\f218
+Toggle Line,System,ri-toggle-line,\f219
+Tools Fill,Design,ri-tools-fill,\f21a
+Tools Line,Design,ri-tools-line,\f21b
+Tornado Fill,Weather,ri-tornado-fill,\f21c
+Tornado Line,Weather,ri-tornado-line,\f21d
+Trademark Fill,Business,ri-trademark-fill,\f21e
+Trademark Line,Business,ri-trademark-line,\f21f
+Traffic Light Fill,Map,ri-traffic-light-fill,\f220
+Traffic Light Line,Map,ri-traffic-light-line,\f221
+Train Fill,Map,ri-train-fill,\f222
+Train Line,Map,ri-train-line,\f223
+Train Wifi Fill,Map,ri-train-wifi-fill,\f224
+Train Wifi Line,Map,ri-train-wifi-line,\f225
+Translate,Editor,ri-translate-2,\f226
+Translate 2,Editor,ri-translate,\f227
+Travesti Fill,User,ri-travesti-fill,\f228
+Travesti Line,User,ri-travesti-line,\f229
+Treasure Map Fill,Map,ri-treasure-map-fill,\f22a
+Treasure Map Line,Map,ri-treasure-map-line,\f22b
+Trello Fill,Logos,ri-trello-fill,\f22c
+Trello Line,Logos,ri-trello-line,\f22d
+Trophy Fill,Finance,ri-trophy-fill,\f22e
+Trophy Line,Finance,ri-trophy-line,\f22f
+Truck Fill,Map,ri-truck-fill,\f230
+Truck Line,Map,ri-truck-line,\f231
+Tumblr Fill,Logos,ri-tumblr-fill,\f232
+Tumblr Line,Logos,ri-tumblr-line,\f233
+Tv 2 Fill,Device,ri-tv-2-fill,\f234
+Tv 2 Line,Device,ri-tv-2-line,\f235
+Tv Fill,Device,ri-tv-fill,\f236
+Tv Line,Device,ri-tv-line,\f237
+Twitch Fill,Logos,ri-twitch-fill,\f238
+Twitch Line,Logos,ri-twitch-line,\f239
+Twitter Fill,Logos,ri-twitter-fill,\f23a
+Twitter Line,Logos,ri-twitter-line,\f23b
+Typhoon Fill,Weather,ri-typhoon-fill,\f23c
+Typhoon Line,Weather,ri-typhoon-line,\f23d
+U Disk Fill,Device,ri-u-disk-fill,\f23e
+U Disk Line,Device,ri-u-disk-line,\f23f
+Ubuntu Fill,Logos,ri-ubuntu-fill,\f240
+Ubuntu Line,Logos,ri-ubuntu-line,\f241
+Umbrella Fill,Others,ri-umbrella-fill,\f242
+Umbrella Line,Others,ri-umbrella-line,\f243
+Underline,Editor,ri-underline,\f244
+Uninstall Fill,Device,ri-uninstall-fill,\f245
+Uninstall Line,Device,ri-uninstall-line,\f246
+Unsplash Fill,Logos,ri-unsplash-fill,\f247
+Unsplash Line,Logos,ri-unsplash-line,\f248
+Upload 2 Fill,System,ri-upload-2-fill,\f249
+Upload 2 Line,System,ri-upload-2-line,\f24a
+Upload Cloud 2 Fill,System,ri-upload-cloud-2-fill,\f24b
+Upload Cloud 2 Line,System,ri-upload-cloud-2-line,\f24c
+Upload Cloud Fill,System,ri-upload-cloud-fill,\f24d
+Upload Cloud Line,System,ri-upload-cloud-line,\f24e
+Upload Fill,System,ri-upload-fill,\f24f
+Upload Line,System,ri-upload-line,\f250
+Usb Fill,Device,ri-usb-fill,\f251
+Usb Line,Device,ri-usb-line,\f252
+User 2 Fill,User,ri-user-2-fill,\f253
+User 2 Line,User,ri-user-2-line,\f254
+User 3 Fill,User,ri-user-3-fill,\f255
+User 3 Line,User,ri-user-3-line,\f256
+User 4 Fill,User,ri-user-4-fill,\f257
+User 4 Line,User,ri-user-4-line,\f258
+User 5 Fill,User,ri-user-5-fill,\f259
+User 5 Line,User,ri-user-5-line,\f25a
+User 6 Fill,User,ri-user-6-fill,\f25b
+User 6 Line,User,ri-user-6-line,\f25c
+User Add Fill,User,ri-user-add-fill,\f25d
+User Add Line,User,ri-user-add-line,\f25e
+User Fill,User,ri-user-fill,\f25f
+User Follow Fill,User,ri-user-follow-fill,\f260
+User Follow Line,User,ri-user-follow-line,\f261
+User Heart Fill,User,ri-user-heart-fill,\f262
+User Heart Line,User,ri-user-heart-line,\f263
+User Line,User,ri-user-line,\f264
+User Location Fill,User,ri-user-location-fill,\f265
+User Location Line,User,ri-user-location-line,\f266
+User Received 2 Fill,User,ri-user-received-2-fill,\f267
+User Received 2 Line,User,ri-user-received-2-line,\f268
+User Received Fill,User,ri-user-received-fill,\f269
+User Received Line,User,ri-user-received-line,\f26a
+User Search Fill,User,ri-user-search-fill,\f26b
+User Search Line,User,ri-user-search-line,\f26c
+User Settings Fill,User,ri-user-settings-fill,\f26d
+User Settings Line,User,ri-user-settings-line,\f26e
+User Shared 2 Fill,User,ri-user-shared-2-fill,\f26f
+User Shared 2 Line,User,ri-user-shared-2-line,\f270
+User Shared Fill,User,ri-user-shared-fill,\f271
+User Shared Line,User,ri-user-shared-line,\f272
+User Smile Fill,User,ri-user-smile-fill,\f273
+User Smile Line,User,ri-user-smile-line,\f274
+User Star Fill,User,ri-user-star-fill,\f275
+User Star Line,User,ri-user-star-line,\f276
+User Unfollow Fill,User,ri-user-unfollow-fill,\f277
+User Unfollow Line,User,ri-user-unfollow-line,\f278
+User Voice Fill,User,ri-user-voice-fill,\f279
+User Voice Line,User,ri-user-voice-line,\f27a
+Video Add Fill,Media,ri-video-add-fill,\f27b
+Video Add Line,Media,ri-video-add-line,\f27c
+Video Chat Fill,Communication,ri-video-chat-fill,\f27d
+Video Chat Line,Communication,ri-video-chat-line,\f27e
+Video Download Fill,Media,ri-video-download-fill,\f27f
+Video Download Line,Media,ri-video-download-line,\f280
+Video Fill,Media,ri-video-fill,\f281
+Video Line,Media,ri-video-line,\f282
+Video Upload Fill,Media,ri-video-upload-fill,\f283
+Video Upload Line,Media,ri-video-upload-line,\f284
+Vidicon 2 Fill,Media,cri-vidicon-2,\f285
+Vidicon 2 Line,Media,html_cde:ri-vidicon-2,\f286
+Vidicon Fill,Media,html_cde:ri-vidicon-f,\f287
+Vidicon Line,Media,htmlde:ri-vidicon-l,\f288
+Vimeo Fill,Logos,htmle:ri-vimeo-fill,\f289
+Vimeo Line,Logos,ri-vimeo-line,\f28a
+Vip Crown 2 Fill,Finance,ri-vip-crown-2-fill,\f28b
+Vip Crown 2 Line,Finance,ri-vip-crown-2-line,\f28c
+Vip Crown Fill,Finance,ri-vip-crown-fill,\f28d
+Vip Crown Line,Finance,ri-vip-crown-line,\f28e
+Vip Diamond Fill,Finance,ri-vip-diamond-fill,\f28f
+Vip Diamond Line,Finance,ri-vip-diamond-line,\f290
+Vip Fill,Finance,ri-vip-fill,\f291
+Vip Line,Finance,ri-vip-line,\f292
+Virus Fill,Health,ri-virus-fill,\f293
+Virus Line,Health,ri-virus-line,\f294
+Visa Fill,Logos,ri-visa-fill,\f295
+Visa Line,Logos,ri-visa-line,\f296
+Voice Recognition Fill,Others,ri-voice-recognition-fill,\f297
+Voice Recognition Line,Others,ri-voice-recognition-line,\f298
+Voiceprint Fill,Media,ri-voiceprint-fill,\f299
+Voiceprint Line,Media,ri-voiceprint-line,\f29a
+Volume Down Fill,Media,ri-volume-down-fill,\f29b
+Volume Down Line,Media,ri-volume-down-line,\f29c
+Volume Mute Fill,Media,ri-volume-mute-fill,\f29d
+Volume Mute Line,Media,ri-volume-mute-line,\f29e
+Volume Off Vibrate Fill,Media,ri-volume-off-vibrate-fill,\f29f
+Volume Off Vibrate Line,Media,ri-volume-off-vibrate-line,\f2a0
+Volume Up Fill,Media,ri-volume-up-fill,\f2a1
+Volume Up Line,Media,ri-volume-up-line,\f2a2
+Volume Vibrate Fill,Media,ri-volume-vibrate-fill,\f2a3
+Volume Vibrate Line,Media,ri-volume-vibrate-line,\f2a4
+Vuejs Fill,Logos,ri-vuejs-fill,\f2a5
+Vuejs Line,Logos,ri-vuejs-line,\f2a6
+Walk Fill,Map,ri-walk-fill,\f2a7
+Walk Line,Map,ri-walk-line,\f2a8
+Wallet 2 Fill,Finance,ri-wallet-2-fill,\f2a9
+Wallet 2 Line,Finance,ri-wallet-2-line,\f2aa
+Wallet 3 Fill,Finance,ri-wallet-3-fill,\f2ab
+Wallet 3 Line,Finance,ri-wallet-3-line,\f2ac
+Wallet Fill,Finance,ri-wallet-fill,\f2ad
+Wallet Line,Finance,ri-wallet-line,\f2ae
+Water Flash Fill,Finance,ri-water-flash-fill,\f2af
+Water Flash Line,Finance,ri-water-flash-line,\f2b0
+Webcam Fill,Media,ri-webcam-fill,\f2b1
+Webcam Line,Media,ri-webcam-line,\f2b2
+Wechat 2 Fill,Logos,ri-wechat-2-fill,\f2b3
+Wechat 2 Line,Logos,ri-wechat-2-line,\f2b4
+Wechat Fill,Logos,ri-wechat-fill,\f2b5
+Wechat Line,Logos,ri-wechat-line,\f2b6
+Wechat Pay Fill,Logos,ri-wechat-pay-fill,\f2b7
+Wechat Pay Line,Logos,ri-wechat-pay-line,\f2b8
+Weibo Fill,Logos,ri-weibo-fill,\f2b9
+Weibo Line,Logos,ri-weibo-line,\f2ba
+Whatsapp Fill,Logos,ri-whatsapp-fill,\f2bb
+Whatsapp Line,Logos,ri-whatsapp-line,\f2bc
+Wheelchair Fill,Others,ri-wheelchair-fill,\f2bd
+Wheelchair Line,Others,ri-wheelchair-line,\f2be
+Wifi Fill,Device,ri-wifi-fill,\f2bf
+Wifi Line,Device,ri-wifi-line,\f2c0
+Wifi Off Fill,Device,ri-wifi-off-fill,\f2c1
+Wifi Off Line,Device,ri-wifi-off-line,\f2c2
+Window 2 Fill,Business,ri-window-2-fill,\f2c3
+Window 2 Line,Business,ri-window-2-line,\f2c4
+Window Fill,Business,ri-window-fill,\f2c5
+Window Line,Business,ri-window-line,\f2c6
+Windows Fill,Logos,ri-windows-fill,\f2c7
+Windows Line,Logos,ri-windows-line,\f2c8
+Windy Fill,Weather,ri-windy-fill,\f2c9
+Windy Line,Weather,ri-windy-line,\f2ca
+Wireless Charging Fill,Device,ri-wireless-charging-fill,\f2cb
+Wireless Charging Line,Device,ri-wireless-charging-line,\f2cc
+Women Fill,User,ri-women-fill,\f2cd
+Women Line,User,ri-women-line,\f2ce
+Wubi Input,Editor,ri-wubi-input,\f2cf
+Xbox Fill,Logos,ri-xbox-fill,\f2d0
+Xbox Line,Logos,ri-xbox-line,\f2d1
+Xing Fill,Logos,ri-xing-fill,\f2d2
+Xing Line,Logos,ri-xing-line,\f2d3
+Youtube Fill,Logos,ri-youtube-fill,\f2d4
+Youtube Line,Logos,ri-youtube-line,\f2d5
+Zcool Fill,Logos,ri-zcool-fill,\f2d6
+Zcool Line,Logos,ri-zcool-line,\f2d7
+Zhihu Fill,Logos,ri-zhihu-fill,\f2d8
+Zhihu Line,Logos,ri-zhihu-line,\f2d9
+Zoom In Fill,System,ri-zoom-in-fill,\f2da
+Zoom In Line,System,ri-zoom-in-line,\f2db
+Zoom Out Fill,System,ri-zoom-out-fill,\f2dc
+Zoom Out Line,System,ri-zoom-out-line,\f2dd
+Zzz Fill,Health,ri-zzz-fill,\f2de
+Zzz Line,Health,ri-zzz-line,\f2df

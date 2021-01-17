@@ -730,6 +730,15 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-display: fallback;
 }
 
+@font-face {
+  font-family: "remixicon";
+  src: url("../fonts/remixicon.eot");
+  /* IE9*/
+  src: url("../fonts/remixicon.eot?#iefix") format("embedded-opentype"), url("../fonts/remixicon.woff2") format("woff2"), url("../fonts/remixicon.woff") format("woff"), url("../fonts/remixicon.ttf") format("truetype"), url("../fonts/remixicon.svg?#remixicon") format("svg");
+  /* iOS 4.1- */
+  font-display: swap;
+}
+
 /*
 WCAG requires that no loss of content or functionality occurs when the
 end user overrides page styles for paragraph spacing to 200%
@@ -2093,6 +2102,22 @@ Media theming.
 .main-menu__item--level-0 > a.has-action {
   background-color: #b1040e;
   color: #fff;
+  position: relative;
+}
+
+.main-menu__item--level-0 > a.has-action:after {
+  content: "";
+  display: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.main-menu__item--level-0 > a.has-action .svg-inline--fa {
+  transition: .4s ease;
+  font-size: 1.1875rem;
+  margin: 2px 0 0 10px;
 }
 
 .main-menu__item--level-0 > a:active, .main-menu__item--level-0 > a:focus, .main-menu__item--level-0 > a:hover {
@@ -2101,19 +2126,21 @@ Media theming.
   color: #212121;
 }
 
-.main-menu__item--submenu-level-0 > a:after {
-  content: "";
-  display: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+.main-menu__item--submenu-level-0 > a {
+  position: relative;
 }
 
-.main-menu__item--submenu-level-0 > a .svg-inline--fa {
-  transition: .4s ease;
-  font-size: 1.1875rem;
-  margin: 0 0 0 10px;
+.main-menu__item--submenu-level-0 > a:after {
+  content: "\EA4A";
+  font-family: remixicon;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 6px;
+  top: 0;
+  margin-right: 6px;
+  padding-right: 10px;
 }
 
 .main-menu__item--submenu-level-0 > a.panel-is-open .svg-inline--fa {

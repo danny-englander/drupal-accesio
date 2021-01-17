@@ -57,6 +57,8 @@
         &.has-action {
           background-color: $bright-red;
           color: $white;
+          position: relative;
+          @include font-awesome("\f061", after, $font-size: 19px, $margin: 2px 0 0 10px);
         }
 
         #{$a-tags-hover} {
@@ -70,7 +72,22 @@
     // Top level menu items that have a sub-menu panel.
     &--submenu-level-0 {
       > a {
-        @include font-awesome("\f13a", after, $font-size: 19px, $margin: 0 0 0 10px);
+        position: relative;
+      //  @include font-awesome("\f13a", after, $font-size: 19px, $margin: 0 0 0 10px);
+
+        &:after {
+          content: "\EA4A";
+          font-family: remixicon;
+          display: inline-block;
+          font-weight: 400;
+          font-size: 30px;
+          position: absolute;
+          margin-left: 6px;
+          top: 0;
+          margin-right: 6px;
+          padding-right: 10px;
+        }
+
 
         &.panel-is-open {
           .svg-inline--fa {

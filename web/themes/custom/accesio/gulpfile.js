@@ -28,8 +28,8 @@ gulp.task('browser-sync', ['sass'], function () {
     baseDir: './',
     open: false,
     notify: true,
-    proxy: 'd9components.docksal',
-    host: 'd9components.docksal',
+    proxy: 'accesio.docksal',
+    host: 'accesio.docksal',
     openBrowserAtStart: false,
     reloadOnRestart: true,
     port: 3034,
@@ -37,25 +37,32 @@ gulp.task('browser-sync', ['sass'], function () {
   });
 });
 
+var path = require('path');
+
 // SVG icons.
 gulp.task('svgSprite', function (done) {
   // Basic configuration example.
   var config = {
     shape: {
       dimension: {
-        maxWidth: 180,
-        maxHeight: 180
+        maxWidth: 100,
+        maxHeight: 100
       },
       spacing: {
         padding: 2
       },
+      "id": {
+        "generator": function (name) {
+          return path.basename(name.replace(/\s+/g, this.whitespace),'.svg');
+        }
+      }
     },
     mode: {
       view: {
         bust: false,
         common: 'ico',
         example: {
-          dest: '../src/icon/icons.html',
+          dest: '../dist/icon/icons.html',
           template: './src/icon/sprite.html', // relative to current working directory
         },
         prefix: '.',
@@ -71,7 +78,7 @@ gulp.task('svgSprite', function (done) {
   };
 
   gulp.src('**/*.svg', {
-    cwd: './src/icon/svg'
+    cwd: './src/icon/remix/**/*'
   })
     .pipe(svgSprite(config))
     .pipe(gulp.dest('./'));
