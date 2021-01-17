@@ -1,0 +1,8 @@
+uuid: 08d7824b-ad54-4b54-a864-47fa0b1574e6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Remix Icons'
+vid: remix_icons
+description: ''
+weight: 0

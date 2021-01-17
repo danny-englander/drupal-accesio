@@ -1,0 +1,19 @@
+uuid: 65b90a35-f6c7-41e6-8fa0-f082e9948679
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ri_icon_css_code
+    - taxonomy.vocabulary.remix_icons
+id: taxonomy_term.remix_icons.field_ri_icon_css_code
+field_name: field_ri_icon_css_code
+entity_type: taxonomy_term
+bundle: remix_icons
+label: 'Icon CSS Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

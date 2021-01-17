@@ -1,0 +1,23 @@
+uuid: 0c541668-f762-4b33-9edb-2d76ba7b755e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.remix_icons
+  module:
+    - feeds
+id: taxonomy_term.remix_icons.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: remix_icons
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

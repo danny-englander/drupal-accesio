@@ -1,0 +1,21 @@
+uuid: 480dc729-8e85-4fab-89ec-774485333e9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_ri_icon_html_code
+field_name: field_ri_icon_html_code
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
