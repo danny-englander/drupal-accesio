@@ -36,29 +36,8 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token }}">
 
-      {#
-      We preload woff2 for better performance. (This might be available with
-      AdvAgg so might not need this eventually.
-      see https://medium.com/clio-calliope/making-google-fonts-faster-aadf3c02a36d
-      #}
-      <link rel="preload" as="font" type="font/woff2"
-            href="/{{ directory ~ '/dist/fonts/eb-garamond-v14-latin-600.woff2' }}" crossorigin>
-      <link rel="preload" as="font" type="font/woff2"
-            href="/{{ directory ~ '/dist/fonts/eb-garamond-v14-latin-regular.woff2' }}" crossorigin>
-      <link rel="preload" as="font" type="font/woff2"
-            href="/{{ directory ~ '/dist/fonts/rozha-one-v8-latin-regular.woff2' }}" crossorigin>
-      <link rel="preload" as="font" type="font/woff2"
-            href="/{{ directory ~ '/dist/fonts/ibm-plex-sans-v8-latin-regular.woff2' }}" crossorigin>
-      <link rel="preload" as="font" type="font/woff2"
-            href="/{{ directory ~ '/dist/fonts/ibm-plex-sans-v8-latin-500.woff2' }}" crossorigin>
-
-      {# Recommnded way my MS for conditional comments
-https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/ms537512(v=vs.85)?redirectedfrom=MSDN
-      #}
-      <![if IE]>
-      <link type="text/css" rel="stylesheet" media="all"
-            href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-      <![endif]>
+      {# Header preload file. #}
+      {% include '@accesio/partials/preload.html.twig' %}
 
       <js-placeholder token="{{ placeholder_token }}">
         </head>
