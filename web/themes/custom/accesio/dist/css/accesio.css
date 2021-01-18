@@ -925,6 +925,10 @@ Accordion styling.
   font-size: 1.125rem;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
@@ -939,19 +943,15 @@ Accordion styling.
   border-bottom: 2px solid #482e6e;
 }
 
-.js-accordion__header:before {
-  content: "";
-  display: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-.js-accordion__header .svg-inline--fa {
-  transition: .4s ease;
-  font-size: 1.375rem;
-  margin: 0 10px 0 0;
+.js-accordion__header:after {
+  content: "";
+  font-family: remixicon;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 0;
+  font-size: 1.75rem;
+  margin: 0 8px 0 0;
+  transition-duration: 0.5s;
 }
 
 .js-accordion__header:hover {
@@ -965,7 +965,7 @@ Accordion styling.
   color: #482e6e;
 }
 
-.js-accordion__header[aria-expanded="true"] .svg-inline--fa {
+.js-accordion__header[aria-expanded="true"]:after {
   -ms-transform: rotate(405deg);
   transform: rotate(405deg);
 }
@@ -1038,7 +1038,6 @@ Accordion styling.
 .profile-byline__name {
   margin-left: 6px;
   margin-right: 6px;
-  font-weight: 600;
 }
 
 .profile-byline__image img {
@@ -1098,6 +1097,7 @@ Accordion styling.
 
 .blog-post__date-byline {
   font-size: 1.0625rem;
+  font-weight: 500;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -1126,12 +1126,16 @@ Accordion styling.
 }
 
 .blog-post__date {
-  font-weight: 600;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.blog-post__date svg {
+.blog-post__date i {
   margin-left: 6px;
   margin-right: 4px;
+  font-size: 1.4375rem;
 }
 
 .blog-post__tags {
@@ -2109,16 +2113,15 @@ Media theming.
 }
 
 .main-menu__item--level-0 > a.has-action:after {
-  content: "";
+  content: "";
   font-family: remixicon;
   display: inline-block;
   font-weight: 400;
   line-height: 0;
   font-size: 1.75rem;
-  width: 22px;
   margin: 4px 0 0 8px;
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+  position: relative;
+  top: -3px;
 }
 
 .main-menu__item--level-0 > a:active, .main-menu__item--level-0 > a:focus, .main-menu__item--level-0 > a:hover {
@@ -2129,10 +2132,7 @@ Media theming.
 
 .main-menu__item--submenu-level-0 > a {
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 10px 14px 10px 24px;
 }
 
 .main-menu__item--submenu-level-0 > a:after {
@@ -2142,8 +2142,13 @@ Media theming.
   font-weight: 400;
   line-height: 0;
   font-size: 1.75rem;
-  width: 22px;
   margin: 0 0 0 6px;
+  transition-duration: 0.2s;
+}
+
+.main-menu__item--submenu-level-0 > a:active:after, .main-menu__item--submenu-level-0 > a:focus:after, .main-menu__item--submenu-level-0 > a:hover:after {
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .main-menu__sub-nav {

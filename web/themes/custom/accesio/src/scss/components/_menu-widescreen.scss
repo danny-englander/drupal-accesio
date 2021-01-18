@@ -59,7 +59,7 @@
           background-color: $bright-red;
           color: $white;
           position: relative;
-          @include remix-icon("\EA4A", $width: 22px, $font-size: 28px, $padding: 4px 0 0 8px, $rotate: 270);
+          @include remix-icon("\ea6c", $font-size: 28px, $margin: 4px 0 0 8px, $position: relative, $top: -3px);
         }
 
         #{$a-tags-hover} {
@@ -74,11 +74,12 @@
     &--submenu-level-0 {
       > a {
         position: relative;
-        display: flex;
-        align-items: center;
-        @include remix-icon("\EA4A", $width: 22px, $font-size: 28px, $padding: 0 0 0 6px);
+        padding: 10px 14px 10px 24px;
+
+        @include remix-icon("\EA4A", $margin: 0 0 0 6px, $font-size: 28px, $transdur: .2s, $hover_rotate: 180);
 
         &.panel-is-open {
+
         }
 
         #{$a-tags-hover} {

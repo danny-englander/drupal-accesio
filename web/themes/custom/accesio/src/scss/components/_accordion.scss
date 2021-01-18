@@ -23,6 +23,8 @@ Accordion styling.
   &__header {
     @include rem(font-size, 18px);
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     text-align: left;
@@ -34,7 +36,8 @@ Accordion styling.
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $primary-color;
-    @include font-awesome("\f055", before, $font-size: 22px, $margin: 0 10px 0 0);
+
+    @include remix-icon("\ea11", $margin: 0 8px 0 0, $font-size: 28px, $transdur: .5s);
 
     &:hover {
       color: $primary-color;
@@ -46,9 +49,10 @@ Accordion styling.
       border-bottom: none;
       color: $primary-color;
 
-      .svg-inline--fa {
+      &:after {
         transform: rotate(405deg);
       }
+
     }
 
     &:focus {

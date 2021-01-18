@@ -1,32 +1,22 @@
-// Font awesome mixin for "FAS" icons (solids).
-@mixin font-awesome(
-  $icon,
-  $before_after,
-  $color: null,
+@mixin remix-icon(
+  $content,
   $font-size: null,
   $margin: null,
   $rotate: null,
+  $hover_rotate: null,
+  $transdur: null,
   $position: null,
   $top: null,
   $right: null,
   $bottom: null,
   $left: null,
 ) {
-  &:#{$before_after} {
-    content: "#{$icon}";
-    display: none;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-  }
-
-  .svg-inline--fa {
-    transition: .4s ease;
-
-    @if $color {
-      color: $color;
-    }
+  &:after {
+    content: "#{$content}";
+    font-family: remixicon;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0;
 
     @if $font-size {
       @include rem(font-size, $font-size);
@@ -39,6 +29,11 @@
     @if $rotate {
       transform: rotate(#{$rotate}deg);
     }
+
+    @if $transdur {
+      transition-duration: $transdur;
+    }
+
     @if $position {
       position: $position;
     }
@@ -59,63 +54,13 @@
       left: $left;
     }
   }
-}
 
-// Font awesome mixin for "FAB" icons (brands).
-@mixin font-awesome-brands(
-  $icon,
-  $before_after,
-  $color: null,
-  $font-size: null,
-  $rotate: null,
-) {
-  &:#{$before_after} {
-    content: "#{$icon}";
-    display: none;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
+  #{$a-tags-hover} {
 
-    @if $color {
-      color: $color;
-    }
-    @if $rotate {
-      transform: rotate(#{$rotate}deg);
-    }
-  }
-}
-
-@mixin remix-icon(
-  $content,
-  $font-size: null,
-  $padding: null,
-  $width: null,
-  $rotate: null,
-) {
-  &:after {
-    content: "#{$content}";
-    font-family: remixicon;
-    display: inline-block;
-    font-weight: 400;
-    line-height: 0;
-
-    @if $font-size {
-      @include rem(font-size, $font-size);
-    }
-
-    @if $width {
-      width: $width;
-    }
-
-    @if $padding {
-      margin: $padding;
-    }
-
-    @if $rotate {
-      transform: rotate(#{$rotate}deg);
+    &:after {
+      @if $hover_rotate {
+        transform: rotate(#{$hover_rotate}deg);
+      }
     }
   }
 }

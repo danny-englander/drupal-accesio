@@ -43,6 +43,7 @@
 
   &__date-byline {
     @include rem(font-size, 17px);
+    font-weight: 500;
     position: relative;
     display: flex;
     align-items: center;
@@ -64,11 +65,13 @@
   }
 
   &__date {
-    font-weight: 600;
+    display: flex;
+    align-items: center;
 
-    svg {
+    i {
       margin-left: 6px;
       margin-right: 4px;
+      @include rem(font-size, 23px);
     }
   }
 
