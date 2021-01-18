@@ -39,17 +39,17 @@ $grid-gutter-width: 30px !default;
 // END of Grid Options
 
 // Bootstrap file imports
-@import "vendor/bs-grid/text/mixins/deprecate";
-@import "vendor/bs-grid/text/mixins/hover";
-@import "vendor/bs-grid/text/mixins/text-emphasis";
-@import "vendor/bs-grid/text/mixins/text-hide";
-@import "vendor/bs-grid/text/mixins/text-truncate";
-@import "vendor/bs-grid/screenreaders/mixins/screen-reader";
-@import "vendor/bs-grid/screenreaders/utilities/screenreaders";
-@import "vendor/bs-grid/breakpoints/mixins/breakpoints";
-@import "vendor/bs-grid/layout/mixins/visibility";
-@import "vendor/bs-grid/grid/bootstrap-grid";
-@import "vendor/bs-grid/text/utilities/text";
-@import "vendor/bs-grid/sizing/utilities/sizing";
-@import "vendor/bs-grid/layout/utilities/position";
-@import "vendor/bs-grid/layout/utilities/visibility";
+@import "bs-grid/text/mixins/deprecate";
+@import "bs-grid/text/mixins/hover";
+@import "bs-grid/text/mixins/text-emphasis";
+@import "bs-grid/text/mixins/text-hide";
+@import "bs-grid/text/mixins/text-truncate";
+@import "bs-grid/screenreaders/mixins/screen-reader";
+@import "bs-grid/screenreaders/utilities/screenreaders";
+@import "bs-grid/breakpoints/mixins/breakpoints";
+@import "bs-grid/layout/mixins/visibility";
+@import "bs-grid/grid/bootstrap-grid";
+@import "bs-grid/text/utilities/text";
+@import "bs-grid/sizing/utilities/sizing";
+@import "bs-grid/layout/utilities/position";
+@import "bs-grid/layout/utilities/visibility";

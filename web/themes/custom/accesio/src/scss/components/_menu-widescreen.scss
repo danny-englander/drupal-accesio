@@ -48,17 +48,18 @@
       // All top level menu items
       > a {
         @include rem(font-size, 17px);
-        display: block;
         padding: 10px 24px;
         border: 1px dashed $white;
         margin: 0 10px;
         letter-spacing: 2px;
+        display: flex;
+        align-items: center;
 
         &.has-action {
           background-color: $bright-red;
           color: $white;
           position: relative;
-          @include font-awesome("\f061", after, $font-size: 19px, $margin: 2px 0 0 10px);
+          @include remix-icon("\EA4A", $width: 22px, $font-size: 28px, $padding: 4px 0 0 8px, $rotate: 270);
         }
 
         #{$a-tags-hover} {
@@ -73,33 +74,14 @@
     &--submenu-level-0 {
       > a {
         position: relative;
-      //  @include font-awesome("\f13a", after, $font-size: 19px, $margin: 0 0 0 10px);
-
-        &:after {
-          content: "\EA4A";
-          font-family: remixicon;
-          display: inline-block;
-          font-weight: 400;
-          font-size: 30px;
-          position: absolute;
-          margin-left: 6px;
-          top: 0;
-          margin-right: 6px;
-          padding-right: 10px;
-        }
-
+        display: flex;
+        align-items: center;
+        @include remix-icon("\EA4A", $width: 22px, $font-size: 28px, $padding: 0 0 0 6px);
 
         &.panel-is-open {
-          .svg-inline--fa {
-            transform: rotate(540deg);
-          }
         }
 
         #{$a-tags-hover} {
-
-          .svg-inline--fa {
-            color: $black;
-          }
         }
       }
     }

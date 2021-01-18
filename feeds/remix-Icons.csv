@@ -1,6 +1,5 @@
 name,category,html_code,css_code
 24 Hours Fill,Finance,ri-24-hours-fill,\ea01
-24 Hours Line,Finance,ri-24-hours-line,\ea02
 4k Fill,Media,ri-4k-fill,\ea03
 4k Line,Media,ri-4k-line,\ea04
 A B,Editor,ri-a-b,\ea05
@@ -2179,11 +2178,11 @@ Video Fill,Media,ri-video-fill,\f281
 Video Line,Media,ri-video-line,\f282
 Video Upload Fill,Media,ri-video-upload-fill,\f283
 Video Upload Line,Media,ri-video-upload-line,\f284
-Vidicon 2 Fill,Media,cri-vidicon-2,\f285
-Vidicon 2 Line,Media,html_cde:ri-vidicon-2,\f286
-Vidicon Fill,Media,html_cde:ri-vidicon-f,\f287
-Vidicon Line,Media,htmlde:ri-vidicon-l,\f288
-Vimeo Fill,Logos,htmle:ri-vimeo-fill,\f289
+Vidicon 2 Fill,Media,ri-vidicon-2-fill,\f285
+Vidicon 2 Line,Media,ri-vidicon-2-line,\f286
+Vidicon Fill,Media,ri-vidicon-fill,\f287
+Vidicon Line,Media,ri-vidicon-line,\f288
+Vimeo Fill,Logos,ri-vimeo-fill,\f289
 Vimeo Line,Logos,ri-vimeo-line,\f28a
 Vip Crown 2 Fill,Finance,ri-vip-crown-2-fill,\f28b
 Vip Crown 2 Line,Finance,ri-vip-crown-2-line,\f28c

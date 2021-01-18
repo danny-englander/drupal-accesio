@@ -87,3 +87,35 @@
     }
   }
 }
+
+@mixin remix-icon(
+  $content,
+  $font-size: null,
+  $padding: null,
+  $width: null,
+  $rotate: null,
+) {
+  &:after {
+    content: "#{$content}";
+    font-family: remixicon;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0;
+
+    @if $font-size {
+      @include rem(font-size, $font-size);
+    }
+
+    @if $width {
+      width: $width;
+    }
+
+    @if $padding {
+      margin: $padding;
+    }
+
+    @if $rotate {
+      transform: rotate(#{$rotate}deg);
+    }
+  }
+}

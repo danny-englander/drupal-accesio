@@ -4,6 +4,9 @@
  * Functions to support the Accesio custom module.
  */
 
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
+
 /**
  * Implements hook_theme().
  */
@@ -15,4 +18,20 @@ function accesio_custom_theme($existing, $type, $theme, $path) {
       ],
     ],
   ];
+}
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function accesio_custom_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+  // Define the view display.
+  if ($view->current_display === 'remix_icons_nf_block') {
+    // Define the taxonomy term name.
+    $name = $view->argument["name"]->query->fields["taxonomy_term_field_data_name"]["field"];
+    // Add a like operator.
+    $view->query->where[1]["conditions"][0]["operator"] = 'LIKE';
+    // Now query the name using the condition above.
+  //  $view->query->where[1]['conditions'][0]['value'] = '%' . $name . '%';
+    $a =1;
+  }
 }

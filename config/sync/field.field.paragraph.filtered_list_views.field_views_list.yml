@@ -21,7 +21,7 @@ settings:
   force_default: false
   allowed_views:
     fa_icons: fa_icons
-    icons: icons
+    remix_icons: remix_icons
     content: '0'
     block_content: '0'
     feeds_feed: '0'
