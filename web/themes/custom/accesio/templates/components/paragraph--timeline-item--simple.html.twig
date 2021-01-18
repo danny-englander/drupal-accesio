@@ -54,20 +54,18 @@
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
   <div class="timeline-simple__content-wrap">
-
     <div class="timeline-simple__content">
 
       <div class="timeline-simple__date">
         <h2>{{ timeline_date | date('U')| format_date('custom', 'Y') }}</h2>
       </div>
 
-      <div class="timeline-simple__text">
+      <div class="timeline-simple__text has-text">
         {{ content.field_text_format | field_value }}
       </div>
     </div>
 
   </div>
-
   {% endblock %}
 </div>
 {% endblock paragraph %}

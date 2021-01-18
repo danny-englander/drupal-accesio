@@ -17,11 +17,11 @@
   }
 
   &__search-trigger {
-    @include font-awesome("\f002", after, $font-size: 24px, $margin: 0 8px 0 0);
+   // @include font-awesome("\f002", after, $font-size: 24px, $margin: 0 8px 0 0);
     color: $white;
 
     @include mq($from: small_desktop) {
-      @include font-awesome("\f002", after, $font-size: 24px, $margin: 4px 8px 0 0);
+    //  @include font-awesome("\f002", after, $font-size: 24px, $margin: 4px 8px 0 0);
     }
 
     > span {
@@ -30,7 +30,7 @@
   }
 
   &__menu-trigger {
-    @include font-awesome("\f0c9", after, $font-size: 30px, $margin: 2px 10px 0 6px);
+ //   @include font-awesome("\f0c9", after, $font-size: 30px, $margin: 2px 10px 0 6px);
 
     @include mq($from: small_desktop) {
       display: none;

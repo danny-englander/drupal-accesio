@@ -111,3 +111,18 @@ Media theming.
     padding-bottom: 16px;
   }
 }
+
+
+
+.media__attribution {
+  display: flex;
+  align-items: flex-start;
+
+  i {
+    margin-right: 6px;
+  }
+
+  p {
+    margin-left: 0;
+  }
+}

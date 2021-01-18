@@ -85,3 +85,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@mixin list-reset() {
+
+  .l-content & {
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+  }
+}

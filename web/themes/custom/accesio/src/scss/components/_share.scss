@@ -38,6 +38,7 @@ override inline styles from the module js.
 
     a {
       background-color: transparent !important;
+      text-decoration: none;
     }
   }
 
@@ -50,18 +51,18 @@ override inline styles from the module js.
   }
 
   &__icon {
-    svg {
+    i {
       @include rem(font-size, 28px);
     }
 
     &--email {
-      svg {
+      i {
         color: $charcoal;
       }
     }
 
     &--twitter {
-      svg {
+      i {
         color: #1da1f2;
       }
 
@@ -69,14 +70,14 @@ override inline styles from the module js.
 
     &--pinterest {
 
-      svg {
+      i {
         color: #bd081c;
       }
     }
 
     &--linkedin {
 
-      svg {
+      i {
         color: #0a66c2;
       }
     }

@@ -18,7 +18,7 @@
 
     h2 {
       position: relative;
-      @include font-awesome("\f13a", after, $font-size: 26px, $margin: 0 0 0 10px);
+   //   @include font-awesome("\f13a", after, $font-size: 26px, $margin: 0 0 0 10px);
 
       &:before {
         transition: transform .5s ease-in-out;
@@ -27,7 +27,7 @@
 
     &.filter-toggle-expanded {
       h2 {
-        @include font-awesome("\f13a", after, $font-size: 26px, $margin: 0 0 0 10px, $rotate: 180);
+    //    @include font-awesome("\f13a", after, $font-size: 26px, $margin: 0 0 0 10px, $rotate: 180);
       }
     }
 

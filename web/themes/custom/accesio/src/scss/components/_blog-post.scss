@@ -31,7 +31,8 @@
   }
 
   &__lede {
-    @extend .p;
+    @include rem(font-size, 20px);
+    font-family: $font-slab;
   }
 
   &__share {
@@ -87,6 +88,7 @@
   &__tags-items {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
   }
 
@@ -97,6 +99,7 @@
     letter-spacing: 1px;
     position: relative;
     display: flex;
+    @include list-reset();
 
     span {
       display: block;
@@ -111,12 +114,5 @@
     @include mq($from: medium-large) {
       @include blog-width();
     }
-  }
-}
-
-.width--70 {
-
-  @include mq($from: medium-large) {
-    @include blog-width();
   }
 }

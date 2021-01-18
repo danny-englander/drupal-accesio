@@ -43,7 +43,7 @@
   ul {
     > li {
       position: relative;
-      @include font-awesome("\f054", before, $font-size: 23px, $margin: 6px 0 0 0, $position: absolute, $left: 6px, $color: $primary-color);
+   //   @include font-awesome("\f054", before, $font-size: 23px, $margin: 6px 0 0 0, $position: absolute, $left: 6px, $color: $primary-color);
     }
   }
 }

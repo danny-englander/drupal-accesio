@@ -5,12 +5,12 @@
   <ul class="rrssb-buttons share__items">
     {% for button in buttons %}
       <li class="rrssb-{{ button.name }} share__item">
-        <a href="{{ button.link }}" {{ button.class | raw }} title="{{ 'Share with'|t }} {{ button.name }}">
+        <a href="{{ button.link }}" {{ button.class | raw }} title="{{ 'Share on'|t }} {{ button.name }}">
           <span class="rrssb-icon share__icon share__icon--{{- button.name }}">
             {% if button.name == 'email' %}
-              <i class="far fa-envelope fa-2x"></i>
+              <i class="ri-mail-add-line ri-2x"></i>
             {% else %}
-              <i class="fab fa-{{- button.name }} fa-2x"></i>
+              <i class="ri-{{- button.name -}}-fill ri-2x"></i>
             {% endif %}
           </span>
           <span class="rrssb-text share__text">{{ button.text }}</span>

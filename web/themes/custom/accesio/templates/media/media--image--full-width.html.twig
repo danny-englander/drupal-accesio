@@ -31,7 +31,10 @@
     {% endif %}
 
     {% if content.field_attribution | render %}
-      <p><i class="fas fa-camera"></i> {{ content.field_attribution | field_value }}</p>
+      <div class="media__attribution">
+        <i class="ri-camera-lens-fill ri-2x"></i>
+        <p>{{ content.field_attribution | field_value }}</p>
+      </div>
     {% endif %}
 
   {% endif %}
