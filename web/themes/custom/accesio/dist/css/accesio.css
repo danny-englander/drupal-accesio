@@ -2092,11 +2092,14 @@ Media theming.
 
 .main-menu__item--level-0 > a {
   font-size: 1.0625rem;
-  display: block;
   padding: 10px 24px;
   border: 1px dashed #fff;
   margin: 0 10px;
   letter-spacing: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .main-menu__item--level-0 > a.has-action {
@@ -2106,18 +2109,16 @@ Media theming.
 }
 
 .main-menu__item--level-0 > a.has-action:after {
-  content: "";
-  display: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-.main-menu__item--level-0 > a.has-action .svg-inline--fa {
-  transition: .4s ease;
-  font-size: 1.1875rem;
-  margin: 2px 0 0 10px;
+  content: "";
+  font-family: remixicon;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 0;
+  font-size: 1.75rem;
+  width: 22px;
+  margin: 4px 0 0 8px;
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 .main-menu__item--level-0 > a:active, .main-menu__item--level-0 > a:focus, .main-menu__item--level-0 > a:hover {
@@ -2128,28 +2129,21 @@ Media theming.
 
 .main-menu__item--submenu-level-0 > a {
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .main-menu__item--submenu-level-0 > a:after {
-  content: "\EA4A";
+  content: "";
   font-family: remixicon;
   display: inline-block;
   font-weight: 400;
-  font-size: 30px;
-  position: absolute;
-  margin-left: 6px;
-  top: 0;
-  margin-right: 6px;
-  padding-right: 10px;
-}
-
-.main-menu__item--submenu-level-0 > a.panel-is-open .svg-inline--fa {
-  -ms-transform: rotate(540deg);
-  transform: rotate(540deg);
-}
-
-.main-menu__item--submenu-level-0 > a:active .svg-inline--fa, .main-menu__item--submenu-level-0 > a:focus .svg-inline--fa, .main-menu__item--submenu-level-0 > a:hover .svg-inline--fa {
-  color: #212121;
+  line-height: 0;
+  font-size: 1.75rem;
+  width: 22px;
+  margin: 0 0 0 6px;
 }
 
 .main-menu__sub-nav {
@@ -2230,18 +2224,19 @@ Media theming.
 }
 
 .pager__item a {
+  font-size: 1.0625rem;
+  font-weight: 600;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 46px;
+  height: 46px;
   text-decoration: none;
   background-color: #482e6e;
   color: #fff;
-  font-weight: 600;
   border-radius: 80px;
 }
 
@@ -2257,6 +2252,18 @@ Media theming.
 
 .page-wrap .pager__item--ellipsis {
   font-size: 1.25rem;
+}
+
+.pager__item--first i, .pager__item--last i {
+  font-size: 1.625rem;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pager__item--next i, .pager__item--previous i {
+  font-size: 2.25rem;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .pager__item.is-active a {

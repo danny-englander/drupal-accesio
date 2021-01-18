@@ -2,8 +2,8 @@ accesio:
   version: VERSION
   css:
     theme:
-      dist/css/min/grid.min.css: { minified: true }
-      dist/css/min/remixicon.min.css: { minified: true }
+      dist/vendor/css/min/grid.min.css: { minified: true }
+      dist/vendor/css/min/remixicon.min.css: { minified: true }
       dist/css/accesio.css: {}
   js:
     dist/js/jquery-meganav.js: { defer: true, async: true }

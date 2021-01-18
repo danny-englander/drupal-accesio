@@ -157,8 +157,14 @@
   * Custom function to convert SVG img to an inline SVG.
   * See https://gist.github.com/Bloggerschmidt/61beeca2cce94a70c9df#gistcomment-3080717
   */
-  Drupal.behaviors.svgConvert = {
+  Drupal.behaviors.AjaxEvent = {
     attach: function (context, settings) {
+      $(document).once('exposed-form').ajaxComplete(function (event, xhr, settings) {
+        if($("#views-exposed-form-remix-icons-block" + name).length !== 0) {
+          console.log('hello');
+        }
+      });
+
       // document.querySelectorAll('img.svg-img-to-inline').forEach((el) => {
       //   const imgID = el.getAttribute('id');
       //   const imgClass = el.getAttribute('class');

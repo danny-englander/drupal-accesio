@@ -100,7 +100,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(['./src/scss/**/*.scss'])
+  return gulp.src(['!./src/scss/vendor/**/*.scss', './src/scss/accesio.scss'])
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({
@@ -123,6 +123,29 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/css/min'));
 });
 
+gulp.task('vendors', function () {
+  return gulp.src(['./src/scss/vendor/*.scss', '!./src/scss/vendor/bs-grid'])
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      outputStyle: 'expanded',
+    }).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 4 versions'],
+      cascade: false
+    }))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./dist/vendor/css'))
+    .pipe(browserSync.reload({
+      stream: true,
+      match: '**/*.css'
+    }))
+    .pipe(cleanCSS())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./dist/vendor/css/min'));
+});
+
 // browser-sync watch.
 gulp.task('watch', ['browser-sync'], function (gulpCallback) {
   gulp.watch("./src/scss/**/*.scss", ['sass']);
@@ -138,3 +161,5 @@ gulp.task('build', ['sass', 'scripts']);
 gulp.task('svg', ['svgSprite']);
 // Task: Default gulp build and watch.
 gulp.task('default', ['sass', 'scripts', 'watch']);
+
+gulp.task('vendor', ['vendors']);
