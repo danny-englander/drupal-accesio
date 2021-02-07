@@ -1,0 +1,34 @@
+uuid: 04f32814-dd8f-4c3e-a156-fd3d17d8cd44
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon_grid
+    - field.field.taxonomy_term.material_design_icons.feeds_item
+    - field.field.taxonomy_term.material_design_icons.field_md_class
+    - field.field.taxonomy_term.material_design_icons.field_md_code
+    - taxonomy.vocabulary.material_design_icons
+id: taxonomy_term.material_design_icons.icon_grid
+targetEntityType: taxonomy_term
+bundle: material_design_icons
+mode: icon_grid
+content:
+  field_md_class:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_md_code:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  description: true
+  feeds_item: true

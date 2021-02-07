@@ -739,6 +739,24 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-display: swap;
 }
 
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MaterialIconsOutlined-Regular.otf") format("opentype"), url("../fonts/MaterialIconsOutlined-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
 /*
 WCAG requires that no loss of content or functionality occurs when the
 end user overrides page styles for paragraph spacing to 200%
@@ -887,6 +905,38 @@ h6 {
     line-height: 2rem;
     margin-bottom: 2.375rem;
   }
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 
 /*

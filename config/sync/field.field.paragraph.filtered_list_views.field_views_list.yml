@@ -20,8 +20,9 @@ default_value_callback: ''
 settings:
   force_default: false
   allowed_views:
-    fa_icons: fa_icons
+    md_icons: md_icons
     remix_icons: remix_icons
+    category_terms: '0'
     content: '0'
     block_content: '0'
     feeds_feed: '0'
@@ -29,6 +30,7 @@ settings:
     frontpage: '0'
     hero: '0'
     media: '0'
+    media_gallery: '0'
     media_library: '0'
     user_admin_people: '0'
     content_recent: '0'
