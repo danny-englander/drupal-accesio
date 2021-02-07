@@ -147,6 +147,7 @@ h6 {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility
 }
 
 .material-icons-outlined {
@@ -163,4 +164,6 @@ h6 {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility
 }
+

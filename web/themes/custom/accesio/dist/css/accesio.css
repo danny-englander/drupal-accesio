@@ -744,7 +744,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2");
+  src: url("../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -753,8 +753,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-family: 'Material Icons Outlined';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/MaterialIconsOutlined-Regular.otf") format("opentype"), url("../fonts/MaterialIconsOutlined-Regular.woff2") format("woff2");
-  font-display: swap;
+  src: url("../fonts/MaterialIconsOutlined-Regular.woff2") format("woff2"), url("../fonts/MaterialIconsOutlined-Regular.otf") format("opentype");
 }
 
 /*
@@ -921,6 +920,7 @@ h6 {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .material-icons-outlined {
@@ -937,6 +937,7 @@ h6 {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /*

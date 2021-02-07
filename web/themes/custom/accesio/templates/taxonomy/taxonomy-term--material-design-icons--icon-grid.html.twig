@@ -40,7 +40,8 @@
 
       <div class="icon-item__preview-icon preview-icon">
         <span class="icon-item__step step">
-            <i class="material-icons" style="font-size: 70px" aria-label="{{ name | field_value }}">{{ html_code }}</i>
+            <span class="material-icons" style="font-size: 70px; width: 100px; display: inline-block;" aria-label="{{ name | field_value }}">&#x{{- css_code -}}</span>
+{#  <i class="material-icons">&#xE038;</i>#}
         </span>
       </div>
 
