@@ -1,0 +1,50 @@
+uuid: 1ab4ecc7-35ff-41ba-bc6c-5bf5faa7d78b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.portfolio_image
+    - field.field.media.image.field_attribution
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_category
+    - field.field.media.image.field_media_image
+    - image.style.max_1300x1300
+    - media.type.image
+  module:
+    - image
+    - lazy
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.portfolio_image
+targetEntityType: media
+bundle: image
+mode: portfolio_image
+content:
+  field_category:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_image:
+    label: hidden
+    settings:
+      image_style: max_1300x1300
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: ''
+        data_uri: false
+    type: image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_attribution: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

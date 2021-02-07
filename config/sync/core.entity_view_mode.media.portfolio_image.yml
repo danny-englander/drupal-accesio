@@ -1,0 +1,10 @@
+uuid: fca41a68-fabf-4787-81c1-3e82de81d461
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portfolio_image
+label: 'Portfolio Image'
+targetEntityType: media
+cache: true

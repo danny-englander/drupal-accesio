@@ -1183,7 +1183,7 @@ Accordion styling.
 }
 
 @media (min-width: 57.5em) {
-  .blog-post p, .blog-post ol, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post ul:not(.blog-post__tags-items) {
+  .blog-post p, .blog-post ol, .blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post ul:not(.blog-post__tags-items) {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -2331,6 +2331,10 @@ override inline styles from the module js.
   text-decoration: none;
 }
 
+.share__item a:active i, .share__item a:focus i, .share__item a:hover i {
+  color: #482e6e;
+}
+
 .share__icon {
   background: none !important;
 }
@@ -2346,22 +2350,7 @@ override inline styles from the module js.
 
 .share__icon i {
   font-size: 1.75rem;
-}
-
-.share__icon--email i {
   color: #404040;
-}
-
-.share__icon--twitter i {
-  color: #1da1f2;
-}
-
-.share__icon--pinterest i {
-  color: #bd081c;
-}
-
-.share__icon--linkedin i {
-  color: #0a66c2;
 }
 
 .share__link {

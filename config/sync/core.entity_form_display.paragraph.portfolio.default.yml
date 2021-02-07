@@ -1,0 +1,34 @@
+uuid: dc836a51-f815-45af-8a74-8a6eb9c897e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.portfolio.field_portfolio_items
+    - field.field.paragraph.portfolio.field_terms_filter
+    - paragraphs.paragraphs_type.portfolio
+  module:
+    - media_library
+    - media_library_edit
+id: paragraph.portfolio.default
+targetEntityType: paragraph
+bundle: portfolio
+mode: default
+content:
+  field_portfolio_items:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+    region: content
+  field_terms_filter:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

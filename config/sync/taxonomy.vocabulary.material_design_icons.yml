@@ -1,0 +1,8 @@
+uuid: 6cf4aaac-bc08-4f26-84c1-eb34043968c7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Material Design Icons'
+vid: material_design_icons
+description: ''
+weight: 0

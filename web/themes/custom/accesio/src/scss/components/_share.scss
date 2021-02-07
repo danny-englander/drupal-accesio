@@ -39,6 +39,12 @@ override inline styles from the module js.
     a {
       background-color: transparent !important;
       text-decoration: none;
+
+      #{$a-tags-hover} {
+        i {
+          color: $primary-color;
+        }
+      }
     }
   }
 
@@ -53,17 +59,18 @@ override inline styles from the module js.
   &__icon {
     i {
       @include rem(font-size, 28px);
+      color: $charcoal;
     }
 
     &--email {
       i {
-        color: $charcoal;
+      //  color: $charcoal;
       }
     }
 
     &--twitter {
       i {
-        color: #1da1f2;
+       // color: #1da1f2;
       }
 
     }
@@ -71,14 +78,14 @@ override inline styles from the module js.
     &--pinterest {
 
       i {
-        color: #bd081c;
+      //  color: #bd081c;
       }
     }
 
     &--linkedin {
 
       i {
-        color: #0a66c2;
+       // color: #0a66c2;
       }
     }
 

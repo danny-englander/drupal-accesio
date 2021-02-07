@@ -1,0 +1,14 @@
+uuid: 3e018848-812e-4dfd-b269-369381cf6662
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.material_design_icons
+id: taxonomy_vocabulary_material_design_icons
+entity_type_id: taxonomy_vocabulary
+entity_id: material_design_icons
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

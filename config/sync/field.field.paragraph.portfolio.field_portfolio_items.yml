@@ -1,0 +1,29 @@
+uuid: 7d3bad74-0b45-4717-bd44-1c4b7b11a02d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_portfolio_items
+    - media.type.image
+    - paragraphs.paragraphs_type.portfolio
+id: paragraph.portfolio.field_portfolio_items
+field_name: field_portfolio_items
+entity_type: paragraph
+bundle: portfolio
+label: 'Portfolio Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

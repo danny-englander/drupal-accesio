@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_statistic_icon
     - paragraphs.paragraphs_type.stats_item
+    - taxonomy.vocabulary.remix_icons
 id: paragraph.stats_item.field_statistic_icon
 field_name: field_statistic_icon
 entity_type: paragraph
@@ -18,7 +19,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      remix_icons: remix_icons
     sort:
       field: name
       direction: asc

@@ -28,6 +28,7 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      article: article
       blog_post: blog_post
     negate: false
     context_mapping:

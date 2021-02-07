@@ -1,0 +1,10 @@
+uuid: 4e344f79-f210-45d8-a540-469172e3e7a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.terms_list
+label: 'Terms List'
+targetEntityType: taxonomy_term
+cache: true

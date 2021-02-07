@@ -1,0 +1,23 @@
+uuid: 72538004-02fa-468a-9dfd-22da7ed91c06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.material_design_icons
+  module:
+    - feeds
+id: taxonomy_term.material_design_icons.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: material_design_icons
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.media.standard
     - field.field.media.image.field_attribution
     - field.field.media.image.field_caption
+    - field.field.media.image.field_category
     - field.field.media.image.field_media_image
     - image.style.max_1300x1300
     - media.type.image
@@ -36,6 +37,7 @@ hidden:
   created: true
   field_attribution: true
   field_caption: true
+  field_category: true
   name: true
   thumbnail: true
   uid: true

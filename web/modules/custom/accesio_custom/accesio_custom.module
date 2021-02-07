@@ -32,6 +32,5 @@ function accesio_custom_views_query_alter(ViewExecutable $view, QueryPluginBase 
     $view->query->where[1]["conditions"][0]["operator"] = 'LIKE';
     // Now query the name using the condition above.
   //  $view->query->where[1]['conditions'][0]['value'] = '%' . $name . '%';
-    $a =1;
   }
 }

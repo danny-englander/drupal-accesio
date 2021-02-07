@@ -1,0 +1,72 @@
+uuid: f20776a5-dbc6-4ea2-b2a3-eabf759469f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.material_design_icons.field_md_class
+    - field.field.taxonomy_term.material_design_icons.field_md_code
+    - taxonomy.vocabulary.material_design_icons
+  module:
+    - taxonomy
+id: material_design_icons
+label: 'Material Design Icons'
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    vid: material_design_icons
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  name:
+    label: Name
+    value: Name
+    machine_name: name
+  id:
+    label: id
+    value: id
+    machine_name: id
+  code:
+    label: Code
+    value: Code
+    machine_name: code
+mappings:
+  -
+    target: name
+    map:
+      value: name
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_md_class
+    map:
+      value: id
+    unique:
+      value: '1'
+    settings:
+      language: null
+  -
+    target: field_md_code
+    map:
+      value: code
+    unique: {  }
+    settings:
+      language: null

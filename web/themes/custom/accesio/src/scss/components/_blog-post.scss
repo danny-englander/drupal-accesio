@@ -108,8 +108,7 @@
     }
   }
 
-
-  p, ol, h2, h3, h4, ul:not(.blog-post__tags-items) {
+  p, ol, h1, h2, h3, h4, ul:not(.blog-post__tags-items) {
 
     @include mq($from: medium-large) {
       @include blog-width();

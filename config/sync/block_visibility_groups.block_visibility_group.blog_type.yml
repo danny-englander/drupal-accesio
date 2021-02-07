@@ -11,6 +11,7 @@ conditions:
   ea142993-7e87-4157-8bcc-b54e9ab8c73f:
     id: node_type
     bundles:
+      article: article
       blog_post: blog_post
     negate: false
     context_mapping:

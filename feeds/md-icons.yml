@@ -1,0 +1,4689 @@
+- id: 10k
+  Name: 10k
+  Code: e951
+- id: 10mp
+  Name: 10mp
+  Code: e952
+- id: 11mp
+  Name: 11mp
+  Code: e953
+- id: 12mp
+  Name: 12mp
+  Code: e954
+- id: 13mp
+  Name: 13mp
+  Code: e955
+- id: 14mp
+  Name: 14mp
+  Code: e956
+- id: 15mp
+  Name: 15mp
+  Code: e957
+- id: 16mp
+  Name: 16mp
+  Code: e958
+- id: 17mp
+  Name: 17mp
+  Code: e959
+- id: 18mp
+  Name: 18mp
+  Code: e95a
+- id: 19mp
+  Name: 19mp
+  Code: e95b
+- id: 1k
+  Name: 1k
+  Code: e95c
+- id: 1k_plus
+  Name: 1k Plus
+  Code: e95d
+- id: 20mp
+  Name: 20mp
+  Code: e95e
+- id: 21mp
+  Name: 21mp
+  Code: e95f
+- id: 22mp
+  Name: 22mp
+  Code: e960
+- id: 23mp
+  Name: 23mp
+  Code: e961
+- id: 24mp
+  Name: 24mp
+  Code: e962
+- id: 2k
+  Name: 2k
+  Code: e963
+- id: 2k_plus
+  Name: 2k Plus
+  Code: e964
+- id: 2mp
+  Name: 2mp
+  Code: e965
+- id: '360'
+  Name: '360'
+  Code: e577
+- id: 3d_rotation
+  Name: 3d Rotation
+  Code: e84d
+- id: 3k
+  Name: 3k
+  Code: e966
+- id: 3k_plus
+  Name: 3k Plus
+  Code: e967
+- id: 3mp
+  Name: 3mp
+  Code: e968
+- id: 4k
+  Name: 4k
+  Code: e072
+- id: 4k_plus
+  Name: 4k Plus
+  Code: e969
+- id: 4mp
+  Name: 4mp
+  Code: e96a
+- id: 5g
+  Name: 5g
+  Code: ef38
+- id: 5k
+  Name: 5k
+  Code: e96b
+- id: 5k_plus
+  Name: 5k Plus
+  Code: e96c
+- id: 5mp
+  Name: 5mp
+  Code: e96d
+- id: 6_ft_apart
+  Name: 6 Ft Apart
+  Code: f21e
+- id: 6k
+  Name: 6k
+  Code: e96e
+- id: 6k_plus
+  Name: 6k Plus
+  Code: e96f
+- id: 6mp
+  Name: 6mp
+  Code: e970
+- id: 7k
+  Name: 7k
+  Code: e971
+- id: 7k_plus
+  Name: 7k Plus
+  Code: e972
+- id: 7mp
+  Name: 7mp
+  Code: e973
+- id: 8k
+  Name: 8k
+  Code: e974
+- id: 8k_plus
+  Name: 8k Plus
+  Code: e975
+- id: 8mp
+  Name: 8mp
+  Code: e976
+- id: 9k
+  Name: 9k
+  Code: e977
+- id: 9k_plus
+  Name: 9k Plus
+  Code: e978
+- id: 9mp
+  Name: 9mp
+  Code: e979
+- id: ac_unit
+  Name: Ac Unit
+  Code: eb3b
+- id: access_alarm
+  Name: Access Alarm
+  Code: e190
+- id: access_alarms
+  Name: Access Alarms
+  Code: e191
+- id: access_time
+  Name: Access Time
+  Code: e192
+- id: accessibility
+  Name: Accessibility
+  Code: e84e
+- id: accessibility_new
+  Name: Accessibility New
+  Code: e92c
+- id: accessible
+  Name: Accessible
+  Code: e914
+- id: accessible_forward
+  Name: Accessible Forward
+  Code: e934
+- id: account_balance
+  Name: Account Balance
+  Code: e84f
+- id: account_balance_wallet
+  Name: Account Balance Wallet
+  Code: e850
+- id: account_box
+  Name: Account Box
+  Code: e851
+- id: account_circle
+  Name: Account Circle
+  Code: e853
+- id: account_tree
+  Name: Account Tree
+  Code: e97a
+- id: ad_units
+  Name: Ad Units
+  Code: ef39
+- id: adb
+  Name: Adb
+  Code: e60e
+- id: add
+  Name: Add
+  Code: e145
+- id: add_a_photo
+  Name: Add a Photo
+  Code: e439
+- id: add_alarm
+  Name: Add Alarm
+  Code: e193
+- id: add_alert
+  Name: Add Alert
+  Code: e003
+- id: add_box
+  Name: Add Box
+  Code: e146
+- id: add_business
+  Name: Add Business
+  Code: e729
+- id: add_call
+  Name: Add Call
+  Code: e0e8
+- id: add_chart
+  Name: Add Chart
+  Code: e97b
+- id: add_circle
+  Name: Add Circle
+  Code: e147
+- id: add_circle_outline
+  Name: Add Circle Outline
+  Code: e148
+- id: add_comment
+  Name: Add Comment
+  Code: e266
+- id: add_ic_call
+  Name: Add Ic Call
+  Code: e97c
+- id: add_link
+  Name: Add Link
+  Code: e178
+- id: add_location
+  Name: Add Location
+  Code: e567
+- id: add_location_alt
+  Name: Add Location Alt
+  Code: ef3a
+- id: add_moderator
+  Name: Add Moderator
+  Code: e97d
+- id: add_photo_alternate
+  Name: Add Photo Alternate
+  Code: e43e
+- id: add_road
+  Name: Add Road
+  Code: ef3b
+- id: add_shopping_cart
+  Name: Add Shopping Cart
+  Code: e854
+- id: add_task
+  Name: Add Task
+  Code: f23a
+- id: add_to_drive
+  Name: Add to Drive
+  Code: e65c
+- id: add_to_home_screen
+  Name: Add to Home Screen
+  Code: e1fe
+- id: add_to_photos
+  Name: Add to Photos
+  Code: e39d
+- id: add_to_queue
+  Name: Add to Queue
+  Code: e05c
+- id: addchart
+  Name: Addchart
+  Code: ef3c
+- id: adjust
+  Name: Adjust
+  Code: e39e
+- id: admin_panel_settings
+  Name: Admin Panel Settings
+  Code: ef3d
+- id: agriculture
+  Name: Agriculture
+  Code: ea79
+- id: airline_seat_flat
+  Name: Airline Seat Flat
+  Code: e630
+- id: airline_seat_flat_angled
+  Name: Airline Seat Flat Angled
+  Code: e631
+- id: airline_seat_individual_suite
+  Name: Airline Seat Individual Suite
+  Code: e632
+- id: airline_seat_legroom_extra
+  Name: Airline Seat Legroom Extra
+  Code: e633
+- id: airline_seat_legroom_normal
+  Name: Airline Seat Legroom Normal
+  Code: e634
+- id: airline_seat_legroom_reduced
+  Name: Airline Seat Legroom Reduced
+  Code: e635
+- id: airline_seat_recline_extra
+  Name: Airline Seat Recline Extra
+  Code: e636
+- id: airline_seat_recline_normal
+  Name: Airline Seat Recline Normal
+  Code: e637
+- id: airplanemode_active
+  Name: Airplanemode Active
+  Code: e195
+- id: airplanemode_inactive
+  Name: Airplanemode Inactive
+  Code: e194
+- id: airplanemode_off
+  Name: Airplanemode Off
+  Code: e194
+- id: airplanemode_on
+  Name: Airplanemode on
+  Code: e195
+- id: airplay
+  Name: Airplay
+  Code: e055
+- id: airport_shuttle
+  Name: Airport Shuttle
+  Code: eb3c
+- id: alarm
+  Name: Alarm
+  Code: e855
+- id: alarm_add
+  Name: Alarm Add
+  Code: e856
+- id: alarm_off
+  Name: Alarm Off
+  Code: e857
+- id: alarm_on
+  Name: Alarm on
+  Code: e858
+- id: album
+  Name: Album
+  Code: e019
+- id: align_horizontal_center
+  Name: Align Horizontal Center
+  Code: e00f
+- id: align_horizontal_left
+  Name: Align Horizontal Left
+  Code: e00d
+- id: align_horizontal_right
+  Name: Align Horizontal Right
+  Code: e010
+- id: align_vertical_bottom
+  Name: Align Vertical Bottom
+  Code: e015
+- id: align_vertical_center
+  Name: Align Vertical Center
+  Code: e011
+- id: align_vertical_top
+  Name: Align Vertical Top
+  Code: e00c
+- id: all_inbox
+  Name: All Inbox
+  Code: e97f
+- id: all_inclusive
+  Name: All Inclusive
+  Code: eb3d
+- id: all_out
+  Name: All Out
+  Code: e90b
+- id: alt_route
+  Name: Alt Route
+  Code: f184
+- id: alternate_email
+  Name: Alternate Email
+  Code: e0e6
+- id: amp_stories
+  Name: Amp Stories
+  Code: ea13
+- id: analytics
+  Name: Analytics
+  Code: ef3e
+- id: anchor
+  Name: Anchor
+  Code: f1cd
+- id: android
+  Name: Android
+  Code: e859
+- id: animation
+  Name: Animation
+  Code: e71c
+- id: announcement
+  Name: Announcement
+  Code: e85a
+- id: apartment
+  Name: Apartment
+  Code: ea40
+- id: api
+  Name: Api
+  Code: f1b7
+- id: app_blocking
+  Name: App Blocking
+  Code: ef3f
+- id: app_registration
+  Name: App Registration
+  Code: ef40
+- id: app_settings_alt
+  Name: App Settings Alt
+  Code: ef41
+- id: approval
+  Name: Approval
+  Code: e982
+- id: apps
+  Name: Apps
+  Code: e5c3
+- id: architecture
+  Name: Architecture
+  Code: ea3b
+- id: archive
+  Name: Archive
+  Code: e149
+- id: arrow_back
+  Name: Arrow Back
+  Code: e5c4
+- id: arrow_back_ios
+  Name: Arrow Back Ios
+  Code: e5e0
+- id: arrow_circle_down
+  Name: Arrow Circle Down
+  Code: f181
+- id: arrow_circle_up
+  Name: Arrow Circle Up
+  Code: f182
+- id: arrow_downward
+  Name: Arrow Downward
+  Code: e5db
+- id: arrow_drop_down
+  Name: Arrow Drop Down
+  Code: e5c5
+- id: arrow_drop_down_circle
+  Name: Arrow Drop Down Circle
+  Code: e5c6
+- id: arrow_drop_up
+  Name: Arrow Drop Up
+  Code: e5c7
+- id: arrow_forward
+  Name: Arrow Forward
+  Code: e5c8
+- id: arrow_forward_ios
+  Name: Arrow Forward Ios
+  Code: e5e1
+- id: arrow_left
+  Name: Arrow Left
+  Code: e5de
+- id: arrow_right
+  Name: Arrow Right
+  Code: e5df
+- id: arrow_right_alt
+  Name: Arrow Right Alt
+  Code: e941
+- id: arrow_upward
+  Name: Arrow Upward
+  Code: e5d8
+- id: art_track
+  Name: Art Track
+  Code: e060
+- id: article
+  Name: Article
+  Code: ef42
+- id: aspect_ratio
+  Name: Aspect Ratio
+  Code: e85b
+- id: assessment
+  Name: Assessment
+  Code: e85c
+- id: assignment
+  Name: Assignment
+  Code: e85d
+- id: assignment_ind
+  Name: Assignment Ind
+  Code: e85e
+- id: assignment_late
+  Name: Assignment Late
+  Code: e85f
+- id: assignment_return
+  Name: Assignment Return
+  Code: e860
+- id: assignment_returned
+  Name: Assignment Returned
+  Code: e861
+- id: assignment_turned_in
+  Name: Assignment Turned in
+  Code: e862
+- id: assistant
+  Name: Assistant
+  Code: e39f
+- id: assistant_direction
+  Name: Assistant Direction
+  Code: e988
+- id: assistant_navigation
+  Name: Assistant Navigation
+  Code: e989
+- id: assistant_photo
+  Name: Assistant Photo
+  Code: e3a0
+- id: atm
+  Name: Atm
+  Code: e573
+- id: attach_email
+  Name: Attach Email
+  Code: ea5e
+- id: attach_file
+  Name: Attach File
+  Code: e226
+- id: attach_money
+  Name: Attach Money
+  Code: e227
+- id: attachment
+  Name: Attachment
+  Code: e2bc
+- id: attractions
+  Name: Attractions
+  Code: ea52
+- id: audiotrack
+  Name: Audiotrack
+  Code: e3a1
+- id: auto_awesome
+  Name: Auto Awesome
+  Code: e65f
+- id: auto_awesome_mosaic
+  Name: Auto Awesome Mosaic
+  Code: e660
+- id: auto_awesome_motion
+  Name: Auto Awesome Motion
+  Code: e661
+- id: auto_delete
+  Name: Auto Delete
+  Code: ea4c
+- id: auto_fix_high
+  Name: Auto Fix High
+  Code: e663
+- id: auto_fix_normal
+  Name: Auto Fix Normal
+  Code: e664
+- id: auto_fix_off
+  Name: Auto Fix Off
+  Code: e665
+- id: auto_stories
+  Name: Auto Stories
+  Code: e666
+- id: autorenew
+  Name: Autorenew
+  Code: e863
+- id: av_timer
+  Name: Av Timer
+  Code: e01b
+- id: baby_changing_station
+  Name: Baby Changing Station
+  Code: f19b
+- id: backpack
+  Name: Backpack
+  Code: f19c
+- id: backspace
+  Name: Backspace
+  Code: e14a
+- id: backup
+  Name: Backup
+  Code: e864
+- id: backup_table
+  Name: Backup Table
+  Code: ef43
+- id: badge
+  Name: Badge
+  Code: ea67
+- id: bakery_dining
+  Name: Bakery Dining
+  Code: ea53
+- id: ballot
+  Name: Ballot
+  Code: e172
+- id: bar_chart
+  Name: Bar Chart
+  Code: e26b
+- id: batch_prediction
+  Name: Batch Prediction
+  Code: f0f5
+- id: bathtub
+  Name: Bathtub
+  Code: ea41
+- id: battery_alert
+  Name: Battery Alert
+  Code: e19c
+- id: battery_charging_full
+  Name: Battery Charging Full
+  Code: e1a3
+- id: battery_full
+  Name: Battery Full
+  Code: e1a4
+- id: battery_std
+  Name: Battery Std
+  Code: e1a5
+- id: battery_unknown
+  Name: Battery Unknown
+  Code: e1a6
+- id: beach_access
+  Name: Beach Access
+  Code: eb3e
+- id: bedtime
+  Name: Bedtime
+  Code: ef44
+- id: beenhere
+  Name: Beenhere
+  Code: e52d
+- id: bento
+  Name: Bento
+  Code: f1f4
+- id: bike_scooter
+  Name: Bike Scooter
+  Code: ef45
+- id: biotech
+  Name: Biotech
+  Code: ea3a
+- id: block
+  Name: Block
+  Code: e14b
+- id: block_flipped
+  Name: Block Flipped
+  Code: ef46
+- id: bluetooth
+  Name: Bluetooth
+  Code: e1a7
+- id: bluetooth_audio
+  Name: Bluetooth Audio
+  Code: e60f
+- id: bluetooth_connected
+  Name: Bluetooth Connected
+  Code: e1a8
+- id: bluetooth_disabled
+  Name: Bluetooth Disabled
+  Code: e1a9
+- id: bluetooth_searching
+  Name: Bluetooth Searching
+  Code: e1aa
+- id: blur_circular
+  Name: Blur Circular
+  Code: e3a2
+- id: blur_linear
+  Name: Blur Linear
+  Code: e3a3
+- id: blur_off
+  Name: Blur Off
+  Code: e3a4
+- id: blur_on
+  Name: Blur on
+  Code: e3a5
+- id: bolt
+  Name: Bolt
+  Code: ea0b
+- id: book
+  Name: Book
+  Code: e865
+- id: book_online
+  Name: Book Online
+  Code: f217
+- id: bookmark
+  Name: Bookmark
+  Code: e866
+- id: bookmark_border
+  Name: Bookmark Border
+  Code: e867
+- id: bookmark_outline
+  Name: Bookmark Outline
+  Code: e867
+- id: bookmarks
+  Name: Bookmarks
+  Code: e98b
+- id: border_all
+  Name: Border All
+  Code: e228
+- id: border_bottom
+  Name: Border Bottom
+  Code: e229
+- id: border_clear
+  Name: Border Clear
+  Code: e22a
+- id: border_color
+  Name: Border Color
+  Code: e22b
+- id: border_horizontal
+  Name: Border Horizontal
+  Code: e22c
+- id: border_inner
+  Name: Border Inner
+  Code: e22d
+- id: border_left
+  Name: Border Left
+  Code: e22e
+- id: border_outer
+  Name: Border Outer
+  Code: e22f
+- id: border_right
+  Name: Border Right
+  Code: e230
+- id: border_style
+  Name: Border Style
+  Code: e231
+- id: border_top
+  Name: Border Top
+  Code: e232
+- id: border_vertical
+  Name: Border Vertical
+  Code: e233
+- id: branding_watermark
+  Name: Branding Watermark
+  Code: e06b
+- id: breakfast_dining
+  Name: Breakfast Dining
+  Code: ea54
+- id: brightness_1
+  Name: Brightness 1
+  Code: e3a6
+- id: brightness_2
+  Name: Brightness 2
+  Code: e3a7
+- id: brightness_3
+  Name: Brightness 3
+  Code: e3a8
+- id: brightness_4
+  Name: Brightness 4
+  Code: e3a9
+- id: brightness_5
+  Name: Brightness 5
+  Code: e3aa
+- id: brightness_6
+  Name: Brightness 6
+  Code: e3ab
+- id: brightness_7
+  Name: Brightness 7
+  Code: e3ac
+- id: brightness_auto
+  Name: Brightness Auto
+  Code: e1ab
+- id: brightness_high
+  Name: Brightness High
+  Code: e1ac
+- id: brightness_low
+  Name: Brightness Low
+  Code: e1ad
+- id: brightness_medium
+  Name: Brightness Medium
+  Code: e1ae
+- id: broken_image
+  Name: Broken Image
+  Code: e3ad
+- id: browser_not_supported
+  Name: Browser Not Supported
+  Code: ef47
+- id: brunch_dining
+  Name: Brunch Dining
+  Code: ea73
+- id: brush
+  Name: Brush
+  Code: e3ae
+- id: bubble_chart
+  Name: Bubble Chart
+  Code: e6dd
+- id: bug_report
+  Name: Bug Report
+  Code: e868
+- id: build
+  Name: Build
+  Code: e869
+- id: build_circle
+  Name: Build Circle
+  Code: ef48
+- id: burst_mode
+  Name: Burst Mode
+  Code: e43c
+- id: bus_alert
+  Name: Bus Alert
+  Code: e98f
+- id: business
+  Name: Business
+  Code: e0af
+- id: business_center
+  Name: Business Center
+  Code: eb3f
+- id: cached
+  Name: Cached
+  Code: e86a
+- id: cake
+  Name: Cake
+  Code: e7e9
+- id: calculate
+  Name: Calculate
+  Code: ea5f
+- id: calendar_today
+  Name: Calendar Today
+  Code: e935
+- id: calendar_view_day
+  Name: Calendar View Day
+  Code: e936
+- id: call
+  Name: Call
+  Code: e0b0
+- id: call_end
+  Name: Call End
+  Code: e0b1
+- id: call_made
+  Name: Call Made
+  Code: e0b2
+- id: call_merge
+  Name: Call Merge
+  Code: e0b3
+- id: call_missed
+  Name: Call Missed
+  Code: e0b4
+- id: call_missed_outgoing
+  Name: Call Missed Outgoing
+  Code: e0e4
+- id: call_received
+  Name: Call Received
+  Code: e0b5
+- id: call_split
+  Name: Call Split
+  Code: e0b6
+- id: call_to_action
+  Name: Call to Action
+  Code: e06c
+- id: camera
+  Name: Camera
+  Code: e3af
+- id: camera_alt
+  Name: Camera Alt
+  Code: e3b0
+- id: camera_enhance
+  Name: Camera Enhance
+  Code: e8fc
+- id: camera_front
+  Name: Camera Front
+  Code: e3b1
+- id: camera_rear
+  Name: Camera Rear
+  Code: e3b2
+- id: camera_roll
+  Name: Camera Roll
+  Code: e3b3
+- id: campaign
+  Name: Campaign
+  Code: ef49
+- id: cancel
+  Name: Cancel
+  Code: e5c9
+- id: cancel_presentation
+  Name: Cancel Presentation
+  Code: e0e9
+- id: cancel_schedule_send
+  Name: Cancel Schedule Send
+  Code: ea39
+- id: car_rental
+  Name: Car Rental
+  Code: ea55
+- id: car_repair
+  Name: Car Repair
+  Code: ea56
+- id: card_giftcard
+  Name: Card Giftcard
+  Code: e8f6
+- id: card_membership
+  Name: Card Membership
+  Code: e8f7
+- id: card_travel
+  Name: Card Travel
+  Code: e8f8
+- id: carpenter
+  Name: Carpenter
+  Code: f1f8
+- id: cases
+  Name: Cases
+  Code: e992
+- id: casino
+  Name: Casino
+  Code: eb40
+- id: cast
+  Name: Cast
+  Code: e307
+- id: cast_connected
+  Name: Cast Connected
+  Code: e308
+- id: cast_for_education
+  Name: Cast for Education
+  Code: efec
+- id: category
+  Name: Category
+  Code: e574
+- id: celebration
+  Name: Celebration
+  Code: ea65
+- id: cell_wifi
+  Name: Cell Wifi
+  Code: e0ec
+- id: center_focus_strong
+  Name: Center Focus Strong
+  Code: e3b4
+- id: center_focus_weak
+  Name: Center Focus Weak
+  Code: e3b5
+- id: change_history
+  Name: Change History
+  Code: e86b
+- id: charging_station
+  Name: Charging Station
+  Code: f19d
+- id: chat
+  Name: Chat
+  Code: e0b7
+- id: chat_bubble
+  Name: Chat Bubble
+  Code: e0ca
+- id: chat_bubble_outline
+  Name: Chat Bubble Outline
+  Code: e0cb
+- id: check
+  Name: Check
+  Code: e5ca
+- id: check_box
+  Name: Check Box
+  Code: e834
+- id: check_box_outline_blank
+  Name: Check Box Outline Blank
+  Code: e835
+- id: check_circle
+  Name: Check Circle
+  Code: e86c
+- id: check_circle_outline
+  Name: Check Circle Outline
+  Code: e92d
+- id: checkroom
+  Name: Checkroom
+  Code: f19e
+- id: chevron_left
+  Name: Chevron Left
+  Code: e5cb
+- id: chevron_right
+  Name: Chevron Right
+  Code: e5cc
+- id: child_care
+  Name: Child Care
+  Code: eb41
+- id: child_friendly
+  Name: Child Friendly
+  Code: eb42
+- id: chrome_reader_mode
+  Name: Chrome Reader Mode
+  Code: e86d
+- id: circle
+  Name: Circle
+  Code: ef4a
+- id: circle_notifications
+  Name: Circle Notifications
+  Code: e994
+- id: class
+  Name: Class
+  Code: e86e
+- id: clean_hands
+  Name: Clean Hands
+  Code: f21f
+- id: cleaning_services
+  Name: Cleaning Services
+  Code: f0ff
+- id: clear
+  Name: Clear
+  Code: e14c
+- id: clear_all
+  Name: Clear All
+  Code: e0b8
+- id: close
+  Name: Close
+  Code: e5cd
+- id: close_fullscreen
+  Name: Close Fullscreen
+  Code: f1cf
+- id: closed_caption
+  Name: Closed Caption
+  Code: e01c
+- id: closed_caption_disabled
+  Name: Closed Caption Disabled
+  Code: f1dc
+- id: closed_caption_off
+  Name: Closed Caption Off
+  Code: e996
+- id: cloud
+  Name: Cloud
+  Code: e2bd
+- id: cloud_circle
+  Name: Cloud Circle
+  Code: e2be
+- id: cloud_done
+  Name: Cloud Done
+  Code: e2bf
+- id: cloud_download
+  Name: Cloud Download
+  Code: e2c0
+- id: cloud_off
+  Name: Cloud Off
+  Code: e2c1
+- id: cloud_queue
+  Name: Cloud Queue
+  Code: e2c2
+- id: cloud_upload
+  Name: Cloud Upload
+  Code: e2c3
+- id: code
+  Name: Code
+  Code: e86f
+- id: collections
+  Name: Collections
+  Code: e3b6
+- id: collections_bookmark
+  Name: Collections Bookmark
+  Code: e431
+- id: color_lens
+  Name: Color Lens
+  Code: e3b7
+- id: colorize
+  Name: Colorize
+  Code: e3b8
+- id: comment
+  Name: Comment
+  Code: e0b9
+- id: comment_bank
+  Name: Comment Bank
+  Code: ea4e
+- id: commute
+  Name: Commute
+  Code: e940
+- id: compare
+  Name: Compare
+  Code: e3b9
+- id: compare_arrows
+  Name: Compare Arrows
+  Code: e915
+- id: compass_calibration
+  Name: Compass Calibration
+  Code: e57c
+- id: compress
+  Name: Compress
+  Code: e94d
+- id: computer
+  Name: Computer
+  Code: e30a
+- id: confirmation_num
+  Name: Confirmation Num
+  Code: e638
+- id: confirmation_number
+  Name: Confirmation Number
+  Code: e638
+- id: connect_without_contact
+  Name: Connect Without Contact
+  Code: f223
+- id: connected_tv
+  Name: Connected Tv
+  Code: e998
+- id: construction
+  Name: Construction
+  Code: ea3c
+- id: contact_mail
+  Name: Contact Mail
+  Code: e0d0
+- id: contact_page
+  Name: Contact Page
+  Code: f22e
+- id: contact_phone
+  Name: Contact Phone
+  Code: e0cf
+- id: contact_support
+  Name: Contact Support
+  Code: e94c
+- id: contactless
+  Name: Contactless
+  Code: ea71
+- id: contacts
+  Name: Contacts
+  Code: e0ba
+- id: content_copy
+  Name: Content Copy
+  Code: e14d
+- id: content_cut
+  Name: Content Cut
+  Code: e14e
+- id: content_paste
+  Name: Content Paste
+  Code: e14f
+- id: control_camera
+  Name: Control Camera
+  Code: e074
+- id: control_point
+  Name: Control Point
+  Code: e3ba
+- id: control_point_duplicate
+  Name: Control Point Duplicate
+  Code: e3bb
+- id: copyright
+  Name: Copyright
+  Code: e90c
+- id: coronavirus
+  Name: Coronavirus
+  Code: f221
+- id: corporate_fare
+  Name: Corporate Fare
+  Code: f1d0
+- id: countertops
+  Name: Countertops
+  Code: f1f7
+- id: create
+  Name: Create
+  Code: e150
+- id: create_new_folder
+  Name: Create New Folder
+  Code: e2cc
+- id: credit_card
+  Name: Credit Card
+  Code: e870
+- id: crop
+  Name: Crop
+  Code: e3be
+- id: crop_16_9
+  Name: Crop 16 9
+  Code: e3bc
+- id: crop_3_2
+  Name: Crop 3 2
+  Code: e3bd
+- id: crop_5_4
+  Name: Crop 5 4
+  Code: e3bf
+- id: crop_7_5
+  Name: Crop 7 5
+  Code: e3c0
+- id: crop_din
+  Name: Crop Din
+  Code: e3c1
+- id: crop_free
+  Name: Crop Free
+  Code: e3c2
+- id: crop_landscape
+  Name: Crop Landscape
+  Code: e3c3
+- id: crop_original
+  Name: Crop Original
+  Code: e3c4
+- id: crop_portrait
+  Name: Crop Portrait
+  Code: e3c5
+- id: crop_rotate
+  Name: Crop Rotate
+  Code: e437
+- id: crop_square
+  Name: Crop Square
+  Code: e3c6
+- id: dangerous
+  Name: Dangerous
+  Code: e99a
+- id: dashboard
+  Name: Dashboard
+  Code: e871
+- id: dashboard_customize
+  Name: Dashboard Customize
+  Code: e99b
+- id: data_usage
+  Name: Data Usage
+  Code: e1af
+- id: date_range
+  Name: Date Range
+  Code: e916
+- id: deck
+  Name: Deck
+  Code: ea42
+- id: dehaze
+  Name: Dehaze
+  Code: e3c7
+- id: delete
+  Name: Delete
+  Code: e872
+- id: delete_forever
+  Name: Delete Forever
+  Code: e92b
+- id: delete_outline
+  Name: Delete Outline
+  Code: e92e
+- id: delete_sweep
+  Name: Delete Sweep
+  Code: e16c
+- id: delivery_dining
+  Name: Delivery Dining
+  Code: ea72
+- id: departure_board
+  Name: Departure Board
+  Code: e576
+- id: description
+  Name: Description
+  Code: e873
+- id: design_services
+  Name: Design Services
+  Code: f10a
+- id: desktop_access_disabled
+  Name: Desktop Access Disabled
+  Code: e99d
+- id: desktop_mac
+  Name: Desktop Mac
+  Code: e30b
+- id: desktop_windows
+  Name: Desktop Windows
+  Code: e30c
+- id: details
+  Name: Details
+  Code: e3c8
+- id: developer_board
+  Name: Developer Board
+  Code: e30d
+- id: developer_mode
+  Name: Developer Mode
+  Code: e1b0
+- id: device_hub
+  Name: Device Hub
+  Code: e335
+- id: device_thermostat
+  Name: Device Thermostat
+  Code: e1ff
+- id: device_unknown
+  Name: Device Unknown
+  Code: e339
+- id: devices
+  Name: Devices
+  Code: e1b1
+- id: devices_other
+  Name: Devices Other
+  Code: e337
+- id: dialer_sip
+  Name: Dialer Sip
+  Code: e0bb
+- id: dialpad
+  Name: Dialpad
+  Code: e0bc
+- id: dinner_dining
+  Name: Dinner Dining
+  Code: ea57
+- id: directions
+  Name: Directions
+  Code: e52e
+- id: directions_bike
+  Name: Directions Bike
+  Code: e52f
+- id: directions_boat
+  Name: Directions Boat
+  Code: e532
+- id: directions_bus
+  Name: Directions Bus
+  Code: e530
+- id: directions_car
+  Name: Directions Car
+  Code: e531
+- id: directions_ferry
+  Name: Directions Ferry
+  Code: e532
+- id: directions_off
+  Name: Directions Off
+  Code: f10f
+- id: directions_railway
+  Name: Directions Railway
+  Code: e534
+- id: directions_run
+  Name: Directions Run
+  Code: e566
+- id: directions_subway
+  Name: Directions Subway
+  Code: e533
+- id: directions_train
+  Name: Directions Train
+  Code: e534
+- id: directions_transit
+  Name: Directions Transit
+  Code: e535
+- id: directions_walk
+  Name: Directions Walk
+  Code: e536
+- id: dirty_lens
+  Name: Dirty Lens
+  Code: ef4b
+- id: disabled_by_default
+  Name: Disabled by Default
+  Code: f230
+- id: disc_full
+  Name: Disc Full
+  Code: e610
+- id: dnd_forwardslash
+  Name: Dnd Forwardslash
+  Code: e611
+- id: dns
+  Name: Dns
+  Code: e875
+- id: do_not_disturb
+  Name: Do Not Disturb
+  Code: e612
+- id: do_not_disturb_alt
+  Name: Do Not Disturb Alt
+  Code: e611
+- id: do_not_disturb_off
+  Name: Do Not Disturb Off
+  Code: e643
+- id: do_not_disturb_on
+  Name: Do Not Disturb on
+  Code: e644
+- id: do_not_step
+  Name: Do Not Step
+  Code: f19f
+- id: do_not_touch
+  Name: Do Not Touch
+  Code: f1b0
+- id: dock
+  Name: Dock
+  Code: e30e
+- id: domain
+  Name: Domain
+  Code: e7ee
+- id: domain_disabled
+  Name: Domain Disabled
+  Code: e0ef
+- id: domain_verification
+  Name: Domain Verification
+  Code: ef4c
+- id: done
+  Name: Done
+  Code: e876
+- id: done_all
+  Name: Done All
+  Code: e877
+- id: done_outline
+  Name: Done Outline
+  Code: e92f
+- id: donut_large
+  Name: Donut Large
+  Code: e917
+- id: donut_small
+  Name: Donut Small
+  Code: e918
+- id: double_arrow
+  Name: Double Arrow
+  Code: ea50
+- id: drafts
+  Name: Drafts
+  Code: e151
+- id: drag_handle
+  Name: Drag Handle
+  Code: e25d
+- id: drag_indicator
+  Name: Drag Indicator
+  Code: e945
+- id: drive_eta
+  Name: Drive Eta
+  Code: e613
+- id: drive_file_move
+  Name: Drive File Move
+  Code: e675
+- id: drive_file_move_outline
+  Name: Drive File Move Outline
+  Code: e9a1
+- id: drive_file_rename_outline
+  Name: Drive File Rename Outline
+  Code: e9a2
+- id: drive_folder_upload
+  Name: Drive Folder Upload
+  Code: e9a3
+- id: dry
+  Name: Dry
+  Code: f1b3
+- id: dry_cleaning
+  Name: Dry Cleaning
+  Code: ea58
+- id: duo
+  Name: Duo
+  Code: e9a5
+- id: dvr
+  Name: Dvr
+  Code: e1b2
+- id: dynamic_feed
+  Name: Dynamic Feed
+  Code: ea14
+- id: dynamic_form
+  Name: Dynamic Form
+  Code: f1bf
+- id: east
+  Name: East
+  Code: f1df
+- id: eco
+  Name: Eco
+  Code: ea35
+- id: edit
+  Name: Edit
+  Code: e3c9
+- id: edit_attributes
+  Name: Edit Attributes
+  Code: e578
+- id: edit_location
+  Name: Edit Location
+  Code: e568
+- id: edit_off
+  Name: Edit Off
+  Code: e950
+- id: edit_road
+  Name: Edit Road
+  Code: ef4d
+- id: eject
+  Name: Eject
+  Code: e8fb
+- id: elderly
+  Name: Elderly
+  Code: f21a
+- id: electric_bike
+  Name: Electric Bike
+  Code: eb1b
+- id: electric_car
+  Name: Electric Car
+  Code: eb1c
+- id: electric_moped
+  Name: Electric Moped
+  Code: eb1d
+- id: electric_rickshaw
+  Name: Electric Rickshaw
+  Code: eb1e
+- id: electric_scooter
+  Name: Electric Scooter
+  Code: eb1f
+- id: electrical_services
+  Name: Electrical Services
+  Code: f102
+- id: elevator
+  Name: Elevator
+  Code: f1a0
+- id: email
+  Name: Email
+  Code: e0be
+- id: emoji_emotions
+  Name: Emoji Emotions
+  Code: ea22
+- id: emoji_events
+  Name: Emoji Events
+  Code: ea23
+- id: emoji_flags
+  Name: Emoji Flags
+  Code: ea1a
+- id: emoji_food_beverage
+  Name: Emoji Food Beverage
+  Code: ea1b
+- id: emoji_nature
+  Name: Emoji Nature
+  Code: ea1c
+- id: emoji_objects
+  Name: Emoji Objects
+  Code: ea24
+- id: emoji_people
+  Name: Emoji People
+  Code: ea1d
+- id: emoji_symbols
+  Name: Emoji Symbols
+  Code: ea1e
+- id: emoji_transportation
+  Name: Emoji Transportation
+  Code: ea1f
+- id: engineering
+  Name: Engineering
+  Code: ea3d
+- id: enhance_photo_translate
+  Name: Enhance Photo Translate
+  Code: e8fc
+- id: enhanced_encryption
+  Name: Enhanced Encryption
+  Code: e63f
+- id: equalizer
+  Name: Equalizer
+  Code: e01d
+- id: error
+  Name: Error
+  Code: e000
+- id: error_outline
+  Name: Error Outline
+  Code: e001
+- id: escalator
+  Name: Escalator
+  Code: f1a1
+- id: escalator_warning
+  Name: Escalator Warning
+  Code: f1ac
+- id: euro
+  Name: Euro
+  Code: ea15
+- id: euro_symbol
+  Name: Euro Symbol
+  Code: e926
+- id: ev_station
+  Name: Ev Station
+  Code: e56d
+- id: event
+  Name: Event
+  Code: e878
+- id: event_available
+  Name: Event Available
+  Code: e614
+- id: event_busy
+  Name: Event Busy
+  Code: e615
+- id: event_note
+  Name: Event Note
+  Code: e616
+- id: event_seat
+  Name: Event Seat
+  Code: e903
+- id: exit_to_app
+  Name: Exit to App
+  Code: e879
+- id: expand
+  Name: Expand
+  Code: e94f
+- id: expand_less
+  Name: Expand Less
+  Code: e5ce
+- id: expand_more
+  Name: Expand More
+  Code: e5cf
+- id: explicit
+  Name: Explicit
+  Code: e01e
+- id: explore
+  Name: Explore
+  Code: e87a
+- id: explore_off
+  Name: Explore Off
+  Code: e9a8
+- id: exposure
+  Name: Exposure
+  Code: e3ca
+- id: exposure_minus_1
+  Name: Exposure Minus 1
+  Code: e3cb
+- id: exposure_minus_2
+  Name: Exposure Minus 2
+  Code: e3cc
+- id: exposure_neg_1
+  Name: Exposure Neg 1
+  Code: e3cb
+- id: exposure_neg_2
+  Name: Exposure Neg 2
+  Code: e3cc
+- id: exposure_plus_1
+  Name: Exposure Plus 1
+  Code: e3cd
+- id: exposure_plus_2
+  Name: Exposure Plus 2
+  Code: e3ce
+- id: exposure_zero
+  Name: Exposure Zero
+  Code: e3cf
+- id: extension
+  Name: Extension
+  Code: e87b
+- id: face
+  Name: Face
+  Code: e87c
+- id: face_retouching_natural
+  Name: Face Retouching Natural
+  Code: ef4e
+- id: facebook
+  Name: Facebook
+  Code: f234
+- id: fact_check
+  Name: Fact Check
+  Code: f0c5
+- id: family_restroom
+  Name: Family Restroom
+  Code: f1a2
+- id: fast_forward
+  Name: Fast Forward
+  Code: e01f
+- id: fast_rewind
+  Name: Fast Rewind
+  Code: e020
+- id: fastfood
+  Name: Fastfood
+  Code: e57a
+- id: favorite
+  Name: Favorite
+  Code: e87d
+- id: favorite_border
+  Name: Favorite Border
+  Code: e87e
+- id: favorite_outline
+  Name: Favorite Outline
+  Code: e87e
+- id: featured_play_list
+  Name: Featured Play List
+  Code: e06d
+- id: featured_video
+  Name: Featured Video
+  Code: e06e
+- id: feedback
+  Name: Feedback
+  Code: e87f
+- id: fence
+  Name: Fence
+  Code: f1f6
+- id: festival
+  Name: Festival
+  Code: ea68
+- id: fiber_dvr
+  Name: Fiber Dvr
+  Code: e05d
+- id: fiber_manual_record
+  Name: Fiber Manual Record
+  Code: e061
+- id: fiber_new
+  Name: Fiber New
+  Code: e05e
+- id: fiber_pin
+  Name: Fiber Pin
+  Code: e06a
+- id: fiber_smart_record
+  Name: Fiber Smart Record
+  Code: e062
+- id: file_copy
+  Name: File Copy
+  Code: e173
+- id: file_download
+  Name: File Download
+  Code: e2c4
+- id: file_download_done
+  Name: File Download Done
+  Code: e9aa
+- id: file_present
+  Name: File Present
+  Code: ea0e
+- id: file_upload
+  Name: File Upload
+  Code: e2c6
+- id: filter
+  Name: Filter
+  Code: e3d3
+- id: filter_1
+  Name: Filter 1
+  Code: e3d0
+- id: filter_2
+  Name: Filter 2
+  Code: e3d1
+- id: filter_3
+  Name: Filter 3
+  Code: e3d2
+- id: filter_4
+  Name: Filter 4
+  Code: e3d4
+- id: filter_5
+  Name: Filter 5
+  Code: e3d5
+- id: filter_6
+  Name: Filter 6
+  Code: e3d6
+- id: filter_7
+  Name: Filter 7
+  Code: e3d7
+- id: filter_8
+  Name: Filter 8
+  Code: e3d8
+- id: filter_9
+  Name: Filter 9
+  Code: e3d9
+- id: filter_9_plus
+  Name: Filter 9 Plus
+  Code: e3da
+- id: filter_alt
+  Name: Filter Alt
+  Code: ef4f
+- id: filter_b_and_w
+  Name: Filter B and W
+  Code: e3db
+- id: filter_center_focus
+  Name: Filter Center Focus
+  Code: e3dc
+- id: filter_drama
+  Name: Filter Drama
+  Code: e3dd
+- id: filter_frames
+  Name: Filter Frames
+  Code: e3de
+- id: filter_hdr
+  Name: Filter Hdr
+  Code: e3df
+- id: filter_list
+  Name: Filter List
+  Code: e152
+- id: filter_list_alt
+  Name: Filter List Alt
+  Code: e94e
+- id: filter_none
+  Name: Filter None
+  Code: e3e0
+- id: filter_tilt_shift
+  Name: Filter Tilt Shift
+  Code: e3e2
+- id: filter_vintage
+  Name: Filter Vintage
+  Code: e3e3
+- id: find_in_page
+  Name: Find in Page
+  Code: e880
+- id: find_replace
+  Name: Find Replace
+  Code: e881
+- id: fingerprint
+  Name: Fingerprint
+  Code: e90d
+- id: fire_extinguisher
+  Name: Fire Extinguisher
+  Code: f1d8
+- id: fire_hydrant
+  Name: Fire Hydrant
+  Code: f1a3
+- id: fireplace
+  Name: Fireplace
+  Code: ea43
+- id: first_page
+  Name: First Page
+  Code: e5dc
+- id: fit_screen
+  Name: Fit Screen
+  Code: ea10
+- id: fitness_center
+  Name: Fitness Center
+  Code: eb43
+- id: flag
+  Name: Flag
+  Code: e153
+- id: flaky
+  Name: Flaky
+  Code: ef50
+- id: flare
+  Name: Flare
+  Code: e3e4
+- id: flash_auto
+  Name: Flash Auto
+  Code: e3e5
+- id: flash_off
+  Name: Flash Off
+  Code: e3e6
+- id: flash_on
+  Name: Flash on
+  Code: e3e7
+- id: flight
+  Name: Flight
+  Code: e539
+- id: flight_land
+  Name: Flight Land
+  Code: e904
+- id: flight_takeoff
+  Name: Flight Takeoff
+  Code: e905
+- id: flip
+  Name: Flip
+  Code: e3e8
+- id: flip_camera_android
+  Name: Flip Camera Android
+  Code: ea37
+- id: flip_camera_ios
+  Name: Flip Camera Ios
+  Code: ea38
+- id: flip_to_back
+  Name: Flip to Back
+  Code: e882
+- id: flip_to_front
+  Name: Flip to Front
+  Code: e883
+- id: folder
+  Name: Folder
+  Code: e2c7
+- id: folder_open
+  Name: Folder Open
+  Code: e2c8
+- id: folder_shared
+  Name: Folder Shared
+  Code: e2c9
+- id: folder_special
+  Name: Folder Special
+  Code: e617
+- id: follow_the_signs
+  Name: Follow the Signs
+  Code: f222
+- id: font_download
+  Name: Font Download
+  Code: e167
+- id: food_bank
+  Name: Food Bank
+  Code: f1f2
+- id: format_align_center
+  Name: Format Align Center
+  Code: e234
+- id: format_align_justify
+  Name: Format Align Justify
+  Code: e235
+- id: format_align_left
+  Name: Format Align Left
+  Code: e236
+- id: format_align_right
+  Name: Format Align Right
+  Code: e237
+- id: format_bold
+  Name: Format Bold
+  Code: e238
+- id: format_clear
+  Name: Format Clear
+  Code: e239
+- id: format_color_fill
+  Name: Format Color Fill
+  Code: e23a
+- id: format_color_reset
+  Name: Format Color Reset
+  Code: e23b
+- id: format_color_text
+  Name: Format Color Text
+  Code: e23c
+- id: format_indent_decrease
+  Name: Format Indent Decrease
+  Code: e23d
+- id: format_indent_increase
+  Name: Format Indent Increase
+  Code: e23e
+- id: format_italic
+  Name: Format Italic
+  Code: e23f
+- id: format_line_spacing
+  Name: Format Line Spacing
+  Code: e240
+- id: format_list_bulleted
+  Name: Format List Bulleted
+  Code: e241
+- id: format_list_numbered
+  Name: Format List Numbered
+  Code: e242
+- id: format_list_numbered_rtl
+  Name: Format List Numbered Rtl
+  Code: e267
+- id: format_paint
+  Name: Format Paint
+  Code: e243
+- id: format_quote
+  Name: Format Quote
+  Code: e244
+- id: format_shapes
+  Name: Format Shapes
+  Code: e25e
+- id: format_size
+  Name: Format Size
+  Code: e245
+- id: format_strikethrough
+  Name: Format Strikethrough
+  Code: e246
+- id: format_textdirection_l_to_r
+  Name: Format Textdirection L to R
+  Code: e247
+- id: format_textdirection_r_to_l
+  Name: Format Textdirection R to L
+  Code: e248
+- id: format_underline
+  Name: Format Underline
+  Code: e249
+- id: format_underlined
+  Name: Format Underlined
+  Code: e249
+- id: forum
+  Name: Forum
+  Code: e0bf
+- id: forward
+  Name: Forward
+  Code: e154
+- id: forward_10
+  Name: Forward 10
+  Code: e056
+- id: forward_30
+  Name: Forward 30
+  Code: e057
+- id: forward_5
+  Name: Forward 5
+  Code: e058
+- id: forward_to_inbox
+  Name: Forward to Inbox
+  Code: f187
+- id: foundation
+  Name: Foundation
+  Code: f200
+- id: free_breakfast
+  Name: Free Breakfast
+  Code: eb44
+- id: fullscreen
+  Name: Fullscreen
+  Code: e5d0
+- id: fullscreen_exit
+  Name: Fullscreen Exit
+  Code: e5d1
+- id: functions
+  Name: Functions
+  Code: e24a
+- id: g_translate
+  Name: G Translate
+  Code: e927
+- id: gamepad
+  Name: Gamepad
+  Code: e30f
+- id: games
+  Name: Games
+  Code: e021
+- id: gavel
+  Name: Gavel
+  Code: e90e
+- id: gesture
+  Name: Gesture
+  Code: e155
+- id: get_app
+  Name: Get App
+  Code: e884
+- id: gif
+  Name: Gif
+  Code: e908
+- id: goat
+  Name: Goat
+  Code: 10fffd
+- id: golf_course
+  Name: Golf Course
+  Code: eb45
+- id: gps_fixed
+  Name: Gps Fixed
+  Code: e1b3
+- id: gps_not_fixed
+  Name: Gps Not Fixed
+  Code: e1b4
+- id: gps_off
+  Name: Gps Off
+  Code: e1b5
+- id: grade
+  Name: Grade
+  Code: e885
+- id: gradient
+  Name: Gradient
+  Code: e3e9
+- id: grading
+  Name: Grading
+  Code: ea4f
+- id: grain
+  Name: Grain
+  Code: e3ea
+- id: graphic_eq
+  Name: Graphic Eq
+  Code: e1b8
+- id: grass
+  Name: Grass
+  Code: f205
+- id: grid_off
+  Name: Grid Off
+  Code: e3eb
+- id: grid_on
+  Name: Grid on
+  Code: e3ec
+- id: grid_view
+  Name: Grid View
+  Code: e9b0
+- id: group
+  Name: Group
+  Code: e7ef
+- id: group_add
+  Name: Group Add
+  Code: e7f0
+- id: group_work
+  Name: Group Work
+  Code: e886
+- id: groups
+  Name: Groups
+  Code: f233
+- id: hail
+  Name: Hail
+  Code: e9b1
+- id: handyman
+  Name: Handyman
+  Code: f10b
+- id: hardware
+  Name: Hardware
+  Code: ea59
+- id: hd
+  Name: Hd
+  Code: e052
+- id: hdr_enhanced_select
+  Name: Hdr Enhanced Select
+  Code: ef51
+- id: hdr_off
+  Name: Hdr Off
+  Code: e3ed
+- id: hdr_on
+  Name: Hdr on
+  Code: e3ee
+- id: hdr_strong
+  Name: Hdr Strong
+  Code: e3f1
+- id: hdr_weak
+  Name: Hdr Weak
+  Code: e3f2
+- id: headset
+  Name: Headset
+  Code: e310
+- id: headset_mic
+  Name: Headset Mic
+  Code: e311
+- id: headset_off
+  Name: Headset Off
+  Code: e33a
+- id: healing
+  Name: Healing
+  Code: e3f3
+- id: hearing
+  Name: Hearing
+  Code: e023
+- id: hearing_disabled
+  Name: Hearing Disabled
+  Code: f104
+- id: height
+  Name: Height
+  Code: ea16
+- id: help
+  Name: Help
+  Code: e887
+- id: help_center
+  Name: Help Center
+  Code: f1c0
+- id: help_outline
+  Name: Help Outline
+  Code: e8fd
+- id: high_quality
+  Name: High Quality
+  Code: e024
+- id: highlight
+  Name: Highlight
+  Code: e25f
+- id: highlight_alt
+  Name: Highlight Alt
+  Code: ef52
+- id: highlight_off
+  Name: Highlight Off
+  Code: e888
+- id: highlight_remove
+  Name: Highlight Remove
+  Code: e888
+- id: history
+  Name: History
+  Code: e889
+- id: history_edu
+  Name: History Edu
+  Code: ea3e
+- id: history_toggle_off
+  Name: History Toggle Off
+  Code: f17d
+- id: home
+  Name: Home
+  Code: e88a
+- id: home_filled
+  Name: Home Filled
+  Code: e9b2
+- id: home_repair_service
+  Name: Home Repair Service
+  Code: f100
+- id: home_work
+  Name: Home Work
+  Code: ea09
+- id: horizontal_distribute
+  Name: Horizontal Distribute
+  Code: e014
+- id: horizontal_rule
+  Name: Horizontal Rule
+  Code: f108
+- id: horizontal_split
+  Name: Horizontal Split
+  Code: e947
+- id: hot_tub
+  Name: Hot Tub
+  Code: eb46
+- id: hotel
+  Name: Hotel
+  Code: e53a
+- id: hourglass_bottom
+  Name: Hourglass Bottom
+  Code: ea5c
+- id: hourglass_disabled
+  Name: Hourglass Disabled
+  Code: ef53
+- id: hourglass_empty
+  Name: Hourglass Empty
+  Code: e88b
+- id: hourglass_full
+  Name: Hourglass Full
+  Code: e88c
+- id: hourglass_top
+  Name: Hourglass Top
+  Code: ea5b
+- id: house
+  Name: House
+  Code: ea44
+- id: house_siding
+  Name: House Siding
+  Code: f202
+- id: how_to_reg
+  Name: How to Reg
+  Code: e174
+- id: how_to_vote
+  Name: How to Vote
+  Code: e175
+- id: http
+  Name: Http
+  Code: e902
+- id: https
+  Name: Https
+  Code: e88d
+- id: hvac
+  Name: Hvac
+  Code: f10e
+- id: icecream
+  Name: Icecream
+  Code: ea69
+- id: image
+  Name: Image
+  Code: e3f4
+- id: image_aspect_ratio
+  Name: Image Aspect Ratio
+  Code: e3f5
+- id: image_not_supported
+  Name: Image Not Supported
+  Code: f116
+- id: image_search
+  Name: Image Search
+  Code: e43f
+- id: imagesearch_roller
+  Name: Imagesearch Roller
+  Code: e9b4
+- id: import_contacts
+  Name: Import Contacts
+  Code: e0e0
+- id: import_export
+  Name: Import Export
+  Code: e0c3
+- id: important_devices
+  Name: Important Devices
+  Code: e912
+- id: inbox
+  Name: Inbox
+  Code: e156
+- id: indeterminate_check_box
+  Name: Indeterminate Check Box
+  Code: e909
+- id: info
+  Name: Info
+  Code: e88e
+- id: info_outline
+  Name: Info Outline
+  Code: e88f
+- id: input
+  Name: Input
+  Code: e890
+- id: insert_chart
+  Name: Insert Chart
+  Code: e24b
+- id: insert_chart_outlined
+  Name: Insert Chart Outlined
+  Code: e26a
+- id: insert_comment
+  Name: Insert Comment
+  Code: e24c
+- id: insert_drive_file
+  Name: Insert Drive File
+  Code: e24d
+- id: insert_emoticon
+  Name: Insert Emoticon
+  Code: e24e
+- id: insert_invitation
+  Name: Insert Invitation
+  Code: e24f
+- id: insert_link
+  Name: Insert Link
+  Code: e250
+- id: insert_photo
+  Name: Insert Photo
+  Code: e251
+- id: insights
+  Name: Insights
+  Code: f092
+- id: integration_instructions
+  Name: Integration Instructions
+  Code: ef54
+- id: inventory
+  Name: Inventory
+  Code: e179
+- id: invert_colors
+  Name: Invert Colors
+  Code: e891
+- id: invert_colors_off
+  Name: Invert Colors Off
+  Code: e0c4
+- id: invert_colors_on
+  Name: Invert Colors on
+  Code: e891
+- id: ios_share
+  Name: Ios Share
+  Code: e6b8
+- id: iso
+  Name: Iso
+  Code: e3f6
+- id: keyboard
+  Name: Keyboard
+  Code: e312
+- id: keyboard_arrow_down
+  Name: Keyboard Arrow Down
+  Code: e313
+- id: keyboard_arrow_left
+  Name: Keyboard Arrow Left
+  Code: e314
+- id: keyboard_arrow_right
+  Name: Keyboard Arrow Right
+  Code: e315
+- id: keyboard_arrow_up
+  Name: Keyboard Arrow Up
+  Code: e316
+- id: keyboard_backspace
+  Name: Keyboard Backspace
+  Code: e317
+- id: keyboard_capslock
+  Name: Keyboard Capslock
+  Code: e318
+- id: keyboard_control
+  Name: Keyboard Control
+  Code: e5d3
+- id: keyboard_hide
+  Name: Keyboard Hide
+  Code: e31a
+- id: keyboard_return
+  Name: Keyboard Return
+  Code: e31b
+- id: keyboard_tab
+  Name: Keyboard Tab
+  Code: e31c
+- id: keyboard_voice
+  Name: Keyboard Voice
+  Code: e31d
+- id: king_bed
+  Name: King Bed
+  Code: ea45
+- id: kitchen
+  Name: Kitchen
+  Code: eb47
+- id: label
+  Name: Label
+  Code: e892
+- id: label_important
+  Name: Label Important
+  Code: e937
+- id: label_important_outline
+  Name: Label Important Outline
+  Code: e948
+- id: label_off
+  Name: Label Off
+  Code: e9b6
+- id: label_outline
+  Name: Label Outline
+  Code: e893
+- id: landscape
+  Name: Landscape
+  Code: e3f7
+- id: language
+  Name: Language
+  Code: e894
+- id: laptop
+  Name: Laptop
+  Code: e31e
+- id: laptop_chromebook
+  Name: Laptop Chromebook
+  Code: e31f
+- id: laptop_mac
+  Name: Laptop Mac
+  Code: e320
+- id: laptop_windows
+  Name: Laptop Windows
+  Code: e321
+- id: last_page
+  Name: Last Page
+  Code: e5dd
+- id: launch
+  Name: Launch
+  Code: e895
+- id: layers
+  Name: Layers
+  Code: e53b
+- id: layers_clear
+  Name: Layers Clear
+  Code: e53c
+- id: leaderboard
+  Name: Leaderboard
+  Code: f20c
+- id: leak_add
+  Name: Leak Add
+  Code: e3f8
+- id: leak_remove
+  Name: Leak Remove
+  Code: e3f9
+- id: leave_bags_at_home
+  Name: Leave Bags at Home
+  Code: f21b
+- id: legend_toggle
+  Name: Legend Toggle
+  Code: f11b
+- id: lens
+  Name: Lens
+  Code: e3fa
+- id: library_add
+  Name: Library Add
+  Code: e02e
+- id: library_add_check
+  Name: Library Add Check
+  Code: e9b7
+- id: library_books
+  Name: Library Books
+  Code: e02f
+- id: library_music
+  Name: Library Music
+  Code: e030
+- id: lightbulb
+  Name: Lightbulb
+  Code: e0f0
+- id: lightbulb_outline
+  Name: Lightbulb Outline
+  Code: e90f
+- id: line_style
+  Name: Line Style
+  Code: e919
+- id: line_weight
+  Name: Line Weight
+  Code: e91a
+- id: linear_scale
+  Name: Linear Scale
+  Code: e260
+- id: link
+  Name: Link
+  Code: e157
+- id: link_off
+  Name: Link Off
+  Code: e16f
+- id: linked_camera
+  Name: Linked Camera
+  Code: e438
+- id: liquor
+  Name: Liquor
+  Code: ea60
+- id: list
+  Name: List
+  Code: e896
+- id: list_alt
+  Name: List Alt
+  Code: e0ee
+- id: live_help
+  Name: Live Help
+  Code: e0c6
+- id: live_tv
+  Name: Live Tv
+  Code: e639
+- id: local_activity
+  Name: Local Activity
+  Code: e53f
+- id: local_airport
+  Name: Local Airport
+  Code: e53d
+- id: local_atm
+  Name: Local Atm
+  Code: e53e
+- id: local_attraction
+  Name: Local Attraction
+  Code: e53f
+- id: local_bar
+  Name: Local Bar
+  Code: e540
+- id: local_cafe
+  Name: Local Cafe
+  Code: e541
+- id: local_car_wash
+  Name: Local Car Wash
+  Code: e542
+- id: local_convenience_store
+  Name: Local Convenience Store
+  Code: e543
+- id: local_dining
+  Name: Local Dining
+  Code: e556
+- id: local_drink
+  Name: Local Drink
+  Code: e544
+- id: local_fire_department
+  Name: Local Fire Department
+  Code: ef55
+- id: local_florist
+  Name: Local Florist
+  Code: e545
+- id: local_gas_station
+  Name: Local Gas Station
+  Code: e546
+- id: local_grocery_store
+  Name: Local Grocery Store
+  Code: e547
+- id: local_hospital
+  Name: Local Hospital
+  Code: e548
+- id: local_hotel
+  Name: Local Hotel
+  Code: e549
+- id: local_laundry_service
+  Name: Local Laundry Service
+  Code: e54a
+- id: local_library
+  Name: Local Library
+  Code: e54b
+- id: local_mall
+  Name: Local Mall
+  Code: e54c
+- id: local_movies
+  Name: Local Movies
+  Code: e54d
+- id: local_offer
+  Name: Local Offer
+  Code: e54e
+- id: local_parking
+  Name: Local Parking
+  Code: e54f
+- id: local_pharmacy
+  Name: Local Pharmacy
+  Code: e550
+- id: local_phone
+  Name: Local Phone
+  Code: e551
+- id: local_pizza
+  Name: Local Pizza
+  Code: e552
+- id: local_play
+  Name: Local Play
+  Code: e553
+- id: local_police
+  Name: Local Police
+  Code: ef56
+- id: local_post_office
+  Name: Local Post Office
+  Code: e554
+- id: local_print_shop
+  Name: Local Print Shop
+  Code: e555
+- id: local_printshop
+  Name: Local Printshop
+  Code: e555
+- id: local_restaurant
+  Name: Local Restaurant
+  Code: e556
+- id: local_see
+  Name: Local See
+  Code: e557
+- id: local_shipping
+  Name: Local Shipping
+  Code: e558
+- id: local_taxi
+  Name: Local Taxi
+  Code: e559
+- id: location_city
+  Name: Location City
+  Code: e7f1
+- id: location_disabled
+  Name: Location Disabled
+  Code: e1b6
+- id: location_history
+  Name: Location History
+  Code: e55a
+- id: location_off
+  Name: Location Off
+  Code: e0c7
+- id: location_on
+  Name: Location on
+  Code: e0c8
+- id: location_pin
+  Name: Location Pin
+  Code: f1db
+- id: location_searching
+  Name: Location Searching
+  Code: e1b7
+- id: lock
+  Name: Lock
+  Code: e897
+- id: lock_clock
+  Name: Lock Clock
+  Code: ef57
+- id: lock_open
+  Name: Lock Open
+  Code: e898
+- id: lock_outline
+  Name: Lock Outline
+  Code: e899
+- id: login
+  Name: Login
+  Code: ea77
+- id: logout
+  Name: Logout
+  Code: e9ba
+- id: looks
+  Name: Looks
+  Code: e3fc
+- id: looks_3
+  Name: Looks 3
+  Code: e3fb
+- id: looks_4
+  Name: Looks 4
+  Code: e3fd
+- id: looks_5
+  Name: Looks 5
+  Code: e3fe
+- id: looks_6
+  Name: Looks 6
+  Code: e3ff
+- id: looks_one
+  Name: Looks One
+  Code: e400
+- id: looks_two
+  Name: Looks Two
+  Code: e401
+- id: loop
+  Name: Loop
+  Code: e028
+- id: loupe
+  Name: Loupe
+  Code: e402
+- id: low_priority
+  Name: Low Priority
+  Code: e16d
+- id: loyalty
+  Name: Loyalty
+  Code: e89a
+- id: luggage
+  Name: Luggage
+  Code: f235
+- id: lunch_dining
+  Name: Lunch Dining
+  Code: ea61
+- id: mail
+  Name: Mail
+  Code: e158
+- id: mail_outline
+  Name: Mail Outline
+  Code: e0e1
+- id: map
+  Name: Map
+  Code: e55b
+- id: maps_ugc
+  Name: Maps Ugc
+  Code: ef58
+- id: margin
+  Name: Margin
+  Code: e9bb
+- id: mark_as_unread
+  Name: Mark as Unread
+  Code: e9bc
+- id: mark_chat_read
+  Name: Mark Chat Read
+  Code: f18b
+- id: mark_chat_unread
+  Name: Mark Chat Unread
+  Code: f189
+- id: mark_email_read
+  Name: Mark Email Read
+  Code: f18c
+- id: mark_email_unread
+  Name: Mark Email Unread
+  Code: f18a
+- id: markunread
+  Name: Markunread
+  Code: e159
+- id: markunread_mailbox
+  Name: Markunread Mailbox
+  Code: e89b
+- id: masks
+  Name: Masks
+  Code: f218
+- id: maximize
+  Name: Maximize
+  Code: e930
+- id: mediation
+  Name: Mediation
+  Code: efa7
+- id: medical_services
+  Name: Medical Services
+  Code: f109
+- id: meeting_room
+  Name: Meeting Room
+  Code: eb4f
+- id: memory
+  Name: Memory
+  Code: e322
+- id: menu
+  Name: Menu
+  Code: e5d2
+- id: menu_book
+  Name: Menu Book
+  Code: ea19
+- id: menu_open
+  Name: Menu Open
+  Code: e9bd
+- id: merge_type
+  Name: Merge Type
+  Code: e252
+- id: message
+  Name: Message
+  Code: e0c9
+- id: messenger
+  Name: Messenger
+  Code: e0ca
+- id: messenger_outline
+  Name: Messenger Outline
+  Code: e0cb
+- id: mic
+  Name: Mic
+  Code: e029
+- id: mic_external_off
+  Name: Mic External Off
+  Code: ef59
+- id: mic_external_on
+  Name: Mic External on
+  Code: ef5a
+- id: mic_none
+  Name: Mic None
+  Code: e02a
+- id: mic_off
+  Name: Mic Off
+  Code: e02b
+- id: microwave
+  Name: Microwave
+  Code: f204
+- id: military_tech
+  Name: Military Tech
+  Code: ea3f
+- id: minimize
+  Name: Minimize
+  Code: e931
+- id: miscellaneous_services
+  Name: Miscellaneous Services
+  Code: f10c
+- id: missed_video_call
+  Name: Missed Video Call
+  Code: e073
+- id: mms
+  Name: Mms
+  Code: e618
+- id: mobile_friendly
+  Name: Mobile Friendly
+  Code: e200
+- id: mobile_off
+  Name: Mobile Off
+  Code: e201
+- id: mobile_screen_share
+  Name: Mobile Screen Share
+  Code: e0e7
+- id: mode_comment
+  Name: Mode Comment
+  Code: e253
+- id: mode_edit
+  Name: Mode Edit
+  Code: e254
+- id: model_training
+  Name: Model Training
+  Code: f0cf
+- id: monetization_on
+  Name: Monetization on
+  Code: e263
+- id: money
+  Name: Money
+  Code: e57d
+- id: money_off
+  Name: Money Off
+  Code: e25c
+- id: monitor
+  Name: Monitor
+  Code: ef5b
+- id: monochrome_photos
+  Name: Monochrome Photos
+  Code: e403
+- id: mood
+  Name: Mood
+  Code: e7f2
+- id: mood_bad
+  Name: Mood Bad
+  Code: e7f3
+- id: moped
+  Name: Moped
+  Code: eb28
+- id: more
+  Name: More
+  Code: e619
+- id: more_horiz
+  Name: More Horiz
+  Code: e5d3
+- id: more_time
+  Name: More Time
+  Code: ea5d
+- id: more_vert
+  Name: More Vert
+  Code: e5d4
+- id: motion_photos_off
+  Name: Motion Photos Off
+  Code: e9c0
+- id: motion_photos_on
+  Name: Motion Photos on
+  Code: e9c1
+- id: motion_photos_pause
+  Name: Motion Photos Pause
+  Code: f227
+- id: motion_photos_paused
+  Name: Motion Photos Paused
+  Code: e9c2
+- id: motorcycle
+  Name: Motorcycle
+  Code: e91b
+- id: mouse
+  Name: Mouse
+  Code: e323
+- id: move_to_inbox
+  Name: Move to Inbox
+  Code: e168
+- id: movie
+  Name: Movie
+  Code: e02c
+- id: movie_creation
+  Name: Movie Creation
+  Code: e404
+- id: movie_filter
+  Name: Movie Filter
+  Code: e43a
+- id: mp
+  Name: Mp
+  Code: e9c3
+- id: multiline_chart
+  Name: Multiline Chart
+  Code: e6df
+- id: multiple_stop
+  Name: Multiple Stop
+  Code: f1b9
+- id: multitrack_audio
+  Name: Multitrack Audio
+  Code: e1b8
+- id: museum
+  Name: Museum
+  Code: ea36
+- id: music_note
+  Name: Music Note
+  Code: e405
+- id: music_off
+  Name: Music Off
+  Code: e440
+- id: music_video
+  Name: Music Video
+  Code: e063
+- id: my_library_add
+  Name: My Library Add
+  Code: e02e
+- id: my_library_books
+  Name: My Library Books
+  Code: e02f
+- id: my_library_music
+  Name: My Library Music
+  Code: e030
+- id: my_location
+  Name: My Location
+  Code: e55c
+- id: nat
+  Name: Nat
+  Code: ef5c
+- id: nature
+  Name: Nature
+  Code: e406
+- id: nature_people
+  Name: Nature People
+  Code: e407
+- id: navigate_before
+  Name: Navigate Before
+  Code: e408
+- id: navigate_next
+  Name: Navigate Next
+  Code: e409
+- id: navigation
+  Name: Navigation
+  Code: e55d
+- id: near_me
+  Name: Near Me
+  Code: e569
+- id: near_me_disabled
+  Name: Near Me Disabled
+  Code: f1ef
+- id: network_cell
+  Name: Network Cell
+  Code: e1b9
+- id: network_check
+  Name: Network Check
+  Code: e640
+- id: network_locked
+  Name: Network Locked
+  Code: e61a
+- id: network_wifi
+  Name: Network Wifi
+  Code: e1ba
+- id: new_releases
+  Name: New Releases
+  Code: e031
+- id: next_plan
+  Name: Next Plan
+  Code: ef5d
+- id: next_week
+  Name: Next Week
+  Code: e16a
+- id: nfc
+  Name: Nfc
+  Code: e1bb
+- id: night_shelter
+  Name: Night Shelter
+  Code: f1f1
+- id: nightlife
+  Name: Nightlife
+  Code: ea62
+- id: nightlight_round
+  Name: Nightlight Round
+  Code: ef5e
+- id: nights_stay
+  Name: Nights Stay
+  Code: ea46
+- id: no_backpack
+  Name: No Backpack
+  Code: f237
+- id: no_cell
+  Name: No Cell
+  Code: f1a4
+- id: no_drinks
+  Name: No Drinks
+  Code: f1a5
+- id: no_encryption
+  Name: No Encryption
+  Code: e641
+- id: no_flash
+  Name: No Flash
+  Code: f1a6
+- id: no_food
+  Name: No Food
+  Code: f1a7
+- id: no_luggage
+  Name: No Luggage
+  Code: f23b
+- id: no_meals
+  Name: No Meals
+  Code: f1d6
+- id: no_meals_ouline
+  Name: No Meals Ouline
+  Code: f229
+- id: no_meeting_room
+  Name: No Meeting Room
+  Code: eb4e
+- id: no_photography
+  Name: No Photography
+  Code: f1a8
+- id: no_sim
+  Name: No Sim
+  Code: e0cc
+- id: no_stroller
+  Name: No Stroller
+  Code: f1af
+- id: no_transfer
+  Name: No Transfer
+  Code: f1d5
+- id: north
+  Name: North
+  Code: f1e0
+- id: north_east
+  Name: North East
+  Code: f1e1
+- id: north_west
+  Name: North West
+  Code: f1e2
+- id: not_accessible
+  Name: Not Accessible
+  Code: f0fe
+- id: not_interested
+  Name: Not Interested
+  Code: e033
+- id: not_listed_location
+  Name: Not Listed Location
+  Code: e575
+- id: not_started
+  Name: Not Started
+  Code: f0d1
+- id: note
+  Name: Note
+  Code: e06f
+- id: note_add
+  Name: Note Add
+  Code: e89c
+- id: notes
+  Name: Notes
+  Code: e26c
+- id: notification_important
+  Name: Notification Important
+  Code: e004
+- id: notifications
+  Name: Notifications
+  Code: e7f4
+- id: notifications_active
+  Name: Notifications Active
+  Code: e7f7
+- id: notifications_none
+  Name: Notifications None
+  Code: e7f5
+- id: notifications_off
+  Name: Notifications Off
+  Code: e7f6
+- id: notifications_on
+  Name: Notifications on
+  Code: e7f7
+- id: notifications_paused
+  Name: Notifications Paused
+  Code: e7f8
+- id: now_wallpaper
+  Name: Now Wallpaper
+  Code: e1bc
+- id: now_widgets
+  Name: Now Widgets
+  Code: e1bd
+- id: offline_bolt
+  Name: Offline Bolt
+  Code: e932
+- id: offline_pin
+  Name: Offline Pin
+  Code: e90a
+- id: offline_share
+  Name: Offline Share
+  Code: e9c5
+- id: ondemand_video
+  Name: Ondemand Video
+  Code: e63a
+- id: online_prediction
+  Name: Online Prediction
+  Code: f0eb
+- id: opacity
+  Name: Opacity
+  Code: e91c
+- id: open_in_browser
+  Name: Open in Browser
+  Code: e89d
+- id: open_in_full
+  Name: Open in Full
+  Code: f1ce
+- id: open_in_new
+  Name: Open in New
+  Code: e89e
+- id: open_with
+  Name: Open With
+  Code: e89f
+- id: outbond
+  Name: Outbond
+  Code: f228
+- id: outbox
+  Name: Outbox
+  Code: ef5f
+- id: outdoor_grill
+  Name: Outdoor Grill
+  Code: ea47
+- id: outgoing_mail
+  Name: Outgoing Mail
+  Code: f0d2
+- id: outlet
+  Name: Outlet
+  Code: f1d4
+- id: outlined_flag
+  Name: Outlined Flag
+  Code: e16e
+- id: padding
+  Name: Padding
+  Code: e9c8
+- id: pages
+  Name: Pages
+  Code: e7f9
+- id: pageview
+  Name: Pageview
+  Code: e8a0
+- id: palette
+  Name: Palette
+  Code: e40a
+- id: pan_tool
+  Name: Pan Tool
+  Code: e925
+- id: panorama
+  Name: Panorama
+  Code: e40b
+- id: panorama_fish_eye
+  Name: Panorama Fish Eye
+  Code: e40c
+- id: panorama_fisheye
+  Name: Panorama Fisheye
+  Code: e40c
+- id: panorama_horizontal
+  Name: Panorama Horizontal
+  Code: e40d
+- id: panorama_horizontal_select
+  Name: Panorama Horizontal Select
+  Code: ef60
+- id: panorama_photosphere
+  Name: Panorama Photosphere
+  Code: e9c9
+- id: panorama_photosphere_select
+  Name: Panorama Photosphere Select
+  Code: e9ca
+- id: panorama_vertical
+  Name: Panorama Vertical
+  Code: e40e
+- id: panorama_vertical_select
+  Name: Panorama Vertical Select
+  Code: ef61
+- id: panorama_wide_angle
+  Name: Panorama Wide Angle
+  Code: e40f
+- id: panorama_wide_angle_select
+  Name: Panorama Wide Angle Select
+  Code: ef62
+- id: park
+  Name: Park
+  Code: ea63
+- id: party_mode
+  Name: Party Mode
+  Code: e7fa
+- id: pause
+  Name: Pause
+  Code: e034
+- id: pause_circle_filled
+  Name: Pause Circle Filled
+  Code: e035
+- id: pause_circle_outline
+  Name: Pause Circle Outline
+  Code: e036
+- id: pause_presentation
+  Name: Pause Presentation
+  Code: e0ea
+- id: payment
+  Name: Payment
+  Code: e8a1
+- id: payments
+  Name: Payments
+  Code: ef63
+- id: pedal_bike
+  Name: Pedal Bike
+  Code: eb29
+- id: pending
+  Name: Pending
+  Code: ef64
+- id: pending_actions
+  Name: Pending Actions
+  Code: f1bb
+- id: people
+  Name: People
+  Code: e7fb
+- id: people_alt
+  Name: People Alt
+  Code: ea21
+- id: people_outline
+  Name: People Outline
+  Code: e7fc
+- id: perm_camera_mic
+  Name: Perm Camera Mic
+  Code: e8a2
+- id: perm_contact_cal
+  Name: Perm Contact Cal
+  Code: e8a3
+- id: perm_contact_calendar
+  Name: Perm Contact Calendar
+  Code: e8a3
+- id: perm_data_setting
+  Name: Perm Data Setting
+  Code: e8a4
+- id: perm_device_info
+  Name: Perm Device Info
+  Code: e8a5
+- id: perm_device_information
+  Name: Perm Device Information
+  Code: e8a5
+- id: perm_identity
+  Name: Perm Identity
+  Code: e8a6
+- id: perm_media
+  Name: Perm Media
+  Code: e8a7
+- id: perm_phone_msg
+  Name: Perm Phone Msg
+  Code: e8a8
+- id: perm_scan_wifi
+  Name: Perm Scan Wifi
+  Code: e8a9
+- id: person
+  Name: Person
+  Code: e7fd
+- id: person_add
+  Name: Person Add
+  Code: e7fe
+- id: person_add_alt
+  Name: Person Add Alt
+  Code: ea4d
+- id: person_add_alt_1
+  Name: Person Add Alt 1
+  Code: ef65
+- id: person_add_disabled
+  Name: Person Add Disabled
+  Code: e9cb
+- id: person_outline
+  Name: Person Outline
+  Code: e7ff
+- id: person_pin
+  Name: Person Pin
+  Code: e55a
+- id: person_pin_circle
+  Name: Person Pin Circle
+  Code: e56a
+- id: person_remove
+  Name: Person Remove
+  Code: ef66
+- id: person_remove_alt_1
+  Name: Person Remove Alt 1
+  Code: ef67
+- id: person_search
+  Name: Person Search
+  Code: f106
+- id: personal_video
+  Name: Personal Video
+  Code: e63b
+- id: pest_control
+  Name: Pest Control
+  Code: f0fa
+- id: pest_control_rodent
+  Name: Pest Control Rodent
+  Code: f0fd
+- id: pets
+  Name: Pets
+  Code: e91d
+- id: phone
+  Name: Phone
+  Code: e0cd
+- id: phone_android
+  Name: Phone Android
+  Code: e324
+- id: phone_bluetooth_speaker
+  Name: Phone Bluetooth Speaker
+  Code: e61b
+- id: phone_callback
+  Name: Phone Callback
+  Code: e649
+- id: phone_disabled
+  Name: Phone Disabled
+  Code: e9cc
+- id: phone_enabled
+  Name: Phone Enabled
+  Code: e9cd
+- id: phone_forwarded
+  Name: Phone Forwarded
+  Code: e61c
+- id: phone_in_talk
+  Name: Phone in Talk
+  Code: e61d
+- id: phone_iphone
+  Name: Phone Iphone
+  Code: e325
+- id: phone_locked
+  Name: Phone Locked
+  Code: e61e
+- id: phone_missed
+  Name: Phone Missed
+  Code: e61f
+- id: phone_paused
+  Name: Phone Paused
+  Code: e620
+- id: phonelink
+  Name: Phonelink
+  Code: e326
+- id: phonelink_erase
+  Name: Phonelink Erase
+  Code: e0db
+- id: phonelink_lock
+  Name: Phonelink Lock
+  Code: e0dc
+- id: phonelink_off
+  Name: Phonelink Off
+  Code: e327
+- id: phonelink_ring
+  Name: Phonelink Ring
+  Code: e0dd
+- id: phonelink_setup
+  Name: Phonelink Setup
+  Code: e0de
+- id: photo
+  Name: Photo
+  Code: e410
+- id: photo_album
+  Name: Photo Album
+  Code: e411
+- id: photo_camera
+  Name: Photo Camera
+  Code: e412
+- id: photo_camera_back
+  Name: Photo Camera Back
+  Code: ef68
+- id: photo_camera_front
+  Name: Photo Camera Front
+  Code: ef69
+- id: photo_filter
+  Name: Photo Filter
+  Code: e43b
+- id: photo_library
+  Name: Photo Library
+  Code: e413
+- id: photo_size_select_actual
+  Name: Photo Size Select Actual
+  Code: e432
+- id: photo_size_select_large
+  Name: Photo Size Select Large
+  Code: e433
+- id: photo_size_select_small
+  Name: Photo Size Select Small
+  Code: e434
+- id: picture_as_pdf
+  Name: Picture as Pdf
+  Code: e415
+- id: picture_in_picture
+  Name: Picture in Picture
+  Code: e8aa
+- id: picture_in_picture_alt
+  Name: Picture in Picture Alt
+  Code: e911
+- id: pie_chart
+  Name: Pie Chart
+  Code: e6c4
+- id: pie_chart_outlined
+  Name: Pie Chart Outlined
+  Code: e6c5
+- id: pin_drop
+  Name: Pin Drop
+  Code: e55e
+- id: pivot_table_chart
+  Name: Pivot Table Chart
+  Code: e9ce
+- id: place
+  Name: Place
+  Code: e55f
+- id: plagiarism
+  Name: Plagiarism
+  Code: ea5a
+- id: play_arrow
+  Name: Play Arrow
+  Code: e037
+- id: play_circle_fill
+  Name: Play Circle Fill
+  Code: e038
+- id: play_circle_filled
+  Name: Play Circle Filled
+  Code: e038
+- id: play_circle_outline
+  Name: Play Circle Outline
+  Code: e039
+- id: play_disabled
+  Name: Play Disabled
+  Code: ef6a
+- id: play_for_work
+  Name: Play for Work
+  Code: e906
+- id: playlist_add
+  Name: Playlist Add
+  Code: e03b
+- id: playlist_add_check
+  Name: Playlist Add Check
+  Code: e065
+- id: playlist_play
+  Name: Playlist Play
+  Code: e05f
+- id: plumbing
+  Name: Plumbing
+  Code: f107
+- id: plus_one
+  Name: Plus One
+  Code: e800
+- id: point_of_sale
+  Name: Point of Sale
+  Code: f17e
+- id: policy
+  Name: Policy
+  Code: ea17
+- id: poll
+  Name: Poll
+  Code: e801
+- id: polymer
+  Name: Polymer
+  Code: e8ab
+- id: pool
+  Name: Pool
+  Code: eb48
+- id: portable_wifi_off
+  Name: Portable Wifi Off
+  Code: e0ce
+- id: portrait
+  Name: Portrait
+  Code: e416
+- id: post_add
+  Name: Post Add
+  Code: ea20
+- id: power
+  Name: Power
+  Code: e63c
+- id: power_input
+  Name: Power Input
+  Code: e336
+- id: power_off
+  Name: Power Off
+  Code: e646
+- id: power_settings_new
+  Name: Power Settings New
+  Code: e8ac
+- id: pregnant_woman
+  Name: Pregnant Woman
+  Code: e91e
+- id: present_to_all
+  Name: Present to All
+  Code: e0df
+- id: preview
+  Name: Preview
+  Code: f1c5
+- id: print
+  Name: Print
+  Code: e8ad
+- id: print_disabled
+  Name: Print Disabled
+  Code: e9cf
+- id: priority_high
+  Name: Priority High
+  Code: e645
+- id: privacy_tip
+  Name: Privacy Tip
+  Code: f0dc
+- id: psychology
+  Name: Psychology
+  Code: ea4a
+- id: public
+  Name: Public
+  Code: e80b
+- id: public_off
+  Name: Public Off
+  Code: f1ca
+- id: publish
+  Name: Publish
+  Code: e255
+- id: published_with_changes
+  Name: Published With Changes
+  Code: f232
+- id: push_pin
+  Name: Push Pin
+  Code: f10d
+- id: qr_code
+  Name: Qr Code
+  Code: ef6b
+- id: qr_code_2
+  Name: Qr Code 2
+  Code: e00a
+- id: qr_code_scanner
+  Name: Qr Code Scanner
+  Code: f206
+- id: query_builder
+  Name: Query Builder
+  Code: e8ae
+- id: question_answer
+  Name: Question Answer
+  Code: e8af
+- id: queue
+  Name: Queue
+  Code: e03c
+- id: queue_music
+  Name: Queue Music
+  Code: e03d
+- id: queue_play_next
+  Name: Queue Play Next
+  Code: e066
+- id: quick_contacts_dialer
+  Name: Quick Contacts Dialer
+  Code: e0cf
+- id: quick_contacts_mail
+  Name: Quick Contacts Mail
+  Code: e0d0
+- id: quickreply
+  Name: Quickreply
+  Code: ef6c
+- id: radio
+  Name: Radio
+  Code: e03e
+- id: radio_button_checked
+  Name: Radio Button Checked
+  Code: e837
+- id: radio_button_off
+  Name: Radio Button Off
+  Code: e836
+- id: radio_button_on
+  Name: Radio Button on
+  Code: e837
+- id: radio_button_unchecked
+  Name: Radio Button Unchecked
+  Code: e836
+- id: railway_alert
+  Name: Railway Alert
+  Code: e9d1
+- id: ramen_dining
+  Name: Ramen Dining
+  Code: ea64
+- id: rate_review
+  Name: Rate Review
+  Code: e560
+- id: read_more
+  Name: Read More
+  Code: ef6d
+- id: receipt
+  Name: Receipt
+  Code: e8b0
+- id: receipt_long
+  Name: Receipt Long
+  Code: ef6e
+- id: recent_actors
+  Name: Recent Actors
+  Code: e03f
+- id: recommend
+  Name: Recommend
+  Code: e9d2
+- id: record_voice_over
+  Name: Record Voice Over
+  Code: e91f
+- id: redeem
+  Name: Redeem
+  Code: e8b1
+- id: redo
+  Name: Redo
+  Code: e15a
+- id: reduce_capacity
+  Name: Reduce Capacity
+  Code: f21c
+- id: refresh
+  Name: Refresh
+  Code: e5d5
+- id: remove
+  Name: Remove
+  Code: e15b
+- id: remove_circle
+  Name: Remove Circle
+  Code: e15c
+- id: remove_circle_outline
+  Name: Remove Circle Outline
+  Code: e15d
+- id: remove_done
+  Name: Remove Done
+  Code: e9d3
+- id: remove_from_queue
+  Name: Remove From Queue
+  Code: e067
+- id: remove_moderator
+  Name: Remove Moderator
+  Code: e9d4
+- id: remove_red_eye
+  Name: Remove Red Eye
+  Code: e417
+- id: remove_shopping_cart
+  Name: Remove Shopping Cart
+  Code: e928
+- id: reorder
+  Name: Reorder
+  Code: e8fe
+- id: repeat
+  Name: Repeat
+  Code: e040
+- id: repeat_on
+  Name: Repeat on
+  Code: e9d6
+- id: repeat_one
+  Name: Repeat One
+  Code: e041
+- id: repeat_one_on
+  Name: Repeat One on
+  Code: e9d7
+- id: replay
+  Name: Replay
+  Code: e042
+- id: replay_10
+  Name: Replay 10
+  Code: e059
+- id: replay_30
+  Name: Replay 30
+  Code: e05a
+- id: replay_5
+  Name: Replay 5
+  Code: e05b
+- id: replay_circle_filled
+  Name: Replay Circle Filled
+  Code: e9d8
+- id: reply
+  Name: Reply
+  Code: e15e
+- id: reply_all
+  Name: Reply All
+  Code: e15f
+- id: report
+  Name: Report
+  Code: e160
+- id: report_off
+  Name: Report Off
+  Code: e170
+- id: report_problem
+  Name: Report Problem
+  Code: e8b2
+- id: request_page
+  Name: Request Page
+  Code: f22c
+- id: request_quote
+  Name: Request Quote
+  Code: f1b6
+- id: reset_tv
+  Name: Reset Tv
+  Code: e9d9
+- id: restaurant
+  Name: Restaurant
+  Code: e56c
+- id: restaurant_menu
+  Name: Restaurant Menu
+  Code: e561
+- id: restore
+  Name: Restore
+  Code: e8b3
+- id: restore_from_trash
+  Name: Restore From Trash
+  Code: e938
+- id: restore_page
+  Name: Restore Page
+  Code: e929
+- id: rice_bowl
+  Name: Rice Bowl
+  Code: f1f5
+- id: ring_volume
+  Name: Ring Volume
+  Code: e0d1
+- id: roofing
+  Name: Roofing
+  Code: f201
+- id: room
+  Name: Room
+  Code: e8b4
+- id: room_preferences
+  Name: Room Preferences
+  Code: f1b8
+- id: room_service
+  Name: Room Service
+  Code: eb49
+- id: rotate_90_degrees_ccw
+  Name: Rotate 90 Degrees Ccw
+  Code: e418
+- id: rotate_left
+  Name: Rotate Left
+  Code: e419
+- id: rotate_right
+  Name: Rotate Right
+  Code: e41a
+- id: rounded_corner
+  Name: Rounded Corner
+  Code: e920
+- id: router
+  Name: Router
+  Code: e328
+- id: rowing
+  Name: Rowing
+  Code: e921
+- id: rss_feed
+  Name: Rss Feed
+  Code: e0e5
+- id: rtt
+  Name: Rtt
+  Code: e9ad
+- id: rule
+  Name: Rule
+  Code: f1c2
+- id: rule_folder
+  Name: Rule Folder
+  Code: f1c9
+- id: run_circle
+  Name: Run Circle
+  Code: ef6f
+- id: rv_hookup
+  Name: Rv Hookup
+  Code: e642
+- id: sanitizer
+  Name: Sanitizer
+  Code: f21d
+- id: satellite
+  Name: Satellite
+  Code: e562
+- id: save
+  Name: Save
+  Code: e161
+- id: save_alt
+  Name: Save Alt
+  Code: e171
+- id: saved_search
+  Name: Saved Search
+  Code: ea11
+- id: scanner
+  Name: Scanner
+  Code: e329
+- id: scatter_plot
+  Name: Scatter Plot
+  Code: e268
+- id: schedule
+  Name: Schedule
+  Code: e8b5
+- id: schedule_send
+  Name: Schedule Send
+  Code: ea0a
+- id: school
+  Name: School
+  Code: e80c
+- id: science
+  Name: Science
+  Code: ea4b
+- id: score
+  Name: Score
+  Code: e269
+- id: screen_lock_landscape
+  Name: Screen Lock Landscape
+  Code: e1be
+- id: screen_lock_portrait
+  Name: Screen Lock Portrait
+  Code: e1bf
+- id: screen_lock_rotation
+  Name: Screen Lock Rotation
+  Code: e1c0
+- id: screen_rotation
+  Name: Screen Rotation
+  Code: e1c1
+- id: screen_search_desktop
+  Name: Screen Search Desktop
+  Code: ef70
+- id: screen_share
+  Name: Screen Share
+  Code: e0e2
+- id: sd
+  Name: Sd
+  Code: e9dd
+- id: sd_card
+  Name: Sd Card
+  Code: e623
+- id: sd_storage
+  Name: Sd Storage
+  Code: e1c2
+- id: search
+  Name: Search
+  Code: e8b6
+- id: search_off
+  Name: Search Off
+  Code: ea76
+- id: security
+  Name: Security
+  Code: e32a
+- id: segment
+  Name: Segment
+  Code: e94b
+- id: select_all
+  Name: Select All
+  Code: e162
+- id: self_improvement
+  Name: Self Improvement
+  Code: ea78
+- id: send
+  Name: Send
+  Code: e163
+- id: send_and_archive
+  Name: Send and Archive
+  Code: ea0c
+- id: send_to_mobile
+  Name: Send to Mobile
+  Code: f05c
+- id: sensor_door
+  Name: Sensor Door
+  Code: f1b5
+- id: sensor_window
+  Name: Sensor Window
+  Code: f1b4
+- id: sentiment_dissatisfied
+  Name: Sentiment Dissatisfied
+  Code: e811
+- id: sentiment_neutral
+  Name: Sentiment Neutral
+  Code: e812
+- id: sentiment_satisfied
+  Name: Sentiment Satisfied
+  Code: e813
+- id: sentiment_satisfied_alt
+  Name: Sentiment Satisfied Alt
+  Code: e0ed
+- id: sentiment_very_dissatisfied
+  Name: Sentiment Very Dissatisfied
+  Code: e814
+- id: sentiment_very_satisfied
+  Name: Sentiment Very Satisfied
+  Code: e815
+- id: set_meal
+  Name: Set Meal
+  Code: f1ea
+- id: settings
+  Name: Settings
+  Code: e8b8
+- id: settings_applications
+  Name: Settings Applications
+  Code: e8b9
+- id: settings_backup_restore
+  Name: Settings Backup Restore
+  Code: e8ba
+- id: settings_bluetooth
+  Name: Settings Bluetooth
+  Code: e8bb
+- id: settings_brightness
+  Name: Settings Brightness
+  Code: e8bd
+- id: settings_cell
+  Name: Settings Cell
+  Code: e8bc
+- id: settings_display
+  Name: Settings Display
+  Code: e8bd
+- id: settings_ethernet
+  Name: Settings Ethernet
+  Code: e8be
+- id: settings_input_antenna
+  Name: Settings Input Antenna
+  Code: e8bf
+- id: settings_input_component
+  Name: Settings Input Component
+  Code: e8c0
+- id: settings_input_composite
+  Name: Settings Input Composite
+  Code: e8c1
+- id: settings_input_hdmi
+  Name: Settings Input Hdmi
+  Code: e8c2
+- id: settings_input_svideo
+  Name: Settings Input Svideo
+  Code: e8c3
+- id: settings_overscan
+  Name: Settings Overscan
+  Code: e8c4
+- id: settings_phone
+  Name: Settings Phone
+  Code: e8c5
+- id: settings_power
+  Name: Settings Power
+  Code: e8c6
+- id: settings_remote
+  Name: Settings Remote
+  Code: e8c7
+- id: settings_system_daydream
+  Name: Settings System Daydream
+  Code: e1c3
+- id: settings_voice
+  Name: Settings Voice
+  Code: e8c8
+- id: share
+  Name: Share
+  Code: e80d
+- id: shield
+  Name: Shield
+  Code: e9e0
+- id: shop
+  Name: Shop
+  Code: e8c9
+- id: shop_two
+  Name: Shop Two
+  Code: e8ca
+- id: shopping_bag
+  Name: Shopping Bag
+  Code: f1cc
+- id: shopping_basket
+  Name: Shopping Basket
+  Code: e8cb
+- id: shopping_cart
+  Name: Shopping Cart
+  Code: e8cc
+- id: short_text
+  Name: Short Text
+  Code: e261
+- id: show_chart
+  Name: Show Chart
+  Code: e6e1
+- id: shuffle
+  Name: Shuffle
+  Code: e043
+- id: shuffle_on
+  Name: Shuffle on
+  Code: e9e1
+- id: shutter_speed
+  Name: Shutter Speed
+  Code: e43d
+- id: sick
+  Name: Sick
+  Code: f220
+- id: signal_cellular_0_bar
+  Name: Signal Cellular 0 Bar
+  Code: f0a8
+- id: signal_cellular_4_bar
+  Name: Signal Cellular 4 Bar
+  Code: e1c8
+- id: signal_cellular_alt
+  Name: Signal Cellular Alt
+  Code: e202
+- id: signal_cellular_connected_no_internet_4_bar
+  Name: Signal Cellular Connected No Internet 4 Bar
+  Code: e1cd
+- id: signal_cellular_no_sim
+  Name: Signal Cellular No Sim
+  Code: e1ce
+- id: signal_cellular_null
+  Name: Signal Cellular Null
+  Code: e1cf
+- id: signal_cellular_off
+  Name: Signal Cellular Off
+  Code: e1d0
+- id: signal_wifi_0_bar
+  Name: Signal Wifi 0 Bar
+  Code: f0b0
+- id: signal_wifi_4_bar
+  Name: Signal Wifi 4 Bar
+  Code: e1d8
+- id: signal_wifi_4_bar_lock
+  Name: Signal Wifi 4 Bar Lock
+  Code: e1d9
+- id: signal_wifi_off
+  Name: Signal Wifi Off
+  Code: e1da
+- id: sim_card
+  Name: Sim Card
+  Code: e32b
+- id: sim_card_alert
+  Name: Sim Card Alert
+  Code: e624
+- id: single_bed
+  Name: Single Bed
+  Code: ea48
+- id: skip_next
+  Name: Skip Next
+  Code: e044
+- id: skip_previous
+  Name: Skip Previous
+  Code: e045
+- id: slideshow
+  Name: Slideshow
+  Code: e41b
+- id: slow_motion_video
+  Name: Slow Motion Video
+  Code: e068
+- id: smart_button
+  Name: Smart Button
+  Code: f1c1
+- id: smartphone
+  Name: Smartphone
+  Code: e32c
+- id: smoke_free
+  Name: Smoke Free
+  Code: eb4a
+- id: smoking_rooms
+  Name: Smoking Rooms
+  Code: eb4b
+- id: sms
+  Name: Sms
+  Code: e625
+- id: sms_failed
+  Name: Sms Failed
+  Code: e626
+- id: snippet_folder
+  Name: Snippet Folder
+  Code: f1c7
+- id: snooze
+  Name: Snooze
+  Code: e046
+- id: soap
+  Name: Soap
+  Code: f1b2
+- id: sort
+  Name: Sort
+  Code: e164
+- id: sort_by_alpha
+  Name: Sort by Alpha
+  Code: e053
+- id: source
+  Name: Source
+  Code: f1c4
+- id: south
+  Name: South
+  Code: f1e3
+- id: south_east
+  Name: South East
+  Code: f1e4
+- id: south_west
+  Name: South West
+  Code: f1e5
+- id: spa
+  Name: Spa
+  Code: eb4c
+- id: space_bar
+  Name: Space Bar
+  Code: e256
+- id: speaker
+  Name: Speaker
+  Code: e32d
+- id: speaker_group
+  Name: Speaker Group
+  Code: e32e
+- id: speaker_notes
+  Name: Speaker Notes
+  Code: e8cd
+- id: speaker_notes_off
+  Name: Speaker Notes Off
+  Code: e92a
+- id: speaker_phone
+  Name: Speaker Phone
+  Code: e0d2
+- id: speed
+  Name: Speed
+  Code: e9e4
+- id: spellcheck
+  Name: Spellcheck
+  Code: e8ce
+- id: sports
+  Name: Sports
+  Code: ea30
+- id: sports_bar
+  Name: Sports Bar
+  Code: f1f3
+- id: sports_baseball
+  Name: Sports Baseball
+  Code: ea51
+- id: sports_basketball
+  Name: Sports Basketball
+  Code: ea26
+- id: sports_cricket
+  Name: Sports Cricket
+  Code: ea27
+- id: sports_esports
+  Name: Sports Esports
+  Code: ea28
+- id: sports_football
+  Name: Sports Football
+  Code: ea29
+- id: sports_golf
+  Name: Sports Golf
+  Code: ea2a
+- id: sports_handball
+  Name: Sports Handball
+  Code: ea33
+- id: sports_hockey
+  Name: Sports Hockey
+  Code: ea2b
+- id: sports_kabaddi
+  Name: Sports Kabaddi
+  Code: ea34
+- id: sports_mma
+  Name: Sports Mma
+  Code: ea2c
+- id: sports_motorsports
+  Name: Sports Motorsports
+  Code: ea2d
+- id: sports_rugby
+  Name: Sports Rugby
+  Code: ea2e
+- id: sports_soccer
+  Name: Sports Soccer
+  Code: ea2f
+- id: sports_tennis
+  Name: Sports Tennis
+  Code: ea32
+- id: sports_volleyball
+  Name: Sports Volleyball
+  Code: ea31
+- id: square_foot
+  Name: Square Foot
+  Code: ea49
+- id: stacked_bar_chart
+  Name: Stacked Bar Chart
+  Code: e9e6
+- id: stacked_line_chart
+  Name: Stacked Line Chart
+  Code: f22b
+- id: stairs
+  Name: Stairs
+  Code: f1a9
+- id: star
+  Name: Star
+  Code: e838
+- id: star_border
+  Name: Star Border
+  Code: e83a
+- id: star_half
+  Name: Star Half
+  Code: e839
+- id: star_outline
+  Name: Star Outline
+  Code: e83a
+- id: star_outline
+  Name: Star Outline
+  Code: f06f
+- id: star_rate
+  Name: Star Rate
+  Code: f0ec
+- id: stars
+  Name: Stars
+  Code: e8d0
+- id: stay_current_landscape
+  Name: Stay Current Landscape
+  Code: e0d3
+- id: stay_current_portrait
+  Name: Stay Current Portrait
+  Code: e0d4
+- id: stay_primary_landscape
+  Name: Stay Primary Landscape
+  Code: e0d5
+- id: stay_primary_portrait
+  Name: Stay Primary Portrait
+  Code: e0d6
+- id: sticky_note_2
+  Name: Sticky Note 2
+  Code: f1fc
+- id: stop
+  Name: Stop
+  Code: e047
+- id: stop_circle
+  Name: Stop Circle
+  Code: ef71
+- id: stop_screen_share
+  Name: Stop Screen Share
+  Code: e0e3
+- id: storage
+  Name: Storage
+  Code: e1db
+- id: store
+  Name: Store
+  Code: e8d1
+- id: store_mall_directory
+  Name: Store Mall Directory
+  Code: e563
+- id: storefront
+  Name: Storefront
+  Code: ea12
+- id: straighten
+  Name: Straighten
+  Code: e41c
+- id: stream
+  Name: Stream
+  Code: e9e9
+- id: streetview
+  Name: Streetview
+  Code: e56e
+- id: strikethrough_s
+  Name: Strikethrough S
+  Code: e257
+- id: stroller
+  Name: Stroller
+  Code: f1ae
+- id: style
+  Name: Style
+  Code: e41d
+- id: subdirectory_arrow_left
+  Name: Subdirectory Arrow Left
+  Code: e5d9
+- id: subdirectory_arrow_right
+  Name: Subdirectory Arrow Right
+  Code: e5da
+- id: subject
+  Name: Subject
+  Code: e8d2
+- id: subscript
+  Name: Subscript
+  Code: f111
+- id: subscriptions
+  Name: Subscriptions
+  Code: e064
+- id: subtitles
+  Name: Subtitles
+  Code: e048
+- id: subtitles_off
+  Name: Subtitles Off
+  Code: ef72
+- id: subway
+  Name: Subway
+  Code: e56f
+- id: superscript
+  Name: Superscript
+  Code: f112
+- id: supervised_user_circle
+  Name: Supervised User Circle
+  Code: e939
+- id: supervisor_account
+  Name: Supervisor Account
+  Code: e8d3
+- id: support
+  Name: Support
+  Code: ef73
+- id: support_agent
+  Name: Support Agent
+  Code: f0e2
+- id: surround_sound
+  Name: Surround Sound
+  Code: e049
+- id: swap_calls
+  Name: Swap Calls
+  Code: e0d7
+- id: swap_horiz
+  Name: Swap Horiz
+  Code: e8d4
+- id: swap_horizontal_circle
+  Name: Swap Horizontal Circle
+  Code: e933
+- id: swap_vert
+  Name: Swap Vert
+  Code: e8d5
+- id: swap_vert_circle
+  Name: Swap Vert Circle
+  Code: e8d6
+- id: swap_vertical_circle
+  Name: Swap Vertical Circle
+  Code: e8d6
+- id: swipe
+  Name: Swipe
+  Code: e9ec
+- id: switch_account
+  Name: Switch Account
+  Code: e9ed
+- id: switch_camera
+  Name: Switch Camera
+  Code: e41e
+- id: switch_left
+  Name: Switch Left
+  Code: f1d1
+- id: switch_right
+  Name: Switch Right
+  Code: f1d2
+- id: switch_video
+  Name: Switch Video
+  Code: e41f
+- id: sync
+  Name: Sync
+  Code: e627
+- id: sync_alt
+  Name: Sync Alt
+  Code: ea18
+- id: sync_disabled
+  Name: Sync Disabled
+  Code: e628
+- id: sync_problem
+  Name: Sync Problem
+  Code: e629
+- id: system_update
+  Name: System Update
+  Code: e62a
+- id: system_update_alt
+  Name: System Update Alt
+  Code: e8d7
+- id: system_update_tv
+  Name: System Update Tv
+  Code: e8d7
+- id: tab
+  Name: Tab
+  Code: e8d8
+- id: tab_unselected
+  Name: Tab Unselected
+  Code: e8d9
+- id: table_chart
+  Name: Table Chart
+  Code: e265
+- id: table_rows
+  Name: Table Rows
+  Code: f101
+- id: table_view
+  Name: Table View
+  Code: f1be
+- id: tablet
+  Name: Tablet
+  Code: e32f
+- id: tablet_android
+  Name: Tablet Android
+  Code: e330
+- id: tablet_mac
+  Name: Tablet Mac
+  Code: e331
+- id: tag
+  Name: Tag
+  Code: e9ef
+- id: tag_faces
+  Name: Tag Faces
+  Code: e420
+- id: takeout_dining
+  Name: Takeout Dining
+  Code: ea74
+- id: tap_and_play
+  Name: Tap and Play
+  Code: e62b
+- id: tapas
+  Name: Tapas
+  Code: f1e9
+- id: taxi_alert
+  Name: Taxi Alert
+  Code: ef74
+- id: terrain
+  Name: Terrain
+  Code: e564
+- id: text_fields
+  Name: Text Fields
+  Code: e262
+- id: text_format
+  Name: Text Format
+  Code: e165
+- id: text_rotate_up
+  Name: Text Rotate Up
+  Code: e93a
+- id: text_rotate_vertical
+  Name: Text Rotate Vertical
+  Code: e93b
+- id: text_rotation_angledown
+  Name: Text Rotation Angledown
+  Code: e93c
+- id: text_rotation_angleup
+  Name: Text Rotation Angleup
+  Code: e93d
+- id: text_rotation_down
+  Name: Text Rotation Down
+  Code: e93e
+- id: text_rotation_none
+  Name: Text Rotation None
+  Code: e93f
+- id: text_snippet
+  Name: Text Snippet
+  Code: f1c6
+- id: textsms
+  Name: Textsms
+  Code: e0d8
+- id: texture
+  Name: Texture
+  Code: e421
+- id: theater_comedy
+  Name: Theater Comedy
+  Code: ea66
+- id: theaters
+  Name: Theaters
+  Code: e8da
+- id: thumb_down
+  Name: Thumb Down
+  Code: e8db
+- id: thumb_down_alt
+  Name: Thumb Down Alt
+  Code: e816
+- id: thumb_down_off_alt
+  Name: Thumb Down Off Alt
+  Code: e9f2
+- id: thumb_up
+  Name: Thumb Up
+  Code: e8dc
+- id: thumb_up_alt
+  Name: Thumb Up Alt
+  Code: e817
+- id: thumb_up_off_alt
+  Name: Thumb Up Off Alt
+  Code: e9f3
+- id: thumbs_up_down
+  Name: Thumbs Up Down
+  Code: e8dd
+- id: time_to_leave
+  Name: Time to Leave
+  Code: e62c
+- id: timelapse
+  Name: Timelapse
+  Code: e422
+- id: timeline
+  Name: Timeline
+  Code: e922
+- id: timer
+  Name: Timer
+  Code: e425
+- id: timer_10
+  Name: Timer 10
+  Code: e423
+- id: timer_3
+  Name: Timer 3
+  Code: e424
+- id: timer_off
+  Name: Timer Off
+  Code: e426
+- id: title
+  Name: Title
+  Code: e264
+- id: toc
+  Name: Toc
+  Code: e8de
+- id: today
+  Name: Today
+  Code: e8df
+- id: toggle_off
+  Name: Toggle Off
+  Code: e9f5
+- id: toggle_on
+  Name: Toggle on
+  Code: e9f6
+- id: toll
+  Name: Toll
+  Code: e8e0
+- id: tonality
+  Name: Tonality
+  Code: e427
+- id: topic
+  Name: Topic
+  Code: f1c8
+- id: touch_app
+  Name: Touch App
+  Code: e913
+- id: tour
+  Name: Tour
+  Code: ef75
+- id: toys
+  Name: Toys
+  Code: e332
+- id: track_changes
+  Name: Track Changes
+  Code: e8e1
+- id: traffic
+  Name: Traffic
+  Code: e565
+- id: train
+  Name: Train
+  Code: e570
+- id: tram
+  Name: Tram
+  Code: e571
+- id: transfer_within_a_station
+  Name: Transfer Within a Station
+  Code: e572
+- id: transform
+  Name: Transform
+  Code: e428
+- id: transit_enterexit
+  Name: Transit Enterexit
+  Code: e579
+- id: translate
+  Name: Translate
+  Code: e8e2
+- id: trending_down
+  Name: Trending Down
+  Code: e8e3
+- id: trending_flat
+  Name: Trending Flat
+  Code: e8e4
+- id: trending_neutral
+  Name: Trending Neutral
+  Code: e8e4
+- id: trending_up
+  Name: Trending Up
+  Code: e8e5
+- id: trip_origin
+  Name: Trip Origin
+  Code: e57b
+- id: tty
+  Name: Tty
+  Code: f1aa
+- id: tune
+  Name: Tune
+  Code: e429
+- id: turned_in
+  Name: Turned in
+  Code: e8e6
+- id: turned_in_not
+  Name: Turned in Not
+  Code: e8e7
+- id: tv
+  Name: Tv
+  Code: e333
+- id: tv_off
+  Name: Tv Off
+  Code: e647
+- id: two_wheeler
+  Name: Two Wheeler
+  Code: e9f9
+- id: umbrella
+  Name: Umbrella
+  Code: f1ad
+- id: unarchive
+  Name: Unarchive
+  Code: e169
+- id: undo
+  Name: Undo
+  Code: e166
+- id: unfold_less
+  Name: Unfold Less
+  Code: e5d6
+- id: unfold_more
+  Name: Unfold More
+  Code: e5d7
+- id: unpublished
+  Name: Unpublished
+  Code: f236
+- id: unsubscribe
+  Name: Unsubscribe
+  Code: e0eb
+- id: update
+  Name: Update
+  Code: e923
+- id: update_disabled
+  Name: Update Disabled
+  Code: e075
+- id: upgrade
+  Name: Upgrade
+  Code: f0fb
+- id: upload_file
+  Name: Upload File
+  Code: e9fc
+- id: usb
+  Name: Usb
+  Code: e1e0
+- id: verified
+  Name: Verified
+  Code: ef76
+- id: verified_user
+  Name: Verified User
+  Code: e8e8
+- id: vertical_align_bottom
+  Name: Vertical Align Bottom
+  Code: e258
+- id: vertical_align_center
+  Name: Vertical Align Center
+  Code: e259
+- id: vertical_align_top
+  Name: Vertical Align Top
+  Code: e25a
+- id: vertical_distribute
+  Name: Vertical Distribute
+  Code: e076
+- id: vertical_split
+  Name: Vertical Split
+  Code: e949
+- id: vibration
+  Name: Vibration
+  Code: e62d
+- id: video_call
+  Name: Video Call
+  Code: e070
+- id: video_collection
+  Name: Video Collection
+  Code: e04a
+- id: video_label
+  Name: Video Label
+  Code: e071
+- id: video_library
+  Name: Video Library
+  Code: e04a
+- id: video_settings
+  Name: Video Settings
+  Code: ea75
+- id: videocam
+  Name: Videocam
+  Code: e04b
+- id: videocam_off
+  Name: Videocam Off
+  Code: e04c
+- id: videogame_asset
+  Name: Videogame Asset
+  Code: e338
+- id: view_agenda
+  Name: View Agenda
+  Code: e8e9
+- id: view_array
+  Name: View Array
+  Code: e8ea
+- id: view_carousel
+  Name: View Carousel
+  Code: e8eb
+- id: view_column
+  Name: View Column
+  Code: e8ec
+- id: view_comfortable
+  Name: View Comfortable
+  Code: e42a
+- id: view_comfy
+  Name: View Comfy
+  Code: e42a
+- id: view_compact
+  Name: View Compact
+  Code: e42b
+- id: view_day
+  Name: View Day
+  Code: e8ed
+- id: view_headline
+  Name: View Headline
+  Code: e8ee
+- id: view_in_ar
+  Name: View in Ar
+  Code: e9fe
+- id: view_list
+  Name: View List
+  Code: e8ef
+- id: view_module
+  Name: View Module
+  Code: e8f0
+- id: view_quilt
+  Name: View Quilt
+  Code: e8f1
+- id: view_sidebar
+  Name: View Sidebar
+  Code: f114
+- id: view_stream
+  Name: View Stream
+  Code: e8f2
+- id: view_week
+  Name: View Week
+  Code: e8f3
+- id: vignette
+  Name: Vignette
+  Code: e435
+- id: visibility
+  Name: Visibility
+  Code: e8f4
+- id: visibility_off
+  Name: Visibility Off
+  Code: e8f5
+- id: voice_chat
+  Name: Voice Chat
+  Code: e62e
+- id: voice_over_off
+  Name: Voice Over Off
+  Code: e94a
+- id: voicemail
+  Name: Voicemail
+  Code: e0d9
+- id: volume_down
+  Name: Volume Down
+  Code: e04d
+- id: volume_mute
+  Name: Volume Mute
+  Code: e04e
+- id: volume_off
+  Name: Volume Off
+  Code: e04f
+- id: volume_up
+  Name: Volume Up
+  Code: e050
+- id: volunteer_activism
+  Name: Volunteer Activism
+  Code: ea70
+- id: vpn_key
+  Name: Vpn Key
+  Code: e0da
+- id: vpn_lock
+  Name: Vpn Lock
+  Code: e62f
+- id: wallet_giftcard
+  Name: Wallet Giftcard
+  Code: e8f6
+- id: wallet_membership
+  Name: Wallet Membership
+  Code: e8f7
+- id: wallet_travel
+  Name: Wallet Travel
+  Code: e8f8
+- id: wallpaper
+  Name: Wallpaper
+  Code: e1bc
+- id: warning
+  Name: Warning
+  Code: e002
+- id: wash
+  Name: Wash
+  Code: f1b1
+- id: watch
+  Name: Watch
+  Code: e334
+- id: watch_later
+  Name: Watch Later
+  Code: e924
+- id: water_damage
+  Name: Water Damage
+  Code: f203
+- id: waterfall_chart
+  Name: Waterfall Chart
+  Code: ea00
+- id: waves
+  Name: Waves
+  Code: e176
+- id: wb_auto
+  Name: Wb Auto
+  Code: e42c
+- id: wb_cloudy
+  Name: Wb Cloudy
+  Code: e42d
+- id: wb_incandescent
+  Name: Wb Incandescent
+  Code: e42e
+- id: wb_iridescent
+  Name: Wb Iridescent
+  Code: e436
+- id: wb_shade
+  Name: Wb Shade
+  Code: ea01
+- id: wb_sunny
+  Name: Wb Sunny
+  Code: e430
+- id: wb_twighlight
+  Name: Wb Twighlight
+  Code: ea02
+- id: wc
+  Name: Wc
+  Code: e63d
+- id: web
+  Name: Web
+  Code: e051
+- id: web_asset
+  Name: Web Asset
+  Code: e069
+- id: weekend
+  Name: Weekend
+  Code: e16b
+- id: west
+  Name: West
+  Code: f1e6
+- id: whatshot
+  Name: Whatshot
+  Code: e80e
+- id: wheelchair_pickup
+  Name: Wheelchair Pickup
+  Code: f1ab
+- id: where_to_vote
+  Name: Where to Vote
+  Code: e177
+- id: widgets
+  Name: Widgets
+  Code: e1bd
+- id: wifi
+  Name: Wifi
+  Code: e63e
+- id: wifi_calling
+  Name: Wifi Calling
+  Code: ef77
+- id: wifi_lock
+  Name: Wifi Lock
+  Code: e1e1
+- id: wifi_off
+  Name: Wifi Off
+  Code: e648
+- id: wifi_protected_setup
+  Name: Wifi Protected Setup
+  Code: f0fc
+- id: wifi_tethering
+  Name: Wifi Tethering
+  Code: e1e2
+- id: wine_bar
+  Name: Wine Bar
+  Code: f1e8
+- id: work
+  Name: Work
+  Code: e8f9
+- id: work_off
+  Name: Work Off
+  Code: e942
+- id: work_outline
+  Name: Work Outline
+  Code: e943
+- id: workspaces_filled
+  Name: Workspaces Filled
+  Code: ea0d
+- id: workspaces_outline
+  Name: Workspaces Outline
+  Code: ea0f
+- id: wrap_text
+  Name: Wrap Text
+  Code: e25b
+- id: wrong_location
+  Name: Wrong Location
+  Code: ef78
+- id: wysiwyg
+  Name: Wysiwyg
+  Code: f1c3
+- id: youtube_searched_for
+  Name: Youtube Searched for
+  Code: e8fa
+- id: zoom_in
+  Name: Zoom in
+  Code: e8ff
+- id: zoom_out
+  Name: Zoom Out
+  Code: e900
+- id: zoom_out_map
+  Name: Zoom Out Map
+  Code: e56b

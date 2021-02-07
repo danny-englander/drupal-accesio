@@ -17,13 +17,11 @@ function accesio_preprocess_media(array &$vars) {
     $vars['video_url'] = $vars["content"]["field_media_oembed_video"]["#items"]->value;
     // Video URL.
     $video_url = $vars["content"]["field_media_oembed_video"]["#items"]->value;
-    $a = 1;
-
     // Test to see which vido provider is being rendered.
     if (strpos($video_url, 'vimeo') !== FALSE) {
       $vars['is_vimeo'] = TRUE;
     }
-    if (strpos($video_url, 'youtube') !== FALSE) {
+    if (strpos($video_url, 'you') !== FALSE) {
       $vars['is_youtube'] = TRUE;
     }
   }

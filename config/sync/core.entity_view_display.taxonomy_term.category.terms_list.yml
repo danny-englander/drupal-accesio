@@ -1,0 +1,14 @@
+uuid: 0a90b116-084d-45af-8906-6c71db992a3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.terms_list
+    - taxonomy.vocabulary.category
+id: taxonomy_term.category.terms_list
+targetEntityType: taxonomy_term
+bundle: category
+mode: terms_list
+content: {  }
+hidden:
+  description: true

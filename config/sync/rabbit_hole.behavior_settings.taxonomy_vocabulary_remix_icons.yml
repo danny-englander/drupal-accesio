@@ -1,0 +1,14 @@
+uuid: d59c3a5b-c401-4077-b16e-4558abd256eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.remix_icons
+id: taxonomy_vocabulary_remix_icons
+entity_type_id: taxonomy_vocabulary
+entity_id: remix_icons
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

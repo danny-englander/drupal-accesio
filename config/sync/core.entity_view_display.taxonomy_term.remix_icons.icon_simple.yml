@@ -1,0 +1,29 @@
+uuid: cdae3cd7-fc46-47ab-bd01-e94f7c587445
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon_simple
+    - field.field.taxonomy_term.remix_icons.feeds_item
+    - field.field.taxonomy_term.remix_icons.field_ri_icon_category
+    - field.field.taxonomy_term.remix_icons.field_ri_icon_css_code
+    - field.field.taxonomy_term.remix_icons.field_ri_icon_html_code
+    - taxonomy.vocabulary.remix_icons
+id: taxonomy_term.remix_icons.icon_simple
+targetEntityType: taxonomy_term
+bundle: remix_icons
+mode: icon_simple
+content:
+  field_ri_icon_html_code:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  description: true
+  feeds_item: true
+  field_ri_icon_category: true
+  field_ri_icon_css_code: true

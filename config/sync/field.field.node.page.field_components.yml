@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.filtered_list_views
     - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.portfolio
     - paragraphs.paragraphs_type.quote_item
     - paragraphs.paragraphs_type.stats
     - paragraphs.paragraphs_type.tabs
@@ -50,6 +51,7 @@ settings:
       block: block
       filtered_list_views: filtered_list_views
       stats: stats
+      portfolio: portfolio
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -78,6 +80,9 @@ settings:
       multimedia:
         weight: -23
         enabled: false
+      portfolio:
+        enabled: true
+        weight: 31
       quote_item:
         enabled: true
         weight: -31

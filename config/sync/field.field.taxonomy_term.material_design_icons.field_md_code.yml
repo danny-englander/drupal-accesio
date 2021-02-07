@@ -1,0 +1,19 @@
+uuid: c0380f7f-b1cd-4c36-b2ff-eff8ccd74dc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_md_code
+    - taxonomy.vocabulary.material_design_icons
+id: taxonomy_term.material_design_icons.field_md_code
+field_name: field_md_code
+entity_type: taxonomy_term
+bundle: material_design_icons
+label: 'MD Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
