@@ -254,6 +254,17 @@ display:
           empty: false
           content: '<p>Displaying @start - @end of @total icons | Page @current_page</p>'
           plugin_id: result
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<span class="btn" id="trigger-solid">Solid</span> <span class="btn" id="trigger-outline">Outline</span>'
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships: {  }

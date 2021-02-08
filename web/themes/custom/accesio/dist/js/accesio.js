@@ -150,6 +150,47 @@
           });
         });
       });
+
+      // Define variables for adding and removing classes
+      // and using local storage to maintain the state.
+      const outline_trigger = document.querySelector("#trigger-outline");
+      const solid_trigger = document.querySelector("#trigger-solid");
+      const body = document.querySelector("body");
+      const icon_item = document.querySelectorAll('.icon-item__icon.material-icons');
+      // Test to check the state of local storage.
+      if (localStorage.getItem('iconState') === 'outline_icon') {
+        // Add a class if it's outline.
+        body.classList.add("has-outline-icons");
+        icon_item.forEach(element => element.classList.add('material-icons-outlined'));
+        icon_item.forEach(element => element.classList.remove('material-icons'));
+      }
+
+      // Click action for the solid button.
+      solid_trigger.addEventListener("click", function (e) {
+        // console.log('solid')
+        localStorage.setItem('iconState', 'solid_icon');
+        body.classList.remove("has-outline-icons");
+        icon_item.forEach(element => element.classList.remove('material-icons-outlined'));
+        icon_item.forEach(element => element.classList.add('material-icons'));
+      }, false);
+
+      // Click action for the outline button.
+      outline_trigger.addEventListener("click", function (e) {
+        //  console.log('outline')
+        body.classList.add("has-outline-icons");
+        localStorage.setItem('iconState', 'outline_icon');
+        icon_item.forEach(element => element.classList.add('material-icons-outlined'));
+        icon_item.forEach(element => element.classList.remove('material-icons'));
+      }, false);
+
+      // Note, no clear Vanilla JS replacement as of yet for this bit of jQuery.
+      $(document).ajaxComplete(function (event, xhr, settings) {
+        // Query the state and then repeat the class add / remove.
+        if (localStorage.getItem('iconState') === 'outline_icon') {
+          icon_item.forEach(element => element.classList.add('material-icons-outlined'));
+          icon_item.forEach(element => element.classList.remove('material-icons'));
+        }
+      });
     },
   };
 
@@ -160,7 +201,7 @@
   Drupal.behaviors.AjaxEvent = {
     attach: function (context, settings) {
       $(document).once('exposed-form').ajaxComplete(function (event, xhr, settings) {
-        if($("#views-exposed-form-remix-icons-block" + name).length !== 0) {
+        if ($("#views-exposed-form-remix-icons-block" + name).length !== 0) {
           console.log('hello');
         }
       });
