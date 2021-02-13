@@ -32,7 +32,7 @@
 
   &__lede {
     @include rem(font-size, 20px);
-    font-family: $font-slab;
+    font-family: $font-sans;
   }
 
   &__share {

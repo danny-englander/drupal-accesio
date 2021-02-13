@@ -1,0 +1,28 @@
+uuid: a0f35c9f-df32-41b9-9c8c-d23606a33008
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_format
+    - paragraphs.paragraphs_type.blog_hero
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    full_html: '0'
+    basic_html: '0'
+    restricted_html: '0'
+id: paragraph.blog_hero.field_text_format
+field_name: field_text_format
+entity_type: paragraph
+bundle: blog_hero
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

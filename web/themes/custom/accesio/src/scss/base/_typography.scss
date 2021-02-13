@@ -8,7 +8,7 @@ without it disappearing or overlapping other page content.
  */
 
 body {
-  font-family: 'IBM Plex Sans', verdana, sans-serif;
+  font-family: $font-sans;
   font-size: 100%;
   font-weight: 400;
   color: $charcoal;
@@ -19,7 +19,7 @@ body {
 
 .h1,
 h1 {
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: $font-serif;
   font-weight: 400;
   @include rem(font-size, 54px);
   line-height: 58px;
@@ -35,7 +35,7 @@ h1 {
 
 .h2,
 h2 {
-  font-family: 'EB Garamond', serif;
+  font-family: $font-serif;
   font-weight: 500;
   @include rem(font-size, 44px);
   @include rem(line-height, 48px);
@@ -115,7 +115,7 @@ h6 {
   li,
   .p,
   p {
-    font-family: $font-slab;
+    font-family: $font-sans;
     @include rem(font-size, 16px);
     @include rem(line-height, 26px);
     @include rem(margin-bottom, 32px);
@@ -166,4 +166,3 @@ h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility
 }
-

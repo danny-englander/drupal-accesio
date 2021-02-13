@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.blog_post.feeds_item
     - field.field.node.blog_post.field_author
+    - field.field.node.blog_post.field_hero
     - field.field.node.blog_post.field_social_description
     - field.field.node.blog_post.field_social_image
     - field.field.node.blog_post.field_subheader
@@ -12,6 +13,7 @@ dependencies:
     - field.field.node.blog_post.field_text
     - node.type.blog_post
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.blog_post.default
@@ -27,6 +29,15 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_subheader:
     weight: 0

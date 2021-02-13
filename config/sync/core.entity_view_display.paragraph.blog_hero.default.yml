@@ -1,0 +1,67 @@
+uuid: 42826caa-ac1d-48f9-aeb6-50660e4e4dae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blog_hero.field_background_color
+    - field.field.paragraph.blog_hero.field_category
+    - field.field.paragraph.blog_hero.field_hero_layout
+    - field.field.paragraph.blog_hero.field_media
+    - field.field.paragraph.blog_hero.field_text_format
+    - field.field.paragraph.blog_hero.field_title
+    - paragraphs.paragraphs_type.blog_hero
+  module:
+    - options
+    - text
+id: paragraph.blog_hero.default
+targetEntityType: paragraph
+bundle: blog_hero
+mode: default
+content:
+  field_background_color:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_category:
+    weight: 6
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_hero_layout:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_media:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: hero
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_text_format:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

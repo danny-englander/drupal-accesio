@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.hero.field_heading_level
+    - field.field.paragraph.hero.field_hero_style
     - field.field.paragraph.hero.field_link
     - field.field.paragraph.hero.field_media
     - field.field.paragraph.hero.field_remove_btm_margin
@@ -12,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.hero
   module:
     - link
+    - options
     - text
 id: paragraph.hero.default
 targetEntityType: paragraph
@@ -20,13 +22,20 @@ mode: default
 content:
   field_heading_level:
     weight: 6
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_hero_style:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_link:
     weight: 4

@@ -1,0 +1,29 @@
+uuid: 1fb1e612-fbf4-4287-a8b1-6a42de943a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category
+    - paragraphs.paragraphs_type.blog_hero
+    - taxonomy.vocabulary.content_category
+id: paragraph.blog_hero.field_category
+field_name: field_category
+entity_type: paragraph
+bundle: blog_hero
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      content_category: content_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: 6944a567-9ad7-4a27-a804-22df4386d105
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_hero_layout
+field_name: field_hero_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: image_first
+      label: 'Image first, text last'
+    -
+      value: image_last
+      label: 'Image last, text first'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

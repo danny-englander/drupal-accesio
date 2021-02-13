@@ -1,0 +1,57 @@
+form_settings:
+  block_content:
+    default_value: false
+    disable: false
+    hidden: false
+  crop:
+    default_value: false
+    disable: false
+    hidden: false
+  feeds_subscription:
+    default_value: false
+    disable: false
+    hidden: false
+  feeds_feed:
+    default_value: false
+    disable: false
+    hidden: false
+  file:
+    default_value: false
+    disable: false
+    hidden: false
+  media:
+    default_value: false
+    disable: false
+    hidden: false
+  menu_link_content:
+    default_value: false
+    disable: false
+    hidden: false
+  node:
+    default_value: false
+    disable: false
+    hidden: false
+  path_alias:
+    default_value: false
+    disable: false
+    hidden: false
+  shortcut:
+    default_value: false
+    disable: false
+    hidden: false
+  taxonomy_term:
+    default_value: false
+    disable: false
+    hidden: false
+  user:
+    default_value: false
+    disable: false
+    hidden: false
+  webform_submission:
+    default_value: false
+    disable: false
+    hidden: false
+  paragraph:
+    default_value: false
+    disable: false
+    hidden: false

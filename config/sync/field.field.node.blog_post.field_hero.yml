@@ -1,0 +1,94 @@
+uuid: 8c285a9b-6e43-4154-b412-148c8aa72ddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.blog_post
+    - paragraphs.paragraphs_type.blog_hero
+  module:
+    - entity_reference_revisions
+id: node.blog_post.field_hero
+field_name: field_hero
+entity_type: node
+bundle: blog_post
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      blog_hero: blog_hero
+    target_bundles_drag_drop:
+      accordion:
+        weight: 23
+        enabled: false
+      accordion_group:
+        weight: 24
+        enabled: false
+      accordion_item:
+        weight: 25
+        enabled: false
+      block:
+        weight: 26
+        enabled: false
+      blog_hero:
+        enabled: true
+        weight: 27
+      columns:
+        weight: 28
+        enabled: false
+      cta:
+        weight: 29
+        enabled: false
+      filtered_list_views:
+        weight: 30
+        enabled: false
+      hero:
+        weight: 31
+        enabled: false
+      multimedia:
+        weight: 32
+        enabled: false
+      portfolio:
+        weight: 33
+        enabled: false
+      quote_item:
+        weight: 34
+        enabled: false
+      stats:
+        weight: 35
+        enabled: false
+      stats_item:
+        weight: 36
+        enabled: false
+      tabs:
+        weight: 37
+        enabled: false
+      tabs_item:
+        weight: 38
+        enabled: false
+      text:
+        weight: 39
+        enabled: false
+      text_bg_image:
+        weight: 40
+        enabled: false
+      timeline:
+        weight: 41
+        enabled: false
+      timeline_item:
+        weight: 42
+        enabled: false
+      title:
+        weight: 43
+        enabled: false
+      tweet:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

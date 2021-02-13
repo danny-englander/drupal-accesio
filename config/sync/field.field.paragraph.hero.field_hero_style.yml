@@ -1,0 +1,21 @@
+uuid: 27307d93-576a-4e07-b868-2fac74dddae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_style
+    - paragraphs.paragraphs_type.hero
+  module:
+    - options
+id: paragraph.hero.field_hero_style
+field_name: field_hero_style
+entity_type: paragraph
+bundle: hero
+label: 'Hero Style'
+description: 'Choose a hero style. If none is chosen, the default style will display.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

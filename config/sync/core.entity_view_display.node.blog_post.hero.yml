@@ -1,9 +1,9 @@
-uuid: e25fdf8f-59c2-48b1-b1c1-d0a03e615a38
+uuid: 1b11cec6-6790-4fe6-a1eb-41746192dba5
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.hero
     - field.field.node.blog_post.feeds_item
     - field.field.node.blog_post.field_author
     - field.field.node.blog_post.field_hero
@@ -14,23 +14,28 @@ dependencies:
     - field.field.node.blog_post.field_text
     - node.type.blog_post
   module:
+    - entity_reference_revisions
     - user
-id: node.blog_post.teaser
+id: node.blog_post.hero
 targetEntityType: node
 bundle: blog_post
-mode: teaser
+mode: hero
 content:
-  links:
-    weight: 100
-    settings: {  }
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     region: content
 hidden:
   feeds_item: true
   field_author: true
-  field_hero: true
   field_social_description: true
   field_social_image: true
   field_subheader: true
   field_tags: true
   field_text: true
+  links: true

@@ -765,7 +765,7 @@ of the font size. Ensure that your page text can be modified
 without it disappearing or overlapping other page content.
  */
 body {
-  font-family: 'IBM Plex Sans', verdana, sans-serif;
+  font-family: "IBM Plex Sans", verdana, sans-serif;
   font-size: 100%;
   font-weight: 400;
   color: #404040;
@@ -776,7 +776,7 @@ body {
 
 .h1, .component__item--type--title h2,
 h1 {
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-weight: 400;
   font-size: 3.375rem;
   line-height: 58px;
@@ -795,7 +795,7 @@ h1 {
 
 .h2, .page-blog h1,
 h2 {
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-weight: 500;
   font-size: 2.75rem;
   line-height: 3rem;
@@ -1098,6 +1098,63 @@ Accordion styling.
   border-radius: 50%;
   margin-right: 10px;
   border: 2px solid #404040;
+}
+
+.blog-hero {
+  margin-bottom: 10px;
+}
+
+.blog-hero__wrap {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-hero__media {
+  line-height: 0;
+  width: 50%;
+}
+
+.blog-hero__media img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 50vw;
+  height: 70vh;
+}
+
+.blog-hero__content {
+  background-color: #000;
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.blog-hero__content * {
+  color: #fff;
+}
+
+.blog-hero__content-inner {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px 40px;
+}
+
+.blog-hero__category p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.625rem;
+  margin-bottom: 12px;
+}
+
+.blog-hero__text p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.625rem;
+  line-height: 1.6;
 }
 
 .page-blog h1 {

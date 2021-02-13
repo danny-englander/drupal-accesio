@@ -1,6 +1,5 @@
 .hero {
   margin-bottom: 80px;
-  //padding-top: 70px;
 
   &__media {
     line-height: 0;
@@ -21,15 +20,11 @@
   }
 
   &__content {
- //   position: absolute;
     background-color: $black;
     width: 100%;
-    //bottom: -70px;
     border-bottom: 10px solid $primary-color;
 
     p {
-      //@include rem(font-size, 18px);
-      //@include rem(line-height, 34px);
     }
 
     * {

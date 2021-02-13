@@ -1,0 +1,21 @@
+uuid: 2bfc6d3f-d521-4aa3-81a3-104c90962d54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_layout
+    - paragraphs.paragraphs_type.blog_hero
+  module:
+    - options
+id: paragraph.blog_hero.field_hero_layout
+field_name: field_hero_layout
+entity_type: paragraph
+bundle: blog_hero
+label: 'Hero Layout'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
