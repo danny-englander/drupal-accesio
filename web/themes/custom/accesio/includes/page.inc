@@ -10,10 +10,8 @@ use Drupal\image\Entity\ImageStyle;
 
 /**
  * Implements hook_preprocess_HOOK() for page.html.twig.
- *
- * @param array $vars
  */
-function accesio_preprocess_page(array &$vars, $pid) {
+function accesio_preprocess_page(array &$vars) {
   // Define vars for use in templates.
   $site_config = \Drupal::config('system.site');
   // Set a var for the logo path.
@@ -34,6 +32,16 @@ function accesio_preprocess_page(array &$vars, $pid) {
         if ($node->get('field_hide_title')->value === '1') {
           unset($vars['page']['content_top']['accesio_page_title']);
         }
+      }
+    }
+
+    // Check for field_hero.
+    if ($node->hasField('field_hero') &&
+      !$node->get('field_hero')->isEmpty()) {
+      // Do an extra check for the target id.
+      if (!empty($node->field_hero->target_id)) {
+        // If hero component is set, remove the standard page title.
+        unset($vars['page']['content_info']['pagetitle']);
       }
     }
 

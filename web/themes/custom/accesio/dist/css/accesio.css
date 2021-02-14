@@ -1118,7 +1118,7 @@ Accordion styling.
   object-fit: cover;
   object-position: 50% 50%;
   width: 50vw;
-  height: 70vh;
+  height: 100vh;
 }
 
 .blog-hero__content {
@@ -1155,6 +1155,24 @@ Accordion styling.
   font-family: "EB Garamond", serif;
   font-size: 1.625rem;
   line-height: 1.6;
+}
+
+.blog-hero__anchor-link {
+  animation: bounce 2s;
+  animation-iteration-count: 6;
+  display: block;
+}
+
+.blog-hero__anchor-link:before {
+  content: "";
+  font-family: 'Material Icons';
+  font-size: 2.5rem;
+  left: #fff;
+}
+
+span#content-target {
+  position: absolute;
+  top: 112vh;
 }
 
 .page-blog h1 {
@@ -1258,6 +1276,18 @@ Accordion styling.
 
 .blog-post__tags svg {
   margin-right: 10px;
+}
+
+.blog-post__text > p:first-of-type {
+  margin-top: 12px;
+}
+
+.blog-post__text > p:first-of-type:first-letter {
+  font-family: "EB Garamond", serif;
+  font-size: 6.875rem;
+  float: left;
+  line-height: .6;
+  margin-right: 8px;
 }
 
 .blog-post__tags-items {
@@ -3282,6 +3312,22 @@ abbr[title] {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-12px);
   }
 }
 

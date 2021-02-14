@@ -165,23 +165,27 @@
         icon_item.forEach(element => element.classList.remove('material-icons'));
       }
 
-      // Click action for the solid button.
-      solid_trigger.addEventListener("click", function (e) {
-        // console.log('solid')
-        localStorage.setItem('iconState', 'solid_icon');
-        body.classList.remove("has-outline-icons");
-        icon_item.forEach(element => element.classList.remove('material-icons-outlined'));
-        icon_item.forEach(element => element.classList.add('material-icons'));
-      }, false);
+      if (solid_trigger) {
+        // Click action for the solid button.
+        solid_trigger.addEventListener("click", function () {
+          // console.log('solid')
+          localStorage.setItem('iconState', 'solid_icon');
+          body.classList.remove("has-outline-icons");
+          icon_item.forEach(element => element.classList.remove('material-icons-outlined'));
+          icon_item.forEach(element => element.classList.add('material-icons'));
+        }, false);
+      }
 
-      // Click action for the outline button.
-      outline_trigger.addEventListener("click", function (e) {
-        //  console.log('outline')
-        body.classList.add("has-outline-icons");
-        localStorage.setItem('iconState', 'outline_icon');
-        icon_item.forEach(element => element.classList.add('material-icons-outlined'));
-        icon_item.forEach(element => element.classList.remove('material-icons'));
-      }, false);
+      if (outline_trigger) {
+        // Click action for the outline button.
+        outline_trigger.addEventListener("click", function () {
+          //  console.log('outline')
+          body.classList.add("has-outline-icons");
+          localStorage.setItem('iconState', 'outline_icon');
+          icon_item.forEach(element => element.classList.add('material-icons-outlined'));
+          icon_item.forEach(element => element.classList.remove('material-icons'));
+        }, false);
+      }
 
       // Note, no clear Vanilla JS replacement as of yet for this bit of jQuery.
       $(document).ajaxComplete(function (event, xhr, settings) {
@@ -191,6 +195,30 @@
           icon_item.forEach(element => element.classList.remove('material-icons'));
         }
       });
+    },
+  };
+
+
+  Drupal.behaviors.scrollTo = {
+    attach: function (context, settings) {
+
+      // Define the element for the scroller.
+      const scroller = document.getElementById('content-scroller');
+
+      scrollTo = (element) => {
+        window.scroll({
+          behavior: 'smooth',
+          left: 0,
+          top: element.offsetTop
+        });
+      }
+
+      if (scroller) {
+        document.getElementById("content-scroller").addEventListener('click', () => {
+          console.log('hello')
+          scrollTo(document.getElementById("content-target"));
+        });
+      }
     },
   };
 

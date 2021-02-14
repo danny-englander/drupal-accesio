@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog_post.feeds_item
     - field.field.node.blog_post.field_author
+    - field.field.node.blog_post.field_category
     - field.field.node.blog_post.field_hero
     - field.field.node.blog_post.field_social_description
     - field.field.node.blog_post.field_social_image
@@ -28,6 +29,7 @@ content:
 hidden:
   feeds_item: true
   field_author: true
+  field_category: true
   field_hero: true
   field_social_description: true
   field_social_image: true

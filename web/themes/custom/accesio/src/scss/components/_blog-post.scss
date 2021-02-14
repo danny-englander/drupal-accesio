@@ -85,6 +85,22 @@
     }
   }
 
+  &__text {
+
+    // Accesible drop cap.
+   > p:first-of-type {
+     margin-top: 12px;
+
+      &:first-letter {
+        font-family: $font-serif;
+        @include rem(font-size, 110px);
+        float: left;
+        line-height: .6;
+        margin-right: 8px;
+      }
+    }
+  }
+
   &__tags-items {
     list-style: none;
     padding: 0;

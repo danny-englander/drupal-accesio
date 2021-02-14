@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override of a views exposed form.
+ * Theme override for a views exposed form.
  *
  * Available variables:
  * - form: A render element representing the form.
@@ -11,9 +11,11 @@
 #}
 {% if q is not empty %}
   {#
-    This ensures that, if clean URLs are off, the 'q' is added first,
-    as a hidden form element, so that it shows up first in the POST URL.
+  This ensures that, if clean URLs are off, the 'q' is added first,
+  as a hidden form element, so that it shows up first in the POST URL.
   #}
-{{ q }}
+  {{ q }}
 {% endif %}
-{{ form }}
+<div class="form--inline clearfix">
+  {{ form }}
+</div>

@@ -11,7 +11,6 @@ use Drupal\node\NodeInterface;
  * Prepares variables for node templates.
  */
 function accesio_preprocess_node(array &$vars) {
-  $a =1;
 }
 
 /**

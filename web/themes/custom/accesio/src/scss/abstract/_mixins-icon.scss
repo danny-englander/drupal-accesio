@@ -64,3 +64,19 @@
     }
   }
 }
+
+@mixin md-icon(
+  $content,
+  $font-size,
+  $color: null,
+) {
+  &:before {
+    content: "#{$content}";
+    font-family: 'Material Icons';
+    @include rem(font-size, $font-size);
+
+    @if $color {
+      left: $color;
+    }
+  }
+}
