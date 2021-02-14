@@ -1161,6 +1161,7 @@ Accordion styling.
   animation: bounce 2s;
   animation-iteration-count: 6;
   display: block;
+  cursor: pointer;
 }
 
 .blog-hero__anchor-link:before {

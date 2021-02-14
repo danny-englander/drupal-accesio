@@ -68,6 +68,7 @@
     animation-iteration-count: 6;
     display: block;
     @include md-icon("\f181", $font-size: 40px, $color: $white);
+    cursor: pointer;
   }
 }
 
