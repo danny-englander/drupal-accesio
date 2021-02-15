@@ -39,13 +39,20 @@
  */
 #}
 
-{# if link target is not empty, set a variable. #}
-{% if content.field_link.0["#url"].getOptions().attributes .target | render %}
-  {% set target = 'target = _' ~ content.field_link.0["#url"].getOptions().attributes .target %}
+{# Background color class. #}
+{% if content.field_background_color.0["#markup"] | render %}
+  {% set bg_color = 'blog-hero--' ~ content.field_background_color.0["#markup"] %}
+{% endif %}
+
+{# Hero layout class. #}
+{% if content.field_hero_layout | render %}
+  {% set layout = 'blog-hero--' ~ content.field_hero_layout["#items"].getString()%}
 {% endif %}
 
 {% set classes = [
   'blog-hero',
+  bg_color | clean_class,
+  layout | clean_class,
   'component__item',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
@@ -74,12 +81,7 @@
                   </div>
                 {% endif %}
 
-                {% if is_h1 | render %}
-                  {# if h1 checkbox has been filled. #}
                   <h1>{{ content.field_title | field_value }}</h1>
-                {% else %}
-                  <h2>{{ content.field_title | field_value }}</h2>
-                {% endif %}
               </div>
 
               {% if content.field_text_format | render %}
@@ -98,6 +100,7 @@
           </div>
         </div>
       </div>
+      {{  drupal_breakpoint() }}
     {% endblock %}
   </div>
 {% endblock paragraph %}

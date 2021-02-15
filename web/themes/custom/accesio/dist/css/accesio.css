@@ -793,7 +793,7 @@ h1 {
   }
 }
 
-.h2, .page-blog h1,
+.h2,
 h2 {
   font-family: "EB Garamond", serif;
   font-weight: 500;
@@ -804,7 +804,7 @@ h2 {
 }
 
 @media (min-width: 64em) {
-  .h2, .page-blog h1,
+  .h2,
   h2 {
     font-size: 3.5rem;
     line-height: 3.625rem;
@@ -1109,21 +1109,46 @@ Accordion styling.
   display: flex;
 }
 
+@media (max-width: 63.99em) {
+  .blog-hero__wrap {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 64em) {
+  .blog-hero--image-last .blog-hero__wrap {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
 .blog-hero__media {
   line-height: 0;
-  width: 50%;
+}
+
+@media (min-width: 64em) {
+  .blog-hero__media {
+    width: 50%;
+  }
 }
 
 .blog-hero__media img {
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 50vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 64em) {
+  .blog-hero__media img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 50vw;
+    height: 100vh;
+  }
 }
 
 .blog-hero__content {
   background-color: #000;
-  width: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1135,7 +1160,17 @@ Accordion styling.
   text-align: center;
 }
 
-.blog-hero__content * {
+@media (min-width: 64em) {
+  .blog-hero__content {
+    width: 50%;
+  }
+}
+
+.blog-hero--light .blog-hero__content {
+  background-color: #fff;
+}
+
+.blog-hero--dark .blog-hero__content * {
   color: #fff;
 }
 
@@ -1171,9 +1206,11 @@ Accordion styling.
   left: #fff;
 }
 
-span#content-target {
-  position: absolute;
-  top: 112vh;
+.blog-hero--dark .blog-hero__anchor-link:before {
+  content: "";
+  font-family: 'Material Icons';
+  font-size: 2.5rem;
+  left: #212121;
 }
 
 .page-blog h1 {
@@ -1327,6 +1364,11 @@ span#content-target {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.blog-post span#content-target {
+  position: absolute;
+  top: 112vh;
 }
 
 /*

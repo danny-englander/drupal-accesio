@@ -2,7 +2,6 @@
 
   h1 {
     position: relative;
-    @extend .h2;
     margin-bottom: 16px;
 
     @include mq($from: medium-large) {
@@ -129,5 +128,10 @@
     @include mq($from: medium-large) {
       @include blog-width();
     }
+  }
+
+  span#content-target {
+    position: absolute;
+    top: 112vh;
   }
 }

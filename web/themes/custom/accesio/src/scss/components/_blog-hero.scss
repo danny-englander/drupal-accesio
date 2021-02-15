@@ -3,39 +3,59 @@
 
   &__wrap {
     display: flex;
+
+    @include mq($until: small_desktop) {
+      flex-direction: column-reverse;
+    }
+
+    @include root-modifier('.blog-hero--image-last') {
+
+      @include mq($from: small_desktop) {
+          flex-direction: row-reverse;
+      }
+    }
   }
 
   &__media {
     line-height: 0;
-    width: 50%;
+
+    @include mq($from: small_desktop) {
+      width: 50%;
+    }
 
     img {
-      object-fit: cover;
-      object-position: 50% 50%;
-      width: 50vw;
-      height: 100vh;
+      width: 100%;
+      height: auto;
 
-      @include mq($from: x_wide) {
-        //height: 800px;
-        //object-fit: cover;
+      @include mq($from: small_desktop) {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 50vw;
+        height: 100vh;
       }
     }
   }
 
   &__content {
     background-color: $true-black;
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    p {
+    @include mq($from: small_desktop) {
+      width: 50%;
     }
 
-    * {
-      color: $white;
+    @include root-modifier('.blog-hero--light') {
+      background-color: $white;
+    }
+
+    @include root-modifier('.blog-hero--dark') {
+      * {
+        color: $white;
+      }
     }
   }
 
@@ -67,13 +87,11 @@
     animation: bounce 2s;
     animation-iteration-count: 6;
     display: block;
-    @include md-icon("\f181", $font-size: 40px, $color: $white);
     cursor: pointer;
-  }
-}
+    @include md-icon("\f181", $font-size: 40px, $color: $white);
 
-// @TODO mixinize this.
-span#content-target {
-  position: absolute;
-  top: 112vh;
+    @include root-modifier('.blog-hero--dark') {
+      @include md-icon("\f181", $font-size: 40px, $color: $black);
+    }
+  }
 }

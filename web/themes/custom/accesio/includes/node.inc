@@ -11,6 +11,16 @@ use Drupal\node\NodeInterface;
  * Prepares variables for node templates.
  */
 function accesio_preprocess_node(array &$vars) {
+  // Define the node.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof NodeInterface) {
+    // Check for field_hero.
+    if ($node->hasField('field_hero') &&
+      !$node->get('field_hero')->isEmpty()) {
+      // Set a variable for templates.
+      $vars['has_hero'] = TRUE;
+    }
+  }
 }
 
 /**

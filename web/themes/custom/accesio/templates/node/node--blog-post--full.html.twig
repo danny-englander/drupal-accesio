@@ -87,8 +87,11 @@
 
   <div{{ content_attributes.addClass('blog-post__content') }}>
 
-    {% if content.field_subheader | render %}
-      <h2 class="blog-post__lede">{{ content.field_subheader | field_value }}</h2>
+    {% if not has_hero | render %}
+      {#  We rtemove this if there is a page hero. #}
+      {% if content.field_subheader | render %}
+        <h2 class="blog-post__lede">{{ content.field_subheader | field_value }}</h2>
+      {% endif %}
     {% endif %}
 
     <div class="blog-post__header width--70">
