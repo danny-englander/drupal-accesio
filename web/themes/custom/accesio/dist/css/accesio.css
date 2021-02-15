@@ -2021,6 +2021,12 @@ see https://codepen.io/bootstrapped/pen/RrabNe
   align-items: center;
 }
 
+@media (min-width: 57.5em) and (max-width: 79.99em) {
+  .masthead__logo {
+    width: 17%;
+  }
+}
+
 .masthead__logo img {
   width: 180px;
   margin-bottom: 10px;
@@ -2211,8 +2217,8 @@ Media theming.
 }
 
 .main-menu__item--level-0 > a {
-  font-size: 1.0625rem;
-  padding: 10px 24px;
+  font-size: 0.9375rem;
+  padding: 10px 6px;
   border: 1px dashed #fff;
   margin: 0 10px;
   letter-spacing: 2px;
@@ -2220,6 +2226,13 @@ Media theming.
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (min-width: 71.25em) {
+  .main-menu__item--level-0 > a {
+    font-size: 1.0625rem;
+    padding: 10px 12px;
+  }
 }
 
 .main-menu__item--level-0 > a.has-action {

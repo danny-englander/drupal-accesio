@@ -47,13 +47,18 @@
 
       // All top level menu items
       > a {
-        @include rem(font-size, 17px);
-        padding: 10px 24px;
+        @include rem(font-size, 15px);
+        padding: 10px 6px;
         border: 1px dashed $white;
         margin: 0 10px;
         letter-spacing: 2px;
         display: flex;
         align-items: center;
+
+        @include mq($from: med_desktop) {
+          @include rem(font-size, 17px);
+          padding: 10px 12px;
+        }
 
         &.has-action {
           background-color: $bright-red;

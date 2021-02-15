@@ -58,6 +58,10 @@
     display: flex;
     align-items: center;
 
+    @include mq( $from: medium-large, $until: desktop) {
+      width: 17%;
+    }
+
     img {
       width: 180px;
       margin-bottom: 10px;
