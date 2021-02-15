@@ -28,15 +28,17 @@
     attach: function attach(context, settings) {
       // Youtube video background.
       if ($().YTPlayer) {
-        video_url = $("#video-url");
+        var video_url = $("#video-url");
         $(context).find(video_url).once("video-vimeo-bg").each(function () {
           // Instantiate the player.
           $(video_url).YTPlayer(); // Add custom A11y player controls.
+          // Update the player controls.
 
           $.YTPlayer.controls.play = "<span role='button' tabindex='0'>" + Drupal.t('Play') + "</span>";
           $.YTPlayer.controls.pause = "<span role='button' tabindex='0'>" + Drupal.t('Pause') + "</span>"; // Detect when the video has started playing.
 
           $(video_url).on("YTPStart", function (e) {
+            // Add a class if the video has started.
             $('#video-bg-container').addClass('is-started'); // console.log('started');
           });
         });
@@ -51,13 +53,15 @@
     attach: function attach(context, settings) {
       // Vimeo video background.
       if ($().vimeo_player) {
-        video_url = $("#video-url");
+        var video_url = $("#video-url");
         $(context).find(video_url).once("video-yt-bg").each(function () {
           // Instantiate the player.
           $(video_url).vimeo_player(); // Add custom A11y player controls.
+          // Update the player controls.
 
           $.vimeo_player.controls.play = "<span role='button' tabindex='0'>" + Drupal.t('Play') + "</span>";
           $.vimeo_player.controls.pause = "<span role='button' tabindex='0'>" + Drupal.t('Pause') + "</span>"; // Detect when the video has started playing.
+          // Add a class if the video has started.
 
           $(video_url).on("VPStart", function (e) {
             $('#video-bg-container').addClass('is-started'); // console.log('started');
@@ -217,23 +221,26 @@
       });
     }
   };
+  /*
+  * Custom scroller.
+  */
+
   Drupal.behaviors.scrollTo = {
     attach: function attach(context, settings) {
       // Define the element for the scroller.
-      var scroller = document.getElementById('content-scroller');
-
-      scrollTo = function scrollTo(element) {
-        window.scroll({
-          behavior: 'smooth',
-          left: 0,
-          top: element.offsetTop
-        });
-      };
+      var scroller = document.getElementById('content-scroller'); // Check for the scroller.
 
       if (scroller) {
-        document.getElementById("content-scroller").addEventListener('click', function () {
-          console.log('hello');
+        scroller.addEventListener('click', function () {
+          // Target the anchor to be scrolled to.
           scrollTo(document.getElementById("content-target"));
+        }); // A11y add-on.
+
+        scroller.addEventListener("keyup", function (event) {
+          if (event.key === 'Enter') {
+            // Trigger the click on return.
+            scroller.click();
+          }
         });
       }
     }
@@ -274,5 +281,14 @@
       //     })
       // });
     }
+  }; // ********* Custom Functions. *********.
+  // ScrollTo function.
+
+  scrollTo = function scrollTo(element) {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: element.offsetTop
+    });
   };
 })(jQuery, Drupal, drupalSettings);

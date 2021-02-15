@@ -1109,12 +1109,6 @@ Accordion styling.
   display: flex;
 }
 
-@media (min-width: 64em) {
-  .blog-hero--light .blog-hero__wrap {
-    border-bottom: 2px dotted #212121;
-  }
-}
-
 @media (max-width: 63.99em) {
   .blog-hero__wrap {
     -ms-flex-direction: column-reverse;
@@ -1183,6 +1177,12 @@ Accordion styling.
   background-color: #fff;
 }
 
+@media (min-width: 64em) {
+  .blog-hero--light .blog-hero__content {
+    border-bottom: 2px dotted #212121;
+  }
+}
+
 .blog-hero--dark .blog-hero__content * {
   color: #fff;
 }
@@ -1220,6 +1220,12 @@ Accordion styling.
 }
 
 @media (max-width: 63.99em) {
+  .blog-hero__anchor-link {
+    display: none;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .blog-hero__anchor-link {
     display: none;
   }
@@ -1858,6 +1864,13 @@ see https://codepen.io/bootstrapped/pen/RrabNe
   .hero__media img {
     height: 800px;
     object-fit: cover;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .hero__media img {
+    width: 100%;
+    height: auto;
   }
 }
 

@@ -4,13 +4,6 @@
   &__wrap {
     display: flex;
 
-    @include root-modifier('.blog-hero--light') {
-
-      @include mq($from: small_desktop) {
-        border-bottom: 2px dotted $black;
-      }
-    }
-
     @include mq($until: small_desktop) {
       flex-direction: column-reverse;
     }
@@ -62,6 +55,10 @@
 
     @include root-modifier('.blog-hero--light') {
       background-color: $white;
+
+      @include mq($from: small_desktop) {
+        border-bottom: 2px dotted $black;
+      }
     }
 
     @include root-modifier('.blog-hero--dark') {
@@ -103,6 +100,10 @@
     @include md-icon("\f181", $font-size: 40px, $color: $white);
 
     @include mq($until: small_desktop) {
+      display: none;
+    }
+
+    @include ie11 {
       display: none;
     }
 

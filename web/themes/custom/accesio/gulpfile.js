@@ -14,7 +14,7 @@ const gulp = require('gulp'),
   uglifyes = require('uglify-es'),
   composer = require('gulp-uglify/composer'),
   uglify = composer(uglifyes, console),
-  babel  = require('gulp-babel'),
+  babel = require('gulp-babel'),
   svgSprite = require('gulp-svg-sprite');
 
 // const uglifyes = require('uglify-es');
@@ -54,7 +54,7 @@ gulp.task('svgSprite', function (done) {
       },
       "id": {
         "generator": function (name) {
-          return path.basename(name.replace(/\s+/g, this.whitespace),'.svg');
+          return path.basename(name.replace(/\s+/g, this.whitespace), '.svg');
         }
       }
     },
@@ -89,9 +89,6 @@ gulp.task('svgSprite', function (done) {
 // JS.
 gulp.task('scripts', function () {
   return gulp.src('./src/js/**/*.js')
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
     .pipe(gulp.dest('./dist/js'))
     .pipe(rename({
       suffix: '.min'
@@ -100,6 +97,9 @@ gulp.task('scripts', function () {
     .on('error', function (err) {
       console.log(err)
     })
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(gulp.dest('./dist/js/min'))
 });
 
