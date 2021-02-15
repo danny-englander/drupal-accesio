@@ -17,14 +17,16 @@ Timeline (media style).
   }
 
   &:before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    border-left: 1px dashed $off-white;
-    width: 40px;
-    left: 50%;
-    height: 94%;
-    top: 160px;
+    @include mq($from: small_desktop) {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      border-left: 1px dashed $off-white;
+      width: 40px;
+      left: 50%;
+      height: 94%;
+      top: 160px;
+    }
   }
 
   &__title {
@@ -39,7 +41,14 @@ Timeline (media style).
   &__item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    
+    @include mq($until: small_desktop) {
+      flex-direction: column;
+    }
+
+    @include mq($from: small_desktop) {
+      margin-bottom: 100px;
+    }
 
     &:nth-child(odd) {
 
@@ -55,6 +64,10 @@ Timeline (media style).
     &:nth-child(even) {
       flex-direction: row-reverse;
 
+      @include mq($until: small_desktop) {
+        flex-direction: column;
+      }
+
       .timeline-media__content {
         padding-left: 50px;
       }
@@ -62,13 +75,24 @@ Timeline (media style).
   }
 
   &__content {
-    width: 50%;
+
     display: flex;
     flex-direction: column;
+
+    @include mq($until: small_desktop) {
+    }
+
+    @include mq($from: small_desktop) {
+      width: 50%;
+    }
   }
 
   &__image {
-    width: 45%;
+    width: 100%;
+
+    @include mq($from: small_desktop) {
+      width: 45%;
+    }
 
     img {
       width: 100%;
