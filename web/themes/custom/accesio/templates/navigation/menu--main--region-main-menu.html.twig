@@ -6,11 +6,9 @@
   {% if items %}
 
     {% if menu_level == 0 %}
-      <ul class="nav navbar-nav main-menu__items {{ 'main-menu__items--level-'
-    ~ menu_level }}">
+      <ul class="nav navbar-nav main-menu__items {{ 'main-menu__items--level-' ~ menu_level }}">
     {% elseif menu_level == 1 %}
-      <ul class="main-menu__sub-nav-group {{ 'main-menu__items--level-' ~
-    menu_level }}">
+      <ul class="main-menu__sub-nav-group {{ 'main-menu__items--level-' ~ menu_level }}">
     {% else %}
       <ul class="{{ 'main-menu__items--level-' ~ menu_level }}">
     {% endif %}
@@ -36,7 +34,7 @@
           <li {{ item.attributes.addClass(item_classes) }}">
           {{ link(item.title, item.url) }}
 
-          <div class="main-menu__sub-nav l-content">
+          <div class="main-menu__sub-nav">
             <div class="container main-menu__sub-nav-container">
               {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
             </div>

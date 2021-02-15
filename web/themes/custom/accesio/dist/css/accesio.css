@@ -2284,6 +2284,10 @@ Media theming.
   color: #212121;
 }
 
+.main-menu__item--level-1 > a {
+  color: #212121;
+}
+
 .main-menu__item--submenu-level-0 > a {
   position: relative;
   padding: 10px 14px 10px 24px;
