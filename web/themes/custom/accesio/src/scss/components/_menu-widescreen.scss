@@ -46,10 +46,10 @@
 
       // All top level menu items
       > a {
-        @include rem(font-size, 15px);
+        @include rem(font-size, 14px);
         color: $white;
-        padding: 10px 6px;
-        border: 1px dashed $white;
+        padding: 10px 4px;
+        border: 1px dotted $white;
         margin: 0 10px;
         letter-spacing: 2px;
         display: flex;
@@ -60,11 +60,19 @@
           padding: 10px 12px;
         }
 
-        &.has-action {
-          background-color: $bright-red;
+        &.btn {
+          @include rem(font-size, 15px);
+          padding: 4px 12px;
+          border-width: 1px;
+          border-style: solid;
           color: $white;
           position: relative;
           @include remix-icon("\ea6c", $font-size: 28px, $margin: 4px 0 0 8px, $position: relative, $top: -3px);
+
+          @include mq($from: med_desktop) {
+            @include rem(font-size, 17px);
+            padding: 4px 16px;
+          }
         }
 
         #{$a-tags-hover} {
@@ -133,7 +141,7 @@
 
     // No animation for IE11.
     @include ie11 {
-      @include no-animation();
+  //    @include no-animation();
     }
 
     .container {

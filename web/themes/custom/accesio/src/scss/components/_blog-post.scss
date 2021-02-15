@@ -131,7 +131,10 @@
   }
 
   span#content-target {
-    position: absolute;
-    top: 112vh;
+
+    @include mq($from: small_desktop) {
+      position: absolute;
+      top: 112vh;
+    }
   }
 }

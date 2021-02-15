@@ -4,6 +4,13 @@
   &__wrap {
     display: flex;
 
+    @include root-modifier('.blog-hero--light') {
+
+      @include mq($from: small_desktop) {
+        border-bottom: 2px dotted $black;
+      }
+    }
+
     @include mq($until: small_desktop) {
       flex-direction: column-reverse;
     }
@@ -32,6 +39,11 @@
         object-position: 50% 50%;
         width: 50vw;
         height: 100vh;
+
+        @include ie11 {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
@@ -89,6 +101,10 @@
     display: block;
     cursor: pointer;
     @include md-icon("\f181", $font-size: 40px, $color: $white);
+
+    @include mq($until: small_desktop) {
+      display: none;
+    }
 
     @include root-modifier('.blog-hero--dark') {
       @include md-icon("\f181", $font-size: 40px, $color: $black);

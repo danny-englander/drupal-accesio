@@ -39,10 +39,14 @@ override inline styles from the module js.
     a {
       background-color: transparent !important;
       text-decoration: none;
+      @include link-effect();
+
 
       #{$a-tags-hover} {
         i {
-          color: $primary-color;
+          padding: 6px;
+          color: $white;
+          background-color: $primary-color;
         }
       }
     }
@@ -64,7 +68,7 @@ override inline styles from the module js.
 
     &--email {
       i {
-      //  color: $charcoal;
+      //  @include rem(font-size, 16px);
       }
     }
 

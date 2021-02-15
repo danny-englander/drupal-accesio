@@ -14,6 +14,7 @@ const gulp = require('gulp'),
   uglifyes = require('uglify-es'),
   composer = require('gulp-uglify/composer'),
   uglify = composer(uglifyes, console),
+  babel  = require('gulp-babel'),
   svgSprite = require('gulp-svg-sprite');
 
 // const uglifyes = require('uglify-es');
@@ -88,6 +89,9 @@ gulp.task('svgSprite', function (done) {
 // JS.
 gulp.task('scripts', function () {
   return gulp.src('./src/js/**/*.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(gulp.dest('./dist/js'))
     .pipe(rename({
       suffix: '.min'
