@@ -13,7 +13,6 @@
   // Some general resets for the entire menu.
   a {
     text-decoration: none;
-    color: $white;
     font-weight: bold;
 
     &:hover {
@@ -48,6 +47,7 @@
       // All top level menu items
       > a {
         @include rem(font-size, 15px);
+        color: $white;
         padding: 10px 6px;
         border: 1px dashed $white;
         margin: 0 10px;

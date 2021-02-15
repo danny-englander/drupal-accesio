@@ -3,7 +3,7 @@
   padding-top: 20px;
   padding-bottom: 50px;
 
-  @include mq($from: medium) {
+  @include mq($from: small_plus) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
       margin-bottom: 40px;
     }
 
-    @include mq($from: medium, $until: small_desktop) {
+    @include mq($from: small_plus, $until: small_desktop) {
       width: 50%;
     }
 

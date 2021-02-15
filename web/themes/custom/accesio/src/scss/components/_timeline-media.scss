@@ -41,7 +41,7 @@ Timeline (media style).
   &__item {
     display: flex;
     justify-content: space-between;
-    
+
     @include mq($until: small_desktop) {
       flex-direction: column;
     }

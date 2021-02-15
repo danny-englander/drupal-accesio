@@ -17,8 +17,11 @@
   /* Override embed inline styles. */
   .twitter-tweet {
     margin: 0 auto 40px auto !important;
-    max-width: 490px !important;
-    width: 455px;
+
+    @include mq($from: small_desktop) {
+      max-width: 490px !important;
+      width: 455px;
+    }
 
     @include mq($from: small_desktop) {
       margin: 0 auto !important;

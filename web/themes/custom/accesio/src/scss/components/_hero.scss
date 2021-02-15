@@ -24,9 +24,6 @@
     width: 100%;
     border-bottom: 10px solid $primary-color;
 
-    p {
-    }
-
     * {
       color: $white;
     }
@@ -41,18 +38,39 @@
   &__text-wrap {
     display: flex;
     align-items: flex-start;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    @include mq($until: medium-large) {
+      flex-direction: column;
+      padding: 2px 12px;
+    }
   }
 
   &__title {
-    width: 50%;
-    flex-basis: 50%;
+
+    @include mq($from: medium-large) {
+      width: 50%;
+      flex-basis: 50%;
+    }
   }
 
   &__text {
-    width: 50%;
-    flex-basis: 50%;
-    padding-left: 40px;
     padding-top: 16px;
+
+    @include mq($from: medium-large) {
+      width: 50%;
+      flex-basis: 50%;
+      padding-left: 40px;
+    }
   }
 
   &__video-container {

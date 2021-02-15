@@ -1865,20 +1865,45 @@ see https://codepen.io/bootstrapped/pen/RrabNe
   display: flex;
   -ms-flex-align: start;
   align-items: flex-start;
+  padding: 4px 12px;
+  margin-bottom: 20px;
 }
 
-.hero__title {
-  width: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
+.hero__text-wrap h1 {
+  margin-bottom: 0;
+}
+
+.hero__text-wrap p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 57.49em) {
+  .hero__text-wrap {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2px 12px;
+  }
+}
+
+@media (min-width: 57.5em) {
+  .hero__title {
+    width: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
 }
 
 .hero__text {
-  width: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  padding-left: 40px;
   padding-top: 16px;
+}
+
+@media (min-width: 57.5em) {
+  .hero__text {
+    width: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-left: 40px;
+  }
 }
 
 .hero__video-container {
@@ -2181,7 +2206,6 @@ Media theming.
 
 .main-menu a {
   text-decoration: none;
-  color: #fff;
   font-weight: bold;
 }
 
@@ -2218,6 +2242,7 @@ Media theming.
 
 .main-menu__item--level-0 > a {
   font-size: 0.9375rem;
+  color: #fff;
   padding: 10px 6px;
   border: 1px dashed #fff;
   margin: 0 10px;
@@ -2561,7 +2586,7 @@ override inline styles from the module js.
   padding-bottom: 50px;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 32.5em) {
   .stats {
     display: -ms-flexbox;
     display: flex;
@@ -2587,7 +2612,7 @@ override inline styles from the module js.
   }
 }
 
-@media (min-width: 48em) and (max-width: 63.99em) {
+@media (min-width: 32.5em) and (max-width: 63.99em) {
   .stats__item {
     width: 50%;
   }
@@ -3055,8 +3080,13 @@ Timeline (simple style).
 
 .tweet .twitter-tweet {
   margin: 0 auto 40px auto !important;
-  max-width: 490px !important;
-  width: 455px;
+}
+
+@media (min-width: 64em) {
+  .tweet .twitter-tweet {
+    max-width: 490px !important;
+    width: 455px;
+  }
 }
 
 @media (min-width: 64em) {
