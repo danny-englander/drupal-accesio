@@ -132,12 +132,15 @@
 
   Drupal.behaviors.accesioFormUpdates = {
     attach: function attach(context, settings) {
-      // Find all the outer matched elements
-      var checkboxes = document.querySelectorAll('.js-form-type-checkbox'); // This is similar to jquery $(this).find('input.form-checkbox).
+      // Find checkboxes.
+      var outer_checkboxes = document.querySelectorAll('.js-form-type-checkbox'); // Loop through each matched element.
 
-      for (var i = 0; i < checkboxes.length; i++) {
-        var inputs = checkboxes[i].querySelectorAll("input.form-checkbox");
-        inputs[0].insertAdjacentHTML('afterend', '<span class="checkbox-toggle"><span class="checkbox-toggle__inner"></span></span>');
+      for (var i = 0; i < outer_checkboxes.length; i++) {
+        // This is similar to jquery $(this).find('input.form-checkbox).
+        var inner_inputs = outer_checkboxes[i].querySelectorAll("input.form-checkbox"); // This is similar to jquery .after().
+        // Since querySelectorAll returns a collection, we target with [0].
+
+        inner_inputs[0].insertAdjacentHTML('afterend', '<span class="checkbox-toggle"><span class="checkbox-toggle__inner"></span></span>');
       }
     }
   };
