@@ -1243,7 +1243,7 @@ Accordion styling.
   margin-bottom: 16px;
 }
 
-@media (min-width: 57.5em) {
+@media (min-width: 64em) {
   .page-blog h1 {
     max-width: 70%;
     margin-left: auto;
@@ -1276,12 +1276,20 @@ Accordion styling.
   }
 }
 
+@media (min-width: 64em) {
+  .blog-post__header {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .blog-post__lede {
   font-size: 1.25rem;
   font-family: "IBM Plex Sans", verdana, sans-serif;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 64em) {
   .blog-post__share {
     width: 30%;
   }
@@ -1297,7 +1305,7 @@ Accordion styling.
   align-items: center;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 64em) {
   .blog-post__date-byline {
     width: 70%;
   }
@@ -1383,7 +1391,7 @@ Accordion styling.
   color: #482e6e;
 }
 
-@media (min-width: 57.5em) {
+@media (min-width: 64em) {
   .blog-post p, .blog-post ol, .blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post ul:not(.blog-post__tags-items) {
     max-width: 70%;
     margin-left: auto;

@@ -4,7 +4,7 @@
     position: relative;
     margin-bottom: 16px;
 
-    @include mq($from: medium-large) {
+    @include mq($from: small_desktop) {
       @include blog-width();
     }
   }
@@ -27,6 +27,10 @@
     @include mq($until: medium) {
       flex-direction: column;
     }
+
+    @include mq($from: small_desktop) {
+      @include blog-width();
+    }
   }
 
   &__lede {
@@ -36,7 +40,7 @@
 
   &__share {
 
-    @include mq($from: medium) {
+    @include mq($from: small_desktop) {
       width: 30%;
     }
   }
@@ -48,7 +52,7 @@
     display: flex;
     align-items: center;
 
-    @include mq($from: medium) {
+    @include mq($from: small_desktop) {
       width: 70%;
     }
 
@@ -125,7 +129,7 @@
 
   p, ol, h1, h2, h3, h4, ul:not(.blog-post__tags-items) {
 
-    @include mq($from: medium-large) {
+    @include mq($from: small_desktop) {
       @include blog-width();
     }
   }

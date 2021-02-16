@@ -26,12 +26,6 @@
   }
 }
 
-.width--70 {
-  @include mq($from: medium-large) {
-    @include blog-width();
-  }
-}
-
 @keyframes bounce {
   0%,
   25%,
