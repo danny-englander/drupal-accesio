@@ -119,9 +119,13 @@
   */
   Drupal.behaviors.accesioFormUpdates = {
     attach: function attach(context, settings) {
-      $(context).find('.js-form-type-checkbox').once().each(function () {
-        $(this).find('input.form-checkbox').after('<span class="checkbox-toggle"><span class="checkbox-toggle__inner"></span></span>');
-      });
+      // Find all the outer matched elements
+      let checkboxes = document.querySelectorAll('.js-form-type-checkbox');
+      // This is similar to jquery $(this).find('input.form-checkbox).
+      for (let i = 0; i < checkboxes.length; i++) {
+        let inputs = checkboxes[i].querySelectorAll("input.form-checkbox");
+        inputs[0].insertAdjacentHTML('afterend', '<span class="checkbox-toggle"><span class="checkbox-toggle__inner"></span></span>');
+     }
     }
   };
 
@@ -132,7 +136,7 @@
     attach: function attach(context, settings) {
       $(context).find('.filter-toggle').each(function () {
         $(this).on('click', function () {
-          console.log('hello');
+          // console.log('hello');
           $(this).toggleClass('filter-toggle-expanded');
           $(this).parent().find('.view-filters').toggleClass('filters-expanded');
         });
@@ -229,32 +233,9 @@
     attach: function attach(context, settings) {
       $(document).once('exposed-form').ajaxComplete(function (event, xhr, settings) {
         if ($("#views-exposed-form-remix-icons-block" + name).length !== 0) {
-          console.log('hello');
+          // console.log('hello');
         }
-      }); // document.querySelectorAll('img.svg-img-to-inline').forEach((el) => {
-      //   const imgID = el.getAttribute('id');
-      //   const imgClass = el.getAttribute('class');
-      //   const imgURL = el.getAttribute('src');
-      //
-      //   fetch(imgURL)
-      //     .then(data => data.text())
-      //     .then(response => {
-      //       const parser = new DOMParser();
-      //       const xmlDoc = parser.parseFromString(response, 'text/html');
-      //       let svg = xmlDoc.querySelector('svg');
-      //
-      //       if (typeof imgID !== 'undefined') {
-      //         svg.setAttribute('id', imgID);
-      //       }
-      //
-      //       if(typeof imgClass !== 'undefined') {
-      //         svg.setAttribute('class', imgClass + ' replaced-svg');
-      //       }
-      //
-      //       svg.removeAttribute('xmlns:a');
-      //       el.parentNode.replaceChild(svg, el);
-      //     })
-      // });
+      });
     }
   };
 
