@@ -20,7 +20,7 @@ mode: default
 content:
   field_category:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
