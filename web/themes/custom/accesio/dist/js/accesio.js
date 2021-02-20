@@ -4,7 +4,7 @@
  * Misc JS functions.
  * @file
  */
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   /*
   * Accesio Accordion.
    */
@@ -132,8 +132,8 @@
 
   Drupal.behaviors.accesioFormUpdates = {
     attach: function attach(context, settings) {
-      // Find checkboxes.
-      var outer_checkboxes = document.querySelectorAll('.js-form-type-checkbox'); // Loop through each matched element.
+      // Find checkboxes, prefixed with once.
+      var outer_checkboxes = once('yay-only-once', context.querySelectorAll('.js-form-type-checkbox')); // Loop through each matched element.
 
       for (var i = 0; i < outer_checkboxes.length; i++) {
         // This is similar to jquery $(this).find('input.form-checkbox).
@@ -274,4 +274,4 @@
       top: element.offsetTop
     });
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

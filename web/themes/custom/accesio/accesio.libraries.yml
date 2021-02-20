@@ -8,6 +8,7 @@ accesio:
   js:
     dist/js/jquery-meganav.js: { defer: true, async: true }
     dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
+    dist/js/once.js: {}
     dist/js/accesio.js: {}
   dependencies:
     - core/jquery
