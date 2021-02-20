@@ -30,7 +30,8 @@ accesio_vimeo_bg:
 
 masonry:
   js:
-    dist/js/isotope.pkgd.min.js: { minified: true, defer: true, async: true }
+    dist/js/imagesloaded.pkgd.js: { defer: true, async: true }
+    dist/js/isotope.pkgd.js: { defer: true, async: true }
 
 a11y_tabs:
   js:

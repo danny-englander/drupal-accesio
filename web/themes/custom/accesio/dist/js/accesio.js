@@ -264,6 +264,41 @@
         }
       });
     }
+  };
+  Drupal.behaviors.Masonry = {
+    attach: function attach(context, settings) {
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.grid-sizer'
+        }
+      }); // Layout Isotope after each image loads
+
+      $grid.imagesLoaded().progress(function () {
+        $grid.isotope('layout');
+      }); // Store filter for the group
+
+      var filterFns = {}; // bind filter button click
+
+      $('.filters-button-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter'); // use filterFn if matches value
+
+        filterValue = filterFns[filterValue] || filterValue;
+        $grid.isotope({
+          filter: filterValue
+        });
+      }); // Change is-checked class on buttons
+
+      $('.button-group').each(function (i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function () {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+        });
+      });
+    }
   }; // ********* Custom Functions. *********.
   // ScrollTo function.
 

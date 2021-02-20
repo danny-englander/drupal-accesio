@@ -38,24 +38,37 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
+
+{# Attach the library for . #}
+{{ attach_library('accesio/masonry') }}
+
+{% set classes = [
+  'portfolio',
   'component__item',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
   not paragraph.isPublished() ? 'component__item--unpublished'
-]
-%}
+] %}
+
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      <div class="portfolio__filter">
+        <div class="button-group filters-button-group">
+          <button class="btn btn-small btn-secondary btn-sq button is-checked" data-filter="*">{{ 'Show All'|t }}</button>
+          {% for item in content.field_terms_filter | children(true) %}
+            <button class="btn btn-small btn-secondary btn-sq" type="button" data-filter=".{{- item["#plain_text"] | clean_class -}}">{{ item }}</button>
+          {% endfor %}
+        </div>
+      </div>
 
-      {{ drupal_view('category_terms', 'cat_terms_block') }}
-
-      {{ content }}
-
-
+      <div class="portfolio__items">
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          {{ content.field_portfolio_items | field_value }}
+        </div>
+      </div>
 
     {% endblock %}
   </div>

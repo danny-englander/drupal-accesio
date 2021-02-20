@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set classes = [
+  'grid-item',
+  'media',
+  'media--type-' ~ media.bundle()|clean_class,
+  not media.isPublished() ? 'media--unpublished',
+  view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+] %}
+
+{% for item in content.field_category | children(true) %}
+  {% set item_clean = item["#plain_text"] | clean_class %}
+  {% set classes = classes|merge([item_clean]) %}
+{% endfor %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+
+    {{ content.field_media_image }}
+
+  {% endif %}
+</section>
