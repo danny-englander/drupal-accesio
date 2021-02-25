@@ -21,6 +21,11 @@ function accesio_preprocess_html(array &$vars) {
   $node = \Drupal::routeMatch()->getParameter('node');
   // Check for a node instance.
   if ($node instanceof NodeInterface) {
+    // Define the nid.
+    $nid = $node->id();
+    // Add a nid class for internal reference.
+    $vars['attributes']['class'][] = 'n' . $nid;
+
     // Define the node type.
     $node_type = $node->getType();
     // Check if there are components.

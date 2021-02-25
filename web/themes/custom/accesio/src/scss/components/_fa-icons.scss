@@ -1,18 +1,23 @@
 /*
 Icon theming.
  */
-.view-fa-icons {
+.view-md-icons {
+
+  .view-header {
+    margin-bottom: 20px;
+  }
+
   form {
 
     @include mq($from: medium) {
-      display: flex;
+   //   display: flex;
     }
 
     input[type='text'] {
 
       @include mq($from: medium) {
-        margin-right: 10px;
-        width: 320px;
+        //margin-right: 10px;
+        //width: 320px;
       }
     }
   }

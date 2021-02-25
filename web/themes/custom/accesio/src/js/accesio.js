@@ -115,26 +115,8 @@
   };
 
   /*
-  * Custom form functions.
-  */
-  Drupal.behaviors.accesioFormUpdates = {
-    attach: function attach(context, settings) {
-      // Find checkboxes, prefixed with once.
-      let outer_checkboxes = once('yay-only-once', context.querySelectorAll('.js-form-type-checkbox'));
-      // Loop through each matched element.
-      for (let i = 0; i < outer_checkboxes.length; i++) {
-        // This is similar to jquery $(this).find('input.form-checkbox).
-        let inner_inputs = outer_checkboxes[i].querySelectorAll("input.form-checkbox");
-        // This is similar to jquery .after().
-        // Since querySelectorAll returns a collection, we target with [0].
-        inner_inputs[0].insertAdjacentHTML('afterend', '<span class="checkbox-toggle"><span class="checkbox-toggle__inner"></span></span>');
-      }
-    }
-  };
-
-  /*
-  * Custom views functions.
-  */
+* Custom views functions.
+*/
   Drupal.behaviors.accesioViews = {
     attach: function attach(context, settings) {
       $(context).find('.filter-toggle').each(function () {
@@ -154,7 +136,32 @@
           });
         });
       });
+    }
+  };
 
+  /*
+  * Custom form functions.
+  */
+  Drupal.behaviors.accesioCheckboxes = {
+    attach: function attach(context, settings) {
+      // Find checkboxes, add markup.
+      let outer_checkboxes = once('yay-only-once', context.querySelectorAll('.js-form-type-checkbox'));
+      // Loop through each matched element.
+      for (let i = 0; i < outer_checkboxes.length; i++) {
+        // This is similar to jquery $(this).find('input.form-checkbox).
+        let inner_inputs = outer_checkboxes[i].querySelectorAll("input.form-checkbox");
+        // This is similar to jquery .after().
+        // Since querySelectorAll returns a collection, we target with [0].
+        inner_inputs[0].insertAdjacentHTML('afterend', '<span class="checkbox-toggle"><span class="checkbox-toggle__inner"></span></span>');
+      }
+    }
+  };
+
+  /*
+  * Custom views functions.
+  */
+  Drupal.behaviors.accesioIcons = {
+    attach: function attach(context, settings) {
       // Define variables for adding and removing classes
       // and using local storage to maintain the state.
       const outline_trigger = document.querySelector("#trigger-outline");
@@ -245,39 +252,43 @@
   Drupal.behaviors.Masonry = {
     attach: function attach(context, settings) {
       // init Isotope
-      const $grid = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        masonry: {
-          columnWidth: '.grid-sizer'
-        }
-      });
 
-      // Layout Isotope after each image loads
-      $grid.imagesLoaded().progress(function () {
-        $grid.isotope('layout');
-      });
+      if ($().isotope) {
 
+        const grid = $('.grid').isotope({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          masonry: {
+            columnWidth: '.grid-sizer'
+          }
+        });
 
-      // Store filter for the group
-      var filterFns = {};
+        // Layout Isotope after each image loads
+        grid.imagesLoaded().progress(function () {
+          grid.isotope('layout');
+        });
+
+        // Store filter for the group
+        var filterFns = {};
 
 // bind filter button click
-      $('.filters-button-group').on('click', 'button', function () {
-        var filterValue = $(this).attr('data-filter');
-        // use filterFn if matches value
-        filterValue = filterFns[filterValue] || filterValue;
-        $grid.isotope({filter: filterValue});
-      });
+        $('.filters-button-group').on('click', 'button', function () {
+          var filterValue = $(this).attr('data-filter');
+          // use filterFn if matches value
+          filterValue = filterFns[filterValue] || filterValue;
+          grid.isotope({filter: filterValue});
+        });
 
 // Change is-checked class on buttons
-      $('.button-group').each(function (i, buttonGroup) {
-        var $buttonGroup = $(buttonGroup);
-        $buttonGroup.on('click', 'button', function () {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $(this).addClass('is-checked');
+        $('.button-group').each(function (i, buttonGroup) {
+          var $buttonGroup = $(buttonGroup);
+          $buttonGroup.on('click', 'button', function () {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+          });
         });
-      });
+
+      }
     }
   };
 
