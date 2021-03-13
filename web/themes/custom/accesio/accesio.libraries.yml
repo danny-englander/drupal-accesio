@@ -6,10 +6,11 @@ accesio:
       dist/vendor/css/min/remixicon.min.css: { minified: true }
       dist/css/accesio.css: {}
   js:
+    dist/js/once.js: { minified: true, defer: true, async: true }
     dist/js/jquery-meganav.js: { defer: true, async: true }
     dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
-    dist/js/once.js: {}
-    dist/js/accesio.js: {}
+    dist/js/form.js: { }
+    dist/js/accesio.js: { }
   dependencies:
     - core/jquery
     - core/drupal
