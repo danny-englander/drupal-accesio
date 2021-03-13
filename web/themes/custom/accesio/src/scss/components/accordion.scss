@@ -1,6 +1,8 @@
-/*
-Accordion styling.
+/**
+ * Accordion component styling.
  */
+@import "../global-includes";
+
 .js-accordion {
   @include container(1100px);
   margin-bottom: 50px;

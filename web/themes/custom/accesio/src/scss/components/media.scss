@@ -1,6 +1,7 @@
 /*
 Media theming.
  */
+@import "../global-includes";
 
 .media--type-remote-video {
   padding-top: 20px;
@@ -111,8 +112,6 @@ Media theming.
     padding-bottom: 16px;
   }
 }
-
-
 
 .media__attribution {
   display: flex;

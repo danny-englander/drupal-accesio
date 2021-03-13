@@ -39,6 +39,8 @@
  */
 #}
 
+{{ attach_library('accesio/text_bg') }}
+
 {# if link target is not empty, set a variable. #}
 {% if content.field_link.0["#url"].getOptions().attributes .target | render %}
   {% set target = 'target = _' ~ content.field_link.0["#url"].getOptions().attributes .target %}

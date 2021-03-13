@@ -1,3 +1,8 @@
+/**
+ * form styling.
+ */
+@import "../global-includes";
+
 // Inputs.
 input[type='text'],
 input[type='password'],
@@ -65,7 +70,7 @@ form {
 
 .js-form-type-select {
   position: relative;
- // @include font-awesome("\f078", after, $font-size: 24px, $margin: 4px 8px 0 0, $position: absolute, $right: 2px, $top: 34px);
+  // @include font-awesome("\f078", after, $font-size: 24px, $margin: 4px 8px 0 0, $position: absolute, $right: 2px, $top: 34px);
 
   &:before {
     z-index: 30;
@@ -310,11 +315,12 @@ form .description {
   0% {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0);
   }
+
   50% {
     box-shadow: 0 0 0 $md-radio-ripple-size rgba(0, 0, 0, 0.1);
   }
+
   100% {
     box-shadow: 0 0 0 $md-radio-ripple-size rgba(0, 0, 0, 0);
   }
 }
-

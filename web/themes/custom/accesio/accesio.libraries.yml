@@ -1,13 +1,15 @@
 accesio:
   version: VERSION
   css:
-    theme:
-      dist/vendor/css/min/grid.min.css: { minified: true }
+    base:
       dist/vendor/css/min/remixicon.min.css: { minified: true }
-      dist/css/accesio.css: {}
+      dist/css/global/base.css: { }
+      dist/css/global/typography.css: { }
+      dist/css/global/buttons-links.css: { }
+      dist/css/global/font-face.css: { }
+      dist/css/global/list.css: { }
   js:
     dist/js/once.js: { minified: true, defer: true, async: true }
-    dist/js/jquery-meganav.js: { defer: true, async: true }
     dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
     dist/js/form.js: { }
     dist/js/accesio.js: { }
@@ -16,6 +18,70 @@ accesio:
     - core/drupal
     - core/jquery.once
     - core/drupal.dialog.ajax
+    -
+header:
+  css:
+    base:
+      dist/css/header/header.css: { }
+      dist/css/header/branding.css: { }
+
+footer:
+  css:
+    base:
+      dist/css/footer/footer.css: { }
+
+layout:
+  css:
+    base:
+      dist/css/layout/grid.css: { }
+      dist/css/layout/grid-addon.css: { }
+
+menu_widescreen:
+  css:
+    base:
+      dist/css/navigation/menu-widescreen.css: { }
+  js:
+    dist/js/jquery-meganav.js: { defer: true, async: true }
+
+pager:
+  css:
+    base:
+      dist/css/navigation/pager.css: { }
+
+blog_post:
+  css:
+    theme:
+      dist/css/content/blog-post.css: { }
+
+author:
+  css:
+    theme:
+      dist/css/content/author.css: { }
+
+blog_hero:
+  css:
+    theme:
+      dist/css/components/blog-hero.css: { }
+
+quote:
+  css:
+    theme:
+      dist/css/components/quote.css: { }
+
+view_md_icons:
+  css:
+    theme:
+      dist/css/views/md-icons.css: { }
+
+form:
+  css:
+    theme:
+      dist/css/elements/form.css: { }
+
+page_title:
+  css:
+    theme:
+      dist/css/elements/form.css: { }
 
 accordion:
   js:

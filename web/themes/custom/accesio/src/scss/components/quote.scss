@@ -1,3 +1,8 @@
+/**
+ * Quote component styling.
+ */
+@import "../global-includes";
+
 /* Styled quote */
 .quote {
   position: relative;
@@ -47,7 +52,7 @@
   }
 
   &__attribution {
-    @extend .h3;
+   // @extend .h3;
 
     @include mq($from: small_desktop) {
       padding-left: 230px;

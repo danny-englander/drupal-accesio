@@ -10,7 +10,6 @@ Icon theming.
   form {
 
     @include mq($from: medium) {
-   //   display: flex;
     }
 
     input[type='text'] {

@@ -1,5 +1,5 @@
 .text-bg {
-  border-bottom: 2px solid $gray;
+  border-bottom: 2px dotted $gray;
   margin-bottom: 50px;
 
   &__background {
@@ -17,6 +17,8 @@
     padding: 30px 60px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    position: relative;
+    z-index: 1000;
   }
 
   &__link {
