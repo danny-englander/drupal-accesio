@@ -19,7 +19,6 @@ dependencies:
     - paragraphs.paragraphs_type.text_bg_image
     - paragraphs.paragraphs_type.timeline
     - paragraphs.paragraphs_type.title
-    - paragraphs.paragraphs_type.tweet
   module:
     - entity_reference_revisions
 id: node.page.field_components
@@ -43,7 +42,6 @@ settings:
       accordion: accordion
       text_bg_image: text_bg_image
       cta: cta
-      tweet: tweet
       columns: columns
       timeline: timeline
       tabs: tabs

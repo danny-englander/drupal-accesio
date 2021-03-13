@@ -8,7 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.title
-    - paragraphs.paragraphs_type.tweet
   module:
     - entity_reference_revisions
 id: paragraph.columns.field_components
@@ -29,7 +28,6 @@ settings:
       title: title
       accordion: accordion
       text: text
-      tweet: tweet
     target_bundles_drag_drop:
       accordion:
         enabled: true
