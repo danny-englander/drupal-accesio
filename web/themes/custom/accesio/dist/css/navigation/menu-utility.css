@@ -36,12 +36,14 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   font-size: 1.1875rem;
   text-decoration: none;
   border-bottom: 2px solid #69cec3;
-  transition: .4s ease;
+  transition: 0.4s ease;
   padding: 2px 4px;
   color: #fff;
 }
 
-.utility-menu__item a:active, .utility-menu__item a:focus, .utility-menu__item a:hover {
+.utility-menu__item a:active,
+.utility-menu__item a:focus,
+.utility-menu__item a:hover {
   background-color: #69cec3;
   border: none;
   color: #212121;

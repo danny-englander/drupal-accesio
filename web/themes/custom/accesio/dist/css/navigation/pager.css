@@ -39,7 +39,9 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   border-radius: 80px;
 }
 
-.pager__item a:active, .pager__item a:focus, .pager__item a:hover {
+.pager__item a:active,
+.pager__item a:focus,
+.pager__item a:hover {
   background-color: #69cec3;
   color: #212121;
 }
@@ -53,13 +55,15 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   font-size: 1.25rem;
 }
 
-.pager__item--first i, .pager__item--last i {
+.pager__item--first i,
+.pager__item--last i {
   font-size: 1.625rem;
   display: -ms-flexbox;
   display: flex;
 }
 
-.pager__item--next i, .pager__item--previous i {
+.pager__item--next i,
+.pager__item--previous i {
   font-size: 2.25rem;
   display: -ms-flexbox;
   display: flex;

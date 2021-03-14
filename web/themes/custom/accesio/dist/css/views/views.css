@@ -35,11 +35,12 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .filter-wrap .filter-toggle h2:before {
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
-.filter-wrap .filter-toggle:before, .filter-wrap .filter-toggle:after {
-  content: '';
+.filter-wrap .filter-toggle:before,
+.filter-wrap .filter-toggle:after {
+  content: "";
   border-top: 1px solid #212121;
   margin: -14px 20px 0 0;
   -ms-flex: 1 0 20px;
@@ -52,7 +53,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 
 .filter-wrap .view-filters {
   transition-property: opacity, visibility;
-  transition-duration: .6s;
+  transition-duration: 0.6s;
   transition-delay: 0.1s;
   visibility: hidden;
   opacity: 0;
@@ -68,7 +69,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 /* ---- isotope ---- */
 /* clear fix */
 .grid:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -82,7 +83,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 @media (min-width: 940px) {
   .grid-sizer,
   .grid-item {
-    width: 33.333%;
+    width: 33.33%;
   }
 }
 

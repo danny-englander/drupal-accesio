@@ -6,21 +6,21 @@ A11Y Color grids.
 https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
 
 */
-input[type='text'],
-input[type='password'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='month'],
-input[type='week'],
-input[type='email'],
-input[type='number'],
-input[type='search'],
-input[type='tel'],
-input[type='time'],
-input[type='url'],
-input[type='color'],
-input[type='text'] {
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+input[type="text"] {
   font-size: 1.125rem;
   width: 100%;
   height: 40px;
@@ -32,40 +32,40 @@ input[type='text'] {
 }
 
 @media (min-width: 64em) {
-  input[type='text'],
-  input[type='password'],
-  input[type='date'],
-  input[type='datetime'],
-  input[type='datetime-local'],
-  input[type='month'],
-  input[type='week'],
-  input[type='email'],
-  input[type='number'],
-  input[type='search'],
-  input[type='tel'],
-  input[type='time'],
-  input[type='url'],
-  input[type='color'],
-  input[type='text'] {
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  input[type="color"],
+  input[type="text"] {
     height: 45px;
   }
 }
 
-input[type='text']:focus,
-input[type='password']:focus,
-input[type='date']:focus,
-input[type='datetime']:focus,
-input[type='datetime-local']:focus,
-input[type='month']:focus,
-input[type='week']:focus,
-input[type='email']:focus,
-input[type='number']:focus,
-input[type='search']:focus,
-input[type='tel']:focus,
-input[type='time']:focus,
-input[type='url']:focus,
-input[type='color']:focus,
-input[type='text']:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="text"]:focus {
   outline: #482e6e solid 2px;
 }
 
@@ -176,11 +176,12 @@ input[type=search]::-ms-reveal {
   font-size: 1.0625rem;
 }
 
-.js-form-type-radio label:before, .js-form-type-radio label:after {
+.js-form-type-radio label:before,
+.js-form-type-radio label:after {
   position: absolute;
-  content: '';
+  content: "";
   border-radius: 50%;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transition-property: transform, border-color;
 }
 
@@ -209,7 +210,7 @@ input[type=search]::-ms-reveal {
   margin-bottom: 14px !important;
 }
 
-.js-form-type-checkbox input[type='checkbox'] {
+.js-form-type-checkbox input[type="checkbox"] {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
@@ -223,11 +224,11 @@ input[type=search]::-ms-reveal {
   z-index: 1;
 }
 
-.js-form-type-checkbox input[type='checkbox']:checked ~ .checkbox-toggle .checkbox-toggle__inner {
+.js-form-type-checkbox input[type="checkbox"]:checked ~ .checkbox-toggle .checkbox-toggle__inner {
   background-color: #482e6e;
 }
 
-.js-form-type-checkbox input[type='checkbox']:checked ~ .checkbox-toggle .checkbox-toggle__inner:before {
+.js-form-type-checkbox input[type="checkbox"]:checked ~ .checkbox-toggle .checkbox-toggle__inner:before {
   -ms-transform: translateX(16px);
   transform: translateX(16px);
 }
@@ -265,7 +266,7 @@ input[type=search]::-ms-reveal {
   border-radius: 21px;
   -ms-transform: translateX(-16px);
   transform: translateX(-16px);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .js-form-type-checkbox label {

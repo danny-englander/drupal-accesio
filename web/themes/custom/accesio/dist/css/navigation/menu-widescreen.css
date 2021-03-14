@@ -103,7 +103,9 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   }
 }
 
-.main-menu__item--level-0 > a:active, .main-menu__item--level-0 > a:focus, .main-menu__item--level-0 > a:hover {
+.main-menu__item--level-0 > a:active,
+.main-menu__item--level-0 > a:focus,
+.main-menu__item--level-0 > a:hover {
   text-decoration: none;
   background-color: #69cec3;
   color: #212121;
@@ -129,7 +131,9 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   transition-duration: 0.2s;
 }
 
-.main-menu__item--submenu-level-0 > a:active:after, .main-menu__item--submenu-level-0 > a:focus:after, .main-menu__item--submenu-level-0 > a:hover:after {
+.main-menu__item--submenu-level-0 > a:active:after,
+.main-menu__item--submenu-level-0 > a:focus:after,
+.main-menu__item--submenu-level-0 > a:hover:after {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -149,7 +153,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
     width: 100%;
     z-index: 320;
     transition-property: opacity, visibility;
-    transition-duration: .6s;
+    transition-duration: 0.6s;
     transition-delay: 0.1s;
     visibility: hidden;
     opacity: 0;

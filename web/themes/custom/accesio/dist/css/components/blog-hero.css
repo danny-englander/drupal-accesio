@@ -121,7 +121,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 
 .blog-hero__anchor-link:before {
   content: "";
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-size: 2.5rem;
   left: #fff;
 }
@@ -140,7 +140,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 
 .blog-hero--dark .blog-hero__anchor-link:before {
   content: "";
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-size: 2.5rem;
   left: #212121;
 }

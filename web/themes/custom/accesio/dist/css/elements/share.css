@@ -61,7 +61,9 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   transition: all 0.6s ease 0s;
 }
 
-.share__item a:active i, .share__item a:focus i, .share__item a:hover i {
+.share__item a:active i,
+.share__item a:focus i,
+.share__item a:hover i {
   padding: 6px;
   color: #fff;
   background-color: #482e6e;

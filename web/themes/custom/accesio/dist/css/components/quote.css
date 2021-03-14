@@ -31,7 +31,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 
 .quote__text:before {
   content: "\201C";
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-size: 11rem;
   line-height: 0.9;
   position: absolute;
@@ -51,7 +51,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .quote__text p {
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-size: 3.125rem;
   line-height: 1.2;
   letter-spacing: 2px;

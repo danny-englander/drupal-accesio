@@ -55,16 +55,16 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .stats__item-number h2 {
-  font-family: 'Rozha One', serif;
+  font-family: "Rozha One", serif;
   color: #404040;
   font-size: 6.25rem;
   letter-spacing: 0.1875rem;
-  line-height: .9;
+  line-height: 0.9;
   border-bottom: 2px dashed #404040;
 }
 
 .stats__item-desc h3 {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   font-weight: 400;
 }
 

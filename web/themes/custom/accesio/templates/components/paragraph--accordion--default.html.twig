@@ -52,6 +52,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }} data-accordion-prefix-classes="animated-accordion" data-multiselectable="false" id="js-accordion-id-{{ paragraph.id() }}">
     {% block content %}
+      <h2>{{ content.field_title | field_value }}</h2>
       {{ content.field_accordion_group | field_value }}
     {% endblock %}
   </div>

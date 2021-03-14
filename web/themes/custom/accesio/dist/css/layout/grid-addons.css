@@ -17,7 +17,7 @@ see https://codepen.io/bootstrapped/pen/RrabNe
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .flex-row.row > [class*='col-'] {
+  .flex-row.row > [class*="col-"] {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -28,7 +28,7 @@ see https://codepen.io/bootstrapped/pen/RrabNe
     display: -ms-flexbox;
     display: flex;
   }
-  .flex-row.row > [class*='col-'] > .box {
+  .flex-row.row > [class*="col-"] > .box {
     display: -ms-flexbox;
     display: flex;
     -ms-flex: 1;

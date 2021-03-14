@@ -57,13 +57,15 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   outline: none;
 }
 
-.js-tablist__link:hover, .js-tablist__link[aria-selected="true"] {
+.js-tablist__link:hover,
+.js-tablist__link[aria-selected="true"] {
   background-color: #69cec3;
   border-bottom: 4px solid #482e6e;
   color: #212121;
 }
 
-.js-tablist--outline .js-tablist__link:hover, .js-tablist--outline .js-tablist__link[aria-selected="true"] {
+.js-tablist--outline .js-tablist__link:hover,
+.js-tablist--outline .js-tablist__link[aria-selected="true"] {
   background-color: #482e6e;
   color: #fff;
 }
