@@ -1,6 +1,8 @@
 /*
 Utility menu.
  */
+@import "../global-includes";
+
 .utility-menu {
 
   @include mq($until: small_plus) {

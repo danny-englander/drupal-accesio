@@ -1,6 +1,8 @@
 /*
 Timeline (simple style).
  */
+@import "../global-includes";
+
 .timeline-simple {
   @include container(1280px);
   padding-top: 50px;

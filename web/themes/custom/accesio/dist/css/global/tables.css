@@ -1,0 +1,52 @@
+/*
+ * Tables styling.
+ */
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+table {
+  font-size: 1.125rem;
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: #482e6e;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #eaeaea;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #482e6e;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #482e6e;
+}
+
+table caption {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #dadada;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=tables.css.map */

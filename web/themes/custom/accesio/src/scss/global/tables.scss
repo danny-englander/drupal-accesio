@@ -1,3 +1,8 @@
+/*
+ * Tables styling.
+ */
+@import "../global-includes";
+
 table {
   @include rem(font-size, 18px);
   border-collapse: collapse;

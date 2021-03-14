@@ -1,5 +1,4 @@
 (function (Drupal, once) {
-
   Drupal.behaviors.customCheckboxes = {
     attach(context) {
       // Find checkboxes, add markup.
@@ -14,5 +13,4 @@
       }
     }
   };
-
 }(Drupal, once));

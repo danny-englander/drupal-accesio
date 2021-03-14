@@ -1,3 +1,8 @@
+/*
+ * Stats component styling.
+ */
+@import "../global-includes";
+
 .stats {
   @include container(1280px);
   padding-top: 20px;

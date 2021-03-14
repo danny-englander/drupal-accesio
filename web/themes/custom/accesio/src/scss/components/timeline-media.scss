@@ -1,6 +1,8 @@
 /*
 Timeline (media style).
  */
+@import "../global-includes";
+
 .timeline-media {
   @include container(1280px);
   position: relative;

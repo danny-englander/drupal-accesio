@@ -104,7 +104,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(['!./src/scss/vendor/**/*.scss', './src/scss/accesio.scss'])
+  return gulp.src(['!./src/scss/vendor/**/*.scss', './src/scss/**/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({
