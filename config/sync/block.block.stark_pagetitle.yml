@@ -1,0 +1,32 @@
+uuid: dc070a15-fa45-4043-991f-0bf866f3aaed
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - ctools
+  theme:
+    - stark
+id: stark_pagetitle
+theme: stark
+region: sidebar_first
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      blog_post: blog_post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,35 @@
+uuid: 18a898fd-6a7f-4b49-865d-4ae9bd052640
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - ctools
+    - rrssb
+  theme:
+    - stark
+id: stark_share
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: rrssb_block
+settings:
+  id: rrssb_block
+  label: 'Share this content'
+  provider: rrssb
+  label_display: '0'
+  button_set: default
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      blog_post: blog_post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,29 @@
+uuid: 15cf038e-8c99-47cb-acfa-9c0996d0d43d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: main-menu
+id: stark_mainnavigation
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }
