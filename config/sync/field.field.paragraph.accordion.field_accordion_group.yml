@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_accordion_group
     - paragraphs.paragraphs_type.accordion
-    - paragraphs.paragraphs_type.accordion_group
+    - paragraphs.paragraphs_type.accordion_item
   module:
     - entity_reference_revisions
 id: paragraph.accordion.field_accordion_group
@@ -23,16 +23,22 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      accordion_group: accordion_group
+      accordion_item: accordion_item
     target_bundles_drag_drop:
       accordion:
         weight: 13
         enabled: false
       accordion_group:
-        enabled: true
         weight: 14
+        enabled: false
       accordion_item:
+        enabled: true
         weight: 15
+      block:
+        weight: 25
+        enabled: false
+      blog_hero:
+        weight: 26
         enabled: false
       columns:
         weight: 16
@@ -40,8 +46,32 @@ settings:
       cta:
         weight: 17
         enabled: false
+      filtered_list_views:
+        weight: 29
+        enabled: false
       hero:
         weight: 18
+        enabled: false
+      multimedia:
+        weight: 31
+        enabled: false
+      portfolio:
+        weight: 32
+        enabled: false
+      quote_item:
+        weight: 33
+        enabled: false
+      stats:
+        weight: 34
+        enabled: false
+      stats_item:
+        weight: 35
+        enabled: false
+      tabs:
+        weight: 36
+        enabled: false
+      tabs_item:
+        weight: 37
         enabled: false
       text:
         weight: 19
@@ -57,8 +87,5 @@ settings:
         enabled: false
       title:
         weight: 23
-        enabled: false
-      tweet:
-        weight: 24
         enabled: false
 field_type: entity_reference_revisions

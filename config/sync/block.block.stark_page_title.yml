@@ -1,0 +1,32 @@
+uuid: 230a59ed-efef-457f-a74d-297e756f66d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.page_type
+  module:
+    - block_class
+    - block_visibility_groups
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: page-title
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: stark_page_title
+theme: stark
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: page_type

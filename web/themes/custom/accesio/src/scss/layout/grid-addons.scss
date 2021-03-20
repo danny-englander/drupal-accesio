@@ -1,0 +1,36 @@
+/**
+ * grid add-ons styling.
+ */
+@import "../global-includes";
+
+/* Flexbox Equal Height Bootstrap Columns (fully responsive)
+Ideal for cards with equal heights.
+see https://codepen.io/bootstrapped/pen/RrabNe
+*/
+@include mq($from: small_plus) {
+  .flex-row.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-row.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-row.row:after,
+  .flex-row.row:before {
+    display: flex;
+  }
+
+  .flex-row.row > [class*='col-'] > .box {
+    display: flex;
+    flex: 1;
+  }
+
+  .flex-row .flex-row--eq-height {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+  }
+}

@@ -39,6 +39,8 @@
  */
 #}
 
+{{ attach_library('accesio/blog_hero') }}
+
 {# Background color class. #}
 {% if content.field_background_color.0["#markup"] | render %}
   {% set bg_color = 'blog-hero--' ~ content.field_background_color.0["#markup"] %}

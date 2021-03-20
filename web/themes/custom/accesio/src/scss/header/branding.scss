@@ -1,0 +1,13 @@
+/**
+ * Branding component styling.
+ */
+@import "../global-includes";
+
+.branding {
+
+  &__slogan {
+    margin-bottom: 6px;
+    @include rem(font-size, 17px);
+    color: $white;
+  }
+}

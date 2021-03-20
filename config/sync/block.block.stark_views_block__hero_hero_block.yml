@@ -1,0 +1,30 @@
+uuid: bbc597bc-1acb-4852-8f47-1860b73dde2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - stark
+id: stark_views_block__hero_hero_block
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:hero-hero_block'
+settings:
+  id: 'views_block:hero-hero_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''

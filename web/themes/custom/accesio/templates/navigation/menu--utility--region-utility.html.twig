@@ -18,6 +18,9 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
+
+{{ attach_library('accesio/menu_utility') }}
+
 {% import _self as menus %}
 
 {#
@@ -35,14 +38,12 @@ We call a macro which calls itself to render the full tree.
   <ul class="menu">
     {% endif %}
     {% for item in items %}
-      {%
-        set classes = [
+      {% set classes = [
         'utility-menu__item',
         item.is_expanded ? 'utility-menu__item--expanded',
         item.is_collapsed ? 'utility-menu__item--collapsed',
         item.in_active_trail ? 'utility-menu__item--active-trail',
-      ]
-      %}
+      ] %}
       <li{{ item.attributes.addClass(classes) }}>
         {{ link(item.title, item.url) }}
         {% if item.below %}

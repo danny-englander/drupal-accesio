@@ -1,0 +1,39 @@
+/*
+* Admin tabs
+ */
+@import "../global-includes";
+
+ul.tabs {
+  display: flex;
+  @include ul-reset();
+  margin-top: 30px;
+
+  > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:before {
+      display: none;
+    }
+
+    a {
+      background-color: $dark-teal;
+      padding: 8px 20px;
+      color: $white;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      margin: 0;
+      position: relative;
+
+      &:hover {
+        background-color: $dark-red;
+      }
+
+      &.is-active {
+        background-color: $dark-red;
+      }
+    }
+  }
+}

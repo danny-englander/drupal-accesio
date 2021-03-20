@@ -7,13 +7,11 @@
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
- * Used to add a generic field twig template without any
- * wrapping divs to have more
- * control over styles.
- *
- * @see: https://www.previousnext.com.au/blog/bare-templates-removing-unnecessary-markup-twig-files
  */
 function accesio_theme_suggestions_field_alter(array &$suggestions, array $vars) {
+  // Used to add a generic field twig template without
+  // any wrapping divs to have more control over styles.
+  // * @see: https://www.previousnext.com.au/blog/bare-templates-removing-unnecessary-markup-twig-files
   // Get the element names passed on when a page is rendered.
   $field_name = $vars['element']['#field_name'];
   // Define the field element.
@@ -47,4 +45,3 @@ function accesio_theme_suggestions_field_alter(array &$suggestions, array $vars)
 function accesio_preprocess_field(&$vars, $hook) {
   // Get the element names passed on when a page is rendered.
 }
-

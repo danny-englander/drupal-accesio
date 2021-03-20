@@ -38,8 +38,12 @@
  * @ingroup themeable
  */
 #}
+
+{{ attach_library('accesio/c_text') }}
+
 {%
   set classes = [
+  'c-text',
   'component__item',
   'component__item--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,

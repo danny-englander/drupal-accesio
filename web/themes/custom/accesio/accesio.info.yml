@@ -1,9 +1,8 @@
 name: Accesio
 type: theme
 description: 'A custom Drupal 9 theme'
-version: 9.x-1.0
 core_version_requirement: ^8 || ^9
-base theme: stable
+base theme: stark
 
 libraries:
   - accesio/accesio
@@ -31,30 +30,8 @@ ckeditor_stylesheets:
 ## https://www.drupal.org/project/drupal/issues/2642122#comment-10705712 for
 ## overriding libraries that have already been overridden (which is the case for Stable.).
 libraries-override:
-  system/base:
-    css:
-      component:
-        /core/themes/stable/css/system/components/align.module.css: false
-        /core/themes/stable/css/system/components/fieldgroup.module.css: false
-        /core/themes/stable/css/system/components/container-inline.module.css: false
-        /core/themes/stable/css/system/components/clearfix.module.css: false
-        /core/themes/stable/css/system/components/details.module.css: false
-        /core/themes/stable/css/system/components/hidden.module.css: false
-        /core/themes/stable/css/system/components/item-list.module.css: false
-        /core/themes/stable/css/system/components/js.module.css: false
-        /core/themes/stable/css/system/components/nowrap.module.css: false
-        /core/themes/stable/css/system/components/progress.module.css: false
-        /core/themes/stable/css/system/components/resize.module.css: false
-        /core/themes/stable/css/system/components/sticky-header.module.css: false
-        /core/themes/stable/css/system/components/system-status-counter.css: false
-        /core/themes/stable/css/system/components/system-status-report-counters.css: false
-        /core/themes/stable/css/system/components/system-status-report-general-info.css: false
-        /core/themes/stable/css/system/components/tree-child.module.css: false
-        /core/themes/stable/css/system/components/reset-appearance.module.css: false
   # Unset rrssb, we will theme it to our liking.
   rrssb/main:
     css:
       component:
         /libraries/rrssb-plus/css/rrssb.css: false
-
-

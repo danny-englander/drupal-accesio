@@ -1,0 +1,27 @@
+uuid: 4e6af825-3f6e-4e9e-b468-fdf8847cda92
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.blog_type
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - stark
+id: stark_poweredbydrupal
+theme: stark
+region: sidebar_first
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: blog_type

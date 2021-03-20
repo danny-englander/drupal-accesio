@@ -44,24 +44,6 @@ $primary-color-dark: darken($primary-color, 10%);
 $secondary-color: $green;
 $secondary-color-dark: darken($secondary-color, 30%);
 
-// Color map.
-$palette: (
-  black: $black,
-  charcoal: $charcoal,
-  dark-gray: $dark-gray,
-  medium-gray: $medium-gray,
-  light-gray: $light-gray,
-  pale-gray: $pale-gray,
-  white: $white,
-  dark-red: $dark-red,
-  bright-red: $bright-red,
-  cyan: $cyan,
-  teal: $dark-teal,
-  purple: $purple,
-  gold: $goldenrod,
-  eggplant: $eggplant,
-);
-
 // For usage with the container mixin.
 $small_desktop: 1024px;
 $desktop: 1280px;
@@ -71,7 +53,7 @@ $desktop: 1280px;
 // Note, $mobile, $small_desktop, and $desktop mirror the names that are in the designs.
 // Map for sass MQ.
 $mq-breakpoints: (
-  small: 0px,
+  small: 0,
   mobile: 375px,
   small_plus: 520px,
   medium: 768px,

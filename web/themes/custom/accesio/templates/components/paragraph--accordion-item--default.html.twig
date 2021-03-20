@@ -38,26 +38,29 @@
  * @ingroup themeable
  */
 #}
-
 {% set classes = [
-  'js-accordion__panel',
-  'component__item',
-  'component__item--type--' ~ paragraph.bundle|clean_class,
-  view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
-  not paragraph.isPublished() ? 'component__item--unpublished'
+  'c-accordion__item',
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
 ] %}
 
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      <h3 class="accordion__item-title js-accordion__header">{{ content.field_title | field_value }}</h3>
+      {% if content.field_title | render %}
+        <h2 class="js-accordion__header c-accordion__title">{{ content.field_title | field_value }}</h2>
+      {% endif %}
 
-      <div class="js-accordion__content accordion__item-content">
-        <div class="js-accordion__content-inner">
-          {{ content.field_text_format | field_value }}
+      {% if content.field_text_format | render %}
+        <div class="c-accordion__item-components js-accordion__panel">
+          <div class="c-accordion__item-content">
+            {{ content.field_text_format | field_value }}
+          </div>
         </div>
-      </div>
+      {% endif %}
 
     {% endblock %}
   </div>

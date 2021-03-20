@@ -21,9 +21,9 @@
   view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
 ] %}
 
-{% for item in content.field_category | children(true) %}
-  {% set item_clean = item["#plain_text"] | clean_class %}
-  {% set classes = classes|merge([item_clean]) %}
+{% for term in content.field_category | children(true) %}
+  {% set term_classes = 'term-' ~ term["#plain_text"] | clean_class %}
+  {% set classes = classes|merge([term_classes]) %}
 {% endfor %}
 
 <section{{ attributes.addClass(classes) }}>

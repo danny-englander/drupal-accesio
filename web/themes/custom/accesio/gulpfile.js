@@ -15,7 +15,9 @@ const gulp = require('gulp'),
   composer = require('gulp-uglify/composer'),
   uglify = composer(uglifyes, console),
   babel = require('gulp-babel'),
-  svgSprite = require('gulp-svg-sprite');
+  svgSprite = require('gulp-svg-sprite'),
+  sasslint = require('gulp-sass-lint'),
+  csscomb = require('gulp-csscomb');
 
 // const uglifyes = require('uglify-es');
 // const composer = require('gulp-uglify/composer');
@@ -104,7 +106,12 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(['!./src/scss/vendor/**/*.scss', './src/scss/accesio.scss'])
+  return gulp.src(['!./src/scss/vendor/**/*.scss', '!./src/scss/layout/bs-grid/**', './src/scss/**/*.scss'])
+    .pipe(sasslint({
+      configFile: './sass-lint.yml',
+    }))
+    .pipe(sasslint.format())
+    .pipe(sasslint.failOnError())
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({
@@ -115,16 +122,13 @@ gulp.task('sass', function () {
       cascade: false
     }))
     .pipe(sourcemaps.write('./'))
+    .pipe(csscomb('./csscomb.json'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.reload({
       stream: true,
       match: '**/*.css'
     }))
     .pipe(cleanCSS())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./dist/css/min'));
 });
 
 gulp.task('vendors', function () {

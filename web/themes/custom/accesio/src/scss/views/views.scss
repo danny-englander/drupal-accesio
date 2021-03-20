@@ -1,0 +1,42 @@
+/*
+ * Views.
+ */
+@import "../global-includes";
+
+/* ---- isotope ---- */
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+@media (min-width: 940px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.33%;
+  }
+}
+
+.grid-item {
+  float: left;
+  padding: 0;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.button-group {
+  margin-bottom: 30px;
+}

@@ -19,16 +19,12 @@ function accesio_preprocess_taxonomy_term(array &$vars) {
   // Font Awesome icons vocab bundle.
   if (!empty($bundle) && $bundle === 'fa_icons') {
     // Test for the key.
-    if (!empty($vars["elements"]["#taxonomy_term"]->get('field_fa_key')
-      ->getString())) {
+    if (!empty($vars["elements"]["#taxonomy_term"]->get('field_fa_key')->getString())) {
       // Get the FA key. e.g. "cart".
-      $vars["fa_key"] = $vars["elements"]["#taxonomy_term"]->get('field_fa_key')
-        ->getString();
-      $vars["fa_unicode"] = $vars["elements"]["#taxonomy_term"]->get('field_fa_unicode')
-        ->getString();
+      $vars["fa_key"] = $vars["elements"]["#taxonomy_term"]->get('field_fa_key')->getString();
+      $vars["fa_unicode"] = $vars["elements"]["#taxonomy_term"]->get('field_fa_unicode')->getString();
       // Get the FA style, e.g. solid or brands.
-      $fa_key = $vars["elements"]["#taxonomy_term"]->get('field_fa_style')
-        ->getString();
+      $fa_key = $vars["elements"]["#taxonomy_term"]->get('field_fa_style')->getString();
       // Define variables for each style. e.g. "fas" or "fab".
       if ($fa_key === 'solid') {
         // fas.

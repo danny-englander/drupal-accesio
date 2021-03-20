@@ -1,5 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
+// sass-lint:disable property-units
 /* Document
    ========================================================================== */
 
@@ -80,7 +80,7 @@ a {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
+  border-bottom: 0; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }

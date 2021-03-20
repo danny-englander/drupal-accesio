@@ -6,7 +6,6 @@
  */
 
 use Drupal\node\NodeInterface;
-use Drupal\image\Entity\ImageStyle;
 
 /**
  * Implements hook_preprocess_HOOK() for page.html.twig.
@@ -18,6 +17,8 @@ function accesio_preprocess_page(array &$vars) {
   $vars['theme_path'] = base_path() . $vars['directory'];
   // Set a var for the logo path.
   $vars['site_name'] = $site_config->get('name');
+  // Logged in user.
+  $vars['user_logged_in'] = \Drupal::currentUser()->isAuthenticated();
   // Define the route.
   $route = \Drupal::routeMatch()->getRouteName();
   // Define the node.

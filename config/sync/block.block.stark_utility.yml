@@ -1,0 +1,29 @@
+uuid: 5e069958-e6ed-44d7-8062-fdb17c94d630
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility
+  module:
+    - block_class
+    - system
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: utility-menu
+id: stark_utility
+theme: stark
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:utility'
+settings:
+  id: 'system_menu_block:utility'
+  label: Utility
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

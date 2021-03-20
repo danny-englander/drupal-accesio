@@ -1,0 +1,55 @@
+/*
+Icon theming.
+ */
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+.view-md-icons .view-header {
+  margin-bottom: 20px;
+}
+
+.icon-item {
+  padding: 10px 20px 20px 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+}
+
+.icon-item h2 {
+  border-bottom: 1px solid #404040;
+}
+
+.icon-item__usage {
+  margin-top: auto;
+}
+
+.icon-item__usage input {
+  font-family: monospace;
+  margin-right: 3px;
+  padding: 2px 5px;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  width: 100%;
+}
+
+.icon-item__usage label {
+  display: block;
+}
+
+.icon-item__usage .icon-item__form-item--css {
+  margin-bottom: 0;
+}
+
+.icon-item .usage .css {
+  width: 80px;
+}
+
+.icon-item .svg-inline--fa {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=view-md-icons.css.map */

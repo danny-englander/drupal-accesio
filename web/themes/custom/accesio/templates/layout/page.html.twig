@@ -44,6 +44,12 @@
  */
 #}
 
+{% if user_logged_in == 'true' %}
+  {{ attach_library('accesio/admin') }}
+{% endif %}
+
+{{ attach_library('accesio/layout') }}
+
 {% if page.sidebar %}
   {% set main_grid_classes = 'col-md-9 col-lg-8' %}
 {% else %}
