@@ -16,9 +16,6 @@
     .page-wrap & {
       margin: 0 20px 0 0;
     }
-
-    @include root-modifier('.js-tablist--outline') {
-    }
   }
 
   &__link {
@@ -45,7 +42,7 @@
       z-index: 1;
       border-width: 1px !important;
       border: 2px solid $primary-color;
-      border-bottom: none;
+      border-bottom: 0;
       margin-bottom: 0;
       background-color: $off-white;
     }
@@ -85,8 +82,6 @@
 
   &__inner {
     padding-top: 30px;
-    @include root-modifier('.js-tabcontent--outline') {
-    }
   }
 
   &[aria-hidden="true"] {

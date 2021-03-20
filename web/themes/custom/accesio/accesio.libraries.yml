@@ -156,3 +156,8 @@ a11y_tabs:
       dist/css/components/tabs.css: { }
   js:
     dist/js/van11y-accessible-tab-panel-aria.js: { defer: true, async: true }
+
+admin:
+  css:
+    theme:
+      dist/css/utility/admin-tabs.css: { }

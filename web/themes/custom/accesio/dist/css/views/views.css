@@ -6,66 +6,6 @@ A11Y Color grids.
 https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
 
 */
-.filter-wrap {
-  margin-bottom: 40px;
-}
-
-.filter-wrap .filter-toggle {
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-  z-index: 99;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-@media (min-width: 48em) {
-  .filter-wrap .filter-toggle {
-    width: 600px;
-  }
-}
-
-.filter-wrap .filter-toggle h2 {
-  position: relative;
-}
-
-.filter-wrap .filter-toggle h2:before {
-  transition: transform 0.5s ease-in-out;
-}
-
-.filter-wrap .filter-toggle:before,
-.filter-wrap .filter-toggle:after {
-  content: "";
-  border-top: 1px solid #212121;
-  margin: -14px 20px 0 0;
-  -ms-flex: 1 0 20px;
-  flex: 1 0 20px;
-}
-
-.filter-wrap .filter-toggle:after {
-  margin: -14px 0 0 20px;
-}
-
-.filter-wrap .view-filters {
-  transition-property: opacity, visibility;
-  transition-duration: 0.6s;
-  transition-delay: 0.1s;
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-}
-
-.filter-wrap .view-filters.filters-expanded {
-  visibility: visible;
-  opacity: 1;
-  height: inherit;
-}
-
 /* ---- isotope ---- */
 /* clear fix */
 .grid:after {

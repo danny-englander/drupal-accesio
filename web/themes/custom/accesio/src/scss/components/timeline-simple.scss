@@ -12,13 +12,12 @@ Timeline (simple style).
   overflow: hidden;
 
   &:before {
-   content: '';
+    content: '';
     position: absolute;
     display: inline-block;
     border-left: 3px dashed $medium-gray;
     width: 40px;
     left: 50%;
-
     height: 94%;
     top: 140px;
   }
@@ -39,9 +38,6 @@ Timeline (simple style).
 
   &__content-wrap {
     position: relative;
-
-    &:after {
-    }
   }
 
   &__item {
@@ -51,19 +47,8 @@ Timeline (simple style).
       width: 46%;
     }
 
-    @include mq($until: medium-large) {
-      //border-bottom: 1px dashed gray;
-      //padding-bottom: 20px;
-      //margin-bottom: 20px;
-    }
-
     &:nth-child(even) {
       margin-top: 140px;
-
-      .timeline-simple__date {
-        &:before {
-        }
-      }
 
       h2 {
         text-align: left;
@@ -126,6 +111,3 @@ Timeline (simple style).
     }
   }
 }
-
-
-

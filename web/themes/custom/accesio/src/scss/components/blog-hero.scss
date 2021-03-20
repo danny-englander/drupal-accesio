@@ -16,7 +16,7 @@
     @include root-modifier('.blog-hero--image-last') {
 
       @include mq($from: small_desktop) {
-          flex-direction: row-reverse;
+        flex-direction: row-reverse;
       }
     }
   }

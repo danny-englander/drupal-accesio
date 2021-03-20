@@ -133,9 +133,6 @@ h6 {
   }
 }
 
-#{headings(1,6)} {
-}
-
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -150,7 +147,7 @@ h6 {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility
+  text-rendering: optimizeLegibility;
 }
 
 .material-icons-outlined {
@@ -167,6 +164,5 @@ h6 {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility
+  text-rendering: optimizeLegibility;
 }
-

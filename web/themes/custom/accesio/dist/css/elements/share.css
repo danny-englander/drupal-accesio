@@ -69,10 +69,6 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   background-color: #482e6e;
 }
 
-.share__icon {
-  background: none !important;
-}
-
 .share__text {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -82,9 +78,29 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   word-wrap: normal;
 }
 
+.share__icon {
+  background: none !important;
+}
+
 .share__icon i {
   font-size: 1.75rem;
   color: #404040;
+}
+
+.share__icon--email i {
+  font-size: 1rem;
+}
+
+.share__icon--twitter i {
+  color: #1da1f2;
+}
+
+.share__icon--pinterest i {
+  color: #bd081c;
+}
+
+.share__icon--linkedin i {
+  color: #0a66c2;
 }
 
 .share__link {

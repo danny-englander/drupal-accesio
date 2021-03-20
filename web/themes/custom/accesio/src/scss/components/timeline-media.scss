@@ -81,9 +81,6 @@ Timeline (media style).
     display: flex;
     flex-direction: column;
 
-    @include mq($until: small_desktop) {
-    }
-
     @include mq($from: small_desktop) {
       width: 50%;
     }
@@ -105,7 +102,7 @@ Timeline (media style).
   &__date {
 
     h2 {
-      color: white;
+      color: $white;
       @include rem(font-size, 80px);
       background-color: $primary-color;
       padding: 30px 20px 0 20px;

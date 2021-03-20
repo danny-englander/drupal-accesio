@@ -8,23 +8,12 @@ Icon theming.
   .view-header {
     margin-bottom: 20px;
   }
-
-  form {
-
-    input[type='text'] {
-
-      @include mq($from: medium) {
-        //margin-right: 10px;
-        //width: 320px;
-      }
-    }
-  }
 }
 
 .icon-item {
   padding: 10px 20px 20px 20px;
   margin-bottom: 30px;
-  background-color: white;
+  background-color: $white;
   box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
 
   h2 {

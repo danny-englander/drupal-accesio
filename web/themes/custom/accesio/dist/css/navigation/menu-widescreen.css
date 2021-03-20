@@ -43,10 +43,6 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   }
 }
 
-.main-menu__item {
-  /* A top level navigation item in the mega menu */
-}
-
 @media (min-width: 64em) {
   .main-menu__item {
     list-style: none;
@@ -168,6 +164,15 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   visibility: visible;
   opacity: 1;
   height: inherit;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .main-menu__sub-nav {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms, 0.01ms !important;
+  }
 }
 
 @media (min-width: 64em) {

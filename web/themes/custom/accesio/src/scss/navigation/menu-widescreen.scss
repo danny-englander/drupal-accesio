@@ -37,7 +37,7 @@
   }
 
   &__item {
-    /* A top level navigation item in the mega menu */
+    // A top level navigation item in the mega menu */
     @include mq($from: small_desktop) {
       list-style: none;
       padding: 0;
@@ -45,7 +45,6 @@
     }
 
     &--level-0 {
-
       // All top level menu items
       > a {
         @include rem(font-size, 14px);
@@ -96,15 +95,7 @@
       > a {
         position: relative;
         padding: 10px 14px 10px 24px;
-
         @include remix-icon("\EA4A", $margin: 0 0 0 6px, $font-size: 28px, $transdur: .2s, $hover_rotate: 180);
-
-        &.panel-is-open {
-
-        }
-
-        #{$a-tags-hover} {
-        }
       }
     }
   }
@@ -143,7 +134,7 @@
 
     // No animation for IE11.
     @include ie11 {
-  //    @include no-animation();
+      @include no-animation();
     }
 
     .container {

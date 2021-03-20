@@ -71,7 +71,7 @@ input[type="text"]:focus {
 
 button,
 input[type=button] {
-  border: none;
+  border: 0;
 }
 
 .form-item {

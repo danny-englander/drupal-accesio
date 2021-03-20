@@ -96,8 +96,8 @@
   &__text {
 
     // Accesible drop cap.
-   > p:first-of-type {
-     margin-top: 12px;
+    > p:first-of-type {
+      margin-top: 12px;
 
       &:first-letter {
         font-family: $font-serif;
@@ -132,7 +132,13 @@
     }
   }
 
-  p, ol, h1, h2, h3, h4, ul:not(.blog-post__tags-items) {
+  p,
+  ol,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul:not(.blog-post__tags-items) {
 
     @include mq($from: small_desktop) {
       @include blog-width();

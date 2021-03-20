@@ -45,7 +45,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 .utility-menu__item a:focus,
 .utility-menu__item a:hover {
   background-color: #69cec3;
-  border: none;
+  border: 0;
   color: #212121;
 }
 

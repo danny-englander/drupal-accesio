@@ -115,9 +115,9 @@ input[type="submit"].btn-secondary-inverse:active,
 input[type="submit"].btn-secondary-inverse:focus,
 input[type="submit"].btn-secondary-inverse:hover {
   text-decoration: none;
-  border: 2px solid gray;
+  border: 2px solid #b7b7b7;
   color: #212121;
-  background-color: gray;
+  background-color: #b7b7b7;
 }
 
 .btn.btn-hollow,
@@ -194,11 +194,11 @@ a.btn.btn-pager,
 input[type="file"].btn-pager,
 input[type="submit"].btn-pager {
   border-radius: 0;
-  background-color: gray;
+  background-color: #b7b7b7;
   padding: 10px 12px;
   color: #212121;
   letter-spacing: 2px;
-  border: none;
+  border: 0;
   font-size: 0.8125rem;
 }
 
@@ -211,7 +211,7 @@ input[type="submit"].btn-pager {
 }
 
 .field--type-text-long a:not(.btn) {
-  color: blue;
+  color: #0202fa;
   text-decoration: none;
   transition: all 0.6s ease 0s;
   font-weight: 500;
@@ -279,7 +279,7 @@ a {
 .has-links a:active,
 .has-links a:focus,
 .has-links a:hover {
-  border: none;
+  border: 0;
   background-color: #69cec3;
   color: #212121;
 }

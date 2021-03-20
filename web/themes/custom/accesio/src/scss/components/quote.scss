@@ -52,7 +52,7 @@
   }
 
   &__attribution {
-   // @extend .h3;
+    @include rem(font-size, 20px);
 
     @include mq($from: small_desktop) {
       padding-left: 230px;

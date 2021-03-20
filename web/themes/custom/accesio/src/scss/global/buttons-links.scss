@@ -65,9 +65,9 @@ input[type="submit"] {
   &.btn-secondary-inverse {
     #{$a-tags-hover} {
       text-decoration: none;
-      border: 2px solid gray;
+      border: 2px solid $gray;
       color: $black;
-      background-color: gray;
+      background-color: $gray;
     }
   }
 
@@ -101,11 +101,11 @@ input[type="submit"] {
 
   &.btn-pager {
     border-radius: 0;
-    background-color: gray;
+    background-color: $gray;
     padding: 10px 12px;
     color: $black;
     letter-spacing: 2px;
-    border: none;
+    border: 0;
     @include rem(font-size, 13px);
   }
 }
@@ -126,7 +126,7 @@ input[type="submit"] {
 // ******** Links ************
 .field--type-text-long {
   a:not(.btn) {
-    color: blue;
+    color: #0202fa;
     text-decoration: none;
     @include link-effect();
     font-weight: 500;
@@ -156,7 +156,7 @@ input[type="submit"] {
   display: flex;
   align-items: center;
   transition: all .6s;
- // @include icon-after(icon-arrow-blue, 8px, 8px, $position: relative, $pos-right: 3px, $pos-top: 2px);
+  // @include icon-after(icon-arrow-blue, 8px, 8px, $position: relative, $pos-right: 3px, $pos-top: 2px);
 
   &:after {
     display: inline-block;
@@ -167,7 +167,7 @@ input[type="submit"] {
   &:active,
   &:focus,
   &:hover {
-   // @include icon-after(icon-arrow-blue, 8px, 8px, $position: relative, $pos-right: 3px, $pos-top: 2px);
+    // @include icon-after(icon-arrow-blue, 8px, 8px, $position: relative, $pos-right: 3px, $pos-top: 2px);
 
     &:after {
       margin-left: 14px;
@@ -195,7 +195,7 @@ a {
     padding: 2px 4px;
 
     #{$a-tags-hover} {
-      border: none;
+      border: 0;
       background-color: $secondary-color;
       color: $black;
     }

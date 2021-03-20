@@ -129,10 +129,6 @@ gulp.task('sass', function () {
       match: '**/*.css'
     }))
     .pipe(cleanCSS())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./dist/css/min'));
 });
 
 gulp.task('vendors', function () {

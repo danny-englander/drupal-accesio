@@ -53,15 +53,13 @@ override inline styles from the module js.
     }
   }
 
-  &__icon {
-    background: none !important;
-  }
-
   &__text {
     @include visually-hidden();
   }
 
   &__icon {
+    background: none !important;
+
     i {
       @include rem(font-size, 28px);
       color: $charcoal;
@@ -69,13 +67,13 @@ override inline styles from the module js.
 
     &--email {
       i {
-      //  @include rem(font-size, 16px);
+        @include rem(font-size, 16px);
       }
     }
 
     &--twitter {
       i {
-       // color: #1da1f2;
+        color: #1da1f2;
       }
 
     }
@@ -83,21 +81,19 @@ override inline styles from the module js.
     &--pinterest {
 
       i {
-      //  color: #bd081c;
+        color: #bd081c;
       }
     }
 
     &--linkedin {
 
       i {
-       // color: #0a66c2;
+        color: #0a66c2;
       }
     }
-
   }
 
   &__link {
     background-color: transparent !important;
   }
 }
-

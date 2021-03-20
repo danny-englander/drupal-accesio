@@ -39,7 +39,7 @@ input[type='text'] {
 
 button,
 input[type=button] {
-  border: none;
+  border: 0;
 }
 
 .form-item {
@@ -118,11 +118,6 @@ input[type=search]::-ms-reveal {
   input[type="radio"] {
     @include visually-hidden();
 
-    &:checked {
-      + label {
-      }
-    }
-
     &:checked + label:before {
       border-color: $primary-color;
       animation: ripple 0.5s linear forwards;
@@ -144,7 +139,8 @@ input[type=search]::-ms-reveal {
     padding-top: 4px;
     @include rem(font-size, 17px);
 
-    &:before, &:after {
+    &:before,
+    &:after {
       position: absolute;
       content: '';
       border-radius: 50%;
@@ -293,9 +289,6 @@ legend {
   padding-bottom: 12px;
 }
 
-form .description {
-}
-
 ::-webkit-input-placeholder {
   color: $black;
 }
@@ -313,7 +306,7 @@ form .description {
  */
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0);
   }
 
   50% {

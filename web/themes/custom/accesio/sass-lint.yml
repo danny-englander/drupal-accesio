@@ -87,6 +87,8 @@ rules:
   -
     'extra-properties':
       - '-ms-appearance'
+      - '-khtml-user-select'
+      - '-ms-word-break'
   no-qualifying-elements:
     - 0
     - allow-element-with-attribute: false

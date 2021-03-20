@@ -63,6 +63,10 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   }
 }
 
+.quote__attribution {
+  font-size: 1.25rem;
+}
+
 @media (min-width: 64em) {
   .quote__attribution {
     padding-left: 230px;
