@@ -123,7 +123,8 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   content: "";
   font-family: "Material Icons";
   font-size: 2.5rem;
-  left: #fff;
+  display: inline-block;
+  color: #fff;
 }
 
 @media (max-width: 63.99em) {
@@ -142,7 +143,8 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   content: "";
   font-family: "Material Icons";
   font-size: 2.5rem;
-  left: #212121;
+  display: inline-block;
+  color: #212121;
 }
 
 /*# sourceMappingURL=blog-hero.css.map */

@@ -14,7 +14,7 @@
  */
 function accesio_library_info_alter(&$libraries, $extension) {
   if ($extension == 'system' && isset($libraries['base'])) {
-    unset($libraries['base']['css']['component']['css/components/ajax-progress.module.css']);
+    // unset($libraries['base']['css']['component']['css/components/ajax-progress.module.css']);
     unset($libraries['base']['css']['component']['css/components/align.module.css']);
     unset($libraries['base']['css']['component']['css/components/autocomplete-loading.module.css']);
     unset($libraries['base']['css']['component']['css/components/fieldgroup.module.css']);

@@ -106,7 +106,7 @@ quote:
 view_md_icons:
   css:
     theme:
-      dist/css/views/md-icons.css: { }
+      dist/css/views/view-md-icons.css: { }
 
 views:
   css:
@@ -128,14 +128,14 @@ form:
 page_title:
   css:
     theme:
-      dist/css/elements/form.css: { }
+      dist/css/elements/page-title.css: { }
 
 accordion:
   css:
     theme:
       dist/css/components/accordion.css: { }
   js:
-    dist/js/jquery.accordion.js: { defer: true, async: true }
+    dist/js/van11y-accessible-accordion-aria.js: { defer: true, async: true }
 
 accesio_youtube_bg:
   js:

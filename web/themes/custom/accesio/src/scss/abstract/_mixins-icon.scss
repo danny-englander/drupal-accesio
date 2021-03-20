@@ -69,14 +69,20 @@
   $content,
   $font-size,
   $color: null,
+  $rotate: null,
 ) {
   &:before {
     content: "#{$content}";
     font-family: 'Material Icons';
     @include rem(font-size, $font-size);
+    display: inline-block;
 
     @if $color {
-      left: $color;
+      color: $color;
+    }
+
+    @if $rotate {
+      transform: rotate(#{$rotate}deg);
     }
   }
 }

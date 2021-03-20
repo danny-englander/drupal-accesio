@@ -7,56 +7,58 @@ A11Y Color grids.
 https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
 
 */
-.js-accordion {
-  max-width: 1200px;
+.c-accordion {
+  max-width: 1270px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 50px;
-  padding: 10px 0 0 0;
-  /* title in content hidden by default */
-  /* This is the hidden state */
 }
 
-.columns .js-accordion {
-  max-width: inherit;
-  padding-top: 0;
+.page-is-fullwidth .c-accordion {
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.c-accordion__main-title {
+  padding-bottom: 10px;
+}
+
+.c-accordion__main-title > h2 {
+  font-weight: 500;
+  letter-spacing: 0.38px;
+  color: #404040;
+}
+
+.c-accordion__items {
+  border-top: 1px solid #b7b7b7;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 @media (min-width: 64em) {
-  .js-accordion {
-    padding-top: 30px;
-    margin-bottom: 70px;
-  }
-  .columns .js-accordion {
-    padding-top: 0;
+  .c-accordion__items {
+    margin-bottom: 60px;
   }
 }
 
-.js-accordion__header {
-  font-size: 1.125rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  text-align: left;
-  width: 100%;
-  font-weight: bold;
-  padding: 18px 0 18px 2px;
-  cursor: pointer;
-  margin: 0 0 0 0;
+.c-accordion .accordion__header {
+  font-size: 1.375rem;
+  font-family: "IBM Plex Sans", verdana, sans-serif;
   background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #482e6e;
+  border: 0;
+  line-height: 1.6;
+  cursor: pointer;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  padding: 24px 0;
 }
 
-.js-accordion__header:after {
+.c-accordion .accordion__header:after {
   content: "";
   font-family: remixicon;
   display: inline-block;
@@ -67,56 +69,64 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   transition-duration: 0.5s;
 }
 
-.js-accordion__header:hover {
-  color: #482e6e;
-}
-
-.js-accordion__header[aria-expanded="true"] {
+.c-accordion .accordion__header[aria-expanded="true"] {
   margin-bottom: 0;
-  border-bottom: none;
-  border-bottom: none;
-  color: #482e6e;
+  border-bottom: 0;
 }
 
-.js-accordion__header[aria-expanded="true"]:after {
+.c-accordion .accordion__header[aria-expanded="true"]:after {
   -ms-transform: rotate(405deg);
   transform: rotate(405deg);
 }
 
-.js-accordion__header:focus {
+.c-accordion .accordion__header:active,
+.c-accordion .accordion__header:focus,
+.c-accordion .accordion__header:hover {
+  color: #482e6e;
+}
+
+.c-accordion .accordion__header:focus {
   outline: none;
   color: #482e6e;
 }
 
-.js-accordion__content {
-  padding: 4px 40px;
-  border-bottom: 2px solid #482e6e;
+.user-is-tabbing .c-accordion .accordion__header:focus {
+  border: 2px solid #482e6e;
+  outline: 2px solid #482e6e;
+  padding: 10px;
 }
 
-.js-accordion .animated-accordion__title {
-  position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  word-wrap: normal;
+.c-accordion__item {
+  border-bottom: 1px solid #b7b7b7;
 }
 
-.js-accordion .animated-accordion__panel {
+.c-accordion__title {
+  font-size: 0.875rem;
+  line-height: 1.86;
+  color: #404040;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.c-accordion__item-components {
   display: block;
   overflow: hidden;
   opacity: 1;
   transition: visibility 0s ease, max-height 0.3s ease, opacity 0.3s ease;
-  max-height: 100em;
   visibility: visible;
   transition-delay: 0s;
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0;
-  border-top: none;
+  border-top: 0;
 }
 
-.js-accordion [aria-hidden="true"].animated-accordion__panel {
-  display: block;
+.c-accordion__item-components[aria-hidden="true"] {
+  display: none;
   max-height: 0;
   opacity: 0;
   visibility: hidden;
@@ -125,11 +135,13 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   padding: 0;
 }
 
-@media print {
-  .js-accordion [aria-hidden="true"].animated-accordion__panel {
-    visibility: visible;
-    opacity: 1;
-    max-height: 100em;
+.c-accordion .text-block {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48em) {
+  .c-accordion .text-block {
+    margin-bottom: 0;
   }
 }
 

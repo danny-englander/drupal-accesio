@@ -18,7 +18,7 @@ id: paragraph.accordion_item.field_text_format
 field_name: field_text_format
 entity_type: paragraph
 bundle: accordion_item
-label: Text
+label: 'Accordion item text'
 description: ''
 required: false
 translatable: true
