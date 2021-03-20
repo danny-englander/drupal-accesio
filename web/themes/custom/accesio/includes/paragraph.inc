@@ -7,10 +7,6 @@
 
 use Drupal\node\NodeInterface;
 use Drupal\image\Entity\ImageStyle;
-use Drupal\Component\Utility\Html;
-use Drupal\taxonomy\Entity\Term;
-use Drupal\Core\Link;
-use Drupal\Core\Url;
 
 /**
  * Prepares variables for paragraph templates.

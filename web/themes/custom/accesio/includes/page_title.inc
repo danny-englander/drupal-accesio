@@ -8,11 +8,9 @@
 use Drupal\node\NodeInterface;
 
 /**
- * Implements hook_preprocess_HOOK() for page-title.html.twig.
- *
- * @param array $vars
+ * Implements hook_preprocess_HOOK() for page title templates.
  */
-function accesio_preprocess_page_title(array &$vars, $pid) {
+function accesio_preprocess_page_title(array &$vars) {
   // Define the node.
   $node = \Drupal::routeMatch()->getParameter('node');
   // If it's a node.
