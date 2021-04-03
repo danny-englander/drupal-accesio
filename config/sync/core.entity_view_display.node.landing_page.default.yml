@@ -1,0 +1,15 @@
+uuid: 9d17956c-90b9-428b-916a-8bc571a74ddb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content: {  }
+hidden:
+  links: true

@@ -41,6 +41,11 @@ module:
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
+  layout_builder: 0
+  layout_builder_component_attributes: 0
+  layout_builder_modal: 0
+  layout_builder_styles: 0
+  layout_discovery: 0
   lazy: 0
   link: 0
   link_attributes: 0
