@@ -161,3 +161,18 @@ admin:
   css:
     theme:
       dist/css/utility/admin-tabs.css: { }
+
+messages:
+  css:
+    theme:
+      dist/css/utility/messages.css: { }
+
+layout_builder_ui:
+  css:
+    theme:
+      dist/css/utility/layout-builder-ui.css: { }
+
+layout_bricks:
+  css:
+    theme:
+      dist/css/layout/two-column-bricks.css: { }

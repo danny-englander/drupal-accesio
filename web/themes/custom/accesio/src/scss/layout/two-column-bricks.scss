@@ -1,0 +1,16 @@
+/**
+ * Layout Builder.
+ */
+@import "../global-includes";
+
+.layout {
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      width: 50%;
+    }
+  }
+}

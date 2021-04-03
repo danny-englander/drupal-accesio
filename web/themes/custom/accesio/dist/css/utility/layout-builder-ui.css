@@ -1,0 +1,41 @@
+/**
+ * Layout Builder UI enhancements.
+ */
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+[aria-label="Layout Builder tools"] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+[aria-label="Layout Builder tools"] > input,
+[aria-label="Layout Builder tools"] > div {
+  margin-right: 10px;
+}
+
+.layout-builder {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.is-layout-builder-admin .l-content.container-fluid {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a.layout-builder__link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: all 0.6s ease 0s;
+  color: #404040;
+}
+
+/*# sourceMappingURL=layout-builder-ui.css.map */

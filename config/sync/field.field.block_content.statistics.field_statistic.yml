@@ -1,0 +1,29 @@
+uuid: 41d43d45-fdd3-41ee-aed3-145acce2c452
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistics
+    - eck.eck_type.stats.stats_item
+    - field.storage.block_content.field_statistic
+id: block_content.statistics.field_statistic
+field_name: field_statistic
+entity_type: block_content
+bundle: statistics
+label: Statistic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:stats'
+  handler_settings:
+    target_bundles:
+      stats_item: stats_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

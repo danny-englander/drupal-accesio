@@ -1,0 +1,20 @@
+uuid: 8614ba46-ef78-4bb8-8b58-8eec2241a2ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - media
+id: stats.field_icon
+field_name: field_icon
+entity_type: stats
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

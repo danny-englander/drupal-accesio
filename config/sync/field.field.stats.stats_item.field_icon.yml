@@ -1,0 +1,29 @@
+uuid: 808b2106-0a69-4dbe-9091-03d601388fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.stats.stats_item
+    - field.storage.stats.field_icon
+    - media.type.svg_icon
+id: stats.stats_item.field_icon
+field_name: field_icon
+entity_type: stats
+bundle: stats_item
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      svg_icon: svg_icon
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

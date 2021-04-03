@@ -1,0 +1,28 @@
+uuid: 3d4780cb-4b35-44d5-8114-f6d75a1b1040
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.stats.stats_item
+    - field.storage.stats.field_description
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    full_html: '0'
+    basic_html: '0'
+    restricted_html: '0'
+id: stats.stats_item.field_description
+field_name: field_description
+entity_type: stats
+bundle: stats_item
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

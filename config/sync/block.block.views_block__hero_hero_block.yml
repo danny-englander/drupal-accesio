@@ -6,6 +6,7 @@ dependencies:
     - views.view.hero
   module:
     - block_visibility_groups
+    - ctools
     - views
   theme:
     - accesio
@@ -28,3 +29,10 @@ visibility:
     id: condition_group
     negate: false
     block_visibility_group: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

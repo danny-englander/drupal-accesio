@@ -1,0 +1,9 @@
+uuid: 501f0f8a-b5f3-4a42-9ec6-843ef74afb23
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.stats
+type: stats_item
+name: 'Stats Item'
+description: ''

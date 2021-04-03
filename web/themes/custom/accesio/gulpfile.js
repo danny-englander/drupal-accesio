@@ -19,10 +19,6 @@ const gulp = require('gulp'),
   sasslint = require('gulp-sass-lint'),
   csscomb = require('gulp-csscomb');
 
-// const uglifyes = require('uglify-es');
-// const composer = require('gulp-uglify/composer');
-// const uglify = composer(uglifyes, console);
-
 // Add browsersync.
 gulp.task('browser-sync', ['sass'], function () {
   browserSync.init({
@@ -106,7 +102,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(['!./src/scss/vendor/**/*.scss', '!./src/scss/layout/bs-grid/**', './src/scss/**/*.scss'])
+  return gulp.src(['!./src/scss/vendor/**/*.scss', '!./src/scss/grid/bs-grid/**', './src/scss/**/*.scss'])
     .pipe(sasslint({
       configFile: './sass-lint.yml',
     }))

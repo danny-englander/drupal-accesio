@@ -1,0 +1,40 @@
+uuid: 54cdeba1-45a9-4d79-a815-a553a63c16a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.stats.stats_item
+    - field.field.stats.stats_item.field_description
+    - field.field.stats.stats_item.field_icon
+  module:
+    - text
+id: stats.stats_item.default
+targetEntityType: stats
+bundle: stats_item
+mode: default
+content:
+  field_description:
+    weight: -3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_icon:
+    type: entity_reference_entity_view
+    weight: -4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,43 @@
+uuid: 820f1a34-4cf3-4bc4-a675-43f4e7580104
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.stats.stats_item
+    - field.field.stats.stats_item.field_description
+    - field.field.stats.stats_item.field_icon
+  module:
+    - media_library
+    - media_library_edit
+    - text
+id: stats.stats_item.default
+targetEntityType: stats
+bundle: stats_item
+mode: default
+content:
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_icon:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

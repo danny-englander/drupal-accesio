@@ -1,0 +1,32 @@
+/**
+ * Layout Builder UI enhancements.
+ */
+@import "../global-includes";
+
+[aria-label="Layout Builder tools"] {
+  display: flex;
+  align-items: baseline;
+
+  > input,
+  > div {
+   margin-right: 10px;
+  }
+}
+
+.layout-builder {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.l-content.container-fluid {
+  .is-layout-builder-admin & {
+    @include container(1340px);
+  }
+}
+
+a.layout-builder__link {
+  @include rem(font-size, 15px);
+  font-weight: 600;
+  @include link-effect();
+  color: $charcoal;
+}

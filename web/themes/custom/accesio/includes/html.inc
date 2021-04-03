@@ -17,6 +17,8 @@ function accesio_preprocess_html(array &$vars) {
   $vars['theme_path'] = base_path() . $vars['directory'];
   // Set a var for the logo path.
   $vars['site_name'] = $site_config->get('name');
+  // Define the route.
+  $route = \Drupal::routeMatch()->getRouteName();
   // Define the node.
   $node = \Drupal::routeMatch()->getParameter('node');
   // Check for a node instance.
@@ -74,5 +76,20 @@ function accesio_preprocess_html(array &$vars) {
     if (in_array($node_type, $blog_types)) {
       $vars['attributes']['class'][] = 'page-blog page-contained-width';
     }
+  }
+
+
+  // Define an array of pages that are Layout Builder block layout pages.
+  $layout_builder_admin_paths = [
+    'layout_builder.overrides.node.view',
+    'layout_builder.defaults.node.view',
+    'layout_builder.overrides.node.revert',
+    'layout_builder.defaults.node.view',
+    'layout_builder.layout_library.node.view',
+  ];
+
+  // If the route matches, add the class to the pages above.
+  if (in_array($route, $layout_builder_admin_paths)) {
+    $vars['attributes']['class'][] = 'is-layout-builder-admin';
   }
 }

@@ -23,6 +23,7 @@ module:
   default_content: 0
   devel_generate: 0
   dynamic_page_cache: 0
+  eck: 0
   editor: 0
   entity_clone: 0
   entity_reference_revisions: 0
@@ -44,6 +45,7 @@ module:
   layout_builder: 0
   layout_builder_component_attributes: 0
   layout_builder_modal: 0
+  layout_builder_restrictions: 0
   layout_builder_styles: 0
   layout_discovery: 0
   lazy: 0

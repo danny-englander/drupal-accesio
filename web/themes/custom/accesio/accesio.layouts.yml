@@ -1,0 +1,27 @@
+layout_accesio_twocol_bricks:
+  label: 'Accesio two column bricks'
+  path: templates/layout
+  template: layout--accesio-twocol-bricks
+  category: 'Columns: 2'
+  default_region: middle
+  icon_map:
+    - [top]
+    - [first_above, second_above]
+    - [middle]
+    - [first_below, second_below]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first_above:
+      label: 'First above'
+    second_above:
+      label: 'Second above'
+    middle:
+      label: Middle
+    first_below:
+      label: 'First below'
+    second_below:
+      label: 'Second below'
+    bottom:
+      label: Bottom

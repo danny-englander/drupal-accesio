@@ -1,0 +1,15 @@
+uuid: 1c665d73-3770-4a8a-9933-d99da2885313
+langcode: en
+status: true
+dependencies:
+  module:
+    - svg_image_field
+id: svg_icon
+label: 'SVG Icon'
+description: ''
+source: svg
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_svg
+field_map: {  }

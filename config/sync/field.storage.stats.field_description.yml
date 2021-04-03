@@ -1,0 +1,19 @@
+uuid: 63399f73-bb92-4742-87e9-a84e6d92a937
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: stats.field_description
+field_name: field_description
+entity_type: stats
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
