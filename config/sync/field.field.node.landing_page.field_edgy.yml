@@ -1,0 +1,23 @@
+uuid: 906bd7fe-3f71-4781-837d-d54a46d0eb9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edgy
+    - node.type.landing_page
+id: node.landing_page.field_edgy
+field_name: field_edgy
+entity_type: node
+bundle: landing_page
+label: 'Edge to Edge Width'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

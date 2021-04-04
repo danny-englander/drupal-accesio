@@ -1,0 +1,28 @@
+uuid: a8aaca00-6f48-4c16-af97-c3ae8269a9ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hero.hero
+    - field.storage.hero.field_text_format
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    full_html: '0'
+    basic_html: '0'
+    restricted_html: '0'
+id: hero.hero.field_text_format
+field_name: field_text_format
+entity_type: hero
+bundle: hero
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

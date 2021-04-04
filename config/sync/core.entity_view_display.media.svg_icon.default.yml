@@ -16,13 +16,13 @@ content:
     label: hidden
     weight: 0
     settings:
-      inline: false
       apply_dimensions: true
-      width: 25
-      height: 25
+      width: 100
+      height: 100
       enable_alt: true
       enable_title: true
       link: ''
+      inline: false
     third_party_settings: {  }
     type: svg_image_field_formatter
     region: content

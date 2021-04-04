@@ -63,14 +63,23 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   border-bottom: 2px dashed #404040;
 }
 
+.stats__item-number--title h2 {
+  font-size: 3.75rem;
+}
+
 .stats__item-desc h3 {
   font-family: "Noto Sans SC", sans-serif;
   font-weight: 400;
+  text-align: center;
 }
 
 .stats__item-icon .ion-icon {
   font-size: 5rem;
   color: #482e6e;
+}
+
+.stats svg {
+  width: 200px;
 }
 
 /*# sourceMappingURL=stats.css.map */

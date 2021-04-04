@@ -1,0 +1,29 @@
+uuid: 43f13c65-2a85-47de-aea0-289002769ef1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hero.hero
+    - field.storage.hero.field_media
+    - media.type.image
+id: hero.hero.field_media
+field_name: field_media
+entity_type: hero
+bundle: hero
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

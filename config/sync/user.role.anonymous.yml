@@ -14,5 +14,6 @@ permissions:
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view any hero entities'
   - 'view any stats entities'
   - 'view media'

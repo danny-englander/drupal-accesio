@@ -1,0 +1,29 @@
+uuid: 3b4327c7-400e-41eb-9205-81537af51e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - eck.eck_type.hero.hero
+    - field.storage.block_content.field_hero
+id: block_content.hero.field_hero
+field_name: field_hero
+entity_type: block_content
+bundle: hero
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:hero'
+  handler_settings:
+    target_bundles:
+      hero: hero
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 2c51f9e8-7c27-4bf9-a5d7-bf97a12cbe6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: hero.field_text_format
+field_name: field_text_format
+entity_type: hero
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

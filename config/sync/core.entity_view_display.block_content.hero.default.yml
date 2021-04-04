@@ -1,0 +1,22 @@
+uuid: 35480f9f-4b84-4523-b723-c6be36788bf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.field.block_content.hero.field_hero
+id: block_content.hero.default
+targetEntityType: block_content
+bundle: hero
+mode: default
+content:
+  field_hero:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

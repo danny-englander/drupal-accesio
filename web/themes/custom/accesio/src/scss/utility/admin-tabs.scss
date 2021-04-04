@@ -7,6 +7,7 @@ ul.tabs {
   display: flex;
   @include ul-reset();
   margin-top: 30px;
+  @include container(1340px);
 
   > li {
     display: block;

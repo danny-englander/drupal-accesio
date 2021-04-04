@@ -30,3 +30,7 @@ a.layout-builder__link {
   @include link-effect();
   color: $charcoal;
 }
+
+.l-content {
+  @include container(1340px);
+}

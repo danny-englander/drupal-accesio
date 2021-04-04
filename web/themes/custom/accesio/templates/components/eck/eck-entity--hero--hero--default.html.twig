@@ -1,0 +1,77 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display an ECK entity.
+ *
+ * Available variables:
+ * - eck_entity: The full ECK entity with limited access to object properties
+ *   and methods. Only "getter" methods (method names starting with "get",
+ *   "has", or "is") and a few common methods such as "id" and "label" are
+ *   available. Calling other methods (such as node.delete) will result in an
+ *   exception.
+ * - content: All ECK entity items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ *
+ * @see template_preprocess_eck_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('accesio/hero') }}
+
+{% set classes = [
+  'hero',
+  'eck-entity',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+
+  <div class="hero__wrap">
+
+    <div class="hero__media">
+      {{ content.field_media | field_value }}
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__content-inner">
+
+        <div class="hero__text-wrap">
+          <div class="hero__title">
+            {% if is_h1 | render %}
+              {# if h1 checkbox has been filled. #}
+              <h1>{{ content.title | field_value }}</h1>
+            {% else %}
+              <h2>{{ content.title | field_value }}</h2>
+            {% endif %}
+          </div>
+
+          {% if content.field_text_format | render %}
+            <div class="hero__text has-text">
+              {{ content.field_text_format | field_value }}
+            </div>
+          {% endif %}
+        </div><!-- // hero__text-wrap -->
+
+        {% if content.field_link | render %}
+          <div class="hero__link">
+            <a class="btn btn-hollow btn-hollow-inverse"
+               href="{{ content.field_link.0["#url_title"] }}"
+              {{ target }}
+               role="button"
+               title="{{ 'Learn more about'|t }} {{ content.field_title | field_value }}"
+               aria-label="{{ 'Learn more about'|t }} {{ content.field_title | field_value }}">
+              {{ content.field_link.0["#title"] }}
+            </a>
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+
+  </div>
+</div>

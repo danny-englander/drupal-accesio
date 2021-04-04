@@ -1,0 +1,9 @@
+uuid: a6fcdbdb-dfc7-48e2-896d-de37f77a5156
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.hero
+type: hero
+name: Hero
+description: ''

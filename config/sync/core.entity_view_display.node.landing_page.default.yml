@@ -3,23 +3,71 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.title
+    - field.field.node.landing_page.field_edgy
+    - field.field.node.landing_page.layout_builder__layout
     - node.type.landing_page
+  content:
+    - 'block_content:hero:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
+    - 'block_content:statistics:0dfc7c25-b2a1-416d-bb09-646d18ce5592'
   module:
+    - block_content
     - layout_builder
     - layout_builder_restrictions
+    - layout_discovery
     - user
-  theme:
-    - accesio
 third_party_settings:
   layout_builder:
     allow_custom: true
     enabled: true
     sections:
       -
-        layout_id: layout_accesio_twocol_bricks
+        layout_id: layout_onecol
         layout_settings:
-          label: Bricks
-        components: {  }
+          label: ''
+        components:
+          2643b289-ebae-4920-aa4c-c5c9acae4ca0:
+            uuid: 2643b289-ebae-4920-aa4c-c5c9acae4ca0
+            region: content
+            configuration:
+              id: 'block_content:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
+              label: 'Hero block'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          133efd7d-da10-4de4-82a0-9eaf212923f5:
+            uuid: 133efd7d-da10-4de4-82a0-9eaf212923f5
+            region: content
+            configuration:
+              id: 'block_content:0dfc7c25-b2a1-416d-bb09-646d18ce5592'
+              label: Stats
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+          d9536083-ece9-4f32-beac-75e1e4315b64:
+            uuid: d9536083-ece9-4f32-beac-75e1e4315b64
+            region: content
+            configuration:
+              id: 'inline_block:title'
+              label: 'Our Statistics'
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 4
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }
@@ -28,11 +76,22 @@ third_party_settings:
       blacklisted_blocks: {  }
       allowed_layouts:
         - layout_onecol
-        - layout_accesio_twocol_bricks
+        - layout_twocol_section
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
 mode: default
-content: {  }
+content:
+  field_edgy:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: middle
 hidden:
+  layout_builder__layout: true
   links: true

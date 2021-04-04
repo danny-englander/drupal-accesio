@@ -1,0 +1,10 @@
+uuid: bd0efbed-1be6-4724-b292-944be60f31d5
+langcode: en
+status: false
+dependencies: {  }
+id: hero
+label: Hero
+created: false
+changed: false
+uid: false
+title: true
