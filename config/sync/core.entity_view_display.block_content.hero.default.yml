@@ -4,19 +4,43 @@ status: true
 dependencies:
   config:
     - block_content.type.hero
-    - field.field.block_content.hero.field_hero
+    - field.field.block_content.hero.field_link
+    - field.field.block_content.hero.field_media
+    - field.field.block_content.hero.field_text
+  module:
+    - link
+    - text
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
 mode: default
 content:
-  field_hero:
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 120
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_media:
+    type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:
-      link: true
-      view_mode: default
+      view_mode: hero
+      link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
 hidden: {  }

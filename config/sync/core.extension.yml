@@ -49,6 +49,7 @@ module:
   layout_builder_restrictions: 0
   layout_builder_styles: 0
   layout_discovery: 0
+  layout_library: 0
   lazy: 0
   link: 0
   link_attributes: 0

@@ -46,4 +46,9 @@ a.layout-builder__link {
   padding-right: 15px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=layout-builder-ui.css.map */

@@ -1,10 +1,10 @@
-uuid: a8aaca00-6f48-4c16-af97-c3ae8269a9ce
+uuid: 60e5796e-0ba6-459b-be24-2bc23ec1ce8c
 langcode: en
 status: true
 dependencies:
   config:
-    - eck.eck_type.hero.hero
-    - field.storage.hero.field_text_format
+    - block_content.type.hero
+    - field.storage.block_content.field_text
   module:
     - allowed_formats
     - text
@@ -14,9 +14,9 @@ third_party_settings:
     full_html: '0'
     basic_html: '0'
     restricted_html: '0'
-id: hero.hero.field_text_format
-field_name: field_text_format
-entity_type: hero
+id: block_content.hero.field_text
+field_name: field_text
+entity_type: block_content
 bundle: hero
 label: Text
 description: ''

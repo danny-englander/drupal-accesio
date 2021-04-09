@@ -1,18 +1,18 @@
-uuid: f59afcc8-6db0-425d-b180-822a106297cd
+uuid: 8e25888a-4d2a-4ccc-bdbb-50c784e3dd36
 langcode: en
 status: true
 dependencies:
   module:
-    - block_content
-    - eck
-id: block_content.field_hero
-field_name: field_hero
-entity_type: block_content
+    - layout_library
+    - node
+id: node.layout_selection
+field_name: layout_selection
+entity_type: node
 type: entity_reference
 settings:
-  target_type: hero
+  target_type: layout
 module: core
-locked: false
+locked: true
 cardinality: 1
 translatable: true
 indexes: {  }

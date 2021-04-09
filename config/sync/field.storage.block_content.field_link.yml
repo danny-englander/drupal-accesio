@@ -1,13 +1,13 @@
-uuid: 7f5995c4-15a1-4849-920a-78eefdfae3dd
+uuid: 2e19b956-19ba-4794-bdf3-2d5128b4e014
 langcode: en
 status: true
 dependencies:
   module:
-    - eck
+    - block_content
     - link
-id: hero.field_link
+id: block_content.field_link
 field_name: field_link
-entity_type: hero
+entity_type: block_content
 type: link
 settings: {  }
 module: link

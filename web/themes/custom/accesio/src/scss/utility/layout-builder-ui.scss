@@ -34,3 +34,8 @@ a.layout-builder__link {
 .l-content {
   @include container(1340px);
 }
+
+img {
+  width: 100%;
+  height: auto;
+}

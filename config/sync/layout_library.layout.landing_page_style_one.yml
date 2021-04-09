@@ -1,0 +1,29 @@
+uuid: 08dfdd80-b95f-4793-a034-046b8135e59a
+langcode: en
+status: true
+dependencies: {  }
+id: landing_page_style_one
+label: 'Landing page style one'
+targetEntityType: node
+targetBundle: landing_page
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+    components:
+      1d7da4d6-6275-4c04-80ee-85738138cb2e:
+        uuid: 1d7da4d6-6275-4c04-80ee-85738138cb2e
+        region: content
+        configuration:
+          id: 'block_content:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
+          label: 'Hero block'
+          provider: block_content
+          label_display: visible
+          status: true
+          info: ''
+          view_mode: full
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }

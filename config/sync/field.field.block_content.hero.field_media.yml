@@ -1,14 +1,14 @@
-uuid: 43f13c65-2a85-47de-aea0-289002769ef1
+uuid: 2482a69d-8552-4980-984b-68553dd2d981
 langcode: en
 status: true
 dependencies:
   config:
-    - eck.eck_type.hero.hero
-    - field.storage.hero.field_media
+    - block_content.type.hero
+    - field.storage.block_content.field_media
     - media.type.image
-id: hero.hero.field_media
+id: block_content.hero.field_media
 field_name: field_media
-entity_type: hero
+entity_type: block_content
 bundle: hero
 label: Media
 description: ''

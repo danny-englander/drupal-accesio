@@ -1,13 +1,13 @@
-uuid: ec8d7a40-61ca-4f51-a326-e534835a51b5
+uuid: 054a03c1-9cf7-45ad-ae2a-e882face86ee
 langcode: en
 status: true
 dependencies:
   module:
-    - eck
+    - block_content
     - media
-id: hero.field_media
+id: block_content.field_media
 field_name: field_media
-entity_type: hero
+entity_type: block_content
 type: entity_reference
 settings:
   target_type: media

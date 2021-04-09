@@ -45,6 +45,7 @@
         "drupal/layout_builder_operation_link": "^1.0",
         "drupal/layout_builder_restrictions": "^2.8",
         "drupal/layout_builder_styles": "^1.0@beta",
+        "drupal/layout_library": "^1.0@beta",
         "drupal/lazy": "^3.6",
         "drupal/link_attributes": "^1.11",
         "drupal/linkit": "5.0-beta12",
@@ -82,7 +83,6 @@
                 "Views relationships with multi-valued entity reference fields invalidate Distinct query option": "https://www.drupal.org/files/issues/2020-10-10/2993688-45.patch",
                 "Off-canvas style resets are overriding styles (especially SVGs) resulting in display issues": "https://www.drupal.org/files/issues/2021-03-12/2958588-91-92x.patch",
                 "Add reusable option to inline block creation": "https://www.drupal.org/files/issues/2021-03-18/reusable_inline_block_creation-2999491-66.patch"
-
             },
             "drupal/default_content": {
                 "Export all site content of different content entity types at once using drush command": "https://www.drupal.org/files/issues/2020-12-15/default-content-export-all-3185975-3.patch",

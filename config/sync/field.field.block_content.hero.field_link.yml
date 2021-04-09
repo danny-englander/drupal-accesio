@@ -1,15 +1,15 @@
-uuid: b17d3f0b-7e6f-45eb-9a4a-4361b48d89c1
+uuid: b6d0855e-1e47-4508-a1fe-26540745eb32
 langcode: en
 status: true
 dependencies:
   config:
-    - eck.eck_type.hero.hero
-    - field.storage.hero.field_link
+    - block_content.type.hero
+    - field.storage.block_content.field_link
   module:
     - link
-id: hero.hero.field_link
+id: block_content.hero.field_link
 field_name: field_link
-entity_type: hero
+entity_type: block_content
 bundle: hero
 label: Link
 description: ''

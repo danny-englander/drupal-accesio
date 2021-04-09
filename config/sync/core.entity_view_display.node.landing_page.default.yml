@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.title
     - field.field.node.landing_page.field_edgy
     - field.field.node.landing_page.layout_builder__layout
+    - field.field.node.landing_page.layout_selection
     - node.type.landing_page
   content:
     - 'block_content:hero:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
@@ -15,6 +16,7 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
+    - layout_library
     - user
 third_party_settings:
   layout_builder:
@@ -31,9 +33,9 @@ third_party_settings:
             region: content
             configuration:
               id: 'block_content:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
-              label: 'Hero block'
+              label: 'Help Support the Hoop Bus'
               provider: block_content
-              label_display: '0'
+              label_display: visible
               status: true
               info: ''
               view_mode: full
@@ -72,11 +74,23 @@ third_party_settings:
   layout_builder_restrictions:
     allowed_block_categories: {  }
     entity_view_mode_restriction:
-      whitelisted_blocks: {  }
+      whitelisted_blocks:
+        'Content fields': {  }
+        Forms: {  }
+        Help: {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        RRSSB: {  }
+        System: {  }
+        User: {  }
+        Webform: {  }
+        core: {  }
       blacklisted_blocks: {  }
       allowed_layouts:
         - layout_onecol
         - layout_twocol_section
+  layout_library:
+    enable: true
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -94,4 +108,5 @@ content:
     region: middle
 hidden:
   layout_builder__layout: true
+  layout_selection: true
   links: true
