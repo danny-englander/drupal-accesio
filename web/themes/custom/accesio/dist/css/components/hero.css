@@ -10,6 +10,10 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   margin-bottom: 80px;
 }
 
+.hero .page-lb {
+  margin-bottom: 0;
+}
+
 .hero__media {
   line-height: 0;
 }

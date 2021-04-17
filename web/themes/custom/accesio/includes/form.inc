@@ -51,6 +51,5 @@ function accesio_form_alter(&$form, FormStateInterface $form_state, $form_id) {
       $form['icon_cat_value']['#options'] = $options;
       $form['icon_cat_value']['#size'] = 1;
     }
-
   }
 }

@@ -43,7 +43,9 @@
   {{ title_suffix }}
 
   {% block content %}
+    <div class="stats__wrap">
     {{ content.field_statistic | field_value }}
+    </div>
   {% endblock %}
 
 </div>

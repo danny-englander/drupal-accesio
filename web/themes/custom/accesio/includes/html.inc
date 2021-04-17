@@ -76,8 +76,16 @@ function accesio_preprocess_html(array &$vars) {
     if (in_array($node_type, $blog_types)) {
       $vars['attributes']['class'][] = 'page-blog page-contained-width';
     }
-  }
 
+    // Define an array of node types that have structured content.
+    $layout_builder_based = [
+      'landing_page',
+    ];
+
+    if (in_array($node_type, $layout_builder_based)) {
+      $vars['attributes']['class'][] = 'page-lb';
+    }
+  }
 
   // Define an array of pages that are Layout Builder block layout pages.
   $layout_builder_admin_paths = [

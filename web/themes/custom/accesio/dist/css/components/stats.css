@@ -27,6 +27,28 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   }
 }
 
+.page-lb .stats {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 32.5em) {
+  .page-lb .stats {
+    display: block;
+  }
+}
+
+@media (min-width: 32.5em) {
+  .stats__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .stats__item {
   display: -ms-flexbox;
   display: flex;

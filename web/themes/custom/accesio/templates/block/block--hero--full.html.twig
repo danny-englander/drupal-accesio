@@ -1,0 +1,98 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{{ attach_library('accesio/hero') }}
+
+{# if link target is not empty, set a variable. #}
+{% if content.field_link.0["#url"].getOptions().attributes .target | render %}
+  {% set target = 'rel=noopener  target = _' ~ content.field_link.0["#url"].getOptions().attributes .target %}
+{% endif %}
+
+{% set classes = [
+  'hero',
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  {% block content %}
+
+    <div class="hero__wrap">
+
+      <div class="hero__media">
+        {{ content.field_media | field_value }}
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__content-inner">
+
+          <div class="hero__text-wrap">
+
+            <div class="hero__title">
+              {% if is_h1 | render %}
+                {# if h1 checkbox has been filled. #}
+                {% if label %}
+                  <h1{{ title_attributes }}>{{ label }}</h1>
+                {% endif %}
+
+              {% else %}
+                {% if label %}
+                  <h2{{ title_attributes }}>{{ label }}</h2>
+                {% endif %}
+              {% endif %}
+            </div>
+
+            {% if content.field_text | render %}
+              <div class="hero__text has-text">
+                {{ content.field_text | field_value }}
+              </div>
+            {% endif %}
+          </div><!-- // hero__text-wrap -->
+
+          {% if content.field_link | render %}
+            <div class="hero__link">
+              <a class="btn btn-hollow btn-hollow-inverse"
+                 href="{{ content.field_link.0["#url_title"] }}"
+                {{ target }}
+                 role="button"
+                 title="{{ 'Learn more about'|t }} {{ content.field_title | field_value }}"
+                 aria-label="{{ 'Learn more about'|t }} {{ content.field_title | field_value }}">
+                {{ content.field_link.0["#title"] }}
+              </a>
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+
+    </div>
+  {% endblock %}
+</div>

@@ -1,0 +1,28 @@
+uuid: 5efe9e37-25d5-4cc7-8f87-ae1d2760be15
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_bg_image
+    - field.storage.block_content.field_text
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    restricted_html: '0'
+    plain_text: '0'
+id: block_content.text_bg_image.field_text
+field_name: field_text
+entity_type: block_content
+bundle: text_bg_image
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

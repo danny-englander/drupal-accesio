@@ -1,4 +1,4 @@
-multiselect: single
-form_type: checkboxes
+multiselect: multiple
+form_type: multiple-select
 _core:
   default_config_hash: Ij1zSq1iecEVxgyCe57ZjGPuS4IeA3ml-n_pSMWodzQ

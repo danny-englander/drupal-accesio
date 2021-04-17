@@ -1,0 +1,8 @@
+uuid: 0239b7a6-be22-4207-abb8-95aefa563a21
+langcode: en
+status: true
+dependencies: {  }
+id: text_bg_image
+label: 'Text and Background Image'
+revision: 0
+description: ''

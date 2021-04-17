@@ -23,14 +23,6 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   padding-bottom: 30px;
 }
 
-.is-layout-builder-admin .l-content.container-fluid {
-  max-width: 1340px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 a.layout-builder__link {
   font-size: 0.9375rem;
   font-weight: 600;
@@ -38,17 +30,71 @@ a.layout-builder__link {
   color: #404040;
 }
 
-.l-content {
+img {
+  width: 100%;
+  height: auto;
+}
+
+#layout-builder-modal fieldset:not(.fieldgroup) > legend {
+  border-radius: 0;
+  padding: 10px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  top: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#layout-builder-modal .glb-form-item {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+#layout-builder-modal .glb-media-library-item__preview {
+  padding-bottom: 0;
+  min-height: 260px;
+}
+
+#layout-builder-modal .glb-form-item,
+#layout-builder-modal textarea,
+#layout-builder-modal label,
+#layout-builder-modal input,
+#layout-builder-modal optgroup,
+#layout-builder-modal select {
+  font-size: 17px !important;
+  line-height: 1.7;
+}
+
+#layout-builder-modal label {
+  margin-top: 10px;
+}
+
+#layout-builder-modal .glb-canvas-form__settings {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ui-dialog fieldset:not(.fieldgroup) > .fieldset-wrapper {
+  margin-top: 32px;
+}
+
+.glb-form-item__description,
+.glb-fieldset__description {
+  line-height: 1.6;
+  max-width: 100% !important;
+}
+
+div[id^="__lpform_edit-settings-label-"] {
+  display: none;
+}
+
+#block-accesio-help {
   max-width: 1340px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 /*# sourceMappingURL=layout-builder-ui.css.map */

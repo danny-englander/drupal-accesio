@@ -176,3 +176,13 @@ layout_bricks:
   css:
     theme:
       dist/css/layout/two-column-bricks.css: { }
+
+stats_lb:
+  css:
+    theme:
+      dist/css/components/stats-lb.css: { }
+
+hero_lb:
+  css:
+    theme:
+      dist/css/components/hero-lb.css: { }
