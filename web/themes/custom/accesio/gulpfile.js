@@ -5,7 +5,6 @@ const gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   pngquant = require('imagemin-pngquant'),
   prefix = require('gulp-autoprefixer'),
-  sassGlob = require('gulp-sass-glob'),
   browserSync = require('browser-sync').create(),
   rename = require('gulp-rename'),
   concat = require('gulp-concat'),
@@ -104,13 +103,30 @@ gulp.task('scripts', function () {
 
 gulp.task('sass', function () {
   return gulp.src(['!./src/scss/vendor/**/*.scss', '!./src/scss/grid/bs-grid/**', './src/scss/**/*.scss'])
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      outputStyle: 'expanded',
+    }).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 4 versions'],
+      cascade: false
+    }))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(browserSync.reload({
+      stream: true,
+      match: '**/*.css'
+    }))
+});
+
+gulp.task('sass-lint', function () {
+  return gulp.src(['!./src/scss/vendor/**/*.scss', '!./src/scss/grid/bs-grid/**', './src/scss/**/*.scss'])
     .pipe(sasslint({
       configFile: './sass-lint.yml',
     }))
     .pipe(sasslint.format())
     .pipe(sasslint.failOnError())
     .pipe(sourcemaps.init())
-    .pipe(sassGlob())
     .pipe(sass({
       outputStyle: 'expanded',
     }).on('error', sass.logError))
@@ -126,29 +142,6 @@ gulp.task('sass', function () {
       match: '**/*.css'
     }))
     .pipe(cleanCSS())
-});
-
-gulp.task('vendors', function () {
-  return gulp.src(['./src/scss/vendor/*.scss', '!./src/scss/vendor/bs-grid'])
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      outputStyle: 'expanded',
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 4 versions'],
-      cascade: false
-    }))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./dist/vendor/css'))
-    .pipe(browserSync.reload({
-      stream: true,
-      match: '**/*.css'
-    }))
-    .pipe(cleanCSS())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./dist/vendor/css/min'));
 });
 
 // Combine the global css files into one for ckeditor to use.
@@ -174,8 +167,7 @@ gulp.task('build', ['sass', 'scripts']);
 gulp.task('svg', ['svgSprite']);
 // Task: Default gulp build and watch.
 gulp.task('default', ['sass', 'scripts', 'watch']);
-
-gulp.task('vendor', ['vendors']);
-
+// With linting.
+gulp.task('lint', ['sass-lint', 'scripts', 'watch']);
 // Concat CSS for ckeditor.
 gulp.task('combine', ['concat']);

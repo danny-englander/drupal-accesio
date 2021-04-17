@@ -16,6 +16,18 @@
 .layout-builder {
   margin-bottom: 30px;
   padding-bottom: 30px;
+
+  .contextual-region {
+    outline: 1px solid var(--colorGinPrimary) !important;
+
+    .contextual .contextual-links a {
+      font-size: 18px;
+    }
+  }
+
+  &.layout-builder--content-preview-disabled .layout-builder-block {
+    margin: 32px 0;
+  }
 }
 
 a.layout-builder__link {
@@ -148,7 +160,7 @@ div[id^="__lpform_edit-settings-label-"] {
     top: -20px;
     position: relative;
     background-size: 74%;
-    z-index: 11111111111;
+    z-index: 10000;
     width: 25px;
   }
 }
@@ -169,16 +181,9 @@ div[id^="__lpform_edit-settings-label-"] {
 
   select {
     min-height: 100px !important;
-  }
-}
 
-.layout-builder {
-
-  .contextual-region {
-    outline: 1px solid var(--colorGinPrimary) !important
-  }
-
-  &.layout-builder--content-preview-disabled .layout-builder-block {
-    margin: 32px 0;
+    .ief-row-entity & {
+      min-height: inherit !important;
+    }
   }
 }

@@ -6,6 +6,6 @@ id: padding_bottom
 label: 'Padding Bottom'
 classes: padding-bottom
 type: section
-weight: -5
+weight: -4
 block_restrictions: {  }
 layout_restrictions: {  }

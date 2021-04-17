@@ -9,7 +9,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 /* ---- isotope ---- */
 /* clear fix */
 .grid:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }

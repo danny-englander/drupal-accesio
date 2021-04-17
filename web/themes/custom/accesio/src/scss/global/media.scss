@@ -9,6 +9,11 @@ Media theming.
 
   @include mq($from: medium-large) {
     @include blog-width();
+
+    .full-width & {
+      max-width: 100%;
+    }
+
   }
 }
 

@@ -1,0 +1,8 @@
+uuid: 5c905c1e-adc5-4155-a73c-5ffaf8661afc
+langcode: en
+status: true
+dependencies: {  }
+id: multimedia
+label: Multimedia
+revision: 0
+description: ''

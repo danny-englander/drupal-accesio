@@ -1,0 +1,9 @@
+uuid: ddcf8c32-2003-45b6-bfca-b653cdbb9a39
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.accordion
+type: accordion_item
+name: 'Accordion Item'
+description: ''

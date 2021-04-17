@@ -1,0 +1,30 @@
+uuid: 877d5f7b-8606-43de-8224-80fb2668359f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.accordion.accordion_item
+    - field.field.accordion.accordion_item.field_text
+  module:
+    - text
+id: accordion.accordion_item.default
+targetEntityType: accordion
+bundle: accordion_item
+mode: default
+content:
+  field_text:
+    weight: -3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

@@ -13,6 +13,7 @@
       @include rem(line-height, 38px);
       @include rem(margin-bottom, 17px);
       margin-top: 0;
+      @include container(1250px);
 
       @include mq($from: small_desktop) {
         @include rem(font-size, 46px);

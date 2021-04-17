@@ -1,0 +1,19 @@
+uuid: 577f2b56-f936-4596-aa34-82c604a401b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: accordion.field_text
+field_name: field_text
+entity_type: accordion
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

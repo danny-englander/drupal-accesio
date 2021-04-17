@@ -23,6 +23,18 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   padding-bottom: 30px;
 }
 
+.layout-builder .contextual-region {
+  outline: 1px solid var(--colorGinPrimary) !important;
+}
+
+.layout-builder .contextual-region .contextual .contextual-links a {
+  font-size: 18px;
+}
+
+.layout-builder.layout-builder--content-preview-disabled .layout-builder-block {
+  margin: 32px 0;
+}
+
 a.layout-builder__link {
   font-size: 0.9375rem;
   font-weight: 600;
@@ -106,7 +118,7 @@ div[id^="__lpform_edit-settings-label-"] {
 }
 
 .layout-builder__region:after {
-  content: "";
+  content: '';
   position: absolute;
   border: 2px dashed #333 !important;
   width: 100%;
@@ -153,7 +165,7 @@ div[id^="__lpform_edit-settings-label-"] {
   top: -20px;
   position: relative;
   background-size: 74%;
-  z-index: 11111111111;
+  z-index: 10000;
   width: 25px;
 }
 
@@ -177,12 +189,8 @@ div[id^="__lpform_edit-settings-label-"] {
   min-height: 100px !important;
 }
 
-.layout-builder .contextual-region {
-  outline: 1px solid var(--colorGinPrimary) !important;
-}
-
-.layout-builder.layout-builder--content-preview-disabled .layout-builder-block {
-  margin: 32px 0;
+.ief-row-entity .js-form-type-select select {
+  min-height: inherit !important;
 }
 
 /*# sourceMappingURL=layout-builder-ui.css.map */

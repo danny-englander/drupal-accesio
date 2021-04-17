@@ -31,7 +31,6 @@ function accesio_library_info_alter(&$libraries, $extension) {
     unset($libraries['base']['css']['component']['css/components/system-status-counter.css']);
     unset($libraries['base']['css']['component']['css/components/system-status-report-counters.css']);
     unset($libraries['base']['css']['component']['css/components/system-status-report-general-info.css']);
-    unset($libraries['base']['css']['component']['css/components/tabledrag.module.css']);
     unset($libraries['base']['css']['component']['css/components/tablesort.module.css']);
     unset($libraries['base']['css']['component']['css/components/tree-child.module.css']);
   }

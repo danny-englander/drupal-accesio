@@ -6,6 +6,6 @@ id: c_padding_bottom
 label: 'Padding Bottom'
 classes: padding-bottom
 type: component
-weight: -6
+weight: -5
 block_restrictions: {  }
 layout_restrictions: {  }

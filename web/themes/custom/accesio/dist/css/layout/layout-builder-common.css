@@ -12,6 +12,11 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   line-height: 2.375rem;
   margin-bottom: 1.0625rem;
   margin-top: 0;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 64em) {

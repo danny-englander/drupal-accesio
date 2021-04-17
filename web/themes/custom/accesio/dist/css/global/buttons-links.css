@@ -7,8 +7,7 @@ A11Y Color grids.
 https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
 
 */
-.btn,
-.form-item.form-type-managed-file label,
+.btn, .form-item.form-type-managed-file label,
 a.btn,
 input[type="file"],
 input[type="submit"] {
@@ -37,12 +36,7 @@ input[type="submit"] {
   overflow: hidden;
 }
 
-.btn:active,
-.form-item.form-type-managed-file label:active,
-.btn:focus,
-.form-item.form-type-managed-file label:focus,
-.btn:hover,
-.form-item.form-type-managed-file label:hover,
+.btn:active, .form-item.form-type-managed-file label:active, .btn:focus, .form-item.form-type-managed-file label:focus, .btn:hover, .form-item.form-type-managed-file label:hover,
 a.btn:active,
 a.btn:focus,
 a.btn:hover,
@@ -58,8 +52,7 @@ input[type="submit"]:hover {
   background-color: #69cec3;
 }
 
-.btn.btn-small,
-.form-item.form-type-managed-file label.btn-small,
+.btn.btn-small, .form-item.form-type-managed-file label.btn-small,
 a.btn.btn-small,
 input[type="file"].btn-small,
 input[type="submit"].btn-small {
@@ -67,8 +60,7 @@ input[type="submit"].btn-small {
   font-size: 1rem;
 }
 
-.btn.btn-secondary,
-.form-item.form-type-managed-file label.btn-secondary,
+.btn.btn-secondary, .form-item.form-type-managed-file label.btn-secondary,
 a.btn.btn-secondary,
 input[type="file"].btn-secondary,
 input[type="submit"].btn-secondary {
@@ -78,12 +70,7 @@ input[type="submit"].btn-secondary {
   border-radius: 22px;
 }
 
-.btn.btn-secondary:active,
-.form-item.form-type-managed-file label.btn-secondary:active,
-.btn.btn-secondary:focus,
-.form-item.form-type-managed-file label.btn-secondary:focus,
-.btn.btn-secondary:hover,
-.form-item.form-type-managed-file label.btn-secondary:hover,
+.btn.btn-secondary:active, .form-item.form-type-managed-file label.btn-secondary:active, .btn.btn-secondary:focus, .form-item.form-type-managed-file label.btn-secondary:focus, .btn.btn-secondary:hover, .form-item.form-type-managed-file label.btn-secondary:hover,
 a.btn.btn-secondary:active,
 a.btn.btn-secondary:focus,
 a.btn.btn-secondary:hover,
@@ -99,12 +86,7 @@ input[type="submit"].btn-secondary:hover {
   background-color: #482e6e;
 }
 
-.btn.btn-secondary-inverse:active,
-.form-item.form-type-managed-file label.btn-secondary-inverse:active,
-.btn.btn-secondary-inverse:focus,
-.form-item.form-type-managed-file label.btn-secondary-inverse:focus,
-.btn.btn-secondary-inverse:hover,
-.form-item.form-type-managed-file label.btn-secondary-inverse:hover,
+.btn.btn-secondary-inverse:active, .form-item.form-type-managed-file label.btn-secondary-inverse:active, .btn.btn-secondary-inverse:focus, .form-item.form-type-managed-file label.btn-secondary-inverse:focus, .btn.btn-secondary-inverse:hover, .form-item.form-type-managed-file label.btn-secondary-inverse:hover,
 a.btn.btn-secondary-inverse:active,
 a.btn.btn-secondary-inverse:focus,
 a.btn.btn-secondary-inverse:hover,
@@ -120,8 +102,7 @@ input[type="submit"].btn-secondary-inverse:hover {
   background-color: #b7b7b7;
 }
 
-.btn.btn-hollow,
-.form-item.form-type-managed-file label.btn-hollow,
+.btn.btn-hollow, .form-item.form-type-managed-file label.btn-hollow,
 a.btn.btn-hollow,
 input[type="file"].btn-hollow,
 input[type="submit"].btn-hollow {
@@ -130,12 +111,7 @@ input[type="submit"].btn-hollow {
   border: 2px solid #482e6e;
 }
 
-.btn.btn-hollow:active,
-.form-item.form-type-managed-file label.btn-hollow:active,
-.btn.btn-hollow:focus,
-.form-item.form-type-managed-file label.btn-hollow:focus,
-.btn.btn-hollow:hover,
-.form-item.form-type-managed-file label.btn-hollow:hover,
+.btn.btn-hollow:active, .form-item.form-type-managed-file label.btn-hollow:active, .btn.btn-hollow:focus, .form-item.form-type-managed-file label.btn-hollow:focus, .btn.btn-hollow:hover, .form-item.form-type-managed-file label.btn-hollow:hover,
 a.btn.btn-hollow:active,
 a.btn.btn-hollow:focus,
 a.btn.btn-hollow:hover,
@@ -151,8 +127,7 @@ input[type="submit"].btn-hollow:hover {
   text-decoration: underline;
 }
 
-.btn.btn-hollow-inverse,
-.form-item.form-type-managed-file label.btn-hollow-inverse,
+.btn.btn-hollow-inverse, .form-item.form-type-managed-file label.btn-hollow-inverse,
 a.btn.btn-hollow-inverse,
 input[type="file"].btn-hollow-inverse,
 input[type="submit"].btn-hollow-inverse {
@@ -160,12 +135,7 @@ input[type="submit"].btn-hollow-inverse {
   border: 2px solid #69cec3;
 }
 
-.btn.btn-hollow-inverse:active,
-.form-item.form-type-managed-file label.btn-hollow-inverse:active,
-.btn.btn-hollow-inverse:focus,
-.form-item.form-type-managed-file label.btn-hollow-inverse:focus,
-.btn.btn-hollow-inverse:hover,
-.form-item.form-type-managed-file label.btn-hollow-inverse:hover,
+.btn.btn-hollow-inverse:active, .form-item.form-type-managed-file label.btn-hollow-inverse:active, .btn.btn-hollow-inverse:focus, .form-item.form-type-managed-file label.btn-hollow-inverse:focus, .btn.btn-hollow-inverse:hover, .form-item.form-type-managed-file label.btn-hollow-inverse:hover,
 a.btn.btn-hollow-inverse:active,
 a.btn.btn-hollow-inverse:focus,
 a.btn.btn-hollow-inverse:hover,
@@ -180,16 +150,14 @@ input[type="submit"].btn-hollow-inverse:hover {
   text-decoration: underline;
 }
 
-.btn.btn-sq,
-.form-item.form-type-managed-file label.btn-sq,
+.btn.btn-sq, .form-item.form-type-managed-file label.btn-sq,
 a.btn.btn-sq,
 input[type="file"].btn-sq,
 input[type="submit"].btn-sq {
   border-radius: 0;
 }
 
-.btn.btn-pager,
-.form-item.form-type-managed-file label.btn-pager,
+.btn.btn-pager, .form-item.form-type-managed-file label.btn-pager,
 a.btn.btn-pager,
 input[type="file"].btn-pager,
 input[type="submit"].btn-pager {
@@ -217,9 +185,7 @@ input[type="submit"].btn-pager {
   font-weight: 500;
 }
 
-.field--type-text-long a:not(.btn):active,
-.field--type-text-long a:not(.btn):focus,
-.field--type-text-long a:not(.btn):hover {
+.field--type-text-long a:not(.btn):active, .field--type-text-long a:not(.btn):focus, .field--type-text-long a:not(.btn):hover {
   text-decoration: underline;
 }
 
@@ -228,9 +194,7 @@ input[type="submit"].btn-pager {
   text-decoration: underline;
 }
 
-.has-dark-bg .field--type-text-long a:not(.btn):active,
-.has-dark-bg .field--type-text-long a:not(.btn):focus,
-.has-dark-bg .field--type-text-long a:not(.btn):hover {
+.has-dark-bg .field--type-text-long a:not(.btn):active, .has-dark-bg .field--type-text-long a:not(.btn):focus, .has-dark-bg .field--type-text-long a:not(.btn):hover {
   text-decoration: none;
 }
 
@@ -240,18 +204,16 @@ input[type="submit"].btn-pager {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  transition: all 0.6s;
+  transition: all .6s;
 }
 
 .has-arrow:after {
   display: inline-block;
   margin-left: 10px;
-  transition: all 0.6s;
+  transition: all .6s;
 }
 
-.has-arrow:active:after,
-.has-arrow:focus:after,
-.has-arrow:hover:after {
+.has-arrow:active:after, .has-arrow:focus:after, .has-arrow:hover:after {
   margin-left: 14px;
 }
 
@@ -272,13 +234,11 @@ a {
   color: #00505c;
   text-decoration: none;
   border-bottom: 2px solid #007c92;
-  transition: 0.4s ease;
+  transition: .4s ease;
   padding: 2px 4px;
 }
 
-.has-links a:active,
-.has-links a:focus,
-.has-links a:hover {
+.has-links a:active, .has-links a:focus, .has-links a:hover {
   border: 0;
   background-color: #69cec3;
   color: #212121;

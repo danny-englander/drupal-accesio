@@ -17,6 +17,9 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
     margin-left: auto;
     margin-right: auto;
   }
+  .full-width .media--type-remote-video {
+    max-width: 100%;
+  }
 }
 
 .item--field-media-oembed-video {

@@ -1,0 +1,20 @@
+uuid: 6db685b3-bc85-4f42-9c17-a7b9f1013e22
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - eck
+id: block_content.field_accordion_items
+field_name: field_accordion_items
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: accordion
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

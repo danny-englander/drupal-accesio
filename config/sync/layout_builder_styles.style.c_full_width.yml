@@ -1,0 +1,12 @@
+uuid: 6054accd-46b0-46b3-8d8d-be2041b0dfd0
+langcode: en
+status: true
+dependencies: {  }
+id: c_full_width
+label: 'Full Width'
+classes: full-width
+type: component
+weight: -10
+block_restrictions:
+  - 'inline_block:multimedia'
+layout_restrictions: {  }

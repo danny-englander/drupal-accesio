@@ -20,7 +20,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .timeline-simple:before {
-  content: "";
+  content: '';
   position: absolute;
   display: inline-block;
   border-left: 3px dashed #98928a;
@@ -88,7 +88,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .timeline-simple__date:before {
-  content: "";
+  content: '';
   position: absolute;
   display: inline-block;
   height: 3px;
@@ -99,7 +99,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .timeline-simple__date:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 14px;
   display: inline-block;

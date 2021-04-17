@@ -1,0 +1,35 @@
+uuid: 5d40dd3d-edb6-4a9b-b927-b3a13fea65ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.multimedia
+    - field.field.block_content.multimedia.field_media
+  module:
+    - media_library
+    - media_library_edit
+id: block_content.multimedia.default
+targetEntityType: block_content
+bundle: multimedia
+mode: default
+content:
+  field_media:
+    weight: 26
+    settings:
+      media_types:
+        - image
+        - remote_video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+    type: media_library_widget
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

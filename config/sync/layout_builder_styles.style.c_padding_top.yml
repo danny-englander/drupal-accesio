@@ -6,6 +6,6 @@ id: c_padding_top
 label: 'Padding Top'
 classes: padding-top
 type: component
-weight: -7
+weight: -6
 block_restrictions: {  }
 layout_restrictions: {  }

@@ -82,9 +82,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   transform: rotate(405deg);
 }
 
-.c-accordion .accordion__header:active,
-.c-accordion .accordion__header:focus,
-.c-accordion .accordion__header:hover {
+.c-accordion .accordion__header:active, .c-accordion .accordion__header:focus, .c-accordion .accordion__header:hover {
   color: #482e6e;
 }
 
