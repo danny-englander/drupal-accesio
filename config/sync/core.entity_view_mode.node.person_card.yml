@@ -1,0 +1,10 @@
+uuid: 48954156-6e5c-4366-8abc-0cbbe7b0438d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.person_card
+label: 'Person Card'
+targetEntityType: node
+cache: true

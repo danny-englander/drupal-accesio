@@ -1,0 +1,8 @@
+uuid: f5110178-fb58-49f1-b5be-729dae2986bc
+langcode: en
+status: true
+dependencies: {  }
+id: people
+label: People
+revision: 0
+description: ''

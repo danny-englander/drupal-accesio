@@ -1,0 +1,25 @@
+uuid: 71634537-477b-4999-9f7e-2bd8acb54114
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.portrait
+  module:
+    - crop
+name: portrait
+label: Portrait
+effects:
+  0359dba3-95b8-4a6f-a4b4-105bcc4fb3a2:
+    uuid: 0359dba3-95b8-4a6f-a4b4-105bcc4fb3a2
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: portrait
+  946e1fb9-b0b1-4ab8-ae92-ad6cb2084074:
+    uuid: 946e1fb9-b0b1-4ab8-ae92-ad6cb2084074
+    id: image_scale
+    weight: 2
+    data:
+      width: 400
+      height: null
+      upscale: false

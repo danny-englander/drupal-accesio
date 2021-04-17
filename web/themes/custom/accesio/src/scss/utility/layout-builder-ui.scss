@@ -125,7 +125,7 @@ div[id^="__lpform_edit-settings-label-"] {
 }
 
 .layout__region-info.layout-builder__region-label {
-  font-size: 15px !important;
+  font-size: 17px !important;
   font-weight: 600;
   letter-spacing: 1px;
   position: absolute;
@@ -134,8 +134,8 @@ div[id^="__lpform_edit-settings-label-"] {
   top: 2px;
   left: 0;
   z-index: 1;
-  background: #000;
-  padding: 4px;
+  background: var(--colorGinPrimary);
+  padding: 6px;
 }
 
 .layout-builder__section .layout-builder__link--configure {
@@ -187,3 +187,30 @@ div[id^="__lpform_edit-settings-label-"] {
     }
   }
 }
+
+.layout__region-info.layout-builder__region-label {
+  position: relative;
+}
+
+.c-accordion,
+.stats {
+  max-width: 100%;
+  display: block;
+}
+
+.glb-form-type--checkbox.js-form-item-preview-regions {
+  display: none;
+}
+
+.image-widget.js-form-managed-file.form-managed-file img {
+  width: 230px;
+}
+
+.js-media-library-widget {
+  .item.item--thumbnail.item--type-image img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+

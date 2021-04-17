@@ -1,9 +1,9 @@
-uuid: ee8cc543-646d-40a9-9ca6-762ca9a7b8e0
+uuid: dc798666-7e02-4867-bed6-b770482dd7ee
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.byline
+    - core.entity_view_mode.node.person_card
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
@@ -13,21 +13,27 @@ dependencies:
     - field.field.node.person.field_text
     - node.type.person
   module:
+    - layout_builder
     - user
-id: node.person.byline
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.person.person_card
 targetEntityType: node
 bundle: person
-mode: byline
+mode: person_card
 content:
-  field_first_name:
-    weight: 1
+  field_profile_image:
+    type: entity_reference_entity_view
+    weight: 0
     label: hidden
     settings:
-      link_to_entity: false
+      view_mode: portrait_image
+      link: false
     third_party_settings: {  }
-    type: string
     region: content
-  field_last_name:
+  field_pronoun:
     weight: 2
     label: hidden
     settings:
@@ -35,18 +41,9 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_profile_image:
-    type: entity_reference_entity_view
-    weight: 0
-    label: hidden
-    settings:
-      view_mode: profile_image
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_pronoun:
+  field_subtitle:
     type: string
-    weight: 3
+    weight: 1
     region: content
     label: hidden
     settings:
@@ -54,6 +51,7 @@ content:
     third_party_settings: {  }
 hidden:
   field_email: true
-  field_subtitle: true
+  field_first_name: true
+  field_last_name: true
   field_text: true
   links: true

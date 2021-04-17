@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_profile_image
     - field.field.node.person.field_pronoun
+    - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
     - node.type.person
   module:
@@ -53,6 +54,14 @@ content:
   field_pronoun:
     weight: 106
     label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subtitle:
+    weight: 108
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }

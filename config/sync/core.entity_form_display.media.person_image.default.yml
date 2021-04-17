@@ -22,8 +22,10 @@ content:
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list:
+        - portrait
         - square
       crop_types_required:
+        - portrait
         - square
       progress_indicator: throbber
     third_party_settings: {  }

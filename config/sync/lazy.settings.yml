@@ -7,6 +7,7 @@ image_fields:
   media--person_image--field_media_image_1--profile_image: '1'
   media--image--field_media_image--standard: '1'
   media--image--field_media_image--portfolio_image: '1'
+  media--person_image--field_media_image_1--portrait_image: '1'
 alter_tag:
   img: img
   iframe: iframe

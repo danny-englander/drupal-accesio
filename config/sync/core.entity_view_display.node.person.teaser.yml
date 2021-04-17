@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_profile_image
     - field.field.node.person.field_pronoun
+    - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
     - node.type.person
   module:
@@ -29,4 +30,5 @@ hidden:
   field_last_name: true
   field_profile_image: true
   field_pronoun: true
+  field_subtitle: true
   field_text: true

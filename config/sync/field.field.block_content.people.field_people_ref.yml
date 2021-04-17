@@ -1,0 +1,29 @@
+uuid: 963eff79-b419-46fa-870f-6e6021ddf6ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people
+    - field.storage.block_content.field_people_ref
+    - node.type.person
+id: block_content.people.field_people_ref
+field_name: field_people_ref
+entity_type: block_content
+bundle: people
+label: People
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
