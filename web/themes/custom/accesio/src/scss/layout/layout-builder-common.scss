@@ -1,0 +1,31 @@
+/**
+ * Layout Builder common styling.
+ */
+@import "../global-includes";
+
+.layout {
+
+  .block {
+
+    > h2 {
+      font-weight: 500;
+      @include rem(font-size, 36px);
+      @include rem(line-height, 38px);
+      @include rem(margin-bottom, 17px);
+      margin-top: 0;
+
+      @include mq($from: small_desktop) {
+        @include rem(font-size, 46px);
+        @include rem(line-height, 50px);
+        @include rem(margin-bottom, 40px);
+      }
+    }
+  }
+
+  .title-centered {
+
+    > h2 {
+      text-align: center;
+    }
+  }
+}

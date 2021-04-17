@@ -8,7 +8,52 @@ dependencies:
     - field.field.node.landing_page.layout_selection
     - node.type.landing_page
   module:
+    - field_group
     - path
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_content:
+      children:
+        - title
+      parent_name: group_tabs
+      weight: 12
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+    group_settings:
+      children:
+        - field_edgy
+        - layout_selection
+      parent_name: group_tabs
+      weight: 13
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Settings
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -16,12 +61,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_edgy:
-    weight: 1
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
@@ -30,7 +75,7 @@ content:
   layout_selection:
     type: options_select
     region: content
-    weight: 26
+    weight: 13
     settings: {  }
     third_party_settings: {  }
   path:
@@ -43,7 +88,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 3
     region: content
     third_party_settings: {  }
   status:
@@ -57,12 +102,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 11
     region: content
     settings:
       size: 60
@@ -70,7 +115,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

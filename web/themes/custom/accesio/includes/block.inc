@@ -6,6 +6,7 @@
  */
 
 use Drupal\block\Entity\Block;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Implements hook_preprocess_HOOK().
@@ -18,6 +19,22 @@ function accesio_preprocess_block(&$vars) {
     $block = Block::load($vars['elements']['#id']);
     $region = $block->getRegion();
     $vars['content']['#attributes']['region'] = $region;
+  }
+
+
+  // Field_component_background preprocessing.
+  if (!empty($vars["content"]["field_media"][0]["#media"])) {
+    // Get the public path to the image.
+    if (!empty($vars["content"]["field_media"][0]["#media"]->field_media_image->entity->uri->value)) {
+      $image_public_uri = $vars["content"]["field_media"][0]["#media"]->field_media_image->entity->uri->value;
+      // Define the image attributes for use in the template.
+      $vars["image_alt"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->alt;
+      $vars["image_width"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->width;
+      $vars["image_height"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->height;
+      // Define the image path using sf_hero_banner.
+      // Other image styles can bet set for this as needed.
+      $vars["image_style_hero"] = ImageStyle::load('max_2600x2600')->buildUrl($image_public_uri);
+    }
   }
 }
 

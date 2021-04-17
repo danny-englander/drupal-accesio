@@ -1,0 +1,28 @@
+uuid: 52f8e62d-3065-44c4-8d81-37ddd9751e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote
+    - field.storage.block_content.field_text
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    restricted_html: '0'
+    plain_text: '0'
+id: block_content.quote.field_text
+field_name: field_text
+entity_type: block_content
+bundle: quote
+label: 'Quote Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

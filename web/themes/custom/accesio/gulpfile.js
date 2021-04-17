@@ -8,6 +8,7 @@ const gulp = require('gulp'),
   sassGlob = require('gulp-sass-glob'),
   browserSync = require('browser-sync').create(),
   rename = require('gulp-rename'),
+  concat = require('gulp-concat'),
   cleanCSS = require('gulp-clean-css'),
   debug = require('gulp-debug'),
   mode = require('gulp-mode')(),
@@ -150,6 +151,14 @@ gulp.task('vendors', function () {
     .pipe(gulp.dest('./dist/vendor/css/min'));
 });
 
+// Combine the global css files into one for ckeditor to use.
+gulp.task('concat', function () {
+  return gulp.src('./dist/css/global/*.css')
+    .pipe(csscomb('./csscomb.json'))
+    .pipe(concat('ckeditor.css'))
+    .pipe(gulp.dest('./dist/css'));
+});
+
 // browser-sync watch.
 gulp.task('watch', ['browser-sync'], function (gulpCallback) {
   gulp.watch("./src/scss/**/*.scss", ['sass']);
@@ -167,3 +176,6 @@ gulp.task('svg', ['svgSprite']);
 gulp.task('default', ['sass', 'scripts', 'watch']);
 
 gulp.task('vendor', ['vendors']);
+
+// Concat CSS for ckeditor.
+gulp.task('combine', ['concat']);

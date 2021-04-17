@@ -24,7 +24,7 @@ regions:
   hidden: 'Hidden'
 
 ckeditor_stylesheets:
-  - dist/css/accesio.css
+  - dist/css/ckeditor.css
 
 ## Note, see https://www.drupal.org/project/drupal/issues/2642122 and
 ## https://www.drupal.org/project/drupal/issues/2642122#comment-10705712 for

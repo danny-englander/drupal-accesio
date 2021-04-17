@@ -41,7 +41,7 @@
     width: 100%;
     text-align: left;
     padding: 24px 0;
-    @include remix-icon("\ea11", $margin: 0 8px 0 0, $font-size: 28px, $transdur: .5s);
+    @include remix-icon("\ea11", $margin: 0 8px 0 0, $top: 42px, $font-size: 28px, $right: 0, $transdur: .5s, $position: absolute);
 
     &[aria-expanded="true"] {
       margin-bottom: 0;
@@ -50,7 +50,6 @@
       &:after {
         transform: rotate(405deg);
       }
-      // @include md-icon("\e148", $font-size: 24px, $rotate: 45);
     }
 
     #{$a-tags-hover} {

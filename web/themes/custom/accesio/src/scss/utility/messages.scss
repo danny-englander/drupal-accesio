@@ -71,7 +71,7 @@
 }
 
 .messages--status {
-  border-color: green;
+  border-color: #007c00;
 }
 
 .messages--warning {
@@ -156,10 +156,12 @@
   .messages {
     border-width: 1px 1px 1px 5px; /* LTR */
   }
+
   [dir="rtl"] .messages {
     border-right-width: 5px;
     border-left-width: 1px;
   }
+
   .messages__header {
     filter: grayscale(1) brightness(1.5) contrast(10);
   }

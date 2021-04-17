@@ -9,7 +9,9 @@ dependencies:
     - node.type.landing_page
   content:
     - 'block_content:hero:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
+    - 'block_content:quote:b51f6aa3-cf5e-4998-af98-99468b1c8bf3'
     - 'block_content:statistics:0dfc7c25-b2a1-416d-bb09-646d18ce5592'
+    - 'block_content:text_bg_image:9c79f25b-f695-423e-8ce4-39bc1f8633b7'
   module:
     - block_content
     - layout_builder
@@ -70,7 +72,42 @@ third_party_settings:
                   class: foo
                   style: ''
                   data: ''
-            weight: 2
+              layout_builder_styles_style:
+                - c_title_centered
+                - c_title_border_bottom
+            weight: 1
+          bc2c651c-9d29-4a79-b871-88b606ddb7a1:
+            uuid: bc2c651c-9d29-4a79-b871-88b606ddb7a1
+            region: content
+            configuration:
+              id: 'block_content:b51f6aa3-cf5e-4998-af98-99468b1c8bf3'
+              label: Quote
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              type: quote
+              uuid: b51f6aa3-cf5e-4998-af98-99468b1c8bf3
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 6
+          deff78b8-e6fe-4e78-b19b-6f431794d0f5:
+            uuid: deff78b8-e6fe-4e78-b19b-6f431794d0f5
+            region: content
+            configuration:
+              id: 'block_content:9c79f25b-f695-423e-8ce4-39bc1f8633b7'
+              label: 'Help Save Bears Ears National Monument'
+              provider: block_content
+              label_display: visible
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 5
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }

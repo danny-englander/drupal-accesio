@@ -1,11 +1,11 @@
-uuid: fbc9664d-1b68-4e28-b0ac-69d8131ac586
+uuid: 3c147743-c115-4712-9ade-146106f683f4
 langcode: en
 status: true
 dependencies: {  }
-id: padding_bottom
+id: c_padding_bottom
 label: 'Padding Bottom'
 classes: padding-bottom
-type: section
-weight: -5
+type: component
+weight: -6
 block_restrictions: {  }
 layout_restrictions: {  }

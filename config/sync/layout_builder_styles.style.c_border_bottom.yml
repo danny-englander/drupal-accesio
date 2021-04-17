@@ -1,0 +1,11 @@
+uuid: 7b22670b-ff22-4d74-811b-c16d9307da7a
+langcode: en
+status: true
+dependencies: {  }
+id: c_border_bottom
+label: 'Border Bottom'
+classes: border-bottom
+type: component
+weight: -10
+block_restrictions: {  }
+layout_restrictions: {  }

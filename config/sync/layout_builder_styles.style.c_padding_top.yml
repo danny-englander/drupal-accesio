@@ -1,11 +1,11 @@
-uuid: 4b80cad6-8dc9-4634-9c9f-951dd3e97561
+uuid: 86a470a7-b170-4a2f-8c47-41191f376e66
 langcode: en
 status: true
 dependencies: {  }
-id: padding_top
+id: c_padding_top
 label: 'Padding Top'
 classes: padding-top
-type: section
-weight: -4
+type: component
+weight: -7
 block_restrictions: {  }
 layout_restrictions: {  }

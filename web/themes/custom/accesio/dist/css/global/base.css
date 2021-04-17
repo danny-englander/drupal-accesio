@@ -404,4 +404,8 @@ html {
   padding-right: 15px;
 }
 
+.cke_editable p {
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=base.css.map */

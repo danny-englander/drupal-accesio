@@ -1,0 +1,11 @@
+uuid: c8d3308c-4f99-4858-b4ea-919a0d59e728
+langcode: en
+status: true
+dependencies: {  }
+id: c_title_centered
+label: 'Title Centered'
+classes: title-centered
+type: component
+weight: -9
+block_restrictions: {  }
+layout_restrictions: {  }
