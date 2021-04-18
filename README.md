@@ -1,7 +1,11 @@
 # Accesio: A Drupal 9 component based theme centering around accessibility and social justice.
 
+## A note about branches
+* The most current branch is [Layout Builder based](https://github.com/danny-englander/drupal-accesio/commits/layout-builder)
+* The main branch is [Paragraph based](https://github.com/danny-englander/drupal-accesio/commits/main)
+
 ## Conventions
-* Granular approach to CSS. Load only what is needed on any given page via a component based CSS approach. 
+* Granular approach to CSS. Load only what is needed on any given page via a component based CSS approach.
 * Minimal base theme using Stark as well as unsetting core libraries using `hook_library_info_alter`.
 * Modular content using the Paragraphs module.
 * Twig field value for clean readable classes which removes most field markup expect in cases where needed.
@@ -16,3 +20,5 @@
 
 ## Screen captures
 ![screenshot](web/themes/custom/accesio/screenshot.png)
+
+
