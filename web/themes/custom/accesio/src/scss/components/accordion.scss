@@ -21,7 +21,7 @@
   }
 
   &__items {
-    border-top: 1px solid $gray;
+  //  border-top: 1px solid $gray;
     margin-bottom: 50px;
     padding: 0;
 
@@ -69,7 +69,7 @@
   }
 
   &__item {
-    border-bottom: 1px solid $gray;
+    border-bottom: 2px solid $charcoal;
   }
 
   &__title {

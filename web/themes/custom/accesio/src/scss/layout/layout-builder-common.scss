@@ -5,27 +5,36 @@
 
 .layout {
 
+  &__region {
+    padding-bottom: 100px;
+  }
+
   .block {
+    padding-bottom: 120px;
 
-    > h2 {
-      font-weight: 500;
-      @include rem(font-size, 36px);
-      @include rem(line-height, 38px);
-      @include rem(margin-bottom, 17px);
-      margin-top: 0;
-      @include container(1250px);
+    &.quote {
+      padding-bottom: 0;
+    }
+  }
 
-      @include mq($from: small_desktop) {
-        @include rem(font-size, 46px);
-        @include rem(line-height, 50px);
-        @include rem(margin-bottom, 40px);
-      }
+  h2.block-title {
+    font-weight: 500;
+    @include rem(font-size, 36px);
+    @include rem(line-height, 38px);
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include mq($from: small_desktop) {
+      @include rem(font-size, 46px);
+      @include rem(line-height, 50px);
+      padding-bottom: 50px;
+      margin-bottom: 0;
     }
   }
 
   .title-centered {
 
-    > h2 {
+    h2.block-title {
       text-align: center;
     }
   }

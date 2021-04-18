@@ -36,16 +36,19 @@
 ] %}
 
 <div{{ attributes.addClass(classes) }}>
+
   {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
   {{ title_suffix }}
 
-  {% block content %}
-    <div class="stats__wrap">
-    {{ content.field_statistic | field_value }}
-    </div>
-  {% endblock %}
+  <div class="stats__inner">
+    {% if label %}
+      <h2 class="block-title">{{ label }}</h2>
+    {% endif %}
 
+    {% block content %}
+      <div class="stats__wrap">
+        {{ content.field_statistic | field_value }}
+      </div>
+    {% endblock %}
+  </div>
 </div>

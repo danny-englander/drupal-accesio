@@ -51,6 +51,13 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   justify-content: center;
 }
 
+@media (min-width: 64em) {
+  .person-card__wrap {
+    margin-left: -36px;
+    margin-right: -36px;
+  }
+}
+
 .person-card__item {
   width: 29%;
   display: -ms-flexbox;

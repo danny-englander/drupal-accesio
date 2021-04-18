@@ -6,28 +6,36 @@ A11Y Color grids.
 https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
 
 */
-.layout .block > h2 {
+.layout__region {
+  padding-bottom: 100px;
+}
+
+.layout .block {
+  padding-bottom: 120px;
+}
+
+.layout .block.quote {
+  padding-bottom: 0;
+}
+
+.layout h2.block-title {
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 2.375rem;
-  margin-bottom: 1.0625rem;
   margin-top: 0;
-  max-width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-bottom: 0;
 }
 
 @media (min-width: 64em) {
-  .layout .block > h2 {
+  .layout h2.block-title {
     font-size: 2.875rem;
     line-height: 3.125rem;
-    margin-bottom: 2.5rem;
+    padding-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 
-.layout .title-centered > h2 {
+.layout .title-centered h2.block-title {
   text-align: center;
 }
 

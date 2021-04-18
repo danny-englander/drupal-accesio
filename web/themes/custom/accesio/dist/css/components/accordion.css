@@ -34,7 +34,6 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .c-accordion__items {
-  border-top: 1px solid #b7b7b7;
   margin-bottom: 50px;
   padding: 0;
 }
@@ -98,7 +97,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .c-accordion__item {
-  border-bottom: 1px solid #b7b7b7;
+  border-bottom: 2px solid #404040;
 }
 
 .c-accordion__title {

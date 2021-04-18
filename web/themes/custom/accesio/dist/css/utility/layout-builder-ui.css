@@ -226,4 +226,8 @@ div[id^="__lpform_edit-settings-label-"] {
   height: auto;
 }
 
+.layout-builder--content-preview-disabled .layout .block {
+  padding-bottom: 0;
+}
+
 /*# sourceMappingURL=layout-builder-ui.css.map */

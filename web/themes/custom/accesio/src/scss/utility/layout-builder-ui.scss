@@ -231,4 +231,10 @@ div[id^="__lpform_edit-settings-label-"] {
   }
 }
 
+.layout .block {
+  .layout-builder--content-preview-disabled & {
+    padding-bottom: 0;
+  }
+}
+
 

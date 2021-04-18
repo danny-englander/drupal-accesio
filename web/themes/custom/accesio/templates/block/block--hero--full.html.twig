@@ -60,12 +60,12 @@
               {% if is_h1 | render %}
                 {# if h1 checkbox has been filled. #}
                 {% if label %}
-                  <h1{{ title_attributes }}>{{ label }}</h1>
+                  <h1 class="block-title">{{ label }}</h1>
                 {% endif %}
 
               {% else %}
                 {% if label %}
-                  <h2{{ title_attributes }}>{{ label }}</h2>
+                  <h2 class="block-title">{{ label }}</h2>
                 {% endif %}
               {% endif %}
             </div>

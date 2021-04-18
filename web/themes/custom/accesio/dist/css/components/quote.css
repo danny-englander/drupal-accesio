@@ -15,6 +15,11 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   margin-bottom: 60px;
 }
 
+.page-lb .quote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .quote__inner {
   max-width: 1280px;
   margin-left: auto;

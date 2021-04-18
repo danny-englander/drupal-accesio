@@ -63,13 +63,12 @@
 
 // Break out of the container.
 @mixin full-width() {
-  margin: 0;
+  margin: 0 -50vw;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  overflow: hidden;
 }
 
 @mixin container($max-width) {

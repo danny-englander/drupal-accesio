@@ -6,9 +6,6 @@
 .person-card {
   @include container(1300px);
 
-  //temp
-  //margin-bottom: 80px;
-
   * {
     text-decoration: none;
     color: $black;
@@ -43,6 +40,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @include mq($from: small_desktop) {
+      margin-left: -36px;
+      margin-right: -36px;
+    }
   }
 
   &__item {
