@@ -4,12 +4,24 @@ status: true
 dependencies:
   config:
     - block_content.type.people
+    - field.field.block_content.people.field_bg_color
     - field.field.block_content.people.field_people_ref
+  module:
+    - color_field
 id: block_content.people.default
 targetEntityType: block_content
 bundle: people
 mode: default
 content:
+  field_bg_color:
+    weight: 1
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
   field_people_ref:
     weight: 0
     label: hidden

@@ -10,6 +10,10 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   padding-bottom: 100px;
 }
 
+.layout__region--second, .layout__region--first {
+  padding-bottom: 0;
+}
+
 .layout .block {
   padding-bottom: 120px;
 }
@@ -39,8 +43,29 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   text-align: center;
 }
 
+.layout--twocol-section {
+  -ms-flex-wrap: inherit;
+  flex-wrap: inherit;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.layout--twocol-section > div {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
 .bottom-padding-remove {
   padding-bottom: 0 !important;
+}
+
+.full-width {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=layout-builder-common.css.map */

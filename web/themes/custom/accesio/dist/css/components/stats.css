@@ -43,12 +43,6 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   }
 }
 
-.stats.full-width {
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 @media (min-width: 32.5em) {
   .stats.full-width {
     display: block;

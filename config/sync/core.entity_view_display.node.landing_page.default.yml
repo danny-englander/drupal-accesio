@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
+    - block_content.type.multimedia
     - field.field.node.landing_page.field_edgy
     - field.field.node.landing_page.layout_builder__layout
     - field.field.node.landing_page.layout_selection
@@ -128,7 +130,9 @@ third_party_settings:
               uuid: bf68fdf8-461b-4455-9d6b-e7033bbba9f6
               context_mapping: {  }
             additional:
-              layout_builder_styles_style: {  }
+              layout_builder_styles_style:
+                - c_full_width
+                - c_title_centered
             weight: 8
           133efd7d-da10-4de4-82a0-9eaf212923f5:
             uuid: 133efd7d-da10-4de4-82a0-9eaf212923f5
@@ -169,9 +173,39 @@ third_party_settings:
         layout_id: layout_twocol_section
         layout_settings:
           label: ''
-          column_widths: 75-25
+          column_widths: 33-67
           layout_builder_styles_style: {  }
-        components: {  }
+        components:
+          43c6221a-2c1c-4344-99ad-31ce3bbbc207:
+            uuid: 43c6221a-2c1c-4344-99ad-31ce3bbbc207
+            region: first
+            configuration:
+              id: 'inline_block:basic'
+              label: 'Praesent ac massa at ligula'
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 13
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 1
+          2e281a44-bede-4b7a-b96c-49513ebdb42b:
+            uuid: 2e281a44-bede-4b7a-b96c-49513ebdb42b
+            region: second
+            configuration:
+              id: 'inline_block:multimedia'
+              label: 'An Image'
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 12
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 0
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }

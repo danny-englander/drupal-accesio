@@ -29,9 +29,6 @@
   }
 
   &.full-width {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
 
     @include mq($from: small_plus) {
       display: block;

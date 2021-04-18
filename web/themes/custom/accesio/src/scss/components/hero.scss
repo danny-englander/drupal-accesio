@@ -38,6 +38,10 @@
     width: 100%;
     border-bottom: 10px solid $primary-color;
 
+    .page-lb & {
+      border-bottom: 0;
+    }
+
     * {
       color: $white;
     }

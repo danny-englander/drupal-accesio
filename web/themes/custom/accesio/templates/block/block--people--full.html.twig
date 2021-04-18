@@ -26,25 +26,37 @@
  */
 #}
 
+{% if content.field_bg_color | render %}
+  {% set bg_color = content.field_bg_color.0["#markup"] %}
+  {% set has_bg = 'has-bg-color' %}
+  {# eg. #a52a2a #}
+{% endif %}
+
 {{ attach_library('accesio/person_card') }}
 
 {% set classes = [
+  has_bg,
   'person-card',
   'block',
   'block-' ~ configuration.provider|clean_class,
   'block-' ~ plugin_id|clean_class,
 ] %}
 
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }} style="background-color:{{ bg_color }}">
+
   {{ title_prefix }}
-  {% if label %}
-    <h2 class="block-title">{{ label }}</h2>
-  {% endif %}
   {{ title_suffix }}
 
   {% block content %}
-    <div class="person-card__wrap">
-      {{ content.field_people_ref | field_value }}
+    <div class="person-card__inner">
+
+      {% if label %}
+        <h2 class="block-title"><span>{{ label }}</span></h2>
+      {% endif %}
+
+      <div class="person-card__wrap">
+        {{ content.field_people_ref | field_value }}
+      </div>
     </div>
   {% endblock %}
 

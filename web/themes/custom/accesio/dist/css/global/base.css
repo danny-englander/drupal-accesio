@@ -366,6 +366,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .page-contained-width .l-content {
   margin-top: 40px;
   margin-bottom: 40px;

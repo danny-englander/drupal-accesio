@@ -99,6 +99,23 @@ img {
   thead th {
     font-size: 15px !important;
   }
+
+  .color_field_widget_box__square {
+    height: 38px;
+    width: 38px;
+    margin-right: 10px !important;
+    margin-bottom: 36px !important;
+
+    &.active {
+      height: 55px;
+      width: 55px;
+    }
+  }
+
+  .color_field_widget_box__square--transparent {
+    height: 38px;
+    width: 38px;
+  }
 }
 
 .ui-dialog fieldset:not(.fieldgroup) > .fieldset-wrapper {
@@ -209,12 +226,14 @@ div[id^="__lpform_edit-settings-label-"] {
   margin: 0 auto !important;
 }
 
+
 .quote {
   .layout-builder--content-preview-disabled & {
     border: 0;
   }
 }
 
+.person-card,
 .stats {
   .layout-builder--content-preview-disabled & {
     background-color: transparent !important;

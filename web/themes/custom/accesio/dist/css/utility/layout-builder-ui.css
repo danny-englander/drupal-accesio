@@ -96,6 +96,23 @@ img {
   font-size: 15px !important;
 }
 
+#layout-builder-modal .color_field_widget_box__square {
+  height: 38px;
+  width: 38px;
+  margin-right: 10px !important;
+  margin-bottom: 36px !important;
+}
+
+#layout-builder-modal .color_field_widget_box__square.active {
+  height: 55px;
+  width: 55px;
+}
+
+#layout-builder-modal .color_field_widget_box__square--transparent {
+  height: 38px;
+  width: 38px;
+}
+
 .ui-dialog fieldset:not(.fieldgroup) > .fieldset-wrapper {
   margin-top: 32px;
 }
@@ -213,7 +230,8 @@ div[id^="__lpform_edit-settings-label-"] {
   border: 0;
 }
 
-.layout-builder--content-preview-disabled .stats {
+.layout-builder--content-preview-disabled .person-card, .layout-builder--content-preview-disabled
+.stats {
   background-color: transparent !important;
   padding: 0 !important;
 }

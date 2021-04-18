@@ -29,7 +29,7 @@
 {% if content.field_bg_color | render %}
   {% set bg_color = content.field_bg_color.0["#markup"] %}
   {% set has_bg = 'has-bg-color' %}
-  {# eg. #445533 #}
+  {# eg. #a52a2a #}
 {% endif %}
 
 {{ attach_library('accesio/stats') }}
@@ -41,8 +41,6 @@
   'block-' ~ configuration.provider|clean_class,
   'block-' ~ plugin_id|clean_class,
 ] %}
-
-{{ drupal_breakpoint() }}
 
 <div{{ attributes.addClass(classes) }} style="background-color:{{ bg_color }}">
   {{ title_prefix }}

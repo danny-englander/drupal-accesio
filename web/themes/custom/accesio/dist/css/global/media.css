@@ -57,6 +57,10 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   margin: 0;
 }
 
+.page-lb .media--type-image {
+  padding: 0;
+}
+
 .media--type-image figcaption {
   border-bottom: 1px dashed #6f6f6f;
   margin-bottom: 6px;
@@ -73,6 +77,8 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 
 .media--type-image img {
   margin-bottom: 8px;
+  width: 100%;
+  height: auto;
 }
 
 .media--type-image.media--view-mode-hero {

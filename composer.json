@@ -89,6 +89,9 @@
             "drupal/default_content": {
                 "Export all site content of different content entity types at once using drush command": "https://www.drupal.org/files/issues/2020-12-15/default-content-export-all-3185975-3.patch",
                 "Do not reimport existing entities": "https://www.drupal.org/files/issues/2021-01-04/3162987-136.patch"
+            },
+            "drupal/color_field" : {
+                "The default value not show when select color boxes": "https://www.drupal.org/files/issues/2020-09-16/the-default-value-not-show-when-select-color-boxes-3171205-2.patch"
             }
         },
         "installer-paths": {

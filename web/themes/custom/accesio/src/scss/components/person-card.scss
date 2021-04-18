@@ -4,19 +4,57 @@
 @import "../global-includes";
 
 .person-card {
-  @include container(1300px);
+
+  &.has-bg-color {
+    margin-bottom: 100px;
+  }
+
+  &__inner {
+    @include container(1300px);
+  }
 
   * {
     text-decoration: none;
     color: $black;
   }
 
+  &.has-bg-color {
+
+    .block-title {
+      @include full-width();
+      background-color: $white;
+
+      > span {
+        display: block;
+        @include container(1300px);
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include root-modifier('.has-bg-color') {
+      padding-top: 100px;
+    }
+
+    @include mq($from: small_desktop) {
+      margin-left: -36px;
+      margin-right: -36px;
+    }
+  }
+
   &__content-wrap {
     display: block;
     box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
 
-    &:hover {
+    @include root-modifier('.has-bg-color') {
+      background-color: $white;
+    }
 
+    &:hover {
       img {
         transform: scale(1.2);
       }
@@ -34,17 +72,6 @@
 
   &__title {
     @include rem(font-size, 18px);
-  }
-
-  &__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    @include mq($from: small_desktop) {
-      margin-left: -36px;
-      margin-right: -36px;
-    }
   }
 
   &__item {
