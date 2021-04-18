@@ -17,8 +17,14 @@
   margin-bottom: 30px;
   padding-bottom: 30px;
 
+  &.layout-builder--content-preview-disabled {
+    .contextual-region {
+      outline: 1px solid var(--colorGinPrimary) !important;
+    }
+  }
+
   .contextual-region {
-    outline: 1px solid var(--colorGinPrimary) !important;
+   // outline: 1px solid var(--colorGinPrimary) !important;
 
     .contextual .contextual-links a {
       font-size: 18px;
@@ -192,10 +198,18 @@ div[id^="__lpform_edit-settings-label-"] {
   position: relative;
 }
 
+.person-card,
 .c-accordion,
 .stats {
-  max-width: 100%;
   display: block;
+  margin: 0 auto !important;
+}
+
+.quote {
+  
+  .layout-builder--content-preview-disabled & {
+    border: 0;
+  }
 }
 
 .glb-form-type--checkbox.js-form-item-preview-regions {

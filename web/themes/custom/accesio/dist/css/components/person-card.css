@@ -1,0 +1,76 @@
+/**
+ * Hero component styling.
+ */
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+.person-card {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.person-card * {
+  text-decoration: none;
+  color: #212121;
+}
+
+.person-card__content-wrap {
+  display: block;
+  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+}
+
+.person-card__content-wrap:hover img {
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.person-card__content {
+  padding: 20px 20px;
+}
+
+.person-card__content h2 {
+  font-size: 1.875rem;
+  margin-bottom: 10px;
+}
+
+.person-card__title {
+  font-size: 1.125rem;
+}
+
+.person-card__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.person-card__item {
+  width: 29%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.person-card__media {
+  overflow: hidden;
+}
+
+.person-card__media img {
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease !important;
+}
+
+/*# sourceMappingURL=person-card.css.map */

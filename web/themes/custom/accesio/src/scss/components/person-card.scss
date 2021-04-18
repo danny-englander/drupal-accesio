@@ -1,0 +1,72 @@
+/**
+ * Hero component styling.
+ */
+@import "../global-includes";
+
+.person-card {
+  @include container(1300px);
+
+  //temp
+  //margin-bottom: 80px;
+
+  * {
+    text-decoration: none;
+    color: $black;
+  }
+
+  &__content-wrap {
+    display: block;
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+
+    &:hover {
+
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__content {
+    padding: 20px 20px;
+
+    h2 {
+      @include rem(font-size, 30px);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    @include rem(font-size, 18px);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    @include mq($from: small_desktop) {
+    }
+  }
+
+  &__media {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform .5s ease !important;
+
+      @include mq($from: small_desktop) {
+      }
+    }
+  }
+}

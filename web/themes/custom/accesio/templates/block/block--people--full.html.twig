@@ -25,7 +25,10 @@
  * @see template_preprocess_block()
  */
 #}
-{% set classes =
+
+{{ attach_library('accesio/person_card') }}
+
+{% set classes = [
   'person-card',
   'block',
   'block-' ~ configuration.provider|clean_class,
@@ -40,7 +43,9 @@
   {{ title_suffix }}
 
   {% block content %}
-    {{ content.field_people_ref }}
+    <div class="person-card__wrap">
+      {{ content.field_people_ref | field_value }}
+    </div>
   {% endblock %}
 
 </div>

@@ -23,7 +23,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   padding-bottom: 30px;
 }
 
-.layout-builder .contextual-region {
+.layout-builder.layout-builder--content-preview-disabled .contextual-region {
   outline: 1px solid var(--colorGinPrimary) !important;
 }
 
@@ -197,10 +197,15 @@ div[id^="__lpform_edit-settings-label-"] {
   position: relative;
 }
 
+.person-card,
 .c-accordion,
 .stats {
-  max-width: 100%;
   display: block;
+  margin: 0 auto !important;
+}
+
+.layout-builder--content-preview-disabled .quote {
+  border: 0;
 }
 
 .glb-form-type--checkbox.js-form-item-preview-regions {

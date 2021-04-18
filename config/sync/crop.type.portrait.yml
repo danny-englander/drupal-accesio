@@ -5,7 +5,7 @@ dependencies: {  }
 id: portrait
 label: Portrait
 description: ''
-aspect_ratio: '13:20'
+aspect_ratio: '13:18'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null

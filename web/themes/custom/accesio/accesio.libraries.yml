@@ -181,3 +181,8 @@ lb_common:
   css:
     theme:
       dist/css/layout/layout-builder-common.css: { }
+
+person_card:
+  css:
+    theme:
+      dist/css/components/person-card.css: { }

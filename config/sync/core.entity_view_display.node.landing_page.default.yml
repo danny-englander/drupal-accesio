@@ -158,7 +158,8 @@ third_party_settings:
               type: people
               uuid: bf68fdf8-461b-4455-9d6b-e7033bbba9f6
               context_mapping: {  }
-            additional: {  }
+            additional:
+              layout_builder_styles_style: {  }
             weight: 7
         third_party_settings: {  }
       -

@@ -71,6 +71,7 @@
  */
 #}
 {% set classes = [
+  'person-card__item',
   'node',
   'node--type-' ~ node.bundle|clean_class,
   node.isPromoted() ? 'node--promoted',
@@ -80,19 +81,30 @@
 ] %}
 
 <section{{ attributes.addClass(classes) }}>
+  <a{{ content_attributes.addClass('person-card__content-wrap') }}
+    href="{{ url }}"
+    rel="bookmark"
+    title="{{ label | field_value }} {{ content.field_pronoun | field_value }}">
 
-  <a{{ content_attributes.addClass('node__content') }} href="{{ url }}" rel="bookmark">
-    {{ content.field_profile_image | field_value }}
+    <div class="person-card__media">
+      {{ content.field_profile_image | field_value }}
+    </div>
 
-    {{ title_prefix }}
-    {% if label and not page %}
-      <h2{{ title_attributes }}>
-        {{ label }} {{ content.field_pronoun | field_value }}
-      </h2>
-    {% endif %}
-    {{ title_suffix }}
+    <div class="person-card__content">
 
-    {{ content.field_subtitle | field_value }}
+      <div class="person-card__name">
+        {{ title_prefix }}
+        {% if label and not page %}
+          <h2{{ title_attributes }}>
+            {{ label | field_value }} {{ content.field_pronoun | field_value }}
+          </h2>
+        {% endif %}
+        {{ title_suffix }}
+      </div>
+
+      <div class="person-card__title">
+        {{ content.field_subtitle | field_value }}
+      </div>
+    </div>
   </a>
-
 </section>
