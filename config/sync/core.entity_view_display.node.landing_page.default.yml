@@ -101,7 +101,7 @@ third_party_settings:
             region: content
             configuration:
               id: 'block_content:c0fada02-aaea-4950-b0ce-f7e47f453027'
-              label: 'An inline video'
+              label: 'Akashinga: The Brave Ones | National Geographic'
               provider: block_content
               label_display: visible
               status: true
