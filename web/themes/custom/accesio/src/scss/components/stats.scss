@@ -78,14 +78,18 @@
   }
 
   &__item-icon {
-
+    margin-top: auto;
 
     .ion-icon {
       @include rem(font-size, 80px);
       color: $primary-color;
     }
-  }
 
+    img {
+      width: 290px;
+      height: 290px;
+    }
+  }
 
   svg {
     width: 200px;

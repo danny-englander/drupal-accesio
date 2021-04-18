@@ -24,7 +24,8 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .layout-builder.layout-builder--content-preview-disabled .contextual-region {
-  outline: 1px solid var(--colorGinPrimary) !important;
+  outline: 2px solid var(--colorGinPrimary) !important;
+  margin-bottom: 30px !important;
 }
 
 .layout-builder .contextual-region .contextual .contextual-links a {
@@ -185,11 +186,15 @@ div[id^="__lpform_edit-settings-label-"] {
   padding: 0 20px;
 }
 
-.js-form-type-select select {
+.js-form-type-select.glb-form-item-layout-settings-column-widths {
+  padding: 0;
+}
+
+.js-form-type-select select[multiple="multiple"] {
   min-height: 100px !important;
 }
 
-.ief-row-entity .js-form-type-select select {
+.ief-row-entity .js-form-type-select select[multiple="multiple"] {
   min-height: inherit !important;
 }
 

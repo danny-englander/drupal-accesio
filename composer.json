@@ -83,7 +83,6 @@
             "drupal/core": {
                 "Allow edit Media items from Media Library modal dialog in CKEditor": "https://www.drupal.org/files/issues/2020-09-03/drupal_core-media_add_edit_link-3168868-1.patch",
                 "Views relationships with multi-valued entity reference fields invalidate Distinct query option": "https://www.drupal.org/files/issues/2020-10-10/2993688-45.patch",
-                "Off-canvas style resets are overriding styles (especially SVGs) resulting in display issues": "https://www.drupal.org/files/issues/2021-03-12/2958588-91-92x.patch",
                 "Add reusable option to inline block creation": "https://www.drupal.org/files/issues/2021-03-18/reusable_inline_block_creation-2999491-66.patch"
             },
             "drupal/default_content": {

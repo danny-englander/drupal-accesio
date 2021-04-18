@@ -19,12 +19,12 @@
 
   &.layout-builder--content-preview-disabled {
     .contextual-region {
-      outline: 1px solid var(--colorGinPrimary) !important;
+      outline: 2px solid var(--colorGinPrimary) !important;
+      margin-bottom: 30px !important;
     }
   }
 
   .contextual-region {
-   // outline: 1px solid var(--colorGinPrimary) !important;
 
     .contextual .contextual-links a {
       font-size: 18px;
@@ -185,7 +185,11 @@ div[id^="__lpform_edit-settings-label-"] {
   position: relative;
   padding: 0 20px;
 
-  select {
+  &.glb-form-item-layout-settings-column-widths {
+    padding: 0;
+  }
+
+  select[multiple="multiple"] {
     min-height: 100px !important;
 
     .ief-row-entity & {
@@ -206,7 +210,7 @@ div[id^="__lpform_edit-settings-label-"] {
 }
 
 .quote {
-  
+
   .layout-builder--content-preview-disabled & {
     border: 0;
   }
