@@ -210,9 +210,15 @@ div[id^="__lpform_edit-settings-label-"] {
 }
 
 .quote {
-
   .layout-builder--content-preview-disabled & {
     border: 0;
+  }
+}
+
+.stats {
+  .layout-builder--content-preview-disabled & {
+    background-color: transparent !important;
+    padding: 0 !important;
   }
 }
 

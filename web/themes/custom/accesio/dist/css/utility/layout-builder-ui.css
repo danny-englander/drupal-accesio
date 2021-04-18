@@ -213,6 +213,11 @@ div[id^="__lpform_edit-settings-label-"] {
   border: 0;
 }
 
+.layout-builder--content-preview-disabled .stats {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
 .glb-form-type--checkbox.js-form-item-preview-regions {
   display: none;
 }

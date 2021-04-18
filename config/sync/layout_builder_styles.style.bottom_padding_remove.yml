@@ -1,0 +1,11 @@
+uuid: f22750bc-eeca-43df-a68e-b9497b27db0f
+langcode: en
+status: true
+dependencies: {  }
+id: bottom_padding_remove
+label: 'Bottom Padding Remove'
+classes: bottom-padding-remove
+type: component
+weight: -7
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -9,4 +9,5 @@ type: component
 weight: -10
 block_restrictions:
   - 'inline_block:multimedia'
+  - 'inline_block:statistics'
 layout_restrictions: {  }

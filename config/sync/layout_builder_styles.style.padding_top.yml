@@ -6,6 +6,6 @@ id: padding_top
 label: 'Padding Top'
 classes: padding-top
 type: section
-weight: -3
+weight: -4
 block_restrictions: {  }
 layout_restrictions: {  }

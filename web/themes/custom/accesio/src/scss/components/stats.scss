@@ -8,18 +8,44 @@
   padding-top: 20px;
   padding-bottom: 50px;
 
-  @include mq($from: small_plus) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
   .page-lb & {
     padding-top: 0;
     padding-bottom: 0;
 
     @include mq($from: small_plus) {
       display: block;
+    }
+  }
+
+  &.has-bg-color {
+    padding-top: 110px;
+    margin-bottom: 80px;
+  }
+
+  @include mq($from: small_plus) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &.full-width {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+    @include mq($from: small_plus) {
+      display: block;
+    }
+  }
+
+  &__inner {
+    @include root-modifier('.full-width') {
+      @include container(1280px);
+    }
+
+    @include root-modifier('.has-bg-color') {
+      background-color: $white;
+      padding: 50px;
     }
   }
 

@@ -13,7 +13,22 @@ Media theming.
     .full-width & {
       max-width: 100%;
     }
+  }
+}
 
+.media {
+  .item--field-caption {
+    margin-top: 10px;
+
+    p {
+      font-family: $font-serif;
+      @include rem(font-size, 21px);
+      font-style: italic;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -53,7 +68,6 @@ Media theming.
   img {
     margin-bottom: 8px;
   }
-
 
   &.media--view-mode-hero {
     padding: 0;

@@ -22,6 +22,20 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   }
 }
 
+.media .item--field-caption {
+  margin-top: 10px;
+}
+
+.media .item--field-caption p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.3125rem;
+  font-style: italic;
+}
+
+.media .item--field-caption p:last-of-type {
+  margin-bottom: 0;
+}
+
 .item--field-media-oembed-video {
   position: relative;
   padding-bottom: 56.25%;

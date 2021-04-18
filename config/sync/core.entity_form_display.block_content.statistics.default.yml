@@ -4,14 +4,23 @@ status: true
 dependencies:
   config:
     - block_content.type.statistics
+    - field.field.block_content.statistics.field_bg_color
     - field.field.block_content.statistics.field_statistic
   module:
+    - color_field
     - inline_entity_form
 id: block_content.statistics.default
 targetEntityType: block_content
 bundle: statistics
 mode: default
 content:
+  field_bg_color:
+    weight: 27
+    settings:
+      default_colors: '#008b8b,#47375d,#0d5d51,#975302,#97024f,#8c1515,#e98300,#53284f,#007c92,#003d5b,#022254,#404040,#5d5d5d,#000000'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
   field_statistic:
     weight: 26
     settings:

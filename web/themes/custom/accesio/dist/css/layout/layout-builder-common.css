@@ -39,4 +39,8 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   text-align: center;
 }
 
+.bottom-padding-remove {
+  padding-bottom: 0 !important;
+}
+
 /*# sourceMappingURL=layout-builder-common.css.map */

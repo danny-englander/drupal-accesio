@@ -44,41 +44,10 @@ third_party_settings:
               info: ''
               view_mode: full
               context_mapping: {  }
-            additional: {  }
-            weight: 0
-          133efd7d-da10-4de4-82a0-9eaf212923f5:
-            uuid: 133efd7d-da10-4de4-82a0-9eaf212923f5
-            region: content
-            configuration:
-              id: 'block_content:0dfc7c25-b2a1-416d-bb09-646d18ce5592'
-              label: 'Our Statistics'
-              provider: block_content
-              label_display: visible
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
             additional:
-              component_attributes:
-                block_attributes:
-                  id: ''
-                  class: bar
-                  style: ''
-                  data: ''
-                block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
-                block_content_attributes:
-                  id: ''
-                  class: foo
-                  style: ''
-                  data: ''
               layout_builder_styles_style:
-                - c_title_centered
-                - c_title_border_bottom
-            weight: 8
+                - bottom_padding_remove
+            weight: 0
           bc2c651c-9d29-4a79-b871-88b606ddb7a1:
             uuid: bc2c651c-9d29-4a79-b871-88b606ddb7a1
             region: content
@@ -160,6 +129,40 @@ third_party_settings:
               context_mapping: {  }
             additional:
               layout_builder_styles_style: {  }
+            weight: 8
+          133efd7d-da10-4de4-82a0-9eaf212923f5:
+            uuid: 133efd7d-da10-4de4-82a0-9eaf212923f5
+            region: content
+            configuration:
+              id: 'block_content:0dfc7c25-b2a1-416d-bb09-646d18ce5592'
+              label: 'Our Statistics'
+              provider: block_content
+              label_display: visible
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: bar
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: foo
+                  style: ''
+                  data: ''
+              layout_builder_styles_style:
+                - c_full_width
+                - c_title_centered
+                - c_title_border_bottom
             weight: 7
         third_party_settings: {  }
       -

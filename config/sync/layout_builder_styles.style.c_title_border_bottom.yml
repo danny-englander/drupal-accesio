@@ -6,6 +6,6 @@ id: c_title_border_bottom
 label: 'Title Border Bottom'
 classes: title-border-bottom
 type: component
-weight: -7
+weight: -8
 block_restrictions: {  }
 layout_restrictions: {  }

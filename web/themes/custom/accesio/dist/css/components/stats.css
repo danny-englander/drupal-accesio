@@ -16,6 +16,22 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   padding-bottom: 50px;
 }
 
+.page-lb .stats {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 32.5em) {
+  .page-lb .stats {
+    display: block;
+  }
+}
+
+.stats.has-bg-color {
+  padding-top: 110px;
+  margin-bottom: 80px;
+}
+
 @media (min-width: 32.5em) {
   .stats {
     display: -ms-flexbox;
@@ -27,15 +43,29 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   }
 }
 
-.page-lb .stats {
-  padding-top: 0;
-  padding-bottom: 0;
+.stats.full-width {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 32.5em) {
-  .page-lb .stats {
+  .stats.full-width {
     display: block;
   }
+}
+
+.full-width .stats__inner {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.has-bg-color .stats__inner {
+  background-color: #fff;
+  padding: 50px;
 }
 
 @media (min-width: 32.5em) {

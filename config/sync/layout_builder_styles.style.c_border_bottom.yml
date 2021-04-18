@@ -6,6 +6,6 @@ id: c_border_bottom
 label: 'Border Bottom'
 classes: border-bottom
 type: component
-weight: -9
+weight: -6
 block_restrictions: {  }
 layout_restrictions: {  }

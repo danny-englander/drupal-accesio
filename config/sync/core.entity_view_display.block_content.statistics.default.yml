@@ -4,12 +4,24 @@ status: true
 dependencies:
   config:
     - block_content.type.statistics
+    - field.field.block_content.statistics.field_bg_color
     - field.field.block_content.statistics.field_statistic
+  module:
+    - color_field
 id: block_content.statistics.default
 targetEntityType: block_content
 bundle: statistics
 mode: default
 content:
+  field_bg_color:
+    weight: 1
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
   field_statistic:
     weight: 0
     label: hidden

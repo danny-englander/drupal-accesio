@@ -26,21 +26,30 @@
  */
 #}
 
+{% if content.field_bg_color | render %}
+  {% set bg_color = content.field_bg_color.0["#markup"] %}
+  {% set has_bg = 'has-bg-color' %}
+  {# eg. #445533 #}
+{% endif %}
+
 {{ attach_library('accesio/stats') }}
 
 {% set classes = [
+  has_bg,
   'stats',
   'block',
   'block-' ~ configuration.provider|clean_class,
   'block-' ~ plugin_id|clean_class,
 ] %}
 
-<div{{ attributes.addClass(classes) }}>
+{{ drupal_breakpoint() }}
 
+<div{{ attributes.addClass(classes) }} style="background-color:{{ bg_color }}">
   {{ title_prefix }}
   {{ title_suffix }}
 
   <div class="stats__inner">
+
     {% if label %}
       <h2 class="block-title">{{ label }}</h2>
     {% endif %}

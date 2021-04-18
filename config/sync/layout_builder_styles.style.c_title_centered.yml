@@ -6,6 +6,6 @@ id: c_title_centered
 label: 'Title Centered'
 classes: title-centered
 type: component
-weight: -8
+weight: -9
 block_restrictions: {  }
 layout_restrictions: {  }
