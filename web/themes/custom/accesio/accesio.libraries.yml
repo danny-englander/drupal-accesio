@@ -186,3 +186,8 @@ person_card:
   css:
     theme:
       dist/css/components/person-card.css: { }
+
+multimedia:
+  css:
+    theme:
+       dist/css/components/multimedia.css: { }

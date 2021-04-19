@@ -1,0 +1,12 @@
+/**
+ * Multimedia component styling.
+ */
+@import "../global-includes";
+
+.multimedia {
+  @include container(1440px);
+
+  .media--type-remote-video {
+    max-width: 100%;
+  }
+}

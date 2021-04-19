@@ -47,7 +47,7 @@
         "drupal/layout_builder_operation_link": "^1.0",
         "drupal/layout_builder_restrictions": "^2.8",
         "drupal/layout_builder_styles": "^1.0@beta",
-        "drupal/layout_library": "^1.0@beta",
+        "drupal/layout_library": "1.x-dev",
         "drupal/lazy": "^3.6",
         "drupal/link_attributes": "^1.11",
         "drupal/linkit": "5.0-beta12",
@@ -92,6 +92,9 @@
             },
             "drupal/color_field" : {
                 "The default value not show when select color boxes": "https://www.drupal.org/files/issues/2020-09-16/the-default-value-not-show-when-select-color-boxes-3171205-2.patch"
+            },
+            "drupal/layout_library" : {
+                "Add hide the content preview option to layout editing": "https://www.drupal.org/files/issues/2019-11-07/3081497_add-hide-content-preview-02.patch"
             }
         },
         "installer-paths": {

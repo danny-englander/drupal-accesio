@@ -58,6 +58,7 @@
 
   &__attribution {
     @include rem(font-size, 20px);
+    font-weight: 600;
 
     @include mq($from: small_desktop) {
       padding-left: 230px;

@@ -1,4 +1,4 @@
-# Accesio: A Drupal 9 component based theme centering around accessibility and social justice.
+# Accesio: A Drupal 9 Layout Builder component based theme centering around accessibility and social justice.
 
 ## A note about branches
 * The most current branch is [Layout Builder based](https://github.com/danny-englander/drupal-accesio/commits/layout-builder)
@@ -20,5 +20,6 @@
 
 ## Screen captures
 ![screenshot](web/themes/custom/accesio/screenshot.png)
+
 
 

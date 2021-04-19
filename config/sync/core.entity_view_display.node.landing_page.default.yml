@@ -3,22 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.accordion
     - block_content.type.basic
+    - block_content.type.hero
     - block_content.type.multimedia
+    - block_content.type.people
+    - block_content.type.quote
+    - block_content.type.statistics
+    - block_content.type.text_bg_image
     - field.field.node.landing_page.field_edgy
     - field.field.node.landing_page.layout_builder__layout
     - field.field.node.landing_page.layout_selection
     - node.type.landing_page
-  content:
-    - 'block_content:accordion:2bbcb890-5b66-45aa-93bb-12e1ee40ba40'
-    - 'block_content:hero:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
-    - 'block_content:multimedia:c0fada02-aaea-4950-b0ce-f7e47f453027'
-    - 'block_content:people:bf68fdf8-461b-4455-9d6b-e7033bbba9f6'
-    - 'block_content:quote:b51f6aa3-cf5e-4998-af98-99468b1c8bf3'
-    - 'block_content:statistics:0dfc7c25-b2a1-416d-bb09-646d18ce5592'
-    - 'block_content:text_bg_image:9c79f25b-f695-423e-8ce4-39bc1f8633b7'
   module:
-    - block_content
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
@@ -34,140 +31,118 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          2643b289-ebae-4920-aa4c-c5c9acae4ca0:
-            uuid: 2643b289-ebae-4920-aa4c-c5c9acae4ca0
+          048415e3-f233-40e1-b5ea-2d477dec6de0:
+            uuid: 048415e3-f233-40e1-b5ea-2d477dec6de0
             region: content
             configuration:
-              id: 'block_content:2ffcbc2e-a70f-4703-b43b-0ecb5b29c28f'
+              id: 'inline_block:hero'
               label: 'Help Support the Hoop Bus'
-              provider: block_content
+              provider: layout_builder
               label_display: visible
-              status: true
-              info: ''
               view_mode: full
+              block_revision_id: 17
+              block_serialized: null
               context_mapping: {  }
             additional:
               layout_builder_styles_style:
                 - bottom_padding_remove
-            weight: 0
-          bc2c651c-9d29-4a79-b871-88b606ddb7a1:
-            uuid: bc2c651c-9d29-4a79-b871-88b606ddb7a1
+            weight: -9
+          c2aaa9ed-6709-4b53-88b3-4e1d1b1257a4:
+            uuid: c2aaa9ed-6709-4b53-88b3-4e1d1b1257a4
             region: content
             configuration:
-              id: 'block_content:b51f6aa3-cf5e-4998-af98-99468b1c8bf3'
-              label: Quote
-              provider: block_content
-              label_display: '0'
-              status: true
-              info: ''
-              view_mode: full
-              type: quote
-              uuid: b51f6aa3-cf5e-4998-af98-99468b1c8bf3
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style: {  }
-            weight: 12
-          2335ec38-0161-4f81-8dfe-e10cea0d09e1:
-            uuid: 2335ec38-0161-4f81-8dfe-e10cea0d09e1
-            region: content
-            configuration:
-              id: 'block_content:c0fada02-aaea-4950-b0ce-f7e47f453027'
-              label: 'Akashinga: The Brave Ones | National Geographic'
-              provider: block_content
-              label_display: visible
-              status: true
-              info: ''
-              view_mode: full
-              type: multimedia
-              uuid: c0fada02-aaea-4950-b0ce-f7e47f453027
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style:
-                - c_title_centered
-            weight: 10
-          8bca0bce-3c2b-47bb-b973-6c7f81562fec:
-            uuid: 8bca0bce-3c2b-47bb-b973-6c7f81562fec
-            region: content
-            configuration:
-              id: 'block_content:2bbcb890-5b66-45aa-93bb-12e1ee40ba40'
-              label: FAQ
-              provider: block_content
-              label_display: visible
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style: {  }
-            weight: 9
-          deff78b8-e6fe-4e78-b19b-6f431794d0f5:
-            uuid: deff78b8-e6fe-4e78-b19b-6f431794d0f5
-            region: content
-            configuration:
-              id: 'block_content:9c79f25b-f695-423e-8ce4-39bc1f8633b7'
-              label: 'Help Save Bears Ears National Monument'
-              provider: block_content
-              label_display: visible
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style: {  }
-            weight: 11
-          8f71618d-6962-4159-a30b-b51d221ef1d0:
-            uuid: 8f71618d-6962-4159-a30b-b51d221ef1d0
-            region: content
-            configuration:
-              id: 'block_content:bf68fdf8-461b-4455-9d6b-e7033bbba9f6'
-              label: 'Meet Our Staff'
-              provider: block_content
-              label_display: visible
-              status: true
-              info: ''
-              view_mode: full
-              type: people
-              uuid: bf68fdf8-461b-4455-9d6b-e7033bbba9f6
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style:
-                - c_full_width
-                - c_title_centered
-            weight: 8
-          133efd7d-da10-4de4-82a0-9eaf212923f5:
-            uuid: 133efd7d-da10-4de4-82a0-9eaf212923f5
-            region: content
-            configuration:
-              id: 'block_content:0dfc7c25-b2a1-416d-bb09-646d18ce5592'
+              id: 'inline_block:statistics'
               label: 'Our Statistics'
-              provider: block_content
+              provider: layout_builder
               label_display: visible
-              status: true
-              info: ''
               view_mode: full
+              block_revision_id: 21
+              block_serialized: null
               context_mapping: {  }
             additional:
-              component_attributes:
-                block_attributes:
-                  id: ''
-                  class: bar
-                  style: ''
-                  data: ''
-                block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
-                block_content_attributes:
-                  id: ''
-                  class: foo
-                  style: ''
-                  data: ''
               layout_builder_styles_style:
                 - c_full_width
                 - c_title_centered
-                - c_title_border_bottom
-            weight: 7
+            weight: -6
+          f6131fe5-8316-48bb-92c5-6b0152a44295:
+            uuid: f6131fe5-8316-48bb-92c5-6b0152a44295
+            region: content
+            configuration:
+              id: 'inline_block:people'
+              label: 'Meet Some of Our Team'
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 22
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - c_full_width
+                - c_title_centered
+            weight: -4
+          00f9613c-567e-4ccd-afb9-b5270d7d66c5:
+            uuid: 00f9613c-567e-4ccd-afb9-b5270d7d66c5
+            region: content
+            configuration:
+              id: 'inline_block:accordion'
+              label: FAQ
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 23
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - c_title_centered
+            weight: -2
+          edb89fde-5618-43c5-bb23-ac7e8675384a:
+            uuid: edb89fde-5618-43c5-bb23-ac7e8675384a
+            region: content
+            configuration:
+              id: 'inline_block:multimedia'
+              label: 'Video: Akashinga: The Brave Ones | National Geographic'
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 24
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - c_title_centered
+            weight: 0
+          bcb02aa4-ebc6-45d0-a585-184965a03b79:
+            uuid: bcb02aa4-ebc6-45d0-a585-184965a03b79
+            region: content
+            configuration:
+              id: 'inline_block:text_bg_image'
+              label: 'Help Save Bears Ears National Monument'
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 25
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 2
+          d0fb907a-c29e-4288-b8b4-ae76c9213c42:
+            uuid: d0fb907a-c29e-4288-b8b4-ae76c9213c42
+            region: content
+            configuration:
+              id: 'inline_block:quote'
+              label: Quote
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 26
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 4
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section
@@ -211,6 +186,8 @@ third_party_settings:
     allowed_block_categories: {  }
     entity_view_mode_restriction:
       whitelisted_blocks:
+        'Accesio Custom': {  }
+        'Chaos Tools': {  }
         'Content fields': {  }
         Forms: {  }
         Help: {  }
@@ -225,6 +202,8 @@ third_party_settings:
       allowed_layouts:
         - layout_onecol
         - layout_twocol_section
+        - layout_threecol_section
+        - layout_accesio_twocol_bricks
   layout_library:
     enable: true
 id: node.landing_page.default

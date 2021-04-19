@@ -1,11 +1,6 @@
 /**
  * Layout Builder UI enhancements.
  */
-/*
-A11Y Color grids.
-https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
-
-*/
 [aria-label="Layout Builder tools"] {
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +29,10 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 
 .layout-builder.layout-builder--content-preview-disabled .layout-builder-block {
   margin: 32px 0;
+}
+
+.layout-builder .ui-widget.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar {
+  overflow: hidden;
 }
 
 a.layout-builder__link {
@@ -251,6 +250,19 @@ div[id^="__lpform_edit-settings-label-"] {
 
 .layout-builder--content-preview-disabled .layout .block {
   padding-bottom: 0;
+}
+
+#drupal-off-canvas form,
+#drupal-off-canvas label,
+#drupal-off-canvas .description,
+#drupal-off-canvas .form-item .description,
+#drupal-off-canvas .details-description {
+  color: #333;
+}
+
+label,
+details {
+  color: #333;
 }
 
 /*# sourceMappingURL=layout-builder-ui.css.map */

@@ -34,6 +34,10 @@
   &.layout-builder--content-preview-disabled .layout-builder-block {
     margin: 32px 0;
   }
+
+  .ui-widget.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar {
+    overflow: hidden;
+  }
 }
 
 a.layout-builder__link {
@@ -262,4 +266,15 @@ div[id^="__lpform_edit-settings-label-"] {
   }
 }
 
+#drupal-off-canvas form,
+#drupal-off-canvas label,
+#drupal-off-canvas .description,
+#drupal-off-canvas .form-item .description,
+#drupal-off-canvas .details-description {
+  color: #333;
+}
 
+label,
+details {
+  color: #333;
+}
