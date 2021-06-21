@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+  'media',
+  'media--type-' ~ media.bundle()|clean_class,
+  not media.isPublished() ? 'media--unpublished',
+  view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+] %}
+
+<section{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {% if content %}
+
+    <video class="media_video" autoplay="autoplay" muted="muted" loop="loop" id="video-container-0" width="1600" height="670">
+      <source src="{{ content.field_media_video_file | field_value }}" type="video/mp4">
+    </video>
+
+  {% endif %}
+</section>

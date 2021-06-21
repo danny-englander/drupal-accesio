@@ -72,6 +72,7 @@ function accesio_preprocess_paragraph(array &$vars) {
         }
       }
 
+
       // Field_component_background preprocessing.
       if (!empty($vars["content"]["field_media"][0]["#media"])) {
         // Get the public path to the image.
@@ -83,8 +84,7 @@ function accesio_preprocess_paragraph(array &$vars) {
           $vars["image_height"] = $vars["content"]["field_media"][0]["#media"]->field_media_image->height;
           // Define the image path using sf_hero_banner.
           // Other image styles can bet set for this as needed.
-          $vars["image_style_hero"] = ImageStyle::load('max_2600x2600')
-            ->buildUrl($image_public_uri);
+          $vars["image_style_hero"] = ImageStyle::load('max_2600x2600')->buildUrl($image_public_uri);
         }
       }
     }
@@ -158,6 +158,8 @@ function accesio_theme_suggestions_paragraph_alter(array &$suggestions, array $v
 
   // The paragraph bundle name, timeline_item.
   if ($paragraph_bundle === 'timeline_item') {
+
+
     // Check for the field_timeline_style list value.
     if (!empty($paragraph->getParentEntity()->field_timeline_style->value)) {
       // Get the host value and create a template suggestion based on that.

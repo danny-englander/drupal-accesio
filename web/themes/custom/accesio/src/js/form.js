@@ -2,7 +2,7 @@
   Drupal.behaviors.customCheckboxes = {
     attach(context) {
       // Find checkboxes, add markup.
-      let outer_checkboxes = once('yay-only-once', context.querySelectorAll('.js-form-type-checkbox'));
+      let outer_checkboxes = once('yay-only-once', context.querySelectorAll('.js-form-type-checkbox > li'));
       // Loop through each matched element.
       for (let i = 0; i < outer_checkboxes.length; i++) {
         // This is similar to jquery $(this).find('input.form-checkbox).

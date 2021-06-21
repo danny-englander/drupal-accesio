@@ -34,3 +34,12 @@ function accesio_custom_views_query_alter(ViewExecutable $view, QueryPluginBase 
   //  $view->query->where[1]['conditions'][0]['value'] = '%' . $name . '%';
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function accesio_custom_preprocess_page(array &$vars) {
+  // Define the route.
+  $route = \Drupal::routeMatch()->getRouteName();
+  // echo '<h3 style="padding: 10px">' . $route . '</h3>';
+}

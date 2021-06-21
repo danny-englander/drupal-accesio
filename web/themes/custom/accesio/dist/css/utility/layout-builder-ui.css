@@ -248,6 +248,10 @@ div[id^="__lpform_edit-settings-label-"] {
   height: auto;
 }
 
+.layout__region {
+  padding-bottom: 10px;
+}
+
 .layout-builder--content-preview-disabled .layout .block {
   padding-bottom: 0;
 }
