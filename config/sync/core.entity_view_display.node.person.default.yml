@@ -12,8 +12,64 @@ dependencies:
     - field.field.node.person.field_text
     - node.type.person
   module:
+    - ctools
+    - layout_builder
+    - layout_discovery
+    - layout_library
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+          layout_builder_styles_style: {  }
+        components:
+          d81a9933-14ba-429b-a7da-e518e9c9e289:
+            uuid: d81a9933-14ba-429b-a7da-e518e9c9e289
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_profile_image'
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          7a6b6df3-1658-4f6a-8f53-6d67cae59ff1:
+            uuid: 7a6b6df3-1658-4f6a-8f53-6d67cae59ff1
+            region: first
+            configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Content)'
+              provider: ctools
+              label_display: '0'
+              view_mode: teaser
+              context_mapping:
+                entity: layout_builder.entity
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+  layout_library:
+    enable: false
 id: node.person.default
 targetEntityType: node
 bundle: person

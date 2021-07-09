@@ -13,22 +13,59 @@ dependencies:
     - field.field.node.person.field_text
     - node.type.person
   module:
+    - text
     - user
 id: node.person.teaser
 targetEntityType: node
 bundle: person
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_email:
+    type: basic_string
+    weight: 4
+    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_first_name:
+    type: string
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_last_name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_pronoun:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_subtitle:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_text:
+    type: text_default
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_email: true
-  field_first_name: true
-  field_last_name: true
   field_profile_image: true
-  field_pronoun: true
-  field_subtitle: true
-  field_text: true
+  links: true

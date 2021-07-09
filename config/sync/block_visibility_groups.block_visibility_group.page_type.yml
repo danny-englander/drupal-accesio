@@ -23,4 +23,12 @@ conditions:
     negate: false
     context_mapping: {  }
     uuid: 5a13c1d0-0c06-48eb-b129-034695160aee
+  de5e51e3-91c7-49e0-8426-9b7ad00037df:
+    id: node_type
+    bundles:
+      person: person
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: de5e51e3-91c7-49e0-8426-9b7ad00037df
 allow_other_conditions: true
