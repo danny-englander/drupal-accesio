@@ -1,0 +1,43 @@
+name: accesio
+recipe: drupal9
+config:
+  php: '7.4'
+  composer_version: 2.0.7
+  via: 'apache:2.4'
+  webroot: web
+  database: 'mysql:5.7'
+  drush: true
+  xdebug: true
+  config:
+    php: lando/config/php.ini
+services:
+  node:
+    type: 'node:10.19'
+    scanner: false
+    ssl: true
+    sslExpose: false
+    overrides:
+      ports:
+        - '32456:32456'
+        - '32457:32457'
+    command: cd /app/web/themes/custom/bixal_drop && node_modules/.bin/npx gulp
+  appserver:
+    xdebug: true
+    run:
+      - composer self-update
+    config:
+      php: lando/config/php.ini
+    type: 'php:7.4'
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: serverName=appserver
+        DRUSH_OPTIONS_URI: 'http://accesio.lndo.site'
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  npx:
+    service: node
+  gulp:
+    service: node
