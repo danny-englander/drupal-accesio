@@ -35,7 +35,7 @@ gulp.task('browser-sync', ['sass'], function () {
     host: 'accesio.docksal',
     openBrowserAtStart: false,
     reloadOnRestart: true,
-    port: 3034,
+    port: 32456,
     ui: false,
   });
 });

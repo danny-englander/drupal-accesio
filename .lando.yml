@@ -1,4 +1,4 @@
-name: accesio
+name: accesio-lp
 recipe: drupal9
 config:
   php: '7.4'
@@ -31,7 +31,7 @@ services:
     overrides:
       environment:
         PHP_IDE_CONFIG: serverName=appserver
-        DRUSH_OPTIONS_URI: 'http://accesio.lndo.site'
+        DRUSH_OPTIONS_URI: 'http://accesio-lp.lndo.site'
 tooling:
   node:
     service: node
