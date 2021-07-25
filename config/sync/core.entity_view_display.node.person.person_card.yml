@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.person.field_pronoun
     - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
+    - field.field.node.person.layout_selection
     - node.type.person
   module:
     - layout_builder
@@ -54,4 +55,5 @@ hidden:
   field_first_name: true
   field_last_name: true
   field_text: true
+  layout_selection: true
   links: true

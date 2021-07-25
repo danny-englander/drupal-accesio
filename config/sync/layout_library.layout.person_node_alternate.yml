@@ -1,0 +1,51 @@
+uuid: 36c6720e-6672-4b9c-91cc-4cc181f1c036
+langcode: en
+status: true
+dependencies: {  }
+id: person_node_alternate
+label: 'Person Node (alternate)'
+targetEntityType: node
+targetBundle: person
+layout:
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      column_widths: 50-50
+      layout_builder_styles_style: {  }
+    components:
+      88e03428-79f0-4407-a622-01a7c205a003:
+        uuid: 88e03428-79f0-4407-a622-01a7c205a003
+        region: first
+        configuration:
+          id: 'field_block:node:person:field_profile_image'
+          label: 'Profile Image'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: half_width
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style: {  }
+        weight: 0
+      6aa02aa8-4659-40a9-a92c-64d74382bc09:
+        uuid: 6aa02aa8-4659-40a9-a92c-64d74382bc09
+        region: second
+        configuration:
+          id: 'entity_view:node'
+          label: 'Entity view (Content)'
+          provider: ctools
+          label_display: '0'
+          view_mode: teaser
+          context_mapping:
+            entity: layout_builder.entity
+        additional:
+          layout_builder_styles_style: {  }
+        weight: 0
+    third_party_settings: {  }

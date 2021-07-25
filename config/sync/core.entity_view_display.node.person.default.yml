@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.person.field_pronoun
     - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
+    - field.field.node.person.layout_selection
     - node.type.person
   module:
     - ctools
     - layout_builder
+    - layout_builder_restrictions
     - layout_discovery
     - layout_library
     - text
@@ -69,7 +71,13 @@ third_party_settings:
         components: {  }
         third_party_settings: {  }
   layout_library:
-    enable: false
+    enable: true
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      allowed_layouts: {  }
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -135,4 +143,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_selection: true

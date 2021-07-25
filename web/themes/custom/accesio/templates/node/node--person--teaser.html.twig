@@ -70,6 +70,10 @@
  *   in different view modes.
  */
 #}
+
+
+{{ attach_library('accesio/lb_common') }}
+
 {% set classes = [
   'node',
   'node--type-' ~ node.bundle|clean_class,

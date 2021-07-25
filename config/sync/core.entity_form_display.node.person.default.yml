@@ -10,12 +10,65 @@ dependencies:
     - field.field.node.person.field_pronoun
     - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
+    - field.field.node.person.layout_selection
     - node.type.person
   module:
+    - field_group
     - media_library
     - media_library_edit
     - path
     - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: '640'
+      label: Tabs
+    group_content:
+      children:
+        - title
+        - field_first_name
+        - field_last_name
+        - field_pronoun
+        - field_subtitle
+        - field_email
+        - field_profile_image
+        - field_text
+      parent_name: group_tabs
+      weight: 16
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+    group_settings:
+      children:
+        - layout_selection
+      parent_name: group_tabs
+      weight: 17
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Settings
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -23,12 +76,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_email:
-    weight: 5
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -36,7 +89,7 @@ content:
     type: email_default
     region: content
   field_first_name:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -44,7 +97,7 @@ content:
     type: string_textfield
     region: content
   field_last_name:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -53,7 +106,7 @@ content:
     region: content
   field_profile_image:
     type: media_library_widget
-    weight: 6
+    weight: 7
     settings:
       media_types: {  }
     third_party_settings:
@@ -61,14 +114,6 @@ content:
         show_edit: '1'
     region: content
   field_pronoun:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_subtitle:
     weight: 4
     settings:
       size: 60
@@ -76,17 +121,31 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_subtitle:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_text:
-    weight: 7
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
+  layout_selection:
+    type: options_select
+    region: content
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -94,26 +153,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 11
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 14
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 12
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -121,7 +180,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
