@@ -1,4 +1,4 @@
-name: accesio
+name: accesio-lb
 recipe: drupal9
 config:
   php: '7.4'
@@ -18,8 +18,8 @@ services:
     sslExpose: false
     overrides:
       ports:
-        - '32456:32456'
-        - '32457:32457'
+        - '32873:32873'
+        - '32874:32874'
     command: cd /app/web/themes/custom/bixal_drop && node_modules/.bin/npx gulp
   appserver:
     xdebug: true
@@ -31,7 +31,7 @@ services:
     overrides:
       environment:
         PHP_IDE_CONFIG: serverName=appserver
-        DRUSH_OPTIONS_URI: 'http://accesio.lndo.site'
+        DRUSH_OPTIONS_URI: 'http://accesio-lb.lndo.site'
 tooling:
   node:
     service: node
