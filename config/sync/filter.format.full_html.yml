@@ -79,7 +79,9 @@ filters:
     provider: lazy
     status: true
     weight: -46
-    settings: {  }
+    settings:
+      image: true
+      iframe: true
   linkit:
     id: linkit
     provider: linkit

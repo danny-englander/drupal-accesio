@@ -49,6 +49,10 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% if elements.controls | render %}
+        {{ elements.controls }}
+      {% endif %}
+
       <h2>{{ content.field_title | field_value }}</h2>
 
     {% endblock %}

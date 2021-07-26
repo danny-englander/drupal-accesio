@@ -7,10 +7,13 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.blog_hero
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.filtered_list_views
     - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.lpfe_layout_container
+    - paragraphs.paragraphs_type.multimedia
     - paragraphs.paragraphs_type.portfolio
     - paragraphs.paragraphs_type.quote_item
     - paragraphs.paragraphs_type.stats
@@ -49,20 +52,23 @@ settings:
       block: block
       filtered_list_views: filtered_list_views
       stats: stats
+      multimedia: multimedia
+      blog_hero: blog_hero
+      lpfe_layout_container: lpfe_layout_container
       portfolio: portfolio
     target_bundles_drag_drop:
       accordion:
         enabled: true
         weight: -38
-      accordion_group:
-        weight: -28
-        enabled: false
       accordion_item:
         weight: -30
         enabled: false
       block:
         enabled: true
         weight: -27
+      blog_hero:
+        enabled: true
+        weight: 25
       columns:
         enabled: true
         weight: -34
@@ -75,9 +81,12 @@ settings:
       hero:
         enabled: true
         weight: -41
+      lpfe_layout_container:
+        enabled: true
+        weight: 30
       multimedia:
+        enabled: true
         weight: -23
-        enabled: false
       portfolio:
         enabled: true
         weight: 31
@@ -111,7 +120,4 @@ settings:
       title:
         enabled: true
         weight: -40
-      tweet:
-        enabled: true
-        weight: -35
 field_type: entity_reference_revisions

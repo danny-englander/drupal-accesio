@@ -58,6 +58,10 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% if elements.controls | render %}
+        {{ elements.controls }}
+      {% endif %}
+
       <div class="hero__wrap">
 
         <div class="hero__media">

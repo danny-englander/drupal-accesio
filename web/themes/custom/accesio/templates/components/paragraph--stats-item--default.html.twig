@@ -47,8 +47,13 @@
 ] %}
 
 {% block paragraph %}
+
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
+
+      {% if elements.controls | render %}
+        {{ content.controls }}
+      {% endif %}
 
       <div class="stats__item-number">
         <h2>{{ content.field_statistic_number | field_value }}</h2>
@@ -59,9 +64,8 @@
       </div>
 
       <div class="stats__item-icon">
-       {{ content.field_statistic_icon | field_value }}
+        {{ content.field_statistic_icon | field_value }}
       </div>
-
     {% endblock %}
   </div>
 {% endblock paragraph %}

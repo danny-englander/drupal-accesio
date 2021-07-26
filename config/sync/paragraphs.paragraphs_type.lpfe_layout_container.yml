@@ -1,0 +1,17 @@
+uuid: d4f1d93d-c13d-4382-b599-d43dc898ef95
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: lpfe_layout_container
+label: Layout_container
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'
+      layout_twocol: 'Two column'

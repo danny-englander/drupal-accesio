@@ -52,6 +52,11 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
+
+      {% if elements.controls | render %}
+        {{ elements.controls }}
+      {% endif %}
+
       {{ content.field_stats_item_ref | field_value }}
     {% endblock %}
   </div>
