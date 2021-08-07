@@ -54,6 +54,7 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {{ content }}
+      {{ drupal_breakpoint() }}
     {% endblock %}
   </div>
 {% endblock paragraph %}

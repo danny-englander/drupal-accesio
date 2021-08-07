@@ -58,8 +58,10 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      {% if elements.controls | render %}
-        {{ elements.controls }}
+      {% if content.controls | render %}
+        {{ content.controls }}
+        {{ content.insert_before }}
+        {{ content.insert_after }}
       {% endif %}
 
       <div class="hero__wrap">
@@ -106,6 +108,8 @@
           </div>
         </div>
       </div>
+
+
     {% endblock %}
   </div>
 {% endblock paragraph %}

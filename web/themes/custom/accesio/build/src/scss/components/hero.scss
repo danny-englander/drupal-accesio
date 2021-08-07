@@ -1,6 +1,7 @@
 /**
  * Hero component styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .hero {
@@ -84,7 +85,7 @@
   }
 
   &__video-container {
-    height: 600px;
+    height: 606px;
     background-color: #0c0d0e;
 
     @include mq($from: medium-large) {

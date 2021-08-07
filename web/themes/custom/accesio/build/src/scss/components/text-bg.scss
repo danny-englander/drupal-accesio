@@ -1,6 +1,7 @@
 /*
  * Text with background component.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .text-bg {

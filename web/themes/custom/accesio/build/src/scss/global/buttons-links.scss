@@ -2,6 +2,7 @@
 Buttons
 Note, if we need buttons in many different colors, we can make this into a mixin.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 // ******** Buttons ************

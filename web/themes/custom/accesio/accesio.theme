@@ -9,7 +9,7 @@
 // Create new includes as needed.
 // Theme suggestions will be with its
 // corresponding preprocess function.
-$includes_path = dirname(__FILE__) . '/includes/*.inc';
+$includes_path = dirname(__FILE__) . '/php-includes/*.inc';
 foreach (glob($includes_path) as $filename) {
-  require_once dirname(__FILE__) . '/includes/' . basename($filename);
+  require_once dirname(__FILE__) . '/php-includes/' . basename($filename);
 }

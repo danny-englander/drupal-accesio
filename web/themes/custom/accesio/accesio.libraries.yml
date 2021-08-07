@@ -2,17 +2,17 @@ accesio:
   version: VERSION
   css:
     base:
-      dist/vendor/css/min/remixicon.min.css: { minified: true }
-      dist/css/global/base.css: { }
-      dist/css/global/typography.css: { }
-      dist/css/global/buttons-links.css: { }
-      dist/css/global/media.css: { }
-      dist/css/global/list.css: { }
-      dist/css/global/tables.css: { }
+      build/dist/vendor/css/min/remixicon.min.css: { minified: true }
+      build/dist/css/global/base.css: { }
+      build/dist/css/global/typography.css: { }
+      build/dist/css/global/buttons-links.css: { }
+      build/dist/css/global/media.css: { }
+      build/dist/css/global/list.css: { }
+      build/dist/css/global/tables.css: { }
   js:
-    dist/js/once.js: { minified: true, defer: true, async: true }
-    dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
-    dist/js/accesio.js: { }
+    build/dist/js/once.js: { minified: true, defer: true, async: true }
+    build/dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
+    build/dist/js/accesio.js: { }
   dependencies:
     - core/jquery
     - core/drupal
@@ -22,142 +22,142 @@ accesio:
 header:
   css:
     base:
-      dist/css/header/header.css: { }
-      dist/css/header/branding.css: { }
+      build/dist/css/header/header.css: { }
+      build/dist/css/header/branding.css: { }
 
 footer:
   css:
     base:
-      dist/css/footer/footer.css: { }
+      build/dist/css/footer/footer.css: { }
 
 layout:
   css:
     base:
-      dist/css/layout/grid.css: { }
-      dist/css/layout/grid-addons.css: { }
+      build/dist/css/layout/grid.css: { }
+      build/dist/css/layout/grid-addons.css: { }
 
 menu_widescreen:
   css:
     base:
-      dist/css/navigation/menu-widescreen.css: { }
+      build/dist/css/navigation/menu-widescreen.css: { }
   js:
-    dist/js/jquery-meganav.js: { defer: true, async: true }
+    build/dist/js/jquery-meganav.js: { defer: true, async: true }
 
 menu_utility:
   css:
     base:
-      dist/css/navigation/menu-utility.css: { }
+      build/dist/css/navigation/menu-utility.css: { }
 
 pager:
   css:
     base:
-      dist/css/navigation/pager.css: { }
+      build/dist/css/navigation/pager.css: { }
 
 blog_post:
   css:
     theme:
-      dist/css/content/blog-post.css: { }
+      build/dist/css/content/blog-post.css: { }
 
 author:
   css:
     theme:
-      dist/css/content/author.css: { }
+      build/dist/css/content/author.css: { }
 
 blog_hero:
   css:
     theme:
-      dist/css/components/blog-hero.css: { }
+      build/dist/css/components/blog-hero.css: { }
 
 hero:
   css:
     theme:
-      dist/css/components/hero.css: { }
+      build/dist/css/components/hero.css: { }
 
 c_text:
   css:
     theme:
-      dist/css/components/c-text.css: { }
+      build/dist/css/components/c-text.css: { }
 
 text_bg:
   css:
     theme:
-      dist/css/components/text-bg.css: { }
+      build/dist/css/components/text-bg.css: { }
 
 timeline_media:
   css:
     theme:
-      dist/css/components/timeline-media.css: { }
+      build/dist/css/components/timeline-media.css: { }
 
 timeline_simple:
   css:
     theme:
-      dist/css/components/timeline-simple.css: { }
+      build/dist/css/components/timeline-simple.css: { }
 
 stats:
   css:
     theme:
-      dist/css/components/stats.css: { }
+      build/dist/css/components/stats.css: { }
 
 quote:
   css:
     theme:
-      dist/css/components/quote.css: { }
+      build/dist/css/components/quote.css: { }
 
 view_md_icons:
   css:
     theme:
-      dist/css/views/view-md-icons.css: { }
+      build/dist/css/views/view-md-icons.css: { }
 
 views:
   css:
     theme:
-      dist/css/views/views.css: { }
+      build/dist/css/views/views.css: { }
 
 share:
   css:
     theme:
-      dist/css/elements/share.css: { }
+      build/dist/css/elements/share.css: { }
 
 form:
   js:
-    dist/js/form.js: { defer: true, async: true }
+    build/dist/js/form.js: { defer: true, async: true }
   css:
     theme:
-      dist/css/elements/form.css: { }
+      build/dist/css/elements/form.css: { }
 
 page_title:
   css:
     theme:
-      dist/css/elements/page-title.css: { }
+      build/dist/css/elements/page-title.css: { }
 
 accordion:
   css:
     theme:
-      dist/css/components/accordion.css: { }
+      build/dist/css/components/accordion.css: { }
   js:
-    dist/js/van11y-accessible-accordion-aria.js: { defer: true, async: true }
+    build/dist/js/van11y-accessible-accordion-aria.js: { defer: true, async: true }
 
 accesio_youtube_bg:
   js:
-    dist/js/jquery.mb.YTPlayer.js: { defer: true, async: true }
+    build/dist/js/jquery.mb.YTPlayer.js: { defer: true, async: true }
 
 accesio_vimeo_bg:
   js:
-    dist/js/jquery.mb.vimeo_player.js: { defer: true, async: true }
+    build/dist/js/jquery.mb.vimeo_player.js: { defer: true, async: true }
 
 masonry:
   js:
-    dist/js/imagesloaded.pkgd.js: { }
-    dist/js/isotope.pkgd.js: { }
+    build/dist/js/imagesloaded.pkgd.js: { }
+    build/dist/js/isotope.pkgd.js: { }
 
 a11y_tabs:
   css:
     theme:
-      dist/css/components/tabs.css: { }
+      build/dist/css/components/tabs.css: { }
   js:
-    dist/js/van11y-accessible-tab-panel-aria.js: { defer: true, async: true }
+    build/dist/js/van11y-accessible-tab-panel-aria.js: { defer: true, async: true }
 
 admin:
   css:
     theme:
-      dist/css/utility/admin-tabs.css: { }
+      build/dist/css/utility/admin-tabs.css: { }

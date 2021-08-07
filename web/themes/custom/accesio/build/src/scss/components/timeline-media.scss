@@ -1,6 +1,7 @@
 /*
 Timeline (media style).
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .timeline-media {

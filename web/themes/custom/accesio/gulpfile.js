@@ -1,173 +1,122 @@
-const gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer'),
-  sourcemaps = require('gulp-sourcemaps'),
-  imagemin = require('gulp-imagemin'),
-  pngquant = require('imagemin-pngquant'),
-  prefix = require('gulp-autoprefixer'),
-  sassGlob = require('gulp-sass-glob'),
-  browserSync = require('browser-sync').create(),
-  rename = require('gulp-rename'),
-  cleanCSS = require('gulp-clean-css'),
-  debug = require('gulp-debug'),
-  mode = require('gulp-mode')(),
-  uglifyes = require('uglify-es'),
-  composer = require('gulp-uglify/composer'),
-  uglify = composer(uglifyes, console),
-  babel = require('gulp-babel'),
-  svgSprite = require('gulp-svg-sprite'),
-  sasslint = require('gulp-sass-lint'),
-  csscomb = require('gulp-csscomb');
+'use strict';
 
-// const uglifyes = require('uglify-es');
-// const composer = require('gulp-uglify/composer');
-// const uglify = composer(uglifyes, console);
+const {gulp, dest, parallel, series, src, watch, lastRun} = require('gulp');
+const sass = require("gulp-sass")(require("sass"));
+const sourcemaps = require('gulp-sourcemaps');
+const gulpStylelint = require("gulp-stylelint");
+const svgSprite = require('gulp-svg-sprite');
+const browsersync = require('browser-sync').create();
+const plumber = require("gulp-plumber");
+const cache = require('gulp-cached');
+const babel = require('gulp-babel');
+const uglifyes = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+const uglify = composer(uglifyes, console);
 
-// Add browsersync.
-gulp.task('browser-sync', ['sass'], function () {
-  browserSync.init({
+/**
+ ******************************************************
+ * New gulp component functions, 2021.
+ */
+
+// Compile CSS from scss.
+function buildCompStyles() {
+  return src(['./build/src/scss/**/*.scss'])
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      includePaths: ["./node_modules/sass-mq/"],
+      outputStyle: 'expanded',
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(dest('./build/dist/css'))
+    .pipe(browsersync.reload({
+      stream: true
+    }));
+}
+
+// SCSS style linter.
+function lintSCSS() {
+  return src("./build/src/scss/**/**/*.scss", {since: lastRun(lintSCSS)})
+    .pipe(gulpStylelint({
+      failAfterError: false,
+      reporters: [{
+        formatter: 'string',
+        console: true
+      }]
+    }))
+}
+
+// JS build function.
+function buildJS() {
+  return src(['./build/src/js/**/*.js'])
+    // .pipe(uglify())
+    .pipe(dest('./build/dist/js'))
+}
+
+// BrowserSync Reload
+function browserSyncReload(done) {
+  browsersync.reload();
+  done();
+}
+
+// Watch changes on JS and twig files and trigger functions at the end.
+function watchJSTwigFiles() {
+  watch(
+    [
+      './build/src/js/**/*.js',
+      './templates/**/*.html.twig'
+    ],
+    {
+      events: 'all',
+      ignoreInitial: false
+    },
+    series(
+      buildJS,
+      browserSyncReload
+    )
+  );
+}
+
+// Watch changes on sass files and trigger functions at the end.
+function watchCompFiles() {
+  watch(
+    [
+      './build/src/scss/**/*.scss',
+    ],
+    {
+      events: 'all',
+      ignoreInitial: false
+    },
+    series(
+      lintSCSS,
+      buildCompStyles
+    )
+  );
+}
+
+// Init BrowserSync.
+function browserSync(done) {
+  browsersync.init({
     injectChanges: true,
-    logPrefix: 'Default Theme',
+    logPrefix: 'Accesio Theme Components',
     baseDir: './',
     open: false,
     notify: true,
-    proxy: 'accesio.docksal',
-    host: 'accesio.docksal',
+    proxy: 'accesio-lp.lndo.site',
+    host: 'accesio-lp.lndo.site',
     openBrowserAtStart: false,
     reloadOnRestart: true,
     port: 32456,
     ui: false,
   });
-});
-
-var path = require('path');
-
-// SVG icons.
-gulp.task('svgSprite', function (done) {
-  // Basic configuration example.
-  var config = {
-    shape: {
-      dimension: {
-        maxWidth: 100,
-        maxHeight: 100
-      },
-      spacing: {
-        padding: 2
-      },
-      "id": {
-        "generator": function (name) {
-          return path.basename(name.replace(/\s+/g, this.whitespace), '.svg');
-        }
-      }
-    },
-    mode: {
-      view: {
-        bust: false,
-        common: 'ico',
-        example: {
-          dest: '../dist/icon/icons.html',
-          template: './src/icon/sprite.html', // relative to current working directory
-        },
-        prefix: '.',
-        render: {
-          scss: {
-            template: './src/icon/svg-sprite-template.scss',
-            dest: '../src/scss/_icons.scss'
-          }
-        },
-        sprite: '../src/icon/icons.svg',
-      }
-    }
-  };
-
-  gulp.src('**/*.svg', {
-    cwd: './src/icon/remix/**/*'
-  })
-    .pipe(svgSprite(config))
-    .pipe(gulp.dest('./'));
   done();
-});
+}
 
-// JS.
-gulp.task('scripts', function () {
-  return gulp.src('./src/js/**/*.js')
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
-    .pipe(gulp.dest('./dist/js'))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(uglify())
-    .on('error', function (err) {
-      console.log(err)
-    })
-    .pipe(gulp.dest('./dist/js/min'))
-});
-
-gulp.task('sass', function () {
-  return gulp.src(['!./src/scss/vendor/**/*.scss', '!./src/scss/layout/bs-grid/**', './src/scss/**/*.scss'])
-    .pipe(sasslint({
-      configFile: './sass-lint.yml',
-    }))
-    .pipe(sasslint.format())
-    .pipe(sasslint.failOnError())
-    .pipe(sourcemaps.init())
-    .pipe(sassGlob())
-    .pipe(sass({
-      outputStyle: 'expanded',
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 4 versions'],
-      cascade: false
-    }))
-    .pipe(sourcemaps.write('./'))
-    .pipe(csscomb('./csscomb.json'))
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(browserSync.reload({
-      stream: true,
-      match: '**/*.css'
-    }))
-    .pipe(cleanCSS())
-});
-
-gulp.task('vendors', function () {
-  return gulp.src(['./src/scss/vendor/*.scss', '!./src/scss/vendor/bs-grid'])
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      outputStyle: 'expanded',
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 4 versions'],
-      cascade: false
-    }))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./dist/vendor/css'))
-    .pipe(browserSync.reload({
-      stream: true,
-      match: '**/*.css'
-    }))
-    .pipe(cleanCSS())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./dist/vendor/css/min'));
-});
-
-// browser-sync watch.
-gulp.task('watch', ['browser-sync'], function (gulpCallback) {
-  gulp.watch("./src/scss/**/*.scss", ['sass']);
-  gulp.watch("./src/js/**/*.js", ['scripts']).on('change', browserSync.reload);
-  gulp.watch("./templates/**/*.html.twig").on('change', browserSync.reload);
-  // Notify gulp that this task is done.
-  gulpCallback();
-});
-
-// Task: Build assets.
-gulp.task('build', ['sass', 'scripts']);
-// Task: handle svgs.
-gulp.task('svg', ['svgSprite']);
-// Task: Default gulp build and watch.
-gulp.task('default', ['sass', 'scripts', 'watch']);
-
-gulp.task('vendor', ['vendors']);
+// New component tasks.
+// gulp comp.
+exports.default = parallel(browserSync, watchCompFiles, watchJSTwigFiles);
+// gulp sass.
+exports.sass = buildCompStyles;
+// gulp watch.
+exports.watch = watchCompFiles;
+// gulp buildcomp.
+exports.deploy = series(buildCompStyles, buildJS);

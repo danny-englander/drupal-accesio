@@ -1,6 +1,7 @@
 /*
  * Text.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .component__item--type--text {

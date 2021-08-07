@@ -1,6 +1,7 @@
 /*
 * Admin tabs
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 ul.tabs {

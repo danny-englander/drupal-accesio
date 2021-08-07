@@ -1,6 +1,7 @@
 /*
  * Tables styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 table {

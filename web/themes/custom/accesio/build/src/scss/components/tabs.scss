@@ -1,6 +1,7 @@
 /*
  * Tabs styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .js-tablist {

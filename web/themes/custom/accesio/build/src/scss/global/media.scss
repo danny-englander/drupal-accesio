@@ -1,6 +1,7 @@
 /*
 Media theming.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .media--type-remote-video {

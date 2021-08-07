@@ -1,13 +1,14 @@
 /**
  * Accordion component styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .c-accordion {
   @include container(1270px);
 
   .page-is-fullwidth & {
-    @include container(1270px);
+    @include container(1260px);
   }
 
   &__main-title {

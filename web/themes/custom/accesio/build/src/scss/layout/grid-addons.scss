@@ -1,6 +1,7 @@
 /**
  * grid add-ons styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 /* Flexbox Equal Height Bootstrap Columns (fully responsive)

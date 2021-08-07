@@ -2,6 +2,7 @@
 Share button styling, !important used to
 override inline styles from the module js.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .share {
