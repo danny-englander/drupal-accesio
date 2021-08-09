@@ -54,6 +54,12 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% if content.controls | render %}
+        {{ content.controls }}
+        {{ content.insert_before }}
+        {{ content.insert_after }}
+      {% endif %}
+
       <div class="portfolio__filter">
         <div class="button-group filters-button-group">
           <button class="btn btn-small btn-secondary btn-sq button is-checked" data-filter="*">{{ 'Show All'|t }}</button>

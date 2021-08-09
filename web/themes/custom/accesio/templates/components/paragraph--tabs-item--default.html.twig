@@ -49,6 +49,13 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
+
+      {% if content.controls | render %}
+        {{ content.controls }}
+        {{ content.insert_before }}
+        {{ content.insert_after }}
+      {% endif %}
+
       {{ content.field_components | field_value }}
     {% endblock %}
   </div>

@@ -1,0 +1,8 @@
+name: Toolbar Tasks
+core_version_requirement: ^8 || ^9
+type: module
+description: Moves local tasks into their own toolbar for View, Edit, Delete
+core: '8.x'
+package: Custom
+dependencies:
+  - toolbar

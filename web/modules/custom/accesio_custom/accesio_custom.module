@@ -34,3 +34,8 @@ function accesio_custom_views_query_alter(ViewExecutable $view, QueryPluginBase 
   //  $view->query->where[1]['conditions'][0]['value'] = '%' . $name . '%';
   }
 }
+
+function accesio_custom_preprocess_layout_paragraphs_builder(array &$vars) {
+  $a =1;
+}
+

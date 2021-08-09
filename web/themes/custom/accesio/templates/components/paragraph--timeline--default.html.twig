@@ -61,6 +61,12 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% if content.controls | render %}
+        {{ content.controls }}
+        {{ content.insert_before }}
+        {{ content.insert_after }}
+      {% endif %}
+
       {% if content.field_title | render %}
         <div class="{{ ts_style }}__title">
           <h2>{{ content.field_title | field_value }}</h2>

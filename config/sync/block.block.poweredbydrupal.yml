@@ -12,7 +12,7 @@ dependencies:
 id: poweredbydrupal
 theme: accesio
 region: hidden
-weight: -5
+weight: -6
 provider: null
 plugin: system_powered_by_block
 settings:

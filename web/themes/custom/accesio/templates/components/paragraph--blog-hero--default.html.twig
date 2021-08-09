@@ -65,6 +65,12 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% if content.controls | render %}
+        {{ content.controls }}
+        {{ content.insert_before }}
+        {{ content.insert_after }}
+      {% endif %}
+
       <div class="blog-hero__wrap">
 
         <div class="blog-hero__media">

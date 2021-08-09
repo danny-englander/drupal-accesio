@@ -50,6 +50,12 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% if content.controls | render %}
+        {{ content.controls }}
+        {{ content.insert_before }}
+        {{ content.insert_after }}
+      {% endif %}
+
       {% if content.field_title | render %}
         <h2 class="js-accordion__header c-accordion__title">{{ content.field_title | field_value }}</h2>
       {% endif %}

@@ -146,6 +146,7 @@ function accesio_preprocess_paragraph(array &$vars) {
   }
 }
 
+
 /**
  * Implements hook_theme_suggestions_paragraph_alter().
  */

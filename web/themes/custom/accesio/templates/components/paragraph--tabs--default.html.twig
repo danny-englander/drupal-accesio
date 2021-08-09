@@ -81,6 +81,13 @@
     {% endif %}
 
     {% block content %}
+
+      {% if content.controls | render %}
+        {{ content.controls }}
+        {{ content.insert_before }}
+        {{ content.insert_after }}
+      {% endif %}
+
 {#      <nav class="sf-tabs__nav-wrap">#}
         <ul class="js-tablist" role="tablist">
           {# Loops through the tab sections to print the tab section titles. #}

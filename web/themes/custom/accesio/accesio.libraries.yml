@@ -161,3 +161,10 @@ admin:
   css:
     theme:
       build/dist/css/utility/admin-tabs.css: { }
+
+layout_paragraphs_builder:
+  css:
+    theme:
+      build/dist/css/utility/paragraphs-builder.css: { }
+  dependencies:
+    - paragraphs/drupal.paragraphs.widget
