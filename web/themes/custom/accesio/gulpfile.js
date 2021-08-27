@@ -26,7 +26,7 @@ function buildCompStyles() {
       includePaths: ["./node_modules/sass-mq/"],
       outputStyle: 'expanded',
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(dest('./build/dist/css'))
     .pipe(browsersync.reload({
       stream: true
