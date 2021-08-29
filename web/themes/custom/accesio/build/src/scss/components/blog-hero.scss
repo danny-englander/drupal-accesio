@@ -84,7 +84,7 @@
 
     p {
       font-family: $font-serif;
-      @include rem(font-size, 26px);
+      font-size: rem.convert(26px);
       margin-bottom: 12px;
     }
   }
@@ -93,7 +93,7 @@
 
     p {
       font-family: $font-serif;
-      @include rem(font-size, 26px);
+      font-size: rem.convert(26px);
       line-height: 1.6;
     }
   }

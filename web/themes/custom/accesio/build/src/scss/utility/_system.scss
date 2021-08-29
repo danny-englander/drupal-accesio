@@ -1,4 +1,4 @@
-
+@use './node_modules/sass-rem' as rem;
 
 abbr[title] {
   text-decoration: none;
@@ -9,7 +9,7 @@ abbr[title] {
 
   &:before {
     content: "Unpublished";
-    @include rem(font-size, 100px);
+    font-size: rem.convert(100px);
     color: $dark-red;
     position: relative;
     z-index: -10;

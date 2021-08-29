@@ -39,7 +39,7 @@ Media theming.
   }
 
   p {
-    @include rem(font-size, 16px);
+    font-size: rem.convert(16px);
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 500;
     max-width: 100%;

@@ -50,7 +50,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 .share__item a {
   background-color: transparent !important;
   text-decoration: none;
-  transition: all 0.6s ease 0s;
+  transition: all 6s ease 0s;
 }
 .share__item a:active i, .share__item a:focus i, .share__item a:hover i {
   padding: 6px;

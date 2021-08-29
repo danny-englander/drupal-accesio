@@ -64,7 +64,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 
 .js-tabcontent {
-  transition: all 0.6s ease 0s;
+  transition: all 6s ease 0s;
   visibility: visible;
   opacity: 1;
   height: inherit;

@@ -5,7 +5,7 @@
 @import "../global-includes";
 
 table {
-  @include rem(font-size, 18px);
+  font-size: rem.convert(18px);
   border-collapse: collapse;
   margin: 25px 0;
   width: 100%;
@@ -40,7 +40,7 @@ table {
   }
 
   caption {
-    @include rem(font-size, 20px);
+    font-size: rem.convert(20px);
     font-weight: 600;
     background-color: $light-gray;
     padding: 10px;

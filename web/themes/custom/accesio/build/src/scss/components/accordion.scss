@@ -32,7 +32,7 @@
   }
 
   .accordion__header {
-    @include rem(font-size, 22px);
+    font-size: rem.convert(22px);
     font-family: $font-sans;
     background-color: transparent;
     border: 0;
@@ -75,8 +75,7 @@
   }
 
   &__title {
-    // font-family: $font-helvetica-neue-regular;
-    @include rem(font-size, 14px);
+    font-size: rem.convert(14px);
     line-height: 1.86;
     color: $charcoal;
     position: relative;

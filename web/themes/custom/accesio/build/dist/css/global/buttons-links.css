@@ -15,7 +15,7 @@ input[type=file],
 input[type=submit] {
   font-size: 1.125rem;
   font-weight: bold;
-  transition: all 0.6s ease 0s;
+  transition: all 6s ease 0s;
   display: inline-block;
   border-radius: 0;
   padding: 6px 30px;
@@ -171,7 +171,7 @@ input[type=submit].btn-pager {
 .field--type-text-long a:not(.btn) {
   color: #0202fa;
   text-decoration: none;
-  transition: all 0.6s ease 0s;
+  transition: all 6s ease 0s;
   font-weight: 500;
 }
 .field--type-text-long a:not(.btn):active, .field--type-text-long a:not(.btn):focus, .field--type-text-long a:not(.btn):hover {

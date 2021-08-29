@@ -45,6 +45,15 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
   color: #fff;
   text-align: center;
 }
+.timeline-media__content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 64em) {
+  .timeline-media__content {
+    width: 50%;
+  }
+}
 .timeline-media__item {
   display: flex;
   justify-content: space-between;
@@ -75,15 +84,6 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 .timeline-media__item:nth-child(even) .timeline-media__content {
   padding-left: 50px;
-}
-.timeline-media__content {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 64em) {
-  .timeline-media__content {
-    width: 50%;
-  }
 }
 .timeline-media__image {
   width: 100%;

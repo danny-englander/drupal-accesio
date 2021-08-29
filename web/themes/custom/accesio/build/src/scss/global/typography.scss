@@ -18,7 +18,7 @@ body {
   color: $charcoal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @include rem(letter-spacing, 1px);
+  letter-spacing: rem.convert(1px);
 }
 
 .h1,
@@ -135,7 +135,7 @@ h6 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  @include rem(font-size, 24px);
+  font-size: rem.convert(24px);
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -164,3 +164,14 @@ h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+
+.view-content.row {
+  @include grid-cols(4);
+
+  .icon-item {
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+

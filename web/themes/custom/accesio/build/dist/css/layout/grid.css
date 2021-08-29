@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -4582,4 +4583,6 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important;
 }
+
+/* stylelint-enable */
 /*# sourceMappingURL=grid.css.map */

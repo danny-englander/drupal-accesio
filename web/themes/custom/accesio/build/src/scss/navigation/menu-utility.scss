@@ -23,7 +23,7 @@ Utility menu.
     margin-left: 10px;
 
     a {
-      @include rem(font-size, 19px);
+      font-size: rem.convert(19px);
       text-decoration: none;
       border-bottom: 2px solid $secondary-color;
       transition: .4s ease;

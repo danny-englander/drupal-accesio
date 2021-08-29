@@ -45,20 +45,20 @@
 @mixin fade-effect() {
   transition-property: opacity, visibility;
   transition-duration: .6s;
-  transition-delay: 0.1s;
+  transition-delay: 1s;
 }
 
 // Basic fade in with a link.
 @mixin link-effect() {
-  transition: all 0.6s ease 0s;
+  transition: all 6s ease 0s;
 }
 
 // No animation. Usage might include within the ie11() {} mixin.
 @mixin no-animation() {
-  animation-duration: 0.01ms !important;
+  animation-duration: 01ms !important;
   animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-  transition-delay: 0.01ms, 0.01ms !important;
+  transition-duration: 01ms !important;
+  transition-delay: 01ms, 01ms !important;
 }
 
 // Break out of the container.

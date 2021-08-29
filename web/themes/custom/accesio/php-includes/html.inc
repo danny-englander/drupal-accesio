@@ -20,7 +20,15 @@ function accesio_preprocess_html(array &$vars) {
   // Define the node.
   $node = \Drupal::routeMatch()->getParameter('node');
   // Check for a node instance.
+
+
+
+  $route = \Drupal::routeMatch()->getRouteName();
+
+
   if ($node instanceof NodeInterface) {
+//    echo 'im on a revision or a node';
+    $a =1;
     // Define the nid.
     $nid = $node->id();
     // Add a nid class for internal reference.

@@ -21,8 +21,7 @@ input[type=search],
 input[type=tel],
 input[type=time],
 input[type=url],
-input[type=color],
-input[type=text] {
+input[type=color] {
   font-size: 1.125rem;
   width: 100%;
   height: 40px;
@@ -46,8 +45,7 @@ input[type=search],
 input[type=tel],
 input[type=time],
 input[type=url],
-input[type=color],
-input[type=text] {
+input[type=color] {
     height: 45px;
   }
 }
@@ -64,8 +62,7 @@ input[type=search]:focus,
 input[type=tel]:focus,
 input[type=time]:focus,
 input[type=url]:focus,
-input[type=color]:focus,
-input[type=text]:focus {
+input[type=color]:focus {
   outline: #482e6e solid 2px;
 }
 

@@ -20,7 +20,7 @@
   }
 
   &__link {
-    @include rem(font-size, 17px);
+    font-size: rem.convert(17px);
     font-weight: 600;
     display: inline-block;
     vertical-align: middle;

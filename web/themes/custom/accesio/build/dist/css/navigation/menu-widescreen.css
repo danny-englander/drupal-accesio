@@ -126,7 +126,7 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
     z-index: 320;
     transition-property: opacity, visibility;
     transition-duration: 0.6s;
-    transition-delay: 0.1s;
+    transition-delay: 1s;
     visibility: hidden;
     opacity: 0;
     height: 0;
@@ -142,10 +142,10 @@ https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%236
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .main-menu__sub-nav {
-    animation-duration: 0.01ms !important;
+    animation-duration: 1ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    transition-delay: 0.01ms, 0.01ms !important;
+    transition-duration: 1ms !important;
+    transition-delay: 1ms, 1ms !important;
   }
 }
 @media (min-width: 64em) {

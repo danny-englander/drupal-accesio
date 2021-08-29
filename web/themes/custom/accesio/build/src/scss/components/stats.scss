@@ -38,8 +38,8 @@
     h2 {
       font-family: 'Rozha One', serif;
       color: $charcoal;
-      @include rem(font-size, 100px);
-      @include rem(letter-spacing, 3px);
+      font-size: rem.convert(100px);
+      letter-spacing: rem.convert(3px);
       line-height: .9;
       border-bottom: 2px dashed $charcoal;
     }
@@ -57,7 +57,7 @@
 
 
     .ion-icon {
-      @include rem(font-size, 80px);
+      font-size: rem.convert(80px);
       color: $primary-color;
     }
   }

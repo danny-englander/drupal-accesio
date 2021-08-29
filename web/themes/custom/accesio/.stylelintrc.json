@@ -1,4 +1,8 @@
 {
+  "ignoreFiles": ["./build/src/scss/layout/**/*.scss", "./build/src/scss/layout/bs-grid/**/*.scss", "./build/src/scss/layout/bs-grid/grid/**/*.scss"],
+  "files": [
+    "!./build/src/scss/layout/bs-grid/grid/**/*.scss"
+  ],
   "rules": {
     "at-rule-no-unknown": null,
     "block-no-empty": true,

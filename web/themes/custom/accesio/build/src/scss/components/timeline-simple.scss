@@ -108,7 +108,7 @@ Timeline (simple style).
     }
 
     h2 {
-      @include rem(font-size, 80px);
+      font-size: rem.convert(80px);
     }
   }
 }

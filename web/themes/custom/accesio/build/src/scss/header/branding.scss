@@ -8,7 +8,7 @@
 
   &__slogan {
     margin-bottom: 6px;
-    @include rem(font-size, 17px);
+    font-size: rem.convert(17px);
     color: $white;
   }
 }

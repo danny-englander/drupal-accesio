@@ -41,6 +41,15 @@ Timeline (media style).
     }
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($from: small_desktop) {
+      width: 50%;
+    }
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
@@ -54,7 +63,6 @@ Timeline (media style).
     }
 
     &:nth-child(odd) {
-
       h2 {
         text-align: right;
       }
@@ -77,16 +85,6 @@ Timeline (media style).
     }
   }
 
-  &__content {
-
-    display: flex;
-    flex-direction: column;
-
-    @include mq($from: small_desktop) {
-      width: 50%;
-    }
-  }
-
   &__image {
     width: 100%;
 
@@ -101,10 +99,9 @@ Timeline (media style).
   }
 
   &__date {
-
     h2 {
       color: $white;
-      @include rem(font-size, 80px);
+      font-size: rem.convert(80px);
       background-color: $primary-color;
       padding: 30px 20px 0 20px;
       line-height: .3;

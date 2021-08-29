@@ -267,4 +267,26 @@ h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+.view-content.row {
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.view-content.row:after {
+  clear: both;
+}
+.view-content.row > * {
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 1px;
+  float: left;
+  width: 25%;
+}
+.view-content.row .icon-item {
+  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+}
 /*# sourceMappingURL=typography.css.map */
