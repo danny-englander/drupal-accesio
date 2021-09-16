@@ -1,0 +1,78 @@
+// Simple grid mixins Based on https://github.com/judus/grid-scss.
+// Adjust this setting per your requirements.
+
+@use "sass:math";
+
+$grid-gutter: 50px !default;
+
+@mixin grid-before-after-table() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+}
+
+@mixin grid-after-clear-both() {
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin grid-pad-x() {
+  padding-left: math.div($grid-gutter, 2);
+  padding-right: math.div($grid-gutter, 2);
+}
+
+@mixin grid-neg-x() {
+  margin-left: ((math.div($grid-gutter, 2)) * -1);
+  margin-right: ((math.div($grid-gutter, 2)) * -1);
+}
+
+@mixin grid-flex() {
+  @include grid-after-clear-both;
+  @include grid-neg-x;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin grid-container() {
+  @include grid-pad-x;
+  @include grid-after-clear-both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin grid-row() {
+  @include grid-neg-x;
+  @include grid-before-after-table;
+  @include grid-after-clear-both;
+}
+
+@mixin grid-col($width: 50%) {
+  @include grid-pad-x;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 1px;
+  float: left;
+  width: $width;
+}
+
+@mixin grid-cols($x: 4) {
+  @include grid-after-clear-both;
+  @include grid-neg-x;
+  display: flex;
+  flex-flow: row wrap;
+
+  > * {
+    @include grid-col(math.div(100%, $x));
+  }
+}
+
+@mixin grid-push($x: 50%) {
+  margin-left: $x;
+}
+
+@mixin grid-pull($x: 50%) {
+  margin-left: -$x;
+}

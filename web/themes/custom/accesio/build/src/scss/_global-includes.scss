@@ -5,10 +5,9 @@
 @import "settings";
 
 // Functions and mixins.
-@import "abstract/functions";
-@import "abstract/mixins";
-@import "abstract/mixins-icon";
-@import "abstract/mixins-typography";
-
-// Sass MQ for media queries.
-@import "node_modules/sass-mq/mq";
+@import "mixins-functions/functions";
+@import "mixins-functions/mixins";
+@import "mixins-functions/mixins-icon";
+@import "mixins-functions/mixins-typography";
+@import "mixins-functions/mixins-sass-mq";
+@import "mixins-functions/mixins-grid";

@@ -1,38 +1,45 @@
 name: accesio-lb
 recipe: drupal9
 config:
-  php: '7.4'
-  composer_version: 2.0.7
+  php: '8.0'
+  composer_version: 2
   via: 'apache:2.4'
   webroot: web
   database: 'mysql:5.7'
   drush: true
   xdebug: true
   config:
-    php: lando/config/php.ini
+    php: '.lando/config/php.ini'
+events:
+  post-rebuild:
+    - node: './.lando/build/theme.sh'
 services:
   node:
-    type: 'node:10.19'
+    type: 'node:14'
     scanner: false
     ssl: true
     sslExpose: false
+    globals:
+      gulp-cli: latest
     overrides:
       ports:
         - '32873:32873'
-        - '32874:32874'
-    command: cd /app/web/themes/custom/bixal_drop && node_modules/.bin/npx gulp
   appserver:
     xdebug: true
     run:
       - composer self-update
     config:
-      php: lando/config/php.ini
+      php: '.lando/config/php.ini'
     type: 'php:7.4'
     overrides:
       environment:
         PHP_IDE_CONFIG: serverName=appserver
         DRUSH_OPTIONS_URI: 'http://accesio-lb.lndo.site'
 tooling:
+  build:
+    description: "Install NPMs"
+    cmd:
+      - node: './.lando/build/theme.sh'
   node:
     service: node
   npm:
@@ -41,3 +48,19 @@ tooling:
     service: node
   gulp:
     service: node
+    dir: '/app/web/themes/custom/accesio'
+    cmd: gulp
+  theme:
+    cmd: './.lando/build_theme.sh'
+    description: Build for frontend theme.
+    service: node
+  xoff:
+    cmd: "rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload"
+    description: Disable xdebug.
+    service: appserver
+    user: root
+  xon:
+    cmd: "docker-php-ext-enable xdebug && /etc/init.d/apache2 reload"
+    description: Enable xdebug.
+    service: appserver
+    user: root

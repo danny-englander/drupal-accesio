@@ -32,3 +32,4 @@ node_modules/
 # Misc ignores.
 web/themes/custom/accesio/dist/css/min/accesio.min.css
 .DS_Store
+*.sql.gz
