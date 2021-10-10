@@ -1,10 +1,10 @@
 /**
  * Hero component styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .person-card {
-
   &.has-bg-color {
     margin-bottom: 100px;
   }
@@ -65,13 +65,13 @@
     padding: 20px 20px;
 
     h2 {
-      @include rem(font-size, 30px);
+      font-size: rem.convert(30px);
       margin-bottom: 10px;
     }
   }
 
   &__title {
-    @include rem(font-size, 18px);
+    font-size: rem.convert(18px);
   }
 
   &__item {

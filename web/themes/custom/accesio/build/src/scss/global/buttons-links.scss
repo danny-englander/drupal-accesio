@@ -2,22 +2,23 @@
 Buttons
 Note, if we need buttons in many different colors, we can make this into a mixin.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 // ******** Buttons ************
 // Default button ().
-.btn,
 a.btn,
+.btn,
 input[type="file"],
 input[type="submit"] {
-  @include rem(font-size, 18px);
+  font-size: rem.convert(18px);
   font-weight: bold;
   @include link-effect();
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 0;
   padding: 6px 30px;
   letter-spacing: 2px;
-  line-height: 1.8;
+  line-height: 1.7;
   color: $white;
   border: 2px solid $primary-color;
   background-color: $primary-color;
@@ -45,7 +46,7 @@ input[type="submit"] {
 
   &.btn-small {
     padding: 4px 18px;
-    @include rem(font-size, 16px);
+    font-size: rem.convert(16px);
   }
 
   &.btn-secondary {
@@ -106,7 +107,7 @@ input[type="submit"] {
     color: $black;
     letter-spacing: 2px;
     border: 0;
-    @include rem(font-size, 13px);
+    font-size: rem.convert(13px);
   }
 }
 

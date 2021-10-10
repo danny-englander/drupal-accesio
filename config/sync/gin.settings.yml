@@ -1,7 +1,7 @@
-preset_accent_color: light_blue
-preset_focus_color: accent
+preset_accent_color: blue
+preset_focus_color: gin
 enable_darkmode: false
-classic_toolbar: '1'
+classic_toolbar: horizontal
 icon_default: true
 icon_path: ''
 high_contrast_mode: false
@@ -17,7 +17,7 @@ features:
   favicon: true
 favicon:
   use_default: true
-accent_color: ''
-focus_color: ''
+accent_color: '#ff4452'
+focus_color: '#ffcc00'
 icon_upload: ''
 show_user_theme_settings: false

@@ -49,7 +49,7 @@ $desktop: 1280px;
 // https://app.zeplin.io/project/5e6682f618ae0f143906fcd7/screen/5e66aa6445b013115f8e1a8e
 // Note, $mobile, $small_desktop, and $desktop mirror the names that are in the designs.
 // Map for sass MQ.
-$mq-breakpoints: (
+$breakpoints: (
   small: 0,
   mobile: 375px,
   small_plus: 520px,

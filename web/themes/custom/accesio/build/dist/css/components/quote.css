@@ -1,6 +1,9 @@
+@charset "UTF-8";
 /**
  * Quote component styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 /* Styled quote */
 .quote {
   position: relative;
@@ -9,12 +12,10 @@
   margin-top: 30px;
   margin-bottom: 60px;
 }
-
 .page-lb .quote {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .quote__inner {
   max-width: 1280px;
   margin-left: auto;
@@ -23,15 +24,13 @@
   padding-right: 15px;
   padding: 50px 0 40px 0;
 }
-
 .quote__text {
   margin: 0;
   position: relative;
 }
-
 .quote__text:before {
-  content: "\201C";
-  font-family: 'EB Garamond', serif;
+  content: "“";
+  font-family: "EB Garamond", serif;
   font-size: 11rem;
   line-height: 0.9;
   position: absolute;
@@ -40,7 +39,6 @@
   color: rgba(0, 211, 214, 0.78);
   display: inline-block;
 }
-
 @media (min-width: 64em) {
   .quote__text:before {
     font-size: 29.375rem;
@@ -49,29 +47,24 @@
     top: -30px;
   }
 }
-
 .quote__text p {
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-size: 3.125rem;
   line-height: 1.2;
   letter-spacing: 2px;
 }
-
 @media (min-width: 64em) {
   .quote__text p {
     padding-left: 230px;
   }
 }
-
 .quote__attribution {
-  font-size: 1.25rem;
   font-weight: 600;
+  font-size: 1.25rem;
 }
-
 @media (min-width: 64em) {
   .quote__attribution {
     padding-left: 230px;
   }
 }
-
 /*# sourceMappingURL=quote.css.map */

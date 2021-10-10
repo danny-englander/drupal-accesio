@@ -1,23 +1,23 @@
 /*
  * Tabs styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .js-tablist {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #482e6e;
 }
-
 .js-tablist__item {
   cursor: pointer;
 }
-
 .page-wrap .js-tablist__item {
   margin: 0 20px 0 0;
 }
-
 .js-tablist__link {
   font-size: 1.0625rem;
   font-weight: 600;
@@ -36,7 +36,6 @@
   border-bottom: 4px solid #69cec3;
   letter-spacing: 2px;
 }
-
 .js-tablist--outline .js-tablist__link {
   position: relative;
   top: 1px;
@@ -51,40 +50,38 @@
 .js-tablist__link:focus {
   outline: none;
 }
-
-.js-tablist__link:hover, .js-tablist__link[aria-selected="true"] {
+.js-tablist__link:hover,
+.js-tablist__link[aria-selected=true] {
   background-color: #69cec3;
   border-bottom: 4px solid #482e6e;
   color: #212121;
 }
-
-.js-tablist--outline .js-tablist__link:hover, .js-tablist--outline .js-tablist__link[aria-selected="true"] {
+.js-tablist--outline .js-tablist__link:hover,
+.js-tablist--outline .js-tablist__link[aria-selected=true] {
   background-color: #482e6e;
   color: #fff;
 }
 
 .js-tabcontent {
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
   visibility: visible;
   opacity: 1;
   height: inherit;
 }
-
 .js-tabcontent--outline {
   background-color: transparent;
   border-top: 1px solid #a22f35;
   margin-top: -1px;
 }
-
 .js-tabcontent__inner {
   padding-top: 30px;
 }
-
-.js-tabcontent[aria-hidden="true"] {
+.js-tabcontent[aria-hidden=true] {
   visibility: hidden;
   opacity: 0;
   height: 0;
   overflow: hidden;
 }
-
 /*# sourceMappingURL=tabs.css.map */

@@ -1,6 +1,7 @@
 /*
  * Widescreen menu.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .main-menu {
@@ -47,7 +48,7 @@
     &--level-0 {
       // All top level menu items
       > a {
-        @include rem(font-size, 14px);
+        font-size: rem.convert(14px);
         color: $white;
         padding: 10px 4px;
         border: 1px dotted $white;
@@ -57,12 +58,12 @@
         align-items: center;
 
         @include mq($from: med_desktop) {
-          @include rem(font-size, 17px);
+          font-size: rem.convert(17px);
           padding: 10px 12px;
         }
 
         &.btn {
-          @include rem(font-size, 15px);
+          font-size: rem.convert(15px);
           padding: 4px 12px;
           border-width: 1px;
           border-style: solid;
@@ -71,7 +72,7 @@
           @include remix-icon("\ea6c", $font-size: 28px, $margin: 4px 0 0 8px, $position: relative, $top: -3px);
 
           @include mq($from: med_desktop) {
-            @include rem(font-size, 17px);
+            font-size: rem.convert(17px);
             padding: 4px 16px;
           }
         }

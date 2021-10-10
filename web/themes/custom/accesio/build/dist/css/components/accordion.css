@@ -1,7 +1,8 @@
-@charset "UTF-8";
 /**
  * Accordion component styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .c-accordion {
   max-width: 1270px;
   margin-left: auto;
@@ -9,36 +10,31 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .page-is-fullwidth .c-accordion {
-  max-width: 1270px;
+  max-width: 1260px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .c-accordion__main-title {
   padding-bottom: 10px;
 }
-
 .c-accordion__main-title > h2 {
   font-weight: 500;
   letter-spacing: 0.38px;
   color: #404040;
 }
-
 .c-accordion__items {
+  border-top: 1px solid #b7b7b7;
   margin-bottom: 50px;
   padding: 0;
 }
-
 @media (min-width: 64em) {
   .c-accordion__items {
     margin-bottom: 60px;
   }
 }
-
 .c-accordion .accordion__header {
   font-size: 1.375rem;
   font-family: "IBM Plex Sans", verdana, sans-serif;
@@ -51,50 +47,44 @@
   text-align: left;
   padding: 24px 0;
 }
-
 .c-accordion .accordion__header:after {
-  content: "";
+  content: "\ea11";
   font-family: remixicon;
   display: inline-block;
   font-weight: 400;
   line-height: 0;
   font-size: 1.75rem;
   margin: 0 8px 0 0;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  position: absolute;
-  top: 42px;
-  right: 0;
 }
-
-.c-accordion .accordion__header[aria-expanded="true"] {
+.c-accordion .accordion__header[aria-expanded=true] {
   margin-bottom: 0;
   border-bottom: 0;
 }
-
-.c-accordion .accordion__header[aria-expanded="true"]:after {
+.c-accordion .accordion__header[aria-expanded=true]:after {
+  -webkit-transform: rotate(405deg);
   -ms-transform: rotate(405deg);
   transform: rotate(405deg);
 }
-
-.c-accordion .accordion__header:active, .c-accordion .accordion__header:focus, .c-accordion .accordion__header:hover {
+.c-accordion .accordion__header:active,
+.c-accordion .accordion__header:focus,
+.c-accordion .accordion__header:hover {
   color: #482e6e;
 }
-
 .c-accordion .accordion__header:focus {
   outline: none;
   color: #482e6e;
 }
-
 .user-is-tabbing .c-accordion .accordion__header:focus {
   border: 2px solid #482e6e;
   outline: 2px solid #482e6e;
   padding: 10px;
 }
-
 .c-accordion__item {
-  border-bottom: 2px solid #404040;
+  border-bottom: 1px solid #b7b7b7;
 }
-
 .c-accordion__title {
   font-size: 0.875rem;
   line-height: 1.86;
@@ -107,33 +97,35 @@
   background-color: transparent;
   border: 0;
 }
-
 .c-accordion__item-components {
   display: block;
   overflow: hidden;
   opacity: 1;
+  -webkit-transition: visibility 0s ease, max-height 0.3s ease, opacity 0.3s ease;
+  -o-transition: visibility 0s ease, max-height 0.3s ease, opacity 0.3s ease;
   transition: visibility 0s ease, max-height 0.3s ease, opacity 0.3s ease;
   visibility: visible;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
   margin: 0;
   padding: 0;
   border-top: 0;
 }
-
-.c-accordion__item-components[aria-hidden="true"] {
+.c-accordion__item-components[aria-hidden=true] {
   display: none;
   max-height: 0;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition-delay: 0.1s, 0s, 0s;
+  -o-transition-delay: 0.1s, 0s, 0s;
   transition-delay: 0.1s, 0s, 0s;
   margin: 0;
   padding: 0;
 }
-
 .c-accordion .text-block {
   margin-bottom: 0;
 }
-
 @media (min-width: 48em) {
   .c-accordion .text-block {
     margin-bottom: 0;
@@ -147,5 +139,4 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /*# sourceMappingURL=accordion.css.map */

@@ -1,3 +1,4 @@
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 @import "font-face";
 
@@ -17,22 +18,22 @@ body {
   color: $charcoal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @include rem(letter-spacing, 1px);
+  letter-spacing: rem.convert(1px);
 }
 
 .h1,
 h1 {
   font-family: $font-serif;
   font-weight: 400;
-  @include rem(font-size, 54px);
-  line-height: 58px;
+  font-size: rem.convert(54px);
+  line-height: rem.convert(58px);
   letter-spacing: 1px;
   margin-top: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 70px);
-    @include rem(line-height, 78px);
-    @include rem(margin-bottom, 28px);
+    font-size: rem.convert(70px);
+    line-height: rem.convert(78px);
+    margin-bottom: rem.convert(28px);
   }
 }
 
@@ -40,76 +41,74 @@ h1 {
 h2 {
   font-family: $font-serif;
   font-weight: 500;
-  @include rem(font-size, 44px);
-  @include rem(line-height, 48px);
-  @include rem(margin-bottom, 25px);
+  font-size: rem.convert(44px);
+  line-height: rem.convert(48px);
+  margin-bottom: rem.convert(25px);
   margin-top: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 56px);
-    @include rem(line-height, 58px);
-    @include rem(margin-bottom, 28px);
+    font-size: rem.convert(56px);
+    line-height: rem.convert(58px);
+    margin-bottom: rem.convert(28px);
   }
 }
 
 .h3,
 h3 {
+  font-size: rem.convert(20px);
+  line-height: rem.convert(25px);
+  margin-bottom: rem.convert(20px);
   font-weight: 400;
-  @include rem(font-size, 20px);
-  @include rem(line-height, 25px);
-  @include rem(margin-bottom, 20px);
   margin-top: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 26px);
-    @include rem(line-height, 30px);
-    @include rem(margin-bottom, 22px);
+    font-size: rem.convert(26px);
+    line-height: rem.convert(30px);
+    margin-bottom: rem.convert(22px);
   }
 }
 
 .h4,
 h4 {
+  font-size: rem.convert(18px);
+  line-height: rem.convert(25px);
+  margin-bottom: rem.convert(12px);
   font-weight: 400;
-  @include rem(font-size, 18px);
-  @include rem(line-height, 25px);
   margin-top: 0;
-  @include rem(margin-bottom, 12px);
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 22px);
-    @include rem(line-height, 30px);
-    @include rem(margin-bottom, 18px);
+    font-size: rem.convert(22px);
+    line-height: rem.convert(30px);
+    margin-bottom: rem.convert(18px);
   }
 }
 
 .h5,
 h5 {
+  font-size: rem.convert(12px);
+  line-height: rem.convert(25px);
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  @include rem(font-size, 12px);
-  @include rem(line-height, 25px);
   margin-top: 0;
   margin-bottom: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 14px);
-    @include rem(line-height, 30px);
+    font-size: rem.convert(14px);
+    line-height: rem.convert(30px);
   }
 }
 
 .h6,
 h6 {
+  font-size: rem.convert(16px);
+  line-height: rem.convert(25px);
   font-weight: 400;
-  @include rem(font-size, 16px);
-  @include rem(line-height, 25px);
-  @include rem(margin-bottom, 12px);
   margin-top: 0;
   margin-bottom: 0;
 
   @include mq($from: small_desktop) {
-    @include rem(font-size, 18px);
-    @include rem(line-height, 30px);
+    font-size: rem.convert(18px);
+    line-height: rem.convert(30px);
   }
 }
 
@@ -118,16 +117,16 @@ h6 {
   .p,
   p {
     font-family: $font-sans;
-    @include rem(font-size, 16px);
-    @include rem(line-height, 26px);
-    @include rem(margin-bottom, 32px);
-    @include rem(letter-spacing, 1px);
+    font-size: rem.convert(16px);
+    line-height: rem.convert(26px);
+    margin-bottom: rem.convert(32px);
+    letter-spacing: rem.convert(1px);
     margin-top: 0;
 
     @include mq($from: small_desktop) {
-      @include rem(font-size, 19px);
-      @include rem(line-height, 32px);
-      @include rem(margin-bottom, 38px);
+      font-size: rem.convert(19px);
+      line-height: rem.convert(32px);
+      margin-bottom: rem.convert(38px);
     }
   }
 }
@@ -136,7 +135,7 @@ h6 {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  @include rem(font-size, 24px);
+  font-size: rem.convert(24px);
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -153,7 +152,7 @@ h6 {
   font-family: 'Material Icons Outlined';
   font-weight: normal;
   font-style: normal;
-  @include rem(font-size, 24px);
+  font-size: rem.convert(24px);
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -165,3 +164,14 @@ h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+
+.view-content.row {
+  @include grid-cols(4);
+
+  .icon-item {
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+

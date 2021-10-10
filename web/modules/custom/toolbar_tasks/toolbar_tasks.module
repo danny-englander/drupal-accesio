@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Contains toolbar_tasks.module.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_toolbar().
+ */
+function toolbar_tasks_toolbar() {
+
+  // Do not show tabs when on the admin theme.
+  $admin_context = \Drupal::service('router.admin_context');
+  if ($admin_context->isAdminRoute()) {
+    return;
+  }
+
+  $manager = \Drupal::service('plugin.manager.menu.local_task');
+  $tasks = $manager->getLocalTasks(\Drupal::routeMatch()->getRouteName());
+  $subtree_tasks = [];
+  foreach ($tasks['tabs'] as $key => $tab) {
+    $subtree_tasks[$key] = [
+      'title' => $tab['#link']['title'],
+      'url' => $tab['#link']['url'],
+      'weight' => $tab['#weight'],
+    ];
+  }
+
+  $items['primary_tasks'] = [
+    '#type' => 'toolbar_item',
+    'tab' => [
+      '#type' => 'link',
+      '#title' => t('Page Actions'),
+      '#url' => Url::fromRoute('<front>'),
+      '#attributes' => [
+        'title' => t('Home page'),
+        'class' => ['toolbar-icon', 'toolbar-icon-edit'],
+      ],
+    ],
+    'tray' => [
+      '#heading' => t('Page actions'),
+      'toolbar_actions' => [
+        '#type' => 'container',
+        '#attributes' => [
+          'class' => ['toolbar-menu-administration'],
+        ],
+        '#theme' => 'menu_local_tasks',
+        '#primary' => $tasks['tabs'],
+      ],
+    ],
+    '#cache' => [
+      'contexts' => ['user.permissions', 'url.path'],
+    ],
+  ];
+
+  return $items;
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function toolbar_tasks_page_attachments(array &$attachments) {
+  $admin_context = \Drupal::service('router.admin_context');
+  if (!$admin_context->isAdminRoute()) {
+    $attachments['#attached']['library'][] = 'toolbar_tasks/toolbar';
+  }
+}

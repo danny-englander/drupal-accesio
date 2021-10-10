@@ -1,6 +1,7 @@
 /**
  * Layout Builder UI enhancements.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 [aria-label="Layout Builder tools"] {
@@ -41,7 +42,7 @@
 }
 
 a.layout-builder__link {
-  @include rem(font-size, 15px);
+  font-size: rem.convert(15px);
   font-weight: 600;
   @include link-effect();
   color: $charcoal;
@@ -178,17 +179,19 @@ div[id^="__lpform_edit-settings-label-"] {
     background-color: transparent;
   }
 
+  @include remix-icon("\EA4A", $margin: 0 0 0 6px, $font-size: 28px, $transdur: .2s, $hover_rotate: 180);
+
   &:after {
-    content: "";
-    background-image: url('/themes/custom/accesio/dist/images/close.svg');
-    background-repeat: no-repeat;
-    height: 20px;
-    display: block;
-    top: -20px;
-    position: relative;
-    background-size: 74%;
-    z-index: 10000;
-    width: 25px;
+    //content: "";
+    //background-image: url('/themes/custom/accesio/dist/images/close.svg');
+    //background-repeat: no-repeat;
+    //height: 20px;
+    //display: block;
+    //top: -20px;
+    //position: relative;
+    //background-size: 74%;
+    //z-index: 10000;
+    //width: 25px;
   }
 }
 

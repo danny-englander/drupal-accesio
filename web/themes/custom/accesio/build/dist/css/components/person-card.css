@@ -1,10 +1,11 @@
 /**
  * Hero component styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .person-card.has-bg-color {
   margin-bottom: 100px;
 }
-
 .person-card__inner {
   max-width: 1300px;
   margin-left: auto;
@@ -12,12 +13,10 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .person-card * {
   text-decoration: none;
   color: #212121;
 }
-
 .person-card.has-bg-color .block-title {
   margin: 0 -50vw;
   width: 100vw;
@@ -27,7 +26,6 @@
   overflow: hidden;
   background-color: #fff;
 }
-
 .person-card.has-bg-color .block-title > span {
   display: block;
   max-width: 1300px;
@@ -36,16 +34,16 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .person-card__wrap {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 .has-bg-color .person-card__wrap {
   padding-top: 100px;
 }
@@ -56,54 +54,55 @@
     margin-right: -36px;
   }
 }
-
 .person-card__content-wrap {
   display: block;
+  -webkit-box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 120px 0 rgba(0, 0, 0, 0.1);
 }
-
 .has-bg-color .person-card__content-wrap {
   background-color: #fff;
 }
 
 .person-card__content-wrap:hover img {
+  -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-
 .person-card__content {
   padding: 20px 20px;
 }
-
 .person-card__content h2 {
   font-size: 1.875rem;
   margin-bottom: 10px;
 }
-
 .person-card__title {
   font-size: 1.125rem;
 }
-
 .person-card__item {
   width: 29%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin-left: 24px;
   margin-right: 24px;
 }
-
 .person-card__media {
   overflow: hidden;
 }
-
 .person-card__media img {
   width: 100%;
   height: auto;
-  transition: transform .5s ease !important;
+  -webkit-transition: -webkit-transform 0.5s ease !important;
+  transition: -webkit-transform 0.5s ease !important;
+  -o-transition: transform 0.5s ease !important;
+  transition: transform 0.5s ease !important;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease !important;
 }
-
 /*# sourceMappingURL=person-card.css.map */

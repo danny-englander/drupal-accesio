@@ -8,8 +8,8 @@ _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: accesio_local_tasks
 theme: accesio
-region: help
-weight: -7
+region: hidden
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

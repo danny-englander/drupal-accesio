@@ -1,34 +1,18 @@
 /*
 Media theming.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .media--type-remote-video {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-
 @media (min-width: 57.5em) {
   .media--type-remote-video {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
-  .full-width .media--type-remote-video {
-    max-width: 100%;
-  }
-}
-
-.media .item--field-caption {
-  margin-top: 10px;
-}
-
-.media .item--field-caption p {
-  font-family: "EB Garamond", serif;
-  font-size: 1.3125rem;
-  font-style: italic;
-}
-
-.media .item--field-caption p:last-of-type {
-  margin-bottom: 0;
 }
 
 .item--field-media-oembed-video {
@@ -38,7 +22,6 @@ Media theming.
   height: 0;
   clear: both;
 }
-
 .item--field-media-oembed-video > iframe {
   position: absolute;
   top: 0;
@@ -51,17 +34,11 @@ Media theming.
   padding: 30px 0 40px 0;
   margin: 0;
 }
-
-.page-lb .media--type-image {
-  padding: 0;
-}
-
 .media--type-image figcaption {
   border-bottom: 1px dashed #6f6f6f;
   margin-bottom: 6px;
   padding-bottom: 6px;
 }
-
 .media--type-image p {
   font-size: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -69,18 +46,13 @@ Media theming.
   max-width: 100%;
   margin-bottom: 0;
 }
-
 .media--type-image img {
   margin-bottom: 8px;
-  width: 100%;
-  height: auto;
 }
-
 .media--type-image.media--view-mode-hero {
   padding: 0;
   margin: 0;
 }
-
 .media--type-image.media--view-mode-hero img {
   margin: 0;
 }
@@ -89,11 +61,11 @@ Media theming.
   width: 100%;
   height: auto;
 }
-
 @media (min-width: 57.5em) {
   .media--view-mode-full-width img {
     max-height: 750px;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -101,55 +73,48 @@ Media theming.
 .media--view-mode-half-width {
   margin-bottom: 40px;
 }
-
 @media (min-width: 57.5em) {
   .media--view-mode-half-width {
     clear: both;
     width: 50%;
   }
 }
-
 .media--view-mode-half-width.align-center {
   margin: 0 auto;
 }
-
 @media (min-width: 57.5em) {
   .media--view-mode-half-width.align-right {
     float: right;
     margin-left: 40px;
   }
 }
-
 @media (min-width: 57.5em) {
   .media--view-mode-half-width.align-left {
     float: left;
     margin-right: 40px;
   }
 }
-
 .media--view-mode-half-width img {
   width: 100%;
   height: auto;
 }
-
 .media--view-mode-half-width figcaption {
   margin-bottom: 10px;
   padding-bottom: 16px;
 }
 
 .media__attribution {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
-
 .media__attribution i {
   margin-right: 6px;
 }
-
 .media__attribution p {
   margin-left: 0;
 }
-
 /*# sourceMappingURL=media.css.map */

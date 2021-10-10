@@ -49,7 +49,7 @@ tooling:
   gulp:
     service: node
     dir: '/app/web/themes/custom/accesio'
-    cmd: gulp
+    cmd: gulp watch
   theme:
     cmd: './.lando/build_theme.sh'
     description: Build for frontend theme.

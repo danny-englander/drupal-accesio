@@ -1,6 +1,7 @@
 /**
  * Quote component styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 /* Styled quote */
@@ -15,7 +16,6 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-
   &__inner {
     @include container($desktop);
     padding: 50px 0 40px 0;
@@ -28,7 +28,7 @@
     &:before {
       content: "\201C";
       font-family: 'EB Garamond', serif;
-      @include rem(font-size, 176px);
+      font-size: rem.convert(176px);
       line-height: 0.9;
       position: absolute;
       z-index: -1;
@@ -37,7 +37,7 @@
       display: inline-block;
 
       @include mq($from: small_desktop) {
-        @include rem(font-size, 470px);
+        font-size: rem.convert(470px);
         color: $primary-color;
         z-index: 1;
         top: -30px;
@@ -46,7 +46,7 @@
 
     p {
       font-family: 'EB Garamond', serif;
-      @include rem(font-size, 50px);
+      font-size: rem.convert(50px);
       line-height: 1.2;
       letter-spacing: 2px;
 
@@ -57,8 +57,8 @@
   }
 
   &__attribution {
-    @include rem(font-size, 20px);
     font-weight: 600;
+    font-size: rem.convert(20px);
 
     @include mq($from: small_desktop) {
       padding-left: 230px;

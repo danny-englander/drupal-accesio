@@ -1,6 +1,7 @@
 /**
  * Blog post styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .page-blog {
@@ -39,7 +40,7 @@
   }
 
   &__lede {
-    @include rem(font-size, 20px);
+    font-size: rem.convert(20px);
     font-family: $font-sans;
   }
 
@@ -51,7 +52,7 @@
   }
 
   &__date-byline {
-    @include rem(font-size, 17px);
+    font-size: rem.convert(17px);
     font-weight: 500;
     position: relative;
     display: flex;
@@ -80,7 +81,7 @@
     i {
       margin-left: 6px;
       margin-right: 4px;
-      @include rem(font-size, 23px);
+      font-size: rem.convert(23px);
     }
   }
 
@@ -101,7 +102,7 @@
 
       &:first-letter {
         font-family: $font-serif;
-        @include rem(font-size, 110px);
+        font-size: rem.convert(110px);
         float: left;
         line-height: .6;
         margin-right: 8px;

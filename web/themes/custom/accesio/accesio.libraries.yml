@@ -30,12 +30,6 @@ footer:
     base:
       build/dist/css/footer/footer.css: { }
 
-layout:
-  css:
-    base:
-      build/dist/css/layout/grid.css: { }
-      build/dist/css/layout/grid-addons.css: { }
-
 menu_widescreen:
   css:
     base:

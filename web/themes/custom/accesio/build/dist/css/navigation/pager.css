@@ -1,29 +1,35 @@
 /*
  * Pager styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .pager__items {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   list-style: none;
   margin: 30px 0;
   padding: 0;
 }
-
 .pager__item {
   margin: 6px;
 }
-
 .pager__item a {
   font-size: 1.0625rem;
   font-weight: 600;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   width: 46px;
@@ -33,36 +39,35 @@
   color: #fff;
   border-radius: 80px;
 }
-
-.pager__item a:active, .pager__item a:focus, .pager__item a:hover {
+.pager__item a:active,
+.pager__item a:focus,
+.pager__item a:hover {
   background-color: #69cec3;
   color: #212121;
 }
-
 .pager__item--ellipsis {
   font-weight: 600;
   color: #212121;
 }
-
 .page-wrap .pager__item--ellipsis {
   font-size: 1.25rem;
 }
-
-.pager__item--first i, .pager__item--last i {
+.pager__item--first i,
+.pager__item--last i {
   font-size: 1.625rem;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.pager__item--next i, .pager__item--previous i {
+.pager__item--next i,
+.pager__item--previous i {
   font-size: 2.25rem;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .pager__item.is-active a {
   background-color: #69cec3;
   color: #212121;
 }
-
 /*# sourceMappingURL=pager.css.map */

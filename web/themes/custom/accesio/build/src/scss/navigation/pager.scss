@@ -1,6 +1,7 @@
 /*
  * Pager styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .pager {
@@ -18,7 +19,7 @@
     margin: 6px;
 
     a {
-      @include rem(font-size, 17px);
+      font-size: rem.convert(17px);
       font-weight: 600;
       display: flex;
       align-items: center;
@@ -41,7 +42,7 @@
       color: $black;
 
       .page-wrap & {
-        @include rem(font-size, 20px);
+        font-size: rem.convert(20px);
       }
     }
 
@@ -49,7 +50,7 @@
     &--last  {
 
       i {
-        @include rem(font-size, 26px);
+        font-size: rem.convert(26px);
         display: flex;
       }
     }
@@ -58,7 +59,7 @@
     &--previous  {
 
       i {
-        @include rem(font-size, 36px);
+        font-size: rem.convert(36px);
         display: flex;
       }
     }

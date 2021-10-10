@@ -1,6 +1,7 @@
 /**
  * Blog hero component styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .blog-hero {
@@ -83,7 +84,7 @@
 
     p {
       font-family: $font-serif;
-      @include rem(font-size, 26px);
+      font-size: rem.convert(26px);
       margin-bottom: 12px;
     }
   }
@@ -92,7 +93,7 @@
 
     p {
       font-family: $font-serif;
-      @include rem(font-size, 26px);
+      font-size: rem.convert(26px);
       line-height: 1.6;
     }
   }

@@ -1,19 +1,22 @@
 /**
  * Author styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .profile-byline {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
-
 .profile-byline__name {
   margin-left: 6px;
   margin-right: 6px;
 }
-
 .profile-byline__image img {
+  -webkit-filter: grayscale(100%) brightness(140%);
   filter: grayscale(100%) brightness(140%);
   position: relative;
   width: 76px;
@@ -23,5 +26,4 @@
   margin-right: 10px;
   border: 2px solid #404040;
 }
-
 /*# sourceMappingURL=author.css.map */

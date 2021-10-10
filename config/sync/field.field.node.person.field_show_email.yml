@@ -1,0 +1,23 @@
+uuid: e2cdd138-0f45-43ab-b561-c54129881207
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_email
+    - node.type.person
+id: node.person.field_show_email
+field_name: field_show_email
+entity_type: node
+bundle: person
+label: 'Show Email'
+description: 'Check this box to show your email publicly. '
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

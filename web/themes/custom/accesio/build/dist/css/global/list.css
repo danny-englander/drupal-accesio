@@ -1,29 +1,27 @@
 /**
  * List styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .component__item--type--text {
   /* Styled ordered list */
   /* Styled unordered list */
 }
-
 .component__item--type--text ol,
 .component__item--type--text ul {
   list-style: none;
   margin: 30px 0;
   -webkit-padding-start: 0;
 }
-
 .component__item--type--text ol li,
 .component__item--type--text ul li {
   margin-bottom: 20px;
   position: relative;
   padding-left: 40px;
 }
-
 .component__item--type--text ol > li {
   counter-increment: item;
 }
-
 .component__item--type--text ol > li:before {
   font-size: 1rem;
   content: counter(item);
@@ -37,16 +35,16 @@
   position: absolute;
   left: 0;
   top: 4px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   line-height: 1.6;
   padding-left: 2px;
 }
-
 .component__item--type--text ul > li {
   position: relative;
 }
-
 /*# sourceMappingURL=list.css.map */

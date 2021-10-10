@@ -1,47 +1,53 @@
 /*
 * Admin tabs
  */
+/* stylelint-disable */
+/* stylelint-enable */
 ul.tabs {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  margin-top: 30px;
-  max-width: 1340px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: #404040;
 }
-
 ul.tabs > li {
   display: block;
   margin: 0;
   padding: 0;
 }
-
 ul.tabs > li:before {
   display: none;
 }
-
 ul.tabs > li a {
-  background-color: #00505c;
+  font-weight: 400 !important;
+  color: #212121 !important;
+  text-decoration: none !important;
+  font-size: 1rem;
+  background-color: #ffc300;
   padding: 8px 20px;
-  color: #fff;
-  text-decoration: none;
   display: block;
   text-align: center;
   margin: 0;
   position: relative;
 }
-
+ul.tabs > li a:active,
+ul.tabs > li a:focus,
 ul.tabs > li a:hover {
   background-color: #890c0c;
+  color: #fff !important;
 }
-
 ul.tabs > li a.is-active {
   background-color: #890c0c;
+  color: #fff !important;
 }
 
+.toolbar-horizontal .toolbar-tray {
+  border-bottom: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 /*# sourceMappingURL=admin-tabs.css.map */

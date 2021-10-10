@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_profile_image
     - field.field.node.person.field_pronoun
+    - field.field.node.person.field_show_email
     - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
     - field.field.node.person.layout_selection
@@ -69,5 +70,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_profile_image: true
+  field_show_email: true
   layout_selection: true
   links: true

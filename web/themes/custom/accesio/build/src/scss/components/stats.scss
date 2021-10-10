@@ -1,6 +1,7 @@
 /*
  * Stats component styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .stats {
@@ -20,6 +21,7 @@
   &.has-bg-color {
     padding-top: 110px;
     margin-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   @include mq($from: small_plus) {
@@ -29,6 +31,7 @@
   }
 
   &.full-width {
+    @include container(100%);
 
     @include mq($from: small_plus) {
       display: block;
@@ -36,6 +39,7 @@
   }
 
   &__inner {
+
     @include root-modifier('.full-width') {
       @include container(1280px);
     }
@@ -74,25 +78,23 @@
   }
 
   &__item-number {
-
     h2 {
       font-family: 'Rozha One', serif;
       color: $charcoal;
-      @include rem(font-size, 100px);
-      @include rem(letter-spacing, 3px);
+      font-size: rem.convert(100px);
+      letter-spacing: rem.convert(3px);
       line-height: .9;
       border-bottom: 2px dashed $charcoal;
     }
 
     &--title {
       h2 {
-        @include rem(font-size, 60px);
+        font-size: rem.convert(60px);
       }
     }
   }
 
   &__item-desc {
-
     h3 {
       font-family: 'Noto Sans SC', sans-serif;
       font-weight: 400;
@@ -104,7 +106,7 @@
     margin-top: auto;
 
     .ion-icon {
-      @include rem(font-size, 80px);
+      font-size: rem.convert(80px);
       color: $primary-color;
     }
 

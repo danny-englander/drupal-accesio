@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_profile_image
     - field.field.node.person.field_pronoun
+    - field.field.node.person.field_show_email
     - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
     - field.field.node.person.layout_selection
@@ -31,6 +32,7 @@ third_party_settings:
           label: ''
           column_widths: 50-50
           layout_builder_styles_style: {  }
+          context_mapping: {  }
         components:
           d81a9933-14ba-429b-a7da-e518e9c9e289:
             uuid: d81a9933-14ba-429b-a7da-e518e9c9e289
@@ -63,11 +65,30 @@ third_party_settings:
             additional:
               layout_builder_styles_style: {  }
             weight: 0
+          3cbb82b1-23c9-4832-98f0-06e1ffab4b60:
+            uuid: 3cbb82b1-23c9-4832-98f0-06e1ffab4b60
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_show_email'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components: {  }
         third_party_settings: {  }
   layout_library:
@@ -123,6 +144,16 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_show_email:
+    weight: 109
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: first
   field_subtitle:
     weight: 108
     label: above

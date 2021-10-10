@@ -24,15 +24,12 @@ function accesio_preprocess_page(array &$vars) {
   // Define the node.
   $node = \Drupal::routeMatch()->getParameter('node');
   if ($node instanceof NodeInterface) {
-    // Check if there are components.
-    if (!empty($node->field_components->target_id)) {
-      // Check to see if field_hide_title is checked off.
-      if ($node->hasField('field_hide_title') &&
-        !$node->get('field_hide_title')->isEmpty()) {
-        // Add a class if there is a hero.
-        if ($node->get('field_hide_title')->value === '1') {
-          unset($vars['page']['content_top']['accesio_page_title']);
-        }
+    // Check to see if field_hide_title is checked off.
+    if ($node->hasField('field_hide_title') &&
+      !$node->get('field_hide_title')->isEmpty()) {
+      // Add a class if there is a hero.
+      if ($node->get('field_hide_title')->value === '1') {
+        unset($vars['page']['content_top']['accesio_page_title']);
       }
     }
 

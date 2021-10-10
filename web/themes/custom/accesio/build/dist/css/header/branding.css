@@ -1,10 +1,11 @@
 /**
  * Branding component styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .branding__slogan {
   margin-bottom: 6px;
   font-size: 1.0625rem;
   color: #fff;
 }
-
 /*# sourceMappingURL=branding.css.map */

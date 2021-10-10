@@ -200,10 +200,10 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+button:-moz-focus-inner,
+[type="button"]:-moz-focus-inner,
+[type="reset"]:-moz-focus-inner,
+[type="submit"]:-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -274,8 +274,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type="number"]:-webkit-inner-spin-button,
+[type="number"]:-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -293,7 +293,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-decoration {
+[type="search"]:-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -302,7 +302,7 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 
-::-webkit-file-upload-button {
+:-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }

@@ -1,18 +1,4 @@
-image_fields:
-  media--image--field_media_image--hero: '1'
-  media--image--field_media_image--inline_media: '1'
-  media--image--field_media_image--full_width: '1'
-  media--image--field_media_image--half_width: '1'
-  media--person_image--field_media_image_1--default: '1'
-  media--person_image--field_media_image_1--profile_image: '1'
-  media--image--field_media_image--standard: '1'
-  media--image--field_media_image--portfolio_image: '1'
-  media--person_image--field_media_image_1--portrait_image: '1'
-alter_tag:
-  img: img
-  iframe: iframe
 skipClass: no-lazy
-disabled_paths: /rss.xml
 placeholderSrc: ''
 preferNative: false
 cssEffect: true
@@ -40,3 +26,9 @@ lazysizes:
 _core:
   default_config_hash: y7LBTPYVTcA6s3XuXz3mXS0he0kmx7NQWmTz2fDSI-s
 libraryPath: /libraries/lazysizes
+minified: true
+disable_admin: true
+visibility:
+  id: request_path
+  pages: /rss.xml
+  negate: 0

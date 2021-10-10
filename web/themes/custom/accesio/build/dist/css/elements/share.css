@@ -2,25 +2,29 @@
 Share button styling, !important used to
 override inline styles from the module js.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .share {
   width: 100%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 0 !important;
   font-size: inherit !important;
 }
-
 @media (max-width: 47.99em) {
   .share {
     margin-top: 20px;
   }
 }
-
 .share__items {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
@@ -28,13 +32,11 @@ override inline styles from the module js.
   list-style: none;
   margin: 14px 0 0 0;
 }
-
 @media (max-width: 47.99em) {
   .share__items {
     margin: 2px 0 0 0;
   }
 }
-
 .share__prefix {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -43,25 +45,25 @@ override inline styles from the module js.
   width: 1px;
   word-wrap: normal;
 }
-
 .share__item {
   max-width: inherit !important;
   margin-bottom: 0 !important;
   width: 44px !important;
 }
-
 .share__item a {
   background-color: transparent !important;
   text-decoration: none;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
 }
-
-.share__item a:active i, .share__item a:focus i, .share__item a:hover i {
+.share__item a:active i,
+.share__item a:focus i,
+.share__item a:hover i {
   padding: 6px;
   color: #fff;
   background-color: #482e6e;
 }
-
 .share__text {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -70,34 +72,26 @@ override inline styles from the module js.
   width: 1px;
   word-wrap: normal;
 }
-
 .share__icon {
   background: none !important;
 }
-
 .share__icon i {
   font-size: 1.75rem;
   color: #404040;
 }
-
 .share__icon--email i {
   font-size: 1rem;
 }
-
 .share__icon--twitter i {
   color: #1da1f2;
 }
-
 .share__icon--pinterest i {
   color: #bd081c;
 }
-
 .share__icon--linkedin i {
   color: #0a66c2;
 }
-
 .share__link {
   background-color: transparent !important;
 }
-
 /*# sourceMappingURL=share.css.map */

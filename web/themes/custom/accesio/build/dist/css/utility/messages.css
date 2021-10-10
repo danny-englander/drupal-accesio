@@ -4,6 +4,8 @@
  * @todo revisit this after https://www.drupal.org/project/drupal/issues/3078400
  *   has been resolved.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .messages-list {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -17,6 +19,7 @@
 }
 
 .messages {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #fff;
   border-width: 0 0 0 22px;
@@ -30,22 +33,20 @@
   margin-bottom: 30px;
   margin-top: 30px;
 }
-
 .messages:before {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   left: 16px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .messages ul {
   padding: 0 0 0 20px;
   margin: 0;
 }
-
 .messages li {
   padding: 0;
   line-height: 1.2 !important;
@@ -53,12 +54,11 @@
   list-style: disc;
   padding-left: 0 !important;
 }
-
 .messages li:before {
   display: none;
 }
 
-[dir="rtl"] .messages {
+[dir=rtl] .messages {
   padding-right: calc(1.5rem - 5px);
   padding-left: 1.5rem;
   border-right-width: 5px;
@@ -83,7 +83,7 @@
   font-size: 1rem;
 }
 
-[dir="rtl"] .messages__title {
+[dir=rtl] .messages__title {
   margin-right: 2.5rem;
   margin-left: 0;
 }
@@ -95,7 +95,7 @@
   height: 30px;
 }
 
-[dir="rtl"] .messages--error .messages__header {
+[dir=rtl] .messages--error .messages__header {
   background-position: center right;
 }
 
@@ -106,7 +106,7 @@
   height: 60px;
 }
 
-[dir="rtl"] .messages--status .messages__header {
+[dir=rtl] .messages--status .messages__header {
   background-position: center right;
 }
 
@@ -117,7 +117,7 @@
   height: 60px;
 }
 
-[dir="rtl"] .messages--warning .messages__header {
+[dir=rtl] .messages--warning .messages__header {
   background-position: center right;
 }
 
@@ -126,12 +126,12 @@
     margin-left: 2.5rem;
     /* LTR */
   }
-  [dir="rtl"] .messages__content {
+
+  [dir=rtl] .messages__content {
     margin-right: 2.5rem;
     margin-left: 0;
   }
 }
-
 .messages a {
   text-decoration: underline;
   color: #ffd23f;
@@ -160,15 +160,17 @@
     border-width: 1px 1px 1px 5px;
     /* LTR */
   }
-  [dir="rtl"] .messages {
+
+  [dir=rtl] .messages {
     border-right-width: 5px;
     border-left-width: 1px;
   }
+
   .messages__header {
+    -webkit-filter: grayscale(1) brightness(1.5) contrast(10);
     filter: grayscale(1) brightness(1.5) contrast(10);
   }
 }
-
 .layout-builder__message--defaults .messages {
   background-image: none;
 }
@@ -182,10 +184,8 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 .block-help-block p,
 .block-help-block li {
   font-size: 1rem;
 }
-
 /*# sourceMappingURL=messages.css.map */

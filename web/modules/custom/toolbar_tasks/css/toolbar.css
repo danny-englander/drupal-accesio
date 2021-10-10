@@ -1,0 +1,40 @@
+.toolbar-bar .toolbar-icon-edit:before {
+  background-image: url(../images/pencil.svg);
+}
+
+.toolbar-item::-moz-selection {
+  background: transparent;
+}
+
+.toolbar-item::selection {
+  background: transparent;
+}
+
+.toolbar-menu-administration .tab__items li {
+  margin-bottom: 0;
+}
+
+.toolbar-menu-administration .tab__item:first-child .tab__link {
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  border-top-left-radius: 0;
+}
+
+.toolbar-menu-administration .tab__item:last-child .tab__link {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.toolbar-menu-administration .tab__link {
+  color: #565656;
+  cursor: pointer;
+  padding: 1em 1.3333em;
+  text-decoration: none;
+  background: none;
+  font-size: 1em;
+}
+
+.toolbar-menu-administration .tab__link:active,
+.toolbar-menu-administration .tab__link.is-active {
+  background-color: transparent;
+}

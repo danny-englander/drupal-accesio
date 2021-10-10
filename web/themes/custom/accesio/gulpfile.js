@@ -12,8 +12,10 @@ const sass = require('gulp-sass')(require('sass'));
 const gulpStylelint = require("gulp-stylelint");
 const source = require("vinyl-source-stream");
 const sourcemaps = require('gulp-sourcemaps');
-const uglify = require("gulp-uglify");
 const svgSprite = require('gulp-svg-sprite');
+const uglifyes = require('uglify-es');
+const  composer = require('gulp-uglify/composer');
+const  uglify = composer(uglifyes, console);
 
 /**
  * List of paths and settings for gulp functions.
@@ -64,11 +66,11 @@ const browserSyncInit = (callback) => {
     baseDir: './',
     open: false,
     notify: true,
-    proxy: 'accesio-dcd.docksal',
-    host: 'accesio-dcd.docksal',
+    proxy: 'accesio-lb.lndo.site',
+    host: 'accesio-lb.lndo.site',
     openBrowserAtStart: false,
     reloadOnRestart: true,
-    port: 31549,
+    port: 32873,
     ui: false,
     reloadDelay: 200
   });
@@ -210,8 +212,6 @@ const watchSCSS = () => {
       overrideBrowserslist: settings.sass.browserList,
       cascade: false
     }))
-    // Combine media queries.
-    .pipe(gcmq())
     // Write the sourcemap to its own file in place.
     .pipe(sourcemaps.write('./'))
     // Refine and format CSS sorting.

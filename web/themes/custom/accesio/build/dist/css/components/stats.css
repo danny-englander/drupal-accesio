@@ -1,6 +1,8 @@
 /*
  * Stats component styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .stats {
   max-width: 1280px;
   margin-left: auto;
@@ -10,40 +12,44 @@
   padding-top: 20px;
   padding-bottom: 50px;
 }
-
 .page-lb .stats {
   padding-top: 0;
   padding-bottom: 0;
 }
-
 @media (min-width: 32.5em) {
   .page-lb .stats {
     display: block;
   }
 }
-
 .stats.has-bg-color {
   padding-top: 110px;
   margin-bottom: 80px;
+  padding-bottom: 100px;
 }
-
 @media (min-width: 32.5em) {
   .stats {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
-
+.stats.full-width {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media (min-width: 32.5em) {
   .stats.full-width {
     display: block;
   }
 }
-
 .full-width .stats__inner {
   max-width: 1280px;
   margin-left: auto;
@@ -59,77 +65,71 @@
 
 @media (min-width: 32.5em) {
   .stats__wrap {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
-
 .stats__item {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
-
 @media (max-width: 63.99em) {
   .stats__item {
     margin-bottom: 40px;
   }
 }
-
 @media (min-width: 32.5em) and (max-width: 63.99em) {
   .stats__item {
     width: 50%;
   }
 }
-
 @media (min-width: 64em) {
   .stats__item {
     width: 25%;
   }
 }
-
 .stats__item-number h2 {
-  font-family: 'Rozha One', serif;
+  font-family: "Rozha One", serif;
   color: #404040;
   font-size: 6.25rem;
   letter-spacing: 0.1875rem;
-  line-height: .9;
+  line-height: 0.9;
   border-bottom: 2px dashed #404040;
 }
-
 .stats__item-number--title h2 {
   font-size: 3.75rem;
 }
-
 .stats__item-desc h3 {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   font-weight: 400;
   text-align: center;
 }
-
 .stats__item-icon {
   margin-top: auto;
 }
-
 .stats__item-icon .ion-icon {
   font-size: 5rem;
   color: #482e6e;
 }
-
 .stats__item-icon img {
   width: 290px;
   height: 290px;
 }
-
 .stats svg {
   width: 200px;
 }
-
 /*# sourceMappingURL=stats.css.map */

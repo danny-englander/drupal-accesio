@@ -66,7 +66,6 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
-  quickedit: 0
   rabbit_hole: 0
   rdf: 0
   responsive_image: 0
@@ -84,6 +83,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  toolbar_tasks: 0
   twig_field_value: 0
   twig_tweak: 0
   update: 0

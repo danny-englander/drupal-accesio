@@ -1,13 +1,14 @@
 /**
  * Accordion component styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .c-accordion {
   @include container(1270px);
 
   .page-is-fullwidth & {
-    @include container(1270px);
+    @include container(1260px);
   }
 
   &__main-title {
@@ -21,7 +22,7 @@
   }
 
   &__items {
-  //  border-top: 1px solid $gray;
+    border-top: 1px solid $gray;
     margin-bottom: 50px;
     padding: 0;
 
@@ -31,7 +32,7 @@
   }
 
   .accordion__header {
-    @include rem(font-size, 22px);
+    font-size: rem.convert(22px);
     font-family: $font-sans;
     background-color: transparent;
     border: 0;
@@ -41,7 +42,7 @@
     width: 100%;
     text-align: left;
     padding: 24px 0;
-    @include remix-icon("\ea11", $margin: 0 8px 0 0, $top: 42px, $font-size: 28px, $right: 0, $transdur: .5s, $position: absolute);
+    @include remix-icon("\ea11", $margin: 0 8px 0 0, $font-size: 28px, $transdur: .5s);
 
     &[aria-expanded="true"] {
       margin-bottom: 0;
@@ -50,6 +51,7 @@
       &:after {
         transform: rotate(405deg);
       }
+      // @include md-icon("\e148", $font-size: 24px, $rotate: 45);
     }
 
     #{$a-tags-hover} {
@@ -69,12 +71,11 @@
   }
 
   &__item {
-    border-bottom: 2px solid $charcoal;
+    border-bottom: 1px solid $gray;
   }
 
   &__title {
-    // font-family: $font-helvetica-neue-regular;
-    @include rem(font-size, 14px);
+    font-size: rem.convert(14px);
     line-height: 1.86;
     color: $charcoal;
     position: relative;

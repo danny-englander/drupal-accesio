@@ -1,15 +1,17 @@
 /**
  * Layout Builder.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .layout__section {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
 .layout__section > div {
   width: 50%;
 }
-
 /*# sourceMappingURL=two-column-bricks.css.map */

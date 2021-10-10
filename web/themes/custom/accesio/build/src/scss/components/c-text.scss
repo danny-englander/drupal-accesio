@@ -1,6 +1,7 @@
 /*
  * Text.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .component__item--type--text {
@@ -14,6 +15,6 @@
   text-align: center;
 
   h2 {
-    @include rem(font-size, 40px);
+    font-size: rem.convert(40px);
   }
 }

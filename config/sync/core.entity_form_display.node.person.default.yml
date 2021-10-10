@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_last_name
     - field.field.node.person.field_profile_image
     - field.field.node.person.field_pronoun
+    - field.field.node.person.field_show_email
     - field.field.node.person.field_subtitle
     - field.field.node.person.field_text
     - field.field.node.person.layout_selection
@@ -23,6 +24,8 @@ third_party_settings:
     group_tabs:
       children:
         - group_content
+        - group_profile_image
+        - group_bio
         - group_settings
       parent_name: ''
       weight: 0
@@ -32,7 +35,7 @@ third_party_settings:
         id: ''
         classes: ''
         direction: horizontal
-        width_breakpoint: '640'
+        width_breakpoint: 640
       label: Tabs
     group_content:
       children:
@@ -42,8 +45,6 @@ third_party_settings:
         - field_pronoun
         - field_subtitle
         - field_email
-        - field_profile_image
-        - field_text
       parent_name: group_tabs
       weight: 16
       format_type: tab
@@ -57,9 +58,10 @@ third_party_settings:
       label: Content
     group_settings:
       children:
+        - field_show_email
         - layout_selection
       parent_name: group_tabs
-      weight: 17
+      weight: 19
       format_type: tab
       region: content
       format_settings:
@@ -69,6 +71,36 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: Settings
+    group_profile_image:
+      children:
+        - field_profile_image
+      parent_name: group_tabs
+      weight: 17
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Profile Image'
+    group_bio:
+      children:
+        - field_text
+      parent_name: group_tabs
+      weight: 18
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Bio
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -76,7 +108,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -121,6 +153,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_show_email:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_subtitle:
     weight: 5
     settings:
@@ -140,12 +179,12 @@ content:
   layout_selection:
     type: options_select
     region: content
-    weight: 15
+    weight: 27
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 13
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -153,21 +192,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 3
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
@@ -180,7 +219,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

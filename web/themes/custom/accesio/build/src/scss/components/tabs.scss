@@ -1,6 +1,7 @@
 /*
  * Tabs styling.
  */
+@use './node_modules/sass-rem' as rem;
 @import "../global-includes";
 
 .js-tablist {
@@ -19,7 +20,7 @@
   }
 
   &__link {
-    @include rem(font-size, 17px);
+    font-size: rem.convert(17px);
     font-weight: 600;
     display: inline-block;
     vertical-align: middle;

@@ -1,6 +1,8 @@
 /**
  * Multimedia component styling.
  */
+/* stylelint-disable */
+/* stylelint-enable */
 .multimedia {
   max-width: 1440px;
   margin-left: auto;
@@ -8,9 +10,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .multimedia .media--type-remote-video {
   max-width: 100%;
 }
-
 /*# sourceMappingURL=multimedia.css.map */
