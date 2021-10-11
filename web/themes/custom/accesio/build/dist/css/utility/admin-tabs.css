@@ -23,11 +23,11 @@ ul.tabs > li:before {
   display: none;
 }
 ul.tabs > li a {
-  font-weight: 400 !important;
-  color: #212121 !important;
+  font-weight: 600 !important;
+  color: #fff !important;
   text-decoration: none !important;
   font-size: 1rem;
-  background-color: #ffc300;
+  background-color: #0550e6;
   padding: 8px 20px;
   display: block;
   text-align: center;
@@ -37,11 +37,11 @@ ul.tabs > li a {
 ul.tabs > li a:active,
 ul.tabs > li a:focus,
 ul.tabs > li a:hover {
-  background-color: #890c0c;
+  background-color: #404040;
   color: #fff !important;
 }
 ul.tabs > li a.is-active {
-  background-color: #890c0c;
+  background-color: #404040;
   color: #fff !important;
 }
 

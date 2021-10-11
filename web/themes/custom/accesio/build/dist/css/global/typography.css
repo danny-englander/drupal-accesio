@@ -11,7 +11,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-weight: 400;
   src: url("../../fonts/eb-garamond-v14-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../fonts/eb-garamond-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/eb-garamond-v14-latin-regular.woff") format("woff"), url("../../fonts/eb-garamond-v14-latin-regular.ttf") format("truetype"), url("../../fonts/eb-garamond-v14-latin-regular.svg#EBGaramond") format("svg");
+  src: local(""), url("../../fonts/eb-garamond-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/eb-garamond-v14-latin-regular.woff2") format("woff2"), url("../../fonts/eb-garamond-v14-latin-regular.woff") format("woff"), url("../../fonts/eb-garamond-v14-latin-regular.ttf") format("truetype"), url("../../fonts/eb-garamond-v14-latin-regular.svg#EBGaramond") format("svg");
   /* Legacy iOS */
   font-display: fallback;
 }
@@ -22,7 +22,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-weight: 600;
   src: url("../../fonts/eb-garamond-v14-latin-600.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../fonts/eb-garamond-v14-latin-600.eot?#iefix") format("embedded-opentype"), url("../../fonts/eb-garamond-v14-latin-600.woff") format("woff"), url("../../fonts/eb-garamond-v14-latin-600.ttf") format("truetype"), url("../../fonts/eb-garamond-v14-latin-600.svg#EBGaramond") format("svg");
+  src: local(""), url("../../fonts/eb-garamond-v14-latin-600.eot?#iefix") format("embedded-opentype"), url("../../fonts/eb-garamond-v14-latin-600.woff2") format("woff2"), url("../../fonts/eb-garamond-v14-latin-600.woff") format("woff"), url("../../fonts/eb-garamond-v14-latin-600.ttf") format("truetype"), url("../../fonts/eb-garamond-v14-latin-600.svg#EBGaramond") format("svg");
   /* Legacy iOS */
   font-display: fallback;
 }
@@ -33,7 +33,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-weight: 400;
   src: url("../../fonts/rozha-one-v8-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../fonts/rozha-one-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/rozha-one-v8-latin-regular.woff") format("woff"), url("../../fonts/rozha-one-v8-latin-regular.ttf") format("truetype"), url("../../fonts/rozha-one-v8-latin-regular.svg#RozhaOne") format("svg");
+  src: local(""), url("../../fonts/rozha-one-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/rozha-one-v8-latin-regular.woff2") format("woff2"), url("../../fonts/rozha-one-v8-latin-regular.woff") format("woff"), url("../../fonts/rozha-one-v8-latin-regular.ttf") format("truetype"), url("../../fonts/rozha-one-v8-latin-regular.svg#RozhaOne") format("svg");
   /* Legacy iOS */
   font-display: fallback;
 }
@@ -44,7 +44,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-weight: 400;
   src: url("../../fonts/ibm-plex-sans-v8-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/ibm-plex-sans-v8-latin-regular.woff") format("woff"), url("../../fonts/ibm-plex-sans-v8-latin-regular.ttf") format("truetype"), url("../../fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans") format("svg");
+  src: local(""), url("../../fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/ibm-plex-sans-v8-latin-regular.woff2") format("woff2"), url("../../fonts/ibm-plex-sans-v8-latin-regular.woff") format("woff"), url("../../fonts/ibm-plex-sans-v8-latin-regular.ttf") format("truetype"), url("../../fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans") format("svg");
   /* Legacy iOS */
   font-display: fallback;
 }
@@ -55,7 +55,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-weight: 500;
   src: url("../../fonts/ibm-plex-sans-v8-latin-500.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../fonts/ibm-plex-sans-v8-latin-500.eot?#iefix") format("embedded-opentype"), url("../../fonts/ibm-plex-sans-v8-latin-500.woff") format("woff"), url("../../fonts/ibm-plex-sans-v8-latin-500.ttf") format("truetype"), url("../../fonts/ibm-plex-sans-v8-latin-500.svg#IBMPlexSans") format("svg");
+  src: local(""), url("../../fonts/ibm-plex-sans-v8-latin-500.eot?#iefix") format("embedded-opentype"), url("../../fonts/ibm-plex-sans-v8-latin-500.woff2") format("woff2"), url("../../fonts/ibm-plex-sans-v8-latin-500.woff") format("woff"), url("../../fonts/ibm-plex-sans-v8-latin-500.ttf") format("truetype"), url("../../fonts/ibm-plex-sans-v8-latin-500.svg#IBMPlexSans") format("svg");
   /* Legacy iOS */
   font-display: fallback;
 }
@@ -63,7 +63,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-family: "remixicon";
   src: url("../../fonts/remixicon.eot");
   /* IE9*/
-  src: url("../../fonts/remixicon.eot?#iefix") format("embedded-opentype"), url("../../fonts/remixicon.woff") format("woff"), url("../../fonts/remixicon.ttf") format("truetype"), url("../../fonts/remixicon.svg?#remixicon") format("svg");
+  src: url("../../fonts/remixicon.eot?#iefix") format("embedded-opentype"), url("../../fonts/remixicon.woff2") format("woff2"), url("../../fonts/remixicon.woff") format("woff"), url("../../fonts/remixicon.ttf") format("truetype"), url("../../fonts/remixicon.svg?#remixicon") format("svg");
   /* iOS 4.1- */
   font-display: fallback;
 }
@@ -72,7 +72,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/MaterialIcons-Regular.ttf") format("truetype");
+  src: url("../../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../../fonts/MaterialIcons-Regular.ttf") format("truetype");
   font-display: fallback;
 }
 /* fallback */
@@ -80,7 +80,7 @@ https://google-webfonts-helper.herokuapp.com/fonts/eb-garamond?subsets=latin
   font-family: "Material Icons Outlined";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/MaterialIconsOutlined-Regular.otf") format("opentype");
+  src: url("../../fonts/MaterialIconsOutlined-Regular.woff2") format("woff2"), url("../../fonts/MaterialIconsOutlined-Regular.otf") format("opentype");
   font-display: fallback;
 }
 /*

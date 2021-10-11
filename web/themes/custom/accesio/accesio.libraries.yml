@@ -9,6 +9,7 @@ accesio:
       build/dist/css/global/media.css: { }
       build/dist/css/global/list.css: { }
       build/dist/css/global/tables.css: { }
+      build/dist/css/global/system.css: { }
   js:
     build/dist/js/once.js: { minified: true, defer: true, async: true }
     build/dist/js/min/mmenu.min.js: { minified: true, defer: true, async: true }
@@ -170,11 +171,6 @@ layout_bricks:
   css:
     theme:
       build/dist/css/layout/two-column-bricks.css: { }
-
-lb_common:
-  css:
-    theme:
-      build/dist/css/layout/layout-builder-common.css: { }
 
 person_card:
   css:

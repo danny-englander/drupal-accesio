@@ -1,4 +1,6 @@
+// system css.
 @use './node_modules/sass-rem' as rem;
+@import "../global-includes";
 
 abbr[title] {
   text-decoration: none;

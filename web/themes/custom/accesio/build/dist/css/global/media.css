@@ -34,13 +34,16 @@ Media theming.
   padding: 30px 0 40px 0;
   margin: 0;
 }
+.layout__region .media--type-image {
+  padding-top: 0;
+}
 .media--type-image figcaption {
   border-bottom: 1px dashed #6f6f6f;
   margin-bottom: 6px;
   padding-bottom: 6px;
 }
 .media--type-image p {
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 500;
   max-width: 100%;
@@ -116,5 +119,11 @@ Media theming.
 }
 .media__attribution p {
   margin-left: 0;
+}
+
+.item--field-attribution {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=media.css.map */

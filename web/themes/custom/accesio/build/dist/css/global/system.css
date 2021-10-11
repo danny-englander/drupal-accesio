@@ -1,0 +1,21 @@
+/* stylelint-disable */
+/* stylelint-enable */
+abbr[title] {
+  text-decoration: none;
+}
+
+.node--unpublished {
+  position: relative;
+}
+.node--unpublished:before {
+  content: "Unpublished";
+  font-size: 6.25rem;
+  color: #890c0c;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  margin: 0 auto;
+  font-family: serif;
+  letter-spacing: 6px;
+}
+/*# sourceMappingURL=system.css.map */

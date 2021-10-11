@@ -14,8 +14,8 @@
 
   .page-lb & {
     margin-top: 0;
-    margin-bottom: 0;
   }
+
   &__inner {
     @include container($desktop);
     padding: 50px 0 40px 0;

@@ -8,7 +8,7 @@ dependencies:
     - field.field.media.image.field_caption
     - field.field.media.image.field_category
     - field.field.media.image.field_media_image
-    - image.style.thumbnail
+    - image.style.max_325x325
     - media.type.image
   module:
     - image
@@ -30,8 +30,8 @@ content:
     weight: 0
     region: content
     settings:
+      preview_image_style: max_325x325
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
   created: true

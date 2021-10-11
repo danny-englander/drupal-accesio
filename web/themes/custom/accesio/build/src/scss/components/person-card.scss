@@ -23,6 +23,7 @@
     .block-title {
       @include full-width();
       background-color: $white;
+      padding-bottom: 40px;
 
       > span {
         display: block;
@@ -38,6 +39,7 @@
 
     @include root-modifier('.has-bg-color') {
       padding-top: 100px;
+      padding-bottom: 70px;
     }
 
     @include mq($from: small_desktop) {
@@ -97,5 +99,21 @@
       @include mq($from: small_desktop) {
       }
     }
+  }
+}
+
+.layout--twocol-section {
+  @include container(1300px);
+}
+
+.block-layout-builder {
+  margin-bottom: 70px;
+}
+
+.layout__region--first,
+.layout__region--second {
+
+  > div {
+    padding: 0 20px;
   }
 }

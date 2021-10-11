@@ -21,11 +21,11 @@ ul.tabs {
     }
 
     a {
-      font-weight: 400 !important;
-      color: $black !important;
+      font-weight: 600 !important;
+      color: $white !important;
       text-decoration: none !important;
       font-size: rem.convert(16px);
-      background-color: $goldenrod;
+      background-color: #0550e6;
       padding: 8px 20px;
       display: block;
       text-align: center;
@@ -33,12 +33,12 @@ ul.tabs {
       position: relative;
 
       #{$a-tags-hover} {
-        background-color: $dark-red;
+        background-color: $charcoal;
         color: $white !important;
       }
 
       &.is-active {
-        background-color: $dark-red;
+        background-color: $charcoal;
         color: $white !important;
       }
     }

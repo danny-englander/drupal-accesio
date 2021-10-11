@@ -4,7 +4,12 @@
 @import "../global-includes";
 
 .multimedia {
-  @include container(1440px);
+  @include container(1300px);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
   .media--type-remote-video {
     max-width: 100%;
