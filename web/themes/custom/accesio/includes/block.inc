@@ -16,9 +16,14 @@ use Drupal\image\Entity\ImageStyle;
  */
 function accesio_preprocess_block(&$vars) {
   if (isset($vars['elements']['#id'])) {
-    $block = Block::load($vars['elements']['#id']);
-    $region = $block->getRegion();
-    $vars['content']['#attributes']['region'] = $region;
+    /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $block_storage */
+    $block_storage = \Drupal::entityTypeManager()->getStorage('block');
+    /** @var \Drupal\block\BlockInterface $block */
+    $block = $block_storage->load($vars['elements']['#id']);
+    if (!empty($block)) {
+      $region = $block->getRegion();
+      $vars['content']['#attributes']['region'] = $region;
+    }
   }
 
 
@@ -56,10 +61,26 @@ function accesio_theme_suggestions_block_alter(array &$suggestions, array $vars)
 
   // Add theme suggestions to blocks based on region.
   if (!empty($vars['elements']['#id'])) {
-    $block = Block::load($vars['elements']['#id']);
-    $suggestions[] = 'block__' . $block->getRegion();
-    $suggestions[] = 'block__' . $block->getRegion() . '__' . $vars['elements']['#id'];
+    /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $block_storage */
+    $block_storage = \Drupal::entityTypeManager()->getStorage('block');
+    /** @var \Drupal\block\BlockInterface $block */
+    $block = $block_storage->load($vars['elements']['#id']);
+    if (!empty($block)) {
+      $suggestions[] = 'block__' . $block->getRegion();
+      $suggestions[] = 'block__' . $block->getRegion() . '__' . $vars['elements']['#id'];
+    }
   }
+
+//  if (!empty($vars['elements']['#id'])) {
+//    /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $block_storage */
+//    $block_storage = \Drupal::entityTypeManager()->getStorage('block');
+//    /** @var \Drupal\block\BlockInterface $block */
+//    $block = $block_storage->load($vars['elements']['#id']);
+//    if (!empty($block)) {
+//      $vars['content']['#attributes']['data-region'] = $block->getRegion();
+//    }
+//  }
+
   return $suggestions;
 }
 

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: bottom_padding_remove
-label: 'Bottom Padding Remove'
+label: 'Padding bottom remove'
 classes: bottom-padding-remove
 type: component
 weight: -7

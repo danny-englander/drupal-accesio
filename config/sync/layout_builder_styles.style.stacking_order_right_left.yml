@@ -1,0 +1,12 @@
+uuid: 4b021b31-a0e2-456c-ba6a-0184d6b2b63c
+langcode: en
+status: true
+dependencies: {  }
+id: stacking_order_right_left
+label: 'Mobile stacking order: right / left'
+classes: stacking-order--right-left
+type: section
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_twocol_section
