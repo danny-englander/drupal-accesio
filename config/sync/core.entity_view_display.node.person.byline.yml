@@ -55,6 +55,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  field_department: true
   field_email: true
   field_show_email: true
   field_subtitle: true

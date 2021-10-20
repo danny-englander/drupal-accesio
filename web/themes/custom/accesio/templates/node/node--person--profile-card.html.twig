@@ -64,17 +64,10 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
- *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
-
-
-{{ attach_library('accesio/lb_common') }}
-
 {% set classes = [
+  'profile-card',
   'node',
   'node--type-' ~ node.bundle|clean_class,
   node.isPromoted() ? 'node--promoted',
@@ -83,20 +76,48 @@
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ] %}
 
-<article{{ attributes.addClass(classes) }}>
+{% set media_id = node.field_profile_image.entity.mid.getString() %}
 
-  {{ title_prefix }}
-  {{ title_suffix }}
+<section{{ attributes.addClass(classes) }}>
 
-  <div{{ content_attributes.addClass('node__content') }}>
-  <h1>
-    {{ content.field_first_name | field_value }}
-    {{ content.field_last_name | field_value }}
-    {{ content.field_pronoun | field_value }}
-  </h1>
+  <div{{ content_attributes.addClass('profile-card__content') }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
 
-    <h2>{{ content.field_subtitle | field_value }}</h2>
+    <div class="profile-card__wrap">
 
-    {{ content.field_text }}
+      <div class="profile-card__media">
+        {% if media_id | render %}
+          {{ drupal_entity('media', media_id, 'medium') }}
+        {% else %}
+          {# Note empty alt tag as the placeholder is decorative. #}
+          <img src="/{{ directory }}/images/placeholders/placeholder-card.png"
+               alt=""
+               loading="lazy"
+               width="180"
+               height="300">
+        {% endif %}
+      </div>
+
+      {{ drupal_breakpoint() }}
+
+      <div class="profile-card__items-wrap">
+
+        <ul class="profile-card__items">
+          {% if node.field_subtitle.value | render %}
+            <li>{{ 'Job Title'|t }}: {{ node.field_subtitle.value }}</li>
+          {% endif %}
+
+          {% if node.field_email.value | render %}
+            <li>{{ 'Email'|t }}: {{ node.field_email.value }}</li>
+          {% endif %}
+
+          {% if node.field_department.value | render %}
+            <li>{{ 'Department'|t }}: {{ node.field_department.value }}</li>
+          {% endif %}
+        </ul>
+
+      </div>
+    </div>
   </div>
-</article>
+</section>

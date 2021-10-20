@@ -107,20 +107,4 @@
   transition: transform 0.5s ease !important;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease !important;
 }
-.layout--twocol-section {
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.block-layout-builder {
-  margin-bottom: 70px;
-}
-
-.layout__region--first > div,
-.layout__region--second > div {
-  padding: 0 20px;
-}
 /*# sourceMappingURL=person-card.css.map */

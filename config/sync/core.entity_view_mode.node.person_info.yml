@@ -1,10 +1,10 @@
-uuid: 48954156-6e5c-4366-8abc-0cbbe7b0438d
+uuid: 54ea75eb-2acb-47b4-a3c8-092e27b1dcf7
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.person_card
-label: 'Teaser Card'
+id: node.person_info
+label: 'Person Info'
 targetEntityType: node
 cache: true

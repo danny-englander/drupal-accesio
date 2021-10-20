@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.person.field_department
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
@@ -17,7 +18,6 @@ dependencies:
     - ctools
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
     - layout_library
     - text
     - user
@@ -30,67 +30,41 @@ third_party_settings:
         layout_id: layout_twocol_section
         layout_settings:
           label: ''
-          column_widths: 50-50
+          column_widths: 33-67
           layout_builder_styles_style: {  }
           context_mapping: {  }
         components:
-          d81a9933-14ba-429b-a7da-e518e9c9e289:
-            uuid: d81a9933-14ba-429b-a7da-e518e9c9e289
-            region: second
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:person:field_profile_image'
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: default
-                  link: false
-                third_party_settings: {  }
-            additional: {  }
-            weight: 0
-          7a6b6df3-1658-4f6a-8f53-6d67cae59ff1:
-            uuid: 7a6b6df3-1658-4f6a-8f53-6d67cae59ff1
+          19e5204d-8eef-4c8f-bf91-47ac5156cfe4:
+            uuid: 19e5204d-8eef-4c8f-bf91-47ac5156cfe4
             region: first
             configuration:
               id: 'entity_view:node'
-              label: 'Entity view (Content)'
+              label: 'Entity view (Profile card)'
               provider: ctools
               label_display: '0'
-              view_mode: teaser
+              view_mode: profile_card
               context_mapping:
                 entity: layout_builder.entity
             additional:
               layout_builder_styles_style: {  }
             weight: 0
-          3cbb82b1-23c9-4832-98f0-06e1ffab4b60:
-            uuid: 3cbb82b1-23c9-4832-98f0-06e1ffab4b60
-            region: first
+          993bef80-9041-4d54-af7e-8d287f0487a9:
+            uuid: 993bef80-9041-4d54-af7e-8d287f0487a9
+            region: second
             configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Person Info)'
+              provider: ctools
               label_display: '0'
+              view_mode: person_info
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_show_email'
-              formatter:
-                label: above
-                settings:
-                  format: default
-                  format_custom_false: ''
-                  format_custom_true: ''
-                third_party_settings: {  }
-                type: boolean
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-          context_mapping: {  }
-        components: {  }
-        third_party_settings: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 0
+        third_party_settings:
+          layout_builder_lock:
+            lock: {  }
   layout_library:
     enable: true
   layout_builder_restrictions:
@@ -99,6 +73,7 @@ third_party_settings:
       whitelisted_blocks: {  }
       blacklisted_blocks: {  }
       allowed_layouts: {  }
+      restricted_categories: {  }
 id: node.person.default
 targetEntityType: node
 bundle: person
@@ -175,4 +150,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_department: true
   layout_selection: true

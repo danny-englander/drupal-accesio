@@ -7,6 +7,9 @@
   background-color: #212121;
   width: 100%;
 }
+.is-layout-builder-library .masthead {
+  margin-top: 38px;
+}
 .masthead__main {
   display: -webkit-box;
   display: -ms-flexbox;

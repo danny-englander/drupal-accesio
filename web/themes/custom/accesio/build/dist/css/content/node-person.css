@@ -1,0 +1,29 @@
+/**
+ * Person node styling.
+ */
+/* stylelint-disable */
+/* stylelint-enable */
+.node-person {
+  padding-top: 50px;
+}
+
+.profile-card__items {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.profile-card__items > li {
+  margin-bottom: 8px;
+}
+
+.profile-card__wrap {
+  background-color: #212121;
+}
+.profile-card__wrap > * {
+  color: #fff;
+}
+
+.profile-card__media img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=node-person.css.map */

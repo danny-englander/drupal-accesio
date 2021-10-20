@@ -166,6 +166,7 @@ layout_builder_ui:
   css:
     theme:
       build/dist/css/utility/layout-builder-ui.css: { }
+      build/dist/css/utility/tabledrag.css: { }
 
 layout_bricks:
   css:
@@ -181,3 +182,8 @@ multimedia:
   css:
     theme:
        build/dist/css/components/multimedia.css: { }
+
+node_person:
+  css:
+    theme:
+      build/dist/css/content/node-person.css: { }

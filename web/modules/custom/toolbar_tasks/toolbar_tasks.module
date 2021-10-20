@@ -17,7 +17,8 @@ function toolbar_tasks_toolbar() {
   if ($admin_context->isAdminRoute()) {
     return;
   }
-
+  // Define the route.
+  $route = \Drupal::routeMatch()->getRouteName();
   $manager = \Drupal::service('plugin.manager.menu.local_task');
   $tasks = $manager->getLocalTasks(\Drupal::routeMatch()->getRouteName());
   $subtree_tasks = [];
@@ -28,6 +29,25 @@ function toolbar_tasks_toolbar() {
       'weight' => $tab['#weight'],
     ];
   }
+
+  $items['route'] = [
+    '#type' => 'toolbar_item',
+    'tab' => [
+      '#type' => 'html_tag',
+      '#tag' => 'div',
+      '#value' => $route,
+      '#options' => [
+        'attributes' => [
+          'title' => t('Route'),
+          'class' => ['toolbar-icon', 'toolbar-icon', 'toolbar-item'],
+        ],
+      ],
+    ],
+    '#weight' => 100000,
+    '#cache' => [
+      'contexts' => ['user.permissions', 'url.path'],
+    ],
+  ];
 
   $items['primary_tasks'] = [
     '#type' => 'toolbar_item',

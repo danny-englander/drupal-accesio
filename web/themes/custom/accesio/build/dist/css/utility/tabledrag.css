@@ -1,0 +1,133 @@
+/**
+ * Table drag css.
+ */
+/* stylelint-disable */
+/* stylelint-enable */
+.is-layout-builder-admin .drag {
+  cursor: move;
+}
+
+.is-layout-builder-admin tr.region-title {
+  font-weight: normal;
+}
+
+.is-layout-builder-admin table .region-message {
+  color: #fff;
+}
+
+.is-layout-builder-admin table .region-populated {
+  display: none;
+}
+
+.is-layout-builder-admin .add-new .tabledrag-changed {
+  display: none;
+}
+
+.is-layout-builder-admin .draggable a.tabledrag-handle {
+  float: left;
+  /* LTR */
+  overflow: hidden;
+  min-width: 20px;
+  height: auto;
+  margin: 0 5px 0 0;
+  padding: 0;
+  cursor: move;
+  text-decoration: none;
+  background-image: none;
+}
+
+.is-layout-builder-admin a.tabledrag-handle .handle {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  /* Use lighter drag icon against dark background. */
+  background-image: url(../../images/move.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.is-layout-builder-admin .draggable a.tabledrag-handle:hover .handle,
+.is-layout-builder-admin .draggable a.tabledrag-handle:focus .handle {
+  text-decoration: none;
+  background-image: url(../../images/move.svg);
+}
+
+.is-layout-builder-admin tr td {
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  line-height: 1.4;
+}
+
+.is-layout-builder-admin tr td abbr {
+  margin-left: 5px;
+  /* LTR */
+}
+
+.is-layout-builder-admin tr:hover td {
+  background: #fed845;
+}
+
+.is-layout-builder-admin tr.drag td {
+  background: #fc0;
+}
+
+.is-layout-builder-admin tr.drag-previous td {
+  background: #ffd11d;
+}
+
+.is-layout-builder-admin tr.drag-previous:hover td {
+  background: #fed845;
+}
+
+body div.tabledrag-changed-warning {
+  margin-bottom: 0.5em;
+  font-size: 14px;
+}
+
+.is-layout-builder-admin .touchevents .draggable .menu-item__link {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.is-layout-builder-admin .touchevents a.tabledrag-handle {
+  width: 40px;
+  height: 44px;
+}
+
+.is-layout-builder-admin .touchevents a.tabledrag-handle .handle {
+  height: 21px;
+  background-position: 40% 19px;
+  /* LTR */
+}
+
+.is-layout-builder-admin .touchevents .draggable.drag a.tabledrag-handle .handle {
+  background-position: 50% -32px;
+}
+
+.is-layout-builder-admin .tabledrag-toggle-weight-wrapper {
+  padding-top: 10px;
+  text-align: right;
+  /* LTR */
+}
+
+.is-layout-builder-admin .indentation {
+  float: left;
+  /* LTR */
+  width: auto;
+  height: auto;
+  margin: 0 3px 0 -10px;
+  /* LTR */
+  padding: 0 0 0 10px;
+  /* LTR */
+}
+
+td.layout-builder-components-table__block-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: none;
+}
+/*# sourceMappingURL=tabledrag.css.map */

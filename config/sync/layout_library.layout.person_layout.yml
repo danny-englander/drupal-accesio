@@ -1,9 +1,9 @@
-uuid: 36c6720e-6672-4b9c-91cc-4cc181f1c036
+uuid: 4351c010-78d8-40cc-aa97-5997b53ad3c9
 langcode: en
 status: true
 dependencies: {  }
-id: person_node_alternate
-label: 'Person Node (alternate)'
+id: person_layout
+label: 'Person node (alternate)'
 targetEntityType: node
 targetBundle: person
 layout:
@@ -11,38 +11,33 @@ layout:
     layout_id: layout_twocol_section
     layout_settings:
       label: ''
-      column_widths: 50-50
+      column_widths: 67-33
       layout_builder_styles_style: {  }
+      context_mapping: {  }
     components:
-      88e03428-79f0-4407-a622-01a7c205a003:
-        uuid: 88e03428-79f0-4407-a622-01a7c205a003
+      30f4c985-dc2c-4a94-91b6-5fa6720612b2:
+        uuid: 30f4c985-dc2c-4a94-91b6-5fa6720612b2
         region: first
         configuration:
-          id: 'field_block:node:person:field_profile_image'
-          label: 'Profile Image'
-          provider: layout_builder
+          id: 'entity_view:node'
+          label: 'Entity view (Person Info)'
+          provider: ctools
           label_display: '0'
-          formatter:
-            label: hidden
-            type: entity_reference_entity_view
-            settings:
-              view_mode: half_width
-            third_party_settings: {  }
+          view_mode: person_info
           context_mapping:
             entity: layout_builder.entity
-            view_mode: view_mode
         additional:
           layout_builder_styles_style: {  }
         weight: 0
-      6aa02aa8-4659-40a9-a92c-64d74382bc09:
-        uuid: 6aa02aa8-4659-40a9-a92c-64d74382bc09
+      18523075-c8c9-492e-a075-3513e1406ea7:
+        uuid: 18523075-c8c9-492e-a075-3513e1406ea7
         region: second
         configuration:
           id: 'entity_view:node'
-          label: 'Entity view (Content)'
+          label: 'Entity view (Profile card)'
           provider: ctools
           label_display: '0'
-          view_mode: teaser
+          view_mode: profile_card
           context_mapping:
             entity: layout_builder.entity
         additional:

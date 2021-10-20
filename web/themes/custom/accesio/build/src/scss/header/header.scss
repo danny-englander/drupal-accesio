@@ -8,6 +8,11 @@
   background-color: $black;
   width: 100%;
 
+  .is-layout-builder-library & {
+    // This is silly so maybe can find a better fix down the line.
+    margin-top: 38px;
+  }
+
   &__main {
     display: flex;
     justify-content: space-between;

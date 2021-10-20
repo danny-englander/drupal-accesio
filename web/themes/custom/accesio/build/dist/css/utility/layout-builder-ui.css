@@ -130,6 +130,18 @@
   font-weight: 600 !important;
 }
 
+.form-select.glb-form-element--type-select {
+  height: auto;
+}
+.form-select.glb-form-element--type-select option {
+  font-weight: 600 !important;
+}
+
+.description.glb-form-item__description {
+  font-size: 18px !important;
+  max-width: 100% !important;
+}
+
 .color_field_widget_box__square {
   height: 30px;
   width: 50px;
@@ -165,123 +177,60 @@
   margin-top: 0 !important;
 }
 
-#drupal-off-canvas .drag {
-  cursor: move;
+#layout-builder-modal textarea.form-textarea {
+  font-size: 18px !important;
 }
 
-#drupal-off-canvas tr.region-title {
-  font-weight: normal;
+.form-actions.glb-form-wrapper {
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-#drupal-off-canvas table .region-message {
+.is-layout-builder-library .glb-form-item-preview-regions,
+.is-layout-builder-library .glb-configure {
+  display: none !important;
+}
+.is-layout-builder-library #edit-discard-changes {
+  background-color: #0550e6;
   color: #fff;
-}
-
-#drupal-off-canvas table .region-populated {
-  display: none;
-}
-
-#drupal-off-canvas .add-new .tabledrag-changed {
-  display: none;
-}
-
-#drupal-off-canvas .draggable a.tabledrag-handle {
-  float: left;
-  /* LTR */
-  overflow: hidden;
-  min-width: 20px;
-  height: auto;
-  margin: 0 5px 0 0;
-  padding: 0;
-  cursor: move;
+  background: var(--colorGinPrimary) !important;
+  -webkit-filter: drop-shadow(0 6px 10px var(--colorGinPrimaryLight)) !important;
+  filter: drop-shadow(0 6px 10px var(--colorGinPrimaryLight)) !important;
+  padding: calc(1em - 2px) calc(1.5em - 2px) !important;
+  border: 2px solid var(--colorGinPrimary) !important;
+  border-radius: 6px !important;
+  -webkit-box-shadow: 0 1px 2px var(--colorGinPrimaryLight) !important;
+  box-shadow: 0 1px 2px var(--colorGinPrimaryLight) !important;
+  font-size: 16px !important;
   text-decoration: none;
-  background-image: none;
+  font-weight: 700 !important;
+  line-height: 1em !important;
 }
 
-#drupal-off-canvas a.tabledrag-handle .handle {
-  width: auto;
-  height: auto;
-  margin: 0;
+.glb-fieldset__legend {
+  background-color: transparent !important;
+}
+
+.layout-builder-lock-section-settings {
+  overflow: scroll;
+  margin: 0 12px;
+  padding: 0 0 0 20px;
+}
+.layout-builder-lock-section-settings .glb-form-item {
+  margin-bottom: 0 !important;
+}
+
+.glb-form-item__description,
+.glb-fieldset__description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #222 !important;
+}
+
+#layout-builder-modal .ief-entity-table td {
   padding: 0;
-  background-color: transparent;
-  /* Use lighter drag icon against dark background. */
-  background-image: url(../../images/move.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#drupal-off-canvas .draggable a.tabledrag-handle:hover .handle,
-#drupal-off-canvas .draggable a.tabledrag-handle:focus .handle {
-  text-decoration: none;
-  background-image: url(../../images/move.svg);
-}
-
-#drupal-off-canvas tr td {
-  -webkit-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-}
-
-#drupal-off-canvas tr td abbr {
-  margin-left: 5px;
-  /* LTR */
-}
-
-#drupal-off-canvas tr:hover td {
-  background: #222;
-}
-
-#drupal-off-canvas tr.drag td {
-  background: #111;
-}
-
-#drupal-off-canvas tr.drag-previous td {
-  background: #000;
-}
-
-#drupal-off-canvas tr.drag-previous:hover td {
-  background: #222;
-}
-
-body div.tabledrag-changed-warning {
-  margin-bottom: 0.5em;
-  font-size: 14px;
-}
-
-#drupal-off-canvas .touchevents .draggable .menu-item__link {
-  display: inline-block;
-  padding: 10px 0;
-}
-
-#drupal-off-canvas .touchevents a.tabledrag-handle {
-  width: 40px;
-  height: 44px;
-}
-
-#drupal-off-canvas .touchevents a.tabledrag-handle .handle {
-  height: 21px;
-  background-position: 40% 19px;
-  /* LTR */
-}
-
-#drupal-off-canvas .touchevents .draggable.drag a.tabledrag-handle .handle {
-  background-position: 50% -32px;
-}
-
-#drupal-off-canvas .tabledrag-toggle-weight-wrapper {
-  padding-top: 10px;
-  text-align: right;
-  /* LTR */
-}
-
-#drupal-off-canvas .indentation {
-  float: left;
-  /* LTR */
-  width: auto;
-  height: auto;
-  margin: 0 3px 0 -10px;
-  /* LTR */
-  padding: 0 0 0 10px;
-  /* LTR */
 }
 /*# sourceMappingURL=layout-builder-ui.css.map */

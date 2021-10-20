@@ -100,4 +100,8 @@ function accesio_preprocess_html(array &$vars) {
   if (in_array($route, $layout_builder_admin_paths)) {
     $vars['attributes']['class'][] = 'is-layout-builder-admin';
   }
+
+  if ($route === 'layout_builder.layout_library.node.view') {
+    $vars['attributes']['class'][] = 'is-layout-builder-library';
+  }
 }

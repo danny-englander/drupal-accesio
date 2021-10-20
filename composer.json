@@ -43,8 +43,10 @@
         "drupal/image_widget_crop": "^2.3",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/layout_builder_component_attributes": "^1.2",
+        "drupal/layout_builder_lock": "^1.1",
         "drupal/layout_builder_modal": "^1.1",
         "drupal/layout_builder_operation_link": "^1.0",
+        "drupal/layout_builder_perms": "2.0.x-dev",
         "drupal/layout_builder_restrictions": "^2.8",
         "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/layout_library": "1.x-dev",
@@ -55,6 +57,7 @@
         "drupal/media_library_edit": "^2.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/permissions_filter": "^1.2",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/rrssb": "^2.3",
         "drupal/smart_trim": "^1.3",
@@ -84,15 +87,16 @@
         "patches": {
             "drupal/core": {
                 "Allow edit Media items from Media Library modal dialog in CKEditor": "https://www.drupal.org/files/issues/2020-09-03/drupal_core-media_add_edit_link-3168868-1.patch",
-                "Views relationships with multi-valued entity reference fields invalidate Distinct query option": "https://www.drupal.org/files/issues/2020-10-10/2993688-45.patch",
-                "Add reusable option to inline block creation": "https://www.drupal.org/files/issues/2021-03-18/reusable_inline_block_creation-2999491-66.patch"
-            },
+                "Views relationships with multi-valued entity reference fields invalidate Distinct query option": "https://www.drupal.org/files/issues/2020-10-10/2993688-45.patch"
+         },
             "drupal/default_content": {
                 "Export all site content of different content entity types at once using drush command": "https://www.drupal.org/files/issues/2020-12-15/default-content-export-all-3185975-3.patch",
                 "Do not reimport existing entities": "https://www.drupal.org/files/issues/2021-01-04/3162987-136.patch"
             },
             "drupal/layout_library" : {
-                "Add hide the content preview option to layout editing": "https://www.drupal.org/files/issues/2019-11-07/3081497_add-hide-content-preview-02.patch"
+                "Add hide the content preview option to layout editing": "https://www.drupal.org/files/issues/2019-11-07/3081497_add-hide-content-preview-02.patch",
+                "Form blocks rendered inside layout builder library break save": "https://www.drupal.org/files/issues/2020-05-04/layout-library-save-issue-3133484-4.patch",
+                "Allows Saved Layout Library Labels to be edited": "https://www.drupal.org/files/issues/2020-04-08/Issue%20%233125879%20by%20bernardm28%20Configuration%20form%20for%20layouts%20LayoutEditForm.patch"
             },
             "drupal/paragraphs": {
                 "Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2020-06-25/paragraphs-2901390-51.patch"

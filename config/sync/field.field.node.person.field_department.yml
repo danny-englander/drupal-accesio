@@ -1,15 +1,15 @@
-uuid: 3d4a5d95-6aeb-4d16-8168-b67b2cf1abab
+uuid: 332c3f31-a3dc-41af-b321-0a2ee39155c1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_subtitle
+    - field.storage.node.field_department
     - node.type.person
-id: node.person.field_subtitle
-field_name: field_subtitle
+id: node.person.field_department
+field_name: field_department
 entity_type: node
 bundle: person
-label: 'Job Title'
+label: Department
 description: ''
 required: false
 translatable: false

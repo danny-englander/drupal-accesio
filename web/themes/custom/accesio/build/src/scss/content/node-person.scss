@@ -1,0 +1,39 @@
+/**
+ * Person node styling.
+ */
+@use './node_modules/sass-rem' as rem;
+@import "../global-includes";
+
+.node-person {
+  padding-top: 50px;
+}
+
+.person-info {
+
+}
+
+// Profile card.
+.profile-card__items {
+  list-style: none;
+  padding-bottom: 10px;
+
+  > li {
+    margin-bottom: 8px;
+  }
+}
+
+.profile-card__wrap {
+  background-color: $black;
+
+  > * {
+    color: $white;
+  }
+}
+
+.profile-card__media {
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

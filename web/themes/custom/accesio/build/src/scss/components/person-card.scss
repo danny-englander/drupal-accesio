@@ -101,19 +101,3 @@
     }
   }
 }
-
-.layout--twocol-section {
-  @include container(1300px);
-}
-
-.block-layout-builder {
-  margin-bottom: 70px;
-}
-
-.layout__region--first,
-.layout__region--second {
-
-  > div {
-    padding: 0 20px;
-  }
-}

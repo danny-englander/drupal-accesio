@@ -64,17 +64,11 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
- *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
 
-
-{{ attach_library('accesio/lb_common') }}
-
 {% set classes = [
+  'person-info',
   'node',
   'node--type-' ~ node.bundle|clean_class,
   node.isPromoted() ? 'node--promoted',
@@ -83,20 +77,22 @@
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 ] %}
 
-<article{{ attributes.addClass(classes) }}>
-
-  {{ title_prefix }}
-  {{ title_suffix }}
+<section{{ attributes.addClass(classes) }}>
 
   <div{{ content_attributes.addClass('node__content') }}>
-  <h1>
-    {{ content.field_first_name | field_value }}
-    {{ content.field_last_name | field_value }}
-    {{ content.field_pronoun | field_value }}
-  </h1>
+    {{ title_prefix }}
+    {{ title_suffix }}
 
-    <h2>{{ content.field_subtitle | field_value }}</h2>
+    <h1>
+      {{ node.field_first_name.value }}
+      {{ node.field_last_name.value }}
+      {{ node.field_pronoun.value }}
+    </h1>
 
-    {{ content.field_text }}
+    {{ node.field_text.value | raw }}
   </div>
-</article>
+
+  {{ drupal_breakpoint() }}
+
+
+</section>

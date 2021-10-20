@@ -44,3 +44,33 @@ html {
     }
   }
 }
+
+// @todo this should all be refactored into its own file.
+.layout--twocol-section {
+  @include container(1300px);
+}
+
+.block-layout-builder {
+  margin-bottom: 70px;
+}
+
+.layout__region--first,
+.layout__region--second {
+
+  > div {
+    padding: 0 20px;
+  }
+}
+
+.toolbar .toolbar-bar .toolbar-tab > .toolbar-item {
+  font-weight: bold !important;
+  font-size: 14px !important;
+}
+
+.title-centered {
+
+  h2 {
+    text-align: center;
+  }
+}
+

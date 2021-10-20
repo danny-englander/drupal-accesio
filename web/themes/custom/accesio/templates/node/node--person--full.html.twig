@@ -64,17 +64,13 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
- *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
 
-
-{{ attach_library('accesio/lb_common') }}
+{{ attach_library('accesio/node_person') }}
 
 {% set classes = [
+  'node-person',
   'node',
   'node--type-' ~ node.bundle|clean_class,
   node.isPromoted() ? 'node--promoted',
@@ -86,17 +82,15 @@
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
   {{ title_suffix }}
 
   <div{{ content_attributes.addClass('node__content') }}>
-  <h1>
-    {{ content.field_first_name | field_value }}
-    {{ content.field_last_name | field_value }}
-    {{ content.field_pronoun | field_value }}
-  </h1>
-
-    <h2>{{ content.field_subtitle | field_value }}</h2>
-
-    {{ content.field_text }}
+    {{ content }}
   </div>
+
 </article>

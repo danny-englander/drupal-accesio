@@ -118,13 +118,13 @@ form .description {
 }
 
 /* clears the 'X' from Internet Explorer */
-input[type=search]:-ms-clear {
+input[type=search]::-ms-clear {
   display: none;
   width: 0;
   height: 0;
 }
 
-input[type=search]:-ms-reveal {
+input[type=search]::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
@@ -213,14 +213,17 @@ input[type=search]:-ms-reveal {
   cursor: pointer;
   z-index: 1;
 }
+.js-form-type-checkbox input[type=checkbox]:checked ~ .glb-checkbox-toggle .glb-checkbox-toggle__inner,
 .js-form-type-checkbox input[type=checkbox]:checked ~ .checkbox-toggle .checkbox-toggle__inner {
   background-color: #482e6e;
 }
+.js-form-type-checkbox input[type=checkbox]:checked ~ .glb-checkbox-toggle .glb-checkbox-toggle__inner:before,
 .js-form-type-checkbox input[type=checkbox]:checked ~ .checkbox-toggle .checkbox-toggle__inner:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
 }
+.js-form-type-checkbox .glb-checkbox-toggle,
 .js-form-type-checkbox .checkbox-toggle {
   z-index: 0;
   display: inline-block;
@@ -232,6 +235,7 @@ input[type=search]:-ms-reveal {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.js-form-type-checkbox .glb-checkbox-toggle__inner,
 .js-form-type-checkbox .checkbox-toggle__inner {
   position: relative;
   display: block;
@@ -245,6 +249,7 @@ input[type=search]:-ms-reveal {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.js-form-type-checkbox .glb-checkbox-toggle__inner:before,
 .js-form-type-checkbox .checkbox-toggle__inner:before {
   position: absolute;
   content: "";
@@ -271,10 +276,10 @@ input[type=search]:-ms-reveal {
 }
 
 /* clears the 'X' from Chrome */
-input[type=search]:-webkit-search-decoration,
-input[type=search]:-webkit-search-cancel-button,
-input[type=search]:-webkit-search-results-button,
-input[type=search]:-webkit-search-results-decoration {
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
@@ -310,7 +315,7 @@ legend {
   padding-bottom: 12px;
 }
 
-:-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: #212121;
 }
 
@@ -318,7 +323,15 @@ legend {
   color: #212121;
 }
 
-:placeholder {
+::-moz-placeholder {
+  color: #212121;
+}
+
+::-ms-input-placeholder {
+  color: #212121;
+}
+
+::placeholder {
   color: #212121;
 }
 

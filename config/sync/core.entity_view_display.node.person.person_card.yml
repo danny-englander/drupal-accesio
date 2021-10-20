@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.person_card
+    - field.field.node.person.field_department
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
@@ -52,6 +53,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  field_department: true
   field_email: true
   field_first_name: true
   field_last_name: true

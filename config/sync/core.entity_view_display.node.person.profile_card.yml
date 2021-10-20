@@ -1,9 +1,9 @@
-uuid: 28b95a1f-470c-43ad-9e4d-0d7185df5f19
+uuid: 805de8f2-4899-4945-a51d-f5d25b303a69
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.profile_card
     - field.field.node.person.field_department
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
@@ -16,45 +16,28 @@ dependencies:
     - field.field.node.person.layout_selection
     - node.type.person
   module:
-    - text
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
     - user
-id: node.person.teaser
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_library:
+    enable: true
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      allowed_layouts: {  }
+id: node.person.profile_card
 targetEntityType: node
 bundle: person
-mode: teaser
+mode: profile_card
 content:
-  field_email:
-    type: basic_string
-    weight: 4
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  field_first_name:
-    type: string
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_last_name:
-    type: string
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_pronoun:
-    type: string
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_subtitle:
+  field_department:
     type: string
     weight: 3
     region: content
@@ -62,16 +45,35 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_text:
-    type: text_default
-    weight: 5
-    region: content
+  field_email:
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_profile_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: inline_media
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
-  field_department: true
-  field_profile_image: true
+  field_first_name: true
+  field_last_name: true
+  field_pronoun: true
   field_show_email: true
+  field_text: true
   layout_selection: true
   links: true
