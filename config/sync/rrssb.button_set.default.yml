@@ -9,87 +9,87 @@ label: Default
 follow: 0
 chosen:
   delicious:
-    weight: 0
     label: ''
     enabled: false
+    weight: 0
   email:
+    label: ''
     enabled: true
     weight: -20
-    label: ''
   facebook:
+    label: ''
+    enabled: false
     username: ''
     weight: -19
-    label: ''
-    enabled: false
   github:
-    username: ''
-    weight: 0
     label: ''
     enabled: false
+    username: ''
+    weight: 0
   hackernews:
-    weight: 0
     label: ''
     enabled: false
+    weight: 0
   instagram:
+    label: ''
+    enabled: false
     username: ''
     weight: 0
-    label: ''
-    enabled: false
   join:
-    weight: 0
     label: ''
     enabled: false
+    weight: 0
   linkedin:
+    label: ''
     enabled: true
     username: ''
     weight: -18
-    label: ''
   pinterest:
+    label: ''
     enabled: true
     username: ''
     weight: -15
-    label: ''
   phone:
-    username: ''
-    weight: 0
     label: ''
     enabled: false
+    username: ''
+    weight: 0
   pocket:
-    weight: 0
     label: ''
     enabled: false
+    weight: 0
   print:
-    weight: 0
     label: ''
     enabled: false
+    weight: 0
   reddit:
-    username: ''
-    weight: 0
     label: ''
     enabled: false
+    username: ''
+    weight: 0
   tumblr:
-    username: ''
-    weight: 0
     label: ''
     enabled: false
+    username: ''
+    weight: 0
   twitter:
+    label: ''
     enabled: true
     username: ''
     weight: -17
-    label: ''
   vk:
-    weight: 0
     label: ''
     enabled: false
+    weight: 0
   whatsapp:
-    weight: 0
     label: ''
     enabled: false
+    weight: 0
   youtube:
+    label: ''
+    enabled: false
     username: ''
     weight: 0
-    label: ''
-    enabled: false
 appearance:
   size: null
   shrink: null

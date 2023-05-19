@@ -1,7 +1,16 @@
+_core:
+  default_config_hash: y7LBTPYVTcA6s3XuXz3mXS0he0kmx7NQWmTz2fDSI-s
 skipClass: no-lazy
+disable_admin: true
+visibility:
+  id: request_path
+  pages: /rss.xml
+  negate: 0
 placeholderSrc: ''
 preferNative: false
 cssEffect: true
+minified: true
+libraryPath: /libraries/lazysizes
 lazysizes:
   lazyClass: lazyload
   loadedClass: lazyloaded
@@ -23,12 +32,3 @@ lazysizes:
   throttleDelay: 125
   plugins:
     unveilhooks: unveilhooks
-_core:
-  default_config_hash: y7LBTPYVTcA6s3XuXz3mXS0he0kmx7NQWmTz2fDSI-s
-libraryPath: /libraries/lazysizes
-minified: true
-disable_admin: true
-visibility:
-  id: request_path
-  pages: /rss.xml
-  negate: 0

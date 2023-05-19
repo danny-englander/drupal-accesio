@@ -10,10 +10,8 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    full_html: full_html
-    basic_html: '0'
-    restricted_html: '0'
-    plain_text: '0'
+    allowed_formats:
+      - full_html
 id: paragraph.accordion_item.field_text_format
 field_name: field_text_format
 entity_type: paragraph

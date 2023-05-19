@@ -28,7 +28,6 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       text: text
       accordion: accordion
@@ -38,10 +37,11 @@ settings:
       quote_item: quote_item
       stats: stats
       title: title
+    negate: 0
     target_bundles_drag_drop:
       accordion:
-        enabled: true
         weight: -38
+        enabled: true
       accordion_group:
         weight: -37
         enabled: false
@@ -49,8 +49,8 @@ settings:
         weight: -36
         enabled: false
       block:
-        enabled: true
         weight: -35
+        enabled: true
       columns:
         weight: -34
         enabled: false
@@ -58,20 +58,20 @@ settings:
         weight: -33
         enabled: false
       filtered_list_views:
-        enabled: true
         weight: -32
+        enabled: true
       hero:
         weight: -31
         enabled: false
       multimedia:
-        enabled: true
         weight: -30
+        enabled: true
       quote_item:
-        enabled: true
         weight: -29
-      stats:
         enabled: true
+      stats:
         weight: -28
+        enabled: true
       stats_item:
         weight: -27
         enabled: false
@@ -82,8 +82,8 @@ settings:
         weight: -26
         enabled: false
       text:
-        enabled: true
         weight: -39
+        enabled: true
       text_bg_image:
         weight: -25
         enabled: false
@@ -94,8 +94,8 @@ settings:
         weight: -23
         enabled: false
       title:
-        enabled: true
         weight: -22
+        enabled: true
       tweet:
         weight: -21
         enabled: false

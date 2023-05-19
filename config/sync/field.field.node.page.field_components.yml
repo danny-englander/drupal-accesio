@@ -37,7 +37,6 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       hero: hero
       title: title
@@ -56,68 +55,69 @@ settings:
       blog_hero: blog_hero
       lpfe_layout_container: lpfe_layout_container
       portfolio: portfolio
+    negate: 0
     target_bundles_drag_drop:
       accordion:
-        enabled: true
         weight: -38
+        enabled: true
       accordion_item:
         weight: -30
         enabled: false
       block:
-        enabled: true
         weight: -27
+        enabled: true
       blog_hero:
-        enabled: true
         weight: 25
+        enabled: true
       columns:
-        enabled: true
         weight: -34
+        enabled: true
       cta:
-        enabled: true
         weight: -36
+        enabled: true
       filtered_list_views:
-        enabled: true
         weight: -26
+        enabled: true
       hero:
-        enabled: true
         weight: -41
+        enabled: true
       lpfe_layout_container:
-        enabled: true
         weight: 30
+        enabled: true
       multimedia:
-        enabled: true
         weight: -23
+        enabled: true
       portfolio:
-        enabled: true
         weight: 31
+        enabled: true
       quote_item:
-        enabled: true
         weight: -31
-      stats:
         enabled: true
+      stats:
         weight: -25
+        enabled: true
       stats_item:
         weight: -24
         enabled: false
       tabs:
-        enabled: true
         weight: -32
+        enabled: true
       tabs_item:
         weight: -22
         enabled: false
       text:
-        enabled: true
         weight: -39
+        enabled: true
       text_bg_image:
-        enabled: true
         weight: -37
-      timeline:
         enabled: true
+      timeline:
         weight: -33
+        enabled: true
       timeline_item:
         weight: -29
         enabled: false
       title:
-        enabled: true
         weight: -40
+        enabled: true
 field_type: entity_reference_revisions

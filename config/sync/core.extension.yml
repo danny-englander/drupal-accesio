@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   accesio_custom: 0
   admin_toolbar: 0
@@ -11,9 +13,9 @@ module:
   block_field: 0
   block_visibility_groups: 0
   breakpoint: 0
-  ckeditor: 0
+  ckeditor5: 0
   coffee: 0
-  color: 0
+  color_field: 0
   config: 0
   contextual: 0
   crop: 0
@@ -34,6 +36,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gin_toolbar: 0
   hal: 0
   help: 0
   history: 0
@@ -51,12 +54,12 @@ module:
   media_library_edit: 0
   menu_link_content: 0
   menu_ui: 0
+  mysql: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
-  quickedit: 0
   rabbit_hole: 0
   rdf: 0
   responsive_image: 0
@@ -69,12 +72,10 @@ module:
   svg_image_field: 0
   system: 0
   taxonomy: 0
-  taxonomy_delete: 0
   telephone: 0
   text: 0
   token: 0
   toolbar: 0
-  toolbar_tasks: 0
   twig_field_value: 0
   twig_tweak: 0
   update: 0
@@ -94,5 +95,3 @@ theme:
   accesio: 0
   stark: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

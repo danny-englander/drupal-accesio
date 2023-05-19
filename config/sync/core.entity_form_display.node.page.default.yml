@@ -24,60 +24,60 @@ third_party_settings:
         - group_content
         - group_settings
         - group_social
+      label: Tabs
+      region: content
       parent_name: ''
       weight: 1
       format_type: tabs
-      region: content
       format_settings:
-        direction: horizontal
-        id: ''
         classes: ''
-      label: Tabs
+        id: ''
+        direction: horizontal
     group_content:
       children:
         - field_components
+      label: Content
+      region: content
       parent_name: group_tabs
       weight: 10
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Content
     group_settings:
       children:
         - field_hide_title
         - field_contained_width
         - field_edgy
+      label: Settings
+      region: content
       parent_name: group_tabs
       weight: 11
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Settings
     group_social:
       children:
         - field_social_description
         - field_social_image
+      label: Social
+      region: content
       parent_name: group_tabs
       weight: 12
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Social
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
 id: node.page.default
@@ -94,6 +94,7 @@ content:
   field_components:
     type: paragraphs
     weight: 2
+    region: content
     settings:
       title: Component
       title_plural: Components
@@ -109,45 +110,44 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-    region: content
   field_edgy:
+    type: boolean_checkbox
     weight: 5
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_hide_title:
+    type: boolean_checkbox
     weight: 3
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_social_description:
+    type: text_textarea
     weight: 27
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_social_image:
     type: media_library_widget
     weight: 28
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_svg_icon:
+    type: svg_image_field_widget
     weight: 29
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_max_width: 300
       preview_image_max_height: 300
     third_party_settings: {  }
-    type: svg_image_field_widget
-    region: content
   path:
     type: path
     weight: 7
@@ -156,24 +156,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 5
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 8
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

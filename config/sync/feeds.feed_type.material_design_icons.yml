@@ -8,8 +8,8 @@ dependencies:
     - taxonomy.vocabulary.material_design_icons
   module:
     - taxonomy
-id: material_design_icons
 label: 'Material Design Icons'
+id: material_design_icons
 description: ''
 help: ''
 import_period: -1
@@ -24,49 +24,54 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:taxonomy_term'
 processor_configuration:
-  langcode: en
-  update_existing: 0
-  update_non_existent: _keep
-  expire: -1
-  skip_hash_check: false
   values:
     vid: material_design_icons
-  owner_id: 0
+  langcode: en
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
   authorize: false
+  revision: false
+  expire: -1
   owner_feed_author: false
+  owner_id: 0
 custom_sources:
   name:
-    label: Name
     value: Name
+    label: Name
     machine_name: name
+    type: csv
   id:
-    label: id
     value: id
+    label: id
     machine_name: id
+    type: csv
   code:
-    label: Code
     value: Code
+    label: Code
     machine_name: code
+    type: csv
 mappings:
   -
     target: name
     map:
       value: name
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_md_class
     map:
       value: id
-    unique:
-      value: '1'
     settings:
       language: null
+    unique:
+      value: '1'
   -
     target: field_md_code
     map:
       value: code
-    unique: {  }
     settings:
       language: null
+    unique: {  }

@@ -21,6 +21,7 @@ bundle: image
 mode: hero
 content:
   field_media_image:
+    type: responsive_image
     label: hidden
     settings:
       responsive_image_style: wide
@@ -30,7 +31,6 @@ content:
         lazy_image: '1'
         placeholder_style: thumbnail
         data_uri: false
-    type: responsive_image
     weight: 1
     region: content
 hidden:

@@ -9,8 +9,8 @@ dependencies:
     - taxonomy.vocabulary.remix_icons
   module:
     - taxonomy
-id: remix_icons
 label: 'Remix Icons'
+id: remix_icons
 description: ''
 help: ''
 import_period: -1
@@ -25,60 +25,66 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:taxonomy_term'
 processor_configuration:
-  langcode: en
-  update_existing: 1
-  update_non_existent: _keep
-  expire: -1
-  skip_hash_check: false
   values:
     vid: remix_icons
-  owner_id: 0
+  langcode: en
+  insert_new: 1
+  update_existing: 1
+  update_non_existent: _keep
+  skip_hash_check: false
   authorize: false
+  revision: false
+  expire: -1
   owner_feed_author: false
+  owner_id: 0
 custom_sources:
   name:
-    label: name
     value: name
+    label: name
     machine_name: name
+    type: csv
   category:
-    label: category
     value: category
+    label: category
     machine_name: category
+    type: csv
   css_code:
-    label: css_code
     value: css_code
+    label: css_code
     machine_name: css_code
+    type: csv
   html_code:
-    label: html_code
     value: html_code
+    label: html_code
     machine_name: html_code
+    type: csv
 mappings:
   -
     target: name
     map:
       value: name
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_ri_icon_category
     map:
       value: category
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_ri_icon_css_code
     map:
       value: css_code
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_ri_icon_html_code
     map:
       value: html_code
-    unique:
-      value: '1'
     settings:
       language: null
+    unique:
+      value: '1'

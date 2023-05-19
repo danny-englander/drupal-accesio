@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       timeline_item: timeline_item
+    negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 8
@@ -41,8 +41,8 @@ settings:
         weight: 12
         enabled: false
       timeline_item:
-        enabled: true
         weight: 13
+        enabled: true
       tweet:
         weight: 14
         enabled: false

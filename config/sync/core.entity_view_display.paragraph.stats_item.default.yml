@@ -13,29 +13,29 @@ bundle: stats_item
 mode: default
 content:
   field_statistic_icon:
-    weight: 2
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: icon_simple
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 2
     region: content
   field_statistic_number:
-    weight: 0
+    type: number_integer
     label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: false
     third_party_settings: {  }
-    type: number_integer
+    weight: 0
     region: content
   field_title:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
 hidden: {  }

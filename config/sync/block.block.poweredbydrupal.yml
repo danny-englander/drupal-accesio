@@ -2,26 +2,19 @@ uuid: 863f7db7-43e5-4505-85db-fdbf20f865c7
 langcode: en
 status: true
 dependencies:
-  config:
-    - block_visibility_groups.block_visibility_group.blog_type
   module:
-    - block_visibility_groups
     - system
   theme:
     - accesio
 id: poweredbydrupal
 theme: accesio
 region: hidden
-weight: -6
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
   label: 'Powered by Drupal'
-  provider: system
   label_display: '0'
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: blog_type
+  provider: system
+visibility: {  }

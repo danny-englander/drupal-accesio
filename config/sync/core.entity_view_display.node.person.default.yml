@@ -19,55 +19,55 @@ bundle: person
 mode: default
 content:
   field_email:
-    weight: 104
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 104
     region: content
   field_first_name:
-    weight: 102
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 102
     region: content
   field_last_name:
-    weight: 103
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 103
     region: content
   field_profile_image:
     type: entity_reference_entity_view
-    weight: 105
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 105
     region: content
   field_pronoun:
-    weight: 106
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 106
     region: content
   field_text:
-    weight: 107
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 107
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden: {  }

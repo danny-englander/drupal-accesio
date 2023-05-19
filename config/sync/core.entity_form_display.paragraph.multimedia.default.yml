@@ -14,7 +14,9 @@ bundle: multimedia
 mode: default
 content:
   field_media:
+    type: media_library_widget
     weight: 0
+    region: content
     settings:
       media_types:
         - image
@@ -22,8 +24,6 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
-    type: media_library_widget
-    region: content
 hidden:
   created: true
   status: true

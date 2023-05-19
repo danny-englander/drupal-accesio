@@ -1,45 +1,59 @@
-uuid: 5a2f094d-8836-4c8a-943b-72d5a9b2bb1b
+uuid: 58931211-985b-4a49-9ace-1344ee47cca7
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
   module:
-    - ckeditor
-_core:
-  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
+    - ckeditor5
 format: basic_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - Source
+    items:
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - heading
+      - '|'
+      - sourceEditing
+      - '|'
+      - blockQuote
+      - code
+      - bulletedList
+      - numberedList
   plugins:
-    stylescombo:
-      styles: ''
-    drupallink:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<span>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<img src alt height width data-entity-type data-entity-uuid data-align data-caption>'
+        - '<a hreflang>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+    linkit_extension:
       linkit_enabled: false
-      linkit_profile: ''
-    language:
-      language_list: un
 image_upload:
   status: true
   scheme: public

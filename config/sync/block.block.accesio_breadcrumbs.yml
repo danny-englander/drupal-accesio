@@ -11,12 +11,12 @@ _core:
 id: accesio_breadcrumbs
 theme: accesio
 region: hidden
-weight: -7
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
   label: Breadcrumbs
-  provider: system
   label_display: '0'
+  provider: system
 visibility: {  }

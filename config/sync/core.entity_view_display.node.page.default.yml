@@ -22,7 +22,6 @@ mode: default
 content:
   field_components:
     type: layout_paragraphs_builder
-    weight: 0
     label: hidden
     settings:
       preview_view_mode: default
@@ -32,6 +31,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_edgy: true

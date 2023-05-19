@@ -11,14 +11,14 @@ field_name: field_svg_icon
 entity_type: node
 type: svg_image_field
 settings:
+  target_type: file
+  display_field: false
+  display_default: false
   uri_scheme: public
   default_image:
     uuid: ''
     alt: ''
     title: ''
-  target_type: file
-  display_field: false
-  display_default: false
 module: svg_image_field
 locked: false
 cardinality: 1

@@ -2,8 +2,8 @@ uuid: 3682068b-b435-4bcf-b917-c2d954f01dbf
 langcode: en
 status: true
 dependencies: {  }
-id: square
 label: Square
+id: square
 description: ''
 aspect_ratio: '1:1'
 soft_limit_width: null

@@ -3,8 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
-    - block_visibility_groups
-    - ctools
+    - node
   theme:
     - stark
 id: stark_pagetitle
@@ -16,17 +15,13 @@ plugin: page_title_block
 settings:
   id: page_title_block
   label: 'Page title'
-  provider: core
   label_display: '0'
+  provider: core
 visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
   'entity_bundle:node':
     id: 'entity_bundle:node'
-    bundles:
-      blog_post: blog_post
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      blog_post: blog_post

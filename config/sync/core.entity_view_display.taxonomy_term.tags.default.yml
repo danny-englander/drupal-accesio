@@ -13,9 +13,9 @@ mode: default
 content:
   description:
     type: text_default
-    weight: 0
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden: {  }

@@ -18,13 +18,15 @@ bundle: timeline_item
 mode: default
 content:
   field_date:
+    type: datetime_default
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_media:
+    type: media_library_widget
     weight: 3
+    region: content
     settings:
       media_types:
         - image
@@ -32,16 +34,14 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
-    type: media_library_widget
-    region: content
   field_text_format:
+    type: text_textarea
     weight: 1
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
 hidden:
   created: true
   status: true

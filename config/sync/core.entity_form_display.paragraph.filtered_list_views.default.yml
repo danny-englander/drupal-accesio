@@ -13,11 +13,11 @@ bundle: filtered_list_views
 mode: default
 content:
   field_views_list:
+    type: viewfield_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewfield_select
-    region: content
 hidden:
   created: true
   status: true

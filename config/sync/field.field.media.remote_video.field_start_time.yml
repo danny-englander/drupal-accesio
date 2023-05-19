@@ -10,7 +10,7 @@ field_name: field_start_time
 entity_type: media
 bundle: remote_video
 label: 'Start time'
-description: 'Video Start time in seconds. If you''d like to start the video at a specified time, enter it here. For example, 130 would be equal to 2 minutes and 10 seconds. Default is zero.'
+description: "Video Start time in seconds. If you'd like to start the video at a specified time, enter it here. For example, 130 would be equal to 2 minutes and 10 seconds. Default is zero."
 required: false
 translatable: false
 default_value:

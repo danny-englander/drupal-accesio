@@ -23,15 +23,15 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       title: title
       accordion: accordion
       text: text
+    negate: 0
     target_bundles_drag_drop:
       accordion:
-        enabled: true
         weight: -22
+        enabled: true
       accordion_group:
         weight: 14
         enabled: false
@@ -48,8 +48,8 @@ settings:
         weight: -16
         enabled: false
       text:
-        enabled: true
         weight: -21
+        enabled: true
       text_bg_image:
         weight: -15
         enabled: false
@@ -60,9 +60,9 @@ settings:
         weight: -13
         enabled: false
       title:
-        enabled: true
         weight: -23
-      tweet:
         enabled: true
+      tweet:
         weight: -20
+        enabled: true
 field_type: entity_reference_revisions

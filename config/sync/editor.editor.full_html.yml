@@ -1,72 +1,70 @@
-uuid: cbbc476f-e888-49d7-8e62-01b93eeef34c
+uuid: d2f40081-f172-4b0d-824e-44dc80ca325a
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
-_core:
-  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Strike
-            - Superscript
-            - Subscript
-            - '-'
-            - RemoveFormat
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - Table
-            - HorizontalRule
-            - DrupalMediaLibrary
-        -
-          name: 'Block Formatting'
-          items:
-            - Styles
-            - Format
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
+    items:
+      - heading
+      - bold
+      - italic
+      - '|'
+      - blockQuote
+      - code
+      - bulletedList
+      - numberedList
+      - strikethrough
+      - superscript
+      - subscript
+      - link
+      - insertTable
+      - horizontalLine
+      - codeBlock
+      - sourceEditing
   plugins:
-    stylescombo:
-      styles: ''
-    drupallink:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<button>'
+        - '<dd>'
+        - '<dt>'
+        - '<blockquote cite class>'
+        - '<ul type class>'
+        - '<ol type class>'
+        - '<li class>'
+        - '<a hreflang target class>'
+        - '<img src alt title no-lazy data-entity-type data-entity-uuid>'
+        - '<table id class>'
+        - '<iframe src width height>'
+        - '<figure class>'
+        - '<figcaption class>'
+        - '<dl class>'
+        - '<h1 class>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<drupal-media data-view-mode data-caption data-alt data-lazy title>'
+    linkit_extension:
       linkit_enabled: true
       linkit_profile: default
-    language:
-      language_list: un
-image_upload:
-  status: true
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null
+    media_media:
+      allow_view_mode_override: true
+image_upload: {  }

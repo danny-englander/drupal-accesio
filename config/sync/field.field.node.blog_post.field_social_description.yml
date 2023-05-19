@@ -10,10 +10,8 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    basic_html: basic_html
-    full_html: '0'
-    restricted_html: '0'
-    plain_text: '0'
+    allowed_formats:
+      - basic_html
 id: node.blog_post.field_social_description
 field_name: field_social_description
 entity_type: node

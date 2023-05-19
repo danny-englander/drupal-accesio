@@ -21,17 +21,19 @@ mode: media_library
 content:
   thumbnail:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: large
       image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
     third_party_settings:
       lazy:
-        placeholder_style: ''
         lazy_image: '0'
+        placeholder_style: ''
         data_uri: false
+    weight: 0
+    region: content
 hidden:
   created: true
   field_caption: true

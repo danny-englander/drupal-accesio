@@ -16,7 +16,7 @@ bundle: text_bg_image
 mode: default
 content:
   field_link:
-    weight: 2
+    type: link_separate
     label: hidden
     settings:
       trim_length: 80
@@ -25,22 +25,22 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link_separate
+    weight: 2
     region: content
   field_media:
-    weight: 3
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 3
     region: content
   field_text_format:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
 hidden: {  }

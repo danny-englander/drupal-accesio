@@ -13,30 +13,30 @@ bundle: stats_item
 mode: default
 content:
   field_statistic_icon:
+    type: entity_reference_autocomplete
     weight: 2
+    region: content
     settings:
       match_operator: STARTS_WITH
       match_limit: 12
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_statistic_number:
+    type: number
     weight: 0
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_title:
+    type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden:
   created: true
   status: true

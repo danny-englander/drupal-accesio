@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.blog_hero.field_background_color
+    - field.field.paragraph.blog_hero.field_bg_color
     - field.field.paragraph.blog_hero.field_category
     - field.field.paragraph.blog_hero.field_hero_layout
     - field.field.paragraph.blog_hero.field_media
@@ -11,6 +12,7 @@ dependencies:
     - field.field.paragraph.blog_hero.field_title
     - paragraphs.paragraphs_type.blog_hero
   module:
+    - color_field
     - field_group
     - media_library
     - media_library_edit
@@ -22,82 +24,90 @@ third_party_settings:
         - group_media
         - group_content
         - group_settings
+      label: Tabs
+      region: content
       parent_name: ''
       weight: 1
       format_type: tabs
-      region: content
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Tabs
     group_media:
       children:
         - field_media
+      label: Media
+      region: content
       parent_name: group_tabs
       weight: 6
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Media
     group_content:
       children:
         - field_text_format
         - field_category
+      label: Content
+      region: content
       parent_name: group_tabs
       weight: 7
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Content
     group_settings:
       children:
         - field_hero_layout
+        - field_bg_color
         - field_background_color
+      label: Settings
+      region: content
       parent_name: group_tabs
       weight: 8
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Settings
 id: paragraph.blog_hero.default
 targetEntityType: paragraph
 bundle: blog_hero
 mode: default
 content:
   field_background_color:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bg_color:
+    type: color_field_widget_box
     weight: 7
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
+    settings:
+      default_colors: '#d5ca9e,#ffc82c,#497637,#e37c00,#aaa272,#b5bf00,#e2e1dd,#cacac8,#919195,#ffffff,#8fcae7,#bed6db,#0072a7,#005172,#003359'
+    third_party_settings: {  }
   field_category:
+    type: options_select
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_hero_layout:
+    type: options_select
     weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_media:
     type: media_library_widget
     weight: 4
@@ -108,21 +118,21 @@ content:
       media_library_edit:
         show_edit: '1'
   field_text_format:
+    type: text_textarea
     weight: 3
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_title:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden:
   created: true
   status: true

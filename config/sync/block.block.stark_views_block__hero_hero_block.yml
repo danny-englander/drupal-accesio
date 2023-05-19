@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.hero
   module:
-    - block_visibility_groups
     - views
   theme:
     - stark
@@ -18,13 +17,9 @@ plugin: 'views_block:hero-hero_block'
 settings:
   id: 'views_block:hero-hero_block'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
-visibility:
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: ''
+visibility: {  }

@@ -1,23 +1,23 @@
-preset_accent_color: blue
-preset_focus_color: accent
-enable_darkmode: false
-classic_toolbar: '1'
-icon_default: true
-icon_path: ''
-high_contrast_mode: false
-third_party_settings:
-  shortcut:
-    module_link: true
 _core:
   default_config_hash: CEHTCpo0zzrZOJNa9_M2R_HdYKrq3v1zlRVCf66hh7U
+favicon:
+  use_default: true
 features:
-  node_user_picture: true
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
-favicon:
-  use_default: true
+  node_user_picture: true
+third_party_settings:
+  shortcut:
+    module_link: true
+preset_accent_color: blue
+preset_focus_color: accent
+enable_darkmode: ''
+classic_toolbar: '1'
+high_contrast_mode: false
 accent_color: ''
 focus_color: ''
-icon_upload: ''
 show_user_theme_settings: false
+icon_default: true
+icon_path: ''
+icon_upload: ''

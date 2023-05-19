@@ -21,24 +21,24 @@ bundle: hero
 mode: default
 content:
   field_heading_level:
-    weight: 6
+    type: boolean
     label: hidden
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 6
     region: content
   field_hero_style:
-    weight: 7
+    type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_key
+    weight: 7
     region: content
   field_link:
-    weight: 4
+    type: link_separate
     label: hidden
     settings:
       trim_length: 80
@@ -47,40 +47,40 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link_separate
+    weight: 4
     region: content
   field_media:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: hero
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_remove_btm_margin:
-    weight: 5
+    type: boolean
     label: hidden
     settings:
       format: boolean
-      format_custom_true: ''
       format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 5
     region: content
   field_text_format:
-    weight: 3
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_title:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
 hidden: {  }
