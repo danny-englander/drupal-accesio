@@ -39,25 +39,23 @@
  */
 #}
 {% set classes = [
-  'sf-tabs__pane-inner',
-  'component__item',
-  'component__item--type--' ~ paragraph.bundle|clean_class,
-  view_mode ? 'component__item--view-mode--' ~ view_mode|clean_class,
-  not paragraph.isPublished() ? 'component__item--unpublished'
+  'is-wysiwyg',
+  'c-tabs__panel',
+  'component',
+  'component--type--' ~ paragraph.bundle|clean_class,
+  view_mode ?  'component--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ?  'component--unpublished'
 ] %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }}
+    id="panel-{{- paragraph.id() }}"
+    role="tabpanel"
+    tab-title="{{ paragraph.id() }}">
+
     {% block content %}
-
-      {% if content.controls | render %}
-        {{ content.controls }}
-        {{ content.insert_before }}
-        {{ content.insert_after }}
-      {% endif %}
-
-      {{ content.field_components | field_value }}
+      {{ content.field_text_format | field_value }}
     {% endblock %}
+
   </div>
 {% endblock paragraph %}
-

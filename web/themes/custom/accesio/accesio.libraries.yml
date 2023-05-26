@@ -144,12 +144,15 @@ masonry:
     build/dist/js/imagesloaded.pkgd.js: { }
     build/dist/js/isotope.pkgd.js: { }
 
+# https://github.com/AgnosticUI/a11y-tabs
 a11y_tabs:
+  version: VERSION
   css:
     theme:
-      build/dist/css/components/tabs.css: { }
+      build/dist/css/components/c-tabs.css: { }
   js:
-    build/dist/js/van11y-accessible-tab-panel-aria.js: { defer: true, async: true }
+    dist/vendor/js/a11y-tabs.min.js: { minified: true }
+    dist/js/bx-a11y-tabs-init.js: { minified: true }
 
 admin:
   css:

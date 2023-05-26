@@ -39,83 +39,33 @@
  */
 #}
 
-{% if tabs_style_underlined | render %}
-  {% set tabs_style = 'sf-tabs--underlined' %}
-{% else %}
-  {% set tabs_style = 'sf-tabs--standard' %}
-{% endif %}
-
-{# Sets a unique ID for tabs from the Paragraph ID. #}
-{% set paragraph_id = 'tab-' ~ paragraph.id.value %}
-
-{% set classes = [
-  'paragraph',
-  'js-tabs',
-  tabs_style,
-  'paragraph--type--' ~ paragraph.bundle|clean_class,
-  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  not paragraph.isPublished() ? 'paragraph--unpublished'
-] %}
-
-
-{#<div class="js-tabs" data-existing-hx="h2" data-tabs-prefix-class="style-tabs">#}
-{#  <ul class="js-tablist">#}
-{#    {% for item in tab_names %}#}
-{#      <li class="js-tablist__item">#}
-{#        <a href="#tab-id-item-{{ loop.index }}" class="js-tablist__link">{{ item.title }}</a>#}
-{#      </li>#}
-{#    {% endfor %}#}
-{#  </ul>#}
-
-{#  <div id="tab-id-item-1" class="js-tabcontent">#}
-{#    <div class="js-tabcontent__inner">#}
-
 {{ attach_library('accesio/a11y_tabs') }}
 
+{% set classes = [
+  'c-tabs',
+  'component',
+  'component--type--' ~ paragraph.bundle|clean_class,
+  view_mode ?  'component--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ?  'component--unpublished'
+] %}
+
 {% block paragraph %}
-
-  <section{{ attributes.addClass(classes) }} id="sf-tabs-id-{{ paragraph.id.value }}" data-existing-hx="h2" data-tabs-prefix-class="style-tabs">
-
-    {% if content.field_component_title | render %}
-      <h2 class="component-title">{{ content.field_component_title | field_value }}</h2>
-    {% endif %}
-
+  <section{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      {% if content.controls | render %}
-        {{ content.controls }}
-        {{ content.insert_before }}
-        {{ content.insert_after }}
-      {% endif %}
-
-{#      <nav class="sf-tabs__nav-wrap">#}
-        <ul class="js-tablist" role="tablist">
-          {# Loops through the tab sections to print the tab section titles. #}
-          {% for key, item in content.field_tabs_item if key|first != '#' %}
-            <li role="presentation" class="js-tablist__item {% if loop.first %} active{% endif %}">
-              <a class="js-tablist__link" href="#{{ paragraph_id }}-{{ key + 1 }}"
-                 aria-controls="{{ item['#paragraph'].field_title.value }}"
-                 role="tab"
-                 data-toggle="tab">
-                {{ item['#paragraph'].field_title.value }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-{#      </nav>#}
-
-        {# Loops through the tab sections again to print field_components . #}
-        {% for key, item in content.field_tabs_item if key|first != '#' %}
-          <div role="tabpanel" class="js-tabcontent {% if loop.first %} active{% endif %}"
-               id="{{ paragraph_id }}-{{ key + 1 }}">
-            <div class="js-tabcontent__inner">
-            {% for components_key, components_item in item['#paragraph'].field_components %}
-              {% set section_components= item %}
-              {{ section_components }}
-            {% endfor %}
-            </div>
-          </div>
+      <div class="c-tabs__list" role="tablist">
+        {% for item in content.field_tabs_item |  children(true) %}
+          <button
+            class="c-tabs__item c-tabs__button usa-button"
+            role="tab"
+            aria-controls="panel-{{- item["#paragraph"].id.getString() }}"
+            aria-selected="{{ item.selected }}">
+            {{ item["#paragraph"].field_title.getString() }}
+          </button>
         {% endfor %}
+      </div>
+
+      {{ content.field_tabs_item | field_value }}
 
     {% endblock %}
   </section>

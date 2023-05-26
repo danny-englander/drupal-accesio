@@ -223,7 +223,8 @@
   */
   Drupal.behaviors.AjaxEvent = {
     attach: function attach(context, settings) {
-      $(document).once('exposed-form').ajaxComplete(function (event, xhr, settings) {
+   //   $(document).once('exposed-form').ajaxComplete(function (event, xhr, settings) {
+        document.addEventListener('ajaxComplete', function(event, xhr, settings) {
         if ($("#views-exposed-form-remix-icons-block" + name).length !== 0) {
           // console.log('hello');
         }

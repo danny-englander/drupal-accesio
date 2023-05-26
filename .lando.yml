@@ -1,8 +1,8 @@
-name: accesio-lp
+name: accesio
 recipe: drupal9
 config:
-  php: '7.4'
-  composer_version: 2.0.7
+  php: '8.1'
+  composer_version: 2
   via: 'apache:2.4'
   webroot: web
   database: 'mysql:5.7'
@@ -12,7 +12,7 @@ config:
     php: lando/config/php.ini
 services:
   node:
-    type: 'node:14'
+    type: 'node:18'
     scanner: false
     ssl: true
     sslExpose: false
@@ -20,8 +20,7 @@ services:
       gulp-cli: latest
     overrides:
       ports:
-        - '32456:32456'
-        - '32457:32457'
+        - '32941:32941'
     command: tail -f /dev/null && cd /app/web/themes/custom/accesio && npm install
   appserver:
     xdebug: true
@@ -29,11 +28,11 @@ services:
       - composer self-update
     config:
       php: lando/config/php.ini
-    type: 'php:7.4'
+    type: 'php:8.1'
     overrides:
       environment:
         PHP_IDE_CONFIG: serverName=appserver
-        DRUSH_OPTIONS_URI: 'http://accesio-lp.lndo.site'
+        DRUSH_OPTIONS_URI: 'http://accesio.lndo.site'
 tooling:
   node:
     service: node

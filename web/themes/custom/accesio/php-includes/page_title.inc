@@ -19,10 +19,10 @@ function accesio_preprocess_page_title(array &$vars) {
     // Check for field_svg_icon.
     if ((!empty($node) && $node->hasField('field_svg_icon')) &&
       !$node->get('field_svg_icon')->isEmpty()) {
-      // Get the pubic image URI, e.g. public://2020-12/file-list-2-line.svg.
+      // Get the public image URI, e.g. public://2020-12/file-list-2-line.svg.
       $svg_icon = $node->get('field_svg_icon')->entity->getFileUri();
       // Image path variable.
-      $vars["image_svg"] = file_create_url($svg_icon);
+      $vars["image_svg"] = \Drupal::service('file_url_generator')->generateAbsoluteString($svg_icon);
 
       if (!empty($node->get("field_svg_icon")->alt)) {
         // Alt tag variable.

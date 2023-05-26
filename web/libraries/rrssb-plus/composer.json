@@ -32,8 +32,5 @@
     "docs": "https://github.com/AdamPS/rrssb-plus/README.md"
   },
   "license": "MIT",
-  "homepage": "http://www.albanyweb.co.uk/rrssb-plus",
-  "require": {
-    "composer/installers": "~1.0"
-  }
+  "homepage": "http://www.albanyweb.co.uk/rrssb-plus"
 }
