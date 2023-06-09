@@ -1,0 +1,55 @@
+/**
+ * List styling.
+ */
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+
+.component__item--type--text {
+
+  ol,
+  ul {
+    list-style: none;
+    margin: 30px 0;
+    -webkit-padding-start: 0;
+
+    li {
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 40px;
+    }
+  }
+
+  /* Styled ordered list */
+  ol {
+    > li {
+      counter-increment: item;
+
+      &:before {
+        font-size: rem.convert(16px);
+        content: counter(item);
+        background-color: $primary-color;
+        border-radius: 100%;
+        color: $white;
+        width: 27px;
+        height: 27px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        display: flex;
+        justify-content: center;
+        line-height: 1.6;
+        padding-left: 2px;
+      }
+    }
+  }
+
+  /* Styled unordered list */
+  ul {
+    > li {
+      position: relative;
+      // @include font-awesome("\f054", before, $font-size: 23px, $margin: 6px 0 0 0, $position: absolute, $left: 6px, $color: $primary-color);
+    }
+  }
+}

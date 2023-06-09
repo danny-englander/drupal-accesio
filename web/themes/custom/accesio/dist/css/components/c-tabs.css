@@ -1,0 +1,56 @@
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+/* stylelint-disable */
+/* stylelint-enable */
+.c-tabs__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid #b1040e;
+  border-bottom: 0;
+}
+@media (min-width: 80em) {
+  .c-tabs__list {
+    flex-direction: row;
+    border: 0;
+    border-bottom: 2px solid #482e6e;
+  }
+}
+
+.c-tabs__button {
+  border-radius: 0;
+  margin: 0;
+  color: #482e6e;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  border-bottom: 2px solid #482e6e;
+}
+@media (min-width: 80em) {
+  .c-tabs__button {
+    border-bottom: 2px solid #482e6e;
+    border-bottom: 0;
+    top: 2px;
+    margin: 0 2px 0 0;
+  }
+}
+.c-tabs__button:hover, .c-tabs__button.active {
+  color: #fff;
+  background-color: #482e6e;
+}
+.c-tabs__button:focus {
+  isolation: isolate;
+}
+
+.c-tabs__item:focus {
+  isolation: isolate;
+  cursor: pointer;
+}
+
+.c-tabs__panel {
+  padding-top: 4px;
+}

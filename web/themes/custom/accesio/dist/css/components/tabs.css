@@ -1,0 +1,85 @@
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+/* stylelint-disable */
+/* stylelint-enable */
+/*
+ * Tabs styling.
+ */
+.js-tablist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  border-bottom: 2px solid #482e6e;
+}
+.js-tablist__item {
+  cursor: pointer;
+}
+.page-wrap .js-tablist__item {
+  margin: 0 20px 0 0;
+}
+.js-tablist__link {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 12px 26px;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #69cec3;
+  color: #212121;
+  text-decoration: none;
+  border-bottom: 4px solid #69cec3;
+  letter-spacing: 2px;
+}
+.js-tablist--outline .js-tablist__link {
+  position: relative;
+  top: 1px;
+  z-index: 1;
+  border-width: 1px !important;
+  border: 2px solid #482e6e;
+  border-bottom: 0;
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+}
+
+.js-tablist__link:focus {
+  outline: none;
+}
+.js-tablist__link:hover, .js-tablist__link[aria-selected=true] {
+  background-color: #69cec3;
+  border-bottom: 4px solid #482e6e;
+  color: #212121;
+}
+.js-tablist--outline .js-tablist__link:hover, .js-tablist--outline .js-tablist__link[aria-selected=true] {
+  background-color: #482e6e;
+  color: #fff;
+}
+
+.js-tabcontent {
+  transition: all 6s ease 0s;
+  visibility: visible;
+  opacity: 1;
+  height: inherit;
+}
+.js-tabcontent--outline {
+  background-color: transparent;
+  border-top: 1px solid #a22f35;
+  margin-top: -1px;
+}
+.js-tabcontent__inner {
+  padding-top: 30px;
+}
+.js-tabcontent[aria-hidden=true] {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}

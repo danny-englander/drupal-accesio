@@ -1,0 +1,153 @@
+/*
+ * Widescreen menu.
+ */
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+
+.main-menu {
+  display: none;
+
+  @include mq($from: small_desktop) {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* Mega menu list */
+  // Some general resets for the entire menu.
+  a {
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__items {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+
+    &--level-0 {
+      @include mq($from: small_desktop) {
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+    }
+  }
+
+  &__item {
+    // A top level navigation item in the mega menu */
+    @include mq($from: small_desktop) {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &--level-0 {
+      // All top level menu items
+      > a {
+        font-size: rem.convert(14px);
+        color: $white;
+        padding: 10px 4px;
+        border: 1px dotted $white;
+        margin: 0 10px;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+
+        @include mq($from: med_desktop) {
+          font-size: rem.convert(17px);
+          padding: 10px 12px;
+        }
+
+        &.btn {
+          font-size: rem.convert(15px);
+          padding: 4px 12px;
+          border-width: 1px;
+          border-style: solid;
+          color: $white;
+          position: relative;
+          @include remix-icon("\ea6c", $font-size: 28px, $margin: 4px 0 0 8px, $position: relative, $top: -3px);
+
+          @include mq($from: med_desktop) {
+            font-size: rem.convert(17px);
+            padding: 4px 16px;
+          }
+        }
+
+        #{$a-tags-hover} {
+          text-decoration: none;
+          background-color: $secondary-color;
+          color: $black;
+        }
+      }
+    }
+
+    &--level-1 {
+      > a {
+        color: $black;
+      }
+    }
+
+    // Top level menu items that have a sub-menu panel.
+    &--submenu-level-0 {
+      > a {
+        position: relative;
+        padding: 10px 14px 10px 24px;
+        @include remix-icon("\EA4A", $margin: 0 0 0 6px, $font-size: 28px, $transdur: .2s, $hover_rotate: 180);
+      }
+    }
+  }
+
+  // Second level.
+  &__sub-nav {
+    /* main-menu__sub-navigation panel */
+    @include mq($from: small_desktop) {
+      position: absolute;
+      top: 122px;
+      background-color: $secondary-color;
+      color: $white;
+      right: 0;
+      left: 0;
+      width: 100%;
+      z-index: 320;
+      @include fade-effect();
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+
+      &.l-content {
+        margin-top: 0;
+      }
+
+      // Debug submenu (uncomment).
+      // visibility: visible !important;
+      // opacity: 1 !important;
+    }
+
+    &.panel-is-open {
+      visibility: visible;
+      opacity: 1;
+      height: inherit;
+    }
+
+    // No animation for IE11.
+    @include ie11 {
+      @include no-animation();
+    }
+
+    .container {
+      @include mq($from: small_desktop) {
+        @include container(1320px);
+        padding: 44px 20px 30px 20px;
+      }
+    }
+  }
+
+  // Utility menu classes from the link attributes UI.
+  .is-hidden {
+    @include visually-hidden();
+  }
+}

@@ -1,0 +1,40 @@
+/*
+Utility menu.
+ */
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+
+.utility-menu {
+
+  @include mq($until: small_plus) {
+    @include visually-hidden();
+  }
+
+  &__item-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 2px 10px 10px 0;
+  }
+
+  &__item {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    a {
+      font-size: rem.convert(19px);
+      text-decoration: none;
+      border-bottom: 2px solid $secondary-color;
+      transition: .4s ease;
+      padding: 2px 4px;
+      color: $white;
+
+      #{$a-tags-hover} {
+        background-color: $secondary-color;
+        border: 0;
+        color: $black;
+      }
+    }
+  }
+}

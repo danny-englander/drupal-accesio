@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+/* stylelint-disable */
+/* stylelint-enable */
+/**
+ * Quote component styling.
+ */
+/* Styled quote */
+.quote {
+  position: relative;
+  border-top: 2px dashed #212121;
+  border-bottom: 2px dashed #212121;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.quote__inner {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 50px 0 40px 0;
+}
+.quote__text {
+  margin: 0;
+  position: relative;
+}
+.quote__text:before {
+  content: "“";
+  font-family: "EB Garamond", serif;
+  font-size: 11rem;
+  line-height: 0.9;
+  position: absolute;
+  z-index: -1;
+  left: 10px;
+  color: rgba(0, 211, 214, 0.78);
+  display: inline-block;
+}
+@media (min-width: 64em) {
+  .quote__text:before {
+    font-size: 29.375rem;
+    color: #482e6e;
+    z-index: 1;
+    top: -30px;
+  }
+}
+.quote__text p {
+  font-family: "EB Garamond", serif;
+  font-size: 3.125rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+@media (min-width: 64em) {
+  .quote__text p {
+    padding-left: 230px;
+  }
+}
+.quote__attribution {
+  font-size: 1.25rem;
+}
+@media (min-width: 64em) {
+  .quote__attribution {
+    padding-left: 230px;
+  }
+}

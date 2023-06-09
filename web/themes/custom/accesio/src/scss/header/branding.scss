@@ -1,0 +1,14 @@
+/**
+ * Branding component styling.
+ */
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+
+.branding {
+
+  &__slogan {
+    margin-bottom: 6px;
+    font-size: rem.convert(17px);
+    color: $white;
+  }
+}

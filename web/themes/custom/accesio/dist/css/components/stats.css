@@ -1,0 +1,62 @@
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+/* stylelint-disable */
+/* stylelint-enable */
+/*
+ * Stats component styling.
+ */
+.stats {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+@media (min-width: 32.5em) {
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 63.99em) {
+  .stats__item {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 32.5em) and (max-width: 63.99em) {
+  .stats__item {
+    width: 50%;
+  }
+}
+@media (min-width: 64em) {
+  .stats__item {
+    width: 25%;
+  }
+}
+.stats__item-number h2 {
+  font-family: "Rozha One", serif;
+  color: #404040;
+  font-size: 6.25rem;
+  letter-spacing: 0.1875rem;
+  line-height: 0.9;
+  border-bottom: 2px dashed #404040;
+}
+.stats__item-desc h3 {
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 400;
+}
+.stats__item-icon .ion-icon {
+  font-size: 5rem;
+  color: #482e6e;
+}

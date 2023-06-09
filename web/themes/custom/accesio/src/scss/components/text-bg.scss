@@ -1,0 +1,34 @@
+/*
+ * Text with background component.
+ */
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+
+.text-bg {
+  border-bottom: 2px dotted $gray;
+  margin-bottom: 50px;
+
+  &__background {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__content {
+    background-color: $off-white;
+    @include container(1180px);
+    margin: -130px auto 0 auto;
+    padding: 30px 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  &__link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

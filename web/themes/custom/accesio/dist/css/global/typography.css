@@ -1,0 +1,166 @@
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+/* stylelint-disable */
+/* stylelint-enable */
+/*
+WCAG requires that no loss of content or functionality occurs when the
+end user overrides page styles for paragraph spacing to 200%
+of the font size, text line height/spacing to 150% of the font size,
+word spacing to 16% of the font size, and letter spacing to 12%
+of the font size. Ensure that your page text can be modified
+without it disappearing or overlapping other page content.
+ */
+body {
+  font-family: "IBM Plex Sans", verdana, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  color: #404040;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.0625rem;
+}
+
+.h1,
+h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 3.375rem;
+  line-height: 3.625rem;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+@media (min-width: 64em) {
+  .h1,
+  h1 {
+    font-size: 4.375rem;
+    line-height: 4.875rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.h2,
+h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  margin-bottom: 1.5625rem;
+  margin-top: 0;
+}
+@media (min-width: 64em) {
+  .h2,
+  h2 {
+    font-size: 3.5rem;
+    line-height: 3.625rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.h3,
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+@media (min-width: 64em) {
+  .h3,
+  h3 {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.375rem;
+  }
+}
+
+.h4,
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+@media (min-width: 64em) {
+  .h4,
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.125rem;
+  }
+}
+
+.h5,
+h5 {
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 64em) {
+  .h5,
+  h5 {
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+  }
+}
+
+.h6,
+h6 {
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 64em) {
+  .h6,
+  h6 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+}
+
+.l-content li,
+.l-content .p,
+.l-content p {
+  font-family: "IBM Plex Sans", verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.0625rem;
+  margin-top: 0;
+}
+@media (min-width: 64em) {
+  .l-content li,
+  .l-content .p,
+  .l-content p {
+    font-size: 1.1875rem;
+    line-height: 2rem;
+    margin-bottom: 2.375rem;
+  }
+}
+
+.view-content.row {
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.view-content.row:after {
+  clear: both;
+}
+.view-content.row > * {
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 1px;
+  float: left;
+  width: 25%;
+}

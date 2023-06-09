@@ -1,0 +1,46 @@
+/*
+A11Y Color grids.
+https://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%2369CEC3%2C%20Green%0D%0A%23212121%2C%20Black%0D%0A%23890C0C%2C%20Dark%20Red%0D%0A%23FFC300%2C%20Goldenrod%0D%0A%23404040%2C%20Charcoal%0D%0A%23FFF%2C%20White%0D%0A%23482e6e%2C%20Eggplant%0D%0A%23301f4a%2C%20Dark%20eggplant%0D%0A%2327776e%2C%20green%20dark%0D%0A&es-color-form__tile-size=large
+
+*/
+/* stylelint-disable */
+/* stylelint-enable */
+/**
+ * page title styling.
+ */
+.page-title {
+  box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.3), 0 4px 120px 0 rgba(0, 0, 0, 0.15);
+  background-color: #301f4a;
+}
+.page-title h1 {
+  font-size: 3.75rem;
+  line-height: 3.875rem;
+  color: #fff;
+}
+.page-title__wrap {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.page-title__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 170px;
+}
+.page-title svg {
+  fill: #fff;
+  width: 100px;
+  position: relative;
+  top: -14px;
+}
+.page-title img {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}

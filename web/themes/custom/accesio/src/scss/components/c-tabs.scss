@@ -1,0 +1,60 @@
+// Include core in order to use USWDS mixins etc...
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+// Based on https://github.com/AgnosticUI/a11y-tabs, converted to BEM.
+
+// Tabs list styles
+.c-tabs__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid $bright-red;
+  border-bottom: 0;
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+    border: 0;
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+.c-tabs__button {
+  border-radius: 0;
+  margin: 0;
+  color: $primary-color;
+  background-color: $white;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  border-bottom: 2px solid $primary-color;
+
+  @include mq($from: desktop) {
+    border-bottom: 2px solid $primary-color;
+    border-bottom: 0;
+    top: 2px;
+    margin: 0 2px 0 0;
+  }
+
+  &:hover,
+  &.active {
+    color: $white;
+    background-color: $primary-color;
+
+
+  }
+
+  &:focus {
+    isolation: isolate;
+  }
+}
+
+.c-tabs__item {
+  &:focus {
+    isolation: isolate;
+    cursor: pointer;
+  }
+}
+
+.c-tabs__panel {
+  padding-top: 4px;
+}

@@ -1,0 +1,55 @@
+/*
+* Admin tabs
+ */
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+
+ul.tabs {
+  display: flex;
+  @include ul-reset();
+  margin: 0;
+  padding: 0;
+  background-color: $charcoal;
+
+  > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:before {
+      display: none;
+    }
+
+    a {
+      font-weight: 400 !important;
+      color: $black !important;
+      text-decoration: none !important;
+      font-size: rem.convert(16px);
+      background-color: $goldenrod;
+      padding: 8px 20px;
+      display: block;
+      text-align: center;
+      margin: 0;
+      position: relative;
+
+      #{$a-tags-hover} {
+        background-color: $dark-red;
+        color: $white !important;
+      }
+
+      &.is-active {
+        background-color: $dark-red;
+        color: $white !important;
+      }
+    }
+  }
+}
+
+.toolbar-horizontal .toolbar-tray {
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+#drupal-modal {
+  min-height: 700px !important;
+}

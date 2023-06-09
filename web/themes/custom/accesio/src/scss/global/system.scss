@@ -1,0 +1,22 @@
+@use './node_modules/sass-rem' as rem;
+@use "../global-includes" as *;
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.node--unpublished {
+  position: relative;
+
+  &:before {
+    content: "Unpublished";
+    font-size: rem.convert(100px);
+    color: $dark-red;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    margin: 0 auto;
+    font-family: serif;
+    letter-spacing: 6px;
+  }
+}
